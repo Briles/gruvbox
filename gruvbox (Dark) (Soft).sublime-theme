@@ -1,0 +1,4598 @@
+[
+  {
+    "class": "sheet_container_control",
+    "layer0.tint": [
+      50,
+      48,
+      47
+    ],
+    "layer0.opacity": 1
+  },
+  {
+    "class": "grid_layout_control",
+    "border_size": 1,
+    "border_color": [
+      50,
+      48,
+      47
+    ]
+  },
+  {
+    "class": "progress_gauge_control",
+    "layer0.tint": [
+      0,
+      255,
+      255
+    ],
+    "layer0.opacity": 1,
+    "content_margin": [
+      0,
+      6
+    ]
+  },
+  {
+    "class": "dialog",
+    "layer0.tint": [
+      50,
+      48,
+      47
+    ],
+    "layer0.opacity": 1
+  },
+  {
+    "class": "progress_bar_control",
+    "layer0.tint": [
+      50,
+      48,
+      47
+    ],
+    "layer0.opacity": 1
+  },
+  {
+    "class": "fold_button_control",
+    "layer0.texture": "gruvbox/assets/dark/fold.png",
+    "layer0.opacity": 1,
+    "layer0.inner_margin": 0,
+    "layer1.texture": "gruvbox/assets/dark/fold--hover.png",
+    "layer1.opacity": 0,
+    "layer1.inner_margin": 0,
+    "content_margin": [
+      9,
+      7,
+      8,
+      6
+    ]
+  },
+  {
+    "class": "fold_button_control",
+    "attributes": [
+      "hover"
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 1
+  },
+  {
+    "class": "fold_button_control",
+    "attributes": [
+      "expanded"
+    ],
+    "layer0.texture": "gruvbox/assets/dark/unfold.png",
+    "layer1.texture": "gruvbox/assets/dark/unfold--hover.png"
+  },
+  {
+    "class": "popup_control",
+    "layer0.tint": [
+      34,
+      32,
+      32
+    ],
+    "layer0.opacity": 1,
+    "content_margin": [
+      0,
+      0
+    ]
+  },
+  {
+    "class": "auto_complete",
+    "row_padding": [
+      12,
+      6
+    ],
+    "layer0.tint": [
+      34,
+      32,
+      32
+    ],
+    "layer0.opacity": 1
+  },
+  {
+    "class": "auto_complete_label",
+    "fg": [
+      150,
+      150,
+      150
+    ],
+    "match_fg": [
+      206,
+      206,
+      206
+    ],
+    "selected_fg": [
+      150,
+      150,
+      150
+    ],
+    "selected_match_fg": [
+      206,
+      206,
+      206
+    ]
+  },
+  {
+    "class": "table_row",
+    "layer0.tint": [
+      60,
+      56,
+      54
+    ],
+    "layer0.opacity": 0
+  },
+  {
+    "class": "table_row",
+    "attributes": [
+      "selected"
+    ],
+    "layer0.opacity": 1
+  },
+  {
+    "class": "tool_tip_control",
+    "layer0.tint": [
+      242,
+      229,
+      188
+    ],
+    "layer0.inner_margin": [
+      0,
+      0
+    ],
+    "layer0.opacity": 1,
+    "content_margin": [
+      16,
+      8
+    ]
+  },
+  {
+    "class": "tool_tip_label_control",
+    "color": [
+      50,
+      48,
+      47
+    ]
+  },
+  {
+    "class": "overlay_control",
+    "layer0.tint": [
+      34,
+      32,
+      32
+    ],
+    "layer0.inner_margin": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "layer0.opacity": 1,
+    "layer1.tint": [
+      18,
+      17,
+      17
+    ],
+    "layer1.inner_margin": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "layer1.opacity": 1,
+    "layer1.draw_center": false,
+    "content_margin": [
+      1,
+      14,
+      1,
+      1
+    ]
+  },
+  {
+    "class": "mini_quick_panel_row",
+    "layer0.tint": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "layer0.inner_margin": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "layer0.opacity": 1,
+    "layer1.tint": [
+      18,
+      17,
+      17
+    ],
+    "layer1.inner_margin": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "layer1.opacity": 1,
+    "layer1.draw_center": false
+  },
+  {
+    "class": "mini_quick_panel_row",
+    "attributes": [
+      "selected"
+    ],
+    "layer0.tint": [
+      56,
+      54,
+      53
+    ]
+  },
+  {
+    "class": "quick_panel",
+    "row_padding": [
+      14,
+      12
+    ],
+    "layer0.tint": [
+      34,
+      32,
+      32
+    ],
+    "layer0.opacity": 1
+  },
+  {
+    "class": "quick_panel_row",
+    "layer0.tint": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "layer0.opacity": 1,
+    "layer1.tint": [
+      18,
+      17,
+      17
+    ],
+    "layer1.inner_margin": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "layer1.opacity": 1,
+    "layer1.draw_center": false
+  },
+  {
+    "class": "quick_panel_row",
+    "parents": [
+      {
+        "class": "overlay_control"
+      }
+    ],
+    "layer0.tint": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "layer0.opacity": 1
+  },
+  {
+    "class": "quick_panel",
+    "parents": [
+      {
+        "class": "overlay_control"
+      }
+    ],
+    "row_padding": [
+      18,
+      12
+    ],
+    "layer0.tint": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "layer0.opacity": 1
+  },
+  {
+    "class": "quick_panel_row",
+    "attributes": [
+      "selected"
+    ],
+    "layer0.tint": [
+      56,
+      54,
+      53
+    ],
+    "layer1.opacity": 0
+  },
+  {
+    "class": "quick_panel_label",
+    "fg": [
+      150,
+      150,
+      150
+    ],
+    "match_fg": [
+      206,
+      206,
+      206
+    ],
+    "selected_fg": [
+      150,
+      150,
+      150
+    ],
+    "selected_match_fg": [
+      206,
+      206,
+      206
+    ]
+  },
+  {
+    "class": "quick_panel_label",
+    "parents": [
+      {
+        "class": "overlay_control"
+      }
+    ],
+    "fg": [
+      150,
+      150,
+      150
+    ],
+    "match_fg": [
+      206,
+      206,
+      206
+    ],
+    "selected_fg": [
+      150,
+      150,
+      150
+    ],
+    "selected_match_fg": [
+      206,
+      206,
+      206
+    ]
+  },
+  {
+    "class": "quick_panel_path_label",
+    "fg": [
+      150,
+      150,
+      150
+    ],
+    "match_fg": [
+      206,
+      206,
+      206
+    ],
+    "selected_fg": [
+      150,
+      150,
+      150
+    ],
+    "selected_match_fg": [
+      206,
+      206,
+      206
+    ]
+  },
+  {
+    "class": "quick_panel_score_label",
+    "fg": [
+      150,
+      150,
+      150
+    ],
+    "selected_fg": [
+      206,
+      206,
+      206
+    ]
+  },
+  {
+    "class": "tabset_control",
+    "layer0.opacity": 1,
+    "layer0.tint": [
+      34,
+      32,
+      32
+    ],
+    "tint_index": 1,
+    "layer0.inner_margin": [
+      0,
+      0
+    ],
+    "layer1.opacity": 1,
+    "layer1.tint": [
+      18,
+      17,
+      17
+    ],
+    "layer1.draw_center": false,
+    "layer1.inner_margin": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "content_margin": [
+      -1,
+      0,
+      12,
+      0
+    ],
+    "tab_overlap": 0,
+    "tab_width": 180,
+    "tab_min_width": 80,
+    "tab_height": 51,
+    "mouse_wheel_switch": false
+  },
+  {
+    "class": "tabset_control",
+    "settings": [
+      "mouse_wheel_switches_tabs",
+      "!enable_tab_scrolling"
+    ],
+    "mouse_wheel_switch": true
+  },
+  {
+    "class": "tab_control",
+    "layer0.tint": [
+      34,
+      32,
+      32
+    ],
+    "layer0.opacity": 1,
+    "layer1.tint": [
+      18,
+      17,
+      17
+    ],
+    "layer1.draw_center": false,
+    "layer1.inner_margin": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "layer1.opacity": 0,
+    "layer2.tint": [
+      18,
+      17,
+      17
+    ],
+    "layer2.draw_center": false,
+    "layer2.inner_margin": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "layer2.opacity": 1,
+    "content_margin": [
+      16,
+      0,
+      12,
+      0
+    ],
+    "max_margin_trim": 0,
+    "hit_test_level": 0.4
+  },
+  {
+    "class": "tab_control",
+    "attributes": [
+      "selected"
+    ],
+    "layer0.tint": [
+      50,
+      48,
+      47
+    ],
+    "layer1.opacity": 1,
+    "layer2.opacity": 0
+  },
+  {
+    "class": "tab_label",
+    "fg": [
+      131,
+      131,
+      131
+    ],
+    "font.size": 11,
+    "font.italic": false,
+    "font.bold": false
+  },
+  {
+    "class": "tab_label",
+    "parents": [
+      {
+        "class": "tab_control",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "fg": [
+      187,
+      187,
+      187
+    ]
+  },
+  {
+    "class": "tab_label",
+    "attributes": [
+      "transient"
+    ],
+    "font.italic": true
+  },
+  {
+    "class": "tab_label",
+    "parents": [
+      {
+        "class": "tab_control",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "fg": [
+      168,
+      168,
+      168
+    ]
+  },
+  {
+    "class": "tab_label",
+    "parents": [
+      {
+        "class": "tab_control",
+        "attributes": [
+          "selected",
+          "hover"
+        ]
+      }
+    ],
+    "fg": [
+      187,
+      187,
+      187
+    ]
+  },
+  {
+    "class": "tab_close_button",
+    "content_margin": [
+      8,
+      8
+    ],
+    "layer0.texture": "gruvbox/assets/dark/close.png",
+    "layer0.inner_margin": 0,
+    "layer0.opacity": 1,
+    "layer1.texture": "gruvbox/assets/dark/close--hover.png",
+    "layer1.opacity": 0,
+    "layer2.texture": "gruvbox/assets/dark/dirty.png",
+    "layer2.inner_margin": 0,
+    "layer3.texture": "gruvbox/assets/dark/dirty.png",
+    "layer3.opacity": 0
+  },
+  {
+    "class": "tab_close_button",
+    "settings": [
+      "show_tab_close_buttons"
+    ],
+    "layer0.opacity": 1
+  },
+  {
+    "class": "tab_close_button",
+    "settings": [
+      "!show_tab_close_buttons"
+    ],
+    "layer0.opacity": 0
+  },
+  {
+    "class": "tab_close_button",
+    "settings": [
+      "show_tab_close_buttons"
+    ],
+    "parents": [
+      {
+        "class": "tab_control",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "layer0.opacity": 1,
+    "layer1.opacity": 0
+  },
+  {
+    "class": "tab_close_button",
+    "settings": [
+      "show_tab_close_buttons"
+    ],
+    "attributes": [
+      "hover"
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 1
+  },
+  {
+    "class": "tab_close_button",
+    "settings": [
+      "!show_tab_close_buttons"
+    ],
+    "parents": [
+      {
+        "class": "tab_control",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0
+  },
+  {
+    "class": "tab_close_button",
+    "settings": [
+      "!show_tab_close_buttons"
+    ],
+    "attributes": [
+      "hover"
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 1
+  },
+  {
+    "class": "tab_close_button",
+    "parents": [
+      {
+        "class": "tab_control",
+        "attributes": [
+          "dirty"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "layer2.opacity": 0,
+    "layer3.opacity": 1,
+    "content_margin": [
+      8,
+      8
+    ]
+  },
+  {
+    "class": "tab_close_button",
+    "parents": [
+      {
+        "class": "tab_control",
+        "attributes": [
+          "dirty"
+        ]
+      }
+    ],
+    "attributes": [
+      "hover"
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 1,
+    "layer2.opacity": 0,
+    "layer3.opacity": 0
+  },
+  {
+    "class": "tab_close_button",
+    "parents": [
+      {
+        "class": "tab_control",
+        "attributes": [
+          "selected",
+          "dirty"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "layer2.opacity": 0,
+    "layer3.opacity": 1
+  },
+  {
+    "class": "tab_close_button",
+    "parents": [
+      {
+        "class": "tab_control",
+        "attributes": [
+          "selected",
+          "dirty"
+        ]
+      }
+    ],
+    "attributes": [
+      "hover"
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 1,
+    "layer2.opacity": 0,
+    "layer3.opacity": 0
+  },
+  {
+    "class": "scroll_tabs_left_button",
+    "content_margin": [
+      14,
+      7
+    ],
+    "layer0.texture": "gruvbox/assets/dark/prevtab.png",
+    "layer0.opacity": 1,
+    "layer0.inner_margin": 0,
+    "layer1.texture": "gruvbox/assets/dark/prevtab--hover.png",
+    "layer1.opacity": 0,
+    "layer1.inner_margin": 0
+  },
+  {
+    "class": "scroll_tabs_left_button",
+    "attributes": [
+      "hover"
+    ],
+    "layer1.opacity": 1
+  },
+  {
+    "class": "scroll_tabs_right_button",
+    "content_margin": [
+      14,
+      7
+    ],
+    "layer0.texture": "gruvbox/assets/dark/nexttab.png",
+    "layer0.opacity": 1,
+    "layer0.inner_margin": 0,
+    "layer1.texture": "gruvbox/assets/dark/nexttab--hover.png",
+    "layer1.opacity": 0,
+    "layer1.inner_margin": 0
+  },
+  {
+    "class": "scroll_tabs_right_button",
+    "attributes": [
+      "hover"
+    ],
+    "layer1.opacity": 1
+  },
+  {
+    "class": "show_tabs_dropdown_button",
+    "content_margin": [
+      12,
+      12
+    ],
+    "layer0.texture": "gruvbox/assets/dark/more.png",
+    "layer0.opacity": 1,
+    "layer0.inner_margin": 0,
+    "layer1.texture": "gruvbox/assets/dark/more--hover.png",
+    "layer1.opacity": 0,
+    "layer1.inner_margin": 0
+  },
+  {
+    "class": "show_tabs_dropdown_button",
+    "attributes": [
+      "hover"
+    ],
+    "layer1.opacity": 1
+  },
+  {
+    "class": "sidebar_container",
+    "layer0.opacity": 1,
+    "layer0.tint": [
+      34,
+      32,
+      32
+    ],
+    "layer0.inner_margin": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "layer1.tint": [
+      18,
+      17,
+      17
+    ],
+    "layer1.draw_center": false,
+    "layer1.inner_margin": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "layer1.opacity": 1,
+    "content_margin": [
+      0,
+      12,
+      0,
+      0
+    ]
+  },
+  {
+    "class": "sidebar_tree",
+    "row_padding": [
+      24,
+      5
+    ],
+    "indent": 16,
+    "indent_offset": 0,
+    "indent_top_level": false,
+    "layer0.opacity": 1,
+    "layer0.tint": [
+      34,
+      32,
+      32
+    ],
+    "layer0.inner_margin": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "layer1.tint": [
+      18,
+      17,
+      17
+    ],
+    "layer1.draw_center": false,
+    "layer1.inner_margin": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "layer1.opacity": 1
+  },
+  {
+    "class": "sidebar_heading",
+    "color": [
+      206,
+      206,
+      206
+    ],
+    "font.bold": false,
+    "font.size": 12
+  },
+  {
+    "class": "sidebar_heading",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ]
+  },
+  {
+    "class": "tree_row",
+    "layer1.tint": [
+      18,
+      17,
+      17
+    ],
+    "layer1.draw_center": false,
+    "layer1.inner_margin": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "layer1.opacity": 1,
+    "layer2.tint": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "layer2.opacity": 0
+  },
+  {
+    "class": "tree_row",
+    "attributes": [
+      "selected"
+    ],
+    "layer2.opacity": 1
+  },
+  {
+    "class": "sidebar_label",
+    "color": [
+      131,
+      131,
+      131
+    ],
+    "font.bold": false,
+    "font.italic": false
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "color": [
+      206,
+      206,
+      206
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "font.bold": false,
+    "color": [
+      206,
+      206,
+      206
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expandable"
+        ]
+      }
+    ],
+    "color": [
+      150,
+      150,
+      150
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expandable"
+        ]
+      }
+    ],
+    "settings": [
+      "bold_folder_labels"
+    ],
+    "font.bold": true
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expanded"
+        ]
+      }
+    ],
+    "color": [
+      206,
+      206,
+      206
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "color": [
+      206,
+      206,
+      206
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expanded"
+        ]
+      }
+    ],
+    "settings": [
+      "bold_folder_labels"
+    ],
+    "font.bold": true
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expanded",
+          "selected"
+        ]
+      }
+    ],
+    "color": [
+      206,
+      206,
+      206
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "attributes": [
+      "transient"
+    ],
+    "font.italic": false
+  },
+  {
+    "class": "icon_file_type",
+    "layer0.opacity": 0.6,
+    "content_margin": [
+      9,
+      9
+    ]
+  },
+  {
+    "class": "icon_file_type",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "layer0.opacity": 1,
+    "content_margin": [
+      9,
+      9
+    ]
+  },
+  {
+    "class": "icon_folder",
+    "content_margin": [
+      8,
+      8
+    ],
+    "layer0.opacity": 0,
+    "layer1.texture": "gruvbox\\assets\\commons\\folder.png",
+    "layer1.opacity": 1,
+    "layer2.texture": "gruvbox/assets/dark/folder--expanded.png",
+    "layer2.opacity": 0
+  },
+  {
+    "class": "icon_folder",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "layer1.opacity": 0,
+    "layer2.opacity": 1
+  },
+  {
+    "class": "icon_folder",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expanded",
+          "hover"
+        ]
+      }
+    ],
+    "layer1.opacity": 0,
+    "layer2.opacity": 1
+  },
+  {
+    "class": "icon_folder",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expanded"
+        ]
+      }
+    ],
+    "layer1.opacity": 0,
+    "layer2.opacity": 1
+  },
+  {
+    "class": "icon_folder_loading",
+    "layer1.texture": "",
+    "layer0.opacity": 0,
+    "content_margin": [
+      8,
+      8
+    ]
+  },
+  {
+    "class": "tree_row",
+    "layer0.tint": [
+      34,
+      32,
+      32
+    ],
+    "layer0.opacity": 1,
+    "layer0.inner_margin": [
+      1,
+      1
+    ]
+  },
+  {
+    "class": "tree_row",
+    "attributes": [
+      "selected"
+    ],
+    "layer0.opacity": 1
+  },
+  {
+    "class": "scroll_bar_control",
+    "layer0.tint": [
+      34,
+      32,
+      32
+    ],
+    "layer0.opacity": 1,
+    "layer0.inner_margin": [
+      0,
+      6
+    ],
+    "layer1.tint": [
+      18,
+      17,
+      17
+    ],
+    "layer1.opacity": 1,
+    "layer1.draw_center": false,
+    "layer1.inner_margin": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "blur": false
+  },
+  {
+    "class": "scroll_bar_control",
+    "parents": [
+      {
+        "class": "sidebar_container"
+      }
+    ],
+    "layer1.inner_margin": [
+      0,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "class": "scroll_bar_control",
+    "parents": [
+      {
+        "class": "panel_control"
+      }
+    ],
+    "layer1.opacity": 0
+  },
+  {
+    "class": "scroll_bar_control",
+    "parents": [
+      {
+        "class": "popup_control"
+      }
+    ],
+    "layer1.opacity": 0
+  },
+  {
+    "class": "scroll_bar_control",
+    "parents": [
+      {
+        "class": "overlay_control"
+      }
+    ],
+    "layer1.opacity": 0
+  },
+  {
+    "class": "scroll_bar_control",
+    "attributes": [
+      "horizontal"
+    ],
+    "layer1.inner_margin": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "blur": false
+  },
+  {
+    "class": "scroll_bar_control",
+    "attributes": [
+      "horizontal"
+    ],
+    "parents": [
+      {
+        "class": "sidebar_container"
+      }
+    ],
+    "layer1.opacity": 0
+  },
+  {
+    "class": "scroll_bar_control",
+    "attributes": [
+      "horizontal"
+    ],
+    "parents": [
+      {
+        "class": "popup_control"
+      }
+    ],
+    "layer1.opacity": 0
+  },
+  {
+    "class": "scroll_bar_control",
+    "attributes": [
+      "horizontal"
+    ],
+    "parents": [
+      {
+        "class": "overlay_control"
+      }
+    ],
+    "layer0.opacity": 0
+  },
+  {
+    "class": "scroll_bar_control",
+    "attributes": [
+      "horizontal"
+    ],
+    "parents": [
+      {
+        "class": "panel_control"
+      }
+    ],
+    "layer1.opacity": 0
+  },
+  {
+    "class": "scroll_corner_control",
+    "layer0.tint": [
+      34,
+      32,
+      32
+    ],
+    "layer0.opacity": 1,
+    "layer0.inner_margin": [
+      1,
+      1
+    ],
+    "layer1.tint": [
+      18,
+      17,
+      17
+    ],
+    "layer1.opacity": 1,
+    "layer1.draw_center": false,
+    "layer1.inner_margin": [
+      0,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "class": "scroll_corner_control",
+    "parents": [
+      {
+        "class": "panel_control"
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0
+  },
+  {
+    "class": "puck_control",
+    "layer0.tint": [
+      34,
+      32,
+      32
+    ],
+    "layer0.opacity": 1,
+    "layer0.inner_margin": [
+      8,
+      8
+    ],
+    "layer1.texture": "gruvbox/assets/dark/puckvertical.png",
+    "layer1.opacity": 1,
+    "layer1.inner_margin": [
+      8,
+      8
+    ],
+    "content_margin": [
+      6,
+      16
+    ],
+    "blur": false
+  },
+  {
+    "class": "puck_control",
+    "attributes": [
+      "horizontal"
+    ],
+    "layer1.texture": "gruvbox/assets/dark/puckhorizontal.png",
+    "content_margin": [
+      16,
+      6
+    ]
+  },
+  {
+    "class": "scroll_area_control",
+    "settings": [
+      "overlay_scroll_bars"
+    ],
+    "overlay": true
+  },
+  {
+    "class": "scroll_area_control",
+    "settings": [
+      "!overlay_scroll_bars"
+    ],
+    "overlay": false
+  },
+  {
+    "class": "scroll_area_control",
+    "parents": [
+      {
+        "class": "overlay_control"
+      }
+    ],
+    "settings": [
+      "overlay_scroll_bars"
+    ],
+    "overlay": true
+  },
+  {
+    "class": "scroll_area_control",
+    "parents": [
+      {
+        "class": "sidebar_container"
+      }
+    ],
+    "settings": [
+      "!overlay_scroll_bars"
+    ],
+    "overlay": false
+  },
+  {
+    "class": "scroll_bar_control",
+    "settings": [
+      "overlay_scroll_bars"
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "blur": false
+  },
+  {
+    "class": "scroll_bar_control",
+    "settings": [
+      "overlay_scroll_bars"
+    ],
+    "attributes": [
+      "horizontal"
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "blur": false
+  },
+  {
+    "class": "puck_control",
+    "layer0.tint": [
+      34,
+      32,
+      32
+    ],
+    "layer0.opacity": 0,
+    "layer0.inner_margin": [
+      1,
+      8,
+      1,
+      8
+    ],
+    "layer1.texture": "gruvbox/assets/dark/puckvertical.png",
+    "layer1.inner_margin": [
+      1,
+      8,
+      1,
+      8
+    ],
+    "content_margin": [
+      6,
+      16
+    ],
+    "blur": false
+  },
+  {
+    "class": "puck_control",
+    "attributes": [
+      "horizontal"
+    ],
+    "layer0.inner_margin": [
+      8,
+      1,
+      8,
+      1
+    ],
+    "layer1.texture": "gruvbox/assets/dark/puckhorizontal.png",
+    "layer1.inner_margin": [
+      8,
+      1,
+      8,
+      1
+    ],
+    "content_margin": [
+      16,
+      6
+    ]
+  },
+  {
+    "class": "puck_control",
+    "settings": [
+      "overlay_scroll_bars"
+    ],
+    "layer1.texture": "gruvbox/assets/dark/puckvertical--overlay.png"
+  },
+  {
+    "class": "puck_control",
+    "attributes": [
+      "horizontal"
+    ],
+    "settings": [
+      "overlay_scroll_bars"
+    ],
+    "layer1.texture": "gruvbox/assets/dark/puckhorizontal--overlay.png"
+  },
+  {
+    "class": "minimap_control",
+    "settings": [
+      "always_show_minimap_viewport"
+    ],
+    "viewport_opacity": 0.57
+  },
+  {
+    "class": "minimap_control",
+    "settings": [
+      "!always_show_minimap_viewport"
+    ],
+    "viewport_opacity": 0
+  },
+  {
+    "class": "minimap_control",
+    "attributes": [
+      "hover"
+    ],
+    "viewport_opacity": 1
+  },
+  {
+    "class": "label_control",
+    "color": [
+      112,
+      112,
+      112
+    ]
+  },
+  {
+    "class": "label_control",
+    "parents": [
+      {
+        "class": "status_bar"
+      }
+    ],
+    "color": [
+      168,
+      168,
+      168
+    ]
+  },
+  {
+    "class": "status_bar",
+    "layer0.tint": [
+      34,
+      32,
+      32
+    ],
+    "layer0.opacity": 1,
+    "layer0.inner_margin": [
+      2,
+      2
+    ],
+    "layer2.opacity": 1,
+    "layer2.tint": [
+      18,
+      17,
+      17
+    ],
+    "layer2.draw_center": false,
+    "layer2.inner_margin": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "layer1.tint": [
+      34,
+      32,
+      32
+    ],
+    "layer1.opacity": 1,
+    "layer1.inner_margin": [
+      2,
+      2
+    ],
+    "content_margin": [
+      10,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "class": "status_container",
+    "content_margin": [
+      12,
+      11,
+      12,
+      11
+    ]
+  },
+  {
+    "class": "status_button",
+    "layer0.tint": [
+      57,
+      57,
+      57
+    ],
+    "layer0.opacity": 1,
+    "layer0.draw_center": false,
+    "layer0.inner_margin": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "content_margin": [
+      12,
+      0,
+      12,
+      0
+    ],
+    "min_size": [
+      75,
+      0
+    ]
+  },
+  {
+    "class": "panel_button_control",
+    "layer0.texture": "gruvbox/assets/dark/panels.png",
+    "layer0.opacity": 1,
+    "content_margin": [
+      12,
+      12
+    ]
+  },
+  {
+    "class": "panel_button_control",
+    "attributes": [
+      "hover"
+    ],
+    "layer0.texture": "gruvbox/assets/dark/panels--hover.png"
+  },
+  {
+    "class": "panel_control",
+    "layer0.tint": [
+      34,
+      32,
+      32
+    ],
+    "layer0.inner_margin": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "layer0.opacity": 1,
+    "layer1.tint": [
+      18,
+      17,
+      17
+    ],
+    "layer1.draw_center": false,
+    "layer1.inner_margin": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "layer1.opacity": 1,
+    "content_margin": [
+      6,
+      14,
+      6,
+      8
+    ]
+  },
+  {
+    "class": "panel_close_button",
+    "layer0.texture": "gruvbox/assets/dark/close.png",
+    "layer0.opacity": 0.6,
+    "layer1.texture": "gruvbox/assets/dark/close--hover.png",
+    "layer1.opacity": 0,
+    "content_margin": [
+      0,
+      0
+    ]
+  },
+  {
+    "class": "panel_close_button",
+    "attributes": [
+      "hover"
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 1
+  },
+  {
+    "class": "text_line_control",
+    "content_margin": [
+      18,
+      2,
+      18,
+      2
+    ]
+  },
+  {
+    "class": "text_line_control",
+    "parents": [
+      {
+        "class": "overlay_control"
+      }
+    ],
+    "content_margin": [
+      18,
+      4,
+      18,
+      14
+    ]
+  },
+  {
+    "class": "dropdown_button_control",
+    "content_margin": [
+      12,
+      12
+    ],
+    "layer0.texture": "gruvbox/assets/dark/more.png",
+    "layer0.opacity": 1,
+    "layer0.inner_margin": [
+      0,
+      0
+    ],
+    "layer1.texture": "gruvbox/assets/dark/more--hover.png",
+    "layer1.opacity": 0,
+    "layer1.inner_margin": [
+      0,
+      0
+    ]
+  },
+  {
+    "class": "dropdown_button_control",
+    "attributes": [
+      "hover"
+    ],
+    "layer1.opacity": 1
+  },
+  {
+    "class": "label_control",
+    "parents": [
+      {
+        "class": "button_control"
+      }
+    ],
+    "color": [
+      215,
+      215,
+      215
+    ],
+    "font.bold": false
+  },
+  {
+    "class": "button_control",
+    "content_margin": [
+      15,
+      12,
+      15,
+      12
+    ],
+    "min_size": [
+      70,
+      0
+    ],
+    "layer0.tint": [
+      34,
+      32,
+      32
+    ],
+    "layer0.opacity": 1,
+    "layer1.tint": [
+      60,
+      56,
+      54
+    ],
+    "layer1.opacity": 0,
+    "layer2.tint": [
+      18,
+      17,
+      17
+    ],
+    "layer2.opacity": 0
+  },
+  {
+    "class": "button_control",
+    "attributes": [
+      "hover"
+    ],
+    "layer1.opacity": 1
+  },
+  {
+    "class": "button_control",
+    "attributes": [
+      "pressed"
+    ],
+    "layer2.opacity": 1
+  },
+  {
+    "class": "button_control",
+    "attributes": [
+      "pressed",
+      "hover"
+    ],
+    "layer2.opacity": 1
+  },
+  {
+    "class": "icon_button_control",
+    "content_margin": [
+      10,
+      6
+    ]
+  },
+  {
+    "class": "icon_regex",
+    "layer0.texture": "gruvbox/assets/dark/regex.png",
+    "layer0.opacity": 1,
+    "layer1.texture": "gruvbox/assets/dark/regex--hover.png",
+    "layer1.opacity": 0,
+    "layer2.texture": "gruvbox/assets/dark/regex--selected.png",
+    "layer2.opacity": 0,
+    "content_margin": [
+      12,
+      12
+    ]
+  },
+  {
+    "class": "icon_regex",
+    "parents": [
+      {
+        "class": "icon_button_control",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 1,
+    "layer2.opacity": 0
+  },
+  {
+    "class": "icon_regex",
+    "parents": [
+      {
+        "class": "icon_button_control",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "layer2.opacity": 1
+  },
+  {
+    "class": "icon_case",
+    "layer0.texture": "gruvbox/assets/dark/casesensitive.png",
+    "layer0.opacity": 1,
+    "layer1.texture": "gruvbox/assets/dark/casesensitive--hover.png",
+    "layer1.opacity": 0,
+    "layer2.texture": "gruvbox/assets/dark/casesensitive--selected.png",
+    "layer2.opacity": 0,
+    "content_margin": [
+      12,
+      12
+    ]
+  },
+  {
+    "class": "icon_case",
+    "parents": [
+      {
+        "class": "icon_button_control",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 1,
+    "layer2.opacity": 0
+  },
+  {
+    "class": "icon_case",
+    "parents": [
+      {
+        "class": "icon_button_control",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "layer2.opacity": 1
+  },
+  {
+    "class": "icon_whole_word",
+    "layer0.texture": "gruvbox/assets/dark/wholeword.png",
+    "layer0.opacity": 1,
+    "layer1.texture": "gruvbox/assets/dark/wholeword--hover.png",
+    "layer1.opacity": 0,
+    "layer2.texture": "gruvbox/assets/dark/wholeword--selected.png",
+    "layer2.opacity": 0,
+    "content_margin": [
+      12,
+      12
+    ]
+  },
+  {
+    "class": "icon_whole_word",
+    "parents": [
+      {
+        "class": "icon_button_control",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 1,
+    "layer2.opacity": 0
+  },
+  {
+    "class": "icon_whole_word",
+    "parents": [
+      {
+        "class": "icon_button_control",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "layer2.opacity": 1
+  },
+  {
+    "class": "icon_wrap",
+    "layer0.texture": "gruvbox/assets/dark/wrap.png",
+    "layer0.opacity": 1,
+    "layer1.texture": "gruvbox/assets/dark/wrap--hover.png",
+    "layer1.opacity": 0,
+    "layer2.texture": "gruvbox/assets/dark/wrap--selected.png",
+    "layer2.opacity": 0,
+    "content_margin": [
+      12,
+      12
+    ]
+  },
+  {
+    "class": "icon_wrap",
+    "parents": [
+      {
+        "class": "icon_button_control",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 1,
+    "layer2.opacity": 0
+  },
+  {
+    "class": "icon_wrap",
+    "parents": [
+      {
+        "class": "icon_button_control",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "layer2.opacity": 1
+  },
+  {
+    "class": "icon_in_selection",
+    "layer0.texture": "gruvbox/assets/dark/inselection.png",
+    "layer0.opacity": 1,
+    "layer1.texture": "gruvbox/assets/dark/inselection--hover.png",
+    "layer1.opacity": 0,
+    "layer2.texture": "gruvbox/assets/dark/inselection--selected.png",
+    "layer2.opacity": 0,
+    "content_margin": [
+      12,
+      12
+    ]
+  },
+  {
+    "class": "icon_in_selection",
+    "parents": [
+      {
+        "class": "icon_button_control",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 1,
+    "layer2.opacity": 0
+  },
+  {
+    "class": "icon_in_selection",
+    "parents": [
+      {
+        "class": "icon_button_control",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "layer2.opacity": 1
+  },
+  {
+    "class": "icon_highlight",
+    "layer0.texture": "gruvbox/assets/dark/highlight.png",
+    "layer0.opacity": 1,
+    "layer1.texture": "gruvbox/assets/dark/highlight--hover.png",
+    "layer1.opacity": 0,
+    "layer2.texture": "gruvbox/assets/dark/highlight--selected.png",
+    "layer2.opacity": 0,
+    "content_margin": [
+      12,
+      12
+    ]
+  },
+  {
+    "class": "icon_highlight",
+    "parents": [
+      {
+        "class": "icon_button_control",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 1,
+    "layer2.opacity": 0
+  },
+  {
+    "class": "icon_highlight",
+    "parents": [
+      {
+        "class": "icon_button_control",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "layer2.opacity": 1
+  },
+  {
+    "class": "icon_preserve_case",
+    "layer0.texture": "gruvbox/assets/dark/preservecase.png",
+    "layer0.opacity": 1,
+    "layer1.texture": "gruvbox/assets/dark/preservecase--hover.png",
+    "layer1.opacity": 0,
+    "layer2.texture": "gruvbox/assets/dark/preservecase--selected.png",
+    "layer2.opacity": 0,
+    "content_margin": [
+      12,
+      12
+    ]
+  },
+  {
+    "class": "icon_preserve_case",
+    "parents": [
+      {
+        "class": "icon_button_control",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 1,
+    "layer2.opacity": 0
+  },
+  {
+    "class": "icon_preserve_case",
+    "parents": [
+      {
+        "class": "icon_button_control",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "layer2.opacity": 1
+  },
+  {
+    "class": "icon_context",
+    "layer0.texture": "gruvbox/assets/dark/context.png",
+    "layer0.opacity": 1,
+    "layer1.texture": "gruvbox/assets/dark/context--hover.png",
+    "layer1.opacity": 0,
+    "layer2.texture": "gruvbox/assets/dark/context--selected.png",
+    "layer2.opacity": 0,
+    "content_margin": [
+      12,
+      12
+    ]
+  },
+  {
+    "class": "icon_context",
+    "parents": [
+      {
+        "class": "icon_button_control",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 1,
+    "layer2.opacity": 0
+  },
+  {
+    "class": "icon_context",
+    "parents": [
+      {
+        "class": "icon_button_control",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "layer2.opacity": 1
+  },
+  {
+    "class": "icon_use_buffer",
+    "layer0.texture": "gruvbox/assets/dark/buffer.png",
+    "layer0.opacity": 1,
+    "layer1.texture": "gruvbox/assets/dark/buffer--hover.png",
+    "layer1.opacity": 0,
+    "layer2.texture": "gruvbox/assets/dark/buffer--selected.png",
+    "layer2.opacity": 0,
+    "content_margin": [
+      12,
+      12
+    ]
+  },
+  {
+    "class": "icon_use_buffer",
+    "parents": [
+      {
+        "class": "icon_button_control",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 1,
+    "layer2.opacity": 0
+  },
+  {
+    "class": "icon_use_buffer",
+    "parents": [
+      {
+        "class": "icon_button_control",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "layer2.opacity": 1
+  },
+  {
+    "class": "auto_complete_label",
+    "match_fg": [
+      251,
+      73,
+      52
+    ],
+    "selected_match_fg": [
+      251,
+      73,
+      52
+    ],
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expanded"
+        ]
+      }
+    ],
+    "color": [
+      251,
+      73,
+      52
+    ],
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "color": [
+      251,
+      73,
+      52
+    ],
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "color": [
+      251,
+      73,
+      52
+    ],
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": "gruvbox\\assets\\accent-red\\dark__folder--expanded.png",
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "icon_folder_loading",
+    "layer1.texture": "",
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "scroll_tabs_left_button",
+    "layer1.texture": "gruvbox\\assets\\accent-red\\dark__prevtab--hover.png",
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "scroll_tabs_right_button",
+    "layer1.texture": "gruvbox\\assets\\accent-red\\dark__nexttab--hover.png",
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "fold_button_control",
+    "layer1.texture": "gruvbox\\assets\\accent-red\\dark__fold--hover.png",
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "fold_button_control",
+    "attributes": [
+      "expanded"
+    ],
+    "layer1.texture": "gruvbox\\assets\\accent-red\\dark__unfold--hover.png",
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "quick_panel_label",
+    "match_fg": [
+      251,
+      73,
+      52
+    ],
+    "selected_match_fg": [
+      251,
+      73,
+      52
+    ],
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "quick_panel_label",
+    "parents": [
+      {
+        "class": "overlay_control"
+      }
+    ],
+    "match_fg": [
+      251,
+      73,
+      52
+    ],
+    "selected_match_fg": [
+      251,
+      73,
+      52
+    ],
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "quick_panel_path_label",
+    "match_fg": [
+      251,
+      73,
+      52
+    ],
+    "selected_match_fg": [
+      251,
+      73,
+      52
+    ],
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "quick_panel_score_label",
+    "selected_fg": [
+      251,
+      73,
+      52
+    ],
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "show_tabs_dropdown_button",
+    "layer1.texture": "gruvbox\\assets\\accent-red\\dark__more.png",
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "dropdown_button_control",
+    "layer1.texture": "gruvbox\\assets\\accent-red\\dark__more.png",
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "panel_button_control",
+    "attributes": [
+      "hover"
+    ],
+    "layer0.texture": "gruvbox\\assets\\accent-red\\dark__panels.png",
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "icon_regex",
+    "layer2.texture": "gruvbox\\assets\\accent-red\\dark__regex.png",
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "icon_case",
+    "layer2.texture": "gruvbox\\assets\\accent-red\\dark__casesensitive.png",
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "icon_whole_word",
+    "layer2.texture": "gruvbox\\assets\\accent-red\\dark__wholeword.png",
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "icon_wrap",
+    "layer2.texture": "gruvbox\\assets\\accent-red\\dark__wrap.png",
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "icon_in_selection",
+    "layer2.texture": "gruvbox\\assets\\accent-red\\dark__inselection.png",
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "icon_highlight",
+    "layer2.texture": "gruvbox\\assets\\accent-red\\dark__highlight.png",
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "icon_preserve_case",
+    "layer2.texture": "gruvbox\\assets\\accent-red\\dark__preservecase.png",
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "icon_context",
+    "layer2.texture": "gruvbox\\assets\\accent-red\\dark__context.png",
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "icon_use_buffer",
+    "layer2.texture": "gruvbox\\assets\\accent-red\\dark__buffer.png",
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "auto_complete_label",
+    "match_fg": [
+      184,
+      187,
+      38
+    ],
+    "selected_match_fg": [
+      184,
+      187,
+      38
+    ],
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expanded"
+        ]
+      }
+    ],
+    "color": [
+      184,
+      187,
+      38
+    ],
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "color": [
+      184,
+      187,
+      38
+    ],
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "color": [
+      184,
+      187,
+      38
+    ],
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": "gruvbox\\assets\\accent-green\\dark__folder--expanded.png",
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "icon_folder_loading",
+    "layer1.texture": "",
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "scroll_tabs_left_button",
+    "layer1.texture": "gruvbox\\assets\\accent-green\\dark__prevtab--hover.png",
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "scroll_tabs_right_button",
+    "layer1.texture": "gruvbox\\assets\\accent-green\\dark__nexttab--hover.png",
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "fold_button_control",
+    "layer1.texture": "gruvbox\\assets\\accent-green\\dark__fold--hover.png",
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "fold_button_control",
+    "attributes": [
+      "expanded"
+    ],
+    "layer1.texture": "gruvbox\\assets\\accent-green\\dark__unfold--hover.png",
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "quick_panel_label",
+    "match_fg": [
+      184,
+      187,
+      38
+    ],
+    "selected_match_fg": [
+      184,
+      187,
+      38
+    ],
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "quick_panel_label",
+    "parents": [
+      {
+        "class": "overlay_control"
+      }
+    ],
+    "match_fg": [
+      184,
+      187,
+      38
+    ],
+    "selected_match_fg": [
+      184,
+      187,
+      38
+    ],
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "quick_panel_path_label",
+    "match_fg": [
+      184,
+      187,
+      38
+    ],
+    "selected_match_fg": [
+      184,
+      187,
+      38
+    ],
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "quick_panel_score_label",
+    "selected_fg": [
+      184,
+      187,
+      38
+    ],
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "show_tabs_dropdown_button",
+    "layer1.texture": "gruvbox\\assets\\accent-green\\dark__more.png",
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "dropdown_button_control",
+    "layer1.texture": "gruvbox\\assets\\accent-green\\dark__more.png",
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "panel_button_control",
+    "attributes": [
+      "hover"
+    ],
+    "layer0.texture": "gruvbox\\assets\\accent-green\\dark__panels.png",
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "icon_regex",
+    "layer2.texture": "gruvbox\\assets\\accent-green\\dark__regex.png",
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "icon_case",
+    "layer2.texture": "gruvbox\\assets\\accent-green\\dark__casesensitive.png",
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "icon_whole_word",
+    "layer2.texture": "gruvbox\\assets\\accent-green\\dark__wholeword.png",
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "icon_wrap",
+    "layer2.texture": "gruvbox\\assets\\accent-green\\dark__wrap.png",
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "icon_in_selection",
+    "layer2.texture": "gruvbox\\assets\\accent-green\\dark__inselection.png",
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "icon_highlight",
+    "layer2.texture": "gruvbox\\assets\\accent-green\\dark__highlight.png",
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "icon_preserve_case",
+    "layer2.texture": "gruvbox\\assets\\accent-green\\dark__preservecase.png",
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "icon_context",
+    "layer2.texture": "gruvbox\\assets\\accent-green\\dark__context.png",
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "icon_use_buffer",
+    "layer2.texture": "gruvbox\\assets\\accent-green\\dark__buffer.png",
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "auto_complete_label",
+    "match_fg": [
+      250,
+      189,
+      47
+    ],
+    "selected_match_fg": [
+      250,
+      189,
+      47
+    ],
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expanded"
+        ]
+      }
+    ],
+    "color": [
+      250,
+      189,
+      47
+    ],
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "color": [
+      250,
+      189,
+      47
+    ],
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "color": [
+      250,
+      189,
+      47
+    ],
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": "gruvbox\\assets\\accent-yellow\\dark__folder--expanded.png",
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "icon_folder_loading",
+    "layer1.texture": "",
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "scroll_tabs_left_button",
+    "layer1.texture": "gruvbox\\assets\\accent-yellow\\dark__prevtab--hover.png",
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "scroll_tabs_right_button",
+    "layer1.texture": "gruvbox\\assets\\accent-yellow\\dark__nexttab--hover.png",
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "fold_button_control",
+    "layer1.texture": "gruvbox\\assets\\accent-yellow\\dark__fold--hover.png",
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "fold_button_control",
+    "attributes": [
+      "expanded"
+    ],
+    "layer1.texture": "gruvbox\\assets\\accent-yellow\\dark__unfold--hover.png",
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "quick_panel_label",
+    "match_fg": [
+      250,
+      189,
+      47
+    ],
+    "selected_match_fg": [
+      250,
+      189,
+      47
+    ],
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "quick_panel_label",
+    "parents": [
+      {
+        "class": "overlay_control"
+      }
+    ],
+    "match_fg": [
+      250,
+      189,
+      47
+    ],
+    "selected_match_fg": [
+      250,
+      189,
+      47
+    ],
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "quick_panel_path_label",
+    "match_fg": [
+      250,
+      189,
+      47
+    ],
+    "selected_match_fg": [
+      250,
+      189,
+      47
+    ],
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "quick_panel_score_label",
+    "selected_fg": [
+      250,
+      189,
+      47
+    ],
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "show_tabs_dropdown_button",
+    "layer1.texture": "gruvbox\\assets\\accent-yellow\\dark__more.png",
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "dropdown_button_control",
+    "layer1.texture": "gruvbox\\assets\\accent-yellow\\dark__more.png",
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "panel_button_control",
+    "attributes": [
+      "hover"
+    ],
+    "layer0.texture": "gruvbox\\assets\\accent-yellow\\dark__panels.png",
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "icon_regex",
+    "layer2.texture": "gruvbox\\assets\\accent-yellow\\dark__regex.png",
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "icon_case",
+    "layer2.texture": "gruvbox\\assets\\accent-yellow\\dark__casesensitive.png",
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "icon_whole_word",
+    "layer2.texture": "gruvbox\\assets\\accent-yellow\\dark__wholeword.png",
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "icon_wrap",
+    "layer2.texture": "gruvbox\\assets\\accent-yellow\\dark__wrap.png",
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "icon_in_selection",
+    "layer2.texture": "gruvbox\\assets\\accent-yellow\\dark__inselection.png",
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "icon_highlight",
+    "layer2.texture": "gruvbox\\assets\\accent-yellow\\dark__highlight.png",
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "icon_preserve_case",
+    "layer2.texture": "gruvbox\\assets\\accent-yellow\\dark__preservecase.png",
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "icon_context",
+    "layer2.texture": "gruvbox\\assets\\accent-yellow\\dark__context.png",
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "icon_use_buffer",
+    "layer2.texture": "gruvbox\\assets\\accent-yellow\\dark__buffer.png",
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
+    "class": "auto_complete_label",
+    "match_fg": [
+      131,
+      165,
+      152
+    ],
+    "selected_match_fg": [
+      131,
+      165,
+      152
+    ],
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expanded"
+        ]
+      }
+    ],
+    "color": [
+      131,
+      165,
+      152
+    ],
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "color": [
+      131,
+      165,
+      152
+    ],
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "color": [
+      131,
+      165,
+      152
+    ],
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": "gruvbox\\assets\\accent-blue\\dark__folder--expanded.png",
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "icon_folder_loading",
+    "layer1.texture": "",
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "scroll_tabs_left_button",
+    "layer1.texture": "gruvbox\\assets\\accent-blue\\dark__prevtab--hover.png",
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "scroll_tabs_right_button",
+    "layer1.texture": "gruvbox\\assets\\accent-blue\\dark__nexttab--hover.png",
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "fold_button_control",
+    "layer1.texture": "gruvbox\\assets\\accent-blue\\dark__fold--hover.png",
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "fold_button_control",
+    "attributes": [
+      "expanded"
+    ],
+    "layer1.texture": "gruvbox\\assets\\accent-blue\\dark__unfold--hover.png",
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "quick_panel_label",
+    "match_fg": [
+      131,
+      165,
+      152
+    ],
+    "selected_match_fg": [
+      131,
+      165,
+      152
+    ],
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "quick_panel_label",
+    "parents": [
+      {
+        "class": "overlay_control"
+      }
+    ],
+    "match_fg": [
+      131,
+      165,
+      152
+    ],
+    "selected_match_fg": [
+      131,
+      165,
+      152
+    ],
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "quick_panel_path_label",
+    "match_fg": [
+      131,
+      165,
+      152
+    ],
+    "selected_match_fg": [
+      131,
+      165,
+      152
+    ],
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "quick_panel_score_label",
+    "selected_fg": [
+      131,
+      165,
+      152
+    ],
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "show_tabs_dropdown_button",
+    "layer1.texture": "gruvbox\\assets\\accent-blue\\dark__more.png",
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "dropdown_button_control",
+    "layer1.texture": "gruvbox\\assets\\accent-blue\\dark__more.png",
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "panel_button_control",
+    "attributes": [
+      "hover"
+    ],
+    "layer0.texture": "gruvbox\\assets\\accent-blue\\dark__panels.png",
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "icon_regex",
+    "layer2.texture": "gruvbox\\assets\\accent-blue\\dark__regex.png",
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "icon_case",
+    "layer2.texture": "gruvbox\\assets\\accent-blue\\dark__casesensitive.png",
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "icon_whole_word",
+    "layer2.texture": "gruvbox\\assets\\accent-blue\\dark__wholeword.png",
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "icon_wrap",
+    "layer2.texture": "gruvbox\\assets\\accent-blue\\dark__wrap.png",
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "icon_in_selection",
+    "layer2.texture": "gruvbox\\assets\\accent-blue\\dark__inselection.png",
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "icon_highlight",
+    "layer2.texture": "gruvbox\\assets\\accent-blue\\dark__highlight.png",
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "icon_preserve_case",
+    "layer2.texture": "gruvbox\\assets\\accent-blue\\dark__preservecase.png",
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "icon_context",
+    "layer2.texture": "gruvbox\\assets\\accent-blue\\dark__context.png",
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "icon_use_buffer",
+    "layer2.texture": "gruvbox\\assets\\accent-blue\\dark__buffer.png",
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "auto_complete_label",
+    "match_fg": [
+      211,
+      134,
+      155
+    ],
+    "selected_match_fg": [
+      211,
+      134,
+      155
+    ],
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expanded"
+        ]
+      }
+    ],
+    "color": [
+      211,
+      134,
+      155
+    ],
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "color": [
+      211,
+      134,
+      155
+    ],
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "color": [
+      211,
+      134,
+      155
+    ],
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": "gruvbox\\assets\\accent-purple\\dark__folder--expanded.png",
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "icon_folder_loading",
+    "layer1.texture": "",
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "scroll_tabs_left_button",
+    "layer1.texture": "gruvbox\\assets\\accent-purple\\dark__prevtab--hover.png",
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "scroll_tabs_right_button",
+    "layer1.texture": "gruvbox\\assets\\accent-purple\\dark__nexttab--hover.png",
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "fold_button_control",
+    "layer1.texture": "gruvbox\\assets\\accent-purple\\dark__fold--hover.png",
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "fold_button_control",
+    "attributes": [
+      "expanded"
+    ],
+    "layer1.texture": "gruvbox\\assets\\accent-purple\\dark__unfold--hover.png",
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "quick_panel_label",
+    "match_fg": [
+      211,
+      134,
+      155
+    ],
+    "selected_match_fg": [
+      211,
+      134,
+      155
+    ],
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "quick_panel_label",
+    "parents": [
+      {
+        "class": "overlay_control"
+      }
+    ],
+    "match_fg": [
+      211,
+      134,
+      155
+    ],
+    "selected_match_fg": [
+      211,
+      134,
+      155
+    ],
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "quick_panel_path_label",
+    "match_fg": [
+      211,
+      134,
+      155
+    ],
+    "selected_match_fg": [
+      211,
+      134,
+      155
+    ],
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "quick_panel_score_label",
+    "selected_fg": [
+      211,
+      134,
+      155
+    ],
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "show_tabs_dropdown_button",
+    "layer1.texture": "gruvbox\\assets\\accent-purple\\dark__more.png",
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "dropdown_button_control",
+    "layer1.texture": "gruvbox\\assets\\accent-purple\\dark__more.png",
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "panel_button_control",
+    "attributes": [
+      "hover"
+    ],
+    "layer0.texture": "gruvbox\\assets\\accent-purple\\dark__panels.png",
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "icon_regex",
+    "layer2.texture": "gruvbox\\assets\\accent-purple\\dark__regex.png",
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "icon_case",
+    "layer2.texture": "gruvbox\\assets\\accent-purple\\dark__casesensitive.png",
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "icon_whole_word",
+    "layer2.texture": "gruvbox\\assets\\accent-purple\\dark__wholeword.png",
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "icon_wrap",
+    "layer2.texture": "gruvbox\\assets\\accent-purple\\dark__wrap.png",
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "icon_in_selection",
+    "layer2.texture": "gruvbox\\assets\\accent-purple\\dark__inselection.png",
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "icon_highlight",
+    "layer2.texture": "gruvbox\\assets\\accent-purple\\dark__highlight.png",
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "icon_preserve_case",
+    "layer2.texture": "gruvbox\\assets\\accent-purple\\dark__preservecase.png",
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "icon_context",
+    "layer2.texture": "gruvbox\\assets\\accent-purple\\dark__context.png",
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "icon_use_buffer",
+    "layer2.texture": "gruvbox\\assets\\accent-purple\\dark__buffer.png",
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
+    "class": "auto_complete_label",
+    "match_fg": [
+      142,
+      192,
+      124
+    ],
+    "selected_match_fg": [
+      142,
+      192,
+      124
+    ],
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expanded"
+        ]
+      }
+    ],
+    "color": [
+      142,
+      192,
+      124
+    ],
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "color": [
+      142,
+      192,
+      124
+    ],
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "color": [
+      142,
+      192,
+      124
+    ],
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": "gruvbox\\assets\\accent-aqua\\dark__folder--expanded.png",
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "icon_folder_loading",
+    "layer1.texture": "",
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "scroll_tabs_left_button",
+    "layer1.texture": "gruvbox\\assets\\accent-aqua\\dark__prevtab--hover.png",
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "scroll_tabs_right_button",
+    "layer1.texture": "gruvbox\\assets\\accent-aqua\\dark__nexttab--hover.png",
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "fold_button_control",
+    "layer1.texture": "gruvbox\\assets\\accent-aqua\\dark__fold--hover.png",
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "fold_button_control",
+    "attributes": [
+      "expanded"
+    ],
+    "layer1.texture": "gruvbox\\assets\\accent-aqua\\dark__unfold--hover.png",
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "quick_panel_label",
+    "match_fg": [
+      142,
+      192,
+      124
+    ],
+    "selected_match_fg": [
+      142,
+      192,
+      124
+    ],
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "quick_panel_label",
+    "parents": [
+      {
+        "class": "overlay_control"
+      }
+    ],
+    "match_fg": [
+      142,
+      192,
+      124
+    ],
+    "selected_match_fg": [
+      142,
+      192,
+      124
+    ],
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "quick_panel_path_label",
+    "match_fg": [
+      142,
+      192,
+      124
+    ],
+    "selected_match_fg": [
+      142,
+      192,
+      124
+    ],
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "quick_panel_score_label",
+    "selected_fg": [
+      142,
+      192,
+      124
+    ],
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "show_tabs_dropdown_button",
+    "layer1.texture": "gruvbox\\assets\\accent-aqua\\dark__more.png",
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "dropdown_button_control",
+    "layer1.texture": "gruvbox\\assets\\accent-aqua\\dark__more.png",
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "panel_button_control",
+    "attributes": [
+      "hover"
+    ],
+    "layer0.texture": "gruvbox\\assets\\accent-aqua\\dark__panels.png",
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "icon_regex",
+    "layer2.texture": "gruvbox\\assets\\accent-aqua\\dark__regex.png",
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "icon_case",
+    "layer2.texture": "gruvbox\\assets\\accent-aqua\\dark__casesensitive.png",
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "icon_whole_word",
+    "layer2.texture": "gruvbox\\assets\\accent-aqua\\dark__wholeword.png",
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "icon_wrap",
+    "layer2.texture": "gruvbox\\assets\\accent-aqua\\dark__wrap.png",
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "icon_in_selection",
+    "layer2.texture": "gruvbox\\assets\\accent-aqua\\dark__inselection.png",
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "icon_highlight",
+    "layer2.texture": "gruvbox\\assets\\accent-aqua\\dark__highlight.png",
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "icon_preserve_case",
+    "layer2.texture": "gruvbox\\assets\\accent-aqua\\dark__preservecase.png",
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "icon_context",
+    "layer2.texture": "gruvbox\\assets\\accent-aqua\\dark__context.png",
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "icon_use_buffer",
+    "layer2.texture": "gruvbox\\assets\\accent-aqua\\dark__buffer.png",
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
+    "class": "auto_complete_label",
+    "match_fg": [
+      254,
+      128,
+      25
+    ],
+    "selected_match_fg": [
+      254,
+      128,
+      25
+    ],
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expanded"
+        ]
+      }
+    ],
+    "color": [
+      254,
+      128,
+      25
+    ],
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "color": [
+      254,
+      128,
+      25
+    ],
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "color": [
+      254,
+      128,
+      25
+    ],
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": "gruvbox\\assets\\accent-orange\\dark__folder--expanded.png",
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "icon_folder_loading",
+    "layer1.texture": "",
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "scroll_tabs_left_button",
+    "layer1.texture": "gruvbox\\assets\\accent-orange\\dark__prevtab--hover.png",
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "scroll_tabs_right_button",
+    "layer1.texture": "gruvbox\\assets\\accent-orange\\dark__nexttab--hover.png",
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "fold_button_control",
+    "layer1.texture": "gruvbox\\assets\\accent-orange\\dark__fold--hover.png",
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "fold_button_control",
+    "attributes": [
+      "expanded"
+    ],
+    "layer1.texture": "gruvbox\\assets\\accent-orange\\dark__unfold--hover.png",
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "quick_panel_label",
+    "match_fg": [
+      254,
+      128,
+      25
+    ],
+    "selected_match_fg": [
+      254,
+      128,
+      25
+    ],
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "quick_panel_label",
+    "parents": [
+      {
+        "class": "overlay_control"
+      }
+    ],
+    "match_fg": [
+      254,
+      128,
+      25
+    ],
+    "selected_match_fg": [
+      254,
+      128,
+      25
+    ],
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "quick_panel_path_label",
+    "match_fg": [
+      254,
+      128,
+      25
+    ],
+    "selected_match_fg": [
+      254,
+      128,
+      25
+    ],
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "quick_panel_score_label",
+    "selected_fg": [
+      254,
+      128,
+      25
+    ],
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "show_tabs_dropdown_button",
+    "layer1.texture": "gruvbox\\assets\\accent-orange\\dark__more.png",
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "dropdown_button_control",
+    "layer1.texture": "gruvbox\\assets\\accent-orange\\dark__more.png",
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "panel_button_control",
+    "attributes": [
+      "hover"
+    ],
+    "layer0.texture": "gruvbox\\assets\\accent-orange\\dark__panels.png",
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "icon_regex",
+    "layer2.texture": "gruvbox\\assets\\accent-orange\\dark__regex.png",
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "icon_case",
+    "layer2.texture": "gruvbox\\assets\\accent-orange\\dark__casesensitive.png",
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "icon_whole_word",
+    "layer2.texture": "gruvbox\\assets\\accent-orange\\dark__wholeword.png",
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "icon_wrap",
+    "layer2.texture": "gruvbox\\assets\\accent-orange\\dark__wrap.png",
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "icon_in_selection",
+    "layer2.texture": "gruvbox\\assets\\accent-orange\\dark__inselection.png",
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "icon_highlight",
+    "layer2.texture": "gruvbox\\assets\\accent-orange\\dark__highlight.png",
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "icon_preserve_case",
+    "layer2.texture": "gruvbox\\assets\\accent-orange\\dark__preservecase.png",
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "icon_context",
+    "layer2.texture": "gruvbox\\assets\\accent-orange\\dark__context.png",
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "icon_use_buffer",
+    "layer2.texture": "gruvbox\\assets\\accent-orange\\dark__buffer.png",
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "tabset_control",
+    "settings": [
+      "gruvbox_tabs_xxs"
+    ],
+    "tab_height": 33
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_tabs_xxs"
+    ],
+    "content_margin": [
+      12,
+      0,
+      8,
+      0
+    ]
+  },
+  {
+    "class": "tabset_control",
+    "settings": [
+      "gruvbox_tabs_xs"
+    ],
+    "tab_height": 39
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_tabs_xs"
+    ],
+    "content_margin": [
+      14,
+      0,
+      10,
+      0
+    ]
+  },
+  {
+    "class": "tabset_control",
+    "settings": [
+      "gruvbox_tabs_s"
+    ],
+    "tab_height": 45
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_tabs_s"
+    ],
+    "content_margin": [
+      16,
+      0,
+      12,
+      0
+    ]
+  },
+  {
+    "class": "tabset_control",
+    "settings": [
+      "gruvbox_tabs_l"
+    ],
+    "tab_height": 57
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_tabs_l"
+    ],
+    "content_margin": [
+      16,
+      0,
+      12,
+      0
+    ]
+  },
+  {
+    "class": "tabset_control",
+    "settings": [
+      "gruvbox_tabs_xl"
+    ],
+    "tab_height": 63
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_tabs_xl"
+    ],
+    "content_margin": [
+      18,
+      0,
+      14,
+      0
+    ]
+  },
+  {
+    "class": "tabset_control",
+    "settings": [
+      "gruvbox_tabs_xxl"
+    ],
+    "tab_height": 69
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_tabs_xxl"
+    ],
+    "content_margin": [
+      20,
+      0,
+      16,
+      0
+    ]
+  },
+  {
+    "class": "tabset_control",
+    "settings": [
+      "gruvbox_tabs_autowidth"
+    ],
+    "tab_width": 0
+  },
+  {
+    "class": "tab_label",
+    "settings": [
+      "gruvbox_tabs_bold"
+    ],
+    "font.bold": true
+  },
+  {
+    "class": "tab_label",
+    "settings": [
+      "gruvbox_tabs_font_size_7"
+    ],
+    "font.size": 7
+  },
+  {
+    "class": "tab_label",
+    "settings": [
+      "gruvbox_tabs_font_size_8"
+    ],
+    "font.size": 8
+  },
+  {
+    "class": "tab_label",
+    "settings": [
+      "gruvbox_tabs_font_size_9"
+    ],
+    "font.size": 9
+  },
+  {
+    "class": "tab_label",
+    "settings": [
+      "gruvbox_tabs_font_size_10"
+    ],
+    "font.size": 10
+  },
+  {
+    "class": "tab_label",
+    "settings": [
+      "gruvbox_tabs_font_size_12"
+    ],
+    "font.size": 12
+  },
+  {
+    "class": "tab_label",
+    "settings": [
+      "gruvbox_tabs_font_size_13"
+    ],
+    "font.size": 13
+  },
+  {
+    "class": "tab_label",
+    "settings": [
+      "gruvbox_tabs_font_size_14"
+    ],
+    "font.size": 14
+  },
+  {
+    "class": "tab_label",
+    "settings": [
+      "gruvbox_tabs_font_size_15"
+    ],
+    "font.size": 15
+  },
+  {
+    "class": "icon_file_type",
+    "settings": [
+      "gruvbox_disable_file_icons"
+    ],
+    "content_margin": [
+      0,
+      0
+    ],
+    "layer0.opacity": 0
+  },
+  {
+    "class": "status_container",
+    "settings": [
+      "gruvbox_statusbar_xxs"
+    ],
+    "content_margin": [
+      12,
+      3,
+      12,
+      3
+    ]
+  },
+  {
+    "class": "status_container",
+    "settings": [
+      "gruvbox_statusbar_xs"
+    ],
+    "content_margin": [
+      12,
+      6,
+      12,
+      6
+    ]
+  },
+  {
+    "class": "status_container",
+    "settings": [
+      "gruvbox_statusbar_s"
+    ],
+    "content_margin": [
+      12,
+      8,
+      12,
+      8
+    ]
+  },
+  {
+    "class": "status_container",
+    "settings": [
+      "gruvbox_statusbar_l"
+    ],
+    "content_margin": [
+      12,
+      13,
+      12,
+      13
+    ]
+  },
+  {
+    "class": "status_container",
+    "settings": [
+      "gruvbox_statusbar_xl"
+    ],
+    "content_margin": [
+      12,
+      16,
+      12,
+      16
+    ]
+  },
+  {
+    "class": "status_container",
+    "settings": [
+      "gruvbox_statusbar_xxl"
+    ],
+    "content_margin": [
+      12,
+      18,
+      12,
+      18
+    ]
+  },
+  {
+    "class": "sidebar_tree",
+    "settings": [
+      "gruvbox_sidebar_cramped"
+    ],
+    "row_padding": [
+      24,
+      1
+    ]
+  },
+  {
+    "class": "sidebar_tree",
+    "settings": [
+      "gruvbox_sidebar_compact"
+    ],
+    "row_padding": [
+      24,
+      3
+    ]
+  },
+  {
+    "class": "sidebar_tree",
+    "settings": [
+      "gruvbox_sidebar_comfortable"
+    ],
+    "row_padding": [
+      24,
+      7
+    ]
+  },
+  {
+    "class": "sidebar_tree",
+    "settings": [
+      "gruvbox_sidebar_cozy"
+    ],
+    "row_padding": [
+      24,
+      9
+    ]
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_disable_folder_icons"
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "layer2.opacity": 0
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_disable_folder_icons"
+    ],
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "layer2.opacity": 0
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_disable_folder_icons"
+    ],
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expanded",
+          "hover"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "layer2.opacity": 0
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_disable_folder_icons"
+    ],
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expanded"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "layer2.opacity": 0
+  },
+  {
+    "class": "auto_complete",
+    "settings": [
+      "gruvbox_autocomplete_cramped"
+    ],
+    "row_padding": [
+      12,
+      2
+    ]
+  },
+  {
+    "class": "auto_complete",
+    "settings": [
+      "gruvbox_autocomplete_compact"
+    ],
+    "row_padding": [
+      12,
+      4
+    ]
+  },
+  {
+    "class": "auto_complete",
+    "settings": [
+      "gruvbox_autocomplete_comfortable"
+    ],
+    "row_padding": [
+      12,
+      8
+    ]
+  },
+  {
+    "class": "auto_complete",
+    "settings": [
+      "gruvbox_autocomplete_cozy"
+    ],
+    "row_padding": [
+      12,
+      10
+    ]
+  },
+  {
+    "class": "panel_close_button",
+    "settings": [
+      "gruvbox_enable_panel_close_button"
+    ],
+    "content_margin": [
+      8,
+      8
+    ]
+  },
+  {
+    "class": "tabset_control",
+    "settings": [
+      "gruvbox_disable_borders"
+    ],
+    "content_margin": [
+      0,
+      0,
+      12,
+      0
+    ],
+    "layer1.opacity": 0
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_disable_borders"
+    ],
+    "layer2.opacity": 0
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_disable_borders"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer1.opacity": 0,
+    "layer2.opacity": 0
+  },
+  {
+    "class": "sidebar_container",
+    "settings": [
+      "gruvbox_disable_borders"
+    ],
+    "layer1.opacity": 0
+  },
+  {
+    "class": "sidebar_tree",
+    "settings": [
+      "gruvbox_disable_borders"
+    ],
+    "layer1.opacity": 0
+  },
+  {
+    "class": "tree_row",
+    "settings": [
+      "gruvbox_disable_borders"
+    ],
+    "layer1.opacity": 0
+  },
+  {
+    "class": "scroll_bar_control",
+    "settings": [
+      "gruvbox_disable_borders"
+    ],
+    "layer1.opacity": 0
+  },
+  {
+    "class": "scroll_corner_control",
+    "settings": [
+      "gruvbox_disable_borders"
+    ],
+    "layer1.opacity": 0
+  },
+  {
+    "class": "status_bar",
+    "settings": [
+      "gruvbox_disable_borders"
+    ],
+    "layer2.opacity": 0
+  },
+  {
+    "class": "panel_control",
+    "settings": [
+      "gruvbox_disable_borders"
+    ],
+    "layer1.opacity": 0
+  },
+  {
+    "class": "overlay_control",
+    "settings": [
+      "gruvbox_disable_borders"
+    ],
+    "content_margin": [
+      0,
+      14,
+      0,
+      0
+    ],
+    "layer1.opacity": 0
+  },
+  {
+    "class": "mini_quick_panel_row",
+    "settings": [
+      "gruvbox_disable_borders"
+    ],
+    "layer1.opacity": 0
+  },
+  {
+    "class": "quick_panel_row",
+    "settings": [
+      "gruvbox_disable_borders"
+    ],
+    "layer1.opacity": 0
+  },
+  {
+    "class": "status_bar",
+    "settings": [
+      "gruvbox_enable_statusbar_border"
+    ],
+    "layer2.opacity": 1
+  },
+  {
+    "class": "panel_control",
+    "settings": [
+      "gruvbox_enable_statusbar_border"
+    ],
+    "layer1.opacity": 1
+  }
+]

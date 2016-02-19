@@ -1,0 +1,152 @@
+gruvbox for Sublime Text 3
+
+For more information on gruvbox for Sublime Text: https://github.com/briles/gruvbox
+
+----------------------------------------------------------------------------------------------
+
+Thank you for downloading gruvbox! Let's get started...
+
+----------------------------------------------------------------------------------------------
+
+Add the following to your Settings - User file and restart Sublime Text after:
+
+gruvbox Dark - Hard Contrast:
+
+  {
+    "theme": "gruvbox (Dark) (Hard).sublime-theme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).tmTheme",
+  }
+
+
+gruvbox Dark - Medium Contrast:
+
+  {
+    "theme": "gruvbox (Dark) (Medium).sublime-theme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme",
+  }
+
+
+gruvbox Dark - Soft Contrast:
+
+  {
+    "theme": "gruvbox (Dark) (Soft).sublime-theme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft).tmTheme",
+  }
+
+
+gruvbox Light - Hard Contrast:
+
+  {
+    "theme": "gruvbox (Light) (Hard).sublime-theme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard).tmTheme",
+  }
+
+
+gruvbox Light - Medium Contrast:
+
+  {
+    "theme": "gruvbox (Light) (Medium).sublime-theme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium).tmTheme",
+  }
+
+
+gruvbox Light - Soft Contrast:
+
+  {
+    "theme": "gruvbox (Light) (Soft).sublime-theme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft).tmTheme",
+  }
+
+----------------------------------------------------------------------------------------------
+
+Theme options:
+
+
+  Accent Colors
+
+        Accent colors affect icons and certain text.
+
+    "gruvbox_accent_aqua": true,
+    "gruvbox_accent_blue": true,
+    "gruvbox_accent_green": true,
+    "gruvbox_accent_orange":          true,
+    "gruvbox_accent_purple":          true,
+    "gruvbox_accent_red":             true,
+    "gruvbox_accent_yellow": true,
+
+
+  AutoComplete Spacing
+
+        Change the space between autocomplete rows
+
+    "gruvbox_autocomplete_cozy": true,         //  v  2
+    "gruvbox_autocomplete_comfortable": true,  //  |  4
+                                               //  |  6 (Default)
+    "gruvbox_autocomplete_compact": true,      //  |  8
+    "gruvbox_autocomplete_cramped": true,      //  v  10
+
+
+  Sidebar Spacing
+
+        Change the space between sidebar tree rows
+
+    "gruvbox_sidebar_cozy": true,         //  v  1
+    "gruvbox_sidebar_comfortable": true,  //  |  3
+                                          //  |  5 (Default)
+    "gruvbox_sidebar_compact": true,      //  |  7
+    "gruvbox_sidebar_cramped": true,      //  v  9
+
+
+  Statusbar Sizes
+
+        Change the height of the statusbar
+
+    "gruvbox_statusbar_xxs": true,  //  v  20
+    "gruvbox_statusbar_xs": true,   //  |  25
+    "gruvbox_statusbar_s": true,    //  |  30
+                                    //  |  35 (Default)
+    "gruvbox_statusbar_l": true,    //  |  40
+    "gruvbox_statusbar_xl": true,   //  |  45
+    "gruvbox_statusbar_xxl": true,  //  v  50
+
+
+  Tab Sizes
+
+        Change the height of the tabs
+
+    "gruvbox_tabs_xxs": true,  //  v  33
+    "gruvbox_tabs_xs": true,   //  |  39
+    "gruvbox_tabs_s": true,    //  |  45
+                               //  |  51 (Default)
+    "gruvbox_tabs_l": true,    //  |  57
+    "gruvbox_tabs_xl": true,   //  |  63
+    "gruvbox_tabs_xxl": true,  //  v  69
+
+
+  Tab Font Sizes
+
+        Change the font size of the tabs
+
+    "gruvbox_tabs_font_size_7": true,   //  v  7
+    "gruvbox_tabs_font_size_8": true,   //  |  8
+    "gruvbox_tabs_font_size_9": true,   //  |  9
+    "gruvbox_tabs_font_size_10": true,  //  |  10
+                                        //  |  11 (Default)
+    "gruvbox_tabs_font_size_12": true,  //  |  12
+    "gruvbox_tabs_font_size_13": true,  //  |  13
+    "gruvbox_tabs_font_size_14": true,  //  |  14
+    "gruvbox_tabs_font_size_15": true,  //  v  15
+
+
+  Even More Settings...
+
+  "gruvbox_disable_fileicons": true,          // Disable the sidebar file icons
+  "gruvbox_disable_folder_icons": true,       // Disable the sidebar folder icons
+  "gruvbox_disable_borders": true,            // Disable all borders
+  "gruvbox_enable_panel_close_button": true,  // Enable the panel close button
+  "gruvbox_enable_statusbar_border": true,    // Enable borders for the status bar
+  "gruvbox_tabs_bold": true,                  // Enable bold tabs
+  "gruvbox_tabs_autowidth": true,             // Auto-size the tabs
+
+
+  * Having an issue or want a feature added? Visit https://github.com/briles/gruvbox/issues
