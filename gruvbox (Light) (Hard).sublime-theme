@@ -1093,7 +1093,7 @@
       8
     ],
     "layer0.opacity": 0,
-    "layer1.texture": "gruvbox\\assets\\commons\\folder.png",
+    "layer1.texture": "gruvbox/assets/commons/folder.png",
     "layer1.opacity": 1,
     "layer2.texture": "gruvbox/assets/light/folder--expanded.png",
     "layer2.opacity": 0
@@ -2248,7 +2248,7 @@
   },
   {
     "class": "icon_folder",
-    "layer2.texture": "gruvbox\\assets\\accent-red\\light__folder--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-red/light__folder--expanded.png",
     "settings": [
       "gruvbox_accent_red"
     ]
@@ -2262,21 +2262,21 @@
   },
   {
     "class": "scroll_tabs_left_button",
-    "layer1.texture": "gruvbox\\assets\\accent-red\\light__prevtab--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-red/light__prevtab--hover.png",
     "settings": [
       "gruvbox_accent_red"
     ]
   },
   {
     "class": "scroll_tabs_right_button",
-    "layer1.texture": "gruvbox\\assets\\accent-red\\light__nexttab--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-red/light__nexttab--hover.png",
     "settings": [
       "gruvbox_accent_red"
     ]
   },
   {
     "class": "fold_button_control",
-    "layer1.texture": "gruvbox\\assets\\accent-red\\light__fold--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-red/light__fold--hover.png",
     "settings": [
       "gruvbox_accent_red"
     ]
@@ -2286,7 +2286,7 @@
     "attributes": [
       "expanded"
     ],
-    "layer1.texture": "gruvbox\\assets\\accent-red\\light__unfold--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-red/light__unfold--hover.png",
     "settings": [
       "gruvbox_accent_red"
     ]
@@ -2357,14 +2357,14 @@
   },
   {
     "class": "show_tabs_dropdown_button",
-    "layer1.texture": "gruvbox\\assets\\accent-red\\light__more.png",
+    "layer1.texture": "gruvbox/assets/accent-red/light__more.png",
     "settings": [
       "gruvbox_accent_red"
     ]
   },
   {
     "class": "dropdown_button_control",
-    "layer1.texture": "gruvbox\\assets\\accent-red\\light__more.png",
+    "layer1.texture": "gruvbox/assets/accent-red/light__more.png",
     "settings": [
       "gruvbox_accent_red"
     ]
@@ -2374,70 +2374,70 @@
     "attributes": [
       "hover"
     ],
-    "layer0.texture": "gruvbox\\assets\\accent-red\\light__panels.png",
+    "layer0.texture": "gruvbox/assets/accent-red/light__panels.png",
     "settings": [
       "gruvbox_accent_red"
     ]
   },
   {
     "class": "icon_regex",
-    "layer2.texture": "gruvbox\\assets\\accent-red\\light__regex.png",
+    "layer2.texture": "gruvbox/assets/accent-red/light__regex.png",
     "settings": [
       "gruvbox_accent_red"
     ]
   },
   {
     "class": "icon_case",
-    "layer2.texture": "gruvbox\\assets\\accent-red\\light__casesensitive.png",
+    "layer2.texture": "gruvbox/assets/accent-red/light__casesensitive.png",
     "settings": [
       "gruvbox_accent_red"
     ]
   },
   {
     "class": "icon_whole_word",
-    "layer2.texture": "gruvbox\\assets\\accent-red\\light__wholeword.png",
+    "layer2.texture": "gruvbox/assets/accent-red/light__wholeword.png",
     "settings": [
       "gruvbox_accent_red"
     ]
   },
   {
     "class": "icon_wrap",
-    "layer2.texture": "gruvbox\\assets\\accent-red\\light__wrap.png",
+    "layer2.texture": "gruvbox/assets/accent-red/light__wrap.png",
     "settings": [
       "gruvbox_accent_red"
     ]
   },
   {
     "class": "icon_in_selection",
-    "layer2.texture": "gruvbox\\assets\\accent-red\\light__inselection.png",
+    "layer2.texture": "gruvbox/assets/accent-red/light__inselection.png",
     "settings": [
       "gruvbox_accent_red"
     ]
   },
   {
     "class": "icon_highlight",
-    "layer2.texture": "gruvbox\\assets\\accent-red\\light__highlight.png",
+    "layer2.texture": "gruvbox/assets/accent-red/light__highlight.png",
     "settings": [
       "gruvbox_accent_red"
     ]
   },
   {
     "class": "icon_preserve_case",
-    "layer2.texture": "gruvbox\\assets\\accent-red\\light__preservecase.png",
+    "layer2.texture": "gruvbox/assets/accent-red/light__preservecase.png",
     "settings": [
       "gruvbox_accent_red"
     ]
   },
   {
     "class": "icon_context",
-    "layer2.texture": "gruvbox\\assets\\accent-red\\light__context.png",
+    "layer2.texture": "gruvbox/assets/accent-red/light__context.png",
     "settings": [
       "gruvbox_accent_red"
     ]
   },
   {
     "class": "icon_use_buffer",
-    "layer2.texture": "gruvbox\\assets\\accent-red\\light__buffer.png",
+    "layer2.texture": "gruvbox/assets/accent-red/light__buffer.png",
     "settings": [
       "gruvbox_accent_red"
     ]
@@ -2517,7 +2517,7 @@
   },
   {
     "class": "icon_folder",
-    "layer2.texture": "gruvbox\\assets\\accent-green\\light__folder--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-green/light__folder--expanded.png",
     "settings": [
       "gruvbox_accent_green"
     ]
@@ -2531,21 +2531,21 @@
   },
   {
     "class": "scroll_tabs_left_button",
-    "layer1.texture": "gruvbox\\assets\\accent-green\\light__prevtab--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-green/light__prevtab--hover.png",
     "settings": [
       "gruvbox_accent_green"
     ]
   },
   {
     "class": "scroll_tabs_right_button",
-    "layer1.texture": "gruvbox\\assets\\accent-green\\light__nexttab--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-green/light__nexttab--hover.png",
     "settings": [
       "gruvbox_accent_green"
     ]
   },
   {
     "class": "fold_button_control",
-    "layer1.texture": "gruvbox\\assets\\accent-green\\light__fold--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-green/light__fold--hover.png",
     "settings": [
       "gruvbox_accent_green"
     ]
@@ -2555,7 +2555,7 @@
     "attributes": [
       "expanded"
     ],
-    "layer1.texture": "gruvbox\\assets\\accent-green\\light__unfold--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-green/light__unfold--hover.png",
     "settings": [
       "gruvbox_accent_green"
     ]
@@ -2626,14 +2626,14 @@
   },
   {
     "class": "show_tabs_dropdown_button",
-    "layer1.texture": "gruvbox\\assets\\accent-green\\light__more.png",
+    "layer1.texture": "gruvbox/assets/accent-green/light__more.png",
     "settings": [
       "gruvbox_accent_green"
     ]
   },
   {
     "class": "dropdown_button_control",
-    "layer1.texture": "gruvbox\\assets\\accent-green\\light__more.png",
+    "layer1.texture": "gruvbox/assets/accent-green/light__more.png",
     "settings": [
       "gruvbox_accent_green"
     ]
@@ -2643,70 +2643,70 @@
     "attributes": [
       "hover"
     ],
-    "layer0.texture": "gruvbox\\assets\\accent-green\\light__panels.png",
+    "layer0.texture": "gruvbox/assets/accent-green/light__panels.png",
     "settings": [
       "gruvbox_accent_green"
     ]
   },
   {
     "class": "icon_regex",
-    "layer2.texture": "gruvbox\\assets\\accent-green\\light__regex.png",
+    "layer2.texture": "gruvbox/assets/accent-green/light__regex.png",
     "settings": [
       "gruvbox_accent_green"
     ]
   },
   {
     "class": "icon_case",
-    "layer2.texture": "gruvbox\\assets\\accent-green\\light__casesensitive.png",
+    "layer2.texture": "gruvbox/assets/accent-green/light__casesensitive.png",
     "settings": [
       "gruvbox_accent_green"
     ]
   },
   {
     "class": "icon_whole_word",
-    "layer2.texture": "gruvbox\\assets\\accent-green\\light__wholeword.png",
+    "layer2.texture": "gruvbox/assets/accent-green/light__wholeword.png",
     "settings": [
       "gruvbox_accent_green"
     ]
   },
   {
     "class": "icon_wrap",
-    "layer2.texture": "gruvbox\\assets\\accent-green\\light__wrap.png",
+    "layer2.texture": "gruvbox/assets/accent-green/light__wrap.png",
     "settings": [
       "gruvbox_accent_green"
     ]
   },
   {
     "class": "icon_in_selection",
-    "layer2.texture": "gruvbox\\assets\\accent-green\\light__inselection.png",
+    "layer2.texture": "gruvbox/assets/accent-green/light__inselection.png",
     "settings": [
       "gruvbox_accent_green"
     ]
   },
   {
     "class": "icon_highlight",
-    "layer2.texture": "gruvbox\\assets\\accent-green\\light__highlight.png",
+    "layer2.texture": "gruvbox/assets/accent-green/light__highlight.png",
     "settings": [
       "gruvbox_accent_green"
     ]
   },
   {
     "class": "icon_preserve_case",
-    "layer2.texture": "gruvbox\\assets\\accent-green\\light__preservecase.png",
+    "layer2.texture": "gruvbox/assets/accent-green/light__preservecase.png",
     "settings": [
       "gruvbox_accent_green"
     ]
   },
   {
     "class": "icon_context",
-    "layer2.texture": "gruvbox\\assets\\accent-green\\light__context.png",
+    "layer2.texture": "gruvbox/assets/accent-green/light__context.png",
     "settings": [
       "gruvbox_accent_green"
     ]
   },
   {
     "class": "icon_use_buffer",
-    "layer2.texture": "gruvbox\\assets\\accent-green\\light__buffer.png",
+    "layer2.texture": "gruvbox/assets/accent-green/light__buffer.png",
     "settings": [
       "gruvbox_accent_green"
     ]
@@ -2786,7 +2786,7 @@
   },
   {
     "class": "icon_folder",
-    "layer2.texture": "gruvbox\\assets\\accent-yellow\\light__folder--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/light__folder--expanded.png",
     "settings": [
       "gruvbox_accent_yellow"
     ]
@@ -2800,21 +2800,21 @@
   },
   {
     "class": "scroll_tabs_left_button",
-    "layer1.texture": "gruvbox\\assets\\accent-yellow\\light__prevtab--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-yellow/light__prevtab--hover.png",
     "settings": [
       "gruvbox_accent_yellow"
     ]
   },
   {
     "class": "scroll_tabs_right_button",
-    "layer1.texture": "gruvbox\\assets\\accent-yellow\\light__nexttab--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-yellow/light__nexttab--hover.png",
     "settings": [
       "gruvbox_accent_yellow"
     ]
   },
   {
     "class": "fold_button_control",
-    "layer1.texture": "gruvbox\\assets\\accent-yellow\\light__fold--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-yellow/light__fold--hover.png",
     "settings": [
       "gruvbox_accent_yellow"
     ]
@@ -2824,7 +2824,7 @@
     "attributes": [
       "expanded"
     ],
-    "layer1.texture": "gruvbox\\assets\\accent-yellow\\light__unfold--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-yellow/light__unfold--hover.png",
     "settings": [
       "gruvbox_accent_yellow"
     ]
@@ -2895,14 +2895,14 @@
   },
   {
     "class": "show_tabs_dropdown_button",
-    "layer1.texture": "gruvbox\\assets\\accent-yellow\\light__more.png",
+    "layer1.texture": "gruvbox/assets/accent-yellow/light__more.png",
     "settings": [
       "gruvbox_accent_yellow"
     ]
   },
   {
     "class": "dropdown_button_control",
-    "layer1.texture": "gruvbox\\assets\\accent-yellow\\light__more.png",
+    "layer1.texture": "gruvbox/assets/accent-yellow/light__more.png",
     "settings": [
       "gruvbox_accent_yellow"
     ]
@@ -2912,70 +2912,70 @@
     "attributes": [
       "hover"
     ],
-    "layer0.texture": "gruvbox\\assets\\accent-yellow\\light__panels.png",
+    "layer0.texture": "gruvbox/assets/accent-yellow/light__panels.png",
     "settings": [
       "gruvbox_accent_yellow"
     ]
   },
   {
     "class": "icon_regex",
-    "layer2.texture": "gruvbox\\assets\\accent-yellow\\light__regex.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/light__regex.png",
     "settings": [
       "gruvbox_accent_yellow"
     ]
   },
   {
     "class": "icon_case",
-    "layer2.texture": "gruvbox\\assets\\accent-yellow\\light__casesensitive.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/light__casesensitive.png",
     "settings": [
       "gruvbox_accent_yellow"
     ]
   },
   {
     "class": "icon_whole_word",
-    "layer2.texture": "gruvbox\\assets\\accent-yellow\\light__wholeword.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/light__wholeword.png",
     "settings": [
       "gruvbox_accent_yellow"
     ]
   },
   {
     "class": "icon_wrap",
-    "layer2.texture": "gruvbox\\assets\\accent-yellow\\light__wrap.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/light__wrap.png",
     "settings": [
       "gruvbox_accent_yellow"
     ]
   },
   {
     "class": "icon_in_selection",
-    "layer2.texture": "gruvbox\\assets\\accent-yellow\\light__inselection.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/light__inselection.png",
     "settings": [
       "gruvbox_accent_yellow"
     ]
   },
   {
     "class": "icon_highlight",
-    "layer2.texture": "gruvbox\\assets\\accent-yellow\\light__highlight.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/light__highlight.png",
     "settings": [
       "gruvbox_accent_yellow"
     ]
   },
   {
     "class": "icon_preserve_case",
-    "layer2.texture": "gruvbox\\assets\\accent-yellow\\light__preservecase.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/light__preservecase.png",
     "settings": [
       "gruvbox_accent_yellow"
     ]
   },
   {
     "class": "icon_context",
-    "layer2.texture": "gruvbox\\assets\\accent-yellow\\light__context.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/light__context.png",
     "settings": [
       "gruvbox_accent_yellow"
     ]
   },
   {
     "class": "icon_use_buffer",
-    "layer2.texture": "gruvbox\\assets\\accent-yellow\\light__buffer.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/light__buffer.png",
     "settings": [
       "gruvbox_accent_yellow"
     ]
@@ -3055,7 +3055,7 @@
   },
   {
     "class": "icon_folder",
-    "layer2.texture": "gruvbox\\assets\\accent-blue\\light__folder--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/light__folder--expanded.png",
     "settings": [
       "gruvbox_accent_blue"
     ]
@@ -3069,21 +3069,21 @@
   },
   {
     "class": "scroll_tabs_left_button",
-    "layer1.texture": "gruvbox\\assets\\accent-blue\\light__prevtab--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-blue/light__prevtab--hover.png",
     "settings": [
       "gruvbox_accent_blue"
     ]
   },
   {
     "class": "scroll_tabs_right_button",
-    "layer1.texture": "gruvbox\\assets\\accent-blue\\light__nexttab--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-blue/light__nexttab--hover.png",
     "settings": [
       "gruvbox_accent_blue"
     ]
   },
   {
     "class": "fold_button_control",
-    "layer1.texture": "gruvbox\\assets\\accent-blue\\light__fold--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-blue/light__fold--hover.png",
     "settings": [
       "gruvbox_accent_blue"
     ]
@@ -3093,7 +3093,7 @@
     "attributes": [
       "expanded"
     ],
-    "layer1.texture": "gruvbox\\assets\\accent-blue\\light__unfold--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-blue/light__unfold--hover.png",
     "settings": [
       "gruvbox_accent_blue"
     ]
@@ -3164,14 +3164,14 @@
   },
   {
     "class": "show_tabs_dropdown_button",
-    "layer1.texture": "gruvbox\\assets\\accent-blue\\light__more.png",
+    "layer1.texture": "gruvbox/assets/accent-blue/light__more.png",
     "settings": [
       "gruvbox_accent_blue"
     ]
   },
   {
     "class": "dropdown_button_control",
-    "layer1.texture": "gruvbox\\assets\\accent-blue\\light__more.png",
+    "layer1.texture": "gruvbox/assets/accent-blue/light__more.png",
     "settings": [
       "gruvbox_accent_blue"
     ]
@@ -3181,70 +3181,70 @@
     "attributes": [
       "hover"
     ],
-    "layer0.texture": "gruvbox\\assets\\accent-blue\\light__panels.png",
+    "layer0.texture": "gruvbox/assets/accent-blue/light__panels.png",
     "settings": [
       "gruvbox_accent_blue"
     ]
   },
   {
     "class": "icon_regex",
-    "layer2.texture": "gruvbox\\assets\\accent-blue\\light__regex.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/light__regex.png",
     "settings": [
       "gruvbox_accent_blue"
     ]
   },
   {
     "class": "icon_case",
-    "layer2.texture": "gruvbox\\assets\\accent-blue\\light__casesensitive.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/light__casesensitive.png",
     "settings": [
       "gruvbox_accent_blue"
     ]
   },
   {
     "class": "icon_whole_word",
-    "layer2.texture": "gruvbox\\assets\\accent-blue\\light__wholeword.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/light__wholeword.png",
     "settings": [
       "gruvbox_accent_blue"
     ]
   },
   {
     "class": "icon_wrap",
-    "layer2.texture": "gruvbox\\assets\\accent-blue\\light__wrap.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/light__wrap.png",
     "settings": [
       "gruvbox_accent_blue"
     ]
   },
   {
     "class": "icon_in_selection",
-    "layer2.texture": "gruvbox\\assets\\accent-blue\\light__inselection.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/light__inselection.png",
     "settings": [
       "gruvbox_accent_blue"
     ]
   },
   {
     "class": "icon_highlight",
-    "layer2.texture": "gruvbox\\assets\\accent-blue\\light__highlight.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/light__highlight.png",
     "settings": [
       "gruvbox_accent_blue"
     ]
   },
   {
     "class": "icon_preserve_case",
-    "layer2.texture": "gruvbox\\assets\\accent-blue\\light__preservecase.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/light__preservecase.png",
     "settings": [
       "gruvbox_accent_blue"
     ]
   },
   {
     "class": "icon_context",
-    "layer2.texture": "gruvbox\\assets\\accent-blue\\light__context.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/light__context.png",
     "settings": [
       "gruvbox_accent_blue"
     ]
   },
   {
     "class": "icon_use_buffer",
-    "layer2.texture": "gruvbox\\assets\\accent-blue\\light__buffer.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/light__buffer.png",
     "settings": [
       "gruvbox_accent_blue"
     ]
@@ -3324,7 +3324,7 @@
   },
   {
     "class": "icon_folder",
-    "layer2.texture": "gruvbox\\assets\\accent-purple\\light__folder--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/light__folder--expanded.png",
     "settings": [
       "gruvbox_accent_purple"
     ]
@@ -3338,21 +3338,21 @@
   },
   {
     "class": "scroll_tabs_left_button",
-    "layer1.texture": "gruvbox\\assets\\accent-purple\\light__prevtab--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-purple/light__prevtab--hover.png",
     "settings": [
       "gruvbox_accent_purple"
     ]
   },
   {
     "class": "scroll_tabs_right_button",
-    "layer1.texture": "gruvbox\\assets\\accent-purple\\light__nexttab--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-purple/light__nexttab--hover.png",
     "settings": [
       "gruvbox_accent_purple"
     ]
   },
   {
     "class": "fold_button_control",
-    "layer1.texture": "gruvbox\\assets\\accent-purple\\light__fold--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-purple/light__fold--hover.png",
     "settings": [
       "gruvbox_accent_purple"
     ]
@@ -3362,7 +3362,7 @@
     "attributes": [
       "expanded"
     ],
-    "layer1.texture": "gruvbox\\assets\\accent-purple\\light__unfold--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-purple/light__unfold--hover.png",
     "settings": [
       "gruvbox_accent_purple"
     ]
@@ -3433,14 +3433,14 @@
   },
   {
     "class": "show_tabs_dropdown_button",
-    "layer1.texture": "gruvbox\\assets\\accent-purple\\light__more.png",
+    "layer1.texture": "gruvbox/assets/accent-purple/light__more.png",
     "settings": [
       "gruvbox_accent_purple"
     ]
   },
   {
     "class": "dropdown_button_control",
-    "layer1.texture": "gruvbox\\assets\\accent-purple\\light__more.png",
+    "layer1.texture": "gruvbox/assets/accent-purple/light__more.png",
     "settings": [
       "gruvbox_accent_purple"
     ]
@@ -3450,70 +3450,70 @@
     "attributes": [
       "hover"
     ],
-    "layer0.texture": "gruvbox\\assets\\accent-purple\\light__panels.png",
+    "layer0.texture": "gruvbox/assets/accent-purple/light__panels.png",
     "settings": [
       "gruvbox_accent_purple"
     ]
   },
   {
     "class": "icon_regex",
-    "layer2.texture": "gruvbox\\assets\\accent-purple\\light__regex.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/light__regex.png",
     "settings": [
       "gruvbox_accent_purple"
     ]
   },
   {
     "class": "icon_case",
-    "layer2.texture": "gruvbox\\assets\\accent-purple\\light__casesensitive.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/light__casesensitive.png",
     "settings": [
       "gruvbox_accent_purple"
     ]
   },
   {
     "class": "icon_whole_word",
-    "layer2.texture": "gruvbox\\assets\\accent-purple\\light__wholeword.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/light__wholeword.png",
     "settings": [
       "gruvbox_accent_purple"
     ]
   },
   {
     "class": "icon_wrap",
-    "layer2.texture": "gruvbox\\assets\\accent-purple\\light__wrap.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/light__wrap.png",
     "settings": [
       "gruvbox_accent_purple"
     ]
   },
   {
     "class": "icon_in_selection",
-    "layer2.texture": "gruvbox\\assets\\accent-purple\\light__inselection.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/light__inselection.png",
     "settings": [
       "gruvbox_accent_purple"
     ]
   },
   {
     "class": "icon_highlight",
-    "layer2.texture": "gruvbox\\assets\\accent-purple\\light__highlight.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/light__highlight.png",
     "settings": [
       "gruvbox_accent_purple"
     ]
   },
   {
     "class": "icon_preserve_case",
-    "layer2.texture": "gruvbox\\assets\\accent-purple\\light__preservecase.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/light__preservecase.png",
     "settings": [
       "gruvbox_accent_purple"
     ]
   },
   {
     "class": "icon_context",
-    "layer2.texture": "gruvbox\\assets\\accent-purple\\light__context.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/light__context.png",
     "settings": [
       "gruvbox_accent_purple"
     ]
   },
   {
     "class": "icon_use_buffer",
-    "layer2.texture": "gruvbox\\assets\\accent-purple\\light__buffer.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/light__buffer.png",
     "settings": [
       "gruvbox_accent_purple"
     ]
@@ -3593,7 +3593,7 @@
   },
   {
     "class": "icon_folder",
-    "layer2.texture": "gruvbox\\assets\\accent-aqua\\light__folder--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/light__folder--expanded.png",
     "settings": [
       "gruvbox_accent_aqua"
     ]
@@ -3607,21 +3607,21 @@
   },
   {
     "class": "scroll_tabs_left_button",
-    "layer1.texture": "gruvbox\\assets\\accent-aqua\\light__prevtab--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-aqua/light__prevtab--hover.png",
     "settings": [
       "gruvbox_accent_aqua"
     ]
   },
   {
     "class": "scroll_tabs_right_button",
-    "layer1.texture": "gruvbox\\assets\\accent-aqua\\light__nexttab--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-aqua/light__nexttab--hover.png",
     "settings": [
       "gruvbox_accent_aqua"
     ]
   },
   {
     "class": "fold_button_control",
-    "layer1.texture": "gruvbox\\assets\\accent-aqua\\light__fold--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-aqua/light__fold--hover.png",
     "settings": [
       "gruvbox_accent_aqua"
     ]
@@ -3631,7 +3631,7 @@
     "attributes": [
       "expanded"
     ],
-    "layer1.texture": "gruvbox\\assets\\accent-aqua\\light__unfold--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-aqua/light__unfold--hover.png",
     "settings": [
       "gruvbox_accent_aqua"
     ]
@@ -3702,14 +3702,14 @@
   },
   {
     "class": "show_tabs_dropdown_button",
-    "layer1.texture": "gruvbox\\assets\\accent-aqua\\light__more.png",
+    "layer1.texture": "gruvbox/assets/accent-aqua/light__more.png",
     "settings": [
       "gruvbox_accent_aqua"
     ]
   },
   {
     "class": "dropdown_button_control",
-    "layer1.texture": "gruvbox\\assets\\accent-aqua\\light__more.png",
+    "layer1.texture": "gruvbox/assets/accent-aqua/light__more.png",
     "settings": [
       "gruvbox_accent_aqua"
     ]
@@ -3719,70 +3719,70 @@
     "attributes": [
       "hover"
     ],
-    "layer0.texture": "gruvbox\\assets\\accent-aqua\\light__panels.png",
+    "layer0.texture": "gruvbox/assets/accent-aqua/light__panels.png",
     "settings": [
       "gruvbox_accent_aqua"
     ]
   },
   {
     "class": "icon_regex",
-    "layer2.texture": "gruvbox\\assets\\accent-aqua\\light__regex.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/light__regex.png",
     "settings": [
       "gruvbox_accent_aqua"
     ]
   },
   {
     "class": "icon_case",
-    "layer2.texture": "gruvbox\\assets\\accent-aqua\\light__casesensitive.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/light__casesensitive.png",
     "settings": [
       "gruvbox_accent_aqua"
     ]
   },
   {
     "class": "icon_whole_word",
-    "layer2.texture": "gruvbox\\assets\\accent-aqua\\light__wholeword.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/light__wholeword.png",
     "settings": [
       "gruvbox_accent_aqua"
     ]
   },
   {
     "class": "icon_wrap",
-    "layer2.texture": "gruvbox\\assets\\accent-aqua\\light__wrap.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/light__wrap.png",
     "settings": [
       "gruvbox_accent_aqua"
     ]
   },
   {
     "class": "icon_in_selection",
-    "layer2.texture": "gruvbox\\assets\\accent-aqua\\light__inselection.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/light__inselection.png",
     "settings": [
       "gruvbox_accent_aqua"
     ]
   },
   {
     "class": "icon_highlight",
-    "layer2.texture": "gruvbox\\assets\\accent-aqua\\light__highlight.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/light__highlight.png",
     "settings": [
       "gruvbox_accent_aqua"
     ]
   },
   {
     "class": "icon_preserve_case",
-    "layer2.texture": "gruvbox\\assets\\accent-aqua\\light__preservecase.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/light__preservecase.png",
     "settings": [
       "gruvbox_accent_aqua"
     ]
   },
   {
     "class": "icon_context",
-    "layer2.texture": "gruvbox\\assets\\accent-aqua\\light__context.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/light__context.png",
     "settings": [
       "gruvbox_accent_aqua"
     ]
   },
   {
     "class": "icon_use_buffer",
-    "layer2.texture": "gruvbox\\assets\\accent-aqua\\light__buffer.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/light__buffer.png",
     "settings": [
       "gruvbox_accent_aqua"
     ]
@@ -3862,7 +3862,7 @@
   },
   {
     "class": "icon_folder",
-    "layer2.texture": "gruvbox\\assets\\accent-orange\\light__folder--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/light__folder--expanded.png",
     "settings": [
       "gruvbox_accent_orange"
     ]
@@ -3876,21 +3876,21 @@
   },
   {
     "class": "scroll_tabs_left_button",
-    "layer1.texture": "gruvbox\\assets\\accent-orange\\light__prevtab--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-orange/light__prevtab--hover.png",
     "settings": [
       "gruvbox_accent_orange"
     ]
   },
   {
     "class": "scroll_tabs_right_button",
-    "layer1.texture": "gruvbox\\assets\\accent-orange\\light__nexttab--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-orange/light__nexttab--hover.png",
     "settings": [
       "gruvbox_accent_orange"
     ]
   },
   {
     "class": "fold_button_control",
-    "layer1.texture": "gruvbox\\assets\\accent-orange\\light__fold--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-orange/light__fold--hover.png",
     "settings": [
       "gruvbox_accent_orange"
     ]
@@ -3900,7 +3900,7 @@
     "attributes": [
       "expanded"
     ],
-    "layer1.texture": "gruvbox\\assets\\accent-orange\\light__unfold--hover.png",
+    "layer1.texture": "gruvbox/assets/accent-orange/light__unfold--hover.png",
     "settings": [
       "gruvbox_accent_orange"
     ]
@@ -3971,14 +3971,14 @@
   },
   {
     "class": "show_tabs_dropdown_button",
-    "layer1.texture": "gruvbox\\assets\\accent-orange\\light__more.png",
+    "layer1.texture": "gruvbox/assets/accent-orange/light__more.png",
     "settings": [
       "gruvbox_accent_orange"
     ]
   },
   {
     "class": "dropdown_button_control",
-    "layer1.texture": "gruvbox\\assets\\accent-orange\\light__more.png",
+    "layer1.texture": "gruvbox/assets/accent-orange/light__more.png",
     "settings": [
       "gruvbox_accent_orange"
     ]
@@ -3988,70 +3988,70 @@
     "attributes": [
       "hover"
     ],
-    "layer0.texture": "gruvbox\\assets\\accent-orange\\light__panels.png",
+    "layer0.texture": "gruvbox/assets/accent-orange/light__panels.png",
     "settings": [
       "gruvbox_accent_orange"
     ]
   },
   {
     "class": "icon_regex",
-    "layer2.texture": "gruvbox\\assets\\accent-orange\\light__regex.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/light__regex.png",
     "settings": [
       "gruvbox_accent_orange"
     ]
   },
   {
     "class": "icon_case",
-    "layer2.texture": "gruvbox\\assets\\accent-orange\\light__casesensitive.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/light__casesensitive.png",
     "settings": [
       "gruvbox_accent_orange"
     ]
   },
   {
     "class": "icon_whole_word",
-    "layer2.texture": "gruvbox\\assets\\accent-orange\\light__wholeword.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/light__wholeword.png",
     "settings": [
       "gruvbox_accent_orange"
     ]
   },
   {
     "class": "icon_wrap",
-    "layer2.texture": "gruvbox\\assets\\accent-orange\\light__wrap.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/light__wrap.png",
     "settings": [
       "gruvbox_accent_orange"
     ]
   },
   {
     "class": "icon_in_selection",
-    "layer2.texture": "gruvbox\\assets\\accent-orange\\light__inselection.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/light__inselection.png",
     "settings": [
       "gruvbox_accent_orange"
     ]
   },
   {
     "class": "icon_highlight",
-    "layer2.texture": "gruvbox\\assets\\accent-orange\\light__highlight.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/light__highlight.png",
     "settings": [
       "gruvbox_accent_orange"
     ]
   },
   {
     "class": "icon_preserve_case",
-    "layer2.texture": "gruvbox\\assets\\accent-orange\\light__preservecase.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/light__preservecase.png",
     "settings": [
       "gruvbox_accent_orange"
     ]
   },
   {
     "class": "icon_context",
-    "layer2.texture": "gruvbox\\assets\\accent-orange\\light__context.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/light__context.png",
     "settings": [
       "gruvbox_accent_orange"
     ]
   },
   {
     "class": "icon_use_buffer",
-    "layer2.texture": "gruvbox\\assets\\accent-orange\\light__buffer.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/light__buffer.png",
     "settings": [
       "gruvbox_accent_orange"
     ]
