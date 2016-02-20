@@ -1168,6 +1168,57 @@
     "layer0.opacity": 1
   },
   {
+    "class": "icon_folder_dup",
+    "content_margin": [
+      8,
+      8
+    ],
+    "layer0.texture": "gruvbox/assets/commons/folder_dup.png",
+    "layer0.opacity": 1,
+    "layer1.texture": "gruvbox/assets/dark/folder_dup--expanded.png",
+    "layer1.opacity": 0
+  },
+  {
+    "class": "icon_folder_dup",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 1
+  },
+  {
+    "class": "icon_folder_dup",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expanded",
+          "hover"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 1
+  },
+  {
+    "class": "icon_folder_dup",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expanded"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 1
+  },
+  {
     "class": "scroll_bar_control",
     "layer0.tint": [
       24,
@@ -2261,6 +2312,13 @@
     ]
   },
   {
+    "class": "icon_folder_dup",
+    "layer1.texture": "gruvbox/assets/accent-red/dark__folder_dup--expanded.png",
+    "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
     "class": "scroll_tabs_left_button",
     "layer1.texture": "gruvbox/assets/accent-red/dark__prevtab--hover.png",
     "settings": [
@@ -2525,6 +2583,13 @@
   {
     "class": "icon_folder_loading",
     "layer1.texture": "",
+    "settings": [
+      "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "icon_folder_dup",
+    "layer1.texture": "gruvbox/assets/accent-green/dark__folder_dup--expanded.png",
     "settings": [
       "gruvbox_accent_green"
     ]
@@ -2799,6 +2864,13 @@
     ]
   },
   {
+    "class": "icon_folder_dup",
+    "layer1.texture": "gruvbox/assets/accent-yellow/dark__folder_dup--expanded.png",
+    "settings": [
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
     "class": "scroll_tabs_left_button",
     "layer1.texture": "gruvbox/assets/accent-yellow/dark__prevtab--hover.png",
     "settings": [
@@ -3063,6 +3135,13 @@
   {
     "class": "icon_folder_loading",
     "layer1.texture": "",
+    "settings": [
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "icon_folder_dup",
+    "layer1.texture": "gruvbox/assets/accent-blue/dark__folder_dup--expanded.png",
     "settings": [
       "gruvbox_accent_blue"
     ]
@@ -3337,6 +3416,13 @@
     ]
   },
   {
+    "class": "icon_folder_dup",
+    "layer1.texture": "gruvbox/assets/accent-purple/dark__folder_dup--expanded.png",
+    "settings": [
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
     "class": "scroll_tabs_left_button",
     "layer1.texture": "gruvbox/assets/accent-purple/dark__prevtab--hover.png",
     "settings": [
@@ -3606,6 +3692,13 @@
     ]
   },
   {
+    "class": "icon_folder_dup",
+    "layer1.texture": "gruvbox/assets/accent-aqua/dark__folder_dup--expanded.png",
+    "settings": [
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
     "class": "scroll_tabs_left_button",
     "layer1.texture": "gruvbox/assets/accent-aqua/dark__prevtab--hover.png",
     "settings": [
@@ -3870,6 +3963,13 @@
   {
     "class": "icon_folder_loading",
     "layer1.texture": "",
+    "settings": [
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "icon_folder_dup",
+    "layer1.texture": "gruvbox/assets/accent-orange/dark__folder_dup--expanded.png",
     "settings": [
       "gruvbox_accent_orange"
     ]
