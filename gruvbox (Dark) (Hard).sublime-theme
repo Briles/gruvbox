@@ -1140,12 +1140,29 @@
   },
   {
     "class": "icon_folder_loading",
-    "layer1.texture": "",
-    "layer0.opacity": 0,
     "content_margin": [
       8,
       8
-    ]
+    ],
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/commons/folder_loading_9.png",
+        "gruvbox/assets/commons/folder_loading_8.png",
+        "gruvbox/assets/commons/folder_loading_7.png",
+        "gruvbox/assets/commons/folder_loading_6.png",
+        "gruvbox/assets/commons/folder_loading_5.png",
+        "gruvbox/assets/commons/folder_loading_4.png",
+        "gruvbox/assets/commons/folder_loading_3.png",
+        "gruvbox/assets/commons/folder_loading_2.png",
+        "gruvbox/assets/commons/folder_loading_1.png",
+        "gruvbox/assets/commons/folder_loading_0.png"
+      ],
+      "loop": true,
+      "frame_time": 0.075
+    },
+    "layer1.opacity": 1,
+    "layer0.opacity": 0,
+    "layer2.opacity": 0
   },
   {
     "class": "tree_row",
