@@ -702,7 +702,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>source.diff.meta</string>
+        <string>source.diff meta</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -711,7 +711,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>source.diff.meta.header.from-file, source.diff.meta.header.to-file</string>
+        <string>source.diff meta.header.from-file, source.diff meta.header.to-file</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -720,7 +720,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>source.diff.meta.diff.range, source.diff.meta.diff.line-number, source.diff.punctuation.range</string>
+        <string>source.diff meta.diff.range, source.diff meta.diff.line-number, source.diff punctuation.range</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -729,7 +729,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>source.diff.markup.deleted, source.diff.punctuation.deleted</string>
+        <string>source.diff markup.deleted, source.diff punctuation.deleted</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -738,7 +738,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>source.diff.markup.inserted, source.diff.punctuation.inserted</string>
+        <string>source.diff markup.inserted, source.diff punctuation.inserted</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -847,7 +847,7 @@
         <key>name</key>
         <string>PYTHON</string>
         <key>scope</key>
-        <string>source.python.keyword.operator.logical.python</string>
+        <string>keyword.operator.logical.python</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -856,7 +856,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>source.python.variable.parameter</string>
+        <string>variable.parameter.python</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1123,6 +1123,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>814254dc-7a56-4e1f-aeb1-2e0be1665172</string>
+    <string>165b7384-411a-46f7-a002-1898fe7aa3ab</string>
   </dict>
 </plist>
