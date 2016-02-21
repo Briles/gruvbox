@@ -38,7 +38,10 @@ Features
 
 * Lots of customization options
 * Support for High-DPI displays
-* Support for GitGutter, Bracket Highlighter, and SublimeLinter
+* Support for:
+    * [GitGutter](https://packagecontrol.io/packages/GitGutter)
+    * [Bracket Highlighter](https://packagecontrol.io/packages/BracketHighlighter)
+    * [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter)
 * Support for the latest Sublime Text features
 
 ![High DPI](./assets/highdpi.png)
