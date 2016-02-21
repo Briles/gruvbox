@@ -42,6 +42,7 @@ Features
     * [GitGutter](https://packagecontrol.io/packages/GitGutter)
     * [Bracket Highlighter](https://packagecontrol.io/packages/BracketHighlighter)
     * [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter)
+    * [Doc​Blockr](https://packagecontrol.io/packages/DocBlockr)
     * [Markdown Extended](https://packagecontrol.io/packages/Markdown%20Extended)
 * Support for the latest Sublime Text features
 
