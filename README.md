@@ -229,6 +229,7 @@ Change the font size of the tabs
   "gruvbox_enable_statusbar_border": true,    // Enable borders for the status bar
   "gruvbox_tabs_bold": true,                  // Enable bold tabs
   "gruvbox_tabs_autowidth": true,             // Auto-size the tabs
+  "gruvbox_iconset_spacegray": true,          // Use spacegray-like icons in the statusbar
 ```
 
 License
