@@ -327,7 +327,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#076678</string>
+          <string>#427b58</string>
         </dict>
       </dict>
       <dict>
@@ -542,7 +542,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>meta.link</string>
+        <string>meta.link, meta.image</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -611,7 +611,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>markup.deleted, markup.list</string>
+        <string>markup.deleted, markup.list, punctuation.definition.list_item.number, punctuation.definition.list_item.markdown</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -631,7 +631,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>markup.heading .punctuation.definition.heading</string>
+        <string>markup.heading, punctuation.definition.heading</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1123,6 +1123,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>aacdebdc-cf95-4294-8286-75c3e32c59a2</string>
+    <string>0b9c4781-226d-413b-8b99-8fb7e736218f</string>
   </dict>
 </plist>
