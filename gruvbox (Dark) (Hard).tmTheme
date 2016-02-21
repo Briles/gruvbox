@@ -245,7 +245,7 @@
         <key>name</key>
         <string>Constants</string>
         <key>scope</key>
-        <string>constant, constant.numeric, constant.other.symbol, constant.other</string>
+        <string>constant, constant.numeric, constant.other.symbol, constant.other, constant.other.color, constant.other.color punctuation.definition.constant, support.constant.color</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -268,15 +268,6 @@
         <dict>
           <key>foreground</key>
           <string>#fb4934</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>constant.other.color, constant.other.color punctuation.definition.constant, support.constant.color</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#d3869b</string>
         </dict>
       </dict>
       <dict>
@@ -816,35 +807,6 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>JSON</string>
-        <key>scope</key>
-        <string>source.json.meta.structure.dictionary.json.string.quoted.json, source.json.meta.structure.dictionary.json.string.quoted.json.punctuation.string</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#83a598</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>source.json.meta.structure.dictionary.json.value.json.string.quoted.json, source.json.meta.structure.dictionary.json.value.json.string.quoted.json, source.json.meta.structure.dictionary.json.value.json.string.quoted.json.punctuation, source.json.meta.structure.array.json.value.json.string.quoted.json, source.json.meta.structure.array.json.value.json.string.quoted.json, source.json.meta.structure.array.json.value.json.string.quoted.json.punctuation</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#fabd2f</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>.source.json.constant.language.json</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#fb4934</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>name</key>
         <string>PYTHON</string>
         <key>scope</key>
         <string>keyword.operator.logical.python</string>
@@ -1123,6 +1085,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>d8c79864-44cc-4e64-ae54-b07b7e033837</string>
+    <string>bc86845b-499e-4eaf-a0f8-4bb2e8edcc34</string>
   </dict>
 </plist>
