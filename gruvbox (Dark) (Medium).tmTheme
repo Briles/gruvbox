@@ -146,7 +146,7 @@
         </dict>
       </dict>
       <dict>
-        <key>Name</key>
+        <key>name</key>
         <string>Operators</string>
         <key>scope</key>
         <string>keyword.operator</string>
@@ -298,7 +298,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#282828</string>
+          <string>#fbf1c7</string>
           <key>background</key>
           <string>#fb4934</string>
         </dict>
@@ -1105,6 +1105,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>5d9a5f3f-b7ae-4cda-9b05-72b396f57dc0</string>
+    <string>36660095-d648-46b6-9cec-735cbf992f49</string>
   </dict>
 </plist>
