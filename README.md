@@ -10,13 +10,13 @@ Based on [gruvbox for vim](https://github.com/morhetz/gruvbox)
 
 > &mdash; <cite>[Pavel Pertsev](https://github.com/morhetz), creator of gruvbox for vim</cite>
 
-![Screenshot Dark](./assets/dark.png)
-![Screenshot Light](./assets/light.png)
+![Screenshot Dark](http://i.imgur.com/VyXrbOv.png)
+![Screenshot Light](http://i.imgur.com/1UHJx8B.png)
 
 Contrast options
 ----------------
 
-![Screenshot Contrast Options](./assets/contrast.png)
+![Screenshot Contrast Options](http://i.imgur.com/euGncPs.png)
 
 Monospaced font used in screenshots is [Fira Mono Medium](https://github.com/mozilla/Fira)
 
@@ -46,7 +46,7 @@ Features
     * [Markdown Extended](https://packagecontrol.io/packages/Markdown%20Extended)
 * Support for the latest Sublime Text features
 
-![High DPI](./assets/highdpi.png)
+![High DPI](http://i.imgur.com/xiEzVPe.png)
 
 Installation
 ------------
@@ -128,7 +128,7 @@ Settings
 
 #### Accent Colors
 
-![Accent Colors](./assets/accents.png)
+![Accent Colors](http://i.imgur.com/QhdrE58.png)
 
 Enable accent color by setting the appropriate key to `true`
 Accent colors affect icons and certain text.
@@ -145,7 +145,7 @@ Accent colors affect icons and certain text.
 
 #### AutoComplete Spacing
 
-![AutoComplete Spacing](./assets/autocomplete.gif)
+![AutoComplete Spacing](http://i.imgur.com/8H6F051.gif)
 
 Change the space between autocomplete rows
 
@@ -160,7 +160,7 @@ Change the space between autocomplete rows
 
 #### Sidebar Spacing
 
-![Sidebar Spacing](./assets/sidebar.png)
+![Sidebar Spacing](http://i.imgur.com/YcbDJK4.png)
 
 Change the space between sidebar tree rows
 
