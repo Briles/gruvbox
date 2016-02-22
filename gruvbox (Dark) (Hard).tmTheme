@@ -76,7 +76,7 @@
         <key>name</key>
         <string>Comments</string>
         <key>scope</key>
-        <string>comment, punctuation.definition.comment, text.cancelled, meta.punctuation.separator, markup.strikethrough</string>
+        <string>comment, punctuation.definition.comment, text.cancelled, meta.punctuation.separator, markup.strikethrough, punctuation.whitespace.comment</string>
         <key>settings</key>
         <dict>
           <key>fontStyle</key>
@@ -138,7 +138,7 @@
         <key>name</key>
         <string>Keywords</string>
         <key>scope</key>
-        <string>keyword, keyword.control</string>
+        <string>keyword, keyword.control, punctuation.definition.keyword</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -225,11 +225,31 @@
       </dict>
       <dict>
         <key>scope</key>
+        <string>variable.interpolation variable</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#83a598</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
         <string>variable.parameter</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
           <string>#f9f5d7</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>SASS import url</string>
+        <key>scope</key>
+        <string>variable.parameter.url</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#b8bb26</string>
         </dict>
       </dict>
       <dict>
@@ -441,7 +461,7 @@
         <key>name</key>
         <string>Entity</string>
         <key>scope</key>
-        <string>entity.name.function, entity.name.section, entity.other.attribute-name.id, entity.other.attribute-name.class</string>
+        <string>entity.name.function, entity.name.section, entity.other.attribute-name.id</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -450,7 +470,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>entity.name.class, entity.name.type.class</string>
+        <string>entity.name.class, entity.name.type.class, entity.other.attribute-name.class</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -486,7 +506,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>entity.other.attribute-name.pseudo-class</string>
+        <string>entity.other.attribute-name.pseudo-class, entity.other.attribute-name.pseudo-element</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -651,7 +671,7 @@
         <key>name</key>
         <string>CS</string>
         <key>scope</key>
-        <string>source.cs.keyword.operator</string>
+        <string>source.cs keyword.operator</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1085,6 +1105,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>bc86845b-499e-4eaf-a0f8-4bb2e8edcc34</string>
+    <string>efa39fda-d8d2-495e-84f2-50aa9ab31536</string>
   </dict>
 </plist>
