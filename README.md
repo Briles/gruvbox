@@ -250,6 +250,26 @@ Autocollapse the tabs when not in use
   "gruvbox_iconset_spacegray": true,          // Use spacegray-like icons in the statusbar
 ```
 
+Extras
+------
+
+all extras can be found in the `extras` directory of the package.
+
+### Code Fold Icon
+
+Activation:
+
+1. Add the `fold.png` icon from `extras` to `Sublime Text/Data/Packages/Theme - Default/`
+2. Restart Sublime Text
+
+### Bookmark Icon
+
+Activation:
+
+1. Rename the `dark__bookmark.png` or `light__bookmark.png` in `extras` to `bookmark.png`
+2. Add the `bookmark.png` icon to `Sublime Text/Data/Packages/Theme - Default/`
+3. Restart Sublime Text
+
 License
 -------
 
