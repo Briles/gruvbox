@@ -219,6 +219,21 @@ Change the font size of the tabs
   "gruvbox_tabs_font_size_15": true,  //  v  15
 ```
 
+#### Autocollapsing Tab Bar
+
+Autocollapse the tabs when not in use
+
+```json
+  "gruvbox_autocollapse_tabs": true,            // enable the autocollapsing tabs
+
+  // Set the height of the trigger area which shows the tabs
+  "gruvbox_autocollapse_tabs_trigger_2": true,  //  v  2
+  "gruvbox_autocollapse_tabs_trigger_3": true,  //  |  3
+                                                //  |  4 (Default)
+  "gruvbox_autocollapse_tabs_trigger_5": true,  //  |  5
+  "gruvbox_autocollapse_tabs_trigger_6": true,  //  v  6
+```
+
 #### Even More Settings...
 
 ```json
