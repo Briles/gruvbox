@@ -206,6 +206,9 @@ Change the height of the tabs
 #### Tab Font Sizes
 
 Change the font size of the tabs
+*Font sizes above 11 may get cut off. This is a [known issue][] with Sublime Text.*
+
+   [known issue]: https://forum.sublimetext.com/t/increaseing-font-size-of-file-tabs-cuts-off-the-font/7009
 
 ```json
   "gruvbox_tabs_font_size_7": true,   //  v  7
