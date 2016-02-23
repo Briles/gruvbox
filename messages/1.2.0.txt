@@ -1,0 +1,30 @@
+gruvbox for Sublime Text 3
+https://github.com/briles/gruvbox
+
+Version 1.2.0
+--------------------------------------------------------------------------------
+
+  THEMES
+
+    • Added autocollapsing tabs
+
+      activate by adding '"gruvbox_autocollapse_tabs": true,' to your user preferences
+
+      Set the height of the trigger area which shows the tabs:
+
+      "gruvbox_autocollapse_tabs_trigger_2": true,  //  v  2
+      "gruvbox_autocollapse_tabs_trigger_3": true,  //  |  3
+                                                    //  |  4 (Default)
+      "gruvbox_autocollapse_tabs_trigger_5": true,  //  |  5
+      "gruvbox_autocollapse_tabs_trigger_6": true,  //  v  6
+
+
+    • Added sidebar file close button
+    • Updated Jade file-type icon
+    • Other minor improvements
+
+
+  COLOR SCHEMES
+
+    • Made invalid foreground more prominent
+    • Improved SCSS coloring
