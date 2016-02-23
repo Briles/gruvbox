@@ -255,6 +255,14 @@ Extras
 
 all extras can be found in the `extras` directory of the package.
 
+### SublimeLinter Gutter Theme
+
+Activation:
+
+1. Add the `gruvbox` directory from `extras/sublimelinter gutter-themes/` to `Sublime Text/Data/Packages/SublimeLinter/gutter-themes/`
+2. Set `gruvbox` as the gutter theme by choosing `SublimeLinter: Choose Gutter Theme` from the command palette and selecting `gruvbox` *or* by changing `"gutter_theme"` to `"Packages/SublimeLinter/gutter-themes/gruvbox/gruvbox.gutter-theme"` in `SublimeLinter.sublime-settings`
+3. Restart Sublime Text
+
 ### Code Fold Icon
 
 Activation:
