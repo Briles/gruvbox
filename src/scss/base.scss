@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: normal normal 14px/24px 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+
+  text-rendering: optimizeLegibility;
+
+  color: $dark-bg;
+  background-color: $white;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+.centered {
+  text-align: center;
+}
+
+.logo {
+  display: block;
+
+  width: 100%;
+  max-width: 30em;
+  margin: 3em auto;
+}
+
+.tagline {
+  font-size: 2em;
+  font-weight: 200;
+  line-height: 1.5em;
+
+  display: inline-block;
+
+  margin: 0 auto;
+  padding: 0 0 0 1.8em;
+
+  text-align: center;
+  white-space: nowrap;
+
+  color: $dark-bg4;
+  border: 1px solid $faded-border;
+  border-right: 0;
+  border-left: 0;
+}
+
+.cta {
+  font-size: 1em;
+
+  display: inline-block;
+
+  margin-left: 1.8em;
+  padding: 1em 1.8em;
+
+  text-decoration: none;
+
+  color: $neutral-blue;
+  border-left: 1px solid $faded-border;
+}
+
+.groove {
+  font-weight: 400;
+  @for $i from 1 through length($groove-colors-palette) {
+    $color: nth($groove-colors-palette, $i);
+    &:nth-child(#{$i}) {
+      color: $color;
+    }
+  }
+}
+
+.screenshot-stack {
+  padding: 40px;
+}
+
+.screenshot {
+  width: 100%;
+  min-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  h2 {
+    font-size: 3em;
+    font-weight: 300;
+
+    margin-bottom: 1em;
+  }
+  img {
+    width: 100%;
+    max-width: 1913px;
+    height: auto;
+
+    vertical-align: top;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.copyright {
+  font-size: .9em;
+
+  padding: 1em 0;
+
+  text-align: center;
+
+  color: $neutral-gray;
+  a {
+    color: $neutral-blue;
+  }
+}
+
+.heart {
+  font: 0/0 a;
+
+  display: inline-block;
+
+  width: 11px;
+  height: 9px;
+  margin: 0 5px;
+
+  vertical-align: middle;
+
+  background-image: url('src/assets/images/heart.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
