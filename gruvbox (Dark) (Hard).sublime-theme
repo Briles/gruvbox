@@ -1060,7 +1060,89 @@
     "attributes": [
       "transient"
     ],
-    "font.italic": false
+    "font.italic": false,
+    "color": [
+      206,
+      206,
+      206
+    ]
+  },
+  {
+    "class": "close_button",
+    "content_margin": [
+      8,
+      8
+    ],
+    "layer0.texture": "gruvbox/assets/dark/close.png",
+    "layer0.inner_margin": 0,
+    "layer0.opacity": 0,
+    "layer1.texture": "gruvbox/assets/dark/close--hover.png",
+    "layer1.opacity": 0,
+    "layer2.texture": "gruvbox/assets/dark/dirty.png",
+    "layer2.inner_margin": 0
+  },
+  {
+    "class": "close_button",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "layer0.opacity": 1,
+    "layer1.opacity": 0,
+    "layer2.opacity": 0
+  },
+  {
+    "class": "close_button",
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "layer0.opacity": 1,
+    "layer1.opacity": 0,
+    "layer2.opacity": 0
+  },
+  {
+    "class": "close_button",
+    "attributes": [
+      "dirty"
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "layer2.opacity": 1
+  },
+  {
+    "class": "close_button",
+    "attributes": [
+      "dirty"
+    ],
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "layer2.opacity": 1
+  },
+  {
+    "class": "close_button",
+    "attributes": [
+      "hover"
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 1,
+    "layer2.opacity": 0
   },
   {
     "class": "icon_file_type",
