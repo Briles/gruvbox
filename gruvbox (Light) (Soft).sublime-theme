@@ -3553,20 +3553,22 @@
   },
   {
     "class": "dropdown_button_control",
-    "layer1.texture": "gruvbox/assets/accent-red/light__spacegray__more.png",
     "settings": [
+      "gruvbox_iconset_spacegray",
       "gruvbox_accent_red"
-    ]
+    ],
+    "layer1.texture": "gruvbox/assets/accent-red/light__spacegray__more.png"
   },
   {
     "class": "panel_button_control",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_red"
+    ],
     "attributes": [
       "hover"
     ],
-    "layer0.texture": "gruvbox/assets/accent-red/light__spacegray__panels.png",
-    "settings": [
-      "gruvbox_accent_red"
-    ]
+    "layer0.texture": "gruvbox/assets/accent-red/light__spacegray__panels.png"
   },
   {
     "class": "label_control",
@@ -3942,20 +3944,22 @@
   },
   {
     "class": "dropdown_button_control",
-    "layer1.texture": "gruvbox/assets/accent-green/light__spacegray__more.png",
     "settings": [
+      "gruvbox_iconset_spacegray",
       "gruvbox_accent_green"
-    ]
+    ],
+    "layer1.texture": "gruvbox/assets/accent-green/light__spacegray__more.png"
   },
   {
     "class": "panel_button_control",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_green"
+    ],
     "attributes": [
       "hover"
     ],
-    "layer0.texture": "gruvbox/assets/accent-green/light__spacegray__panels.png",
-    "settings": [
-      "gruvbox_accent_green"
-    ]
+    "layer0.texture": "gruvbox/assets/accent-green/light__spacegray__panels.png"
   },
   {
     "class": "label_control",
@@ -4331,20 +4335,22 @@
   },
   {
     "class": "dropdown_button_control",
-    "layer1.texture": "gruvbox/assets/accent-yellow/light__spacegray__more.png",
     "settings": [
+      "gruvbox_iconset_spacegray",
       "gruvbox_accent_yellow"
-    ]
+    ],
+    "layer1.texture": "gruvbox/assets/accent-yellow/light__spacegray__more.png"
   },
   {
     "class": "panel_button_control",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_yellow"
+    ],
     "attributes": [
       "hover"
     ],
-    "layer0.texture": "gruvbox/assets/accent-yellow/light__spacegray__panels.png",
-    "settings": [
-      "gruvbox_accent_yellow"
-    ]
+    "layer0.texture": "gruvbox/assets/accent-yellow/light__spacegray__panels.png"
   },
   {
     "class": "label_control",
@@ -4720,20 +4726,22 @@
   },
   {
     "class": "dropdown_button_control",
-    "layer1.texture": "gruvbox/assets/accent-blue/light__spacegray__more.png",
     "settings": [
+      "gruvbox_iconset_spacegray",
       "gruvbox_accent_blue"
-    ]
+    ],
+    "layer1.texture": "gruvbox/assets/accent-blue/light__spacegray__more.png"
   },
   {
     "class": "panel_button_control",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_blue"
+    ],
     "attributes": [
       "hover"
     ],
-    "layer0.texture": "gruvbox/assets/accent-blue/light__spacegray__panels.png",
-    "settings": [
-      "gruvbox_accent_blue"
-    ]
+    "layer0.texture": "gruvbox/assets/accent-blue/light__spacegray__panels.png"
   },
   {
     "class": "label_control",
@@ -5109,20 +5117,22 @@
   },
   {
     "class": "dropdown_button_control",
-    "layer1.texture": "gruvbox/assets/accent-purple/light__spacegray__more.png",
     "settings": [
+      "gruvbox_iconset_spacegray",
       "gruvbox_accent_purple"
-    ]
+    ],
+    "layer1.texture": "gruvbox/assets/accent-purple/light__spacegray__more.png"
   },
   {
     "class": "panel_button_control",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_purple"
+    ],
     "attributes": [
       "hover"
     ],
-    "layer0.texture": "gruvbox/assets/accent-purple/light__spacegray__panels.png",
-    "settings": [
-      "gruvbox_accent_purple"
-    ]
+    "layer0.texture": "gruvbox/assets/accent-purple/light__spacegray__panels.png"
   },
   {
     "class": "label_control",
@@ -5498,20 +5508,22 @@
   },
   {
     "class": "dropdown_button_control",
-    "layer1.texture": "gruvbox/assets/accent-aqua/light__spacegray__more.png",
     "settings": [
+      "gruvbox_iconset_spacegray",
       "gruvbox_accent_aqua"
-    ]
+    ],
+    "layer1.texture": "gruvbox/assets/accent-aqua/light__spacegray__more.png"
   },
   {
     "class": "panel_button_control",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_aqua"
+    ],
     "attributes": [
       "hover"
     ],
-    "layer0.texture": "gruvbox/assets/accent-aqua/light__spacegray__panels.png",
-    "settings": [
-      "gruvbox_accent_aqua"
-    ]
+    "layer0.texture": "gruvbox/assets/accent-aqua/light__spacegray__panels.png"
   },
   {
     "class": "label_control",
@@ -5887,20 +5899,22 @@
   },
   {
     "class": "dropdown_button_control",
-    "layer1.texture": "gruvbox/assets/accent-orange/light__spacegray__more.png",
     "settings": [
+      "gruvbox_iconset_spacegray",
       "gruvbox_accent_orange"
-    ]
+    ],
+    "layer1.texture": "gruvbox/assets/accent-orange/light__spacegray__more.png"
   },
   {
     "class": "panel_button_control",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_orange"
+    ],
     "attributes": [
       "hover"
     ],
-    "layer0.texture": "gruvbox/assets/accent-orange/light__spacegray__panels.png",
-    "settings": [
-      "gruvbox_accent_orange"
-    ]
+    "layer0.texture": "gruvbox/assets/accent-orange/light__spacegray__panels.png"
   },
   {
     "class": "label_control",
