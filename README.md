@@ -248,6 +248,7 @@ Autocollapse the tabs when not in use
   "gruvbox_enable_statusbar_border": true,    // Enable borders for the status bar
   "gruvbox_tabs_bold": true,                  // Enable bold tabs
   "gruvbox_tabs_autowidth": true,             // Auto-size the tabs
+  "gruvbox_colored_tooltips": true,           // Color the tooltip backgrounds with the current accent color
   "gruvbox_iconset_spacegray": true,          // Use spacegray-like icons in the statusbar
 ```
 

@@ -3588,6 +3588,30 @@
     ]
   },
   {
+    "class": "tool_tip_control",
+    "settings": [
+      "gruvbox_colored_tooltips",
+      "gruvbox_accent_red"
+    ],
+    "layer0.tint": [
+      251,
+      73,
+      52
+    ]
+  },
+  {
+    "class": "tool_tip_label_control",
+    "settings": [
+      "gruvbox_colored_tooltips",
+      "gruvbox_accent_red"
+    ],
+    "color": [
+      255,
+      255,
+      255
+    ]
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       184,
@@ -3950,6 +3974,30 @@
     ],
     "settings": [
       "gruvbox_accent_green"
+    ]
+  },
+  {
+    "class": "tool_tip_control",
+    "settings": [
+      "gruvbox_colored_tooltips",
+      "gruvbox_accent_green"
+    ],
+    "layer0.tint": [
+      184,
+      187,
+      38
+    ]
+  },
+  {
+    "class": "tool_tip_label_control",
+    "settings": [
+      "gruvbox_colored_tooltips",
+      "gruvbox_accent_green"
+    ],
+    "color": [
+      255,
+      255,
+      255
     ]
   },
   {
@@ -4318,6 +4366,30 @@
     ]
   },
   {
+    "class": "tool_tip_control",
+    "settings": [
+      "gruvbox_colored_tooltips",
+      "gruvbox_accent_yellow"
+    ],
+    "layer0.tint": [
+      250,
+      189,
+      47
+    ]
+  },
+  {
+    "class": "tool_tip_label_control",
+    "settings": [
+      "gruvbox_colored_tooltips",
+      "gruvbox_accent_yellow"
+    ],
+    "color": [
+      255,
+      255,
+      255
+    ]
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       131,
@@ -4680,6 +4752,30 @@
     ],
     "settings": [
       "gruvbox_accent_blue"
+    ]
+  },
+  {
+    "class": "tool_tip_control",
+    "settings": [
+      "gruvbox_colored_tooltips",
+      "gruvbox_accent_blue"
+    ],
+    "layer0.tint": [
+      131,
+      165,
+      152
+    ]
+  },
+  {
+    "class": "tool_tip_label_control",
+    "settings": [
+      "gruvbox_colored_tooltips",
+      "gruvbox_accent_blue"
+    ],
+    "color": [
+      255,
+      255,
+      255
     ]
   },
   {
@@ -5048,6 +5144,30 @@
     ]
   },
   {
+    "class": "tool_tip_control",
+    "settings": [
+      "gruvbox_colored_tooltips",
+      "gruvbox_accent_purple"
+    ],
+    "layer0.tint": [
+      211,
+      134,
+      155
+    ]
+  },
+  {
+    "class": "tool_tip_label_control",
+    "settings": [
+      "gruvbox_colored_tooltips",
+      "gruvbox_accent_purple"
+    ],
+    "color": [
+      255,
+      255,
+      255
+    ]
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       142,
@@ -5413,6 +5533,30 @@
     ]
   },
   {
+    "class": "tool_tip_control",
+    "settings": [
+      "gruvbox_colored_tooltips",
+      "gruvbox_accent_aqua"
+    ],
+    "layer0.tint": [
+      142,
+      192,
+      124
+    ]
+  },
+  {
+    "class": "tool_tip_label_control",
+    "settings": [
+      "gruvbox_colored_tooltips",
+      "gruvbox_accent_aqua"
+    ],
+    "color": [
+      255,
+      255,
+      255
+    ]
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       254,
@@ -5775,6 +5919,30 @@
     ],
     "settings": [
       "gruvbox_accent_orange"
+    ]
+  },
+  {
+    "class": "tool_tip_control",
+    "settings": [
+      "gruvbox_colored_tooltips",
+      "gruvbox_accent_orange"
+    ],
+    "layer0.tint": [
+      254,
+      128,
+      25
+    ]
+  },
+  {
+    "class": "tool_tip_label_control",
+    "settings": [
+      "gruvbox_colored_tooltips",
+      "gruvbox_accent_orange"
+    ],
+    "color": [
+      255,
+      255,
+      255
     ]
   }
 ]
