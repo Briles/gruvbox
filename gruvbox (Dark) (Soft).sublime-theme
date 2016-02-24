@@ -3197,6 +3197,16 @@
     ]
   },
   {
+    "class": "panel_button_control",
+    "settings": [
+      "gruvbox_disable_panels_button"
+    ],
+    "content_margin": [
+      0,
+      0
+    ]
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       251,
