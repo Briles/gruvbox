@@ -2,9 +2,9 @@
   {
     "class": "sheet_container_control",
     "layer0.tint": [
-      50,
-      48,
-      47
+      0,
+      255,
+      255
     ],
     "layer0.opacity": 1
   },
@@ -12,9 +12,9 @@
     "class": "grid_layout_control",
     "border_size": 1,
     "border_color": [
-      50,
-      48,
-      47
+      18,
+      17,
+      17
     ]
   },
   {
