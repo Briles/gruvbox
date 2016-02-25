@@ -24,9 +24,9 @@
       6
     ],
     "layer0.tint": [
-      0,
-      255,
-      255
+      102,
+      92,
+      84
     ],
     "layer0.opacity": 1
   },
@@ -42,9 +42,9 @@
   {
     "class": "progress_bar_control",
     "layer0.tint": [
-      242,
-      229,
-      188
+      102,
+      92,
+      84
     ],
     "layer0.opacity": 1
   },
