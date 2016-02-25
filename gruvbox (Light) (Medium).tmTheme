@@ -423,7 +423,7 @@
         <key>name</key>
         <string>Support</string>
         <key>scope</key>
-        <string>support.class, support.type</string>
+        <string>support.class, support.type, variable.other.class</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1105,6 +1105,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>3d549a89-2175-4d5b-9571-3d362833fd81</string>
+    <string>0ec00c2d-81c2-41fe-850d-23bdaab4db27</string>
   </dict>
 </plist>
