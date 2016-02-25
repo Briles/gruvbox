@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/banner-image.svg" alt="gruvbox for Sublime Text" width="327px" height="122px"></p>
+<p align="center"><img src="https://cdn.rawgit.com/Briles/gruvbox/master/assets/banner-image.svg" alt="gruvbox for Sublime Text" width="327px" height="122px"></p>
 Based on [gruvbox for vim](https://github.com/morhetz/gruvbox)
 
 > gruvbox is heavily inspired by [badwolf][], [jellybeans][] and [solarized][].
