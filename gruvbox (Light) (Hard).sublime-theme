@@ -1469,41 +1469,6 @@
     "layer1.opacity": 0
   },
   {
-    "class": "puck_control",
-    "content_margin": [
-      6,
-      16
-    ],
-    "blur": false,
-    "layer0.tint": [
-      245,
-      238,
-      188
-    ],
-    "layer0.opacity": 1,
-    "layer0.inner_margin": [
-      8,
-      8
-    ],
-    "layer1.texture": "gruvbox/assets/light/puckvertical.png",
-    "layer1.opacity": 1,
-    "layer1.inner_margin": [
-      8,
-      8
-    ]
-  },
-  {
-    "class": "puck_control",
-    "attributes": [
-      "horizontal"
-    ],
-    "content_margin": [
-      16,
-      6
-    ],
-    "layer1.texture": "gruvbox/assets/light/puckhorizontal.png"
-  },
-  {
     "class": "scroll_area_control",
     "settings": [
       "overlay_scroll_bars"
@@ -1569,20 +1534,9 @@
       16
     ],
     "blur": false,
-    "layer0.tint": [
-      245,
-      238,
-      188
-    ],
-    "layer0.opacity": 0,
+    "layer0.texture": "gruvbox/assets/light/puckvertical.png",
+    "layer0.opacity": 1,
     "layer0.inner_margin": [
-      1,
-      8,
-      1,
-      8
-    ],
-    "layer1.texture": "gruvbox/assets/light/puckvertical.png",
-    "layer1.inner_margin": [
       1,
       8,
       1,
@@ -1598,14 +1552,8 @@
       16,
       6
     ],
+    "layer0.texture": "gruvbox/assets/light/puckhorizontal.png",
     "layer0.inner_margin": [
-      8,
-      1,
-      8,
-      1
-    ],
-    "layer1.texture": "gruvbox/assets/light/puckhorizontal.png",
-    "layer1.inner_margin": [
       8,
       1,
       8,
@@ -1617,7 +1565,7 @@
     "settings": [
       "overlay_scroll_bars"
     ],
-    "layer1.texture": "gruvbox/assets/light/puckvertical--overlay.png"
+    "layer0.texture": "gruvbox/assets/light/puckvertical--overlay.png"
   },
   {
     "class": "puck_control",
@@ -1627,7 +1575,7 @@
     "settings": [
       "overlay_scroll_bars"
     ],
-    "layer1.texture": "gruvbox/assets/light/puckhorizontal--overlay.png"
+    "layer0.texture": "gruvbox/assets/light/puckhorizontal--overlay.png"
   },
   {
     "class": "minimap_control",
