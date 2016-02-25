@@ -432,7 +432,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>support.function</string>
+        <string>support.function, meta.function-call.method variable.function, meta.function-call.static variable.function</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1105,6 +1105,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>73bac337-6852-41fb-a56d-46ffb37888c2</string>
+    <string>5fc472a4-9d24-4501-a1f7-b34c30fad757</string>
   </dict>
 </plist>
