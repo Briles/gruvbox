@@ -1,0 +1,24 @@
+gruvbox for Sublime Text 3
+https://github.com/briles/gruvbox
+
+Version 1.3.0
+--------------------------------------------------------------------------------
+
+  THEMES
+
+    • Added option to enable colored tooltips ("gruvbox_colored_tooltips": true,)
+    • Added option to disable panels button ("gruvbox_disable_panels_button": true,)
+    • Added accent-colored hover state to status bar labels
+    • Added SublimeLinter gutter theme (https://github.com/briles/gruvbox#sublimelinter-gutter-theme)
+    • Added fold icon (https://github.com/briles/gruvbox#code-fold-icon)
+    • Added bookmark icon (https://github.com/briles/gruvbox#bookmark-icon)
+
+    • Fixed progress control colors
+    • Fixed bug which caused incorrect icons being shown when using the spacegray iconset
+    • Fixed tabs bar border not showing at startup
+    • Fixed sheet color
+    • Fixed pane border color
+    • Fixed improper scrollbar scaling
+    • Made label control color distinguishable
+
+    • Other minor fixes and improvements

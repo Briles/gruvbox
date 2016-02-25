@@ -1,3 +1,4 @@
+<p align="center"><img src="assets/banner-image.svg" alt="gruvbox for Sublime Text" width="327px" height="122px"></p>
 Based on [gruvbox for vim](https://github.com/morhetz/gruvbox)
 
 > gruvbox is heavily inspired by [badwolf][], [jellybeans][] and [solarized][].
@@ -243,12 +244,42 @@ Autocollapse the tabs when not in use
   "gruvbox_disable_fileicons": true,          // Disable the sidebar file icons
   "gruvbox_disable_folder_icons": true,       // Disable the sidebar folder icons
   "gruvbox_disable_borders": true,            // Disable all borders
+  "gruvbox_disable_panels_button": true,      // Disable the panels button in the status bar
   "gruvbox_enable_panel_close_button": true,  // Enable the panel close button
   "gruvbox_enable_statusbar_border": true,    // Enable borders for the status bar
   "gruvbox_tabs_bold": true,                  // Enable bold tabs
   "gruvbox_tabs_autowidth": true,             // Auto-size the tabs
+  "gruvbox_colored_tooltips": true,           // Color the tooltip backgrounds with the current accent color
   "gruvbox_iconset_spacegray": true,          // Use spacegray-like icons in the statusbar
 ```
+
+Extras
+------
+
+all extras can be found in the `extras` directory of the package.
+
+### SublimeLinter Gutter Theme
+
+Activation:
+
+1. Add the `gruvbox` directory from `extras/sublimelinter gutter-themes/` to `Sublime Text/Data/Packages/SublimeLinter/gutter-themes/`
+2. Set `gruvbox` as the gutter theme by choosing `SublimeLinter: Choose Gutter Theme` from the command palette and selecting `gruvbox` *or* by changing `"gutter_theme"` to `"Packages/SublimeLinter/gutter-themes/gruvbox/gruvbox.gutter-theme"` in `SublimeLinter.sublime-settings`
+3. Restart Sublime Text
+
+### Code Fold Icon
+
+Activation:
+
+1. Add the `fold.png` icon from `extras` to `Sublime Text/Data/Packages/Theme - Default/`
+2. Restart Sublime Text
+
+### Bookmark Icon
+
+Activation:
+
+1. Rename the `dark__bookmark.png` or `light__bookmark.png` in `extras` to `bookmark.png`
+2. Add the `bookmark.png` icon to `Sublime Text/Data/Packages/Theme - Default/`
+3. Restart Sublime Text
 
 License
 -------
