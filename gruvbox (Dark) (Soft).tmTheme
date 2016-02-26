@@ -65,7 +65,7 @@
         <key>name</key>
         <string>Text and Source Base Colors</string>
         <key>scope</key>
-        <string>text, source, punctuation</string>
+        <string>punctuation, source, text</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -76,7 +76,7 @@
         <key>name</key>
         <string>Comments</string>
         <key>scope</key>
-        <string>comment, punctuation.definition.comment, text.cancelled, meta.punctuation.separator, markup.strikethrough, punctuation.whitespace.comment</string>
+        <string>comment, markup.strikethrough, meta.punctuation.separator, punctuation.definition.comment, punctuation.whitespace.comment, text.cancelled</string>
         <key>settings</key>
         <dict>
           <key>fontStyle</key>
@@ -98,7 +98,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>comment.punctuation, comment.string, comment.type, comment.parameter, storage.type.class.jsdoc</string>
+        <string>comment.parameter, comment.punctuation, comment.string, comment.type, storage.type.class.jsdoc</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -187,7 +187,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>storage.modifier.package, storage.modifier.import</string>
+        <string>storage.modifier.import, storage.modifier.package</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -265,7 +265,7 @@
         <key>name</key>
         <string>Constants</string>
         <key>scope</key>
-        <string>constant, constant.numeric, constant.other.symbol, constant.other, constant.other.color, constant.other.color punctuation.definition.constant, support.constant.color</string>
+        <string>constant, constant.numeric, constant.other, constant.other.color, constant.other.color punctuation.definition.constant, constant.other.symbol, support.constant.color</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -363,7 +363,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>punctuation.definition.parameters, punctuation.definition.array</string>
+        <string>punctuation.definition.array, punctuation.definition.parameters</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -412,7 +412,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>punctuation.section.method, punctuation.section.class, punctuation.section.inner-class</string>
+        <string>punctuation.section.class, punctuation.section.inner-class, punctuation.section.method</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -423,7 +423,7 @@
         <key>name</key>
         <string>Support</string>
         <key>scope</key>
-        <string>support.class, support.type</string>
+        <string>support.class, support.type, variable.other.class</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -432,7 +432,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>support.function</string>
+        <string>meta.function-call.method variable.function, meta.function-call.static variable.function, support.function</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -526,7 +526,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>meta.class.body, meta.method-call, meta.method, meta.separator, meta.tag</string>
+        <string>meta.class.body, meta.method, meta.method-call, meta.separator, meta.tag</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -553,7 +553,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>meta.link, meta.image</string>
+        <string>meta.image, meta.link</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -622,7 +622,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>markup.deleted, markup.list, punctuation.definition.list_item.number, punctuation.definition.list_item.markdown</string>
+        <string>markup.deleted, markup.list, punctuation.definition.list_item.markdown, punctuation.definition.list_item.number</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -731,7 +731,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>source.diff meta.diff.range, source.diff meta.diff.line-number, source.diff punctuation.range</string>
+        <string>source.diff meta.diff.line-number, source.diff meta.diff.range, source.diff punctuation.range</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1105,6 +1105,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>db9d2080-b956-453b-bed6-1574b5a00218</string>
+    <string>fbbe56cf-9059-4c81-b807-6ecdc6a14718</string>
   </dict>
 </plist>
