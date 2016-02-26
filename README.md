@@ -142,6 +142,7 @@ Accent colors affect icons and certain text.
   "gruvbox_accent_purple": true,
   "gruvbox_accent_red": true,
   "gruvbox_accent_yellow": true,
+  "gruvbox_accent_opposite": true, // Use the other mode's accent color; IE: Use Light theme's red with Dark theme
 ```
 
 #### AutoComplete Spacing
