@@ -69,10 +69,12 @@ Theme options:
     "gruvbox_accent_aqua": true,
     "gruvbox_accent_blue": true,
     "gruvbox_accent_green": true,
-    "gruvbox_accent_orange":          true,
-    "gruvbox_accent_purple":          true,
-    "gruvbox_accent_red":             true,
+    "gruvbox_accent_orange": true,
+    "gruvbox_accent_purple": true,
+    "gruvbox_accent_red": true,
     "gruvbox_accent_yellow": true,
+    "gruvbox_accent_opposite": true, // Use the other mode's accent color; IE: Use Light theme's red with Dark theme
+    "gruvbox_accent_neutral": true, // Use brightness-mode-neutral accent color
 
 
   AutoComplete Spacing
@@ -97,9 +99,9 @@ Theme options:
     "gruvbox_sidebar_cramped": true,      //  v  9
 
 
-  Statusbar Sizes
+  Status Bar Sizes
 
-        Change the height of the statusbar
+        Change the height of the status bar
 
     "gruvbox_statusbar_xxs": true,  //  v  20
     "gruvbox_statusbar_xs": true,   //  |  25
@@ -126,6 +128,7 @@ Theme options:
   Tab Font Sizes
 
         Change the font size of the tabs
+        ! Font sizes above 11 may get cut off. This is a known issue with Sublime Text.
 
     "gruvbox_tabs_font_size_7": true,   //  v  7
     "gruvbox_tabs_font_size_8": true,   //  |  8
@@ -138,6 +141,20 @@ Theme options:
     "gruvbox_tabs_font_size_15": true,  //  v  15
 
 
+  Autocollapsing Tab Bar
+
+        Autocollapse the tabs when not in use
+
+  "gruvbox_autocollapse_tabs": true, // enable the autocollapsing tabs
+
+  // Set the height of the trigger area which shows the tabs
+  "gruvbox_autocollapse_tabs_trigger_2": true,  //  v  2
+  "gruvbox_autocollapse_tabs_trigger_3": true,  //  |  3
+                                                //  |  4 (Default)
+  "gruvbox_autocollapse_tabs_trigger_5": true,  //  |  5
+  "gruvbox_autocollapse_tabs_trigger_6": true,  //  v  6
+
+
   Even More Settings...
 
   "gruvbox_disable_fileicons": true,          // Disable the sidebar file icons
@@ -147,6 +164,7 @@ Theme options:
   "gruvbox_enable_statusbar_border": true,    // Enable borders for the status bar
   "gruvbox_tabs_bold": true,                  // Enable bold tabs
   "gruvbox_tabs_autowidth": true,             // Auto-size the tabs
-
+  "gruvbox_colored_tooltips": true,           // Color the tooltip backgrounds with the current accent color
+  "gruvbox_iconset_spacegray": true,          // Use spacegray-like icons in the status bar
 
   * Having an issue or want a feature added? Visit https://github.com/briles/gruvbox/issues
