@@ -3170,6 +3170,424 @@
     ]
   },
   {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "button_control"
+      }
+    ],
+    "color": [
+      249,
+      245,
+      215
+    ]
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "color": [
+      189,
+      174,
+      147
+    ]
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "status_bar"
+      }
+    ],
+    "color": [
+      189,
+      174,
+      147
+    ]
+  },
+  {
+    "class": "status_button",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "layer0.tint": [
+      60,
+      56,
+      54
+    ]
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "status_button",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "color": [
+      235,
+      219,
+      178
+    ]
+  },
+  {
+    "class": "sidebar_heading",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "color": [
+      235,
+      219,
+      178
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "color": [
+      146,
+      131,
+      116
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "color": [
+      235,
+      219,
+      178
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "color": [
+      235,
+      219,
+      178
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expandable"
+        ]
+      }
+    ],
+    "color": [
+      168,
+      153,
+      132
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expanded"
+        ]
+      }
+    ],
+    "color": [
+      235,
+      219,
+      178
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "color": [
+      235,
+      219,
+      178
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expanded",
+          "selected"
+        ]
+      }
+    ],
+    "color": [
+      235,
+      219,
+      178
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "attributes": [
+      "transient"
+    ],
+    "color": [
+      235,
+      219,
+      178
+    ]
+  },
+  {
+    "class": "tab_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "fg": [
+      146,
+      131,
+      116
+    ]
+  },
+  {
+    "class": "tab_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "tab_control",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "fg": [
+      213,
+      196,
+      161
+    ]
+  },
+  {
+    "class": "tab_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "tab_control",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "fg": [
+      189,
+      174,
+      147
+    ]
+  },
+  {
+    "class": "tab_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "tab_control",
+        "attributes": [
+          "selected",
+          "hover"
+        ]
+      }
+    ],
+    "fg": [
+      213,
+      196,
+      161
+    ]
+  },
+  {
+    "class": "quick_panel_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "fg": [
+      168,
+      153,
+      132
+    ],
+    "match_fg": [
+      235,
+      219,
+      178
+    ],
+    "selected_fg": [
+      168,
+      153,
+      132
+    ],
+    "selected_match_fg": [
+      235,
+      219,
+      178
+    ]
+  },
+  {
+    "class": "quick_panel_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "overlay_control"
+      }
+    ],
+    "fg": [
+      168,
+      153,
+      132
+    ],
+    "match_fg": [
+      235,
+      219,
+      178
+    ],
+    "selected_fg": [
+      168,
+      153,
+      132
+    ],
+    "selected_match_fg": [
+      235,
+      219,
+      178
+    ]
+  },
+  {
+    "class": "quick_panel_path_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "fg": [
+      168,
+      153,
+      132
+    ],
+    "match_fg": [
+      235,
+      219,
+      178
+    ],
+    "selected_fg": [
+      168,
+      153,
+      132
+    ],
+    "selected_match_fg": [
+      235,
+      219,
+      178
+    ]
+  },
+  {
+    "class": "quick_panel_score_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "fg": [
+      168,
+      153,
+      132
+    ],
+    "selected_fg": [
+      235,
+      219,
+      178
+    ]
+  },
+  {
+    "class": "auto_complete_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "fg": [
+      168,
+      153,
+      132
+    ],
+    "match_fg": [
+      235,
+      219,
+      178
+    ],
+    "selected_fg": [
+      168,
+      153,
+      132
+    ],
+    "selected_match_fg": [
+      235,
+      219,
+      178
+    ]
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       251,
