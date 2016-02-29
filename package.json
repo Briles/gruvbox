@@ -25,7 +25,7 @@
   "dependencies": {},
   "scripts": {
     "style": "npm run style:main & npm run style:components",
-    "style:main": "jscs src/*.js",
-    "style:components": "jscs src/components/*.js --disallowQuotedKeysInObjects null"
+    "style:main": "jscs src/*.js --preset=airbnb",
+    "style:components": "jscs src/components/*.js"
   }
 }
