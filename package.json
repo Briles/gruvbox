@@ -1,0 +1,25 @@
+{
+  "name": "gruvbox-sublime",
+  "version": "1.6.0",
+  "description": "gruvbox for vim theme ported to Sublime Text",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/briles/gruvbox.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/briles/gruvbox/issues"
+  },
+  "homepage": "https://github.com/briles/gruvbox#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "lodash": "^4.5.1",
+    "lodash-deep": "^1.6.0",
+    "plist": "^1.2.0",
+    "run-sequence": "^1.1.5",
+    "slash": "^1.0.0",
+    "tinycolor2": "^1.3.0",
+    "uuid": "^2.0.1"
+  },
+  "dependencies": {}
+}
