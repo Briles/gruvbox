@@ -55,9 +55,13 @@ module.exports = function (values) {
 
     {
       'class': 'text_line_control',
-      'parents': [{
-        'class': 'overlay_control',
-      }],
+      'parents': [
+
+        {
+          'class': 'overlay_control',
+        },
+
+      ],
 
       'content_margin': [18, 4, 18, 14],
     },

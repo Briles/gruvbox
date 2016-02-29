@@ -17,9 +17,13 @@ module.exports = function (values) {
     // Status bar labels
     {
       'class': 'label_control',
-      'parents': [{
-        'class': 'status_bar',
-      }],
+      'parents': [
+
+        {
+          'class': 'status_bar',
+        },
+
+      ],
 
       'color': c.gs.fg3,
     },
@@ -64,10 +68,14 @@ module.exports = function (values) {
 
     {
       'class': 'label_control',
-      'parents': [{
-        'class': 'status_button',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'status_button',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'color': c.gs.fg1,
     },

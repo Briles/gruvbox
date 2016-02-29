@@ -78,9 +78,13 @@ module.exports = function (values) {
 
     {
       'class': 'quick_panel_row',
-      'parents': [{
-        'class': 'overlay_control',
-      }],
+      'parents': [
+
+        {
+          'class': 'overlay_control',
+        },
+
+      ],
 
       'layer0.tint': c.transparent,
       'layer0.opacity': 1,
@@ -90,9 +94,13 @@ module.exports = function (values) {
 
     {
       'class': 'quick_panel',
-      'parents': [{
-        'class': 'overlay_control',
-      }],
+      'parents': [
+
+        {
+          'class': 'overlay_control',
+        },
+
+      ],
       'row_padding': [18, 12],
 
       'layer0.tint': c.transparent,
@@ -123,9 +131,13 @@ module.exports = function (values) {
 
     {
       'class': 'quick_panel_label',
-      'parents': [{
-        'class': 'overlay_control',
-      }],
+      'parents': [
+
+        {
+          'class': 'overlay_control',
+        },
+
+      ],
 
       'fg': c.gs.fg4,
       'match_fg': c.gs.fg1,

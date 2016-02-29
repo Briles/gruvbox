@@ -27,9 +27,13 @@ module.exports = function (values) {
 
     {
       'class': 'scroll_bar_control',
-      'parents': [{
-        'class': 'sidebar_container',
-      }],
+      'parents': [
+
+        {
+          'class': 'sidebar_container',
+        },
+
+      ],
 
       'layer1.inner_margin': [0, 0, 1, 0],
     },
@@ -38,9 +42,13 @@ module.exports = function (values) {
 
     {
       'class': 'scroll_bar_control',
-      'parents': [{
-        'class': 'panel_control',
-      }],
+      'parents': [
+
+        {
+          'class': 'panel_control',
+        },
+
+      ],
 
       'layer1.opacity': 0,
     },
@@ -49,9 +57,13 @@ module.exports = function (values) {
 
     {
       'class': 'scroll_bar_control',
-      'parents': [{
-        'class': 'popup_control',
-      }],
+      'parents': [
+
+        {
+          'class': 'popup_control',
+        },
+
+      ],
 
       'layer1.opacity': 0,
     },
@@ -60,9 +72,13 @@ module.exports = function (values) {
 
     {
       'class': 'scroll_bar_control',
-      'parents': [{
-        'class': 'overlay_control',
-      }],
+      'parents': [
+
+        {
+          'class': 'overlay_control',
+        },
+
+      ],
 
       'layer1.opacity': 0,
     },
@@ -80,9 +96,13 @@ module.exports = function (values) {
     {
       'class': 'scroll_bar_control',
       'attributes': ['horizontal'],
-      'parents': [{
-        'class': 'sidebar_container',
-      }],
+      'parents': [
+
+        {
+          'class': 'sidebar_container',
+        },
+
+      ],
 
       'layer1.opacity': 0,
     },
@@ -92,9 +112,13 @@ module.exports = function (values) {
     {
       'class': 'scroll_bar_control',
       'attributes': ['horizontal'],
-      'parents': [{
-        'class': 'popup_control',
-      }],
+      'parents': [
+
+        {
+          'class': 'popup_control',
+        },
+
+      ],
 
       'layer1.opacity': 0,
     },
@@ -105,9 +129,13 @@ module.exports = function (values) {
       'class': 'scroll_bar_control',
       'attributes': ['horizontal'],
 
-      'parents': [{
-        'class': 'overlay_control',
-      }],
+      'parents': [
+
+        {
+          'class': 'overlay_control',
+        },
+
+      ],
 
       'layer0.opacity': 0,
     },
@@ -117,9 +145,13 @@ module.exports = function (values) {
     {
       'class': 'scroll_bar_control',
       'attributes': ['horizontal'],
-      'parents': [{
-        'class': 'panel_control',
-      }],
+      'parents': [
+
+        {
+          'class': 'panel_control',
+        },
+
+      ],
 
       'layer1.opacity': 0,
     },
@@ -143,9 +175,13 @@ module.exports = function (values) {
 
     {
       'class': 'scroll_corner_control',
-      'parents': [{
-        'class': 'panel_control',
-      }],
+      'parents': [
+
+        {
+          'class': 'panel_control',
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 0,
@@ -165,18 +201,26 @@ module.exports = function (values) {
 
     {
       'class': 'scroll_area_control',
-      'parents': [{
-        'class': 'overlay_control',
-      }],
+      'parents': [
+
+        {
+          'class': 'overlay_control',
+        },
+
+      ],
       'settings': ['overlay_scroll_bars'],
       'overlay': true, // set to false for the original behavior
     },
 
     {
       'class': 'scroll_area_control',
-      'parents': [{
-        'class': 'sidebar_container',
-      }],
+      'parents': [
+
+        {
+          'class': 'sidebar_container',
+        },
+
+      ],
       'settings': ['!overlay_scroll_bars'],
       'overlay': false, // set to false for the original behavior
     },

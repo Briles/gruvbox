@@ -11,9 +11,13 @@ module.exports = function (values) {
 
     {
       'class': 'label_control',
-      'parents': [{
-        'class': 'button_control',
-      }],
+      'parents': [
+
+        {
+          'class': 'button_control',
+        },
+
+      ],
 
       'color': c.gs.fg[info.contrast],
       'font.bold': false,
@@ -86,10 +90,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_regex',
-      'parents': [{
-        'class': 'icon_button_control',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'icon_button_control',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 1,
@@ -98,10 +106,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_regex',
-      'parents': [{
-        'class': 'icon_button_control',
-        'attributes': ['selected'],
-      }],
+      'parents': [
+
+        {
+          'class': 'icon_button_control',
+          'attributes': ['selected'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 0,
@@ -129,10 +141,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_case',
-      'parents': [{
-        'class': 'icon_button_control',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'icon_button_control',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 1,
@@ -141,10 +157,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_case',
-      'parents': [{
-        'class': 'icon_button_control',
-        'attributes': ['selected'],
-      }],
+      'parents': [
+
+        {
+          'class': 'icon_button_control',
+          'attributes': ['selected'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 0,
@@ -173,10 +193,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_whole_word',
-      'parents': [{
-        'class': 'icon_button_control',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'icon_button_control',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 1,
@@ -185,10 +209,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_whole_word',
-      'parents': [{
-        'class': 'icon_button_control',
-        'attributes': ['selected'],
-      }],
+      'parents': [
+
+        {
+          'class': 'icon_button_control',
+          'attributes': ['selected'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 0,
@@ -217,10 +245,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_wrap',
-      'parents': [{
-        'class': 'icon_button_control',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'icon_button_control',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 1,
@@ -229,10 +261,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_wrap',
-      'parents': [{
-        'class': 'icon_button_control',
-        'attributes': ['selected'],
-      }],
+      'parents': [
+
+        {
+          'class': 'icon_button_control',
+          'attributes': ['selected'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 0,
@@ -261,10 +297,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_in_selection',
-      'parents': [{
-        'class': 'icon_button_control',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'icon_button_control',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 1,
@@ -273,10 +313,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_in_selection',
-      'parents': [{
-        'class': 'icon_button_control',
-        'attributes': ['selected'],
-      }],
+      'parents': [
+
+        {
+          'class': 'icon_button_control',
+          'attributes': ['selected'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 0,
@@ -305,10 +349,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_highlight',
-      'parents': [{
-        'class': 'icon_button_control',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'icon_button_control',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 1,
@@ -317,10 +365,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_highlight',
-      'parents': [{
-        'class': 'icon_button_control',
-        'attributes': ['selected'],
-      }],
+      'parents': [
+
+        {
+          'class': 'icon_button_control',
+          'attributes': ['selected'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 0,
@@ -349,10 +401,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_preserve_case',
-      'parents': [{
-        'class': 'icon_button_control',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'icon_button_control',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 1,
@@ -361,10 +417,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_preserve_case',
-      'parents': [{
-        'class': 'icon_button_control',
-        'attributes': ['selected'],
-      }],
+      'parents': [
+
+        {
+          'class': 'icon_button_control',
+          'attributes': ['selected'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 0,
@@ -393,10 +453,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_context',
-      'parents': [{
-        'class': 'icon_button_control',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'icon_button_control',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 1,
@@ -405,10 +469,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_context',
-      'parents': [{
-        'class': 'icon_button_control',
-        'attributes': ['selected'],
-      }],
+      'parents': [
+
+        {
+          'class': 'icon_button_control',
+          'attributes': ['selected'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 0,
@@ -437,10 +505,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_use_buffer',
-      'parents': [{
-        'class': 'icon_button_control',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'icon_button_control',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 1,
@@ -449,10 +521,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_use_buffer',
-      'parents': [{
-        'class': 'icon_button_control',
-        'attributes': ['selected'],
-      }],
+      'parents': [
+
+        {
+          'class': 'icon_button_control',
+          'attributes': ['selected'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 0,

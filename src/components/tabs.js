@@ -83,10 +83,14 @@ module.exports = function (values) {
     // Selected Tab Tab Label
     {
       'class': 'tab_label',
-      'parents': [{
-        'class': 'tab_control',
-        'attributes': ['selected'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tab_control',
+          'attributes': ['selected'],
+        },
+
+      ],
 
       'fg': c.gs.fg2,
     },
@@ -102,10 +106,14 @@ module.exports = function (values) {
     // Hovered Tab Tab Label
     {
       'class': 'tab_label',
-      'parents': [{
-        'class': 'tab_control',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tab_control',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'fg': c.gs.fg3,
     },
@@ -113,10 +121,14 @@ module.exports = function (values) {
     // Selected & Hovered Tab Tab Label
     {
       'class': 'tab_label',
-      'parents': [{
-        'class': 'tab_control',
-        'attributes': ['selected', 'hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tab_control',
+          'attributes': ['selected', 'hover'],
+        },
+
+      ],
 
       'fg': c.gs.fg2,
     },
@@ -164,10 +176,13 @@ module.exports = function (values) {
     {
       'class': 'tab_close_button',
       'settings': ['show_tab_close_buttons'],
-      'parents': [{
-        'class': 'tab_control',
-        'attributes': ['selected'],
-      }, ],
+      'parents': [
+
+        {
+          'class': 'tab_control',
+          'attributes': ['selected'],
+        },
+      ],
 
       'layer0.opacity': 1, // Close Icon
       'layer1.opacity': 0, // Close Icon Hover
@@ -187,14 +202,18 @@ module.exports = function (values) {
     {
       'class': 'tab_close_button',
       'settings': ['!show_tab_close_buttons'],
-      'parents': [{
-        'class': 'tab_control',
-        'attributes': ['selected'],
-      }, ],
+      'parents': [
+
+        {
+          'class': 'tab_control',
+          'attributes': ['selected'],
+        },
+      ],
 
       'layer0.opacity': 0, // Close Icon
       'layer1.opacity': 0, // Close Icon Hover
     },
+
     // Default hover
     {
       'class': 'tab_close_button',
@@ -208,10 +227,13 @@ module.exports = function (values) {
     // Dirty tab
     {
       'class': 'tab_close_button',
-      'parents': [{
-        'class': 'tab_control',
-        'attributes': ['dirty'],
-      }, ],
+      'parents': [
+
+        {
+          'class': 'tab_control',
+          'attributes': ['dirty'],
+        },
+      ],
 
       'layer0.opacity': 0, // Close Icon
       'layer1.opacity': 0, // Close Icon Hover
@@ -224,10 +246,13 @@ module.exports = function (values) {
     // Dirty tab on hover
     {
       'class': 'tab_close_button',
-      'parents': [{
-        'class': 'tab_control',
-        'attributes': ['dirty'],
-      }, ],
+      'parents': [
+
+        {
+          'class': 'tab_control',
+          'attributes': ['dirty'],
+        },
+      ],
       'attributes': ['hover'],
 
       'layer0.opacity': 0, // Close Icon
@@ -239,24 +264,30 @@ module.exports = function (values) {
     // Selected dirty tab
     {
       'class': 'tab_close_button',
-      'parents': [{
-        'class': 'tab_control',
-        'attributes': ['selected', 'dirty', ],
-      }, ],
+      'parents': [
+
+        {
+          'class': 'tab_control',
+          'attributes': ['selected', 'dirty'],
+        },
+      ],
 
       'layer0.opacity': 0, // Close Icon
       'layer1.opacity': 0, // Close Icon Hover
       'layer2.opacity': 0, // Dirty Icon
-      'layer3.opacity': 1 // Dirty Icon Hover
+      'layer3.opacity': 1, // Dirty Icon Hover
     },
 
     // Selected dirty tab on hover
     {
       'class': 'tab_close_button',
-      'parents': [{
-        'class': 'tab_control',
-        'attributes': ['selected', 'dirty'],
-      }, ],
+      'parents': [
+
+        {
+          'class': 'tab_control',
+          'attributes': ['selected', 'dirty'],
+        },
+      ],
       'attributes': ['hover'],
 
       'layer0.opacity': 0, // Close Icon

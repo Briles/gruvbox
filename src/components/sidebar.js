@@ -49,10 +49,14 @@ module.exports = function (values) {
 
     {
       'class': 'sidebar_heading',
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['selected'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['selected'],
+        },
+
+      ],
     },
 
     {
@@ -74,20 +78,28 @@ module.exports = function (values) {
 
     {
       'class': 'sidebar_label',
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'color': c.gs.fg1,
     },
 
     {
       'class': 'sidebar_label',
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['selected'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['selected'],
+        },
+
+      ],
 
       'font.bold': false,
       'color': c.gs.fg1,
@@ -95,20 +107,28 @@ module.exports = function (values) {
 
     {
       'class': 'sidebar_label',
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['expandable'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['expandable'],
+        },
+
+      ],
 
       'color': c.gs.fg4,
     },
 
     {
       'class': 'sidebar_label',
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['expandable'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['expandable'],
+        },
+
+      ],
       'settings': ['bold_folder_labels'],
 
       'font.bold': true,
@@ -116,30 +136,42 @@ module.exports = function (values) {
 
     {
       'class': 'sidebar_label',
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['expanded'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['expanded'],
+        },
+
+      ],
 
       'color': c.gs.fg1,
     },
 
     {
       'class': 'sidebar_label',
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'color': c.gs.fg1,
     },
 
     {
       'class': 'sidebar_label',
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['expanded'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['expanded'],
+        },
+
+      ],
       'settings': ['bold_folder_labels'],
 
       'font.bold': true,
@@ -147,10 +179,14 @@ module.exports = function (values) {
 
     {
       'class': 'sidebar_label',
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['expanded', 'selected'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['expanded', 'selected'],
+        },
+
+      ],
 
       'color': c.gs.fg1,
     },
@@ -184,10 +220,14 @@ module.exports = function (values) {
 
     {
       'class': 'close_button',
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['selected'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['selected'],
+        },
+
+      ],
 
       'layer0.opacity': 1,
       'layer1.opacity': 0,
@@ -196,10 +236,14 @@ module.exports = function (values) {
 
     {
       'class': 'close_button',
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'layer0.opacity': 1,
       'layer1.opacity': 0,
@@ -219,10 +263,14 @@ module.exports = function (values) {
     {
       'class': 'close_button',
       'attributes': ['dirty'],
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['selected'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['selected'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 0,
@@ -250,10 +298,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_file_type',
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['selected'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['selected'],
+        },
+
+      ],
       'content_margin': [9, 9],
 
       'layer0.opacity': 1,
@@ -276,10 +328,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_folder',
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'layer1.opacity': 0,
       'layer2.opacity': 1,
@@ -287,10 +343,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_folder',
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['expanded', 'hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['expanded', 'hover'],
+        },
+
+      ],
 
       'layer1.opacity': 0,
       'layer2.opacity': 1,
@@ -298,10 +358,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_folder',
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['expanded'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['expanded'],
+        },
+
+      ],
 
       'layer1.opacity': 0,
       'layer2.opacity': 1,
@@ -349,10 +413,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_folder_dup',
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 1,
@@ -360,10 +428,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_folder_dup',
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['expanded', 'hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['expanded', 'hover'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 1,
@@ -371,10 +443,14 @@ module.exports = function (values) {
 
     {
       'class': 'icon_folder_dup',
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['expanded'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['expanded'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 1,

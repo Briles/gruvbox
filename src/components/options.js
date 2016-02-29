@@ -250,10 +250,14 @@ module.exports = function (values) {
     {
       'class': 'icon_folder',
       'settings': [stOpts.disableFolderIcons],
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 0,
@@ -263,10 +267,14 @@ module.exports = function (values) {
     {
       'class': 'icon_folder',
       'settings': [stOpts.disableFolderIcons],
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['expanded', 'hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['expanded', 'hover'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 0,
@@ -276,10 +284,14 @@ module.exports = function (values) {
     {
       'class': 'icon_folder',
       'settings': [stOpts.disableFolderIcons],
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['expanded'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['expanded'],
+        },
+
+      ],
 
       'layer0.opacity': 0,
       'layer1.opacity': 0,
@@ -722,10 +734,14 @@ module.exports = function (values) {
     {
       'class': 'scroll_tabs_left_button',
       'settings': [stOpts.autocollapseTabs],
-      'parents': [{
-        'class': 'tabset_control',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tabset_control',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'content_margin': [14, 7],
     },
@@ -740,10 +756,14 @@ module.exports = function (values) {
     {
       'class': 'scroll_tabs_right_button',
       'settings': [stOpts.autocollapseTabs],
-      'parents': [{
-        'class': 'tabset_control',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tabset_control',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'content_margin': [14, 7],
     },
@@ -758,10 +778,14 @@ module.exports = function (values) {
     {
       'class': 'show_tabs_dropdown_button',
       'settings': [stOpts.autocollapseTabs],
-      'parents': [{
-        'class': 'tabset_control',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tabset_control',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'content_margin': [12, 12],
     },
@@ -783,9 +807,13 @@ module.exports = function (values) {
       'class': 'label_control',
       'settings': [stOpts.disableGreyscaleColors],
 
-      'parents': [{
-        'class': 'button_control',
-      }],
+      'parents': [
+
+        {
+          'class': 'button_control',
+        },
+
+      ],
 
       'color': c.bnp.fg[info.contrast],
     },
@@ -803,9 +831,13 @@ module.exports = function (values) {
       'class': 'label_control',
       'settings': [stOpts.disableGreyscaleColors],
 
-      'parents': [{
-        'class': 'status_bar',
-      }],
+      'parents': [
+
+        {
+          'class': 'status_bar',
+        },
+
+      ],
 
       'color': c.bnp.fg3,
     },
@@ -821,10 +853,14 @@ module.exports = function (values) {
       'class': 'label_control',
       'settings': [stOpts.disableGreyscaleColors],
 
-      'parents': [{
-        'class': 'status_button',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'status_button',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'color': c.bnp.fg1,
     },
@@ -848,10 +884,14 @@ module.exports = function (values) {
       'class': 'sidebar_label',
       'settings': [stOpts.disableGreyscaleColors],
 
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'color': c.bnp.fg1,
     },
@@ -860,10 +900,14 @@ module.exports = function (values) {
       'class': 'sidebar_label',
       'settings': [stOpts.disableGreyscaleColors],
 
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['selected'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['selected'],
+        },
+
+      ],
 
       'color': c.bnp.fg1,
     },
@@ -872,10 +916,14 @@ module.exports = function (values) {
       'class': 'sidebar_label',
       'settings': [stOpts.disableGreyscaleColors],
 
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['expandable'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['expandable'],
+        },
+
+      ],
 
       'color': c.bnp.fg4,
     },
@@ -884,10 +932,14 @@ module.exports = function (values) {
       'class': 'sidebar_label',
       'settings': [stOpts.disableGreyscaleColors],
 
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['expanded'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['expanded'],
+        },
+
+      ],
 
       'color': c.bnp.fg1,
     },
@@ -896,10 +948,14 @@ module.exports = function (values) {
       'class': 'sidebar_label',
       'settings': [stOpts.disableGreyscaleColors],
 
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'color': c.bnp.fg1,
     },
@@ -908,10 +964,14 @@ module.exports = function (values) {
       'class': 'sidebar_label',
       'settings': [stOpts.disableGreyscaleColors],
 
-      'parents': [{
-        'class': 'tree_row',
-        'attributes': ['expanded', 'selected'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['expanded', 'selected'],
+        },
+
+      ],
 
       'color': c.bnp.fg1,
     },
@@ -937,10 +997,14 @@ module.exports = function (values) {
       'class': 'tab_label',
       'settings': [stOpts.disableGreyscaleColors],
 
-      'parents': [{
-        'class': 'tab_control',
-        'attributes': ['selected'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tab_control',
+          'attributes': ['selected'],
+        },
+
+      ],
 
       'fg': c.bnp.fg2,
     },
@@ -950,10 +1014,14 @@ module.exports = function (values) {
       'class': 'tab_label',
       'settings': [stOpts.disableGreyscaleColors],
 
-      'parents': [{
-        'class': 'tab_control',
-        'attributes': ['hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tab_control',
+          'attributes': ['hover'],
+        },
+
+      ],
 
       'fg': c.bnp.fg3,
     },
@@ -963,10 +1031,14 @@ module.exports = function (values) {
       'class': 'tab_label',
       'settings': [stOpts.disableGreyscaleColors],
 
-      'parents': [{
-        'class': 'tab_control',
-        'attributes': ['selected', 'hover'],
-      }],
+      'parents': [
+
+        {
+          'class': 'tab_control',
+          'attributes': ['selected', 'hover'],
+        },
+
+      ],
 
       'fg': c.bnp.fg2,
     },
@@ -986,9 +1058,13 @@ module.exports = function (values) {
     {
       'class': 'quick_panel_label',
       'settings': [stOpts.disableGreyscaleColors],
-      'parents': [{
-        'class': 'overlay_control',
-      }],
+      'parents': [
+
+        {
+          'class': 'overlay_control',
+        },
+
+      ],
 
       'fg': c.bnp.fg4,
       'match_fg': c.bnp.fg1,

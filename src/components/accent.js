@@ -37,10 +37,14 @@ module.exports = function (values) {
       {
         'class': 'sidebar_label',
 
-        'parents': [{
-          'class': 'tree_row',
-          'attributes': ['expanded'],
-        }],
+        'parents': [
+
+          {
+            'class': 'tree_row',
+            'attributes': ['expanded'],
+          },
+
+        ],
 
         'color': color[info.brightness],
       },
@@ -48,10 +52,14 @@ module.exports = function (values) {
       {
         'class': 'sidebar_label',
 
-        'parents': [{
-          'class': 'tree_row',
-          'attributes': ['hover'],
-        }],
+        'parents': [
+
+          {
+            'class': 'tree_row',
+            'attributes': ['hover'],
+          },
+
+        ],
 
         'color': color[info.brightness],
       },
@@ -59,10 +67,14 @@ module.exports = function (values) {
       {
         'class': 'sidebar_label',
 
-        'parents': [{
-          'class': 'tree_row',
-          'attributes': ['selected'],
-        }],
+        'parents': [
+
+          {
+            'class': 'tree_row',
+            'attributes': ['selected'],
+          },
+
+        ],
 
         'color': color[info.brightness],
       },
@@ -114,9 +126,13 @@ module.exports = function (values) {
       {
         'class': 'quick_panel_label',
 
-        'parents': [{
-          'class': 'overlay_control',
-        }],
+        'parents': [
+
+          {
+            'class': 'overlay_control',
+          },
+
+        ],
 
         'match_fg': color[info.brightness],
         'selected_match_fg': color[info.brightness],
@@ -227,10 +243,14 @@ module.exports = function (values) {
       {
         'class': 'label_control',
 
-        'parents': [{
-          'class': 'status_button',
-          'attributes': ['hover'],
-        }],
+        'parents': [
+
+          {
+            'class': 'status_button',
+            'attributes': ['hover'],
+          },
+
+        ],
 
         'color': color[info.brightness],
       },
@@ -360,10 +380,14 @@ module.exports = function (values) {
       {
         'class': 'sidebar_label',
         'settings': [stOpts.accentOpposite],
-        'parents': [{
-          'class': 'tree_row',
-          'attributes': ['expanded'],
-        }],
+        'parents': [
+
+          {
+            'class': 'tree_row',
+            'attributes': ['expanded'],
+          },
+
+        ],
 
         'color': color[info.oppositeBrightness],
       },
@@ -371,10 +395,14 @@ module.exports = function (values) {
       {
         'class': 'sidebar_label',
         'settings': [stOpts.accentOpposite],
-        'parents': [{
-          'class': 'tree_row',
-          'attributes': ['hover'],
-        }],
+        'parents': [
+
+          {
+            'class': 'tree_row',
+            'attributes': ['hover'],
+          },
+
+        ],
 
         'color': color[info.oppositeBrightness],
       },
@@ -382,10 +410,14 @@ module.exports = function (values) {
       {
         'class': 'sidebar_label',
         'settings': [stOpts.accentOpposite],
-        'parents': [{
-          'class': 'tree_row',
-          'attributes': ['selected'],
-        }],
+        'parents': [
+
+          {
+            'class': 'tree_row',
+            'attributes': ['selected'],
+          },
+
+        ],
 
         'color': color[info.oppositeBrightness],
       },
@@ -443,9 +475,13 @@ module.exports = function (values) {
       {
         'class': 'quick_panel_label',
         'settings': [stOpts.accentOpposite],
-        'parents': [{
-          'class': 'overlay_control',
-        }],
+        'parents': [
+
+          {
+            'class': 'overlay_control',
+          },
+
+        ],
 
         'match_fg': color[info.oppositeBrightness],
         'selected_match_fg': color[info.oppositeBrightness],
@@ -663,10 +699,14 @@ module.exports = function (values) {
       {
         'class': 'label_control',
         'settings': [stOpts.accentOpposite],
-        'parents': [{
-          'class': 'status_button',
-          'attributes': ['hover'],
-        }],
+        'parents': [
+
+          {
+            'class': 'status_button',
+            'attributes': ['hover'],
+          },
+
+        ],
 
         'color': color[info.oppositeBrightness],
       },
@@ -696,10 +736,14 @@ module.exports = function (values) {
         'class': 'sidebar_label',
         'settings': [stOpts.accentNeutral],
 
-        'parents': [{
-          'class': 'tree_row',
-          'attributes': ['expanded'],
-        }],
+        'parents': [
+
+          {
+            'class': 'tree_row',
+            'attributes': ['expanded'],
+          },
+
+        ],
 
         'color': color.neutral,
       },
@@ -708,10 +752,14 @@ module.exports = function (values) {
         'class': 'sidebar_label',
         'settings': [stOpts.accentNeutral],
 
-        'parents': [{
-          'class': 'tree_row',
-          'attributes': ['hover'],
-        }],
+        'parents': [
+
+          {
+            'class': 'tree_row',
+            'attributes': ['hover'],
+          },
+
+        ],
 
         'color': color.neutral,
       },
@@ -720,10 +768,14 @@ module.exports = function (values) {
         'class': 'sidebar_label',
         'settings': [stOpts.accentNeutral],
 
-        'parents': [{
-          'class': 'tree_row',
-          'attributes': ['selected'],
-        }],
+        'parents': [
+
+          {
+            'class': 'tree_row',
+            'attributes': ['selected'],
+          },
+
+        ],
 
         'color': color.neutral,
       },
@@ -782,9 +834,13 @@ module.exports = function (values) {
         'class': 'quick_panel_label',
         'settings': [stOpts.accentNeutral],
 
-        'parents': [{
-          'class': 'overlay_control',
-        }],
+        'parents': [
+
+          {
+            'class': 'overlay_control',
+          },
+
+        ],
 
         'match_fg': color.neutral,
         'selected_match_fg': color.neutral,
@@ -1000,10 +1056,14 @@ module.exports = function (values) {
       {
         'class': 'label_control',
         'settings': [stOpts.accentNeutral],
-        'parents': [{
-          'class': 'status_button',
-          'attributes': ['hover'],
-        }],
+        'parents': [
+
+          {
+            'class': 'status_button',
+            'attributes': ['hover'],
+          },
+
+        ],
 
         'color': color.neutral,
       },
