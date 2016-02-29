@@ -248,6 +248,7 @@ Autocollapse the tabs when not in use
   "gruvbox_disable_folder_icons": true,       // Disable the sidebar folder icons
   "gruvbox_disable_borders": true,            // Disable all borders
   "gruvbox_disable_panels_button": true,      // Disable the panels button in the status bar
+  "gruvbox_disable_greyscale": true,          // Replaces all greyscale colors with gruvbox equivalents
   "gruvbox_enable_panel_close_button": true,  // Enable the panel close button
   "gruvbox_enable_statusbar_border": true,    // Enable borders for the status bar
   "gruvbox_tabs_bold": true,                  // Enable bold tabs
@@ -288,6 +289,12 @@ License
 -------
 
 [MIT](https://en.wikipedia.org/wiki/MIT_License)
+
+Contributing
+-------
+
+Contributions are always welcome. Before contributing please
+read [Contributing](https://github.com/briles/gruvbox/blob/master/.github/CONTRIBUTING.md)
 
 Thanks
 ------

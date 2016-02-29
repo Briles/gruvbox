@@ -461,7 +461,7 @@
         <key>name</key>
         <string>Entity</string>
         <key>scope</key>
-        <string>entity.name.function, entity.name.section, entity.other.attribute-name.id</string>
+        <string>entity.name.function, entity.name.section, entity.other.attribute-name.id, entity.other.attribute-name.id punctuation.definition.entity</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1105,6 +1105,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>fbbe56cf-9059-4c81-b807-6ecdc6a14718</string>
+    <string>b4d79a04-bedb-4adb-88e2-34270abaa0cd</string>
   </dict>
 </plist>

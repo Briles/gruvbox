@@ -3170,6 +3170,424 @@
     ]
   },
   {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "button_control"
+      }
+    ],
+    "color": [
+      40,
+      40,
+      40
+    ]
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "color": [
+      102,
+      92,
+      84
+    ]
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "status_bar"
+      }
+    ],
+    "color": [
+      102,
+      92,
+      84
+    ]
+  },
+  {
+    "class": "status_button",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "layer0.tint": [
+      235,
+      219,
+      178
+    ]
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "status_button",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "color": [
+      60,
+      56,
+      54
+    ]
+  },
+  {
+    "class": "sidebar_heading",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "color": [
+      60,
+      56,
+      54
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "color": [
+      146,
+      131,
+      116
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "color": [
+      60,
+      56,
+      54
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "color": [
+      60,
+      56,
+      54
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expandable"
+        ]
+      }
+    ],
+    "color": [
+      124,
+      111,
+      100
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expanded"
+        ]
+      }
+    ],
+    "color": [
+      60,
+      56,
+      54
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "color": [
+      60,
+      56,
+      54
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "tree_row",
+        "attributes": [
+          "expanded",
+          "selected"
+        ]
+      }
+    ],
+    "color": [
+      60,
+      56,
+      54
+    ]
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "attributes": [
+      "transient"
+    ],
+    "color": [
+      60,
+      56,
+      54
+    ]
+  },
+  {
+    "class": "tab_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "fg": [
+      146,
+      131,
+      116
+    ]
+  },
+  {
+    "class": "tab_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "tab_control",
+        "attributes": [
+          "selected"
+        ]
+      }
+    ],
+    "fg": [
+      80,
+      73,
+      69
+    ]
+  },
+  {
+    "class": "tab_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "tab_control",
+        "attributes": [
+          "hover"
+        ]
+      }
+    ],
+    "fg": [
+      102,
+      92,
+      84
+    ]
+  },
+  {
+    "class": "tab_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "tab_control",
+        "attributes": [
+          "selected",
+          "hover"
+        ]
+      }
+    ],
+    "fg": [
+      80,
+      73,
+      69
+    ]
+  },
+  {
+    "class": "quick_panel_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "fg": [
+      124,
+      111,
+      100
+    ],
+    "match_fg": [
+      60,
+      56,
+      54
+    ],
+    "selected_fg": [
+      124,
+      111,
+      100
+    ],
+    "selected_match_fg": [
+      60,
+      56,
+      54
+    ]
+  },
+  {
+    "class": "quick_panel_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "parents": [
+      {
+        "class": "overlay_control"
+      }
+    ],
+    "fg": [
+      124,
+      111,
+      100
+    ],
+    "match_fg": [
+      60,
+      56,
+      54
+    ],
+    "selected_fg": [
+      124,
+      111,
+      100
+    ],
+    "selected_match_fg": [
+      60,
+      56,
+      54
+    ]
+  },
+  {
+    "class": "quick_panel_path_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "fg": [
+      124,
+      111,
+      100
+    ],
+    "match_fg": [
+      60,
+      56,
+      54
+    ],
+    "selected_fg": [
+      124,
+      111,
+      100
+    ],
+    "selected_match_fg": [
+      60,
+      56,
+      54
+    ]
+  },
+  {
+    "class": "quick_panel_score_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "fg": [
+      124,
+      111,
+      100
+    ],
+    "selected_fg": [
+      60,
+      56,
+      54
+    ]
+  },
+  {
+    "class": "auto_complete_label",
+    "settings": [
+      "gruvbox_disable_greyscale"
+    ],
+    "fg": [
+      124,
+      111,
+      100
+    ],
+    "match_fg": [
+      60,
+      56,
+      54
+    ],
+    "selected_fg": [
+      124,
+      111,
+      100
+    ],
+    "selected_match_fg": [
+      60,
+      56,
+      54
+    ]
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       157,

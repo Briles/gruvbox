@@ -1,11 +1,11 @@
-# Super secrete source
-src/
-
-# Build tools
-package.json
-gulpfile.js
-gruntfile.js
-
+# Graphic Sources
+src/assets
+# Adobe CC Scripts
+src/cc scripts
+# Code samples for syntax highlighting
+src/samples
+# Screenshot Sources
+src/screenshots
 
 .DS_Store
 
