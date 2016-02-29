@@ -290,6 +290,12 @@ License
 
 [MIT](https://en.wikipedia.org/wiki/MIT_License)
 
+Contributing
+-------
+
+Contributions are always welcome. Before contributing please
+read [Contributing](https://github.com/briles/gruvbox/blob/master/.github/CONTRIBUTING.md)
+
 Thanks
 ------
 
