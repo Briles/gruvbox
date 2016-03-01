@@ -1,0 +1,11 @@
+gruvbox for Sublime Text 3
+https://github.com/briles/gruvbox
+
+Version 1.6.0
+--------------------------------------------------------------------------------
+
+  THEMES
+
+    • Added option to disable greyscale colors ("gruvbox_disable_greyscale": true,)
+    • Improved quality of the spacegray regex icon
+    • Made spacegray case-sensitive icon more spacegray-like
