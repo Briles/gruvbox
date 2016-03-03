@@ -153,7 +153,7 @@ Accent colors affect icons and certain text.
 Change the space between autocomplete rows
 
 ```json
-   // sizes are top/bottom in px
+  // sizes are top/bottom in px
   "gruvbox_autocomplete_cozy": true,         //  v  2
   "gruvbox_autocomplete_comfortable": true,  //  |  4
                                              //  |  6 (Default)
@@ -168,7 +168,7 @@ Change the space between autocomplete rows
 Change the space between sidebar tree rows
 
 ```json
-   // sizes are top/bottom in px
+  // sizes are top/bottom in px
   "gruvbox_sidebar_cozy": true,         //  v  1
   "gruvbox_sidebar_comfortable": true,  //  |  3
                                         //  |  5 (Default)
@@ -181,7 +181,7 @@ Change the space between sidebar tree rows
 Change the height of the statusbar
 
 ```json
-   // sizes are in px
+  // sizes are in px
   "gruvbox_statusbar_xxs": true,  //  v  20
   "gruvbox_statusbar_xs": true,   //  |  25
   "gruvbox_statusbar_s": true,    //  |  30
@@ -196,7 +196,7 @@ Change the height of the statusbar
 Change the height of the tabs
 
 ```json
-   // sizes are in px
+  // sizes are in px
   "gruvbox_tabs_xxs": true,  //  v  33
   "gruvbox_tabs_xs": true,   //  |  39
   "gruvbox_tabs_s": true,    //  |  45
