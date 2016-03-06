@@ -4,7 +4,8 @@ Contributions are always welcome. Before contributing please
 [search the issue tracker](https://github.com/briles/gruvbox/issues); your issue
 may have already been discussed or fixed in `develop`. To contribute,
 [fork](https://help.github.com/articles/fork-a-repo/) gruvbox, commit your changes,
-& [send a pull request](https://help.github.com/articles/using-pull-requests/).
+& [send a pull request](https://help.github.com/articles/using-pull-requests/)
+ to the `develop` branch.
 
 ## Feature Requests
 
