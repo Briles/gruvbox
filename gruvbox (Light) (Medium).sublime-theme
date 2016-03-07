@@ -33,9 +33,9 @@
   {
     "class": "dialog",
     "layer0.tint": [
-      251,
-      241,
-      199
+      249,
+      234,
+      169
     ],
     "layer0.opacity": 1
   },
@@ -1864,9 +1864,9 @@
     ],
     "layer0.opacity": 1,
     "layer1.tint": [
-      235,
-      219,
-      178
+      251,
+      241,
+      199
     ],
     "layer1.opacity": 0,
     "layer2.tint": [

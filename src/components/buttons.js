@@ -31,7 +31,7 @@ module.exports = function (values) {
       'layer0.tint': c.container,
       'layer0.opacity': 1,
 
-      'layer1.tint': c.bnp.bg1,
+      'layer1.tint': c.background,
       'layer1.opacity': 0,
 
       'layer2.tint': c.border,
