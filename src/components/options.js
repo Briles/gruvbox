@@ -797,6 +797,14 @@ module.exports = function (values) {
       'content_margin': [0, 0],
     },
 
+    // File icons and folder Opacity
+    {
+      'class': 'icon_file_type',
+      'settings': [stOpts.disableFadedFileIcons],
+
+      'layer0.opacity': 1,
+    },
+
     /**
      * Disable Greyscale Colors
      */

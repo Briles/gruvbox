@@ -3170,6 +3170,13 @@
     ]
   },
   {
+    "class": "icon_file_type",
+    "settings": [
+      "gruvbox_disable_faded_file_icons"
+    ],
+    "layer0.opacity": 1
+  },
+  {
     "class": "label_control",
     "settings": [
       "gruvbox_disable_greyscale"
