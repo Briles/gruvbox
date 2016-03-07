@@ -28,6 +28,8 @@
 
     const brightnessIdentifier = _.toLower(brightness);
     const brightnessPalette = gruvboxPalette[brightnessIdentifier];
+    const oppositeBrightnessIdentifier = _.toLower(_.without(BRIGHTNESS_MODES, brightness));
+    const oppositeBrightnessPalette = gruvboxPalette[oppositeBrightnessIdentifier];
     paths.internal.this = `${paths.internal.assets}${brightnessIdentifier}/`;
 
     CONTRAST_MODES.forEach(function (contrast) {
@@ -42,6 +44,7 @@
 
         background: backgroundColor,
         bnp: brightnessPalette,
+        obnp: oppositeBrightnessPalette,
         gs: _.deepMapValues(brightnessPalette, c => tinycolor(c).greyscale().toRgbString()),
 
         // Theme Colors
@@ -57,8 +60,8 @@
 
       const info = {
         brightness: brightnessIdentifier,
+        oppositeBrightness: oppositeBrightnessIdentifier,
         contrast: contrastIdentifier,
-        oppositeBrightness: _.toLower(_.without(BRIGHTNESS_MODES, brightness)),
         name: `${PACKAGE_NAME} (${brightness}) (${contrast})`,
       };
 
