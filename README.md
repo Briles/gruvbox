@@ -45,6 +45,7 @@ Features
     * [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter)
     * [Doc​Blockr](https://packagecontrol.io/packages/DocBlockr)
     * [Markdown Extended](https://packagecontrol.io/packages/Markdown%20Extended)
+    * [HexViewer](https://packagecontrol.io/packages/HexViewer)
 * Support for the latest Sublime Text features
 
 ![High DPI](http://i.imgur.com/xiEzVPe.png)

@@ -1065,7 +1065,7 @@ module.exports = function (values) {
           'raw.nibble.upper',
         ],
         settings: {
-          foreground: c.bnp.aqua,
+          foreground: c.bnp.fg[info.contrast],
         },
       },
 
@@ -1086,7 +1086,18 @@ module.exports = function (values) {
         ],
         settings: {
           foreground: c.background,
-          background: c.bnp.red,
+          background: c.bnp.yellow,
+        },
+      },
+
+      {
+        name: 'HexViewer Edited Highlight',
+        scope: [
+          'hexviewer.highlight.edited',
+        ],
+        settings: {
+          foreground: c.background,
+          background: c.bnp.orange,
         },
       },
 

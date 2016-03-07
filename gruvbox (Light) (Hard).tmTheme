@@ -1065,7 +1065,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#427b58</string>
+          <string>#1d2021</string>
         </dict>
       </dict>
       <dict>
@@ -1089,7 +1089,20 @@
           <key>foreground</key>
           <string>#f9f5d7</string>
           <key>background</key>
-          <string>#9d0006</string>
+          <string>#b57614</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>HexViewer Edited Highlight</string>
+        <key>scope</key>
+        <string>hexviewer.highlight.edited</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#f9f5d7</string>
+          <key>background</key>
+          <string>#af3a03</string>
         </dict>
       </dict>
       <dict>
@@ -1116,6 +1129,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>e4bcf3c1-5640-4974-b11e-c9905425c0ea</string>
+    <string>c882e586-3a5a-467d-9170-d6ff5427faf0</string>
   </dict>
 </plist>
