@@ -126,7 +126,10 @@ module.exports = function (values) {
         scope: [
           'keyword',
           'keyword.control',
+          'meta.prolog.haml',
+          'meta.tag.sgml.doctype.html',
           'punctuation.definition.keyword',
+          'variable.documentroot',
         ],
         settings: {
           foreground: c.bnp.red,
@@ -500,6 +503,8 @@ module.exports = function (values) {
       {
         scope: [
           'entity.name.tag',
+          'keyword.doctype.xml',
+          'punctuation.definition.prolog.haml',
         ],
         settings: {
           foreground: c.bnp.blue,

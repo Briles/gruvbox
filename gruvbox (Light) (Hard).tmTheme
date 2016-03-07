@@ -138,7 +138,7 @@
         <key>name</key>
         <string>Keywords</string>
         <key>scope</key>
-        <string>keyword, keyword.control, punctuation.definition.keyword</string>
+        <string>keyword, keyword.control, meta.prolog.haml, meta.tag.sgml.doctype.html, punctuation.definition.keyword, variable.documentroot</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -499,7 +499,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>entity.name.tag</string>
+        <string>entity.name.tag, keyword.doctype.xml, punctuation.definition.prolog.haml</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1116,6 +1116,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>4fb43d92-051f-444d-a4c4-732783a0bb65</string>
+    <string>e4bcf3c1-5640-4974-b11e-c9905425c0ea</string>
   </dict>
 </plist>
