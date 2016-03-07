@@ -215,6 +215,17 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>Variable - Dollar</string>
+        <key>scope</key>
+        <string>variable.other.dollar punctuation.dollar</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#458588</string>
+        </dict>
+      </dict>
+      <dict>
         <key>scope</key>
         <string>variable.interpolation</string>
         <key>settings</key>
@@ -1105,6 +1116,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>4404d8f4-714b-4887-a76d-cd3804b3c937</string>
+    <string>68201f68-1a0f-4ad7-a1bf-994c7f81ccca</string>
   </dict>
 </plist>

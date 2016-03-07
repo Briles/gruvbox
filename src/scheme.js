@@ -203,6 +203,16 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Variable - Dollar',
+        scope: [
+          'variable.other.dollar punctuation.dollar',
+        ],
+        settings: {
+          foreground: c.neutralBlue,
+        },
+      },
+
+      {
         scope: [
           'variable.interpolation',
         ],
