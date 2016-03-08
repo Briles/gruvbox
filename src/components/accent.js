@@ -94,6 +94,27 @@ module.exports = function (values) {
         'layer2.texture': `${brightnessAssets}folder_dup--expanded.png`,
       },
 
+      /**
+       * Literal Folder Icons
+       */
+
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.enableLiteralFolderIcons],
+
+        'layer2.texture': `${brightnessAssets}folder__literal--hover.png`,
+        'layer3.texture': `${brightnessAssets}folder__literal--expanded.png`,
+      },
+
+      // Symlinked
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.enableLiteralFolderIcons],
+
+        'layer1.texture': `${brightnessAssets}folder__literal_dup--hover.png`,
+        'layer2.texture': `${brightnessAssets}folder__literal_dup--expanded.png`,
+      },
+
       // Tab Scroll Left
       {
         'class': 'scroll_tabs_left_button',
@@ -439,6 +460,27 @@ module.exports = function (values) {
 
         'layer1.texture': `${oppositeBrightnessAssets}folder_dup--expanded.png`,
         'layer2.texture': `${oppositeBrightnessAssets}folder_dup--expanded.png`,
+      },
+
+      /**
+       * Literal Folder Icons
+       */
+
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.enableLiteralFolderIcons, stOpts.accentOpposite],
+
+        'layer2.texture': `${oppositeBrightnessAssets}folder__literal--hover.png`,
+        'layer3.texture': `${oppositeBrightnessAssets}folder__literal--expanded.png`,
+      },
+
+      // Symlinked
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.enableLiteralFolderIcons, stOpts.accentOpposite],
+
+        'layer1.texture': `${oppositeBrightnessAssets}folder__literal_dup--hover.png`,
+        'layer2.texture': `${oppositeBrightnessAssets}folder__literal_dup--expanded.png`,
       },
 
       // Tab Scroll Left
@@ -799,6 +841,27 @@ module.exports = function (values) {
 
         'layer1.texture': `${neutralAssets}folder_dup--expanded.png`,
         'layer2.texture': `${neutralAssets}folder_dup--expanded.png`,
+      },
+
+      /**
+       * Literal Folder Icons
+       */
+
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.enableLiteralFolderIcons, stOpts.accentNeutral],
+
+        'layer2.texture': `${neutralAssets}folder__literal--hover.png`,
+        'layer3.texture': `${neutralAssets}folder__literal--expanded.png`,
+      },
+
+      // Symlinked
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.enableLiteralFolderIcons, stOpts.accentNeutral],
+
+        'layer1.texture': `${neutralAssets}folder__literal_dup--hover.png`,
+        'layer2.texture': `${neutralAssets}folder__literal_dup--expanded.png`,
       },
 
       // Tab Scroll Left

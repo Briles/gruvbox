@@ -1189,5 +1189,28 @@ module.exports = function (values) {
       'selected_match_fg': c.bnp.fg1,
     },
 
+    /**
+     * Literal Folder Icons
+     */
+
+    {
+      'class': 'icon_folder',
+      'settings': [stOpts.enableLiteralFolderIcons],
+
+      'layer1.texture': `${paths.commons}folder__literal.png`,
+      'layer2.texture': `${paths.this}folder__literal--hover.png`,
+      'layer3.texture': `${paths.this}folder__literal--expanded.png`,
+    },
+
+    // Symlinked
+    {
+      'class': 'icon_folder_dup',
+      'settings': [stOpts.enableLiteralFolderIcons],
+
+      'layer0.texture': `${paths.commons}folder__literal_dup.png`,
+      'layer1.texture': `${paths.this}folder__literal_dup--hover.png`,
+      'layer2.texture': `${paths.this}folder__literal_dup--expanded.png`,
+    },
+
   ];
 };
