@@ -302,6 +302,80 @@ module.exports = function (values) {
       'layer3.opacity': 0,
     },
 
+    // Folder loading
+    {
+      'class': 'icon_folder_loading',
+      'settings': [stOpts.disableFolderIcons],
+
+      'layer0.opacity': 0,
+      'layer1.opacity': 0,
+      'layer2.opacity': 0,
+    },
+
+    // Symlinked
+    {
+      'class': 'icon_folder_dup',
+      'settings': [stOpts.disableFolderIcons],
+
+      'layer0.opacity': 0,
+      'layer1.opacity': 0,
+      'layer2.opacity': 0,
+    },
+
+    {
+      'class': 'icon_folder_dup',
+      'settings': [stOpts.disableFolderIcons],
+
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['hover'],
+        },
+
+      ],
+
+      'layer0.opacity': 0,
+      'layer1.opacity': 0,
+      'layer2.opacity': 0,
+    },
+
+    {
+      'class': 'icon_folder_dup',
+      'settings': [stOpts.disableFolderIcons],
+
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['expanded', 'hover'],
+        },
+
+      ],
+
+      'layer0.opacity': 0,
+      'layer1.opacity': 0,
+      'layer2.opacity': 0,
+    },
+
+    {
+      'class': 'icon_folder_dup',
+      'settings': [stOpts.disableFolderIcons],
+
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['expanded'],
+        },
+
+      ],
+
+      'layer0.opacity': 0,
+      'layer1.opacity': 0,
+      'layer2.opacity': 0,
+    },
+
     // AutoComplete Padding
 
     // Cramped AutoComplete

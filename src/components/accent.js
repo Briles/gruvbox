@@ -83,6 +83,7 @@ module.exports = function (values) {
         'class': 'icon_folder',
 
         'layer2.texture': `${brightnessAssets}folder--expanded.png`,
+        'layer3.texture': `${brightnessAssets}folder--expanded.png`,
       },
 
       // Folder Symlink
@@ -90,6 +91,7 @@ module.exports = function (values) {
         'class': 'icon_folder_dup',
 
         'layer1.texture': `${brightnessAssets}folder_dup--expanded.png`,
+        'layer2.texture': `${brightnessAssets}folder_dup--expanded.png`,
       },
 
       // Tab Scroll Left
@@ -427,6 +429,7 @@ module.exports = function (values) {
         'settings': [stOpts.accentOpposite],
 
         'layer2.texture': `${oppositeBrightnessAssets}folder--expanded.png`,
+        'layer3.texture': `${oppositeBrightnessAssets}folder--expanded.png`,
       },
 
       // Folder Symlink
@@ -435,6 +438,7 @@ module.exports = function (values) {
         'settings': [stOpts.accentOpposite],
 
         'layer1.texture': `${oppositeBrightnessAssets}folder_dup--expanded.png`,
+        'layer2.texture': `${oppositeBrightnessAssets}folder_dup--expanded.png`,
       },
 
       // Tab Scroll Left
@@ -785,6 +789,7 @@ module.exports = function (values) {
         'settings': [stOpts.accentNeutral],
 
         'layer2.texture': `${neutralAssets}folder--expanded.png`,
+        'layer3.texture': `${neutralAssets}folder--expanded.png`,
       },
 
       // Folder Symlink
@@ -793,6 +798,7 @@ module.exports = function (values) {
         'settings': [stOpts.accentNeutral],
 
         'layer1.texture': `${neutralAssets}folder_dup--expanded.png`,
+        'layer2.texture': `${neutralAssets}folder_dup--expanded.png`,
       },
 
       // Tab Scroll Left
