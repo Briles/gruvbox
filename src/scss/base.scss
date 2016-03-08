@@ -15,6 +15,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+a {
+  text-decoration: none;
+
+  color: $neutral-blue;
+  &:hover {
+    color: $light-blue;
+  }
+}
+
 .centered {
   text-align: center;
 }
@@ -35,7 +44,7 @@ body {
   display: inline-block;
 
   margin: 0 auto;
-  padding: 0 0 0 1.8em;
+  padding: 1em 1.8em;
 
   text-align: center;
   white-space: nowrap;
@@ -47,17 +56,18 @@ body {
 }
 
 .cta {
-  font-size: 1em;
+  font-size: 2em;
+  font-weight: 200;
 
   display: inline-block;
 
-  margin-left: 1.8em;
+  width: 300px;
   padding: 1em 1.8em;
 
   text-decoration: none;
-
-  color: $neutral-blue;
-  border-left: 1px solid $faded-border;
+  &:last-of-type {
+    border-left: 1px solid $faded-border;
+  }
 }
 
 .groove {
@@ -105,9 +115,6 @@ body {
   text-align: center;
 
   color: $neutral-gray;
-  a {
-    color: $neutral-blue;
-  }
 }
 
 .heart {
