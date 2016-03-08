@@ -1,0 +1,35 @@
+gruvbox for Sublime Text 3
+https://github.com/briles/gruvbox
+
+Version 1.9.0
+--------------------------------------------------------------------------------
+
+  THEMES
+
+    • Added option to enable opaque file-type icons ("gruvbox_disable_faded_file_icons": true,)
+    • Added option to enable alternate 'literal' sidebar folder icons ("gruvbox_enable_literal_folder_icons": true,)
+    • Added option to change the font size of the sidebar labels:
+
+        ! Increasing the font size will distort the icons in the sidebar.
+
+        "gruvbox_sidebar_font_size_10": true,  //  v  10
+                                               //  |  11 (Default)
+        "gruvbox_sidebar_font_size_12": true,  //  |  12
+        "gruvbox_sidebar_font_size_13": true,  //  |  13
+        "gruvbox_sidebar_font_size_14": true,  //  |  14
+        "gruvbox_sidebar_font_size_15": true,  //  |  15
+        "gruvbox_sidebar_font_size_16": true,  //  v  16
+
+    • Fixed symlinked & loading folder icons not being hidden when using "gruvbox_disable_folder_icons": true
+    • Button hover states should now have better contrast, especially for light themes
+
+  COLOR SCHEMES
+
+    • Improved HexViewer Support
+    • Improved coloring of HTML, XML, Jade, Slim, and Haml doctypes
+    • Colored JavaScript dollar sign variable punctuation
+    • Colored CSS, LESS, and SASS ID selector punctuation consistently
+
+
+If you are having any issues or want a new feature added,
+get in touch at https://github.com/briles/gruvbox/issues
