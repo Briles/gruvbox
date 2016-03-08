@@ -3697,6 +3697,90 @@
     "layer2.texture": "gruvbox/assets/dark/folder__literal_dup--expanded.png"
   },
   {
+    "class": "sidebar_heading",
+    "settings": [
+      "gruvbox_sidebar_font_size_10"
+    ],
+    "font.size": 11
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_sidebar_font_size_10"
+    ],
+    "font.size": 10
+  },
+  {
+    "class": "sidebar_heading",
+    "settings": [
+      "gruvbox_sidebar_font_size_12"
+    ],
+    "font.size": 13
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_sidebar_font_size_12"
+    ],
+    "font.size": 12
+  },
+  {
+    "class": "sidebar_heading",
+    "settings": [
+      "gruvbox_sidebar_font_size_13"
+    ],
+    "font.size": 14
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_sidebar_font_size_13"
+    ],
+    "font.size": 13
+  },
+  {
+    "class": "sidebar_heading",
+    "settings": [
+      "gruvbox_sidebar_font_size_14"
+    ],
+    "font.size": 15
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_sidebar_font_size_14"
+    ],
+    "font.size": 14
+  },
+  {
+    "class": "sidebar_heading",
+    "settings": [
+      "gruvbox_sidebar_font_size_15"
+    ],
+    "font.size": 16
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_sidebar_font_size_15"
+    ],
+    "font.size": 15
+  },
+  {
+    "class": "sidebar_heading",
+    "settings": [
+      "gruvbox_sidebar_font_size_16"
+    ],
+    "font.size": 17
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_sidebar_font_size_16"
+    ],
+    "font.size": 16
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       251,
