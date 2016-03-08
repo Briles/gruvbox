@@ -245,6 +245,7 @@ module.exports = function (values) {
       'layer0.opacity': 0,
       'layer1.opacity': 0,
       'layer2.opacity': 0,
+      'layer3.opacity': 0,
     },
 
     {
@@ -262,6 +263,7 @@ module.exports = function (values) {
       'layer0.opacity': 0,
       'layer1.opacity': 0,
       'layer2.opacity': 0,
+      'layer3.opacity': 0,
     },
 
     {
@@ -279,11 +281,87 @@ module.exports = function (values) {
       'layer0.opacity': 0,
       'layer1.opacity': 0,
       'layer2.opacity': 0,
+      'layer3.opacity': 0,
     },
 
     {
       'class': 'icon_folder',
       'settings': [stOpts.disableFolderIcons],
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['expanded'],
+        },
+
+      ],
+
+      'layer0.opacity': 0,
+      'layer1.opacity': 0,
+      'layer2.opacity': 0,
+      'layer3.opacity': 0,
+    },
+
+    // Folder loading
+    {
+      'class': 'icon_folder_loading',
+      'settings': [stOpts.disableFolderIcons],
+
+      'layer0.opacity': 0,
+      'layer1.opacity': 0,
+      'layer2.opacity': 0,
+    },
+
+    // Symlinked
+    {
+      'class': 'icon_folder_dup',
+      'settings': [stOpts.disableFolderIcons],
+
+      'layer0.opacity': 0,
+      'layer1.opacity': 0,
+      'layer2.opacity': 0,
+    },
+
+    {
+      'class': 'icon_folder_dup',
+      'settings': [stOpts.disableFolderIcons],
+
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['hover'],
+        },
+
+      ],
+
+      'layer0.opacity': 0,
+      'layer1.opacity': 0,
+      'layer2.opacity': 0,
+    },
+
+    {
+      'class': 'icon_folder_dup',
+      'settings': [stOpts.disableFolderIcons],
+
+      'parents': [
+
+        {
+          'class': 'tree_row',
+          'attributes': ['expanded', 'hover'],
+        },
+
+      ],
+
+      'layer0.opacity': 0,
+      'layer1.opacity': 0,
+      'layer2.opacity': 0,
+    },
+
+    {
+      'class': 'icon_folder_dup',
+      'settings': [stOpts.disableFolderIcons],
+
       'parents': [
 
         {
@@ -797,6 +875,14 @@ module.exports = function (values) {
       'content_margin': [0, 0],
     },
 
+    // File icons and folder Opacity
+    {
+      'class': 'icon_file_type',
+      'settings': [stOpts.disableFadedFileIcons],
+
+      'layer0.opacity': 1,
+    },
+
     /**
      * Disable Greyscale Colors
      */
@@ -1101,6 +1187,117 @@ module.exports = function (values) {
       'match_fg': c.bnp.fg1,
       'selected_fg': c.bnp.fg4,
       'selected_match_fg': c.bnp.fg1,
+    },
+
+    /**
+     * Literal Folder Icons
+     */
+
+    {
+      'class': 'icon_folder',
+      'settings': [stOpts.enableLiteralFolderIcons],
+
+      'layer1.texture': `${paths.commons}folder__literal.png`,
+      'layer2.texture': `${paths.this}folder__literal--hover.png`,
+      'layer3.texture': `${paths.this}folder__literal--expanded.png`,
+    },
+
+    // Symlinked
+    {
+      'class': 'icon_folder_dup',
+      'settings': [stOpts.enableLiteralFolderIcons],
+
+      'layer0.texture': `${paths.commons}folder__literal_dup.png`,
+      'layer1.texture': `${paths.this}folder__literal_dup--hover.png`,
+      'layer2.texture': `${paths.this}folder__literal_dup--expanded.png`,
+    },
+
+    /**
+     * Sidebar Font Sizes
+     */
+
+    {
+      'class': 'sidebar_heading',
+      'settings': [stOpts.sidebarFontSizeXxs],
+
+      'font.size': 11,
+    },
+
+    {
+      'class': 'sidebar_label',
+      'settings': [stOpts.sidebarFontSizeXxs],
+
+      'font.size': 10,
+    },
+
+    {
+      'class': 'sidebar_heading',
+      'settings': [stOpts.sidebarFontSizeXs],
+
+      'font.size': 13,
+    },
+
+    {
+      'class': 'sidebar_label',
+      'settings': [stOpts.sidebarFontSizeXs],
+
+      'font.size': 12,
+    },
+
+    {
+      'class': 'sidebar_heading',
+      'settings': [stOpts.sidebarFontSizeS],
+
+      'font.size': 14,
+    },
+
+    {
+      'class': 'sidebar_label',
+      'settings': [stOpts.sidebarFontSizeS],
+
+      'font.size': 13,
+    },
+
+    {
+      'class': 'sidebar_heading',
+      'settings': [stOpts.sidebarFontSizeL],
+
+      'font.size': 15,
+    },
+
+    {
+      'class': 'sidebar_label',
+      'settings': [stOpts.sidebarFontSizeL],
+
+      'font.size': 14,
+    },
+
+    {
+      'class': 'sidebar_heading',
+      'settings': [stOpts.sidebarFontSizeXl],
+
+      'font.size': 16,
+    },
+
+    {
+      'class': 'sidebar_label',
+      'settings': [stOpts.sidebarFontSizeXl],
+
+      'font.size': 15,
+    },
+
+    {
+      'class': 'sidebar_heading',
+      'settings': [stOpts.sidebarFontSizeXxl],
+
+      'font.size': 17,
+    },
+
+    {
+      'class': 'sidebar_label',
+      'settings': [stOpts.sidebarFontSizeXxl],
+
+      'font.size': 16,
     },
 
   ];

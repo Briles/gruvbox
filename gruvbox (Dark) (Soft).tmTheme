@@ -138,7 +138,7 @@
         <key>name</key>
         <string>Keywords</string>
         <key>scope</key>
-        <string>keyword, keyword.control, punctuation.definition.keyword</string>
+        <string>keyword, keyword.control, meta.prolog.haml, meta.tag.sgml.doctype.html, punctuation.definition.keyword, variable.documentroot</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -212,6 +212,17 @@
         <dict>
           <key>foreground</key>
           <string>#83a598</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Variable - Dollar</string>
+        <key>scope</key>
+        <string>variable.other.dollar punctuation.dollar</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#458588</string>
         </dict>
       </dict>
       <dict>
@@ -488,7 +499,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>entity.name.tag</string>
+        <string>entity.name.tag, keyword.doctype.xml, punctuation.definition.prolog.haml</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1054,7 +1065,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#8ec07c</string>
+          <string>#f2e5bc</string>
         </dict>
       </dict>
       <dict>
@@ -1078,7 +1089,20 @@
           <key>foreground</key>
           <string>#32302f</string>
           <key>background</key>
-          <string>#fb4934</string>
+          <string>#fabd2f</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>HexViewer Edited Highlight</string>
+        <key>scope</key>
+        <string>hexviewer.highlight.edited</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#32302f</string>
+          <key>background</key>
+          <string>#fe8019</string>
         </dict>
       </dict>
       <dict>
@@ -1105,6 +1129,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>b4d79a04-bedb-4adb-88e2-34270abaa0cd</string>
+    <string>826c3174-7d66-4c9b-9892-aa1f7ba1c24b</string>
   </dict>
 </plist>

@@ -18,7 +18,7 @@ module.exports = function (values) {
     {
       'class': 'dialog',
 
-      'layer0.tint': c.background,
+      'layer0.tint': c.container,
       'layer0.opacity': 1,
     },
 

@@ -2,6 +2,8 @@ gruvbox for Sublime Text 3
 
 For more information on gruvbox for Sublime Text: https://github.com/briles/gruvbox
 
+Having an issue or want a feature added? Visit https://github.com/briles/gruvbox/issues
+
 ----------------------------------------------------------------------------------------------
 
 Thank you for downloading gruvbox! Let's get started...
@@ -99,6 +101,20 @@ Theme options:
     "gruvbox_sidebar_cramped": true,      //  v  9
 
 
+  Sidebar Font Sizes
+
+        Change the font size of the sidebar labels
+        ! Increasing the font size will distort the icons in the sidebar.
+
+    "gruvbox_sidebar_font_size_10": true,  //  v  10
+                                           //  |  11 (Default)
+    "gruvbox_sidebar_font_size_12": true,  //  |  12
+    "gruvbox_sidebar_font_size_13": true,  //  |  13
+    "gruvbox_sidebar_font_size_14": true,  //  |  14
+    "gruvbox_sidebar_font_size_15": true,  //  |  15
+    "gruvbox_sidebar_font_size_16": true,  //  v  16
+
+
   Status Bar Sizes
 
         Change the height of the status bar
@@ -157,15 +173,18 @@ Theme options:
 
   Even More Settings...
 
-  "gruvbox_disable_fileicons": true,          // Disable the sidebar file icons
-  "gruvbox_disable_folder_icons": true,       // Disable the sidebar folder icons
-  "gruvbox_disable_borders": true,            // Disable all borders
-  "gruvbox_disable_greyscale": true,          // Use gruvbox colors instead of greyscale colors for certain text
-  "gruvbox_enable_panel_close_button": true,  // Enable the panel close button
-  "gruvbox_enable_statusbar_border": true,    // Enable borders for the status bar
-  "gruvbox_tabs_bold": true,                  // Enable bold tabs
-  "gruvbox_tabs_autowidth": true,             // Auto-size the tabs
-  "gruvbox_colored_tooltips": true,           // Color the tooltip backgrounds with the current accent color
-  "gruvbox_iconset_spacegray": true,          // Use spacegray-like icons in the status bar
+  "gruvbox_colored_tooltips": true,             // Color the tooltip backgrounds with the current accent color
+  "gruvbox_disable_borders": true,              // Disable all borders
+  "gruvbox_disable_faded_file_icons": true,     // Make file-type icons fully opaque
+  "gruvbox_disable_fileicons": true,            // Disable the sidebar file icons
+  "gruvbox_disable_folder_icons": true,         // Disable the sidebar folder icons
+  "gruvbox_disable_greyscale": true,            // Use gruvbox colors instead of greyscale colors for certain text
+  "gruvbox_disable_panels_button": true,        // Hide the panel-switching button
+  "gruvbox_enable_literal_folder_icons": true,  // Use 'literal' folder icons in the sidebar
+  "gruvbox_enable_panel_close_button": true,    // Enable the panel close button
+  "gruvbox_enable_statusbar_border": true,      // Enable borders for the status bar
+  "gruvbox_iconset_spacegray": true,            // Use spacegray-like icons in the status bar
+  "gruvbox_tabs_autowidth": true,               // Auto-size the tabs
+  "gruvbox_tabs_bold": true,                    // Enable bold tabs
 
   * Having an issue or want a feature added? Visit https://github.com/briles/gruvbox/issues

@@ -126,7 +126,10 @@ module.exports = function (values) {
         scope: [
           'keyword',
           'keyword.control',
+          'meta.prolog.haml',
+          'meta.tag.sgml.doctype.html',
           'punctuation.definition.keyword',
+          'variable.documentroot',
         ],
         settings: {
           foreground: c.bnp.red,
@@ -199,6 +202,16 @@ module.exports = function (values) {
         ],
         settings: {
           foreground: c.bnp.blue,
+        },
+      },
+
+      {
+        name: 'Variable - Dollar',
+        scope: [
+          'variable.other.dollar punctuation.dollar',
+        ],
+        settings: {
+          foreground: c.neutralBlue,
         },
       },
 
@@ -490,6 +503,8 @@ module.exports = function (values) {
       {
         scope: [
           'entity.name.tag',
+          'keyword.doctype.xml',
+          'punctuation.definition.prolog.haml',
         ],
         settings: {
           foreground: c.bnp.blue,
@@ -1050,7 +1065,7 @@ module.exports = function (values) {
           'raw.nibble.upper',
         ],
         settings: {
-          foreground: c.bnp.aqua,
+          foreground: c.bnp.fg[info.contrast],
         },
       },
 
@@ -1071,7 +1086,18 @@ module.exports = function (values) {
         ],
         settings: {
           foreground: c.background,
-          background: c.bnp.red,
+          background: c.bnp.yellow,
+        },
+      },
+
+      {
+        name: 'HexViewer Edited Highlight',
+        scope: [
+          'hexviewer.highlight.edited',
+        ],
+        settings: {
+          foreground: c.background,
+          background: c.bnp.orange,
         },
       },
 
