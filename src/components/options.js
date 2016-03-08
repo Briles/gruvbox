@@ -245,6 +245,7 @@ module.exports = function (values) {
       'layer0.opacity': 0,
       'layer1.opacity': 0,
       'layer2.opacity': 0,
+      'layer3.opacity': 0,
     },
 
     {
@@ -262,6 +263,7 @@ module.exports = function (values) {
       'layer0.opacity': 0,
       'layer1.opacity': 0,
       'layer2.opacity': 0,
+      'layer3.opacity': 0,
     },
 
     {
@@ -279,6 +281,7 @@ module.exports = function (values) {
       'layer0.opacity': 0,
       'layer1.opacity': 0,
       'layer2.opacity': 0,
+      'layer3.opacity': 0,
     },
 
     {
@@ -296,6 +299,7 @@ module.exports = function (values) {
       'layer0.opacity': 0,
       'layer1.opacity': 0,
       'layer2.opacity': 0,
+      'layer3.opacity': 0,
     },
 
     // AutoComplete Padding

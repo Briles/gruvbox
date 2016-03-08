@@ -319,11 +319,17 @@ module.exports = function (values) {
 
       'layer0.opacity': 0,
 
+      // Default
       'layer1.texture': `${paths.commons}folder.png`,
       'layer1.opacity': 1,
 
+      // Hover
       'layer2.texture': `${paths.this}folder--expanded.png`,
       'layer2.opacity': 0,
+
+      // Expanded
+      'layer3.texture': `${paths.this}folder--expanded.png`,
+      'layer3.opacity': 0,
     },
 
     {
@@ -339,6 +345,7 @@ module.exports = function (values) {
 
       'layer1.opacity': 0,
       'layer2.opacity': 1,
+      'layer3.opacity': 0,
     },
 
     {
@@ -353,7 +360,8 @@ module.exports = function (values) {
       ],
 
       'layer1.opacity': 0,
-      'layer2.opacity': 1,
+      'layer2.opacity': 0,
+      'layer3.opacity': 1,
     },
 
     {
@@ -368,7 +376,8 @@ module.exports = function (values) {
       ],
 
       'layer1.opacity': 0,
-      'layer2.opacity': 1,
+      'layer2.opacity': 0,
+      'layer3.opacity': 1,
     },
 
     // Folder loading
@@ -404,11 +413,17 @@ module.exports = function (values) {
       'class': 'icon_folder_dup',
       'content_margin': [8, 8],
 
+      // Default
       'layer0.texture': `${paths.commons}folder_dup.png`,
       'layer0.opacity': 1.0,
 
+      // Hover
       'layer1.texture': `${paths.this}folder_dup--expanded.png`,
       'layer1.opacity': 0,
+
+      // Expanded
+      'layer2.texture': `${paths.this}folder_dup--expanded.png`,
+      'layer2.opacity': 0,
     },
 
     {
@@ -424,6 +439,7 @@ module.exports = function (values) {
 
       'layer0.opacity': 0,
       'layer1.opacity': 1,
+      'layer2.opacity': 0,
     },
 
     {
@@ -438,7 +454,8 @@ module.exports = function (values) {
       ],
 
       'layer0.opacity': 0,
-      'layer1.opacity': 1,
+      'layer1.opacity': 0,
+      'layer2.opacity': 1,
     },
 
     {
@@ -453,7 +470,8 @@ module.exports = function (values) {
       ],
 
       'layer0.opacity': 0,
-      'layer1.opacity': 1,
+      'layer1.opacity': 0,
+      'layer2.opacity': 1,
     },
 
   ];
