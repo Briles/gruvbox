@@ -1,4 +1,12 @@
+<p>
+  <a href="https://github.com/Briles/gruvbox/tags"><img src="https://img.shields.io/github/tag/briles/gruvbox.svg?style=flat-square" alt="GitHub tag"></a>
+  <a href="https://github.com/Briles/gruvbox/compare/1.6.0...develop"><img src="https://img.shields.io/github/commits-since/briles/gruvbox/1.6.0.svg?style=flat-square" alt="GitHub Commits Since"></a>
+  <a href="https://packagecontrol.io/packages/gruvbox"><img src="https://img.shields.io/packagecontrol/dt/gruvbox.svg?style=flat-square" alt="Package Control"></a>
+  <a href="https://github.com/Briles/gruvbox/blob/master/LICENSE"><img src="https://img.shields.io/github/license/briles/gruvbox.svg?style=flat-square" alt="GitHub license"></a>
+</p>
+
 <p align="center"><img src="https://cdn.rawgit.com/Briles/gruvbox/master/assets/banner-image.svg" alt="gruvbox for Sublime Text" width="327px" height="122px"></p>
+
 Based on [gruvbox for vim](https://github.com/morhetz/gruvbox)
 
 > gruvbox is heavily inspired by [badwolf][], [jellybeans][] and [solarized][].
