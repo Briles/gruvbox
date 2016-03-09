@@ -307,8 +307,8 @@ Activation:
 
 Activation:
 
-1. Rename the `dark__bookmark.png` or `light__bookmark.png` in `extras` to `bookmark.png`
-2. Add the `bookmark.png` icon to `Sublime Text/Data/Packages/Theme - Default/`
+1. Rename any `*_bookmark_*.png` in `extras` to `bookmark.png`
+2. Add the newly renamed `bookmark.png` icon to `Sublime Text/Data/Packages/Theme - Default/`
 3. Restart Sublime Text
 
 License
