@@ -1300,5 +1300,18 @@ module.exports = function (values) {
       'font.size': 16,
     },
 
+    /**
+     * Highlight Active Tree Row
+     */
+
+    {
+      'class': 'tree_row',
+      'settings': [stOpts.enableTreeRowHighlight],
+
+      'attributes': ['selected'],
+
+      'layer0.opacity': 1,
+    },
+
   ];
 };

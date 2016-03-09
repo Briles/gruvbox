@@ -908,19 +908,32 @@
   },
   {
     "class": "tree_row",
-    "layer0.tint": [
+    "layer1.tint": [
       247,
       226,
       140
     ],
-    "layer0.draw_center": false,
-    "layer0.inner_margin": [
+    "layer1.draw_center": false,
+    "layer1.inner_margin": [
       0,
       0,
       1,
       0
     ],
-    "layer0.opacity": 1
+    "layer1.opacity": 1,
+    "layer0.tint": [
+      251,
+      241,
+      199
+    ],
+    "layer0.opacity": 0
+  },
+  {
+    "class": "tree_row",
+    "attributes": [
+      "selected"
+    ],
+    "layer0.opacity": 0
   },
   {
     "class": "sidebar_label",
@@ -3779,6 +3792,16 @@
       "gruvbox_sidebar_font_size_16"
     ],
     "font.size": 16
+  },
+  {
+    "class": "tree_row",
+    "settings": [
+      "gruvbox_highlight_active_tree_row"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer0.opacity": 1
   },
   {
     "class": "auto_complete_label",

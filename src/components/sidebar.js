@@ -62,10 +62,20 @@ module.exports = function (values) {
     {
       'class': 'tree_row',
 
-      'layer0.tint': c.border,
-      'layer0.draw_center': false,
-      'layer0.inner_margin': [0, 0, 1, 0],
-      'layer0.opacity': 1,
+      'layer1.tint': c.border,
+      'layer1.draw_center': false,
+      'layer1.inner_margin': [0, 0, 1, 0],
+      'layer1.opacity': 1,
+
+      'layer0.tint': c.background,
+      'layer0.opacity': 0,
+    },
+
+    {
+      'class': 'tree_row',
+      'attributes': ['selected'],
+
+      'layer0.opacity': 0,
     },
 
     {

@@ -31,6 +31,7 @@ module.exports = {
   enableLiteralFolderIcons: 'gruvbox_enable_literal_folder_icons',
   enablePanelCloseButton: 'gruvbox_enable_panel_close_button',
   enableStatusbarBorder: 'gruvbox_enable_statusbar_border',
+  enableTreeRowHighlight: 'gruvbox_highlight_active_tree_row',
   iconsetSpacegray: 'gruvbox_iconset_spacegray',
   sidebarSpacingL: 'gruvbox_sidebar_comfortable',
   sidebarSpacingS: 'gruvbox_sidebar_compact',
