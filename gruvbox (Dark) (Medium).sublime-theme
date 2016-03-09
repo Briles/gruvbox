@@ -1326,6 +1326,15 @@
     "layer2.opacity": 1
   },
   {
+    "class": "disclosure_button_control",
+    "content_margin": [
+      0,
+      0
+    ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0
+  },
+  {
     "class": "scroll_bar_control",
     "blur": false,
     "layer0.tint": [

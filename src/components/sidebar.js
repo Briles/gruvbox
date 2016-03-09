@@ -484,5 +484,14 @@ module.exports = function (values) {
       'layer2.opacity': 1,
     },
 
+    // Sidebar Group Arrows
+    {
+      'class': 'disclosure_button_control',
+      'content_margin': [0, 0],
+
+      'layer0.opacity': 0,
+      'layer1.opacity': 0,
+    },
+
   ];
 };
