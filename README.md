@@ -300,7 +300,8 @@ Activation:
 
 Activation:
 
-1. Add the `fold.png` icon from `extras` to `Sublime Text/Data/Packages/Theme - Default/`
+1. Rename any `*_fold.png` in `extras` to `fold.png`
+2. Add the newly renamed `fold.png` icon to `Sublime Text/Data/Packages/Theme - Default/`
 2. Restart Sublime Text
 
 ### Bookmark Icon
