@@ -1165,8 +1165,8 @@
   {
     "class": "icon_file_type",
     "content_margin": [
-      9,
-      9
+      8,
+      8
     ],
     "layer0.opacity": 0.6
   },
@@ -1179,10 +1179,6 @@
           "selected"
         ]
       }
-    ],
-    "content_margin": [
-      9,
-      9
     ],
     "layer0.opacity": 1
   },

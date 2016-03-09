@@ -300,7 +300,7 @@ module.exports = function (values) {
 
     {
       'class': 'icon_file_type',
-      'content_margin': [9, 9],
+      'content_margin': [8, 8],
 
       // layer0.texture is filled in by code with the relevant icon name
       'layer0.opacity': 0.6,
@@ -316,7 +316,6 @@ module.exports = function (values) {
         },
 
       ],
-      'content_margin': [9, 9],
 
       'layer0.opacity': 1,
     },
