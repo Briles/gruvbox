@@ -6,9 +6,8 @@ const gulp = require('gulp');
 const exec = require('child_process').exec;
 const runSequence = require('run-sequence');
 
-gulp.task('build_all', function () {
-
-  exec(`node ${srcPath}build.js`, function (err, stdout, stderr) {
+function execNode(command) {
+  exec(`node ${command}`, function (err, stdout, stderr) {
     if (stdout) {
       console.log(stdout);
     }
@@ -17,17 +16,24 @@ gulp.task('build_all', function () {
       console.log(stderr);
     }
   });
+}
 
+gulp.task('build_theme', function () {
+  execNode(`${srcPath}build.js`);
 });
 
-gulp.task('watch', function () {
-  gulp.watch(`${srcPath}**/*.js`, ['build_all']);
-});
-
-gulp.task('default', function (callback) {
-  runSequence('build_all', 'watch', callback);
+gulp.task('build_icons', function () {
+  execNode(`${srcPath}icons.js`);
 });
 
 gulp.task('build', function (callback) {
-  runSequence('build', callback);
+  runSequence('build_theme', 'build_icons', callback);
+});
+
+gulp.task('watch', function () {
+  gulp.watch(`${srcPath}**/*.js`, ['build']);
+});
+
+gulp.task('default', function (callback) {
+  runSequence('build', 'watch', callback);
 });

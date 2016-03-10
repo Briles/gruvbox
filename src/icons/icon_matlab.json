@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.matlab"
+  ],
+  "settings": {
+    "icon": "file_type_matlab"
+  }
+}

@@ -39,10 +39,13 @@ The following gulp tasks are available:
 - `gulp` runs the default `watch` task.
 - `gulp watch` watches `./src/*.js` and builds everything on change.
 - `gulp build` builds everything.
+- `gulp build_icons` builds file-type icon `.tmPreferences`
+- `gulp build_theme` builds color schemes and themes
 
 ## Navigating the Files
 
 - `./src/build.js` the main script which builds everything
+- `./src/icons.js` script which creates `.tmPreferences` for all icons in `./src/icons/`
 - `./src/components/*.js` contains all the `.sublime-theme` components
 - `./src/scheme.js` contains all the `.tmTheme` components
 - `./src/widget.js` contains all the `.sublime-settings` widget components

@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "text.html.liquid"
+  ],
+  "settings": {
+    "icon": "file_type_liquid"
+  }
+}

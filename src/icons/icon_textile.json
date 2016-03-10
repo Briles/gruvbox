@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "text.html.textile"
+  ],
+  "settings": {
+    "icon": "file_type_textile"
+  }
+}

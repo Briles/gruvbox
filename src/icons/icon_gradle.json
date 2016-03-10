@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.gradle"
+  ],
+  "settings": {
+    "icon": "file_type_gradle"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.jl"
+  ],
+  "settings": {
+    "icon": "file_type_julia"
+  }
+}

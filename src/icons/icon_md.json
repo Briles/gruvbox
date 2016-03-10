@@ -1,0 +1,9 @@
+{
+  "scope": [
+    "text.html.markdown",
+    "text.html.markdown.multimarkdown"
+  ],
+  "settings": {
+    "icon": "file_type_markdown"
+  }
+}

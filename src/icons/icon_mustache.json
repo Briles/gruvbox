@@ -1,0 +1,12 @@
+{
+  "scope": [
+    "text.html.mustache",
+    "text.html.hgn",
+    "text.html.handlebars",
+    "source.mustache",
+    "source.handlebars"
+  ],
+  "settings": {
+    "icon": "file_type_mustache"
+  }
+}

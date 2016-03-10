@@ -1,0 +1,9 @@
+{
+  "scope": [
+    "source.jade",
+    "text.jade"
+  ],
+  "settings": {
+    "icon": "file_type_jade"
+  }
+}

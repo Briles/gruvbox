@@ -1,0 +1,9 @@
+{
+  "scope": [
+    "source.stylus",
+    "source.styl"
+  ],
+  "settings": {
+    "icon": "file_type_stylus"
+  }
+}

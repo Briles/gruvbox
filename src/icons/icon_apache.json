@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.apacheconf"
+  ],
+  "settings": {
+    "icon": "file_type_apache"
+  }
+}

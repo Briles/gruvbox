@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.rust"
+  ],
+  "settings": {
+    "icon": "file_type_rust"
+  }
+}

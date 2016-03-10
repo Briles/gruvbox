@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.json.bower"
+  ],
+  "settings": {
+    "icon": "file_type_bower"
+  }
+}

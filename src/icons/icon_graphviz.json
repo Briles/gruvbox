@@ -1,0 +1,9 @@
+{
+  "scope": [
+    "source.dot",
+    "source.gv"
+  ],
+  "settings": {
+    "icon": "file_type_graphviz"
+  }
+}

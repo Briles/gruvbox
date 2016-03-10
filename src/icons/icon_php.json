@@ -1,0 +1,9 @@
+{
+  "scope": [
+    "source.php",
+    "embedding.php"
+  ],
+  "settings": {
+    "icon": "file_type_php"
+  }
+}

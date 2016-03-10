@@ -1,0 +1,9 @@
+{
+  "scope": [
+    "text.html.laravel-blade",
+    "text.blade"
+  ],
+  "settings": {
+    "icon": "file_type_blade"
+  }
+}

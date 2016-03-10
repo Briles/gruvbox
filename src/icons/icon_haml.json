@@ -1,0 +1,9 @@
+{
+  "scope": [
+    "source.haml",
+    "text.haml"
+  ],
+  "settings": {
+    "icon": "file_type_haml"
+  }
+}

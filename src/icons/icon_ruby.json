@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.ruby"
+  ],
+  "settings": {
+    "icon": "file_type_ruby"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "scope": [
+    "source.do",
+    "source.ado",
+    "source.stata"
+  ],
+  "settings": {
+    "icon": "file_type_stata"
+  }
+}

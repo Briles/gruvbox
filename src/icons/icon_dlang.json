@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.d"
+  ],
+  "settings": {
+    "icon": "file_type_dlang"
+  }
+}

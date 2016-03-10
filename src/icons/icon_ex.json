@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.elixir"
+  ],
+  "settings": {
+    "icon": "file_type_ex"
+  }
+}
