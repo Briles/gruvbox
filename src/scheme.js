@@ -434,7 +434,7 @@ module.exports = function (values) {
           'support.function',
         ],
         settings: {
-          foreground: c.bnp.orange,
+          foreground: c.bnp.aqua,
         },
       },
 
@@ -446,7 +446,7 @@ module.exports = function (values) {
           'support.function.mutator',
         ],
         settings: {
-          foreground: c.neutralOrange,
+          foreground: c.neutralAqua,
         },
       },
 
