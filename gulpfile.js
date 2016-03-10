@@ -31,7 +31,28 @@ gulp.task('build', function (callback) {
 });
 
 gulp.task('watch', function () {
-  gulp.watch(`${srcPath}**/*.js`, ['build']);
+  var themeFiles = [
+    `${srcPath}build.js`,
+    `${srcPath}components.js`,
+    `${srcPath}components/*.js`,
+    `${srcPath}options.js`,
+    `${srcPath}palette.js`,
+    `${srcPath}paths.js`,
+    `${srcPath}scheme.js`,
+    `${srcPath}sublime-options.js`,
+    `${srcPath}tinycolor.js`,
+    `${srcPath}utils.js`,
+    `${srcPath}widget.js`,
+  ];
+
+  var iconFiles = [
+    `${srcPath}icons.js`,
+    `${srcPath}icons/*.json`,
+    `${srcPath}utils.js`,
+  ];
+
+  gulp.watch(themeFiles, ['build_theme']);
+  gulp.watch(iconFiles, ['build_icons']);
 });
 
 gulp.task('default', function (callback) {
