@@ -1,7 +1,8 @@
 {
   "scope": [
     "source.c++",
-    "source.objc++"
+    "source.objc++",
+    "source.cuda-c++"
   ],
   "settings": {
     "icon": "file_type_c++"

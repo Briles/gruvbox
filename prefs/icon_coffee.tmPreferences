@@ -3,7 +3,7 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>source.coffee</string>
+    <string>source.coffee, source.litcoffee, source.pegcs</string>
     <key>settings</key>
     <dict>
       <key>icon</key>

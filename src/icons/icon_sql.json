@@ -1,6 +1,8 @@
 {
   "scope": [
-    "source.sql"
+    "source.sql",
+    "source.simple-db-migrate",
+    "source.pgsql"
   ],
   "settings": {
     "icon": "file_type_sql"

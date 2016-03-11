@@ -1,5 +1,6 @@
 {
   "scope": [
+    "source.cfml",
     "text.html.cfm"
   ],
   "settings": {

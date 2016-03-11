@@ -1,7 +1,8 @@
 {
   "scope": [
     "source.jsx",
-    "source.js.jsx"
+    "source.js.jsx",
+    "source.tsx"
   ],
   "settings": {
     "icon": "file_type_react"

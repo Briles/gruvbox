@@ -1,6 +1,7 @@
 {
   "scope": [
-    "source.jl"
+    "source.jl",
+    "source.julia"
   ],
   "settings": {
     "icon": "file_type_julia"

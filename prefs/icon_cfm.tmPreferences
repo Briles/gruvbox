@@ -3,7 +3,7 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>text.html.cfm</string>
+    <string>source.cfml, text.html.cfm</string>
     <key>settings</key>
     <dict>
       <key>icon</key>
