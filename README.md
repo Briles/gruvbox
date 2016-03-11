@@ -275,6 +275,16 @@ Use 'literal' folder icons in the sidebar
 "gruvbox_enable_literal_folder_icons": true,
 ```
 
+#### Alternate Icon Sets
+
+![Spacegray Icon Set](http://i.imgur.com/SiL6f32.png)
+
+Use spacegray-like icons in the status bar
+
+```json
+"gruvbox_iconset_spacegray": true,
+```
+
 #### Even More Settings...
 
 ```json
@@ -288,7 +298,6 @@ Use 'literal' folder icons in the sidebar
   "gruvbox_enable_panel_close_button": true,    // Enable the panel close button
   "gruvbox_enable_statusbar_border": true,      // Enable borders for the status bar
   "gruvbox_highlight_active_tree_row": true,    // Highlight the active file in the sidebar tree
-  "gruvbox_iconset_spacegray": true,            // Use spacegray-like icons in the status bar
   "gruvbox_tabs_autowidth": true,               // Auto-size the tabs
   "gruvbox_tabs_bold": true,                    // Enable bold tabs
 ```
