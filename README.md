@@ -265,6 +265,16 @@ Autocollapse the tabs when not in use
   "gruvbox_autocollapse_tabs_trigger_6": true,  //  v  6
 ```
 
+#### Alternate Folder Icons
+
+![Alternate Folder Icons](http://i.imgur.com/gw7mNjI.png)
+
+Use 'literal' folder icons in the sidebar
+
+```json
+"gruvbox_enable_literal_folder_icons": true,
+```
+
 #### Even More Settings...
 
 ```json
@@ -275,7 +285,6 @@ Autocollapse the tabs when not in use
   "gruvbox_disable_folder_icons": true,         // Disable the sidebar folder icons
   "gruvbox_disable_greyscale": true,            // Use gruvbox colors instead of greyscale colors for certain text
   "gruvbox_disable_panels_button": true,        // Hide the panel-switching button
-  "gruvbox_enable_literal_folder_icons": true,  // Use 'literal' folder icons in the sidebar
   "gruvbox_enable_panel_close_button": true,    // Enable the panel close button
   "gruvbox_enable_statusbar_border": true,      // Enable borders for the status bar
   "gruvbox_highlight_active_tree_row": true,    // Highlight the active file in the sidebar tree
