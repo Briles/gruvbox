@@ -325,6 +325,8 @@ Activation:
 
 ### Bookmark Icon
 
+![Bookmark Icons](http://i.imgur.com/Pf9yCR8.png)
+
 Activation:
 
 1. Rename any `*_bookmark_*.png` in `extras` to `bookmark.png`
