@@ -317,6 +317,8 @@ Activation:
 
 ### Code Fold Icon
 
+![Code Fold Icons](http://i.imgur.com/DxZmm7a.png)
+
 Activation:
 
 1. Rename any `*_fold.png` in `extras` to `fold.png`
