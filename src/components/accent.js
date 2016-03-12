@@ -95,6 +95,27 @@ module.exports = function (values) {
       },
 
       /**
+       * Square Folder Icons
+       */
+
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.enableSquareFolderIcons],
+
+        'layer2.texture': `${brightnessAssets}folder__square--expanded.png`,
+        'layer3.texture': `${brightnessAssets}folder__square--expanded.png`,
+      },
+
+      // Symlinked
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.enableSquareFolderIcons],
+
+        'layer1.texture': `${brightnessAssets}folder__square_dup--expanded.png`,
+        'layer2.texture': `${brightnessAssets}folder__square_dup--expanded.png`,
+      },
+
+      /**
        * Literal Folder Icons
        */
 
@@ -499,6 +520,27 @@ module.exports = function (values) {
 
         'layer1.texture': `${oppositeBrightnessAssets}folder_dup--expanded.png`,
         'layer2.texture': `${oppositeBrightnessAssets}folder_dup--expanded.png`,
+      },
+
+      /**
+       * Square Folder Icons
+       */
+
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.enableSquareFolderIcons, stOpts.accentOpposite],
+
+        'layer2.texture': `${oppositeBrightnessAssets}folder__square--expanded.png`,
+        'layer3.texture': `${oppositeBrightnessAssets}folder__square--expanded.png`,
+      },
+
+      // Symlinked
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.enableSquareFolderIcons, stOpts.accentOpposite],
+
+        'layer1.texture': `${oppositeBrightnessAssets}folder__square_dup--expanded.png`,
+        'layer2.texture': `${oppositeBrightnessAssets}folder__square_dup--expanded.png`,
       },
 
       /**
@@ -919,6 +961,27 @@ module.exports = function (values) {
 
         'layer1.texture': `${neutralAssets}folder_dup--expanded.png`,
         'layer2.texture': `${neutralAssets}folder_dup--expanded.png`,
+      },
+
+      /**
+       * Square Folder Icons
+       */
+
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.enableSquareFolderIcons, stOpts.accentNeutral],
+
+        'layer2.texture': `${neutralAssets}folder__square--expanded.png`,
+        'layer3.texture': `${neutralAssets}folder__square--expanded.png`,
+      },
+
+      // Symlinked
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.enableSquareFolderIcons, stOpts.accentNeutral],
+
+        'layer1.texture': `${neutralAssets}folder__square_dup--expanded.png`,
+        'layer2.texture': `${neutralAssets}folder__square_dup--expanded.png`,
       },
 
       /**

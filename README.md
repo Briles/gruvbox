@@ -266,6 +266,16 @@ Autocollapse the tabs when not in use
 
 #### Alternate Folder Icons
 
+##### Square Folder Icons
+
+![Square Folder Icons](http://i.imgur.com/ojqgVIv.png)
+
+Use square folder icons in the sidebar
+
+```json
+"gruvbox_enable_square_folder_icons": true,
+```
+
 ##### Literal Folder Icons
 
 ![Literal Folder Icons](http://i.imgur.com/gw7mNjI.png)

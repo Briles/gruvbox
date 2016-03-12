@@ -1190,6 +1190,29 @@ module.exports = function (values) {
     },
 
     /**
+     * Square Folder Icons
+     */
+
+    {
+      'class': 'icon_folder',
+      'settings': [stOpts.enableSquareFolderIcons],
+
+      'layer1.texture': `${paths.commons}folder__square.png`,
+      'layer2.texture': `${paths.this}folder__square--expanded.png`,
+      'layer3.texture': `${paths.this}folder__square--expanded.png`,
+    },
+
+    // Symlinked
+    {
+      'class': 'icon_folder_dup',
+      'settings': [stOpts.enableSquareFolderIcons],
+
+      'layer0.texture': `${paths.commons}folder__square_dup.png`,
+      'layer1.texture': `${paths.this}folder__square_dup--expanded.png`,
+      'layer2.texture': `${paths.this}folder__square_dup--expanded.png`,
+    },
+
+    /**
      * Literal Folder Icons
      */
 

@@ -173,6 +173,9 @@ Theme options:
 
   Alternate Folder Icons
 
+        Use square folder icons in the sidebar
+          "gruvbox_enable_square_folder_icons": true,
+
         Use 'literal' folder icons in the sidebar
           "gruvbox_enable_literal_folder_icons": true,
 
