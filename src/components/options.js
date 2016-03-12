@@ -1213,6 +1213,29 @@ module.exports = function (values) {
     },
 
     /**
+     * Plus Minus Folder Icons
+     */
+
+    {
+      'class': 'icon_folder',
+      'settings': [stOpts.enablePlusMinusFolderIcons],
+
+      'layer1.texture': `${paths.commons}folder__pm.png`,
+      'layer2.texture': `${paths.this}folder__pm--hover.png`,
+      'layer3.texture': `${paths.this}folder__pm--expanded.png`,
+    },
+
+    // Symlinked
+    {
+      'class': 'icon_folder_dup',
+      'settings': [stOpts.enablePlusMinusFolderIcons],
+
+      'layer0.texture': `${paths.commons}folder__pm_dup.png`,
+      'layer1.texture': `${paths.this}folder__pm_dup--hover.png`,
+      'layer2.texture': `${paths.this}folder__pm_dup--expanded.png`,
+    },
+
+    /**
      * Sidebar Font Sizes
      */
 

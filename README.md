@@ -267,7 +267,9 @@ Autocollapse the tabs when not in use
 
 #### Alternate Folder Icons
 
-![Alternate Folder Icons](http://i.imgur.com/gw7mNjI.png)
+##### Literal Folder Icons
+
+![Literal Folder Icons](http://i.imgur.com/gw7mNjI.png)
 
 Use 'literal' folder icons in the sidebar
 
@@ -275,7 +277,19 @@ Use 'literal' folder icons in the sidebar
 "gruvbox_enable_literal_folder_icons": true,
 ```
 
+##### Plus/Minus Folder Icons
+
+![Plus Minus Folder Icons](http://i.imgur.com/bOzgz16.png)
+
+Use 'plus/minus' folder icons in the sidebar
+
+```json
+"gruvbox_enable_plus_minus_folder_icons": true,
+```
+
 #### Alternate Icon Sets
+
+##### Spacegray
 
 ![Spacegray Icon Set](http://i.imgur.com/SiL6f32.png)
 
