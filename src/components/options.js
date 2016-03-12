@@ -242,10 +242,7 @@ module.exports = function (values) {
       'class': 'icon_folder',
       'settings': [stOpts.disableFolderIcons],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 0,
-      'layer3.opacity': 0,
+      'content_margin': [0, 0],
     },
 
     {
@@ -260,10 +257,7 @@ module.exports = function (values) {
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 0,
-      'layer3.opacity': 0,
+      'content_margin': [0, 0],
     },
 
     {
@@ -278,10 +272,7 @@ module.exports = function (values) {
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 0,
-      'layer3.opacity': 0,
+      'content_margin': [0, 0],
     },
 
     {
@@ -296,10 +287,7 @@ module.exports = function (values) {
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 0,
-      'layer3.opacity': 0,
+      'content_margin': [0, 0],
     },
 
     // Folder loading
@@ -307,9 +295,7 @@ module.exports = function (values) {
       'class': 'icon_folder_loading',
       'settings': [stOpts.disableFolderIcons],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 0,
+      'content_margin': [0, 0],
     },
 
     // Symlinked
@@ -317,9 +303,7 @@ module.exports = function (values) {
       'class': 'icon_folder_dup',
       'settings': [stOpts.disableFolderIcons],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 0,
+      'content_margin': [0, 0],
     },
 
     {
@@ -335,9 +319,7 @@ module.exports = function (values) {
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 0,
+      'content_margin': [0, 0],
     },
 
     {
@@ -353,9 +335,7 @@ module.exports = function (values) {
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 0,
+      'content_margin': [0, 0],
     },
 
     {
@@ -371,9 +351,7 @@ module.exports = function (values) {
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 0,
+      'content_margin': [0, 0],
     },
 
     // AutoComplete Padding
