@@ -313,7 +313,7 @@ Use spacegray-like icons
 ```json
   "gruvbox_colored_tooltips": true,             // Color the tooltip backgrounds with the current accent color
   "gruvbox_disable_borders": true,              // Disable all borders
-  "gruvbox_disable_faded_file_icons": true,     // Make file-type icons fully opaque
+  "gruvbox_disable_faded_file_icons": true,     // Make file-type icons opaque
   "gruvbox_disable_fileicons": true,            // Disable the sidebar file icons
   "gruvbox_disable_folder_icons": true,         // Disable the sidebar folder icons
   "gruvbox_disable_greyscale": true,            // Use gruvbox colors instead of greyscale colors for certain text
