@@ -532,7 +532,29 @@ module.exports = function (values) {
       'layer1.opacity': 1,
     },
 
-    // Spacegray Iconset
+    /**
+     * Spacegray Iconset
+     */
+
+    // Folder Icon
+    {
+      'class': 'icon_folder',
+      'settings': [stOpts.iconsetSpacegray],
+
+      'layer1.texture': `${paths.commons}spacegray__folder.png`,
+      'layer2.texture': `${paths.this}spacegray__folder--hover.png`,
+      'layer3.texture': `${paths.this}spacegray__folder--expanded.png`,
+    },
+
+    // Symlinked Folder Icon
+    {
+      'class': 'icon_folder_dup',
+      'settings': [stOpts.iconsetSpacegray],
+
+      'layer0.texture': `${paths.commons}spacegray__folder_dup.png`,
+      'layer1.texture': `${paths.this}spacegray__folder_dup--hover.png`,
+      'layer2.texture': `${paths.this}spacegray__folder_dup--expanded.png`,
+    },
 
     // Regex Icon
     {

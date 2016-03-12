@@ -182,7 +182,7 @@ Theme options:
 
   Alternate Icon Sets
 
-        Use spacegray-like icons in the status bar
+        Use spacegray-like icons
 
           "gruvbox_iconset_spacegray": true,
 

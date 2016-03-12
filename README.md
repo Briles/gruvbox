@@ -292,7 +292,7 @@ Use 'plus/minus' folder icons in the sidebar
 
 ![Spacegray Icon Set](http://i.imgur.com/SiL6f32.png)
 
-Use spacegray-like icons in the status bar
+Use spacegray-like icons
 
 ```json
 "gruvbox_iconset_spacegray": true,

@@ -318,6 +318,24 @@ module.exports = function (values) {
        * Spacegray Iconset
        */
 
+      // Folder Icon
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.iconsetSpacegray],
+
+        'layer2.texture': `${spacegrayPath}folder--hover.png`,
+        'layer3.texture': `${spacegrayPath}folder--expanded.png`,
+      },
+
+      // Symlinked Folder Icon
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.iconsetSpacegray],
+
+        'layer1.texture': `${spacegrayPath}folder_dup--hover.png`,
+        'layer2.texture': `${spacegrayPath}folder_dup--expanded.png`,
+      },
+
       // Regex Icon
       {
         'class': 'icon_regex',
@@ -693,6 +711,24 @@ module.exports = function (values) {
       /**
        * Spacegray Iconset
        */
+
+      // Folder Icon
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.iconsetSpacegray, stOpts.accentOpposite],
+
+        'layer2.texture': `${oppositeSpacegrayPath}folde--hover.png`,
+        'layer3.texture': `${oppositeSpacegrayPath}folder--expanded.png`,
+      },
+
+      // Symlinked Folder Icon
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.iconsetSpacegray, stOpts.accentOpposite],
+
+        'layer1.texture': `${oppositeSpacegrayPath}folder_dup--hover.png`,
+        'layer2.texture': `${oppositeSpacegrayPath}folder_dup--expanded.png`,
+      },
 
       // Regex Icon
       {
@@ -1093,7 +1129,27 @@ module.exports = function (values) {
         'layer2.texture': `${neutralAssets}buffer.png`,
       },
 
-      // Spacegray Iconset
+      /**
+       * Spacegray Iconset
+       */
+
+      // Folder Icon
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.iconsetSpacegray, stOpts.accentNeutral],
+
+        'layer2.texture': `${neutralSpacegrayPath}folder--hover.png`,
+        'layer3.texture': `${neutralSpacegrayPath}folder--expanded.png`,
+      },
+
+      // Symlinked Folder Icon
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.iconsetSpacegray, stOpts.accentNeutral],
+
+        'layer1.texture': `${neutralSpacegrayPath}folder_dup--hover.png`,
+        'layer2.texture': `${neutralSpacegrayPath}folder_dup--expanded.png`,
+      },
 
       // Regex Icon
       {

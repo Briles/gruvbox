@@ -2916,6 +2916,24 @@
     "layer1.opacity": 1
   },
   {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray"
+    ],
+    "layer1.texture": "gruvbox/assets/commons/spacegray__folder.png",
+    "layer2.texture": "gruvbox/assets/light/spacegray__folder--hover.png",
+    "layer3.texture": "gruvbox/assets/light/spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray"
+    ],
+    "layer0.texture": "gruvbox/assets/commons/spacegray__folder_dup.png",
+    "layer1.texture": "gruvbox/assets/light/spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/light/spacegray__folder_dup--expanded.png"
+  },
+  {
     "class": "icon_regex",
     "settings": [
       "gruvbox_iconset_spacegray"
@@ -4165,6 +4183,24 @@
     ]
   },
   {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_red"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-red/light__spacegray__folder--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-red/light__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_red"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-red/light__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-red/light__spacegray__folder_dup--expanded.png"
+  },
+  {
     "class": "icon_regex",
     "settings": [
       "gruvbox_iconset_spacegray",
@@ -4578,6 +4614,26 @@
       "gruvbox_accent_red"
     ],
     "layer2.texture": "gruvbox/assets/accent-red/dark__buffer.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_red"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-red/dark__spacegray__folde--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-red/dark__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_red"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-red/dark__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-red/dark__spacegray__folder_dup--expanded.png"
   },
   {
     "class": "icon_regex",
@@ -5037,6 +5093,26 @@
       "gruvbox_accent_red"
     ],
     "layer2.texture": "gruvbox/assets/accent-red/neutral__buffer.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_red"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-red/neutral__spacegray__folder--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-red/neutral__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_red"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-red/neutral__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-red/neutral__spacegray__folder_dup--expanded.png"
   },
   {
     "class": "icon_regex",
@@ -5512,6 +5588,24 @@
     ]
   },
   {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_green"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-green/light__spacegray__folder--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-green/light__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_green"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-green/light__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-green/light__spacegray__folder_dup--expanded.png"
+  },
+  {
     "class": "icon_regex",
     "settings": [
       "gruvbox_iconset_spacegray",
@@ -5925,6 +6019,26 @@
       "gruvbox_accent_green"
     ],
     "layer2.texture": "gruvbox/assets/accent-green/dark__buffer.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_green"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-green/dark__spacegray__folde--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-green/dark__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_green"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-green/dark__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-green/dark__spacegray__folder_dup--expanded.png"
   },
   {
     "class": "icon_regex",
@@ -6384,6 +6498,26 @@
       "gruvbox_accent_green"
     ],
     "layer2.texture": "gruvbox/assets/accent-green/neutral__buffer.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_green"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-green/neutral__spacegray__folder--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-green/neutral__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_green"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-green/neutral__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-green/neutral__spacegray__folder_dup--expanded.png"
   },
   {
     "class": "icon_regex",
@@ -6859,6 +6993,24 @@
     ]
   },
   {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_yellow"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-yellow/light__spacegray__folder--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-yellow/light__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_yellow"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-yellow/light__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/light__spacegray__folder_dup--expanded.png"
+  },
+  {
     "class": "icon_regex",
     "settings": [
       "gruvbox_iconset_spacegray",
@@ -7272,6 +7424,26 @@
       "gruvbox_accent_yellow"
     ],
     "layer2.texture": "gruvbox/assets/accent-yellow/dark__buffer.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_yellow"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-yellow/dark__spacegray__folde--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-yellow/dark__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_yellow"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-yellow/dark__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/dark__spacegray__folder_dup--expanded.png"
   },
   {
     "class": "icon_regex",
@@ -7731,6 +7903,26 @@
       "gruvbox_accent_yellow"
     ],
     "layer2.texture": "gruvbox/assets/accent-yellow/neutral__buffer.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_yellow"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-yellow/neutral__spacegray__folder--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-yellow/neutral__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_yellow"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-yellow/neutral__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/neutral__spacegray__folder_dup--expanded.png"
   },
   {
     "class": "icon_regex",
@@ -8206,6 +8398,24 @@
     ]
   },
   {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_blue"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-blue/light__spacegray__folder--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-blue/light__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_blue"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-blue/light__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/light__spacegray__folder_dup--expanded.png"
+  },
+  {
     "class": "icon_regex",
     "settings": [
       "gruvbox_iconset_spacegray",
@@ -8619,6 +8829,26 @@
       "gruvbox_accent_blue"
     ],
     "layer2.texture": "gruvbox/assets/accent-blue/dark__buffer.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_blue"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-blue/dark__spacegray__folde--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-blue/dark__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_blue"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-blue/dark__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/dark__spacegray__folder_dup--expanded.png"
   },
   {
     "class": "icon_regex",
@@ -9078,6 +9308,26 @@
       "gruvbox_accent_blue"
     ],
     "layer2.texture": "gruvbox/assets/accent-blue/neutral__buffer.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_blue"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-blue/neutral__spacegray__folder--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-blue/neutral__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_blue"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-blue/neutral__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/neutral__spacegray__folder_dup--expanded.png"
   },
   {
     "class": "icon_regex",
@@ -9553,6 +9803,24 @@
     ]
   },
   {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_purple"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-purple/light__spacegray__folder--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-purple/light__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_purple"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-purple/light__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/light__spacegray__folder_dup--expanded.png"
+  },
+  {
     "class": "icon_regex",
     "settings": [
       "gruvbox_iconset_spacegray",
@@ -9966,6 +10234,26 @@
       "gruvbox_accent_purple"
     ],
     "layer2.texture": "gruvbox/assets/accent-purple/dark__buffer.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_purple"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-purple/dark__spacegray__folde--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-purple/dark__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_purple"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-purple/dark__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/dark__spacegray__folder_dup--expanded.png"
   },
   {
     "class": "icon_regex",
@@ -10425,6 +10713,26 @@
       "gruvbox_accent_purple"
     ],
     "layer2.texture": "gruvbox/assets/accent-purple/neutral__buffer.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_purple"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-purple/neutral__spacegray__folder--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-purple/neutral__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_purple"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-purple/neutral__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/neutral__spacegray__folder_dup--expanded.png"
   },
   {
     "class": "icon_regex",
@@ -10900,6 +11208,24 @@
     ]
   },
   {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_aqua"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-aqua/light__spacegray__folder--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-aqua/light__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_aqua"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-aqua/light__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/light__spacegray__folder_dup--expanded.png"
+  },
+  {
     "class": "icon_regex",
     "settings": [
       "gruvbox_iconset_spacegray",
@@ -11313,6 +11639,26 @@
       "gruvbox_accent_aqua"
     ],
     "layer2.texture": "gruvbox/assets/accent-aqua/dark__buffer.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_aqua"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-aqua/dark__spacegray__folde--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-aqua/dark__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_aqua"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-aqua/dark__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/dark__spacegray__folder_dup--expanded.png"
   },
   {
     "class": "icon_regex",
@@ -11772,6 +12118,26 @@
       "gruvbox_accent_aqua"
     ],
     "layer2.texture": "gruvbox/assets/accent-aqua/neutral__buffer.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_aqua"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-aqua/neutral__spacegray__folder--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-aqua/neutral__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_aqua"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-aqua/neutral__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/neutral__spacegray__folder_dup--expanded.png"
   },
   {
     "class": "icon_regex",
@@ -12247,6 +12613,24 @@
     ]
   },
   {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_orange"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-orange/light__spacegray__folder--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-orange/light__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_orange"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-orange/light__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/light__spacegray__folder_dup--expanded.png"
+  },
+  {
     "class": "icon_regex",
     "settings": [
       "gruvbox_iconset_spacegray",
@@ -12660,6 +13044,26 @@
       "gruvbox_accent_orange"
     ],
     "layer2.texture": "gruvbox/assets/accent-orange/dark__buffer.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_orange"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-orange/dark__spacegray__folde--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-orange/dark__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_orange"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-orange/dark__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/dark__spacegray__folder_dup--expanded.png"
   },
   {
     "class": "icon_regex",
@@ -13119,6 +13523,26 @@
       "gruvbox_accent_orange"
     ],
     "layer2.texture": "gruvbox/assets/accent-orange/neutral__buffer.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_orange"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-orange/neutral__spacegray__folder--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-orange/neutral__spacegray__folder--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_iconset_spacegray",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_orange"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-orange/neutral__spacegray__folder_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/neutral__spacegray__folder_dup--expanded.png"
   },
   {
     "class": "icon_regex",
