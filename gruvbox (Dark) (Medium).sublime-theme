@@ -3957,60 +3957,6 @@
     ]
   },
   {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_red"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-red/dark__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-red/dark__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_red"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-red/dark__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-red/dark__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_red"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-red/dark__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-red/dark__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_red"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-red/dark__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-red/dark__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_red"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-red/dark__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-red/dark__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_red"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-red/dark__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-red/dark__folder__pm_dup--expanded.png"
-  },
-  {
     "class": "scroll_tabs_left_button",
     "layer1.texture": "gruvbox/assets/accent-red/dark__prevtab--hover.png",
     "settings": [
@@ -4426,66 +4372,6 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-red/light__folder_dup--expanded.png",
     "layer2.texture": "gruvbox/assets/accent-red/light__folder_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_red"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-red/light__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-red/light__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_red"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-red/light__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-red/light__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_red"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-red/light__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-red/light__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_red"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-red/light__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-red/light__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_red"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-red/light__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-red/light__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_red"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-red/light__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-red/light__folder__pm_dup--expanded.png"
   },
   {
     "class": "scroll_tabs_left_button",
@@ -4927,66 +4813,6 @@
     "layer2.texture": "gruvbox/assets/accent-red/neutral__folder_dup--expanded.png"
   },
   {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_red"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-red/neutral__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-red/neutral__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_red"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-red/neutral__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-red/neutral__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_red"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-red/neutral__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-red/neutral__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_red"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-red/neutral__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-red/neutral__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_red"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-red/neutral__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-red/neutral__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_red"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-red/neutral__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-red/neutral__folder__pm_dup--expanded.png"
-  },
-  {
     "class": "scroll_tabs_left_button",
     "settings": [
       "gruvbox_accent_neutral",
@@ -5331,6 +5157,180 @@
     ]
   },
   {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_red"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-red/dark__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-red/dark__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_red"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-red/dark__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-red/dark__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_red"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-red/dark__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-red/dark__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_red"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-red/dark__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-red/dark__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_red"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-red/dark__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-red/dark__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_red"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-red/dark__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-red/dark__folder__pm_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_red"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-red/light__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-red/light__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_red"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-red/light__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-red/light__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_red"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-red/light__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-red/light__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_red"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-red/light__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-red/light__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_red"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-red/light__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-red/light__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_red"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-red/light__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-red/light__folder__pm_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_red"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-red/neutral__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-red/neutral__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_red"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-red/neutral__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-red/neutral__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_red"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-red/neutral__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-red/neutral__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_red"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-red/neutral__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-red/neutral__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_red"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-red/neutral__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-red/neutral__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_red"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-red/neutral__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-red/neutral__folder__pm_dup--expanded.png"
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       184,
@@ -5418,60 +5418,6 @@
     "settings": [
       "gruvbox_accent_green"
     ]
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_green"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-green/dark__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-green/dark__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_green"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-green/dark__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-green/dark__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_green"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-green/dark__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-green/dark__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_green"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-green/dark__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-green/dark__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_green"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-green/dark__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-green/dark__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_green"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-green/dark__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-green/dark__folder__pm_dup--expanded.png"
   },
   {
     "class": "scroll_tabs_left_button",
@@ -5889,66 +5835,6 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-green/light__folder_dup--expanded.png",
     "layer2.texture": "gruvbox/assets/accent-green/light__folder_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_green"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-green/light__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-green/light__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_green"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-green/light__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-green/light__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_green"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-green/light__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-green/light__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_green"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-green/light__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-green/light__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_green"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-green/light__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-green/light__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_green"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-green/light__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-green/light__folder__pm_dup--expanded.png"
   },
   {
     "class": "scroll_tabs_left_button",
@@ -6390,66 +6276,6 @@
     "layer2.texture": "gruvbox/assets/accent-green/neutral__folder_dup--expanded.png"
   },
   {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_green"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-green/neutral__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-green/neutral__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_green"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-green/neutral__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-green/neutral__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_green"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-green/neutral__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-green/neutral__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_green"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-green/neutral__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-green/neutral__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_green"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-green/neutral__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-green/neutral__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_green"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-green/neutral__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-green/neutral__folder__pm_dup--expanded.png"
-  },
-  {
     "class": "scroll_tabs_left_button",
     "settings": [
       "gruvbox_accent_neutral",
@@ -6794,6 +6620,180 @@
     ]
   },
   {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_green"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-green/dark__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-green/dark__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_green"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-green/dark__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-green/dark__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_green"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-green/dark__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-green/dark__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_green"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-green/dark__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-green/dark__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_green"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-green/dark__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-green/dark__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_green"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-green/dark__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-green/dark__folder__pm_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_green"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-green/light__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-green/light__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_green"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-green/light__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-green/light__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_green"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-green/light__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-green/light__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_green"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-green/light__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-green/light__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_green"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-green/light__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-green/light__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_green"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-green/light__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-green/light__folder__pm_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_green"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-green/neutral__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-green/neutral__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_green"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-green/neutral__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-green/neutral__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_green"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-green/neutral__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-green/neutral__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_green"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-green/neutral__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-green/neutral__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_green"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-green/neutral__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-green/neutral__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_green"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-green/neutral__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-green/neutral__folder__pm_dup--expanded.png"
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       250,
@@ -6881,60 +6881,6 @@
     "settings": [
       "gruvbox_accent_yellow"
     ]
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_yellow"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-yellow/dark__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-yellow/dark__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_yellow"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-yellow/dark__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-yellow/dark__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_yellow"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-yellow/dark__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-yellow/dark__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_yellow"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-yellow/dark__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-yellow/dark__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_yellow"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-yellow/dark__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-yellow/dark__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_yellow"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-yellow/dark__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-yellow/dark__folder__pm_dup--expanded.png"
   },
   {
     "class": "scroll_tabs_left_button",
@@ -7352,66 +7298,6 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-yellow/light__folder_dup--expanded.png",
     "layer2.texture": "gruvbox/assets/accent-yellow/light__folder_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_yellow"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-yellow/light__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-yellow/light__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_yellow"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-yellow/light__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-yellow/light__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_yellow"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-yellow/light__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-yellow/light__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_yellow"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-yellow/light__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-yellow/light__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_yellow"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-yellow/light__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-yellow/light__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_yellow"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-yellow/light__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-yellow/light__folder__pm_dup--expanded.png"
   },
   {
     "class": "scroll_tabs_left_button",
@@ -7853,66 +7739,6 @@
     "layer2.texture": "gruvbox/assets/accent-yellow/neutral__folder_dup--expanded.png"
   },
   {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_yellow"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-yellow/neutral__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-yellow/neutral__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_yellow"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-yellow/neutral__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-yellow/neutral__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_yellow"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-yellow/neutral__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-yellow/neutral__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_yellow"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-yellow/neutral__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-yellow/neutral__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_yellow"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-yellow/neutral__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-yellow/neutral__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_yellow"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-yellow/neutral__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-yellow/neutral__folder__pm_dup--expanded.png"
-  },
-  {
     "class": "scroll_tabs_left_button",
     "settings": [
       "gruvbox_accent_neutral",
@@ -8257,6 +8083,180 @@
     ]
   },
   {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_yellow"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-yellow/dark__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-yellow/dark__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_yellow"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-yellow/dark__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/dark__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_yellow"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-yellow/dark__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-yellow/dark__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_yellow"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-yellow/dark__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/dark__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_yellow"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-yellow/dark__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-yellow/dark__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_yellow"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-yellow/dark__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/dark__folder__pm_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_yellow"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-yellow/light__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-yellow/light__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_yellow"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-yellow/light__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/light__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_yellow"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-yellow/light__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-yellow/light__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_yellow"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-yellow/light__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/light__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_yellow"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-yellow/light__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-yellow/light__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_yellow"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-yellow/light__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/light__folder__pm_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_yellow"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-yellow/neutral__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-yellow/neutral__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_yellow"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-yellow/neutral__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/neutral__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_yellow"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-yellow/neutral__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-yellow/neutral__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_yellow"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-yellow/neutral__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/neutral__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_yellow"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-yellow/neutral__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-yellow/neutral__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_yellow"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-yellow/neutral__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/neutral__folder__pm_dup--expanded.png"
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       131,
@@ -8344,60 +8344,6 @@
     "settings": [
       "gruvbox_accent_blue"
     ]
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_blue"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-blue/dark__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-blue/dark__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_blue"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-blue/dark__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-blue/dark__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_blue"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-blue/dark__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-blue/dark__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_blue"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-blue/dark__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-blue/dark__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_blue"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-blue/dark__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-blue/dark__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_blue"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-blue/dark__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-blue/dark__folder__pm_dup--expanded.png"
   },
   {
     "class": "scroll_tabs_left_button",
@@ -8815,66 +8761,6 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-blue/light__folder_dup--expanded.png",
     "layer2.texture": "gruvbox/assets/accent-blue/light__folder_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_blue"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-blue/light__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-blue/light__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_blue"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-blue/light__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-blue/light__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_blue"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-blue/light__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-blue/light__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_blue"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-blue/light__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-blue/light__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_blue"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-blue/light__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-blue/light__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_blue"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-blue/light__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-blue/light__folder__pm_dup--expanded.png"
   },
   {
     "class": "scroll_tabs_left_button",
@@ -9316,66 +9202,6 @@
     "layer2.texture": "gruvbox/assets/accent-blue/neutral__folder_dup--expanded.png"
   },
   {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_blue"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-blue/neutral__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-blue/neutral__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_blue"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-blue/neutral__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-blue/neutral__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_blue"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-blue/neutral__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-blue/neutral__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_blue"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-blue/neutral__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-blue/neutral__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_blue"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-blue/neutral__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-blue/neutral__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_blue"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-blue/neutral__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-blue/neutral__folder__pm_dup--expanded.png"
-  },
-  {
     "class": "scroll_tabs_left_button",
     "settings": [
       "gruvbox_accent_neutral",
@@ -9720,6 +9546,180 @@
     ]
   },
   {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_blue"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-blue/dark__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-blue/dark__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_blue"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-blue/dark__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/dark__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_blue"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-blue/dark__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-blue/dark__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_blue"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-blue/dark__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/dark__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_blue"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-blue/dark__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-blue/dark__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_blue"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-blue/dark__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/dark__folder__pm_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_blue"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-blue/light__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-blue/light__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_blue"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-blue/light__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/light__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_blue"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-blue/light__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-blue/light__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_blue"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-blue/light__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/light__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_blue"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-blue/light__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-blue/light__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_blue"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-blue/light__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/light__folder__pm_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_blue"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-blue/neutral__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-blue/neutral__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_blue"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-blue/neutral__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/neutral__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_blue"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-blue/neutral__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-blue/neutral__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_blue"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-blue/neutral__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/neutral__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_blue"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-blue/neutral__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-blue/neutral__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_blue"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-blue/neutral__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/neutral__folder__pm_dup--expanded.png"
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       211,
@@ -9807,60 +9807,6 @@
     "settings": [
       "gruvbox_accent_purple"
     ]
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_purple"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-purple/dark__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-purple/dark__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_purple"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-purple/dark__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-purple/dark__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_purple"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-purple/dark__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-purple/dark__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_purple"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-purple/dark__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-purple/dark__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_purple"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-purple/dark__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-purple/dark__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_purple"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-purple/dark__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-purple/dark__folder__pm_dup--expanded.png"
   },
   {
     "class": "scroll_tabs_left_button",
@@ -10278,66 +10224,6 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-purple/light__folder_dup--expanded.png",
     "layer2.texture": "gruvbox/assets/accent-purple/light__folder_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_purple"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-purple/light__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-purple/light__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_purple"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-purple/light__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-purple/light__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_purple"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-purple/light__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-purple/light__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_purple"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-purple/light__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-purple/light__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_purple"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-purple/light__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-purple/light__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_purple"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-purple/light__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-purple/light__folder__pm_dup--expanded.png"
   },
   {
     "class": "scroll_tabs_left_button",
@@ -10779,66 +10665,6 @@
     "layer2.texture": "gruvbox/assets/accent-purple/neutral__folder_dup--expanded.png"
   },
   {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_purple"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-purple/neutral__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-purple/neutral__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_purple"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-purple/neutral__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-purple/neutral__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_purple"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-purple/neutral__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-purple/neutral__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_purple"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-purple/neutral__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-purple/neutral__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_purple"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-purple/neutral__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-purple/neutral__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_purple"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-purple/neutral__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-purple/neutral__folder__pm_dup--expanded.png"
-  },
-  {
     "class": "scroll_tabs_left_button",
     "settings": [
       "gruvbox_accent_neutral",
@@ -11183,6 +11009,180 @@
     ]
   },
   {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_purple"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-purple/dark__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-purple/dark__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_purple"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-purple/dark__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/dark__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_purple"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-purple/dark__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-purple/dark__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_purple"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-purple/dark__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/dark__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_purple"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-purple/dark__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-purple/dark__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_purple"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-purple/dark__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/dark__folder__pm_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_purple"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-purple/light__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-purple/light__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_purple"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-purple/light__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/light__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_purple"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-purple/light__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-purple/light__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_purple"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-purple/light__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/light__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_purple"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-purple/light__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-purple/light__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_purple"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-purple/light__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/light__folder__pm_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_purple"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-purple/neutral__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-purple/neutral__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_purple"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-purple/neutral__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/neutral__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_purple"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-purple/neutral__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-purple/neutral__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_purple"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-purple/neutral__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/neutral__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_purple"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-purple/neutral__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-purple/neutral__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_purple"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-purple/neutral__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/neutral__folder__pm_dup--expanded.png"
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       142,
@@ -11270,60 +11270,6 @@
     "settings": [
       "gruvbox_accent_aqua"
     ]
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_aqua"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-aqua/dark__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-aqua/dark__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_aqua"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-aqua/dark__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-aqua/dark__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_aqua"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-aqua/dark__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-aqua/dark__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_aqua"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-aqua/dark__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-aqua/dark__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_aqua"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-aqua/dark__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-aqua/dark__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_aqua"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-aqua/dark__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-aqua/dark__folder__pm_dup--expanded.png"
   },
   {
     "class": "scroll_tabs_left_button",
@@ -11741,66 +11687,6 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-aqua/light__folder_dup--expanded.png",
     "layer2.texture": "gruvbox/assets/accent-aqua/light__folder_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_aqua"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-aqua/light__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-aqua/light__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_aqua"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-aqua/light__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-aqua/light__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_aqua"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-aqua/light__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-aqua/light__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_aqua"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-aqua/light__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-aqua/light__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_aqua"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-aqua/light__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-aqua/light__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_aqua"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-aqua/light__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-aqua/light__folder__pm_dup--expanded.png"
   },
   {
     "class": "scroll_tabs_left_button",
@@ -12242,66 +12128,6 @@
     "layer2.texture": "gruvbox/assets/accent-aqua/neutral__folder_dup--expanded.png"
   },
   {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_aqua"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-aqua/neutral__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-aqua/neutral__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_aqua"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-aqua/neutral__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-aqua/neutral__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_aqua"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-aqua/neutral__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-aqua/neutral__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_aqua"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-aqua/neutral__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-aqua/neutral__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_aqua"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-aqua/neutral__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-aqua/neutral__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_aqua"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-aqua/neutral__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-aqua/neutral__folder__pm_dup--expanded.png"
-  },
-  {
     "class": "scroll_tabs_left_button",
     "settings": [
       "gruvbox_accent_neutral",
@@ -12646,6 +12472,180 @@
     ]
   },
   {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_aqua"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-aqua/dark__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-aqua/dark__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_aqua"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-aqua/dark__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/dark__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_aqua"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-aqua/dark__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-aqua/dark__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_aqua"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-aqua/dark__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/dark__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_aqua"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-aqua/dark__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-aqua/dark__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_aqua"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-aqua/dark__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/dark__folder__pm_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_aqua"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-aqua/light__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-aqua/light__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_aqua"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-aqua/light__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/light__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_aqua"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-aqua/light__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-aqua/light__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_aqua"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-aqua/light__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/light__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_aqua"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-aqua/light__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-aqua/light__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_aqua"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-aqua/light__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/light__folder__pm_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_aqua"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-aqua/neutral__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-aqua/neutral__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_aqua"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-aqua/neutral__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/neutral__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_aqua"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-aqua/neutral__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-aqua/neutral__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_aqua"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-aqua/neutral__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/neutral__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_aqua"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-aqua/neutral__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-aqua/neutral__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_aqua"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-aqua/neutral__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/neutral__folder__pm_dup--expanded.png"
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       254,
@@ -12733,60 +12733,6 @@
     "settings": [
       "gruvbox_accent_orange"
     ]
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_orange"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-orange/dark__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-orange/dark__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_orange"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-orange/dark__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-orange/dark__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_orange"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-orange/dark__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-orange/dark__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_orange"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-orange/dark__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-orange/dark__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_orange"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-orange/dark__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-orange/dark__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_orange"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-orange/dark__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-orange/dark__folder__pm_dup--expanded.png"
   },
   {
     "class": "scroll_tabs_left_button",
@@ -13204,66 +13150,6 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-orange/light__folder_dup--expanded.png",
     "layer2.texture": "gruvbox/assets/accent-orange/light__folder_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_orange"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-orange/light__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-orange/light__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_orange"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-orange/light__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-orange/light__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_orange"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-orange/light__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-orange/light__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_orange"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-orange/light__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-orange/light__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_orange"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-orange/light__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-orange/light__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_opposite",
-      "gruvbox_accent_orange"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-orange/light__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-orange/light__folder__pm_dup--expanded.png"
   },
   {
     "class": "scroll_tabs_left_button",
@@ -13705,66 +13591,6 @@
     "layer2.texture": "gruvbox/assets/accent-orange/neutral__folder_dup--expanded.png"
   },
   {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_orange"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-orange/neutral__folder__square--expanded.png",
-    "layer3.texture": "gruvbox/assets/accent-orange/neutral__folder__square--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_square_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_orange"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-orange/neutral__folder__square_dup--expanded.png",
-    "layer2.texture": "gruvbox/assets/accent-orange/neutral__folder__square_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_orange"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-orange/neutral__folder__literal--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-orange/neutral__folder__literal--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_literal_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_orange"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-orange/neutral__folder__literal_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-orange/neutral__folder__literal_dup--expanded.png"
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_orange"
-    ],
-    "layer2.texture": "gruvbox/assets/accent-orange/neutral__folder__pm--hover.png",
-    "layer3.texture": "gruvbox/assets/accent-orange/neutral__folder__pm--expanded.png"
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_enable_plus_minus_folder_icons",
-      "gruvbox_accent_neutral",
-      "gruvbox_accent_orange"
-    ],
-    "layer1.texture": "gruvbox/assets/accent-orange/neutral__folder__pm_dup--hover.png",
-    "layer2.texture": "gruvbox/assets/accent-orange/neutral__folder__pm_dup--expanded.png"
-  },
-  {
     "class": "scroll_tabs_left_button",
     "settings": [
       "gruvbox_accent_neutral",
@@ -14107,5 +13933,179 @@
       93,
       14
     ]
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_orange"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-orange/dark__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-orange/dark__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_orange"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-orange/dark__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/dark__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_orange"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-orange/dark__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-orange/dark__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_orange"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-orange/dark__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/dark__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_orange"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-orange/dark__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-orange/dark__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_orange"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-orange/dark__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/dark__folder__pm_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_orange"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-orange/light__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-orange/light__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_orange"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-orange/light__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/light__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_orange"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-orange/light__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-orange/light__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_orange"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-orange/light__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/light__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_orange"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-orange/light__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-orange/light__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_orange"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-orange/light__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/light__folder__pm_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_orange"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-orange/neutral__folder__square--expanded.png",
+    "layer3.texture": "gruvbox/assets/accent-orange/neutral__folder__square--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_square_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_orange"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-orange/neutral__folder__square_dup--expanded.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/neutral__folder__square_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_orange"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-orange/neutral__folder__literal--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-orange/neutral__folder__literal--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_literal_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_orange"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-orange/neutral__folder__literal_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/neutral__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_orange"
+    ],
+    "layer2.texture": "gruvbox/assets/accent-orange/neutral__folder__pm--hover.png",
+    "layer3.texture": "gruvbox/assets/accent-orange/neutral__folder__pm--expanded.png"
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_enable_plus_minus_folder_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_orange"
+    ],
+    "layer1.texture": "gruvbox/assets/accent-orange/neutral__folder__pm_dup--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/neutral__folder__pm_dup--expanded.png"
   }
 ]
