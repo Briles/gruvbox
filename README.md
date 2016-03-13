@@ -187,6 +187,7 @@ Change the space between sidebar tree rows
 #### Sidebar Font Sizes
 
 Change the font size of the sidebar labels
+
 *Increasing the font size will distort the icons in the sidebar.*
 
 ```json
