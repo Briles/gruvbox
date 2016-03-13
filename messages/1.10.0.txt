@@ -1,0 +1,27 @@
+gruvbox for Sublime Text 3
+https://github.com/briles/gruvbox
+
+Version 1.10.0
+--------------------------------------------------------------------------------
+
+  THEMES
+
+    • Added option to further highlight active file in sidebar ("gruvbox_highlight_active_tree_row": true,)
+    • Added option to use plus/minus folder icons ("gruvbox_enable_plus_minus_folder_icons": true,)
+    • Added option to enable square folder icons ("gruvbox_enable_square_folder_icons": true,)
+    • The spacegray icon set now includes spacegray-like sidebar folder icons
+    • Folder icons should now actually be completely hidden when using 'gruvbox_disable_folder_icons'
+    • Expanded-symlinked folder-literal icons look more consistent with their default state
+    • Added new file-type icons & recolored remaining with gruvbox colors
+    • Better looking file-type icons in the sidebar
+    • Better detection of file-types for file-type icons
+    • Additional code fold icons (see https://github.com/briles/gruvbox#code-fold-icon)
+    • Additional bookmark icons (see https://github.com/briles/gruvbox#bookmark-icon)
+
+  COLOR SCHEMES
+
+    • Function and Method calls are now distinctly colored from Variables
+
+
+If you are having any issues or want a new feature added,
+get in touch at https://github.com/briles/gruvbox/issues
