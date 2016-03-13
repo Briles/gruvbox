@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.procfile"
+  ],
+  "settings": {
+    "icon": "file_type_procfile"
+  }
+}

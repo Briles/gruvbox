@@ -1,0 +1,9 @@
+{
+  "scope": [
+    "source.css",
+    "source.postcss"
+  ],
+  "settings": {
+    "icon": "file_type_css"
+  }
+}

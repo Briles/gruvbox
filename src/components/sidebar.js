@@ -62,10 +62,20 @@ module.exports = function (values) {
     {
       'class': 'tree_row',
 
-      'layer0.tint': c.border,
-      'layer0.draw_center': false,
-      'layer0.inner_margin': [0, 0, 1, 0],
-      'layer0.opacity': 1,
+      'layer1.tint': c.border,
+      'layer1.draw_center': false,
+      'layer1.inner_margin': [0, 0, 1, 0],
+      'layer1.opacity': 1,
+
+      'layer0.tint': c.background,
+      'layer0.opacity': 0,
+    },
+
+    {
+      'class': 'tree_row',
+      'attributes': ['selected'],
+
+      'layer0.opacity': 0,
     },
 
     {
@@ -290,7 +300,7 @@ module.exports = function (values) {
 
     {
       'class': 'icon_file_type',
-      'content_margin': [9, 9],
+      'content_margin': [8, 8],
 
       // layer0.texture is filled in by code with the relevant icon name
       'layer0.opacity': 0.6,
@@ -306,7 +316,6 @@ module.exports = function (values) {
         },
 
       ],
-      'content_margin': [9, 9],
 
       'layer0.opacity': 1,
     },
@@ -472,6 +481,15 @@ module.exports = function (values) {
       'layer0.opacity': 0,
       'layer1.opacity': 0,
       'layer2.opacity': 1,
+    },
+
+    // Sidebar Group Arrows
+    {
+      'class': 'disclosure_button_control',
+      'content_margin': [0, 0],
+
+      'layer0.opacity': 0,
+      'layer1.opacity': 0,
     },
 
   ];

@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.go"
+  ],
+  "settings": {
+    "icon": "file_type_go"
+  }
+}

@@ -171,19 +171,36 @@ Theme options:
   "gruvbox_autocollapse_tabs_trigger_6": true,  //  v  6
 
 
+  Alternate Folder Icons
+
+        Use square folder icons in the sidebar
+          "gruvbox_enable_square_folder_icons": true,
+
+        Use 'literal' folder icons in the sidebar
+          "gruvbox_enable_literal_folder_icons": true,
+
+        Use 'plus, minus (+-)' folder icons in the sidebar
+          "gruvbox_enable_plus_minus_folder_icons": true,
+
+
+  Alternate Icon Sets
+
+        Use spacegray-like icons
+          "gruvbox_iconset_spacegray": true,
+
+
   Even More Settings...
 
   "gruvbox_colored_tooltips": true,             // Color the tooltip backgrounds with the current accent color
   "gruvbox_disable_borders": true,              // Disable all borders
-  "gruvbox_disable_faded_file_icons": true,     // Make file-type icons fully opaque
+  "gruvbox_disable_faded_file_icons": true,     // Make file-type icons opaque
   "gruvbox_disable_fileicons": true,            // Disable the sidebar file icons
   "gruvbox_disable_folder_icons": true,         // Disable the sidebar folder icons
   "gruvbox_disable_greyscale": true,            // Use gruvbox colors instead of greyscale colors for certain text
   "gruvbox_disable_panels_button": true,        // Hide the panel-switching button
-  "gruvbox_enable_literal_folder_icons": true,  // Use 'literal' folder icons in the sidebar
   "gruvbox_enable_panel_close_button": true,    // Enable the panel close button
   "gruvbox_enable_statusbar_border": true,      // Enable borders for the status bar
-  "gruvbox_iconset_spacegray": true,            // Use spacegray-like icons in the status bar
+  "gruvbox_highlight_active_tree_row": true,    // Highlight the active file in the sidebar tree
   "gruvbox_tabs_autowidth": true,               // Auto-size the tabs
   "gruvbox_tabs_bold": true,                    // Enable bold tabs
 

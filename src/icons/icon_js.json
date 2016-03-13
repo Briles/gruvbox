@@ -1,0 +1,9 @@
+{
+  "scope": [
+    "source.js",
+    "source.pegjs"
+  ],
+  "settings": {
+    "icon": "file_type_js"
+  }
+}

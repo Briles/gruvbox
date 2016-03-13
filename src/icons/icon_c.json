@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.c"
+  ],
+  "settings": {
+    "icon": "file_type_c"
+  }
+}

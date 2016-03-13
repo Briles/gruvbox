@@ -1,6 +1,5 @@
 <p>
   <a href="https://github.com/Briles/gruvbox/tags"><img src="https://img.shields.io/github/tag/briles/gruvbox.svg?style=flat-square" alt="GitHub tag"></a>
-  <a href="https://github.com/Briles/gruvbox/compare/1.9.0...develop"><img src="https://img.shields.io/github/commits-since/briles/gruvbox/1.9.0.svg?style=flat-square" alt="GitHub Commits Since"></a>
   <a href="https://packagecontrol.io/packages/gruvbox"><img src="https://img.shields.io/packagecontrol/dt/gruvbox.svg?style=flat-square" alt="Package Control"></a>
   <a href="https://github.com/Briles/gruvbox/blob/master/LICENSE"><img src="https://img.shields.io/github/license/briles/gruvbox.svg?style=flat-square" alt="GitHub license"></a>
 </p>
@@ -188,6 +187,7 @@ Change the space between sidebar tree rows
 #### Sidebar Font Sizes
 
 Change the font size of the sidebar labels
+
 *Increasing the font size will distort the icons in the sidebar.*
 
 ```json
@@ -265,20 +265,63 @@ Autocollapse the tabs when not in use
   "gruvbox_autocollapse_tabs_trigger_6": true,  //  v  6
 ```
 
+#### Alternate Folder Icons
+
+##### Square Folder Icons
+
+![Square Folder Icons](http://i.imgur.com/ojqgVIv.png)
+
+Use square folder icons in the sidebar
+
+```json
+"gruvbox_enable_square_folder_icons": true,
+```
+
+##### Literal Folder Icons
+
+![Literal Folder Icons](http://i.imgur.com/gw7mNjI.png)
+
+Use 'literal' folder icons in the sidebar
+
+```json
+"gruvbox_enable_literal_folder_icons": true,
+```
+
+##### Plus/Minus Folder Icons
+
+![Plus Minus Folder Icons](http://i.imgur.com/bOzgz16.png)
+
+Use 'plus/minus' folder icons in the sidebar
+
+```json
+"gruvbox_enable_plus_minus_folder_icons": true,
+```
+
+#### Alternate Icon Sets
+
+##### Spacegray
+
+![Spacegray Icon Set](http://i.imgur.com/SiL6f32.png)
+
+Use spacegray-like icons
+
+```json
+"gruvbox_iconset_spacegray": true,
+```
+
 #### Even More Settings...
 
 ```json
   "gruvbox_colored_tooltips": true,             // Color the tooltip backgrounds with the current accent color
   "gruvbox_disable_borders": true,              // Disable all borders
-  "gruvbox_disable_faded_file_icons": true,     // Make file-type icons fully opaque
+  "gruvbox_disable_faded_file_icons": true,     // Make file-type icons opaque
   "gruvbox_disable_fileicons": true,            // Disable the sidebar file icons
   "gruvbox_disable_folder_icons": true,         // Disable the sidebar folder icons
   "gruvbox_disable_greyscale": true,            // Use gruvbox colors instead of greyscale colors for certain text
   "gruvbox_disable_panels_button": true,        // Hide the panel-switching button
-  "gruvbox_enable_literal_folder_icons": true,  // Use 'literal' folder icons in the sidebar
   "gruvbox_enable_panel_close_button": true,    // Enable the panel close button
   "gruvbox_enable_statusbar_border": true,      // Enable borders for the status bar
-  "gruvbox_iconset_spacegray": true,            // Use spacegray-like icons in the status bar
+  "gruvbox_highlight_active_tree_row": true,    // Highlight the active file in the sidebar tree
   "gruvbox_tabs_autowidth": true,               // Auto-size the tabs
   "gruvbox_tabs_bold": true,                    // Enable bold tabs
 ```
@@ -298,17 +341,22 @@ Activation:
 
 ### Code Fold Icon
 
+![Code Fold Icons](http://i.imgur.com/DxZmm7a.png)
+
 Activation:
 
-1. Add the `fold.png` icon from `extras` to `Sublime Text/Data/Packages/Theme - Default/`
+1. Rename any `*_fold.png` in `extras` to `fold.png`
+2. Add the newly renamed `fold.png` icon to `Sublime Text/Data/Packages/Theme - Default/`
 2. Restart Sublime Text
 
 ### Bookmark Icon
 
+![Bookmark Icons](http://i.imgur.com/Pf9yCR8.png)
+
 Activation:
 
-1. Rename the `dark__bookmark.png` or `light__bookmark.png` in `extras` to `bookmark.png`
-2. Add the `bookmark.png` icon to `Sublime Text/Data/Packages/Theme - Default/`
+1. Rename any `*_bookmark_*.png` in `extras` to `bookmark.png`
+2. Add the newly renamed `bookmark.png` icon to `Sublime Text/Data/Packages/Theme - Default/`
 3. Restart Sublime Text
 
 License

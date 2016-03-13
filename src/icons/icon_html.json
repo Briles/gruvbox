@@ -1,0 +1,12 @@
+{
+  "scope": [
+    "text.html.basic",
+    "text.html.eco",
+    "text.html.elixir",
+    "text.html.jstl",
+    "text.html.rt"
+  ],
+  "settings": {
+    "icon": "file_type_html"
+  }
+}

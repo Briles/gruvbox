@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "text.html.basic.angularjs"
+  ],
+  "settings": {
+    "icon": "file_type_angular"
+  }
+}

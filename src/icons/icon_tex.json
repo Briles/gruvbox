@@ -1,0 +1,10 @@
+{
+  "scope": [
+    "text.tex",
+    "text.log.latex",
+    "text.bibtex"
+  ],
+  "settings": {
+    "icon": "file_type_tex"
+  }
+}

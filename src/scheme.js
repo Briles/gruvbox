@@ -148,15 +148,6 @@ module.exports = function (values) {
 
       {
         scope: [
-          'keyword.other.special-method',
-        ],
-        settings: {
-          foreground: c.bnp.orange,
-        },
-      },
-
-      {
-        scope: [
           'keyword.other.unit',
         ],
         settings: {
@@ -438,21 +429,24 @@ module.exports = function (values) {
 
       {
         scope: [
+          'keyword.other.special-method',
+          'meta.function-call variable.function',
           'support.function',
-          'meta.function-call.method variable.function',
-          'meta.function-call.static variable.function',
         ],
         settings: {
-          foreground: c.bnp.orange,
+          foreground: c.bnp.aqua,
         },
       },
 
       {
+        name: 'Methods',
         scope: [
-          'support.function.any-method',
+          'meta.function-call.method variable.function',
+          'meta.function-call.static variable.function',
+          'support.function.mutator',
         ],
         settings: {
-          foreground: c.bnp.green,
+          foreground: c.neutralAqua,
         },
       },
 

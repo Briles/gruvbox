@@ -242,10 +242,7 @@ module.exports = function (values) {
       'class': 'icon_folder',
       'settings': [stOpts.disableFolderIcons],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 0,
-      'layer3.opacity': 0,
+      'content_margin': [0, 0],
     },
 
     {
@@ -260,10 +257,7 @@ module.exports = function (values) {
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 0,
-      'layer3.opacity': 0,
+      'content_margin': [0, 0],
     },
 
     {
@@ -278,10 +272,7 @@ module.exports = function (values) {
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 0,
-      'layer3.opacity': 0,
+      'content_margin': [0, 0],
     },
 
     {
@@ -296,10 +287,7 @@ module.exports = function (values) {
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 0,
-      'layer3.opacity': 0,
+      'content_margin': [0, 0],
     },
 
     // Folder loading
@@ -307,9 +295,7 @@ module.exports = function (values) {
       'class': 'icon_folder_loading',
       'settings': [stOpts.disableFolderIcons],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 0,
+      'content_margin': [0, 0],
     },
 
     // Symlinked
@@ -317,9 +303,7 @@ module.exports = function (values) {
       'class': 'icon_folder_dup',
       'settings': [stOpts.disableFolderIcons],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 0,
+      'content_margin': [0, 0],
     },
 
     {
@@ -335,9 +319,7 @@ module.exports = function (values) {
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 0,
+      'content_margin': [0, 0],
     },
 
     {
@@ -353,9 +335,7 @@ module.exports = function (values) {
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 0,
+      'content_margin': [0, 0],
     },
 
     {
@@ -371,9 +351,7 @@ module.exports = function (values) {
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 0,
+      'content_margin': [0, 0],
     },
 
     // AutoComplete Padding
@@ -532,7 +510,29 @@ module.exports = function (values) {
       'layer1.opacity': 1,
     },
 
-    // Spacegray Iconset
+    /**
+     * Spacegray Iconset
+     */
+
+    // Folder Icon
+    {
+      'class': 'icon_folder',
+      'settings': [stOpts.iconsetSpacegray],
+
+      'layer1.texture': `${paths.commons}spacegray__folder.png`,
+      'layer2.texture': `${paths.this}spacegray__folder--hover.png`,
+      'layer3.texture': `${paths.this}spacegray__folder--expanded.png`,
+    },
+
+    // Symlinked Folder Icon
+    {
+      'class': 'icon_folder_dup',
+      'settings': [stOpts.iconsetSpacegray],
+
+      'layer0.texture': `${paths.commons}spacegray__folder_dup.png`,
+      'layer1.texture': `${paths.this}spacegray__folder_dup--hover.png`,
+      'layer2.texture': `${paths.this}spacegray__folder_dup--expanded.png`,
+    },
 
     // Regex Icon
     {
@@ -1190,6 +1190,29 @@ module.exports = function (values) {
     },
 
     /**
+     * Square Folder Icons
+     */
+
+    {
+      'class': 'icon_folder',
+      'settings': [stOpts.enableSquareFolderIcons],
+
+      'layer1.texture': `${paths.commons}folder__square.png`,
+      'layer2.texture': `${paths.this}folder__square--expanded.png`,
+      'layer3.texture': `${paths.this}folder__square--expanded.png`,
+    },
+
+    // Symlinked
+    {
+      'class': 'icon_folder_dup',
+      'settings': [stOpts.enableSquareFolderIcons],
+
+      'layer0.texture': `${paths.commons}folder__square_dup.png`,
+      'layer1.texture': `${paths.this}folder__square_dup--expanded.png`,
+      'layer2.texture': `${paths.this}folder__square_dup--expanded.png`,
+    },
+
+    /**
      * Literal Folder Icons
      */
 
@@ -1210,6 +1233,29 @@ module.exports = function (values) {
       'layer0.texture': `${paths.commons}folder__literal_dup.png`,
       'layer1.texture': `${paths.this}folder__literal_dup--hover.png`,
       'layer2.texture': `${paths.this}folder__literal_dup--expanded.png`,
+    },
+
+    /**
+     * Plus Minus Folder Icons
+     */
+
+    {
+      'class': 'icon_folder',
+      'settings': [stOpts.enablePlusMinusFolderIcons],
+
+      'layer1.texture': `${paths.commons}folder__pm.png`,
+      'layer2.texture': `${paths.this}folder__pm--hover.png`,
+      'layer3.texture': `${paths.this}folder__pm--expanded.png`,
+    },
+
+    // Symlinked
+    {
+      'class': 'icon_folder_dup',
+      'settings': [stOpts.enablePlusMinusFolderIcons],
+
+      'layer0.texture': `${paths.commons}folder__pm_dup.png`,
+      'layer1.texture': `${paths.this}folder__pm_dup--hover.png`,
+      'layer2.texture': `${paths.this}folder__pm_dup--expanded.png`,
     },
 
     /**
@@ -1298,6 +1344,19 @@ module.exports = function (values) {
       'settings': [stOpts.sidebarFontSizeXxl],
 
       'font.size': 16,
+    },
+
+    /**
+     * Highlight Active Tree Row
+     */
+
+    {
+      'class': 'tree_row',
+      'settings': [stOpts.enableTreeRowHighlight],
+
+      'attributes': ['selected'],
+
+      'layer0.opacity': 1,
     },
 
   ];

@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.powershell"
+  ],
+  "settings": {
+    "icon": "file_type_powershell"
+  }
+}

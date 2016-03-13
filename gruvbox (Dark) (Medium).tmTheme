@@ -158,15 +158,6 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>keyword.other.special-method</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#fe8019</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
         <string>keyword.other.unit</string>
         <key>settings</key>
         <dict>
@@ -443,20 +434,22 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>meta.function-call.method variable.function, meta.function-call.static variable.function, support.function</string>
+        <string>keyword.other.special-method, meta.function-call variable.function, support.function</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#fe8019</string>
+          <string>#8ec07c</string>
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>Methods</string>
         <key>scope</key>
-        <string>support.function.any-method</string>
+        <string>meta.function-call.method variable.function, meta.function-call.static variable.function, support.function.mutator</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#b8bb26</string>
+          <string>#689d6a</string>
         </dict>
       </dict>
       <dict>
@@ -1129,6 +1122,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>23ab8e6f-0a69-4bcf-9d48-d37f2e7446d6</string>
+    <string>68a9d66b-4fe4-4f12-8e9c-ac8ad9931bd3</string>
   </dict>
 </plist>

@@ -94,27 +94,6 @@ module.exports = function (values) {
         'layer2.texture': `${brightnessAssets}folder_dup--expanded.png`,
       },
 
-      /**
-       * Literal Folder Icons
-       */
-
-      {
-        'class': 'icon_folder',
-        'settings': [stOpts.enableLiteralFolderIcons],
-
-        'layer2.texture': `${brightnessAssets}folder__literal--hover.png`,
-        'layer3.texture': `${brightnessAssets}folder__literal--expanded.png`,
-      },
-
-      // Symlinked
-      {
-        'class': 'icon_folder_dup',
-        'settings': [stOpts.enableLiteralFolderIcons],
-
-        'layer1.texture': `${brightnessAssets}folder__literal_dup--hover.png`,
-        'layer2.texture': `${brightnessAssets}folder__literal_dup--expanded.png`,
-      },
-
       // Tab Scroll Left
       {
         'class': 'scroll_tabs_left_button',
@@ -297,6 +276,24 @@ module.exports = function (values) {
        * Spacegray Iconset
        */
 
+      // Folder Icon
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.iconsetSpacegray],
+
+        'layer2.texture': `${spacegrayPath}folder--hover.png`,
+        'layer3.texture': `${spacegrayPath}folder--expanded.png`,
+      },
+
+      // Symlinked Folder Icon
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.iconsetSpacegray],
+
+        'layer1.texture': `${spacegrayPath}folder_dup--hover.png`,
+        'layer2.texture': `${spacegrayPath}folder_dup--expanded.png`,
+      },
+
       // Regex Icon
       {
         'class': 'icon_regex',
@@ -460,27 +457,6 @@ module.exports = function (values) {
 
         'layer1.texture': `${oppositeBrightnessAssets}folder_dup--expanded.png`,
         'layer2.texture': `${oppositeBrightnessAssets}folder_dup--expanded.png`,
-      },
-
-      /**
-       * Literal Folder Icons
-       */
-
-      {
-        'class': 'icon_folder',
-        'settings': [stOpts.enableLiteralFolderIcons, stOpts.accentOpposite],
-
-        'layer2.texture': `${oppositeBrightnessAssets}folder__literal--hover.png`,
-        'layer3.texture': `${oppositeBrightnessAssets}folder__literal--expanded.png`,
-      },
-
-      // Symlinked
-      {
-        'class': 'icon_folder_dup',
-        'settings': [stOpts.enableLiteralFolderIcons, stOpts.accentOpposite],
-
-        'layer1.texture': `${oppositeBrightnessAssets}folder__literal_dup--hover.png`,
-        'layer2.texture': `${oppositeBrightnessAssets}folder__literal_dup--expanded.png`,
       },
 
       // Tab Scroll Left
@@ -651,6 +627,24 @@ module.exports = function (values) {
       /**
        * Spacegray Iconset
        */
+
+      // Folder Icon
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.iconsetSpacegray, stOpts.accentOpposite],
+
+        'layer2.texture': `${oppositeSpacegrayPath}folder--hover.png`,
+        'layer3.texture': `${oppositeSpacegrayPath}folder--expanded.png`,
+      },
+
+      // Symlinked Folder Icon
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.iconsetSpacegray, stOpts.accentOpposite],
+
+        'layer1.texture': `${oppositeSpacegrayPath}folder_dup--hover.png`,
+        'layer2.texture': `${oppositeSpacegrayPath}folder_dup--expanded.png`,
+      },
 
       // Regex Icon
       {
@@ -843,27 +837,6 @@ module.exports = function (values) {
         'layer2.texture': `${neutralAssets}folder_dup--expanded.png`,
       },
 
-      /**
-       * Literal Folder Icons
-       */
-
-      {
-        'class': 'icon_folder',
-        'settings': [stOpts.enableLiteralFolderIcons, stOpts.accentNeutral],
-
-        'layer2.texture': `${neutralAssets}folder__literal--hover.png`,
-        'layer3.texture': `${neutralAssets}folder__literal--expanded.png`,
-      },
-
-      // Symlinked
-      {
-        'class': 'icon_folder_dup',
-        'settings': [stOpts.enableLiteralFolderIcons, stOpts.accentNeutral],
-
-        'layer1.texture': `${neutralAssets}folder__literal_dup--hover.png`,
-        'layer2.texture': `${neutralAssets}folder__literal_dup--expanded.png`,
-      },
-
       // Tab Scroll Left
       {
         'class': 'scroll_tabs_left_button',
@@ -1030,7 +1003,27 @@ module.exports = function (values) {
         'layer2.texture': `${neutralAssets}buffer.png`,
       },
 
-      // Spacegray Iconset
+      /**
+       * Spacegray Iconset
+       */
+
+      // Folder Icon
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.iconsetSpacegray, stOpts.accentNeutral],
+
+        'layer2.texture': `${neutralSpacegrayPath}folder--hover.png`,
+        'layer3.texture': `${neutralSpacegrayPath}folder--expanded.png`,
+      },
+
+      // Symlinked Folder Icon
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.iconsetSpacegray, stOpts.accentNeutral],
+
+        'layer1.texture': `${neutralSpacegrayPath}folder_dup--hover.png`,
+        'layer2.texture': `${neutralSpacegrayPath}folder_dup--expanded.png`,
+      },
 
       // Regex Icon
       {
@@ -1143,6 +1136,203 @@ module.exports = function (values) {
         'settings': [stOpts.coloredTooltips, stOpts.accentNeutral],
 
         'layer0.tint': color.neutral,
+      },
+
+      /**
+       * Square Folder Icons
+       */
+
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.enableSquareFolderIcons],
+
+        'layer2.texture': `${brightnessAssets}folder__square--expanded.png`,
+        'layer3.texture': `${brightnessAssets}folder__square--expanded.png`,
+      },
+
+      // Symlinked
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.enableSquareFolderIcons],
+
+        'layer1.texture': `${brightnessAssets}folder__square_dup--expanded.png`,
+        'layer2.texture': `${brightnessAssets}folder__square_dup--expanded.png`,
+      },
+
+      /**
+       * Literal Folder Icons
+       */
+
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.enableLiteralFolderIcons],
+
+        'layer2.texture': `${brightnessAssets}folder__literal--hover.png`,
+        'layer3.texture': `${brightnessAssets}folder__literal--expanded.png`,
+      },
+
+      // Symlinked
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.enableLiteralFolderIcons],
+
+        'layer1.texture': `${brightnessAssets}folder__literal_dup--hover.png`,
+        'layer2.texture': `${brightnessAssets}folder__literal_dup--expanded.png`,
+      },
+
+      /**
+       * Plus Minus Folder Icons
+       */
+
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.enablePlusMinusFolderIcons],
+
+        'layer2.texture': `${brightnessAssets}folder__pm--hover.png`,
+        'layer3.texture': `${brightnessAssets}folder__pm--expanded.png`,
+      },
+
+      // Symlinked
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.enablePlusMinusFolderIcons],
+
+        'layer1.texture': `${brightnessAssets}folder__pm_dup--hover.png`,
+        'layer2.texture': `${brightnessAssets}folder__pm_dup--expanded.png`,
+      },
+
+      /**
+       * Opposite Colors
+       */
+
+      /**
+       * Square Folder Icons
+       */
+
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.enableSquareFolderIcons, stOpts.accentOpposite],
+
+        'layer2.texture': `${oppositeBrightnessAssets}folder__square--expanded.png`,
+        'layer3.texture': `${oppositeBrightnessAssets}folder__square--expanded.png`,
+      },
+
+      // Symlinked
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.enableSquareFolderIcons, stOpts.accentOpposite],
+
+        'layer1.texture': `${oppositeBrightnessAssets}folder__square_dup--expanded.png`,
+        'layer2.texture': `${oppositeBrightnessAssets}folder__square_dup--expanded.png`,
+      },
+
+      /**
+       * Literal Folder Icons
+       */
+
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.enableLiteralFolderIcons, stOpts.accentOpposite],
+
+        'layer2.texture': `${oppositeBrightnessAssets}folder__literal--hover.png`,
+        'layer3.texture': `${oppositeBrightnessAssets}folder__literal--expanded.png`,
+      },
+
+      // Symlinked
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.enableLiteralFolderIcons, stOpts.accentOpposite],
+
+        'layer1.texture': `${oppositeBrightnessAssets}folder__literal_dup--hover.png`,
+        'layer2.texture': `${oppositeBrightnessAssets}folder__literal_dup--expanded.png`,
+      },
+
+      /**
+       * Plus Minus Folder Icons
+       */
+
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.enablePlusMinusFolderIcons, stOpts.accentOpposite],
+
+        'layer2.texture': `${oppositeBrightnessAssets}folder__pm--hover.png`,
+        'layer3.texture': `${oppositeBrightnessAssets}folder__pm--expanded.png`,
+      },
+
+      // Symlinked
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.enablePlusMinusFolderIcons, stOpts.accentOpposite],
+
+        'layer1.texture': `${oppositeBrightnessAssets}folder__pm_dup--hover.png`,
+        'layer2.texture': `${oppositeBrightnessAssets}folder__pm_dup--expanded.png`,
+      },
+
+      /**
+       * Neutral Colors
+       */
+
+      /**
+       * Square Folder Icons
+       */
+
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.enableSquareFolderIcons, stOpts.accentNeutral],
+
+        'layer2.texture': `${neutralAssets}folder__square--expanded.png`,
+        'layer3.texture': `${neutralAssets}folder__square--expanded.png`,
+      },
+
+      // Symlinked
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.enableSquareFolderIcons, stOpts.accentNeutral],
+
+        'layer1.texture': `${neutralAssets}folder__square_dup--expanded.png`,
+        'layer2.texture': `${neutralAssets}folder__square_dup--expanded.png`,
+      },
+
+      /**
+       * Literal Folder Icons
+       */
+
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.enableLiteralFolderIcons, stOpts.accentNeutral],
+
+        'layer2.texture': `${neutralAssets}folder__literal--hover.png`,
+        'layer3.texture': `${neutralAssets}folder__literal--expanded.png`,
+      },
+
+      // Symlinked
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.enableLiteralFolderIcons, stOpts.accentNeutral],
+
+        'layer1.texture': `${neutralAssets}folder__literal_dup--hover.png`,
+        'layer2.texture': `${neutralAssets}folder__literal_dup--expanded.png`,
+      },
+
+      /**
+       * Plus Minus Folder Icons
+       */
+
+      {
+        'class': 'icon_folder',
+        'settings': [stOpts.enablePlusMinusFolderIcons, stOpts.accentNeutral],
+
+        'layer2.texture': `${neutralAssets}folder__pm--hover.png`,
+        'layer3.texture': `${neutralAssets}folder__pm--expanded.png`,
+      },
+
+      // Symlinked
+      {
+        'class': 'icon_folder_dup',
+        'settings': [stOpts.enablePlusMinusFolderIcons, stOpts.accentNeutral],
+
+        'layer1.texture': `${neutralAssets}folder__pm_dup--hover.png`,
+        'layer2.texture': `${neutralAssets}folder__pm_dup--expanded.png`,
       },
 
     ].map(function (obj) {

@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.cfscript.cfc"
+  ],
+  "settings": {
+    "icon": "file_type_cfc"
+  }
+}

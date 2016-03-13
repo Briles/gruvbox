@@ -1,0 +1,10 @@
+{
+  "scope": [
+    "source.coffee",
+    "source.litcoffee",
+    "source.pegcs"
+  ],
+  "settings": {
+    "icon": "file_type_coffeescript"
+  }
+}
