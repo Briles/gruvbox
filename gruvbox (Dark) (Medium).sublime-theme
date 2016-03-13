@@ -4569,7 +4569,7 @@
       "gruvbox_accent_opposite",
       "gruvbox_accent_red"
     ],
-    "layer2.texture": "gruvbox/assets/accent-red/light__spacegray__folde--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-red/light__spacegray__folder--hover.png",
     "layer3.texture": "gruvbox/assets/accent-red/light__spacegray__folder--expanded.png"
   },
   {
@@ -6032,7 +6032,7 @@
       "gruvbox_accent_opposite",
       "gruvbox_accent_green"
     ],
-    "layer2.texture": "gruvbox/assets/accent-green/light__spacegray__folde--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-green/light__spacegray__folder--hover.png",
     "layer3.texture": "gruvbox/assets/accent-green/light__spacegray__folder--expanded.png"
   },
   {
@@ -7495,7 +7495,7 @@
       "gruvbox_accent_opposite",
       "gruvbox_accent_yellow"
     ],
-    "layer2.texture": "gruvbox/assets/accent-yellow/light__spacegray__folde--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-yellow/light__spacegray__folder--hover.png",
     "layer3.texture": "gruvbox/assets/accent-yellow/light__spacegray__folder--expanded.png"
   },
   {
@@ -8958,7 +8958,7 @@
       "gruvbox_accent_opposite",
       "gruvbox_accent_blue"
     ],
-    "layer2.texture": "gruvbox/assets/accent-blue/light__spacegray__folde--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-blue/light__spacegray__folder--hover.png",
     "layer3.texture": "gruvbox/assets/accent-blue/light__spacegray__folder--expanded.png"
   },
   {
@@ -10421,7 +10421,7 @@
       "gruvbox_accent_opposite",
       "gruvbox_accent_purple"
     ],
-    "layer2.texture": "gruvbox/assets/accent-purple/light__spacegray__folde--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-purple/light__spacegray__folder--hover.png",
     "layer3.texture": "gruvbox/assets/accent-purple/light__spacegray__folder--expanded.png"
   },
   {
@@ -11884,7 +11884,7 @@
       "gruvbox_accent_opposite",
       "gruvbox_accent_aqua"
     ],
-    "layer2.texture": "gruvbox/assets/accent-aqua/light__spacegray__folde--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-aqua/light__spacegray__folder--hover.png",
     "layer3.texture": "gruvbox/assets/accent-aqua/light__spacegray__folder--expanded.png"
   },
   {
@@ -13347,7 +13347,7 @@
       "gruvbox_accent_opposite",
       "gruvbox_accent_orange"
     ],
-    "layer2.texture": "gruvbox/assets/accent-orange/light__spacegray__folde--hover.png",
+    "layer2.texture": "gruvbox/assets/accent-orange/light__spacegray__folder--hover.png",
     "layer3.texture": "gruvbox/assets/accent-orange/light__spacegray__folder--expanded.png"
   },
   {

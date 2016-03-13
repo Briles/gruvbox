@@ -633,7 +633,7 @@ module.exports = function (values) {
         'class': 'icon_folder',
         'settings': [stOpts.iconsetSpacegray, stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeSpacegrayPath}folde--hover.png`,
+        'layer2.texture': `${oppositeSpacegrayPath}folder--hover.png`,
         'layer3.texture': `${oppositeSpacegrayPath}folder--expanded.png`,
       },
 
