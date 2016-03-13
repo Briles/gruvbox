@@ -439,7 +439,7 @@ module.exports = function (values) {
       'class': 'tree_row',
       'settings': [stOpts.disableBorders],
 
-      'layer0.opacity': 0,
+      'layer1.opacity': 0,
     },
 
     // Scrollbars

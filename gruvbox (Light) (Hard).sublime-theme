@@ -2849,7 +2849,7 @@
     "settings": [
       "gruvbox_disable_borders"
     ],
-    "layer0.opacity": 0
+    "layer1.opacity": 0
   },
   {
     "class": "scroll_bar_control",
