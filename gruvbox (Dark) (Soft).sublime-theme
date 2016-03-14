@@ -1405,6 +1405,11 @@
   },
   {
     "class": "minimap_control",
+    "viewport_color": [
+      50,
+      48,
+      47
+    ],
     "viewport_opacity": 0
   },
   {

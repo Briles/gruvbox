@@ -2,7 +2,6 @@ module.exports = function (values) {
   'use strict';
 
   const c = values.colors;
-  const info = values.info;
 
   return [
 
@@ -10,7 +9,7 @@ module.exports = function (values) {
     {
       'class': 'minimap_control',
 
-      'viewport_color': c.bnp[info.contrast],
+      'viewport_color': c.background,
       'viewport_opacity': 0,
     },
 
