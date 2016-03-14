@@ -4,6 +4,7 @@
   const fs = require('fs');
   const path = require('path');
   const _ = require('lodash');
+  const slash = require('slash');
 
   /**
    * Utility Functions
@@ -25,8 +26,17 @@
     }
   };
 
+  /**
+   * wraps path.join with slash()
+   * @return {string} forward-slashed path
+   */
+  var slashJoin = function () {
+    return slash(path.join.apply(null, Array.prototype.slice.call(arguments)));
+  };
+
   const utilities = {
     writeOutput: writeOutput,
+    slashJoin: slashJoin,
   };
 
   module.exports = utilities;

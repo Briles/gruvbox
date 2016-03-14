@@ -1,6 +1,5 @@
 const _ = require('lodash');
-const path = require('path');
-const slash = require('slash');
+const utils = require('../utils.js');
 
 module.exports = function (values) {
   'use strict';
@@ -13,15 +12,15 @@ module.exports = function (values) {
   function populateData(colordata) {
     const name = colordata.name;
     const color = colordata.color;
-    const assets = slash(path.join(paths.assets, `accent-${name}/`));
+    const assets = utils.slashJoin(paths.assets, `accent-${name}/`);
 
-    const brightnessAssets = slash(path.join(assets, `${info.brightness}__`));
+    const brightnessAssets = utils.slashJoin(assets, `${info.brightness}__`);
     const spacegrayPath = `${brightnessAssets}spacegray__`;
 
-    const oppositeBrightnessAssets = slash(path.join(assets, `${info.oppositeBrightness}__`));
+    const oppositeBrightnessAssets = utils.slashJoin(assets, `${info.oppositeBrightness}__`);
     const oppositeSpacegrayPath = `${oppositeBrightnessAssets}spacegray__`;
 
-    const neutralAssets = slash(path.join(assets, 'neutral__'));
+    const neutralAssets = utils.slashJoin(assets, 'neutral__');
     const neutralSpacegrayPath = `${neutralAssets}spacegray__`;
 
     return [
