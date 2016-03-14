@@ -501,7 +501,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>entity.name.attribute-name, entity.other.attribute-name</string>
+        <string>entity.name.attribute-name, entity.other.attribute-name, meta.section.attributes.haml constant.other.symbol.ruby</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1131,6 +1131,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>7e80f4bd-989c-4cd4-9fcd-611dfc210a15</string>
+    <string>66637064-0c33-4fb5-97aa-c52f5420f5fe</string>
   </dict>
 </plist>

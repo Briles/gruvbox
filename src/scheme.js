@@ -513,6 +513,7 @@ module.exports = function (values) {
         scope: [
           'entity.name.attribute-name',
           'entity.other.attribute-name',
+          'meta.section.attributes.haml constant.other.symbol.ruby',
         ],
         settings: {
           foreground: c.bnp.yellow,
