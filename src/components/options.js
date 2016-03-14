@@ -10,7 +10,9 @@ module.exports = function (values) {
 
   return [
 
-    // Tabs size Settings
+    /**
+     * Tab Sizes
+     */
 
     // Extra Extra Small Tabs
     {
@@ -90,70 +92,89 @@ module.exports = function (values) {
       'content_margin': [20, 0, 16, 0],
     },
 
-    // Autowidth Tabs
+    /**
+     * Autowidth Tabs
+     */
+
     {
       'class': 'tabset_control',
       'settings': [stOpts.tabsAutowidth],
       'tab_width': 0,
     },
 
-    // Bold Tabs
+    /**
+     * Bold Tabs
+     */
+
     {
       'class': 'tab_label',
       'settings': [stOpts.tabsBold],
       'font.bold': true,
     },
 
-    // Tab Font Sizes
+    /**
+     * Tab Font Sizes
+     */
+
+    // Extra Extra Extra Small
     {
       'class': 'tab_label',
       'settings': [stOpts.tabsFontSizeXxxs],
       'font.size': 7,
     },
 
+    // Extra Extra Small
     {
       'class': 'tab_label',
       'settings': [stOpts.tabsFontSizeXxs],
       'font.size': 8,
     },
 
+    // Extra Small
     {
       'class': 'tab_label',
       'settings': [stOpts.tabsFontSizeXs],
       'font.size': 9,
     },
 
+    // Small
     {
       'class': 'tab_label',
       'settings': [stOpts.tabsFontSizeS],
       'font.size': 10,
     },
 
+    // Large
     {
       'class': 'tab_label',
       'settings': [stOpts.tabsFontSizeL],
       'font.size': 12,
     },
 
+    // Extra Large
     {
       'class': 'tab_label',
       'settings': [stOpts.tabsFontSizeXl],
       'font.size': 13,
     },
 
+    // Extra Extra Large
     {
       'class': 'tab_label',
       'settings': [stOpts.tabsFontSizeXxl],
       'font.size': 14,
     },
 
+    // Extra Extra Extra Large
     {
       'class': 'tab_label',
       'settings': [stOpts.tabsFontSizeXxxl],
       'font.size': 15,
     },
 
-    // Filetype icons in sidebar
+    /**
+     * Hide Sidebar File-Type Icons
+     */
 
     {
       'class': 'icon_file_type',
@@ -163,7 +184,9 @@ module.exports = function (values) {
       'layer0.opacity': 0,
     },
 
-    // Status Bar Size Options
+    /**
+     * Status Bar Size Options
+     */
 
     // Extra Extra Small Status Bar
     {
@@ -207,7 +230,9 @@ module.exports = function (values) {
       'content_margin': [12, 18, 12, 18],
     },
 
-    // Sidebar Padding
+    /**
+     * Sidebar Padding
+     */
 
     // Cramped Sidebar
     {
@@ -237,7 +262,9 @@ module.exports = function (values) {
       'row_padding': [24, 9],
     },
 
-    // Hide Sidebar Folder Icons
+    /**
+     * Hide Sidebar Folder Icons
+     */
     {
       'class': 'icon_folder',
       'settings': [stOpts.disableFolderIcons],
@@ -245,52 +272,7 @@ module.exports = function (values) {
       'content_margin': [0, 0],
     },
 
-    {
-      'class': 'icon_folder',
-      'settings': [stOpts.disableFolderIcons],
-      'parents': [
-
-        {
-          'class': 'tree_row',
-          'attributes': ['hover'],
-        },
-
-      ],
-
-      'content_margin': [0, 0],
-    },
-
-    {
-      'class': 'icon_folder',
-      'settings': [stOpts.disableFolderIcons],
-      'parents': [
-
-        {
-          'class': 'tree_row',
-          'attributes': ['expanded', 'hover'],
-        },
-
-      ],
-
-      'content_margin': [0, 0],
-    },
-
-    {
-      'class': 'icon_folder',
-      'settings': [stOpts.disableFolderIcons],
-      'parents': [
-
-        {
-          'class': 'tree_row',
-          'attributes': ['expanded'],
-        },
-
-      ],
-
-      'content_margin': [0, 0],
-    },
-
-    // Folder loading
+    // Folder Loading
     {
       'class': 'icon_folder_loading',
       'settings': [stOpts.disableFolderIcons],
@@ -298,7 +280,7 @@ module.exports = function (values) {
       'content_margin': [0, 0],
     },
 
-    // Symlinked
+    // Symlinked Folder
     {
       'class': 'icon_folder_dup',
       'settings': [stOpts.disableFolderIcons],
@@ -306,55 +288,9 @@ module.exports = function (values) {
       'content_margin': [0, 0],
     },
 
-    {
-      'class': 'icon_folder_dup',
-      'settings': [stOpts.disableFolderIcons],
-
-      'parents': [
-
-        {
-          'class': 'tree_row',
-          'attributes': ['hover'],
-        },
-
-      ],
-
-      'content_margin': [0, 0],
-    },
-
-    {
-      'class': 'icon_folder_dup',
-      'settings': [stOpts.disableFolderIcons],
-
-      'parents': [
-
-        {
-          'class': 'tree_row',
-          'attributes': ['expanded', 'hover'],
-        },
-
-      ],
-
-      'content_margin': [0, 0],
-    },
-
-    {
-      'class': 'icon_folder_dup',
-      'settings': [stOpts.disableFolderIcons],
-
-      'parents': [
-
-        {
-          'class': 'tree_row',
-          'attributes': ['expanded'],
-        },
-
-      ],
-
-      'content_margin': [0, 0],
-    },
-
-    // AutoComplete Padding
+    /**
+     * AutoComplete Padding
+     */
 
     // Cramped AutoComplete
     {
@@ -384,7 +320,9 @@ module.exports = function (values) {
       'row_padding': [12, 10],
     },
 
-    // Status bar panel close icon
+    /**
+     * Enable Status Bar Close Button
+     */
     {
       'class': 'panel_close_button',
       'settings': [stOpts.enablePanelCloseButton],
@@ -495,7 +433,10 @@ module.exports = function (values) {
       'layer1.opacity': 0,
     },
 
-    // Enable Statusbar Border
+    /**
+     * Enable Statusbar Border
+     */
+
     {
       'class': 'status_bar',
       'settings': [stOpts.enableStatusbarBorder],
@@ -519,9 +460,9 @@ module.exports = function (values) {
       'class': 'icon_folder',
       'settings': [stOpts.iconsetSpacegray],
 
-      'layer1.texture': `${paths.commons}spacegray__folder.png`,
-      'layer2.texture': `${paths.this}spacegray__folder--hover.png`,
-      'layer3.texture': `${paths.this}spacegray__folder--expanded.png`,
+      'layer1.texture': `${paths.commons}spacegray__folder.png`, // Default
+      'layer2.texture': `${paths.this}spacegray__folder--hover.png`, // Hover
+      'layer3.texture': `${paths.this}spacegray__folder--expanded.png`, // Expanded
     },
 
     // Symlinked Folder Icon
@@ -529,9 +470,9 @@ module.exports = function (values) {
       'class': 'icon_folder_dup',
       'settings': [stOpts.iconsetSpacegray],
 
-      'layer0.texture': `${paths.commons}spacegray__folder_dup.png`,
-      'layer1.texture': `${paths.this}spacegray__folder_dup--hover.png`,
-      'layer2.texture': `${paths.this}spacegray__folder_dup--expanded.png`,
+      'layer0.texture': `${paths.commons}spacegray__folder_dup.png`, // Default
+      'layer1.texture': `${paths.this}spacegray__folder_dup--hover.png`, // Hover
+      'layer2.texture': `${paths.this}spacegray__folder_dup--expanded.png`, // Expanded
     },
 
     // Regex Icon
@@ -539,14 +480,9 @@ module.exports = function (values) {
       'class': 'icon_regex',
       'settings': [stOpts.iconsetSpacegray],
 
-      // Default
-      'layer0.texture': `${spacegrayPath}regex.png`,
-
-      // Hover
-      'layer1.texture': `${spacegrayPath}regex--hover.png`,
-
-      // Selected
-      'layer2.texture': `${spacegrayPath}regex--selected.png`,
+      'layer0.texture': `${spacegrayPath}regex.png`, // Default
+      'layer1.texture': `${spacegrayPath}regex--hover.png`, // Hover
+      'layer2.texture': `${spacegrayPath}regex--selected.png`, // Selected
     },
 
     // Case Sensitive
@@ -554,14 +490,9 @@ module.exports = function (values) {
       'class': 'icon_case',
       'settings': [stOpts.iconsetSpacegray],
 
-      // Default
-      'layer0.texture': `${spacegrayPath}casesensitive.png`,
-
-      // Hover
-      'layer1.texture': `${spacegrayPath}casesensitive--hover.png`,
-
-      // Selected
-      'layer2.texture': `${spacegrayPath}casesensitive--selected.png`,
+      'layer0.texture': `${spacegrayPath}casesensitive.png`, // Default
+      'layer1.texture': `${spacegrayPath}casesensitive--hover.png`, // Hover
+      'layer2.texture': `${spacegrayPath}casesensitive--selected.png`, // Selected
     },
 
     // Wholeword
@@ -569,14 +500,9 @@ module.exports = function (values) {
       'class': 'icon_whole_word',
       'settings': [stOpts.iconsetSpacegray],
 
-      // Default
-      'layer0.texture': `${spacegrayPath}wholeword.png`,
-
-      // Hover
-      'layer1.texture': `${spacegrayPath}wholeword--hover.png`,
-
-      // Selected
-      'layer2.texture': `${spacegrayPath}wholeword--selected.png`,
+      'layer0.texture': `${spacegrayPath}wholeword.png`, // Default
+      'layer1.texture': `${spacegrayPath}wholeword--hover.png`, // Hover
+      'layer2.texture': `${spacegrayPath}wholeword--selected.png`, // Selected
     },
 
     // Wrap
@@ -584,14 +510,9 @@ module.exports = function (values) {
       'class': 'icon_wrap',
       'settings': [stOpts.iconsetSpacegray],
 
-      // Default
-      'layer0.texture': `${spacegrayPath}wrap.png`,
-
-      // Hover
-      'layer1.texture': `${spacegrayPath}wrap--hover.png`,
-
-      // Selected
-      'layer2.texture': `${spacegrayPath}wrap--selected.png`,
+      'layer0.texture': `${spacegrayPath}wrap.png`, // Default
+      'layer1.texture': `${spacegrayPath}wrap--hover.png`, // Hover
+      'layer2.texture': `${spacegrayPath}wrap--selected.png`, // Selected
     },
 
     // In selection
@@ -599,14 +520,9 @@ module.exports = function (values) {
       'class': 'icon_in_selection',
       'settings': [stOpts.iconsetSpacegray],
 
-      // Default
-      'layer0.texture': `${spacegrayPath}inselection.png`,
-
-      // Hover
-      'layer1.texture': `${spacegrayPath}inselection--hover.png`,
-
-      // Selected
-      'layer2.texture': `${spacegrayPath}inselection--selected.png`,
+      'layer0.texture': `${spacegrayPath}inselection.png`, // Default
+      'layer1.texture': `${spacegrayPath}inselection--hover.png`, // Hover
+      'layer2.texture': `${spacegrayPath}inselection--selected.png`, // Selected
     },
 
     // Highlight Result
@@ -614,14 +530,9 @@ module.exports = function (values) {
       'class': 'icon_highlight',
       'settings': [stOpts.iconsetSpacegray],
 
-      // Default
-      'layer0.texture': `${spacegrayPath}highlight.png`,
-
-      // Hover
-      'layer1.texture': `${spacegrayPath}highlight--hover.png`,
-
-      // Selected
-      'layer2.texture': `${spacegrayPath}highlight--selected.png`,
+      'layer0.texture': `${spacegrayPath}highlight.png`, // Default
+      'layer1.texture': `${spacegrayPath}highlight--hover.png`, // Hover
+      'layer2.texture': `${spacegrayPath}highlight--selected.png`, // Selected
     },
 
     // Preserve Case
@@ -629,14 +540,9 @@ module.exports = function (values) {
       'class': 'icon_preserve_case',
       'settings': [stOpts.iconsetSpacegray],
 
-      // Default
-      'layer0.texture': `${spacegrayPath}preservecase.png`,
-
-      // Hover
-      'layer1.texture': `${spacegrayPath}preservecase--hover.png`,
-
-      // Selected
-      'layer2.texture': `${spacegrayPath}preservecase--selected.png`,
+      'layer0.texture': `${spacegrayPath}preservecase.png`, // Default
+      'layer1.texture': `${spacegrayPath}preservecase--hover.png`, // Hover
+      'layer2.texture': `${spacegrayPath}preservecase--selected.png`, // Selected
     },
 
     // Show context
@@ -644,14 +550,9 @@ module.exports = function (values) {
       'class': 'icon_context',
       'settings': [stOpts.iconsetSpacegray],
 
-      // Default
-      'layer0.texture': `${spacegrayPath}context.png`,
-
-      // Hover
-      'layer1.texture': `${spacegrayPath}context--hover.png`,
-
-      // Selected
-      'layer2.texture': `${spacegrayPath}context--selected.png`,
+      'layer0.texture': `${spacegrayPath}context.png`, // Default
+      'layer1.texture': `${spacegrayPath}context--hover.png`, // Hover
+      'layer2.texture': `${spacegrayPath}context--selected.png`, // Selected
     },
 
     // Use buffer
@@ -659,14 +560,9 @@ module.exports = function (values) {
       'class': 'icon_use_buffer',
       'settings': [stOpts.iconsetSpacegray],
 
-      // Default
-      'layer0.texture': `${spacegrayPath}buffer.png`,
-
-      // Hover
-      'layer1.texture': `${spacegrayPath}buffer--hover.png`,
-
-      // Selected
-      'layer2.texture': `${spacegrayPath}buffer--selected.png`,
+      'layer0.texture': `${spacegrayPath}buffer.png`, // Default
+      'layer1.texture': `${spacegrayPath}buffer--hover.png`, // Hover
+      'layer2.texture': `${spacegrayPath}buffer--selected.png`, // Selected
     },
 
     // Panel Switcher
@@ -674,15 +570,8 @@ module.exports = function (values) {
       'class': 'panel_button_control',
       'settings': [stOpts.iconsetSpacegray],
 
-      'layer0.texture': `${spacegrayPath}panels.png`,
-    },
-
-    {
-      'class': 'panel_button_control',
-      'settings': [stOpts.iconsetSpacegray],
-      'attributes': ['hover'],
-
-      'layer0.texture': `${spacegrayPath}panels--hover.png`,
+      'layer0.texture': `${spacegrayPath}panels.png`, // Default
+      'layer1.texture': `${spacegrayPath}panels--hover.png`, // Hover
     },
 
     // Textline Input Overflow Menu
@@ -690,13 +579,13 @@ module.exports = function (values) {
       'class': 'dropdown_button_control',
       'settings': [stOpts.iconsetSpacegray],
 
-      'layer0.texture': `${spacegrayPath}more.png`,
-
-      'layer1.texture': `${spacegrayPath}more--hover.png`,
+      'layer0.texture': `${spacegrayPath}more.png`, // Default
+      'layer1.texture': `${spacegrayPath}more--hover.png`, // Hover
     },
 
-    // Autocollapsing Tabs
-
+    /**
+     * Autocollapsing Tabs
+     */
     {
       'class': 'tabset_control',
       'settings': [stOpts.autocollapseTabs],
@@ -706,37 +595,35 @@ module.exports = function (values) {
     },
 
     // Trigger Sizes
-
     {
       'class': 'tabset_control',
-      'settings': [stOpts.autocollapseTabs, 'gruvbox_autocollapse_tabs_trigger_2'],
+      'settings': [stOpts.autocollapseTabs, stOpts.autocollapseTabsTriggerXs],
 
       'content_margin': [-1, 2, 12, 0],
     },
 
     {
       'class': 'tabset_control',
-      'settings': [stOpts.autocollapseTabs, 'gruvbox_autocollapse_tabs_trigger_3'],
+      'settings': [stOpts.autocollapseTabs, stOpts.autocollapseTabsTriggerS],
 
       'content_margin': [-1, 3, 12, 0],
     },
 
     {
       'class': 'tabset_control',
-      'settings': [stOpts.autocollapseTabs, 'gruvbox_autocollapse_tabs_trigger_5'],
+      'settings': [stOpts.autocollapseTabs, stOpts.autocollapseTabsTriggerL],
 
       'content_margin': [-1, 5, 12, 0],
     },
 
     {
       'class': 'tabset_control',
-      'settings': [stOpts.autocollapseTabs, 'gruvbox_autocollapse_tabs_trigger_6'],
+      'settings': [stOpts.autocollapseTabs, stOpts.autocollapseTabsTriggerXl],
 
       'content_margin': [-1, 6, 12, 0],
     },
 
     // Autocollapse Hover
-
     {
       'class': 'tabset_control',
       'settings': [stOpts.autocollapseTabs],
@@ -802,6 +689,7 @@ module.exports = function (values) {
       'tab_height': 69,
     },
 
+    // Tab Scroll Left Button
     {
       'class': 'scroll_tabs_left_button',
       'settings': [stOpts.autocollapseTabs],
@@ -809,6 +697,7 @@ module.exports = function (values) {
       'content_margin': [0, 0],
     },
 
+    // Tab Scroll Left Button Hover
     {
       'class': 'scroll_tabs_left_button',
       'settings': [stOpts.autocollapseTabs],
@@ -824,6 +713,7 @@ module.exports = function (values) {
       'content_margin': [14, 7],
     },
 
+    // Tab Scroll Right Button
     {
       'class': 'scroll_tabs_right_button',
       'settings': [stOpts.autocollapseTabs],
@@ -831,6 +721,7 @@ module.exports = function (values) {
       'content_margin': [0, 0],
     },
 
+    // Tab Scroll Right Button Hover
     {
       'class': 'scroll_tabs_right_button',
       'settings': [stOpts.autocollapseTabs],
@@ -846,6 +737,7 @@ module.exports = function (values) {
       'content_margin': [14, 7],
     },
 
+    // Tab Scroll Overflow Menu Button
     {
       'class': 'show_tabs_dropdown_button',
       'settings': [stOpts.autocollapseTabs],
@@ -853,6 +745,7 @@ module.exports = function (values) {
       'content_margin': [0, 0],
     },
 
+    // Tab Scroll Overflow Menu Button Hover
     {
       'class': 'show_tabs_dropdown_button',
       'settings': [stOpts.autocollapseTabs],
@@ -868,14 +761,20 @@ module.exports = function (values) {
       'content_margin': [12, 12],
     },
 
-    // Disable Panel Switcher
+    /**
+     * Disable Panel Switcher
+     */
+
     {
       'class': 'panel_button_control',
       'settings': [stOpts.disablePanelsButton],
       'content_margin': [0, 0],
     },
 
-    // File icons and folder Opacity
+    /**
+     * Disable Faded File Icons
+     */
+
     {
       'class': 'icon_file_type',
       'settings': [stOpts.disableFadedFileIcons],
@@ -888,7 +787,6 @@ module.exports = function (values) {
      */
 
     // Button labels
-
     {
       'class': 'label_control',
       'settings': [stOpts.disableGreyscaleColors],

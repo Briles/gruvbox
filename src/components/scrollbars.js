@@ -8,15 +8,16 @@ module.exports = function (values) {
   return [
 
     // Normal Vertical Scrollbar Track
-
     {
       'class': 'scroll_bar_control',
       'blur': false,
 
+      // Background
       'layer0.tint': c.container,
       'layer0.opacity': 1,
       'layer0.inner_margin': [0, 6],
 
+      // Border - Left
       'layer1.tint': c.border,
       'layer1.opacity': 1,
       'layer1.draw_center': false,
@@ -24,7 +25,6 @@ module.exports = function (values) {
     },
 
     // Normal Vertical Scrollbar Track Inside Sidebar
-
     {
       'class': 'scroll_bar_control',
       'parents': [
@@ -35,11 +35,10 @@ module.exports = function (values) {
 
       ],
 
-      'layer1.inner_margin': [0, 0, 1, 0],
+      'layer1.inner_margin': [0, 0, 1, 0], // Border - Right
     },
 
     // Normal Vertical Scrollbar Track Inside Console Panel
-
     {
       'class': 'scroll_bar_control',
       'parents': [
@@ -50,11 +49,10 @@ module.exports = function (values) {
 
       ],
 
-      'layer1.opacity': 0,
+      'layer1.opacity': 0, // Border
     },
 
     // Normal Vertical Scrollbar Track Inside AutoComplete
-
     {
       'class': 'scroll_bar_control',
       'parents': [
@@ -65,11 +63,10 @@ module.exports = function (values) {
 
       ],
 
-      'layer1.opacity': 0,
+      'layer1.opacity': 0, // Border
     },
 
     // Normal Vertical Scrollbar Track Inside Overlay Panel
-
     {
       'class': 'scroll_bar_control',
       'parents': [
@@ -80,19 +77,19 @@ module.exports = function (values) {
 
       ],
 
-      'layer1.opacity': 0,
+      'layer1.opacity': 0, // Border
     },
 
     // Normal Horizontal Scrollbar Track
-
     {
       'class': 'scroll_bar_control',
       'attributes': ['horizontal'],
       'blur': false,
 
-      'layer1.inner_margin': [0, 1, 0, 0],
+      'layer1.inner_margin': [0, 1, 0, 0], // Border - Top
     },
 
+    // Normal Horizontal Scrollbar Track Inside Sidebar
     {
       'class': 'scroll_bar_control',
       'attributes': ['horizontal'],
@@ -104,11 +101,10 @@ module.exports = function (values) {
 
       ],
 
-      'layer1.opacity': 0,
+      'layer1.opacity': 0, // Border - Top
     },
 
     // Normal Horizontal Scrollbar Track Inside AutoComplete
-
     {
       'class': 'scroll_bar_control',
       'attributes': ['horizontal'],
@@ -120,11 +116,10 @@ module.exports = function (values) {
 
       ],
 
-      'layer1.opacity': 0,
+      'layer1.opacity': 0, // Border - Top
     },
 
     // Normal Horizontal Scrollbar Track Inside Overlay Panel
-
     {
       'class': 'scroll_bar_control',
       'attributes': ['horizontal'],
@@ -137,11 +132,10 @@ module.exports = function (values) {
 
       ],
 
-      'layer0.opacity': 0,
+      'layer1.opacity': 0, // Border - Top
     },
 
     // Normal Horizontal Scrollbar Track Inside Console Panel
-
     {
       'class': 'scroll_bar_control',
       'attributes': ['horizontal'],
@@ -153,18 +147,19 @@ module.exports = function (values) {
 
       ],
 
-      'layer1.opacity': 0,
+      'layer1.opacity': 0, // Border - Top
     },
 
     // Scrollbars Corner
-
     {
       'class': 'scroll_corner_control',
 
+      // Background
       'layer0.tint': c.container,
       'layer0.opacity': 1,
       'layer0.inner_margin': [1, 1],
 
+      // Border - Right
       'layer1.tint': c.border,
       'layer1.opacity': 1,
       'layer1.draw_center': false,
@@ -172,7 +167,6 @@ module.exports = function (values) {
     },
 
     // Scrollbars Corner in Console Panel
-
     {
       'class': 'scroll_corner_control',
       'parents': [
@@ -183,77 +177,46 @@ module.exports = function (values) {
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
+      'layer0.opacity': 0, // Background
+      'layer1.opacity': 0, // Border - Right
     },
 
+    // Scroll Area
+    {
+      'class': 'scroll_area_control',
+      'overlay': false,
+    },
+
+    // Overlay Scroll Bars Enabled
     {
       'class': 'scroll_area_control',
       'settings': ['overlay_scroll_bars'],
       'overlay': true,
     },
 
-    {
-      'class': 'scroll_area_control',
-      'settings': ['!overlay_scroll_bars'],
-      'overlay': false, // set to false for the original behavior
-    },
-
-    {
-      'class': 'scroll_area_control',
-      'parents': [
-
-        {
-          'class': 'overlay_control',
-        },
-
-      ],
-      'settings': ['overlay_scroll_bars'],
-      'overlay': true, // set to false for the original behavior
-    },
-
-    {
-      'class': 'scroll_area_control',
-      'parents': [
-
-        {
-          'class': 'sidebar_container',
-        },
-
-      ],
-      'settings': ['!overlay_scroll_bars'],
-      'overlay': false, // set to false for the original behavior
-    },
-
+    // Scrollbar Track Overlay Scroll Bars Enabled
     {
       'class': 'scroll_bar_control',
       'settings': ['overlay_scroll_bars'],
       'blur': false,
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
+      'layer0.opacity': 0, // Background
+      'layer1.opacity': 0, // Border - Right
     },
 
-    {
-      'class': 'scroll_bar_control',
-      'settings': ['overlay_scroll_bars'],
-      'attributes': ['horizontal'],
-      'blur': false,
-
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-    },
-
+    // Vertical Scrollbar Puck
     {
       'class': 'puck_control',
       'content_margin': [6, 16],
       'blur': false,
 
+      // Background
       'layer0.texture': `${paths.this}puckvertical.png`,
       'layer0.opacity': 1,
       'layer0.inner_margin': [1, 8, 1, 8],
     },
 
+    // Horizontal Scrollbar Puck
     {
       'class': 'puck_control',
       'attributes': ['horizontal'],
@@ -263,6 +226,7 @@ module.exports = function (values) {
       'layer0.inner_margin': [8, 1, 8, 1],
     },
 
+    // Overlay Vertical Scrollbar Puck
     {
       'class': 'puck_control',
       'settings': ['overlay_scroll_bars'],
@@ -270,6 +234,7 @@ module.exports = function (values) {
       'layer0.texture': `${paths.this}puckvertical--overlay.png`,
     },
 
+    // Overlay Horizontal Scrollbar Puck
     {
       'class': 'puck_control',
       'attributes': ['horizontal'],

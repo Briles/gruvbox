@@ -3,26 +3,25 @@ module.exports = function (values) {
 
   const c = values.colors;
   const info = values.info;
-  const paths = values.paths;
 
   return [
 
+    // Minimap
     {
       'class': 'minimap_control',
-      'settings': ['always_show_minimap_viewport'],
-
-      'viewport_color': c.bnp[info.contrast],
-      'viewport_opacity': 0.57,
-    },
-
-    {
-      'class': 'minimap_control',
-      'settings': ['!always_show_minimap_viewport'],
 
       'viewport_color': c.bnp[info.contrast],
       'viewport_opacity': 0,
     },
 
+    {
+      'class': 'minimap_control',
+      'settings': ['always_show_minimap_viewport'],
+
+      'viewport_opacity': 0.57,
+    },
+
+    // Minimap Hover
     {
       'class': 'minimap_control',
       'attributes': ['hover'],

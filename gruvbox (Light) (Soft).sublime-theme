@@ -58,16 +58,12 @@
     ],
     "layer0.texture": "gruvbox/assets/light/fold.png",
     "layer0.opacity": 1,
-    "layer0.inner_margin": 0,
     "layer1.texture": "gruvbox/assets/light/fold--hover.png",
     "layer1.opacity": 0,
-    "layer1.inner_margin": 0,
     "layer2.texture": "gruvbox/assets/light/unfold.png",
     "layer2.opacity": 0,
-    "layer2.inner_margin": 0,
     "layer3.texture": "gruvbox/assets/light/unfold--hover.png",
-    "layer3.opacity": 0,
-    "layer3.inner_margin": 0
+    "layer3.opacity": 0
   },
   {
     "class": "fold_button_control",
@@ -176,10 +172,6 @@
       48,
       47
     ],
-    "layer0.inner_margin": [
-      0,
-      0
-    ],
     "layer0.opacity": 1
   },
   {
@@ -203,25 +195,19 @@
       219,
       162
     ],
-    "layer0.inner_margin": [
-      0,
-      0,
-      0,
-      0
-    ],
     "layer0.opacity": 1,
     "layer1.tint": [
       232,
       209,
       135
     ],
+    "layer1.opacity": 1,
     "layer1.inner_margin": [
       1,
       0,
       1,
       1
     ],
-    "layer1.opacity": 1,
     "layer1.draw_center": false
   },
   {
@@ -232,25 +218,25 @@
       0,
       0
     ],
+    "layer0.opacity": 1,
     "layer0.inner_margin": [
       2,
       2,
       2,
       2
     ],
-    "layer0.opacity": 1,
     "layer1.tint": [
       232,
       209,
       135
     ],
+    "layer1.opacity": 1,
     "layer1.inner_margin": [
       0,
       1,
       0,
       0
     ],
-    "layer1.opacity": 1,
     "layer1.draw_center": false
   },
   {
@@ -291,48 +277,14 @@
       209,
       135
     ],
+    "layer1.opacity": 1,
     "layer1.inner_margin": [
       0,
       1,
       0,
       0
     ],
-    "layer1.opacity": 1,
     "layer1.draw_center": false
-  },
-  {
-    "class": "quick_panel_row",
-    "parents": [
-      {
-        "class": "overlay_control"
-      }
-    ],
-    "layer0.tint": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "layer0.opacity": 1
-  },
-  {
-    "class": "quick_panel",
-    "parents": [
-      {
-        "class": "overlay_control"
-      }
-    ],
-    "row_padding": [
-      18,
-      12
-    ],
-    "layer0.tint": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "layer0.opacity": 1
   },
   {
     "class": "quick_panel_row",
@@ -347,34 +299,6 @@
   },
   {
     "class": "quick_panel_label",
-    "fg": [
-      112,
-      112,
-      112
-    ],
-    "match_fg": [
-      57,
-      57,
-      57
-    ],
-    "selected_fg": [
-      112,
-      112,
-      112
-    ],
-    "selected_match_fg": [
-      57,
-      57,
-      57
-    ]
-  },
-  {
-    "class": "quick_panel_label",
-    "parents": [
-      {
-        "class": "overlay_control"
-      }
-    ],
     "fg": [
       112,
       112,
@@ -607,21 +531,13 @@
       8
     ],
     "layer0.texture": "gruvbox/assets/light/close.png",
-    "layer0.inner_margin": 0,
     "layer0.opacity": 1,
     "layer1.texture": "gruvbox/assets/light/close--hover.png",
     "layer1.opacity": 0,
     "layer2.texture": "gruvbox/assets/light/dirty.png",
-    "layer2.inner_margin": 0,
-    "layer3.texture": "gruvbox/assets/light/dirty.png",
+    "layer2.opacity": 0,
+    "layer3.texture": "gruvbox/assets/light/close--hover.png",
     "layer3.opacity": 0
-  },
-  {
-    "class": "tab_close_button",
-    "settings": [
-      "show_tab_close_buttons"
-    ],
-    "layer0.opacity": 1
   },
   {
     "class": "tab_close_button",
@@ -632,52 +548,6 @@
   },
   {
     "class": "tab_close_button",
-    "settings": [
-      "show_tab_close_buttons"
-    ],
-    "parents": [
-      {
-        "class": "tab_control",
-        "attributes": [
-          "selected"
-        ]
-      }
-    ],
-    "layer0.opacity": 1,
-    "layer1.opacity": 0
-  },
-  {
-    "class": "tab_close_button",
-    "settings": [
-      "show_tab_close_buttons"
-    ],
-    "attributes": [
-      "hover"
-    ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 1
-  },
-  {
-    "class": "tab_close_button",
-    "settings": [
-      "!show_tab_close_buttons"
-    ],
-    "parents": [
-      {
-        "class": "tab_control",
-        "attributes": [
-          "selected"
-        ]
-      }
-    ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 0
-  },
-  {
-    "class": "tab_close_button",
-    "settings": [
-      "!show_tab_close_buttons"
-    ],
     "attributes": [
       "hover"
     ],
@@ -696,12 +566,8 @@
     ],
     "layer0.opacity": 0,
     "layer1.opacity": 0,
-    "layer2.opacity": 0,
-    "layer3.opacity": 1,
-    "content_margin": [
-      8,
-      8
-    ]
+    "layer2.opacity": 1,
+    "layer3.opacity": 0
   },
   {
     "class": "tab_close_button",
@@ -715,22 +581,6 @@
     ],
     "attributes": [
       "hover"
-    ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 1,
-    "layer2.opacity": 0,
-    "layer3.opacity": 0
-  },
-  {
-    "class": "tab_close_button",
-    "parents": [
-      {
-        "class": "tab_control",
-        "attributes": [
-          "selected",
-          "dirty"
-        ]
-      }
     ],
     "layer0.opacity": 0,
     "layer1.opacity": 0,
@@ -748,13 +598,29 @@
         ]
       }
     ],
+    "layer0.opacity": 0,
+    "layer1.opacity": 0,
+    "layer2.opacity": 1,
+    "layer3.opacity": 0
+  },
+  {
+    "class": "tab_close_button",
+    "parents": [
+      {
+        "class": "tab_control",
+        "attributes": [
+          "selected",
+          "dirty"
+        ]
+      }
+    ],
     "attributes": [
       "hover"
     ],
     "layer0.opacity": 0,
-    "layer1.opacity": 1,
+    "layer1.opacity": 0,
     "layer2.opacity": 0,
-    "layer3.opacity": 0
+    "layer3.opacity": 1
   },
   {
     "class": "scroll_tabs_left_button",
@@ -764,16 +630,15 @@
     ],
     "layer0.texture": "gruvbox/assets/light/prevtab.png",
     "layer0.opacity": 1,
-    "layer0.inner_margin": 0,
     "layer1.texture": "gruvbox/assets/light/prevtab--hover.png",
-    "layer1.opacity": 0,
-    "layer1.inner_margin": 0
+    "layer1.opacity": 0
   },
   {
     "class": "scroll_tabs_left_button",
     "attributes": [
       "hover"
     ],
+    "layer0.opacity": 0,
     "layer1.opacity": 1
   },
   {
@@ -784,16 +649,15 @@
     ],
     "layer0.texture": "gruvbox/assets/light/nexttab.png",
     "layer0.opacity": 1,
-    "layer0.inner_margin": 0,
     "layer1.texture": "gruvbox/assets/light/nexttab--hover.png",
-    "layer1.opacity": 0,
-    "layer1.inner_margin": 0
+    "layer1.opacity": 0
   },
   {
     "class": "scroll_tabs_right_button",
     "attributes": [
       "hover"
     ],
+    "layer0.opacity": 0,
     "layer1.opacity": 1
   },
   {
@@ -804,16 +668,15 @@
     ],
     "layer0.texture": "gruvbox/assets/light/more.png",
     "layer0.opacity": 1,
-    "layer0.inner_margin": 0,
     "layer1.texture": "gruvbox/assets/light/more--hover.png",
-    "layer1.opacity": 0,
-    "layer1.inner_margin": 0
+    "layer1.opacity": 0
   },
   {
     "class": "show_tabs_dropdown_button",
     "attributes": [
       "hover"
     ],
+    "layer0.opacity": 0,
     "layer1.opacity": 1
   },
   {
@@ -824,31 +687,25 @@
       0,
       0
     ],
-    "layer0.opacity": 1,
     "layer0.tint": [
       237,
       219,
       162
     ],
-    "layer0.inner_margin": [
-      0,
-      0,
-      0,
-      0
-    ],
+    "layer0.opacity": 1,
     "layer1.tint": [
       232,
       209,
       135
     ],
+    "layer1.opacity": 1,
     "layer1.draw_center": false,
     "layer1.inner_margin": [
       0,
       0,
       1,
       0
-    ],
-    "layer1.opacity": 1
+    ]
   },
   {
     "class": "sidebar_tree",
@@ -859,12 +716,12 @@
     "indent": 16,
     "indent_offset": 0,
     "indent_top_level": false,
-    "layer0.opacity": 1,
     "layer0.tint": [
       237,
       219,
       162
     ],
+    "layer0.opacity": 1,
     "layer0.inner_margin": [
       0,
       0,
@@ -876,14 +733,14 @@
       209,
       135
     ],
+    "layer1.opacity": 1,
     "layer1.draw_center": false,
     "layer1.inner_margin": [
       0,
       0,
       1,
       0
-    ],
-    "layer1.opacity": 1
+    ]
   },
   {
     "class": "sidebar_heading",
@@ -896,44 +753,26 @@
     "font.size": 12
   },
   {
-    "class": "sidebar_heading",
-    "parents": [
-      {
-        "class": "tree_row",
-        "attributes": [
-          "selected"
-        ]
-      }
-    ]
-  },
-  {
     "class": "tree_row",
+    "layer0.tint": [
+      242,
+      229,
+      188
+    ],
+    "layer0.opacity": 0,
     "layer1.tint": [
       232,
       209,
       135
     ],
+    "layer1.opacity": 1,
     "layer1.draw_center": false,
     "layer1.inner_margin": [
       0,
       0,
       1,
       0
-    ],
-    "layer1.opacity": 1,
-    "layer0.tint": [
-      242,
-      229,
-      188
-    ],
-    "layer0.opacity": 0
-  },
-  {
-    "class": "tree_row",
-    "attributes": [
-      "selected"
-    ],
-    "layer0.opacity": 0
+    ]
   },
   {
     "class": "sidebar_label",
@@ -1092,12 +931,11 @@
       8
     ],
     "layer0.texture": "gruvbox/assets/light/close.png",
-    "layer0.inner_margin": 0,
     "layer0.opacity": 0,
     "layer1.texture": "gruvbox/assets/light/close--hover.png",
     "layer1.opacity": 0,
     "layer2.texture": "gruvbox/assets/light/dirty.png",
-    "layer2.inner_margin": 0
+    "layer2.opacity": 0
   },
   {
     "class": "close_button",
@@ -1216,8 +1054,7 @@
       {
         "class": "tree_row",
         "attributes": [
-          "expanded",
-          "hover"
+          "expanded"
         ]
       }
     ],
@@ -1231,7 +1068,8 @@
       {
         "class": "tree_row",
         "attributes": [
-          "expanded"
+          "expanded",
+          "hover"
         ]
       }
     ],
@@ -1298,8 +1136,7 @@
       {
         "class": "tree_row",
         "attributes": [
-          "expanded",
-          "hover"
+          "expanded"
         ]
       }
     ],
@@ -1313,7 +1150,8 @@
       {
         "class": "tree_row",
         "attributes": [
-          "expanded"
+          "expanded",
+          "hover"
         ]
       }
     ],
@@ -1445,7 +1283,7 @@
         "class": "overlay_control"
       }
     ],
-    "layer0.opacity": 0
+    "layer1.opacity": 0
   },
   {
     "class": "scroll_bar_control",
@@ -1497,58 +1335,19 @@
   },
   {
     "class": "scroll_area_control",
+    "overlay": false
+  },
+  {
+    "class": "scroll_area_control",
     "settings": [
       "overlay_scroll_bars"
     ],
     "overlay": true
   },
   {
-    "class": "scroll_area_control",
-    "settings": [
-      "!overlay_scroll_bars"
-    ],
-    "overlay": false
-  },
-  {
-    "class": "scroll_area_control",
-    "parents": [
-      {
-        "class": "overlay_control"
-      }
-    ],
-    "settings": [
-      "overlay_scroll_bars"
-    ],
-    "overlay": true
-  },
-  {
-    "class": "scroll_area_control",
-    "parents": [
-      {
-        "class": "sidebar_container"
-      }
-    ],
-    "settings": [
-      "!overlay_scroll_bars"
-    ],
-    "overlay": false
-  },
-  {
     "class": "scroll_bar_control",
     "settings": [
       "overlay_scroll_bars"
-    ],
-    "blur": false,
-    "layer0.opacity": 0,
-    "layer1.opacity": 0
-  },
-  {
-    "class": "scroll_bar_control",
-    "settings": [
-      "overlay_scroll_bars"
-    ],
-    "attributes": [
-      "horizontal"
     ],
     "blur": false,
     "layer0.opacity": 0,
@@ -1606,17 +1405,14 @@
   },
   {
     "class": "minimap_control",
-    "settings": [
-      "always_show_minimap_viewport"
-    ],
-    "viewport_opacity": 0.57
+    "viewport_opacity": 0
   },
   {
     "class": "minimap_control",
     "settings": [
-      "!always_show_minimap_viewport"
+      "always_show_minimap_viewport"
     ],
-    "viewport_opacity": 0
+    "viewport_opacity": 0.57
   },
   {
     "class": "minimap_control",
@@ -1649,7 +1445,7 @@
   {
     "class": "status_bar",
     "content_margin": [
-      10,
+      12,
       0,
       0,
       0
@@ -1664,28 +1460,18 @@
       2,
       2
     ],
-    "layer2.opacity": 1,
     "layer2.tint": [
       232,
       209,
       135
     ],
+    "layer2.opacity": 1,
     "layer2.draw_center": false,
     "layer2.inner_margin": [
       0,
       1,
       0,
       0
-    ],
-    "layer1.tint": [
-      237,
-      219,
-      162
-    ],
-    "layer1.opacity": 1,
-    "layer1.inner_margin": [
-      2,
-      2
     ]
   },
   {
@@ -1755,6 +1541,7 @@
     "attributes": [
       "hover"
     ],
+    "layer0.opacity": 0,
     "layer1.opacity": 1
   },
   {
@@ -1798,7 +1585,7 @@
       0
     ],
     "layer0.texture": "gruvbox/assets/light/close.png",
-    "layer0.opacity": 0.6,
+    "layer0.opacity": 1,
     "layer1.texture": "gruvbox/assets/light/close--hover.png",
     "layer1.opacity": 0
   },
@@ -1807,7 +1594,6 @@
     "attributes": [
       "hover"
     ],
-    "layer0.opacity": 0,
     "layer1.opacity": 1
   },
   {
@@ -1841,16 +1627,8 @@
     ],
     "layer0.texture": "gruvbox/assets/light/more.png",
     "layer0.opacity": 1,
-    "layer0.inner_margin": [
-      0,
-      0
-    ],
     "layer1.texture": "gruvbox/assets/light/more--hover.png",
-    "layer1.opacity": 0,
-    "layer1.inner_margin": [
-      0,
-      0
-    ]
+    "layer1.opacity": 0
   },
   {
     "class": "dropdown_button_control",
@@ -1935,16 +1713,16 @@
   },
   {
     "class": "icon_regex",
+    "content_margin": [
+      12,
+      12
+    ],
     "layer0.texture": "gruvbox/assets/light/regex.png",
     "layer0.opacity": 1,
     "layer1.texture": "gruvbox/assets/light/regex--hover.png",
     "layer1.opacity": 0,
     "layer2.texture": "gruvbox/assets/light/regex--selected.png",
-    "layer2.opacity": 0,
-    "content_margin": [
-      12,
-      12
-    ]
+    "layer2.opacity": 0
   },
   {
     "class": "icon_regex",
@@ -1956,9 +1734,7 @@
         ]
       }
     ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 1,
-    "layer2.opacity": 0
+    "layer1.opacity": 1
   },
   {
     "class": "icon_regex",
@@ -1970,22 +1746,20 @@
         ]
       }
     ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 0,
     "layer2.opacity": 1
   },
   {
     "class": "icon_case",
+    "content_margin": [
+      12,
+      12
+    ],
     "layer0.texture": "gruvbox/assets/light/casesensitive.png",
     "layer0.opacity": 1,
     "layer1.texture": "gruvbox/assets/light/casesensitive--hover.png",
     "layer1.opacity": 0,
     "layer2.texture": "gruvbox/assets/light/casesensitive--selected.png",
-    "layer2.opacity": 0,
-    "content_margin": [
-      12,
-      12
-    ]
+    "layer2.opacity": 0
   },
   {
     "class": "icon_case",
@@ -1997,9 +1771,7 @@
         ]
       }
     ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 1,
-    "layer2.opacity": 0
+    "layer1.opacity": 1
   },
   {
     "class": "icon_case",
@@ -2011,22 +1783,20 @@
         ]
       }
     ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 0,
     "layer2.opacity": 1
   },
   {
     "class": "icon_whole_word",
+    "content_margin": [
+      12,
+      12
+    ],
     "layer0.texture": "gruvbox/assets/light/wholeword.png",
     "layer0.opacity": 1,
     "layer1.texture": "gruvbox/assets/light/wholeword--hover.png",
     "layer1.opacity": 0,
     "layer2.texture": "gruvbox/assets/light/wholeword--selected.png",
-    "layer2.opacity": 0,
-    "content_margin": [
-      12,
-      12
-    ]
+    "layer2.opacity": 0
   },
   {
     "class": "icon_whole_word",
@@ -2038,9 +1808,7 @@
         ]
       }
     ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 1,
-    "layer2.opacity": 0
+    "layer1.opacity": 1
   },
   {
     "class": "icon_whole_word",
@@ -2052,22 +1820,20 @@
         ]
       }
     ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 0,
     "layer2.opacity": 1
   },
   {
     "class": "icon_wrap",
+    "content_margin": [
+      12,
+      12
+    ],
     "layer0.texture": "gruvbox/assets/light/wrap.png",
     "layer0.opacity": 1,
     "layer1.texture": "gruvbox/assets/light/wrap--hover.png",
     "layer1.opacity": 0,
     "layer2.texture": "gruvbox/assets/light/wrap--selected.png",
-    "layer2.opacity": 0,
-    "content_margin": [
-      12,
-      12
-    ]
+    "layer2.opacity": 0
   },
   {
     "class": "icon_wrap",
@@ -2079,9 +1845,7 @@
         ]
       }
     ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 1,
-    "layer2.opacity": 0
+    "layer1.opacity": 1
   },
   {
     "class": "icon_wrap",
@@ -2093,22 +1857,20 @@
         ]
       }
     ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 0,
     "layer2.opacity": 1
   },
   {
     "class": "icon_in_selection",
+    "content_margin": [
+      12,
+      12
+    ],
     "layer0.texture": "gruvbox/assets/light/inselection.png",
     "layer0.opacity": 1,
     "layer1.texture": "gruvbox/assets/light/inselection--hover.png",
     "layer1.opacity": 0,
     "layer2.texture": "gruvbox/assets/light/inselection--selected.png",
-    "layer2.opacity": 0,
-    "content_margin": [
-      12,
-      12
-    ]
+    "layer2.opacity": 0
   },
   {
     "class": "icon_in_selection",
@@ -2120,9 +1882,7 @@
         ]
       }
     ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 1,
-    "layer2.opacity": 0
+    "layer1.opacity": 1
   },
   {
     "class": "icon_in_selection",
@@ -2134,22 +1894,20 @@
         ]
       }
     ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 0,
     "layer2.opacity": 1
   },
   {
     "class": "icon_highlight",
+    "content_margin": [
+      12,
+      12
+    ],
     "layer0.texture": "gruvbox/assets/light/highlight.png",
     "layer0.opacity": 1,
     "layer1.texture": "gruvbox/assets/light/highlight--hover.png",
     "layer1.opacity": 0,
     "layer2.texture": "gruvbox/assets/light/highlight--selected.png",
-    "layer2.opacity": 0,
-    "content_margin": [
-      12,
-      12
-    ]
+    "layer2.opacity": 0
   },
   {
     "class": "icon_highlight",
@@ -2161,9 +1919,7 @@
         ]
       }
     ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 1,
-    "layer2.opacity": 0
+    "layer1.opacity": 1
   },
   {
     "class": "icon_highlight",
@@ -2175,22 +1931,20 @@
         ]
       }
     ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 0,
     "layer2.opacity": 1
   },
   {
     "class": "icon_preserve_case",
+    "content_margin": [
+      12,
+      12
+    ],
     "layer0.texture": "gruvbox/assets/light/preservecase.png",
     "layer0.opacity": 1,
     "layer1.texture": "gruvbox/assets/light/preservecase--hover.png",
     "layer1.opacity": 0,
     "layer2.texture": "gruvbox/assets/light/preservecase--selected.png",
-    "layer2.opacity": 0,
-    "content_margin": [
-      12,
-      12
-    ]
+    "layer2.opacity": 0
   },
   {
     "class": "icon_preserve_case",
@@ -2202,9 +1956,7 @@
         ]
       }
     ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 1,
-    "layer2.opacity": 0
+    "layer1.opacity": 1
   },
   {
     "class": "icon_preserve_case",
@@ -2216,22 +1968,20 @@
         ]
       }
     ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 0,
     "layer2.opacity": 1
   },
   {
     "class": "icon_context",
+    "content_margin": [
+      12,
+      12
+    ],
     "layer0.texture": "gruvbox/assets/light/context.png",
     "layer0.opacity": 1,
     "layer1.texture": "gruvbox/assets/light/context--hover.png",
     "layer1.opacity": 0,
     "layer2.texture": "gruvbox/assets/light/context--selected.png",
-    "layer2.opacity": 0,
-    "content_margin": [
-      12,
-      12
-    ]
+    "layer2.opacity": 0
   },
   {
     "class": "icon_context",
@@ -2243,9 +1993,7 @@
         ]
       }
     ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 1,
-    "layer2.opacity": 0
+    "layer1.opacity": 1
   },
   {
     "class": "icon_context",
@@ -2257,22 +2005,20 @@
         ]
       }
     ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 0,
     "layer2.opacity": 1
   },
   {
     "class": "icon_use_buffer",
+    "content_margin": [
+      12,
+      12
+    ],
     "layer0.texture": "gruvbox/assets/light/buffer.png",
     "layer0.opacity": 1,
     "layer1.texture": "gruvbox/assets/light/buffer--hover.png",
     "layer1.opacity": 0,
     "layer2.texture": "gruvbox/assets/light/buffer--selected.png",
-    "layer2.opacity": 0,
-    "content_margin": [
-      12,
-      12
-    ]
+    "layer2.opacity": 0
   },
   {
     "class": "icon_use_buffer",
@@ -2284,9 +2030,7 @@
         ]
       }
     ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 1,
-    "layer2.opacity": 0
+    "layer1.opacity": 1
   },
   {
     "class": "icon_use_buffer",
@@ -2298,8 +2042,6 @@
         ]
       }
     ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 0,
     "layer2.opacity": 1
   },
   {
@@ -2620,61 +2362,6 @@
     ]
   },
   {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_disable_folder_icons"
-    ],
-    "parents": [
-      {
-        "class": "tree_row",
-        "attributes": [
-          "hover"
-        ]
-      }
-    ],
-    "content_margin": [
-      0,
-      0
-    ]
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_disable_folder_icons"
-    ],
-    "parents": [
-      {
-        "class": "tree_row",
-        "attributes": [
-          "expanded",
-          "hover"
-        ]
-      }
-    ],
-    "content_margin": [
-      0,
-      0
-    ]
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_disable_folder_icons"
-    ],
-    "parents": [
-      {
-        "class": "tree_row",
-        "attributes": [
-          "expanded"
-        ]
-      }
-    ],
-    "content_margin": [
-      0,
-      0
-    ]
-  },
-  {
     "class": "icon_folder_loading",
     "settings": [
       "gruvbox_disable_folder_icons"
@@ -2688,61 +2375,6 @@
     "class": "icon_folder_dup",
     "settings": [
       "gruvbox_disable_folder_icons"
-    ],
-    "content_margin": [
-      0,
-      0
-    ]
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_disable_folder_icons"
-    ],
-    "parents": [
-      {
-        "class": "tree_row",
-        "attributes": [
-          "hover"
-        ]
-      }
-    ],
-    "content_margin": [
-      0,
-      0
-    ]
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_disable_folder_icons"
-    ],
-    "parents": [
-      {
-        "class": "tree_row",
-        "attributes": [
-          "expanded",
-          "hover"
-        ]
-      }
-    ],
-    "content_margin": [
-      0,
-      0
-    ]
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_disable_folder_icons"
-    ],
-    "parents": [
-      {
-        "class": "tree_row",
-        "attributes": [
-          "expanded"
-        ]
-      }
     ],
     "content_margin": [
       0,
@@ -3024,17 +2656,8 @@
     "settings": [
       "gruvbox_iconset_spacegray"
     ],
-    "layer0.texture": "gruvbox/assets/light/spacegray__panels.png"
-  },
-  {
-    "class": "panel_button_control",
-    "settings": [
-      "gruvbox_iconset_spacegray"
-    ],
-    "attributes": [
-      "hover"
-    ],
-    "layer0.texture": "gruvbox/assets/light/spacegray__panels--hover.png"
+    "layer0.texture": "gruvbox/assets/light/spacegray__panels.png",
+    "layer1.texture": "gruvbox/assets/light/spacegray__panels--hover.png"
   },
   {
     "class": "dropdown_button_control",
@@ -3980,27 +3603,6 @@
   },
   {
     "class": "quick_panel_label",
-    "match_fg": [
-      157,
-      0,
-      6
-    ],
-    "selected_match_fg": [
-      157,
-      0,
-      6
-    ],
-    "settings": [
-      "gruvbox_accent_red"
-    ]
-  },
-  {
-    "class": "quick_panel_label",
-    "parents": [
-      {
-        "class": "overlay_control"
-      }
-    ],
     "match_fg": [
       157,
       0,
@@ -5458,27 +5060,6 @@
     ]
   },
   {
-    "class": "quick_panel_label",
-    "parents": [
-      {
-        "class": "overlay_control"
-      }
-    ],
-    "match_fg": [
-      121,
-      116,
-      14
-    ],
-    "selected_match_fg": [
-      121,
-      116,
-      14
-    ],
-    "settings": [
-      "gruvbox_accent_green"
-    ]
-  },
-  {
     "class": "quick_panel_path_label",
     "match_fg": [
       121,
@@ -6906,27 +6487,6 @@
   },
   {
     "class": "quick_panel_label",
-    "match_fg": [
-      181,
-      118,
-      20
-    ],
-    "selected_match_fg": [
-      181,
-      118,
-      20
-    ],
-    "settings": [
-      "gruvbox_accent_yellow"
-    ]
-  },
-  {
-    "class": "quick_panel_label",
-    "parents": [
-      {
-        "class": "overlay_control"
-      }
-    ],
     "match_fg": [
       181,
       118,
@@ -8384,27 +7944,6 @@
     ]
   },
   {
-    "class": "quick_panel_label",
-    "parents": [
-      {
-        "class": "overlay_control"
-      }
-    ],
-    "match_fg": [
-      7,
-      102,
-      120
-    ],
-    "selected_match_fg": [
-      7,
-      102,
-      120
-    ],
-    "settings": [
-      "gruvbox_accent_blue"
-    ]
-  },
-  {
     "class": "quick_panel_path_label",
     "match_fg": [
       7,
@@ -9832,27 +9371,6 @@
   },
   {
     "class": "quick_panel_label",
-    "match_fg": [
-      143,
-      63,
-      113
-    ],
-    "selected_match_fg": [
-      143,
-      63,
-      113
-    ],
-    "settings": [
-      "gruvbox_accent_purple"
-    ]
-  },
-  {
-    "class": "quick_panel_label",
-    "parents": [
-      {
-        "class": "overlay_control"
-      }
-    ],
     "match_fg": [
       143,
       63,
@@ -11310,27 +10828,6 @@
     ]
   },
   {
-    "class": "quick_panel_label",
-    "parents": [
-      {
-        "class": "overlay_control"
-      }
-    ],
-    "match_fg": [
-      66,
-      123,
-      88
-    ],
-    "selected_match_fg": [
-      66,
-      123,
-      88
-    ],
-    "settings": [
-      "gruvbox_accent_aqua"
-    ]
-  },
-  {
     "class": "quick_panel_path_label",
     "match_fg": [
       66,
@@ -12758,27 +12255,6 @@
   },
   {
     "class": "quick_panel_label",
-    "match_fg": [
-      175,
-      58,
-      3
-    ],
-    "selected_match_fg": [
-      175,
-      58,
-      3
-    ],
-    "settings": [
-      "gruvbox_accent_orange"
-    ]
-  },
-  {
-    "class": "quick_panel_label",
-    "parents": [
-      {
-        "class": "overlay_control"
-      }
-    ],
     "match_fg": [
       175,
       58,

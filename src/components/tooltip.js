@@ -3,19 +3,20 @@ module.exports = function (values) {
 
   const c = values.colors;
   const info = values.info;
-  const paths = values.paths;
 
   return [
 
+    // Tooltip Background
     {
       'class': 'tool_tip_control',
       'content_margin': [16, 8],
 
+      // Background
       'layer0.tint': c.bnp.fg[info.contrast],
-      'layer0.inner_margin': [0, 0],
       'layer0.opacity': 1,
     },
 
+    // Tooltip Foreground
     {
       'class': 'tool_tip_label_control',
 

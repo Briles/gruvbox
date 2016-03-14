@@ -123,22 +123,6 @@ module.exports = function (values) {
         'selected_match_fg': color[info.brightness],
       },
 
-      // Panel Labels
-      {
-        'class': 'quick_panel_label',
-
-        'parents': [
-
-          {
-            'class': 'overlay_control',
-          },
-
-        ],
-
-        'match_fg': color[info.brightness],
-        'selected_match_fg': color[info.brightness],
-      },
-
       // Panels Sublabels
       {
         'class': 'quick_panel_path_label',
@@ -155,7 +139,6 @@ module.exports = function (values) {
       },
 
       // List Tabs Button
-
       {
         'class': 'show_tabs_dropdown_button',
 
@@ -212,7 +195,6 @@ module.exports = function (values) {
       },
 
       // Highlight Result
-
       {
         'class': 'icon_highlight',
 
@@ -526,7 +508,6 @@ module.exports = function (values) {
       },
 
       // List Tabs Button
-
       {
         'class': 'show_tabs_dropdown_button',
         'settings': [stOpts.accentOpposite],
@@ -591,7 +572,6 @@ module.exports = function (values) {
       },
 
       // Highlight Result
-
       {
         'class': 'icon_highlight',
         'settings': [stOpts.accentOpposite],
@@ -905,7 +885,6 @@ module.exports = function (values) {
       },
 
       // List Tabs Button
-
       {
         'class': 'show_tabs_dropdown_button',
         'settings': [stOpts.accentNeutral],
@@ -970,7 +949,6 @@ module.exports = function (values) {
       },
 
       // Highlight Result
-
       {
         'class': 'icon_highlight',
         'settings': [stOpts.accentNeutral],

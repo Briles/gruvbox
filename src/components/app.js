@@ -2,8 +2,6 @@ module.exports = function (values) {
   'use strict';
 
   const c = values.colors;
-  const info = values.info;
-  const paths = values.paths;
 
   return [
 
@@ -14,6 +12,7 @@ module.exports = function (values) {
       'layer0.opacity': 1,
     },
 
+    // Pane
     {
       'class': 'grid_layout_control',
 
