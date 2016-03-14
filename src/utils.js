@@ -12,8 +12,8 @@
 
   /**
    * Wraps fs.writeFileSync for common usage
-   * @param  {[string]} filepath     [the path to write the file to]
-   * @param  {[string]} filecontents [the contents of the file to be written]
+   * @param {string} filepath     the path to write the file to
+   * @param {string} filecontents the contents of the file to be written
    */
   var writeOutput = function (filepath, filecontents) {
     if (path.normalize(filepath)) {
