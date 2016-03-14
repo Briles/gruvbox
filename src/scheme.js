@@ -477,6 +477,16 @@ module.exports = function (values) {
       },
 
       {
+        name: 'HTML Entity Punctuation',
+        scope: [
+          'constant.character.entity punctuation.definition.entity',
+        ],
+        settings: {
+          foreground: c.neutralPurple,
+        },
+      },
+
+      {
         scope: [
           'entity.name.class',
           'entity.name.type.class',

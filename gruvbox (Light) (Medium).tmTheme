@@ -473,6 +473,17 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>HTML Entity Punctuation</string>
+        <key>scope</key>
+        <string>constant.character.entity punctuation.definition.entity</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#b16286</string>
+        </dict>
+      </dict>
+      <dict>
         <key>scope</key>
         <string>entity.name.class, entity.name.type.class, entity.other.attribute-name.class</string>
         <key>settings</key>
@@ -1131,6 +1142,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>29423b20-419a-430c-a1c1-d7b44967a5e6</string>
+    <string>33dbc9eb-5d26-4b3b-950b-30fa9fb58e03</string>
   </dict>
 </plist>
