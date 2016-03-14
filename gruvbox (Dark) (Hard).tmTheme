@@ -76,7 +76,7 @@
         <key>name</key>
         <string>Comments</string>
         <key>scope</key>
-        <string>comment, markup.strikethrough, meta.punctuation.separator, punctuation.definition.comment, punctuation.whitespace.comment, text.cancelled</string>
+        <string>comment, comment text, markup.strikethrough, meta.punctuation.separator, punctuation.definition.comment, punctuation.whitespace.comment, text.cancelled</string>
         <key>settings</key>
         <dict>
           <key>fontStyle</key>
@@ -1131,6 +1131,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>63f5ed0f-c070-439a-ad2d-d6bd3eef6547</string>
+    <string>86a90a96-4457-43ca-b8f9-ee04996a2050</string>
   </dict>
 </plist>

@@ -55,6 +55,7 @@ module.exports = function (values) {
       {
         name: 'Comments',
         scope: [
+          'comment text',
           'comment',
           'markup.strikethrough',
           'meta.punctuation.separator',
