@@ -178,7 +178,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>storage.modifier.import, storage.modifier.package</string>
+        <string>storage.modifier.import, storage.modifier.package, storage.type.import</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -445,7 +445,7 @@
         <key>name</key>
         <string>Methods</string>
         <key>scope</key>
-        <string>meta.function-call.method variable.function, meta.function-call.static variable.function, support.function.mutator</string>
+        <string>meta.function-call.method variable.function, meta.function-call.static variable.function, meta.method, meta.method-call, support.function.mutator</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -530,11 +530,20 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>meta.class.body, meta.method, meta.method-call, meta.separator, meta.tag</string>
+        <string>meta.class.body, meta.separator, meta.tag</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
           <string>#1d2021</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>xxx</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#00ffff</string>
         </dict>
       </dict>
       <dict>
@@ -1122,6 +1131,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>bf96332b-dd9d-46a6-905d-b2a8ad9fb28e</string>
+    <string>0884c06c-3acb-4804-98f3-30366f6ea893</string>
   </dict>
 </plist>

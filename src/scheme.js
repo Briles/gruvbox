@@ -171,6 +171,7 @@ module.exports = function (values) {
         scope: [
           'storage.modifier.package',
           'storage.modifier.import',
+          'storage.type.import',
         ],
         settings: {
           foreground: c.bnp.fg[info.contrast],
@@ -444,6 +445,8 @@ module.exports = function (values) {
           'meta.function-call.method variable.function',
           'meta.function-call.static variable.function',
           'support.function.mutator',
+          'meta.method-call',
+          'meta.method',
         ],
         settings: {
           foreground: c.neutralAqua,
@@ -539,13 +542,20 @@ module.exports = function (values) {
       {
         scope: [
           'meta.class.body',
-          'meta.method-call',
-          'meta.method',
           'meta.separator',
           'meta.tag',
         ],
         settings: {
           foreground: c.bnp.fg[info.contrast],
+        },
+      },
+
+      {
+        scope: [
+          'xxx',
+        ],
+        settings: {
+          foreground: c.test,
         },
       },
 
