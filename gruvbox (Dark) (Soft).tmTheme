@@ -492,7 +492,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>entity.name.tag, keyword.doctype.xml, punctuation.definition.prolog.haml</string>
+        <string>entity.name.tag, entity.tag, keyword.doctype.xml, punctuation.definition.prolog.haml</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1122,6 +1122,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>615370d1-5450-4159-958d-0e211f829b42</string>
+    <string>bb6bb9a5-6085-49e0-b9c6-8aad3153ea12</string>
   </dict>
 </plist>

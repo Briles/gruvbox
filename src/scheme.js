@@ -497,6 +497,7 @@ module.exports = function (values) {
       {
         scope: [
           'entity.name.tag',
+          'entity.tag',
           'keyword.doctype.xml',
           'punctuation.definition.prolog.haml',
         ],
