@@ -454,11 +454,55 @@
         <key>name</key>
         <string>Entity</string>
         <key>scope</key>
-        <string>entity.name.function, entity.name.section, entity.other.attribute-name.id, entity.other.attribute-name.id punctuation.definition.entity</string>
+        <string>entity.name.function, entity.name.section</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
           <string>#79740e</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>HTML &amp; CSS ID</string>
+        <key>scope</key>
+        <string>entity.other.attribute-name.id</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#af3a03</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>HTML &amp; CSS ID Punctuation (#)</string>
+        <key>scope</key>
+        <string>entity.other.attribute-name.id punctuation.definition.entity</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#d65d0e</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>HTML &amp; CSS ID</string>
+        <key>scope</key>
+        <string>entity.other.attribute-name.class</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#b57614</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>HTML &amp; CSS ID Punctuation (#)</string>
+        <key>scope</key>
+        <string>entity.other.attribute-name.class punctuation.definition.entity</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#d79921</string>
         </dict>
       </dict>
       <dict>
@@ -474,7 +518,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>entity.name.class, entity.name.type.class, entity.other.attribute-name.class</string>
+        <string>entity.name.class, entity.name.type.class</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1104,6 +1148,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>d20ea50f-fd96-4225-a119-869919e1ea67</string>
+    <string>87f79c3f-297b-4c4d-92a3-ff3799a8bdd6</string>
   </dict>
 </plist>

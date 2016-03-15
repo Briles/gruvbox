@@ -457,11 +457,49 @@ module.exports = function (values) {
         scope: [
           'entity.name.function',
           'entity.name.section',
-          'entity.other.attribute-name.id',
-          'entity.other.attribute-name.id punctuation.definition.entity',
         ],
         settings: {
           foreground: c.bnp.green,
+        },
+      },
+
+      {
+        name: 'HTML & CSS ID',
+        scope: [
+          'entity.other.attribute-name.id',
+        ],
+        settings: {
+          foreground: c.bnp.orange,
+        },
+      },
+
+      {
+        name: 'HTML & CSS ID Punctuation (#)',
+        scope: [
+          'entity.other.attribute-name.id punctuation.definition.entity',
+        ],
+        settings: {
+          foreground: c.neutralOrange,
+        },
+      },
+
+      {
+        name: 'HTML & CSS ID',
+        scope: [
+          'entity.other.attribute-name.class',
+        ],
+        settings: {
+          foreground: c.bnp.yellow,
+        },
+      },
+
+      {
+        name: 'HTML & CSS ID Punctuation (#)',
+        scope: [
+          'entity.other.attribute-name.class punctuation.definition.entity',
+        ],
+        settings: {
+          foreground: c.neutralYellow,
         },
       },
 
@@ -479,7 +517,6 @@ module.exports = function (values) {
         scope: [
           'entity.name.class',
           'entity.name.type.class',
-          'entity.other.attribute-name.class',
         ],
         settings: {
           foreground: c.bnp.yellow,
