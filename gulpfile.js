@@ -56,5 +56,5 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', function (callback) {
-  runSequence('build', 'watch', callback);
+  runSequence('watch', callback);
 });
