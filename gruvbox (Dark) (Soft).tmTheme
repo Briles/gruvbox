@@ -344,17 +344,6 @@
         </dict>
       </dict>
       <dict>
-        <key>name</key>
-        <string>Punctuation</string>
-        <key>scope</key>
-        <string>punctuation.definition.comment</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#928374</string>
-        </dict>
-      </dict>
-      <dict>
         <key>scope</key>
         <string>punctuation.definition.tag, punctuation.definition.variable</string>
         <key>settings</key>
@@ -365,7 +354,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>punctuation.definition.array, punctuation.definition.parameters</string>
+        <string>punctuation.definition.array</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -550,15 +539,6 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>meta.separator</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#7c6f64</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
         <string>meta.definition.variable</string>
         <key>settings</key>
         <dict>
@@ -657,7 +637,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>markup.heading, punctuation.definition.heading</string>
+        <string>markup.heading</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -876,15 +856,6 @@
         <dict>
           <key>foreground</key>
           <string>#83a598</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>punctuation.section.embedded</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#8ec07c</string>
         </dict>
       </dict>
       <dict>
@@ -1133,6 +1104,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>d1c02ccd-0e92-42c3-9353-86fe018169f8</string>
+    <string>43489e29-bf82-4c39-b2eb-835257b9371a</string>
   </dict>
 </plist>

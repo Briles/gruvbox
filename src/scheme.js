@@ -338,16 +338,6 @@ module.exports = function (values) {
       },
 
       {
-        name: 'Punctuation',
-        scope: [
-          'punctuation.definition.comment',
-        ],
-        settings: {
-          foreground: c.bnp.gray,
-        },
-      },
-
-      {
         scope: [
           'punctuation.definition.tag',
           'punctuation.definition.variable',
@@ -359,7 +349,6 @@ module.exports = function (values) {
 
       {
         scope: [
-          'punctuation.definition.parameters',
           'punctuation.definition.array',
         ],
         settings: {
@@ -564,15 +553,6 @@ module.exports = function (values) {
 
       {
         scope: [
-          'meta.separator',
-        ],
-        settings: {
-          foreground: c.bnp.bg4,
-        },
-      },
-
-      {
-        scope: [
           'meta.definition.variable',
         ],
         settings: {
@@ -673,7 +653,6 @@ module.exports = function (values) {
       {
         scope: [
           'markup.heading',
-          'punctuation.definition.heading',
         ],
         settings: {
           foreground: c.bnp.green,
@@ -892,15 +871,6 @@ module.exports = function (values) {
         ],
         settings: {
           foreground: c.bnp.blue,
-        },
-      },
-
-      {
-        scope: [
-          'punctuation.section.embedded',
-        ],
-        settings: {
-          foreground: c.bnp.aqua,
         },
       },
 

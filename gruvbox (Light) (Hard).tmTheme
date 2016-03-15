@@ -344,17 +344,6 @@
         </dict>
       </dict>
       <dict>
-        <key>name</key>
-        <string>Punctuation</string>
-        <key>scope</key>
-        <string>punctuation.definition.comment</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#928374</string>
-        </dict>
-      </dict>
-      <dict>
         <key>scope</key>
         <string>punctuation.definition.tag, punctuation.definition.variable</string>
         <key>settings</key>
@@ -365,7 +354,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>punctuation.definition.array, punctuation.definition.parameters</string>
+        <string>punctuation.definition.array</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -550,15 +539,6 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>meta.separator</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#a89984</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
         <string>meta.definition.variable</string>
         <key>settings</key>
         <dict>
@@ -657,7 +637,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>markup.heading, punctuation.definition.heading</string>
+        <string>markup.heading</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -876,15 +856,6 @@
         <dict>
           <key>foreground</key>
           <string>#076678</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>punctuation.section.embedded</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#427b58</string>
         </dict>
       </dict>
       <dict>
@@ -1133,6 +1104,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>98115bdb-60df-46bd-a74a-c93f3cff75d3</string>
+    <string>300c5b14-f81f-484c-be00-7360d2ef0104</string>
   </dict>
 </plist>
