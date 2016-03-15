@@ -434,6 +434,36 @@ module.exports = function (values) {
     },
 
     /**
+     * Underline Dirty Tabs
+     */
+
+    // Default Thickness
+    {
+      'class': 'tab_control',
+      'settings': [stOpts.underlineDirtyTabs],
+      'attributes': ['dirty'],
+
+      'layer2.tint': c.bnp.gray,
+    },
+
+    {
+      'class': 'tab_control',
+      'settings': [stOpts.underlineDirtyTabs],
+      'attributes': ['dirty', 'selected'],
+
+      'layer2.opacity': 1, // Border - Bottom
+    },
+
+    // Thick Thickness
+    {
+      'class': 'tab_control',
+      'settings': [stOpts.underlineDirtyTabs, stOpts.underlineDirtyTabsThick],
+      'attributes': ['dirty'],
+
+      'layer2.inner_margin': [0, 0, 0, 2],
+    },
+
+    /**
      * Enable Statusbar Border
      */
 

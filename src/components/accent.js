@@ -1312,6 +1312,37 @@ module.exports = function (values) {
         'layer2.texture': `${neutralAssets}folder__plus_minus_dup--expanded.png`,
       },
 
+      /**
+       * Underline Dirty Tabs
+       */
+
+      // Default Color
+      {
+        'class': 'tab_control',
+        'settings': [stOpts.underlineDirtyTabs],
+        'attributes': ['dirty'],
+
+        'layer2.tint': color[info.brightness],
+      },
+
+      // Opposite Color
+      {
+        'class': 'tab_control',
+        'settings': [stOpts.underlineDirtyTabs, stOpts.accentOpposite],
+        'attributes': ['dirty'],
+
+        'layer2.tint': color[info.oppositeBrightness],
+      },
+
+      // Neutral Color
+      {
+        'class': 'tab_control',
+        'settings': [stOpts.underlineDirtyTabs, stOpts.accentNeutral],
+        'attributes': ['dirty'],
+
+        'layer2.tint': color.neutral,
+      },
+
     ].map(function (obj) {
 
       // auto-add the appropriate 'settings' for each accent

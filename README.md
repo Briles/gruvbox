@@ -324,6 +324,8 @@ Use spacegray-like icons
   "gruvbox_highlight_active_tree_row": true,    // Highlight the active file in the sidebar tree
   "gruvbox_tabs_autowidth": true,               // Auto-size the tabs
   "gruvbox_tabs_bold": true,                    // Enable bold tabs
+  "gruvbox_underline_dirty_tabs": true,         // Underline dirty tabs with the current accent color
+  "gruvbox_underline_dirty_tabs_thick": true,   // Underline dirty tabs with a thicker line (enable "gruvbox_underline_dirty_tabs")
 ```
 
 Extras
