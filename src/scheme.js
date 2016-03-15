@@ -1134,11 +1134,42 @@ module.exports = function (values) {
     uuid: uuid.v4(),
   };
 
-  // Join the scope arrays for compatibility with Sublime Text
-  _.forEach(scheme.settings, function (v) {
-    if (v.scope && v.scope instanceof(Array)) {
-      v.scope = _(v.scope).sort().sortedUniq().join(', ');
+  var allScopes = {};
+
+  _.forEach(scheme.settings.slice(1), function (v) {
+    var identifier = v.name || v.scope;
+
+    // Validation
+    if (!v.scope) {
+      // Ensure there is a scope property
+      throw new Error(`Missing Scope: "${identifier}"`);
+    } else if (!(v.scope instanceof(Array))) {
+      // Ensure the scope property is an Array
+      throw new TypeError(`Scope: "${identifier}" is not of type "Array"`);
+    } else if (_.size(v.scope) < 1) {
+      // Ensure the scope property has atleast 1 element
+      throw new Error(`"${identifier}" must have atleast 1 scope`);
     }
+
+    if (!v.settings) {
+      // Ensure there is a settings property
+      throw new Error(`Missing Settings: "${identifier}"`);
+    } else if (_.size(v.settings) < 1) {
+      // Ensure the settings property has atleast 1 element
+      throw new Error(`"${identifier}" must have atleast 1 setting`);
+    }
+
+    // Ensure there are no duplicate scopes
+    _.forEach(v.scope, function (scope) {
+      if (!allScopes[scope]) {
+        allScopes[scope] = true;
+      } else {
+        throw new Error(`Duplicate Scope Found: "${scope}"`);
+      }
+    });
+
+    // Join the scope arrays for compatibility with Sublime Text
+    v.scope = _(v.scope).sort().sortedUniq().join(', ');
   });
 
   return plist.build(scheme);
