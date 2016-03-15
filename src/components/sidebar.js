@@ -9,7 +9,7 @@ module.exports = function (values) {
     // Sidebar Container
     {
       'class': 'sidebar_container',
-      'content_margin': [0, 12, 0, 0],
+      'content_margin': [0, 12, 1, 0],
 
       // Background
       'layer0.tint': c.container,
@@ -33,14 +33,6 @@ module.exports = function (values) {
       // Background
       'layer0.tint': c.container,
       'layer0.opacity': 1,
-      'layer0.inner_margin': [0, 0, 0, 0],
-
-      // Border- Right
-      'layer1.tint': c.border,
-      'layer1.opacity': 1,
-      'layer1.draw_center': false,
-      'layer1.inner_margin': [0, 0, 1, 0],
-
     },
 
     // Sidebar Heading
@@ -59,12 +51,6 @@ module.exports = function (values) {
       // Background
       'layer0.tint': c.background,
       'layer0.opacity': 0,
-
-      // Border - Right
-      'layer1.tint': c.border,
-      'layer1.opacity': 1,
-      'layer1.draw_center': false,
-      'layer1.inner_margin': [0, 0, 1, 0],
     },
 
     // Sidebar Label

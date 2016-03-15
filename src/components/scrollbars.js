@@ -35,7 +35,7 @@ module.exports = function (values) {
 
       ],
 
-      'layer1.inner_margin': [0, 0, 1, 0], // Border - Right
+      'layer1.opacity': 0, // Border - Right
     },
 
     // Normal Vertical Scrollbar Track Inside Console Panel
@@ -49,7 +49,7 @@ module.exports = function (values) {
 
       ],
 
-      'layer1.opacity': 0, // Border
+      'layer1.opacity': 0, // Border - Right
     },
 
     // Normal Vertical Scrollbar Track Inside AutoComplete
@@ -63,7 +63,7 @@ module.exports = function (values) {
 
       ],
 
-      'layer1.opacity': 0, // Border
+      'layer1.opacity': 0, // Border - Right
     },
 
     // Normal Vertical Scrollbar Track Inside Overlay Panel
@@ -77,7 +77,7 @@ module.exports = function (values) {
 
       ],
 
-      'layer1.opacity': 0, // Border
+      'layer1.opacity': 0, // Border - Right
     },
 
     // Normal Horizontal Scrollbar Track
@@ -89,67 +89,6 @@ module.exports = function (values) {
       'layer1.inner_margin': [0, 1, 0, 0], // Border - Top
     },
 
-    // Normal Horizontal Scrollbar Track Inside Sidebar
-    {
-      'class': 'scroll_bar_control',
-      'attributes': ['horizontal'],
-      'parents': [
-
-        {
-          'class': 'sidebar_container',
-        },
-
-      ],
-
-      'layer1.opacity': 0, // Border - Top
-    },
-
-    // Normal Horizontal Scrollbar Track Inside AutoComplete
-    {
-      'class': 'scroll_bar_control',
-      'attributes': ['horizontal'],
-      'parents': [
-
-        {
-          'class': 'popup_control',
-        },
-
-      ],
-
-      'layer1.opacity': 0, // Border - Top
-    },
-
-    // Normal Horizontal Scrollbar Track Inside Overlay Panel
-    {
-      'class': 'scroll_bar_control',
-      'attributes': ['horizontal'],
-
-      'parents': [
-
-        {
-          'class': 'overlay_control',
-        },
-
-      ],
-
-      'layer1.opacity': 0, // Border - Top
-    },
-
-    // Normal Horizontal Scrollbar Track Inside Console Panel
-    {
-      'class': 'scroll_bar_control',
-      'attributes': ['horizontal'],
-      'parents': [
-
-        {
-          'class': 'panel_control',
-        },
-
-      ],
-
-      'layer1.opacity': 0, // Border - Top
-    },
-
     // Scrollbars Corner
     {
       'class': 'scroll_corner_control',
@@ -157,42 +96,6 @@ module.exports = function (values) {
       // Background
       'layer0.tint': c.container,
       'layer0.opacity': 1,
-      'layer0.inner_margin': [1, 1],
-
-      // Border - Right
-      'layer1.tint': c.border,
-      'layer1.opacity': 1,
-      'layer1.draw_center': false,
-      'layer1.inner_margin': [0, 0, 1, 0],
-    },
-
-    // Scrollbars Corner in Console Panel
-    {
-      'class': 'scroll_corner_control',
-      'parents': [
-
-        {
-          'class': 'panel_control',
-        },
-
-      ],
-
-      'layer0.opacity': 0, // Background
-      'layer1.opacity': 0, // Border - Right
-    },
-
-    // Scrollbars Corner in Pane
-    {
-      'class': 'scroll_corner_control',
-      'parents': [
-
-        {
-          'class': 'sheet_container_control',
-        },
-
-      ],
-
-      'layer1.opacity': 0, // Border - Right
     },
 
     // Scroll Area

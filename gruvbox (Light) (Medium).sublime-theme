@@ -684,7 +684,7 @@
     "content_margin": [
       0,
       12,
-      0,
+      1,
       0
     ],
     "layer0.tint": [
@@ -721,26 +721,7 @@
       234,
       169
     ],
-    "layer0.opacity": 1,
-    "layer0.inner_margin": [
-      0,
-      0,
-      0,
-      0
-    ],
-    "layer1.tint": [
-      247,
-      226,
-      140
-    ],
-    "layer1.opacity": 1,
-    "layer1.draw_center": false,
-    "layer1.inner_margin": [
-      0,
-      0,
-      1,
-      0
-    ]
+    "layer0.opacity": 1
   },
   {
     "class": "sidebar_heading",
@@ -759,20 +740,7 @@
       241,
       199
     ],
-    "layer0.opacity": 0,
-    "layer1.tint": [
-      247,
-      226,
-      140
-    ],
-    "layer1.opacity": 1,
-    "layer1.draw_center": false,
-    "layer1.inner_margin": [
-      0,
-      0,
-      1,
-      0
-    ]
+    "layer0.opacity": 0
   },
   {
     "class": "sidebar_label",
@@ -1202,12 +1170,7 @@
         "class": "sidebar_container"
       }
     ],
-    "layer1.inner_margin": [
-      0,
-      0,
-      1,
-      0
-    ]
+    "layer1.opacity": 0
   },
   {
     "class": "scroll_bar_control",
@@ -1250,97 +1213,13 @@
     ]
   },
   {
-    "class": "scroll_bar_control",
-    "attributes": [
-      "horizontal"
-    ],
-    "parents": [
-      {
-        "class": "sidebar_container"
-      }
-    ],
-    "layer1.opacity": 0
-  },
-  {
-    "class": "scroll_bar_control",
-    "attributes": [
-      "horizontal"
-    ],
-    "parents": [
-      {
-        "class": "popup_control"
-      }
-    ],
-    "layer1.opacity": 0
-  },
-  {
-    "class": "scroll_bar_control",
-    "attributes": [
-      "horizontal"
-    ],
-    "parents": [
-      {
-        "class": "overlay_control"
-      }
-    ],
-    "layer1.opacity": 0
-  },
-  {
-    "class": "scroll_bar_control",
-    "attributes": [
-      "horizontal"
-    ],
-    "parents": [
-      {
-        "class": "panel_control"
-      }
-    ],
-    "layer1.opacity": 0
-  },
-  {
     "class": "scroll_corner_control",
     "layer0.tint": [
       249,
       234,
       169
     ],
-    "layer0.opacity": 1,
-    "layer0.inner_margin": [
-      1,
-      1
-    ],
-    "layer1.tint": [
-      247,
-      226,
-      140
-    ],
-    "layer1.opacity": 1,
-    "layer1.draw_center": false,
-    "layer1.inner_margin": [
-      0,
-      0,
-      1,
-      0
-    ]
-  },
-  {
-    "class": "scroll_corner_control",
-    "parents": [
-      {
-        "class": "panel_control"
-      }
-    ],
-    "layer0.opacity": 0,
-    "layer1.opacity": 0
-  },
-  {
-    "class": "scroll_corner_control",
-    "parents": [
-      {
-        "class": "sheet_container_control"
-      }
-    ],
-    "layer1.opacity": 0
+    "layer0.opacity": 1
   },
   {
     "class": "scroll_area_control",
