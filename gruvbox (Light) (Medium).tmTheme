@@ -138,11 +138,22 @@
         <key>name</key>
         <string>Keywords</string>
         <key>scope</key>
-        <string>keyword, keyword.control, meta.prolog.haml, meta.tag.sgml.doctype.html, punctuation.definition.keyword, variable.documentroot</string>
+        <string>keyword, keyword.control, meta.prolog.haml, meta.tag.sgml.doctype.html, variable.documentroot</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
           <string>#9d0006</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>CSS At-Rule Punctuation (@)</string>
+        <key>scope</key>
+        <string>punctuation.definition.keyword</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#cc241d</string>
         </dict>
       </dict>
       <dict>
@@ -158,7 +169,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>keyword.other.unit</string>
+        <string>constant.other.color punctuation.definition.constant, constant.other.color.rgb-value.scss, constant.other.unit, keyword.other.unit</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -267,7 +278,7 @@
         <key>name</key>
         <string>Constants</string>
         <key>scope</key>
-        <string>constant, constant.numeric, constant.other, constant.other.color, constant.other.color punctuation.definition.constant, constant.other.symbol, support.constant.color</string>
+        <string>constant, constant.numeric, constant.other, constant.other.color, constant.other.symbol, punctuation.definition.constant.scss, support.constant.color</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -285,7 +296,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>constant.character.escape, constant.other.character-class.escape</string>
+        <string>constant.character.escape, constant.character.escaped, constant.other.character-class.escape</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -485,7 +496,7 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>HTML &amp; CSS ID</string>
+        <string>HTML &amp; CSS Class</string>
         <key>scope</key>
         <string>entity.other.attribute-name.class</string>
         <key>settings</key>
@@ -496,7 +507,7 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>HTML &amp; CSS ID Punctuation (#)</string>
+        <string>HTML &amp; CSS Class Punctuation (.)</string>
         <key>scope</key>
         <string>entity.other.attribute-name.class punctuation.definition.entity</string>
         <key>settings</key>
@@ -554,7 +565,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>entity.other.attribute-name.pseudo-class, entity.other.attribute-name.pseudo-element</string>
+        <string>entity.other.attribute-name.pseudo-class, entity.other.attribute-name.pseudo-element, entity.other.attribute-name.tag.pseudo-class</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -723,7 +734,7 @@
         <key>name</key>
         <string>CSS</string>
         <key>scope</key>
-        <string>meta.property-value, support.constant.property-value</string>
+        <string>constant.string.sass, meta.property-value, support.constant.property-value</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1139,6 +1150,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>09c212d2-8ea8-4106-91f4-ef601be7c61c</string>
+    <string>51e44376-217c-4114-ad47-d45812291d35</string>
   </dict>
 </plist>

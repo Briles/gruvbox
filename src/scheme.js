@@ -129,11 +129,20 @@ module.exports = function (values) {
           'keyword.control',
           'meta.prolog.haml',
           'meta.tag.sgml.doctype.html',
-          'punctuation.definition.keyword',
           'variable.documentroot',
         ],
         settings: {
           foreground: c.bnp.red,
+        },
+      },
+
+      {
+        name: 'CSS At-Rule Punctuation (@)',
+        scope: [
+          'punctuation.definition.keyword',
+        ],
+        settings: {
+          foreground: c.neutralRed,
         },
       },
 
@@ -149,6 +158,9 @@ module.exports = function (values) {
 
       {
         scope: [
+          'constant.other.color punctuation.definition.constant',
+          'constant.other.color.rgb-value.scss',
+          'constant.other.unit',
           'keyword.other.unit',
         ],
         settings: {
@@ -262,8 +274,8 @@ module.exports = function (values) {
           'constant.other.symbol',
           'constant.other',
           'constant.other.color',
-          'constant.other.color punctuation.definition.constant',
           'support.constant.color',
+          'punctuation.definition.constant.scss',
         ],
         settings: {
           foreground: c.bnp.purple,
@@ -282,6 +294,7 @@ module.exports = function (values) {
       {
         scope: [
           'constant.character.escape',
+          'constant.character.escaped',
           'constant.other.character-class.escape',
         ],
         settings: {
@@ -484,7 +497,7 @@ module.exports = function (values) {
       },
 
       {
-        name: 'HTML & CSS ID',
+        name: 'HTML & CSS Class',
         scope: [
           'entity.other.attribute-name.class',
         ],
@@ -494,7 +507,7 @@ module.exports = function (values) {
       },
 
       {
-        name: 'HTML & CSS ID Punctuation (#)',
+        name: 'HTML & CSS Class Punctuation (.)',
         scope: [
           'entity.other.attribute-name.class punctuation.definition.entity',
         ],
@@ -563,6 +576,7 @@ module.exports = function (values) {
         scope: [
           'entity.other.attribute-name.pseudo-class',
           'entity.other.attribute-name.pseudo-element',
+          'entity.other.attribute-name.tag.pseudo-class',
         ],
         settings: {
           foreground: c.neutralYellow,
@@ -732,6 +746,7 @@ module.exports = function (values) {
       {
         name: 'CSS',
         scope: [
+          'constant.string.sass',
           'meta.property-value',
           'support.constant.property-value',
         ],
