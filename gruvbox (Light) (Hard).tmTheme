@@ -142,7 +142,7 @@
         <key>name</key>
         <string>Keywords</string>
         <key>scope</key>
-        <string>keyword, keyword.control, meta.prolog.haml, meta.tag.sgml.doctype.html, storage.type.import.haxe, variable.documentroot</string>
+        <string>keyword, keyword.control, meta.at-rule.media support.function.misc, meta.prolog.haml, meta.tag.sgml.doctype.html, storage.type.import.haxe, variable.documentroot</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -517,7 +517,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>entity.other.attribute-name.pseudo-class, entity.other.attribute-name.pseudo-element, entity.other.attribute-name.tag.pseudo-class</string>
+        <string>entity.other.attribute-name.placeholder punctuation.definition.entity, entity.other.attribute-name.pseudo-class, entity.other.attribute-name.pseudo-element, entity.other.attribute-name.tag.pseudo-class, entity.other.attribute-name.tag.pseudo-element</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1066,6 +1066,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>0664cc18-7482-43c9-93fd-908cbe92b093</string>
+    <string>93ff6b1a-6364-46d7-987b-8dee1c30764f</string>
   </dict>
 </plist>

@@ -139,6 +139,7 @@ module.exports = function (values) {
           'meta.tag.sgml.doctype.html',
           'storage.type.import.haxe',
           'variable.documentroot',
+          'meta.at-rule.media support.function.misc'
         ],
         settings: {
           foreground: c.bnp.red,
@@ -536,9 +537,11 @@ module.exports = function (values) {
 
       {
         scope: [
+          'entity.other.attribute-name.placeholder punctuation.definition.entity',
           'entity.other.attribute-name.pseudo-class',
           'entity.other.attribute-name.pseudo-element',
           'entity.other.attribute-name.tag.pseudo-class',
+          'entity.other.attribute-name.tag.pseudo-element',
         ],
         settings: {
           foreground: c.neutralYellow,
