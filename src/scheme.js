@@ -46,6 +46,7 @@ module.exports = function (values) {
           'punctuation',
           'source',
           'text',
+          'meta.method.body.source.cs', // Fix poor syntax highlighting
         ],
         settings: {
           foreground: c.bnp.fg[info.contrast],

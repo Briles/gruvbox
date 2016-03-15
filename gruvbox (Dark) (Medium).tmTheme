@@ -65,7 +65,7 @@
         <key>name</key>
         <string>Text and Source Base Colors</string>
         <key>scope</key>
-        <string>punctuation, source, text</string>
+        <string>meta.method.body.source.cs, punctuation, source, text</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1125,6 +1125,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>c8435144-cb16-4089-a2e4-2447e61a7676</string>
+    <string>bbd8c566-0cf5-45f7-b410-0fded7bcf7e0</string>
   </dict>
 </plist>
