@@ -213,7 +213,7 @@
         <key>name</key>
         <string>Variables</string>
         <key>scope</key>
-        <string>entity.name.variable, meta.definition.variable, variable, variable.interpolation variable, variable.other.interpolation variable</string>
+        <string>entity.name.variable, meta.definition.variable, variable, variable.interpolation variable, variable.other.interpolation variable, variable.parameter.sass</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1066,6 +1066,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>e3d5572a-6da2-4646-b20e-60de1dc0a9d7</string>
+    <string>0664cc18-7482-43c9-93fd-908cbe92b093</string>
   </dict>
 </plist>

@@ -220,6 +220,7 @@ module.exports = function (values) {
           'variable',
           'variable.interpolation variable',
           'variable.other.interpolation variable',
+          'variable.parameter.sass',
         ],
         settings: {
           foreground: c.bnp.blue,
