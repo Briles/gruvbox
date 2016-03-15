@@ -550,15 +550,6 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>xxx</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#00ffff</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
         <string>meta.separator</string>
         <key>settings</key>
         <dict>
@@ -1142,6 +1133,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>907747d1-39a7-4e4f-866c-b1849f17b53a</string>
+    <string>9534449c-f8cf-4967-b819-11f795dad10b</string>
   </dict>
 </plist>

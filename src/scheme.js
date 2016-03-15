@@ -564,15 +564,6 @@ module.exports = function (values) {
 
       {
         scope: [
-          'xxx',
-        ],
-        settings: {
-          foreground: c.test,
-        },
-      },
-
-      {
-        scope: [
           'meta.separator',
         ],
         settings: {
