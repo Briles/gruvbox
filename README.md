@@ -341,6 +341,15 @@ Activation:
 2. Set `gruvbox` as the gutter theme by choosing `SublimeLinter: Choose Gutter Theme` from the command palette and selecting `gruvbox` *or* by changing `"gutter_theme"` to `"Packages/SublimeLinter/gutter-themes/gruvbox/gruvbox.gutter-theme"` in `SublimeLinter.sublime-settings`
 3. Restart Sublime Text
 
+### Bracket Highlighter Icons
+
+![Bracket Highlighter Icons](http://i.imgur.com/8z0feh7.png)
+
+Activation:
+
+1. Move all images in `extras/BracketHighlighter/icons/` to `Sublime Text/Data/Packages/BracketHighlighter/icons/`
+2. Restart Sublime Text
+
 ### Code Fold Icon
 
 ![Code Fold Icons](http://i.imgur.com/DxZmm7a.png)
