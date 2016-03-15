@@ -43,10 +43,24 @@ module.exports = function (values) {
       {
         name: 'Text and Source Base Colors',
         scope: [
-          'punctuation',
           'source',
           'text',
           'meta.method.body.source.cs', // Fix poor syntax highlighting
+        ],
+        settings: {
+          foreground: c.bnp.fg[info.contrast],
+        },
+      },
+
+      {
+        name: 'Punctuation',
+        scope: [
+          'meta.brace',
+          'meta.delimiter',
+          'meta.group.braces',
+          'meta.punctuation.separator',
+          'meta.separator',
+          'punctuation',
         ],
         settings: {
           foreground: c.bnp.fg[info.contrast],
@@ -59,7 +73,6 @@ module.exports = function (values) {
           'comment text',
           'comment',
           'markup.strikethrough',
-          'meta.punctuation.separator',
           'punctuation.definition.comment',
           'punctuation.whitespace.comment',
           'text.cancelled',
@@ -102,15 +115,6 @@ module.exports = function (values) {
         ],
         settings: {
           foreground: c.bnp.yellow,
-        },
-      },
-
-      {
-        scope: [
-          'entity.quasi.element',
-        ],
-        settings: {
-          foreground: c.bnp.fg[info.contrast],
         },
       },
 
@@ -355,15 +359,6 @@ module.exports = function (values) {
 
       {
         scope: [
-          'punctuation.definition.array',
-        ],
-        settings: {
-          foreground: c.bnp.fg[info.contrast],
-        },
-      },
-
-      {
-        scope: [
           'punctuation.definition.heading',
           'punctuation.definition.identity',
         ],
@@ -398,17 +393,6 @@ module.exports = function (values) {
         ],
         settings: {
           foreground: c.bnp.blue,
-        },
-      },
-
-      {
-        scope: [
-          'punctuation.section.method',
-          'punctuation.section.class',
-          'punctuation.section.inner-class',
-        ],
-        settings: {
-          foreground: c.bnp.fg[info.contrast],
         },
       },
 
@@ -531,17 +515,6 @@ module.exports = function (values) {
 
       {
         scope: [
-          'entity.name.class.punctuation.separator',
-          'entity.name.type.class.punctuation.separator',
-          'punctuation.separator',
-        ],
-        settings: {
-          foreground: c.bnp.fg[info.contrast],
-        },
-      },
-
-      {
-        scope: [
           'entity.name.tag',
           'entity.tag',
           'source.less keyword.control.html.elements',
@@ -589,7 +562,6 @@ module.exports = function (values) {
       {
         scope: [
           'meta.class.body',
-          'meta.separator',
           'meta.tag',
         ],
         settings: {
@@ -858,15 +830,6 @@ module.exports = function (values) {
       },
 
       {
-        scope: [
-          'source.java-properties.punctuation',
-        ],
-        settings: {
-          foreground: c.bnp.fg[info.contrast],
-        },
-      },
-
-      {
         name: 'PYTHON',
         scope: [
           'keyword.operator.logical.python',
@@ -882,15 +845,6 @@ module.exports = function (values) {
         ],
         settings: {
           foreground: c.bnp.purple,
-        },
-      },
-
-      {
-        scope: [
-          'source.ruby.constant.other.symbol.punctuation',
-        ],
-        settings: {
-          foreground: c.bnp.fg[info.contrast],
         },
       },
 

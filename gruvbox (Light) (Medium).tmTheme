@@ -65,7 +65,18 @@
         <key>name</key>
         <string>Text and Source Base Colors</string>
         <key>scope</key>
-        <string>meta.method.body.source.cs, punctuation, source, text</string>
+        <string>meta.method.body.source.cs, source, text</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#282828</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Punctuation</string>
+        <key>scope</key>
+        <string>meta.brace, meta.delimiter, meta.group.braces, meta.punctuation.separator, meta.separator, punctuation</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -76,7 +87,7 @@
         <key>name</key>
         <string>Comments</string>
         <key>scope</key>
-        <string>comment, comment text, markup.strikethrough, meta.punctuation.separator, punctuation.definition.comment, punctuation.whitespace.comment, text.cancelled</string>
+        <string>comment, comment text, markup.strikethrough, punctuation.definition.comment, punctuation.whitespace.comment, text.cancelled</string>
         <key>settings</key>
         <dict>
           <key>fontStyle</key>
@@ -114,15 +125,6 @@
         <dict>
           <key>foreground</key>
           <string>#b57614</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>entity.quasi.element</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#282828</string>
         </dict>
       </dict>
       <dict>
@@ -349,15 +351,6 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>punctuation.definition.array</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#282828</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
         <string>punctuation.definition.heading, punctuation.definition.identity</string>
         <key>settings</key>
         <dict>
@@ -394,15 +387,6 @@
         <dict>
           <key>foreground</key>
           <string>#076678</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>punctuation.section.class, punctuation.section.inner-class, punctuation.section.method</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#282828</string>
         </dict>
       </dict>
       <dict>
@@ -522,15 +506,6 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>entity.name.class.punctuation.separator, entity.name.type.class.punctuation.separator, punctuation.separator</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#282828</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
         <string>entity.name.tag, entity.tag, keyword.control.untitled, keyword.doctype.xml, punctuation.definition.prolog.haml, source.less keyword.control.html.elements</string>
         <key>settings</key>
         <dict>
@@ -569,7 +544,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>meta.class.body, meta.separator, meta.tag</string>
+        <string>meta.class.body, meta.tag</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -833,15 +808,6 @@
         </dict>
       </dict>
       <dict>
-        <key>scope</key>
-        <string>source.java-properties.punctuation</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#282828</string>
-        </dict>
-      </dict>
-      <dict>
         <key>name</key>
         <string>PYTHON</string>
         <key>scope</key>
@@ -859,15 +825,6 @@
         <dict>
           <key>foreground</key>
           <string>#8f3f71</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>source.ruby.constant.other.symbol.punctuation</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#282828</string>
         </dict>
       </dict>
       <dict>
@@ -1125,6 +1082,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>1af2bf8c-9d3d-425b-b3ec-7b39078ee979</string>
+    <string>ff276542-107f-4b92-b5ba-110daa57a864</string>
   </dict>
 </plist>
