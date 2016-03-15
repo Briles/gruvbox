@@ -12,6 +12,7 @@
   },
   "homepage": "https://github.com/briles/gruvbox#readme",
   "devDependencies": {
+    "commander": "^2.9.0",
     "gulp": "^3.9.1",
     "jscs": "^2.10.1",
     "lodash": "^4.5.1",
