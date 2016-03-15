@@ -375,10 +375,6 @@
       219,
       162
     ],
-    "layer0.inner_margin": [
-      0,
-      0
-    ],
     "layer1.opacity": 1,
     "layer1.tint": [
       232,
@@ -1449,12 +1445,6 @@
       237,
       219,
       162
-    ],
-    "layer0.inner_margin": [
-      0,
-      0,
-      0,
-      0
     ],
     "layer0.opacity": 1,
     "layer1.tint": [

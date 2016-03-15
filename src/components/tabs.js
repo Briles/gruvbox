@@ -19,7 +19,6 @@ module.exports = function (values) {
       // Background
       'layer0.opacity': 1,
       'layer0.tint': c.container,
-      'layer0.inner_margin': [0, 0],
 
       // Border - Bottom
       'layer1.opacity': 1,

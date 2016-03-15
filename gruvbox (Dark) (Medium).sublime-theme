@@ -375,10 +375,6 @@
       24,
       24
     ],
-    "layer0.inner_margin": [
-      0,
-      0
-    ],
     "layer1.opacity": 1,
     "layer1.tint": [
       9,
@@ -1449,12 +1445,6 @@
       24,
       24,
       24
-    ],
-    "layer0.inner_margin": [
-      0,
-      0,
-      0,
-      0
     ],
     "layer0.opacity": 1,
     "layer1.tint": [
