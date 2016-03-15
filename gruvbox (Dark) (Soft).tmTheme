@@ -128,8 +128,10 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>Template String Punctuation</string>
         <key>scope</key>
-        <string>punctuation.quasi</string>
+        <string>punctuation.quasi, punctuation.section.embedded, variable.other.interpolation.scss</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -211,7 +213,7 @@
         <key>name</key>
         <string>Variables</string>
         <key>scope</key>
-        <string>entity.name.variable, meta.definition.variable, variable, variable.interpolation variable</string>
+        <string>entity.name.variable, meta.definition.variable, variable, variable.interpolation variable, variable.other.interpolation variable</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -378,15 +380,6 @@
           <string>#fb4934</string>
           <key>fontStyle</key>
           <string>italic</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>punctuation.section.embedded</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#83a598</string>
         </dict>
       </dict>
       <dict>
@@ -829,15 +822,6 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>source.ruby.embedded</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#83a598</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
         <string>source.ruby.punctuation.separator.namespace</string>
         <key>settings</key>
         <dict>
@@ -1082,6 +1066,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>f6bdc0cc-45d3-424f-a950-85eba2c80b3f</string>
+    <string>dc035f75-1645-4fa9-967a-156187231797</string>
   </dict>
 </plist>

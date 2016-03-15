@@ -119,8 +119,11 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Template String Punctuation',
         scope: [
           'punctuation.quasi',
+          'punctuation.section.embedded',
+          'variable.other.interpolation.scss',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -212,10 +215,11 @@ module.exports = function (values) {
       {
         name: 'Variables',
         scope: [
+          'entity.name.variable',
+          'meta.definition.variable',
           'variable',
           'variable.interpolation variable',
-          'meta.definition.variable',
-          'entity.name.variable',
+          'variable.other.interpolation variable',
         ],
         settings: {
           foreground: c.bnp.blue,
@@ -384,15 +388,6 @@ module.exports = function (values) {
         settings: {
           foreground: c.bnp.red,
           fontStyle: 'italic',
-        },
-      },
-
-      {
-        scope: [
-          'punctuation.section.embedded',
-        ],
-        settings: {
-          foreground: c.bnp.blue,
         },
       },
 
@@ -845,15 +840,6 @@ module.exports = function (values) {
         ],
         settings: {
           foreground: c.bnp.purple,
-        },
-      },
-
-      {
-        scope: [
-          'source.ruby.embedded',
-        ],
-        settings: {
-          foreground: c.bnp.blue,
         },
       },
 
