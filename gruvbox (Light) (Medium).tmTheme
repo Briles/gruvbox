@@ -138,7 +138,7 @@
         <key>name</key>
         <string>Keywords</string>
         <key>scope</key>
-        <string>keyword, keyword.control, meta.prolog.haml, meta.tag.sgml.doctype.html, variable.documentroot</string>
+        <string>keyword, keyword.control, meta.prolog.haml, meta.tag.sgml.doctype.html, storage.type.import.haxe, variable.documentroot</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -160,7 +160,7 @@
         <key>name</key>
         <string>Operators</string>
         <key>scope</key>
-        <string>keyword.operator, keyword.other.arrow, keyword.other.double-colon</string>
+        <string>keyword.control.new, keyword.operator, keyword.other.arrow, keyword.other.double-colon</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -209,7 +209,7 @@
         <key>name</key>
         <string>Variables</string>
         <key>scope</key>
-        <string>variable, variable.interpolation variable</string>
+        <string>entity.name.variable, meta.definition.variable, variable, variable.interpolation variable</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -228,8 +228,10 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>Parameters</string>
         <key>scope</key>
-        <string>variable.parameter</string>
+        <string>meta.parameters, variable.parameter</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -572,15 +574,6 @@
         <dict>
           <key>foreground</key>
           <string>#282828</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>meta.definition.variable</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#076678</string>
         </dict>
       </dict>
       <dict>
@@ -1132,6 +1125,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>ae546c92-6971-4197-8177-a44330aefe10</string>
+    <string>144ca963-224d-41a7-98a2-bbe5ff865048</string>
   </dict>
 </plist>

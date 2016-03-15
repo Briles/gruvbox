@@ -129,6 +129,7 @@ module.exports = function (values) {
           'keyword.control',
           'meta.prolog.haml',
           'meta.tag.sgml.doctype.html',
+          'storage.type.import.haxe',
           'variable.documentroot',
         ],
         settings: {
@@ -149,6 +150,7 @@ module.exports = function (values) {
       {
         name: 'Operators',
         scope: [
+          'keyword.control.new',
           'keyword.operator',
           'keyword.other.arrow',
           'keyword.other.double-colon',
@@ -207,6 +209,8 @@ module.exports = function (values) {
         scope: [
           'variable',
           'variable.interpolation variable',
+          'meta.definition.variable',
+          'entity.name.variable',
         ],
         settings: {
           foreground: c.bnp.blue,
@@ -226,8 +230,10 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Parameters',
         scope: [
           'variable.parameter',
+          'meta.parameters',
         ],
         settings: {
           foreground: c.bnp.fg[info.contrast],
@@ -587,15 +593,6 @@ module.exports = function (values) {
         ],
         settings: {
           foreground: c.bnp.fg[info.contrast],
-        },
-      },
-
-      {
-        scope: [
-          'meta.definition.variable',
-        ],
-        settings: {
-          foreground: c.bnp.blue,
         },
       },
 
