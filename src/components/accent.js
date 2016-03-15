@@ -1165,8 +1165,8 @@ module.exports = function (values) {
         'class': 'icon_folder',
         'settings': [stOpts.enablePlusMinusFolderIcons],
 
-        'layer2.texture': `${brightnessAssets}folder__pm--hover.png`,
-        'layer3.texture': `${brightnessAssets}folder__pm--expanded.png`,
+        'layer2.texture': `${brightnessAssets}folder__plus_minus--hover.png`,
+        'layer3.texture': `${brightnessAssets}folder__plus_minus--expanded.png`,
       },
 
       // Symlinked
@@ -1174,8 +1174,8 @@ module.exports = function (values) {
         'class': 'icon_folder_dup',
         'settings': [stOpts.enablePlusMinusFolderIcons],
 
-        'layer1.texture': `${brightnessAssets}folder__pm_dup--hover.png`,
-        'layer2.texture': `${brightnessAssets}folder__pm_dup--expanded.png`,
+        'layer1.texture': `${brightnessAssets}folder__plus_minus_dup--hover.png`,
+        'layer2.texture': `${brightnessAssets}folder__plus_minus_dup--expanded.png`,
       },
 
       /**
@@ -1232,8 +1232,8 @@ module.exports = function (values) {
         'class': 'icon_folder',
         'settings': [stOpts.enablePlusMinusFolderIcons, stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeBrightnessAssets}folder__pm--hover.png`,
-        'layer3.texture': `${oppositeBrightnessAssets}folder__pm--expanded.png`,
+        'layer2.texture': `${oppositeBrightnessAssets}folder__plus_minus--hover.png`,
+        'layer3.texture': `${oppositeBrightnessAssets}folder__plus_minus--expanded.png`,
       },
 
       // Symlinked
@@ -1241,8 +1241,8 @@ module.exports = function (values) {
         'class': 'icon_folder_dup',
         'settings': [stOpts.enablePlusMinusFolderIcons, stOpts.accentOpposite],
 
-        'layer1.texture': `${oppositeBrightnessAssets}folder__pm_dup--hover.png`,
-        'layer2.texture': `${oppositeBrightnessAssets}folder__pm_dup--expanded.png`,
+        'layer1.texture': `${oppositeBrightnessAssets}folder__plus_minus_dup--hover.png`,
+        'layer2.texture': `${oppositeBrightnessAssets}folder__plus_minus_dup--expanded.png`,
       },
 
       /**
@@ -1299,8 +1299,8 @@ module.exports = function (values) {
         'class': 'icon_folder',
         'settings': [stOpts.enablePlusMinusFolderIcons, stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralAssets}folder__pm--hover.png`,
-        'layer3.texture': `${neutralAssets}folder__pm--expanded.png`,
+        'layer2.texture': `${neutralAssets}folder__plus_minus--hover.png`,
+        'layer3.texture': `${neutralAssets}folder__plus_minus--expanded.png`,
       },
 
       // Symlinked
@@ -1308,8 +1308,8 @@ module.exports = function (values) {
         'class': 'icon_folder_dup',
         'settings': [stOpts.enablePlusMinusFolderIcons, stOpts.accentNeutral],
 
-        'layer1.texture': `${neutralAssets}folder__pm_dup--hover.png`,
-        'layer2.texture': `${neutralAssets}folder__pm_dup--expanded.png`,
+        'layer1.texture': `${neutralAssets}folder__plus_minus_dup--hover.png`,
+        'layer2.texture': `${neutralAssets}folder__plus_minus_dup--expanded.png`,
       },
 
     ].map(function (obj) {
