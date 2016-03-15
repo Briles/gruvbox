@@ -538,6 +538,8 @@ module.exports = function (values) {
         scope: [
           'entity.name.tag',
           'entity.tag',
+          'source.less keyword.control.html.elements',
+          'keyword.control.untitled',
           'keyword.doctype.xml',
           'punctuation.definition.prolog.haml',
         ],
