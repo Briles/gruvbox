@@ -209,7 +209,7 @@
         <key>name</key>
         <string>Variables</string>
         <key>scope</key>
-        <string>variable</string>
+        <string>variable, variable.interpolation variable</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -218,31 +218,13 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>Variable - Dollar</string>
+        <string>Variable - Punctuation</string>
         <key>scope</key>
-        <string>variable.other.dollar punctuation.dollar</string>
+        <string>punctuation.definition.variable, variable.interpolation, variable.other.dollar punctuation.dollar</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
           <string>#458588</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>variable.interpolation</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#458588</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>variable.interpolation variable</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#076678</string>
         </dict>
       </dict>
       <dict>
@@ -356,7 +338,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>punctuation.definition.tag, punctuation.definition.variable</string>
+        <string>punctuation.definition.tag</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1150,6 +1132,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>51a62edd-387c-48c5-8f6e-f14f2258de4e</string>
+    <string>33bd7595-8011-4c4b-8ef5-8bc2ec9d2cf7</string>
   </dict>
 </plist>

@@ -206,37 +206,22 @@ module.exports = function (values) {
         name: 'Variables',
         scope: [
           'variable',
-        ],
-        settings: {
-          foreground: c.bnp.blue,
-        },
-      },
-
-      {
-        name: 'Variable - Dollar',
-        scope: [
-          'variable.other.dollar punctuation.dollar',
-        ],
-        settings: {
-          foreground: c.neutralBlue,
-        },
-      },
-
-      {
-        scope: [
-          'variable.interpolation',
-        ],
-        settings: {
-          foreground: c.neutralBlue,
-        },
-      },
-
-      {
-        scope: [
           'variable.interpolation variable',
         ],
         settings: {
           foreground: c.bnp.blue,
+        },
+      },
+
+      {
+        name: 'Variable - Punctuation',
+        scope: [
+          'punctuation.definition.variable',
+          'variable.interpolation',
+          'variable.other.dollar punctuation.dollar',
+        ],
+        settings: {
+          foreground: c.neutralBlue,
         },
       },
 
@@ -355,7 +340,6 @@ module.exports = function (values) {
       {
         scope: [
           'punctuation.definition.tag',
-          'punctuation.definition.variable',
         ],
         settings: {
           foreground: c.bnp.blue,
