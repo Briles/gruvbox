@@ -620,15 +620,6 @@ module.exports = function (values) {
 
       {
         scope: [
-          'meta.selector',
-        ],
-        settings: {
-          foreground: c.bnp.red,
-        },
-      },
-
-      {
-        scope: [
           'meta.brace.round',
           'punctuation.definition.parameters',
         ],

@@ -610,15 +610,6 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>meta.selector</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#9d0006</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
         <string>meta.brace.round, punctuation.definition.parameters</string>
         <key>settings</key>
         <dict>
@@ -1148,6 +1139,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>02d060c1-45cb-409a-a4d7-b6aae54d4a0d</string>
+    <string>7591ae32-37e4-4575-9eec-a42ddd57922d</string>
   </dict>
 </plist>
