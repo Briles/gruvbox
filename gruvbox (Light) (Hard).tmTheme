@@ -160,7 +160,7 @@
         <key>name</key>
         <string>Operators</string>
         <key>scope</key>
-        <string>keyword.operator</string>
+        <string>keyword.operator, keyword.other.arrow, keyword.other.double-colon</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1058,7 +1058,7 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>SublimeLinter Gutter Mar</string>
+        <string>SublimeLinter Gutter Mark</string>
         <key>scope</key>
         <string>sublimelinter.gutter-mark</string>
         <key>settings</key>
@@ -1150,6 +1150,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>f5e7badc-984f-4644-82dd-c6371c0afdb3</string>
+    <string>51a62edd-387c-48c5-8f6e-f14f2258de4e</string>
   </dict>
 </plist>

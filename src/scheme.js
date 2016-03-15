@@ -150,6 +150,8 @@ module.exports = function (values) {
         name: 'Operators',
         scope: [
           'keyword.operator',
+          'keyword.other.arrow',
+          'keyword.other.double-colon',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -1062,7 +1064,7 @@ module.exports = function (values) {
       },
 
       {
-        name: 'SublimeLinter Gutter Mar',
+        name: 'SublimeLinter Gutter Mark',
         scope: [
           'sublimelinter.gutter-mark',
         ],
