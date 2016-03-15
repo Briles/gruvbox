@@ -1334,6 +1334,15 @@
     "layer1.opacity": 0
   },
   {
+    "class": "scroll_corner_control",
+    "parents": [
+      {
+        "class": "sheet_container_control"
+      }
+    ],
+    "layer1.opacity": 0
+  },
+  {
     "class": "scroll_area_control",
     "overlay": false
   },

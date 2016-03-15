@@ -181,6 +181,20 @@ module.exports = function (values) {
       'layer1.opacity': 0, // Border - Right
     },
 
+    // Scrollbars Corner in Pane
+    {
+      'class': 'scroll_corner_control',
+      'parents': [
+
+        {
+          'class': 'sheet_container_control',
+        },
+
+      ],
+
+      'layer1.opacity': 0, // Border - Right
+    },
+
     // Scroll Area
     {
       'class': 'scroll_area_control',
