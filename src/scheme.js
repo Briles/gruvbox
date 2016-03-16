@@ -43,9 +43,10 @@ module.exports = function (values) {
       {
         name: 'Text and Source Base Colors',
         scope: [
+          'meta.method.body.source.cs', // Fix poor syntax highlighting
+          'none',
           'source',
           'text',
-          'meta.method.body.source.cs', // Fix poor syntax highlighting
         ],
         settings: {
           foreground: c.bnp.fg[info.contrast],
@@ -594,16 +595,6 @@ module.exports = function (values) {
         ],
         settings: {
           foreground: c.bnp.fg3,
-        },
-      },
-
-      {
-        name: 'None',
-        scope: [
-          'none',
-        ],
-        settings: {
-          foreground: c.bnp.fg[info.contrast],
         },
       },
 

@@ -65,7 +65,7 @@
         <key>name</key>
         <string>Text and Source Base Colors</string>
         <key>scope</key>
-        <string>meta.method.body.source.cs, source, text</string>
+        <string>meta.method.body.source.cs, none, source, text</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -569,17 +569,6 @@
         <dict>
           <key>foreground</key>
           <string>#bdae93</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>None</string>
-        <key>scope</key>
-        <string>none</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#f9f5d7</string>
         </dict>
       </dict>
       <dict>
@@ -1232,6 +1221,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>c4e36157-f67e-403a-92ab-44ebbb1fa89d</string>
+    <string>97c9ce47-275b-4033-a109-f89aec0a61e3</string>
   </dict>
 </plist>
