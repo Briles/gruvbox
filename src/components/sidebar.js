@@ -8,8 +8,8 @@ module.exports = function (values) {
 
     // Sidebar Container
     {
-      'class': 'sidebar_container',
-      'content_margin': [0, 12, 1, 0],
+      class: 'sidebar_container',
+      content_margin: [0, 12, 1, 0],
 
       // Background
       'layer0.tint': c.container,
@@ -24,11 +24,11 @@ module.exports = function (values) {
 
     // Sidebar Tree
     {
-      'class': 'sidebar_tree',
-      'row_padding': [24, 5],
-      'indent': 16,
-      'indent_offset': 0,
-      'indent_top_level': false,
+      class: 'sidebar_tree',
+      row_padding: [24, 5],
+      indent: 16,
+      indent_offset: 0,
+      indent_top_level: false,
 
       // Background
       'layer0.tint': c.container,
@@ -37,16 +37,16 @@ module.exports = function (values) {
 
     // Sidebar Heading
     {
-      'class': 'sidebar_heading',
+      class: 'sidebar_heading',
 
-      'color': c.gs.fg1,
+      color: c.gs.fg1,
       'font.bold': false,
       'font.size': 12,
     },
 
     // Sidebar Tree Row
     {
-      'class': 'tree_row',
+      class: 'tree_row',
 
       // Background
       'layer0.tint': c.background,
@@ -55,149 +55,149 @@ module.exports = function (values) {
 
     // Sidebar Label
     {
-      'class': 'sidebar_label',
+      class: 'sidebar_label',
 
-      'color': c.gs.gray,
+      color: c.gs.gray,
       'font.bold': false,
       'font.italic': false,
     },
 
     // Sidebar Label Hover
     {
-      'class': 'sidebar_label',
-      'parents': [
+      class: 'sidebar_label',
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['hover'],
+          class: 'tree_row',
+          attributes: ['hover'],
         },
 
       ],
 
-      'color': c.gs.fg1,
+      color: c.gs.fg1,
     },
 
     // Sidebar Label Selected
     {
-      'class': 'sidebar_label',
-      'parents': [
+      class: 'sidebar_label',
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['selected'],
+          class: 'tree_row',
+          attributes: ['selected'],
         },
 
       ],
 
       'font.bold': false,
-      'color': c.gs.fg1,
+      color: c.gs.fg1,
     },
 
     // Sidebar Folder Label
     {
-      'class': 'sidebar_label',
-      'parents': [
+      class: 'sidebar_label',
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['expandable'],
+          class: 'tree_row',
+          attributes: ['expandable'],
         },
 
       ],
 
-      'color': c.gs.fg4,
+      color: c.gs.fg4,
     },
 
     // Sidebar Bold Folder Label
     {
-      'class': 'sidebar_label',
-      'parents': [
+      class: 'sidebar_label',
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['expandable'],
+          class: 'tree_row',
+          attributes: ['expandable'],
         },
 
       ],
-      'settings': ['bold_folder_labels'],
+      settings: ['bold_folder_labels'],
 
       'font.bold': true,
     },
 
     // Sidebar Folder Label Expanded
     {
-      'class': 'sidebar_label',
-      'parents': [
+      class: 'sidebar_label',
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['expanded'],
+          class: 'tree_row',
+          attributes: ['expanded'],
         },
 
       ],
 
-      'color': c.gs.fg1,
+      color: c.gs.fg1,
     },
 
     // Sidebar Label Hover
     {
-      'class': 'sidebar_label',
-      'parents': [
+      class: 'sidebar_label',
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['hover'],
+          class: 'tree_row',
+          attributes: ['hover'],
         },
 
       ],
 
-      'color': c.gs.fg1,
+      color: c.gs.fg1,
     },
 
     // Sidebar Bold Folder Label Expanded
     {
-      'class': 'sidebar_label',
-      'parents': [
+      class: 'sidebar_label',
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['expanded'],
+          class: 'tree_row',
+          attributes: ['expanded'],
         },
 
       ],
-      'settings': ['bold_folder_labels'],
+      settings: ['bold_folder_labels'],
 
       'font.bold': true,
     },
 
     // Sidebar Expanded Selected Folder Label
     {
-      'class': 'sidebar_label',
-      'parents': [
+      class: 'sidebar_label',
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['expanded', 'selected'],
+          class: 'tree_row',
+          attributes: ['expanded', 'selected'],
         },
 
       ],
 
-      'color': c.gs.fg1,
+      color: c.gs.fg1,
     },
 
     // Sidebar Transient Label
     {
-      'class': 'sidebar_label',
-      'attributes': ['transient'],
+      class: 'sidebar_label',
+      attributes: ['transient'],
 
       'font.italic': false,
-      'color': c.gs.fg1,
+      color: c.gs.fg1,
     },
 
     // Sidebar file close
     {
-      'class': 'close_button',
-      'content_margin': [8, 8],
+      class: 'close_button',
+      content_margin: [8, 8],
 
       // Close Icon
       'layer0.texture': `${paths.this}close.png`,
@@ -213,12 +213,12 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'close_button',
-      'parents': [
+      class: 'close_button',
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['selected'],
+          class: 'tree_row',
+          attributes: ['selected'],
         },
 
       ],
@@ -230,12 +230,12 @@ module.exports = function (values) {
 
     // Close Button Hover
     {
-      'class': 'close_button',
-      'parents': [
+      class: 'close_button',
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['hover'],
+          class: 'tree_row',
+          attributes: ['hover'],
         },
 
       ],
@@ -247,8 +247,8 @@ module.exports = function (values) {
 
     // Sidebar Dirty File
     {
-      'class': 'close_button',
-      'attributes': ['dirty'],
+      class: 'close_button',
+      attributes: ['dirty'],
 
       'layer0.opacity': 0, // Close Icon
       'layer1.opacity': 0, // Close Icon Hover
@@ -257,13 +257,13 @@ module.exports = function (values) {
 
     // Sidebar Dirty File Selected
     {
-      'class': 'close_button',
-      'attributes': ['dirty'],
-      'parents': [
+      class: 'close_button',
+      attributes: ['dirty'],
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['selected'],
+          class: 'tree_row',
+          attributes: ['selected'],
         },
 
       ],
@@ -275,8 +275,8 @@ module.exports = function (values) {
 
     // Close Icon Hover
     {
-      'class': 'close_button',
-      'attributes': ['hover'],
+      class: 'close_button',
+      attributes: ['hover'],
 
       'layer0.opacity': 0, // Close Icon
       'layer1.opacity': 1, // Close Icon Hover
@@ -285,20 +285,20 @@ module.exports = function (values) {
 
     // File Icon
     {
-      'class': 'icon_file_type',
-      'content_margin': [8, 8],
+      class: 'icon_file_type',
+      content_margin: [8, 8],
 
       'layer0.opacity': 0.6,
     },
 
     // Selected File Icon
     {
-      'class': 'icon_file_type',
-      'parents': [
+      class: 'icon_file_type',
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['selected'],
+          class: 'tree_row',
+          attributes: ['selected'],
         },
 
       ],
@@ -308,8 +308,8 @@ module.exports = function (values) {
 
     // Folder Icon
     {
-      'class': 'icon_folder',
-      'content_margin': [8, 8],
+      class: 'icon_folder',
+      content_margin: [8, 8],
 
       // Sublime Default
       'layer0.opacity': 0,
@@ -329,12 +329,12 @@ module.exports = function (values) {
 
     // Folder Icon Hover
     {
-      'class': 'icon_folder',
-      'parents': [
+      class: 'icon_folder',
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['hover'],
+          class: 'tree_row',
+          attributes: ['hover'],
         },
 
       ],
@@ -346,12 +346,12 @@ module.exports = function (values) {
 
     // Folder Icon Expanded
     {
-      'class': 'icon_folder',
-      'parents': [
+      class: 'icon_folder',
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['expanded'],
+          class: 'tree_row',
+          attributes: ['expanded'],
         },
 
       ],
@@ -363,12 +363,12 @@ module.exports = function (values) {
 
     // Folder Icon Expanded Hover
     {
-      'class': 'icon_folder',
-      'parents': [
+      class: 'icon_folder',
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['expanded', 'hover'],
+          class: 'tree_row',
+          attributes: ['expanded', 'hover'],
         },
 
       ],
@@ -380,11 +380,11 @@ module.exports = function (values) {
 
     // Folder Icon Loading
     {
-      'class': 'icon_folder_loading',
-      'content_margin': [8, 8],
+      class: 'icon_folder_loading',
+      content_margin: [8, 8],
 
       'layer1.texture': {
-        'keyframes': [
+        keyframes: [
           `${paths.commons}folder_loading_9.png`,
           `${paths.commons}folder_loading_8.png`,
           `${paths.commons}folder_loading_7.png`,
@@ -396,8 +396,8 @@ module.exports = function (values) {
           `${paths.commons}folder_loading_1.png`,
           `${paths.commons}folder_loading_0.png`,
         ],
-        'loop': true,
-        'frame_time': 0.065,
+        loop: true,
+        frame_time: 0.065,
       },
 
       'layer0.opacity': 0, // Default
@@ -407,8 +407,8 @@ module.exports = function (values) {
 
     // Symlinked Folder Icon
     {
-      'class': 'icon_folder_dup',
-      'content_margin': [8, 8],
+      class: 'icon_folder_dup',
+      content_margin: [8, 8],
 
       // Default
       'layer0.texture': `${paths.commons}folder_dup.png`,
@@ -425,12 +425,12 @@ module.exports = function (values) {
 
     // Symlinked Folder Icon Hover
     {
-      'class': 'icon_folder_dup',
-      'parents': [
+      class: 'icon_folder_dup',
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['hover'],
+          class: 'tree_row',
+          attributes: ['hover'],
         },
 
       ],
@@ -442,12 +442,12 @@ module.exports = function (values) {
 
     // Symlinked Folder Icon Expanded
     {
-      'class': 'icon_folder_dup',
-      'parents': [
+      class: 'icon_folder_dup',
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['expanded'],
+          class: 'tree_row',
+          attributes: ['expanded'],
         },
 
       ],
@@ -459,12 +459,12 @@ module.exports = function (values) {
 
     // Symlinked Folder Icon Expanded Hover
     {
-      'class': 'icon_folder_dup',
-      'parents': [
+      class: 'icon_folder_dup',
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['expanded', 'hover'],
+          class: 'tree_row',
+          attributes: ['expanded', 'hover'],
         },
 
       ],
@@ -476,8 +476,8 @@ module.exports = function (values) {
 
     // Sidebar Group Arrows
     {
-      'class': 'disclosure_button_control',
-      'content_margin': [0, 0],
+      class: 'disclosure_button_control',
+      content_margin: [0, 0],
 
       'layer0.opacity': 0, // Default
       'layer1.opacity': 0, // Hover

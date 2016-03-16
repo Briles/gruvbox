@@ -9,24 +9,24 @@ module.exports = function (values) {
 
     // Button Label
     {
-      'class': 'label_control',
-      'parents': [
+      class: 'label_control',
+      parents: [
 
         {
-          'class': 'button_control',
+          class: 'button_control',
         },
 
       ],
 
-      'color': c.gs.fg[info.contrast],
+      color: c.gs.fg[info.contrast],
       'font.bold': false,
     },
 
     // Button
     {
-      'class': 'button_control',
-      'content_margin': [15, 12, 15, 12],
-      'min_size': [70, 0],
+      class: 'button_control',
+      content_margin: [15, 12, 15, 12],
+      min_size: [70, 0],
 
       // Background
       'layer0.tint': c.container,
@@ -42,37 +42,37 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'button_control',
-      'attributes': ['hover'],
+      class: 'button_control',
+      attributes: ['hover'],
 
       'layer1.opacity': 1, // Background Hover
     },
 
     {
-      'class': 'button_control',
-      'attributes': ['pressed'],
+      class: 'button_control',
+      attributes: ['pressed'],
 
       'layer2.opacity': 1, // Background Pressed
     },
 
     {
-      'class': 'button_control',
-      'attributes': ['pressed', 'hover'],
+      class: 'button_control',
+      attributes: ['pressed', 'hover'],
 
       'layer2.opacity': 1, // Background Pressed
     },
 
     // Status Bar Icon Buttons
     {
-      'class': 'icon_button_control',
+      class: 'icon_button_control',
 
-      'content_margin': [10, 6],
+      content_margin: [10, 6],
     },
 
     // Regex Icon
     {
-      'class': 'icon_regex',
-      'content_margin': [12, 12],
+      class: 'icon_regex',
+      content_margin: [12, 12],
 
       // Default
       'layer0.texture': `${paths.this}regex.png`,
@@ -88,12 +88,12 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'icon_regex',
-      'parents': [
+      class: 'icon_regex',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['hover'],
+          class: 'icon_button_control',
+          attributes: ['hover'],
         },
 
       ],
@@ -102,12 +102,12 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'icon_regex',
-      'parents': [
+      class: 'icon_regex',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['selected'],
+          class: 'icon_button_control',
+          attributes: ['selected'],
         },
 
       ],
@@ -117,8 +117,8 @@ module.exports = function (values) {
 
     // Case Sensitive Icon
     {
-      'class': 'icon_case',
-      'content_margin': [12, 12],
+      class: 'icon_case',
+      content_margin: [12, 12],
 
       // Default
       'layer0.texture': `${paths.this}casesensitive.png`,
@@ -134,12 +134,12 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'icon_case',
-      'parents': [
+      class: 'icon_case',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['hover'],
+          class: 'icon_button_control',
+          attributes: ['hover'],
         },
 
       ],
@@ -148,12 +148,12 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'icon_case',
-      'parents': [
+      class: 'icon_case',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['selected'],
+          class: 'icon_button_control',
+          attributes: ['selected'],
         },
 
       ],
@@ -163,8 +163,8 @@ module.exports = function (values) {
 
     // Wholeword Icon
     {
-      'class': 'icon_whole_word',
-      'content_margin': [12, 12],
+      class: 'icon_whole_word',
+      content_margin: [12, 12],
 
       // Default
       'layer0.texture': `${paths.this}wholeword.png`,
@@ -180,12 +180,12 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'icon_whole_word',
-      'parents': [
+      class: 'icon_whole_word',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['hover'],
+          class: 'icon_button_control',
+          attributes: ['hover'],
         },
 
       ],
@@ -194,12 +194,12 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'icon_whole_word',
-      'parents': [
+      class: 'icon_whole_word',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['selected'],
+          class: 'icon_button_control',
+          attributes: ['selected'],
         },
 
       ],
@@ -209,8 +209,8 @@ module.exports = function (values) {
 
     // Wrap Icon
     {
-      'class': 'icon_wrap',
-      'content_margin': [12, 12],
+      class: 'icon_wrap',
+      content_margin: [12, 12],
 
       // Default
       'layer0.texture': `${paths.this}wrap.png`,
@@ -226,12 +226,12 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'icon_wrap',
-      'parents': [
+      class: 'icon_wrap',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['hover'],
+          class: 'icon_button_control',
+          attributes: ['hover'],
         },
 
       ],
@@ -240,12 +240,12 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'icon_wrap',
-      'parents': [
+      class: 'icon_wrap',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['selected'],
+          class: 'icon_button_control',
+          attributes: ['selected'],
         },
 
       ],
@@ -255,8 +255,8 @@ module.exports = function (values) {
 
     // In Selection Icon
     {
-      'class': 'icon_in_selection',
-      'content_margin': [12, 12],
+      class: 'icon_in_selection',
+      content_margin: [12, 12],
 
       // Default
       'layer0.texture': `${paths.this}inselection.png`,
@@ -272,12 +272,12 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'icon_in_selection',
-      'parents': [
+      class: 'icon_in_selection',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['hover'],
+          class: 'icon_button_control',
+          attributes: ['hover'],
         },
 
       ],
@@ -286,12 +286,12 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'icon_in_selection',
-      'parents': [
+      class: 'icon_in_selection',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['selected'],
+          class: 'icon_button_control',
+          attributes: ['selected'],
         },
 
       ],
@@ -301,8 +301,8 @@ module.exports = function (values) {
 
     // Highlight Result Icon
     {
-      'class': 'icon_highlight',
-      'content_margin': [12, 12],
+      class: 'icon_highlight',
+      content_margin: [12, 12],
 
       // Default
       'layer0.texture': `${paths.this}highlight.png`,
@@ -318,12 +318,12 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'icon_highlight',
-      'parents': [
+      class: 'icon_highlight',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['hover'],
+          class: 'icon_button_control',
+          attributes: ['hover'],
         },
 
       ],
@@ -332,12 +332,12 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'icon_highlight',
-      'parents': [
+      class: 'icon_highlight',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['selected'],
+          class: 'icon_button_control',
+          attributes: ['selected'],
         },
 
       ],
@@ -347,8 +347,8 @@ module.exports = function (values) {
 
     // Preserve Case Icon
     {
-      'class': 'icon_preserve_case',
-      'content_margin': [12, 12],
+      class: 'icon_preserve_case',
+      content_margin: [12, 12],
 
       // Default
       'layer0.texture': `${paths.this}preservecase.png`,
@@ -364,12 +364,12 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'icon_preserve_case',
-      'parents': [
+      class: 'icon_preserve_case',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['hover'],
+          class: 'icon_button_control',
+          attributes: ['hover'],
         },
 
       ],
@@ -378,12 +378,12 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'icon_preserve_case',
-      'parents': [
+      class: 'icon_preserve_case',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['selected'],
+          class: 'icon_button_control',
+          attributes: ['selected'],
         },
 
       ],
@@ -393,8 +393,8 @@ module.exports = function (values) {
 
     // Show Context Icon
     {
-      'class': 'icon_context',
-      'content_margin': [12, 12],
+      class: 'icon_context',
+      content_margin: [12, 12],
 
       // Default
       'layer0.texture': `${paths.this}context.png`,
@@ -410,12 +410,12 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'icon_context',
-      'parents': [
+      class: 'icon_context',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['hover'],
+          class: 'icon_button_control',
+          attributes: ['hover'],
         },
 
       ],
@@ -424,12 +424,12 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'icon_context',
-      'parents': [
+      class: 'icon_context',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['selected'],
+          class: 'icon_button_control',
+          attributes: ['selected'],
         },
 
       ],
@@ -439,8 +439,8 @@ module.exports = function (values) {
 
     // Use Buffer Icon
     {
-      'class': 'icon_use_buffer',
-      'content_margin': [12, 12],
+      class: 'icon_use_buffer',
+      content_margin: [12, 12],
 
       // Default
       'layer0.texture': `${paths.this}buffer.png`,
@@ -456,12 +456,12 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'icon_use_buffer',
-      'parents': [
+      class: 'icon_use_buffer',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['hover'],
+          class: 'icon_button_control',
+          attributes: ['hover'],
         },
 
       ],
@@ -470,12 +470,12 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'icon_use_buffer',
-      'parents': [
+      class: 'icon_use_buffer',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['selected'],
+          class: 'icon_button_control',
+          attributes: ['selected'],
         },
 
       ],

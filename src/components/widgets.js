@@ -8,8 +8,8 @@ module.exports = function (values) {
 
     // Status Bar Panel
     {
-      'class': 'panel_control',
-      'content_margin': [6, 14, 6, 8],
+      class: 'panel_control',
+      content_margin: [6, 14, 6, 8],
 
       // Background
       'layer0.tint': c.container,
@@ -24,8 +24,8 @@ module.exports = function (values) {
 
     // Status Bar Panel Close Icon
     {
-      'class': 'panel_close_button',
-      'content_margin': [0, 0],
+      class: 'panel_close_button',
+      content_margin: [0, 0],
 
       // Default
       'layer0.texture': `${paths.this}close.png`,
@@ -38,36 +38,36 @@ module.exports = function (values) {
 
     // Status Bar Panel Close Icon Hover
     {
-      'class': 'panel_close_button',
-      'attributes': ['hover'],
+      class: 'panel_close_button',
+      attributes: ['hover'],
 
       'layer1.opacity': 1, // Hover
     },
 
     // Textline Input
     {
-      'class': 'text_line_control',
-      'content_margin': [18, 2, 18, 2],
+      class: 'text_line_control',
+      content_margin: [18, 2, 18, 2],
     },
 
     // Textline Input Inside Overlay Panels
     {
-      'class': 'text_line_control',
-      'parents': [
+      class: 'text_line_control',
+      parents: [
 
         {
-          'class': 'overlay_control',
+          class: 'overlay_control',
         },
 
       ],
 
-      'content_margin': [18, 4, 18, 14],
+      content_margin: [18, 4, 18, 14],
     },
 
     // Textline Input Overflow Menu
     {
-      'class': 'dropdown_button_control',
-      'content_margin': [12, 12],
+      class: 'dropdown_button_control',
+      content_margin: [12, 12],
 
       // Default
       'layer0.texture': `${paths.this}more.png`,
@@ -80,8 +80,8 @@ module.exports = function (values) {
 
     // Textline Input Overflow Menu Hover
     {
-      'class': 'dropdown_button_control',
-      'attributes': ['hover'],
+      class: 'dropdown_button_control',
+      attributes: ['hover'],
 
       'layer1.opacity': 1, // Hover
     },

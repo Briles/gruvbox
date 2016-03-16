@@ -71,10 +71,6 @@ established in the code.
 
 All `*.js` files should follow the
 [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
-with a few exceptions:
-
-- **Sublime Text Theme Components**:<br>
-  Single-quote all object keys which are outputted to a theme.
 
 Guidelines are enforced using [JSCS](https://www.npmjs.com/package/jscs):
 

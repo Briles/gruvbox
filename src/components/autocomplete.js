@@ -7,8 +7,8 @@ module.exports = function (values) {
 
     // AutoComplete Popup Container
     {
-      'class': 'popup_control',
-      'content_margin': [0, 0],
+      class: 'popup_control',
+      content_margin: [0, 0],
 
       // Background
       'layer0.tint': c.container,
@@ -17,8 +17,8 @@ module.exports = function (values) {
 
     // AutoComplete Popup
     {
-      'class': 'auto_complete',
-      'row_padding': [12, 6],
+      class: 'auto_complete',
+      row_padding: [12, 6],
 
       'layer0.tint': c.container,
       'layer0.opacity': 1,
@@ -26,17 +26,17 @@ module.exports = function (values) {
 
     // AutoComplete Label
     {
-      'class': 'auto_complete_label',
+      class: 'auto_complete_label',
 
-      'fg': c.gs.fg4,
-      'match_fg': c.gs.fg1,
-      'selected_fg': c.gs.fg4,
-      'selected_match_fg': c.gs.fg1,
+      fg: c.gs.fg4,
+      match_fg: c.gs.fg1,
+      selected_fg: c.gs.fg4,
+      selected_match_fg: c.gs.fg1,
     },
 
     // AutoComplete Row
     {
-      'class': 'table_row',
+      class: 'table_row',
 
       // Background
       'layer0.tint': c.bnp.bg1,
@@ -45,8 +45,8 @@ module.exports = function (values) {
 
     // AutoComplete Row
     {
-      'class': 'table_row',
-      'attributes': ['selected'],
+      class: 'table_row',
+      attributes: ['selected'],
 
       'layer0.opacity': 1, // Background
     },

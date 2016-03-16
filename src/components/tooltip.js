@@ -8,8 +8,8 @@ module.exports = function (values) {
 
     // Tooltip Background
     {
-      'class': 'tool_tip_control',
-      'content_margin': [16, 8],
+      class: 'tool_tip_control',
+      content_margin: [16, 8],
 
       // Background
       'layer0.tint': c.bnp.fg[info.contrast],
@@ -18,9 +18,9 @@ module.exports = function (values) {
 
     // Tooltip Foreground
     {
-      'class': 'tool_tip_label_control',
+      class: 'tool_tip_label_control',
 
-      'color': c.bnp.bg[info.contrast],
+      color: c.bnp.bg[info.contrast],
     },
 
   ];

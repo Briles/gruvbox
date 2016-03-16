@@ -6,7 +6,7 @@ module.exports = function (values) {
   return [
 
     {
-      'class': 'sheet_container_control',
+      class: 'sheet_container_control',
 
       'layer0.tint': c.background,
       'layer0.opacity': 1,
@@ -14,10 +14,10 @@ module.exports = function (values) {
 
     // Pane
     {
-      'class': 'grid_layout_control',
+      class: 'grid_layout_control',
 
-      'border_size': 1,
-      'border_color': c.border,
+      border_size: 1,
+      border_color: c.border,
     },
 
   ];

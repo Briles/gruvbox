@@ -7,8 +7,8 @@ module.exports = function (values) {
 
     // Fold Button
     {
-      'class': 'fold_button_control',
-      'content_margin': [9, 7, 8, 6],
+      class: 'fold_button_control',
+      content_margin: [9, 7, 8, 6],
 
       // Default
       'layer0.texture': `${paths.this}fold.png`,
@@ -29,8 +29,8 @@ module.exports = function (values) {
 
     // Fold Button Hover
     {
-      'class': 'fold_button_control',
-      'attributes': ['hover'],
+      class: 'fold_button_control',
+      attributes: ['hover'],
 
       'layer0.opacity': 0, // Default
       'layer1.opacity': 1, // Hover
@@ -40,8 +40,8 @@ module.exports = function (values) {
 
     // Fold Button Folded
     {
-      'class': 'fold_button_control',
-      'attributes': ['expanded'],
+      class: 'fold_button_control',
+      attributes: ['expanded'],
 
       'layer0.opacity': 0, // Default
       'layer1.opacity': 0, // Hover
@@ -51,8 +51,8 @@ module.exports = function (values) {
 
     // Fold Button Folded Hover
     {
-      'class': 'fold_button_control',
-      'attributes': ['expanded', 'hover'],
+      class: 'fold_button_control',
+      attributes: ['expanded', 'hover'],
 
       'layer0.opacity': 0, // Default
       'layer1.opacity': 0, // Hover

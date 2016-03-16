@@ -8,29 +8,29 @@ module.exports = function (values) {
 
     // All Labels
     {
-      'class': 'label_control',
+      class: 'label_control',
 
-      'color': c.gs.fg3,
+      color: c.gs.fg3,
     },
 
     // Status Bar Labels
     {
-      'class': 'label_control',
-      'parents': [
+      class: 'label_control',
+      parents: [
 
         {
-          'class': 'status_bar',
+          class: 'status_bar',
         },
 
       ],
 
-      'color': c.gs.fg3,
+      color: c.gs.fg3,
     },
 
     // Text Field Labels
     {
-      'class': 'status_bar',
-      'content_margin': [12, 0, 0, 0],
+      class: 'status_bar',
+      content_margin: [12, 0, 0, 0],
 
       // Background
       'layer0.tint': c.container,
@@ -46,15 +46,15 @@ module.exports = function (values) {
 
     // Status Bar Status Message
     {
-      'class': 'status_container',
-      'content_margin': [12, 11, 12, 11],
+      class: 'status_container',
+      content_margin: [12, 11, 12, 11],
     },
 
     // Status Bar Button
     {
-      'class': 'status_button',
-      'content_margin': [12, 0, 12, 0],
-      'min_size': [75, 0],
+      class: 'status_button',
+      content_margin: [12, 0, 12, 0],
+      min_size: [75, 0],
 
       // Border - Left
       'layer0.tint': c.gs.bg1,
@@ -65,23 +65,23 @@ module.exports = function (values) {
 
     // Status Bar Button Hover
     {
-      'class': 'label_control',
-      'parents': [
+      class: 'label_control',
+      parents: [
 
         {
-          'class': 'status_button',
-          'attributes': ['hover'],
+          class: 'status_button',
+          attributes: ['hover'],
         },
 
       ],
 
-      'color': c.gs.fg1,
+      color: c.gs.fg1,
     },
 
     // Panel Switcher
     {
-      'class': 'panel_button_control',
-      'content_margin': [12, 12],
+      class: 'panel_button_control',
+      content_margin: [12, 12],
 
       // Default
       'layer0.texture': `${paths.this}panels.png`,
@@ -94,8 +94,8 @@ module.exports = function (values) {
 
     // Panel Switcher Hover
     {
-      'class': 'panel_button_control',
-      'attributes': ['hover'],
+      class: 'panel_button_control',
+      attributes: ['hover'],
 
       'layer0.opacity': 0, // Default
       'layer1.opacity': 1, // Hover

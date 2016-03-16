@@ -7,8 +7,8 @@ module.exports = function (values) {
 
     // Command Palette & Goto Panel
     {
-      'class': 'overlay_control',
-      'content_margin': [1, 14, 1, 1],
+      class: 'overlay_control',
+      content_margin: [1, 14, 1, 1],
 
       // Background
       'layer0.tint': c.container,
@@ -23,7 +23,7 @@ module.exports = function (values) {
 
     // Command Palette List Item
     {
-      'class': 'mini_quick_panel_row',
+      class: 'mini_quick_panel_row',
 
       // Background
       'layer0.tint': c.transparent,
@@ -40,16 +40,16 @@ module.exports = function (values) {
     // Command Palette List Item Selected
 
     {
-      'class': 'mini_quick_panel_row',
-      'attributes': ['selected'],
+      class: 'mini_quick_panel_row',
+      attributes: ['selected'],
 
       'layer0.tint': c.panelRow, // Background
     },
 
     // Quick Switch Project Panel
     {
-      'class': 'quick_panel',
-      'row_padding': [14, 12],
+      class: 'quick_panel',
+      row_padding: [14, 12],
 
       // Background
       'layer0.tint': c.container,
@@ -58,7 +58,7 @@ module.exports = function (values) {
 
     // Quick Switch Project Panel List Item
     {
-      'class': 'quick_panel_row',
+      class: 'quick_panel_row',
 
       // Background
       'layer0.tint': c.transparent,
@@ -73,38 +73,38 @@ module.exports = function (values) {
 
     // Quick Switch Project Panel List Item Selected
     {
-      'class': 'quick_panel_row',
-      'attributes': ['selected'],
+      class: 'quick_panel_row',
+      attributes: ['selected'],
 
       'layer0.tint': c.panelRow,
     },
 
     // Panel Label
     {
-      'class': 'quick_panel_label',
+      class: 'quick_panel_label',
 
-      'fg': c.gs.fg4,
-      'match_fg': c.gs.fg1,
-      'selected_fg': c.gs.fg4,
-      'selected_match_fg': c.gs.fg1,
+      fg: c.gs.fg4,
+      match_fg: c.gs.fg1,
+      selected_fg: c.gs.fg4,
+      selected_match_fg: c.gs.fg1,
     },
 
     // Panels SubLabels
     {
-      'class': 'quick_panel_path_label',
+      class: 'quick_panel_path_label',
 
-      'fg': c.gs.fg4,
-      'match_fg': c.gs.fg1,
-      'selected_fg': c.gs.fg4,
-      'selected_match_fg': c.gs.fg1,
+      fg: c.gs.fg4,
+      match_fg: c.gs.fg1,
+      selected_fg: c.gs.fg4,
+      selected_match_fg: c.gs.fg1,
     },
 
     // Panel Row Match Score
     {
-      'class': 'quick_panel_score_label',
+      class: 'quick_panel_score_label',
 
-      'fg': c.gs.fg4,
-      'selected_fg': c.gs.fg1,
+      fg: c.gs.fg4,
+      selected_fg: c.gs.fg1,
     },
 
   ];

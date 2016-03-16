@@ -6,8 +6,8 @@ module.exports = function (values) {
   return [
 
     {
-      'class': 'progress_gauge_control',
-      'content_margin': [0, 6],
+      class: 'progress_gauge_control',
+      content_margin: [0, 6],
 
       // Background
       'layer0.tint': c.bnp.fg3,
@@ -15,7 +15,7 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'dialog',
+      class: 'dialog',
 
       // Background
       'layer0.tint': c.container,
@@ -23,7 +23,7 @@ module.exports = function (values) {
     },
 
     {
-      'class': 'progress_bar_control',
+      class: 'progress_bar_control',
 
       // Background
       'layer0.tint': c.bnp.fg3,

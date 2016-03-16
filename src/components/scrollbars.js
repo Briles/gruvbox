@@ -9,8 +9,8 @@ module.exports = function (values) {
 
     // Normal Vertical Scrollbar Track
     {
-      'class': 'scroll_bar_control',
-      'blur': false,
+      class: 'scroll_bar_control',
+      blur: false,
 
       // Background
       'layer0.tint': c.container,
@@ -26,11 +26,11 @@ module.exports = function (values) {
 
     // Normal Vertical Scrollbar Track Inside Sidebar
     {
-      'class': 'scroll_bar_control',
-      'parents': [
+      class: 'scroll_bar_control',
+      parents: [
 
         {
-          'class': 'sidebar_container',
+          class: 'sidebar_container',
         },
 
       ],
@@ -40,11 +40,11 @@ module.exports = function (values) {
 
     // Normal Vertical Scrollbar Track Inside Console Panel
     {
-      'class': 'scroll_bar_control',
-      'parents': [
+      class: 'scroll_bar_control',
+      parents: [
 
         {
-          'class': 'panel_control',
+          class: 'panel_control',
         },
 
       ],
@@ -54,11 +54,11 @@ module.exports = function (values) {
 
     // Normal Vertical Scrollbar Track Inside AutoComplete
     {
-      'class': 'scroll_bar_control',
-      'parents': [
+      class: 'scroll_bar_control',
+      parents: [
 
         {
-          'class': 'popup_control',
+          class: 'popup_control',
         },
 
       ],
@@ -68,11 +68,11 @@ module.exports = function (values) {
 
     // Normal Vertical Scrollbar Track Inside Overlay Panel
     {
-      'class': 'scroll_bar_control',
-      'parents': [
+      class: 'scroll_bar_control',
+      parents: [
 
         {
-          'class': 'overlay_control',
+          class: 'overlay_control',
         },
 
       ],
@@ -82,16 +82,16 @@ module.exports = function (values) {
 
     // Normal Horizontal Scrollbar Track
     {
-      'class': 'scroll_bar_control',
-      'attributes': ['horizontal'],
-      'blur': false,
+      class: 'scroll_bar_control',
+      attributes: ['horizontal'],
+      blur: false,
 
       'layer1.inner_margin': [0, 1, 0, 0], // Border - Top
     },
 
     // Scrollbars Corner
     {
-      'class': 'scroll_corner_control',
+      class: 'scroll_corner_control',
 
       // Background
       'layer0.tint': c.container,
@@ -100,22 +100,22 @@ module.exports = function (values) {
 
     // Scroll Area
     {
-      'class': 'scroll_area_control',
-      'overlay': false,
+      class: 'scroll_area_control',
+      overlay: false,
     },
 
     // Overlay Scroll Bars Enabled
     {
-      'class': 'scroll_area_control',
-      'settings': ['overlay_scroll_bars'],
-      'overlay': true,
+      class: 'scroll_area_control',
+      settings: ['overlay_scroll_bars'],
+      overlay: true,
     },
 
     // Scrollbar Track Overlay Scroll Bars Enabled
     {
-      'class': 'scroll_bar_control',
-      'settings': ['overlay_scroll_bars'],
-      'blur': false,
+      class: 'scroll_bar_control',
+      settings: ['overlay_scroll_bars'],
+      blur: false,
 
       'layer0.opacity': 0, // Background
       'layer1.opacity': 0, // Border - Right
@@ -123,9 +123,9 @@ module.exports = function (values) {
 
     // Vertical Scrollbar Puck
     {
-      'class': 'puck_control',
-      'content_margin': [8, 16],
-      'blur': false,
+      class: 'puck_control',
+      content_margin: [8, 16],
+      blur: false,
 
       // Background
       'layer0.texture': `${paths.this}puckvertical.png`,
@@ -135,26 +135,26 @@ module.exports = function (values) {
 
     // Horizontal Scrollbar Puck
     {
-      'class': 'puck_control',
-      'attributes': ['horizontal'],
-      'content_margin': [16, 8],
+      class: 'puck_control',
+      attributes: ['horizontal'],
+      content_margin: [16, 8],
 
       'layer0.texture': `${paths.this}puckhorizontal.png`,
     },
 
     // Overlay Vertical Scrollbar Puck
     {
-      'class': 'puck_control',
-      'settings': ['overlay_scroll_bars'],
+      class: 'puck_control',
+      settings: ['overlay_scroll_bars'],
 
       'layer0.texture': `${paths.this}puckvertical--overlay.png`,
     },
 
     // Overlay Horizontal Scrollbar Puck
     {
-      'class': 'puck_control',
-      'attributes': ['horizontal'],
-      'settings': ['overlay_scroll_bars'],
+      class: 'puck_control',
+      attributes: ['horizontal'],
+      settings: ['overlay_scroll_bars'],
 
       'layer0.texture': `${paths.this}puckhorizontal--overlay.png`,
     },
