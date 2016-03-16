@@ -68,6 +68,7 @@
         guide: tinycolor(brightnessPalette.fg1).setAlpha(0.15).toRgbString(),
         guideAlt: tinycolor(brightnessPalette.fg1).setAlpha(0.25).toRgbString(),
         ruler: tinycolor(brightnessPalette.fg1).setAlpha(0.50).toRgbString(),
+        headingBackground: tinycolor(backgroundColor).lighten(7).toRgbString(),
       };
 
       const info = {

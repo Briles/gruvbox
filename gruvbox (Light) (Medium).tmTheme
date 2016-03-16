@@ -1064,8 +1064,174 @@
           <string>#3c383626</string>
         </dict>
       </dict>
+      <dict>
+        <key>name</key>
+        <string>PlainTasks: Header</string>
+        <key>scope</key>
+        <string>keyword.control.header.todo</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#79740e</string>
+          <key>background</key>
+          <string>#fdf9e8</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>PlainTasks: Notes</string>
+        <key>scope</key>
+        <string>notes.todo</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#665c54</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>PlainTasks: Punctuation</string>
+        <key>scope</key>
+        <string>text.todo punctuation.definition.bold, text.todo punctuation.definition.italic</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#a89984</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>PlainTasks: Task Pending</string>
+        <key>scope</key>
+        <string>meta.item.todo.pending</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#282828</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>PlainTasks: Task Pending Punctuation</string>
+        <key>scope</key>
+        <string>punctuation.definition.bullet.pending.todo</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#928374</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>PlainTasks: Task Completed Punctuation</string>
+        <key>scope</key>
+        <string>punctuation.definition.bullet.completed.todo</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#427b58</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>PlainTasks: Task Cancelled Punctuation</string>
+        <key>scope</key>
+        <string>punctuation.definition.bullet.cancelled.todo</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#9d0006</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>PlainTasks: Tag Critical</string>
+        <key>scope</key>
+        <string>string.other.tag.todo.critical</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#9d0006</string>
+          <key>fontStyle</key>
+          <string>bold</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>PlainTasks: Tag High</string>
+        <key>scope</key>
+        <string>string.other.tag.todo.high</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#af3a03</string>
+          <key>fontStyle</key>
+          <string>bold</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>PlainTasks: Tag Low</string>
+        <key>scope</key>
+        <string>string.other.tag.todo.low</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#076678</string>
+          <key>fontStyle</key>
+          <string>bold</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>PlainTasks: Tag Today</string>
+        <key>scope</key>
+        <string>string.other.tag.todo.today</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#b57614</string>
+          <key>fontStyle</key>
+          <string>bold</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>PlainTasks: Tag</string>
+        <key>scope</key>
+        <string>meta.tag.todo</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#8f3f71</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>PlainTasks: URL</string>
+        <key>scope</key>
+        <string>punctuation.definition.url, todo.url</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#076678</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>PlainTasks: Separator</string>
+        <key>scope</key>
+        <string>meta.punctuation.archive.todo, meta.punctuation.separator.todo</string>
+        <key>settings</key>
+        <dict>
+          <key>fontStyle</key>
+          <string>italic</string>
+          <key>foreground</key>
+          <string>#928374</string>
+        </dict>
+      </dict>
     </array>
     <key>uuid</key>
-    <string>3ddc2e17-fd75-42db-996e-15964a19250c</string>
+    <string>aea90fcf-d98c-4e7e-a139-30144863e6a6</string>
   </dict>
 </plist>

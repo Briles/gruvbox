@@ -199,6 +199,18 @@ Theme options:
           "gruvbox_iconset_spacegray": true,
 
 
+  PlainTasks Support
+
+        To use the color scheme with the Plain​Tasks plugin,
+        add the color scheme path to the "color_scheme" key in
+        "Preferences > Package Settings > PlainTasks > Settings - User" like so:
+
+        // PlainTasks.sublime-settings
+        {
+            "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme",
+        }
+
+
   Even More Settings...
 
   "gruvbox_colored_tooltips": true,           // Color the tooltip backgrounds with the current accent color

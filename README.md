@@ -47,12 +47,13 @@ Features
 * Lots of customization options
 * Support for High-DPI displays
 * Support for:
-    * [GitGutter](https://packagecontrol.io/packages/GitGutter)
     * [Bracket Highlighter](https://packagecontrol.io/packages/BracketHighlighter)
-    * [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter)
     * [Doc​Blockr](https://packagecontrol.io/packages/DocBlockr)
-    * [Markdown Extended](https://packagecontrol.io/packages/Markdown%20Extended)
+    * [GitGutter](https://packagecontrol.io/packages/GitGutter)
     * [HexViewer](https://packagecontrol.io/packages/HexViewer)
+    * [Markdown Extended](https://packagecontrol.io/packages/Markdown%20Extended)
+    * [Plain​Tasks](https://packagecontrol.io/packages/PlainTasks)
+    * [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter)
 * Support for the latest Sublime Text features
 
 ![High DPI](http://i.imgur.com/xiEzVPe.png)
@@ -319,6 +320,24 @@ Use spacegray-like icons
 
 ```json
 "gruvbox_iconset_spacegray": true,
+```
+
+#### PlainTasks Support
+
+To use the color scheme with the
+[Plain​Tasks](https://packagecontrol.io/packages/PlainTasks) plugin,
+add the color scheme path to the `"color_scheme"` key in
+ `Preferences > Package Settings > PlainTasks > Settings - User`
+ like so:
+
+```json
+
+// PlainTasks.sublime-settings
+
+{
+    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme",
+}
+
 ```
 
 #### Even More Settings...

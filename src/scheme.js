@@ -1073,6 +1073,159 @@ module.exports = function (values) {
         },
       },
 
+      /**
+       * PlainTasks
+       */
+
+      {
+        name: 'PlainTasks: Header',
+        scope: [
+          'keyword.control.header.todo',
+        ],
+        settings: {
+          foreground: c.bnp.green,
+          background: c.headingBackground,
+        },
+      },
+
+      {
+        name: 'PlainTasks: Notes',
+        scope: [
+          'notes.todo',
+        ],
+        settings: {
+          foreground: c.bnp.fg3,
+        },
+      },
+
+      {
+        name: 'PlainTasks: Punctuation',
+        scope: [
+          'text.todo punctuation.definition.italic',
+          'text.todo punctuation.definition.bold',
+        ],
+        settings: {
+          foreground: c.bnp.bg4,
+        },
+      },
+
+      {
+        name: 'PlainTasks: Task Pending',
+        scope: [
+          'meta.item.todo.pending',
+        ],
+        settings: {
+          foreground: c.bnp.fg[info.contrast],
+        },
+      },
+
+      {
+        name: 'PlainTasks: Task Pending Punctuation',
+        scope: [
+          'punctuation.definition.bullet.pending.todo',
+        ],
+        settings: {
+          foreground: c.bnp.gray,
+        },
+      },
+
+      {
+        name: 'PlainTasks: Task Completed Punctuation',
+        scope: [
+          'punctuation.definition.bullet.completed.todo',
+        ],
+        settings: {
+          foreground: c.bnp.aqua,
+        },
+      },
+
+      {
+        name: 'PlainTasks: Task Cancelled Punctuation',
+        scope: [
+          'punctuation.definition.bullet.cancelled.todo',
+        ],
+        settings: {
+          foreground: c.bnp.red,
+        },
+      },
+
+      {
+        name: 'PlainTasks: Tag Critical',
+        scope: [
+          'string.other.tag.todo.critical',
+        ],
+        settings: {
+          foreground: c.bnp.red,
+          fontStyle: 'bold',
+        },
+      },
+
+      {
+        name: 'PlainTasks: Tag High',
+        scope: [
+          'string.other.tag.todo.high',
+        ],
+        settings: {
+          foreground: c.bnp.orange,
+          fontStyle: 'bold',
+        },
+      },
+
+      {
+        name: 'PlainTasks: Tag Low',
+        scope: [
+          'string.other.tag.todo.low',
+        ],
+        settings: {
+          foreground: c.bnp.blue,
+          fontStyle: 'bold',
+        },
+      },
+
+      {
+        name: 'PlainTasks: Tag Today',
+        scope: [
+          'string.other.tag.todo.today',
+        ],
+        settings: {
+          foreground: c.bnp.yellow,
+          fontStyle: 'bold',
+        },
+      },
+
+      {
+        name: 'PlainTasks: Tag',
+        scope: [
+          'meta.tag.todo',
+        ],
+        settings: {
+          foreground: c.bnp.purple,
+        },
+      },
+
+      {
+        name: 'PlainTasks: URL',
+        scope: [
+          'punctuation.definition.url',
+          'todo.url',
+        ],
+        settings: {
+          foreground: c.bnp.blue,
+        },
+      },
+
+      {
+        name: 'PlainTasks: Separator',
+        scope: [
+          'meta.punctuation.separator.todo',
+          'meta.punctuation.archive.todo',
+        ],
+        settings: {
+          fontStyle: 'italic',
+          foreground: c.bnp.gray,
+        },
+      },
+
     ],
     uuid: uuid.v4(),
   };
