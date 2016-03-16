@@ -48,6 +48,7 @@ Features
 * Support for High-DPI displays
 * Support for:
     * [Bracket Highlighter](https://packagecontrol.io/packages/BracketHighlighter)
+    * [Bracket​Guard](https://packagecontrol.io/packages/BracketGuard)
     * [Doc​Blockr](https://packagecontrol.io/packages/DocBlockr)
     * [GitGutter](https://packagecontrol.io/packages/GitGutter)
     * [HexViewer](https://packagecontrol.io/packages/HexViewer)

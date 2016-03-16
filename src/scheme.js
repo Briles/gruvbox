@@ -310,7 +310,7 @@ module.exports = function (values) {
       {
         name: 'Invalids and Illegals',
         scope: [
-          'invalid.illegal',
+          'invalid',
         ],
         settings: {
           foreground: c.bnp.fg[info.contrast],

@@ -295,7 +295,7 @@
         <key>name</key>
         <string>Invalids and Illegals</string>
         <key>scope</key>
-        <string>invalid.illegal</string>
+        <string>invalid</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1221,6 +1221,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>cb1b3bc7-d5da-473c-8bda-d4dd24d85ce9</string>
+    <string>cd47bf80-01e4-47bb-9db0-9cf9ebb6431f</string>
   </dict>
 </plist>
