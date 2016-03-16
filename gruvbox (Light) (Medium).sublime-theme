@@ -2305,6 +2305,66 @@
     ]
   },
   {
+    "class": "quick_panel",
+    "parents": [
+      {
+        "class": "overlay_control"
+      }
+    ],
+    "settings": [
+      "gruvbox_command_palette_cramped"
+    ],
+    "row_padding": [
+      14,
+      4
+    ]
+  },
+  {
+    "class": "quick_panel",
+    "parents": [
+      {
+        "class": "overlay_control"
+      }
+    ],
+    "settings": [
+      "gruvbox_command_palette_compact"
+    ],
+    "row_padding": [
+      14,
+      8
+    ]
+  },
+  {
+    "class": "quick_panel",
+    "parents": [
+      {
+        "class": "overlay_control"
+      }
+    ],
+    "settings": [
+      "gruvbox_command_palette_comfortable"
+    ],
+    "row_padding": [
+      14,
+      14
+    ]
+  },
+  {
+    "class": "quick_panel",
+    "parents": [
+      {
+        "class": "overlay_control"
+      }
+    ],
+    "settings": [
+      "gruvbox_command_palette_cozy"
+    ],
+    "row_padding": [
+      14,
+      16
+    ]
+  },
+  {
     "class": "panel_close_button",
     "settings": [
       "gruvbox_enable_panel_close_button"

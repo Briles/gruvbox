@@ -101,6 +101,17 @@ Theme options:
     "gruvbox_sidebar_cramped": true,      //  v  9
 
 
+  Command Palette Spacing
+
+        Change the space between command palette rows
+
+    "gruvbox_command_palette_comfortable": true,  //  v  4
+    "gruvbox_command_palette_compact": true,      //  |  8
+                                                  //  |  12 (Default)
+    "gruvbox_command_palette_cozy": true,         //  |  14
+    "gruvbox_command_palette_cramped": true,      //  v  16
+
+
   Sidebar Font Sizes
 
         Change the font size of the sidebar labels
