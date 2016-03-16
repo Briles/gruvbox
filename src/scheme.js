@@ -139,7 +139,7 @@ module.exports = function (values) {
           'meta.tag.sgml.doctype.html',
           'storage.type.import.haxe',
           'variable.documentroot',
-          'meta.at-rule.media support.function.misc'
+          'meta.at-rule.media support.function.misc',
         ],
         settings: {
           foreground: c.bnp.red,
