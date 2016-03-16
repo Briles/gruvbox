@@ -366,30 +366,9 @@ module.exports = function (values) {
       'layer1.opacity': 0,
     },
 
-    {
-      'class': 'sidebar_tree',
-      'settings': [stOpts.disableBorders],
-
-      'layer1.opacity': 0,
-    },
-
-    {
-      'class': 'tree_row',
-      'settings': [stOpts.disableBorders],
-
-      'layer1.opacity': 0,
-    },
-
     // Scrollbars
     {
       'class': 'scroll_bar_control',
-      'settings': [stOpts.disableBorders],
-
-      'layer1.opacity': 0,
-    },
-
-    {
-      'class': 'scroll_corner_control',
       'settings': [stOpts.disableBorders],
 
       'layer1.opacity': 0,
