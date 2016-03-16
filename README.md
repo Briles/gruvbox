@@ -265,6 +265,18 @@ Autocollapse the tabs when not in use
   "gruvbox_autocollapse_tabs_trigger_6": true,  //  v  6
 ```
 
+#### Underline Modified Tabs
+
+Underline modified tabs with the current accent color
+
+```json
+  "gruvbox_underline_modified_tabs": true,        // enable the underlined tabs
+
+  // Set the thickness of the underline stroke
+  "gruvbox_underline_modified_tabs_thick": true,  //  v  2
+                                                  //  |  1 (Default)
+```
+
 #### Alternate Folder Icons
 
 ##### Square Folder Icons
@@ -312,20 +324,18 @@ Use spacegray-like icons
 #### Even More Settings...
 
 ```json
-  "gruvbox_colored_tooltips": true,             // Color the tooltip backgrounds with the current accent color
-  "gruvbox_disable_borders": true,              // Disable all borders
-  "gruvbox_disable_faded_file_icons": true,     // Make file-type icons opaque
-  "gruvbox_disable_fileicons": true,            // Disable the sidebar file icons
-  "gruvbox_disable_folder_icons": true,         // Disable the sidebar folder icons
-  "gruvbox_disable_greyscale": true,            // Use gruvbox colors instead of greyscale colors for certain text
-  "gruvbox_disable_panels_button": true,        // Hide the panel-switching button
-  "gruvbox_enable_panel_close_button": true,    // Enable the panel close button
-  "gruvbox_enable_statusbar_border": true,      // Enable borders for the status bar
-  "gruvbox_highlight_active_tree_row": true,    // Highlight the active file in the sidebar tree
-  "gruvbox_tabs_autowidth": true,               // Auto-size the tabs
-  "gruvbox_tabs_bold": true,                    // Enable bold tabs
-  "gruvbox_underline_dirty_tabs": true,         // Underline dirty tabs with the current accent color
-  "gruvbox_underline_dirty_tabs_thick": true,   // Underline dirty tabs with a thicker line (enable "gruvbox_underline_dirty_tabs")
+  "gruvbox_colored_tooltips": true,           // Color the tooltip backgrounds with the current accent color
+  "gruvbox_disable_borders": true,            // Disable all borders
+  "gruvbox_disable_faded_file_icons": true,   // Make file-type icons opaque
+  "gruvbox_disable_fileicons": true,          // Disable the sidebar file icons
+  "gruvbox_disable_folder_icons": true,       // Disable the sidebar folder icons
+  "gruvbox_disable_greyscale": true,          // Use gruvbox colors instead of greyscale colors for certain text
+  "gruvbox_disable_panels_button": true,      // Hide the panel-switching button
+  "gruvbox_enable_panel_close_button": true,  // Enable the panel close button
+  "gruvbox_enable_statusbar_border": true,    // Enable borders for the status bar
+  "gruvbox_highlight_active_tree_row": true,  // Highlight the active file in the sidebar tree
+  "gruvbox_tabs_autowidth": true,             // Auto-size the tabs
+  "gruvbox_tabs_bold": true,                  // Enable bold tabs
 ```
 
 Extras

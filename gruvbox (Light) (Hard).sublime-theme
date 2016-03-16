@@ -2424,7 +2424,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs"
+      "gruvbox_underline_modified_tabs"
     ],
     "attributes": [
       "dirty"
@@ -2438,7 +2438,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs"
+      "gruvbox_underline_modified_tabs"
     ],
     "attributes": [
       "dirty",
@@ -2449,8 +2449,8 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
-      "gruvbox_underline_dirty_tabs_thick"
+      "gruvbox_underline_modified_tabs",
+      "gruvbox_underline_modified_tabs_thick"
     ],
     "attributes": [
       "dirty"
@@ -4859,7 +4859,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_red"
     ],
     "attributes": [
@@ -4874,7 +4874,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_opposite",
       "gruvbox_accent_red"
     ],
@@ -4890,7 +4890,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_neutral",
       "gruvbox_accent_red"
     ],
@@ -6348,7 +6348,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_green"
     ],
     "attributes": [
@@ -6363,7 +6363,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_opposite",
       "gruvbox_accent_green"
     ],
@@ -6379,7 +6379,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_neutral",
       "gruvbox_accent_green"
     ],
@@ -7837,7 +7837,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_yellow"
     ],
     "attributes": [
@@ -7852,7 +7852,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_opposite",
       "gruvbox_accent_yellow"
     ],
@@ -7868,7 +7868,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_neutral",
       "gruvbox_accent_yellow"
     ],
@@ -9326,7 +9326,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_blue"
     ],
     "attributes": [
@@ -9341,7 +9341,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_opposite",
       "gruvbox_accent_blue"
     ],
@@ -9357,7 +9357,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_neutral",
       "gruvbox_accent_blue"
     ],
@@ -10815,7 +10815,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_purple"
     ],
     "attributes": [
@@ -10830,7 +10830,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_opposite",
       "gruvbox_accent_purple"
     ],
@@ -10846,7 +10846,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_neutral",
       "gruvbox_accent_purple"
     ],
@@ -12304,7 +12304,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_aqua"
     ],
     "attributes": [
@@ -12319,7 +12319,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_opposite",
       "gruvbox_accent_aqua"
     ],
@@ -12335,7 +12335,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_neutral",
       "gruvbox_accent_aqua"
     ],
@@ -13793,7 +13793,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_orange"
     ],
     "attributes": [
@@ -13808,7 +13808,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_opposite",
       "gruvbox_accent_orange"
     ],
@@ -13824,7 +13824,7 @@
   {
     "class": "tab_control",
     "settings": [
-      "gruvbox_underline_dirty_tabs",
+      "gruvbox_underline_modified_tabs",
       "gruvbox_accent_neutral",
       "gruvbox_accent_orange"
     ],
