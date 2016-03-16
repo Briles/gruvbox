@@ -124,23 +124,22 @@ module.exports = function (values) {
     // Vertical Scrollbar Puck
     {
       'class': 'puck_control',
-      'content_margin': [6, 16],
+      'content_margin': [8, 16],
       'blur': false,
 
       // Background
       'layer0.texture': `${paths.this}puckvertical.png`,
       'layer0.opacity': 1,
-      'layer0.inner_margin': [1, 8, 1, 8],
+      'layer0.inner_margin': [4, 4, 4, 4],
     },
 
     // Horizontal Scrollbar Puck
     {
       'class': 'puck_control',
       'attributes': ['horizontal'],
-      'content_margin': [16, 6],
+      'content_margin': [16, 8],
 
       'layer0.texture': `${paths.this}puckhorizontal.png`,
-      'layer0.inner_margin': [8, 1, 8, 1],
     },
 
     // Overlay Vertical Scrollbar Puck

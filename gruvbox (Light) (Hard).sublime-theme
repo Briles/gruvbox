@@ -1240,17 +1240,17 @@
   {
     "class": "puck_control",
     "content_margin": [
-      6,
+      8,
       16
     ],
     "blur": false,
     "layer0.texture": "gruvbox/assets/light/puckvertical.png",
     "layer0.opacity": 1,
     "layer0.inner_margin": [
-      1,
-      8,
-      1,
-      8
+      4,
+      4,
+      4,
+      4
     ]
   },
   {
@@ -1260,15 +1260,9 @@
     ],
     "content_margin": [
       16,
-      6
+      8
     ],
-    "layer0.texture": "gruvbox/assets/light/puckhorizontal.png",
-    "layer0.inner_margin": [
-      8,
-      1,
-      8,
-      1
-    ]
+    "layer0.texture": "gruvbox/assets/light/puckhorizontal.png"
   },
   {
     "class": "puck_control",
@@ -3452,6 +3446,98 @@
       "selected"
     ],
     "layer0.opacity": 1
+  },
+  {
+    "class": "puck_control",
+    "settings": [
+      "gruvbox_scrollbar_width_xs"
+    ],
+    "content_margin": [
+      6,
+      16
+    ]
+  },
+  {
+    "class": "puck_control",
+    "settings": [
+      "gruvbox_scrollbar_width_xs"
+    ],
+    "attributes": [
+      "horizontal"
+    ],
+    "content_margin": [
+      16,
+      6
+    ]
+  },
+  {
+    "class": "puck_control",
+    "settings": [
+      "gruvbox_scrollbar_width_s"
+    ],
+    "content_margin": [
+      7,
+      16
+    ]
+  },
+  {
+    "class": "puck_control",
+    "settings": [
+      "gruvbox_scrollbar_width_s"
+    ],
+    "attributes": [
+      "horizontal"
+    ],
+    "content_margin": [
+      16,
+      7
+    ]
+  },
+  {
+    "class": "puck_control",
+    "settings": [
+      "gruvbox_scrollbar_width_l"
+    ],
+    "content_margin": [
+      9,
+      16
+    ]
+  },
+  {
+    "class": "puck_control",
+    "settings": [
+      "gruvbox_scrollbar_width_l"
+    ],
+    "attributes": [
+      "horizontal"
+    ],
+    "content_margin": [
+      16,
+      9
+    ]
+  },
+  {
+    "class": "puck_control",
+    "settings": [
+      "gruvbox_scrollbar_width_xl"
+    ],
+    "content_margin": [
+      10,
+      16
+    ]
+  },
+  {
+    "class": "puck_control",
+    "settings": [
+      "gruvbox_scrollbar_width_xl"
+    ],
+    "attributes": [
+      "horizontal"
+    ],
+    "content_margin": [
+      16,
+      10
+    ]
   },
   {
     "class": "auto_complete_label",

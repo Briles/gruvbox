@@ -328,9 +328,11 @@ module.exports = function (values) {
     {
       'class': 'quick_panel',
       'parents': [
+
         {
           'class': 'overlay_control',
         },
+
       ],
       'settings': [stOpts.commandPaletteSpacingXs],
       'row_padding': [14, 4],
@@ -340,9 +342,11 @@ module.exports = function (values) {
     {
       'class': 'quick_panel',
       'parents': [
+
         {
           'class': 'overlay_control',
         },
+
       ],
       'settings': [stOpts.commandPaletteSpacingS],
       'row_padding': [14, 8],
@@ -352,9 +356,11 @@ module.exports = function (values) {
     {
       'class': 'quick_panel',
       'parents': [
+
         {
           'class': 'overlay_control',
         },
+
       ],
       'settings': [stOpts.commandPaletteSpacingL],
       'row_padding': [14, 14],
@@ -364,9 +370,11 @@ module.exports = function (values) {
     {
       'class': 'quick_panel',
       'parents': [
+
         {
           'class': 'overlay_control',
         },
+
       ],
       'settings': [stOpts.commandPaletteSpacingXl],
       'row_padding': [14, 16],
@@ -1316,6 +1324,78 @@ module.exports = function (values) {
       'attributes': ['selected'],
 
       'layer0.opacity': 1,
+    },
+
+    /**
+     * Scrollbar Width
+     */
+
+    // Extra Small Scrollbar Width
+
+    // Vertical Scrollbar Puck
+    {
+      'class': 'puck_control',
+      'settings': [stOpts.scrollbarWidthXs],
+      'content_margin': [6, 16],
+    },
+
+    // Horizontal Scrollbar Puck
+    {
+      'class': 'puck_control',
+      'settings': [stOpts.scrollbarWidthXs],
+      'attributes': ['horizontal'],
+      'content_margin': [16, 6],
+    },
+
+    // Small Scrollbar Width
+
+    // Vertical Scrollbar Puck
+    {
+      'class': 'puck_control',
+      'settings': [stOpts.scrollbarWidthS],
+      'content_margin': [7, 16],
+    },
+
+    // Horizontal Scrollbar Puck
+    {
+      'class': 'puck_control',
+      'settings': [stOpts.scrollbarWidthS],
+      'attributes': ['horizontal'],
+      'content_margin': [16, 7],
+    },
+
+    // Large Scrollbar Width
+
+    // Vertical Scrollbar Puck
+    {
+      'class': 'puck_control',
+      'settings': [stOpts.scrollbarWidthL],
+      'content_margin': [9, 16],
+    },
+
+    // Horizontal Scrollbar Puck
+    {
+      'class': 'puck_control',
+      'settings': [stOpts.scrollbarWidthL],
+      'attributes': ['horizontal'],
+      'content_margin': [16, 9],
+    },
+
+    // Extra Large Scrollbar Width
+
+    // Vertical Scrollbar Puck
+    {
+      'class': 'puck_control',
+      'settings': [stOpts.scrollbarWidthXl],
+      'content_margin': [10, 16],
+    },
+
+    // Horizontal Scrollbar Puck
+    {
+      'class': 'puck_control',
+      'settings': [stOpts.scrollbarWidthXl],
+      'attributes': ['horizontal'],
+      'content_margin': [16, 10],
     },
 
   ];

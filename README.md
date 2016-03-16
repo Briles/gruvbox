@@ -292,6 +292,19 @@ Underline modified tabs with the current accent color
                                                   //  |  1 (Default)
 ```
 
+#### Scrollbar Widths
+
+Adjust the width of the scrollbars
+
+```json
+  // sizes are total width in px
+  "gruvbox_scrollbar_width_xs": true,  //  v  12
+  "gruvbox_scrollbar_width_s": true,   //  |  14
+                                       //  |  16 (Default)
+  "gruvbox_scrollbar_width_l": true,   //  |  18
+  "gruvbox_scrollbar_width_xl": true,  //  v  20
+```
+
 #### Alternate Folder Icons
 
 ##### Square Folder Icons
