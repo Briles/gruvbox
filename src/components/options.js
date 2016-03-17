@@ -840,6 +840,13 @@ module.exports = function (values) {
       content_margin: [0, 0],
     },
 
+    // Remove the status_bar margin to compensate
+    {
+      class: 'status_bar',
+      settings: [stOpts.disablePanelsButton],
+      content_margin: [0, 0],
+    },
+
     /**
      * Disable Faded File Icons
      */

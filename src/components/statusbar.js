@@ -27,7 +27,7 @@ module.exports = function (values) {
       color: c.gs.fg3,
     },
 
-    // Text Field Labels
+    // Status Bar
     {
       class: 'status_bar',
       content_margin: [12, 0, 0, 0],

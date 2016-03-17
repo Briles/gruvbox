@@ -2875,6 +2875,16 @@
     ]
   },
   {
+    "class": "status_bar",
+    "settings": [
+      "gruvbox_disable_panels_button"
+    ],
+    "content_margin": [
+      0,
+      0
+    ]
+  },
+  {
     "class": "icon_file_type",
     "settings": [
       "gruvbox_disable_faded_file_icons"
