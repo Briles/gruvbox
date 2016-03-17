@@ -6,10 +6,10 @@ module.exports = function (values) {
 
   return [
 
-    // Status Bar Panel
+    // Find & Replace & Console Panel
     {
       class: 'panel_control',
-      content_margin: [6, 14, 6, 8],
+      content_margin: [6, 11, 6, 11],
 
       // Background
       'layer0.tint': c.container,

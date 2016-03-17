@@ -292,6 +292,20 @@ Underline modified tabs with the current accent color
                                                   //  |  1 (Default)
 ```
 
+#### Find, Replace, and Console Sizes
+
+Adjust the top & bottom margins of the Find, Replace, and Console panels
+
+```json
+  "gruvbox_panel_xxs": true,  //  v  2
+  "gruvbox_panel_xs": true,   //  |  4
+  "gruvbox_panel_s": true,    //  |  8
+                              //  |  11 (Default)
+  "gruvbox_panel_l": true,    //  |  13
+  "gruvbox_panel_xl": true,   //  |  15
+  "gruvbox_panel_xxl": true,  //  v  17
+```
+
 #### Scrollbar Widths
 
 Adjust the width of the scrollbars
