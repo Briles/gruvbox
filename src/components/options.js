@@ -6,389 +6,385 @@ module.exports = function (values) {
   const paths = values.paths;
   const stOpts = values.options;
 
-  const spacegrayPath = `${paths.this}spacegray__`;
-
   return [
 
-    // Tabs size Settings
+    /**
+     * Tab Sizes
+     */
 
     // Extra Extra Small Tabs
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.tabsXxs],
-      'tab_height': 33,
+      class: 'tabset_control',
+      settings: [stOpts.tabsXxs],
+      tab_height: 33,
     },
 
     {
-      'class': 'tab_control',
-      'settings': [stOpts.tabsXxs],
-      'content_margin': [12, 0, 8, 0],
+      class: 'tab_control',
+      settings: [stOpts.tabsXxs],
+      content_margin: [12, 0, 8, 0],
     },
 
     // Extra Small Tabs
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.tabsXs],
-      'tab_height': 39,
+      class: 'tabset_control',
+      settings: [stOpts.tabsXs],
+      tab_height: 39,
     },
 
     {
-      'class': 'tab_control',
-      'settings': [stOpts.tabsXs],
-      'content_margin': [14, 0, 10, 0],
+      class: 'tab_control',
+      settings: [stOpts.tabsXs],
+      content_margin: [14, 0, 10, 0],
     },
 
     // Small Tabs
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.tabsS],
-      'tab_height': 45,
+      class: 'tabset_control',
+      settings: [stOpts.tabsS],
+      tab_height: 45,
     },
 
     {
-      'class': 'tab_control',
-      'settings': [stOpts.tabsS],
-      'content_margin': [16, 0, 12, 0],
+      class: 'tab_control',
+      settings: [stOpts.tabsS],
+      content_margin: [16, 0, 12, 0],
     },
 
     // Large Tabs
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.tabsL],
-      'tab_height': 57,
+      class: 'tabset_control',
+      settings: [stOpts.tabsL],
+      tab_height: 57,
     },
 
     {
-      'class': 'tab_control',
-      'settings': [stOpts.tabsL],
-      'content_margin': [16, 0, 12, 0],
+      class: 'tab_control',
+      settings: [stOpts.tabsL],
+      content_margin: [16, 0, 12, 0],
     },
 
     // Extra Large Tabs
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.tabsXl],
-      'tab_height': 63,
+      class: 'tabset_control',
+      settings: [stOpts.tabsXl],
+      tab_height: 63,
     },
 
     {
-      'class': 'tab_control',
-      'settings': [stOpts.tabsXl],
-      'content_margin': [18, 0, 14, 0],
+      class: 'tab_control',
+      settings: [stOpts.tabsXl],
+      content_margin: [18, 0, 14, 0],
     },
 
     // Extra Extra Large Tabs
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.tabsXxl],
-      'tab_height': 69,
+      class: 'tabset_control',
+      settings: [stOpts.tabsXxl],
+      tab_height: 69,
     },
 
     {
-      'class': 'tab_control',
-      'settings': [stOpts.tabsXxl],
-      'content_margin': [20, 0, 16, 0],
+      class: 'tab_control',
+      settings: [stOpts.tabsXxl],
+      content_margin: [20, 0, 16, 0],
     },
 
-    // Autowidth Tabs
+    /**
+     * Autowidth Tabs
+     */
+
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.tabsAutowidth],
-      'tab_width': 0,
+      class: 'tabset_control',
+      settings: [stOpts.tabsAutowidth],
+      tab_width: 0,
     },
 
-    // Bold Tabs
+    /**
+     * Bold Tabs
+     */
+
     {
-      'class': 'tab_label',
-      'settings': [stOpts.tabsBold],
+      class: 'tab_label',
+      settings: [stOpts.tabsBold],
       'font.bold': true,
     },
 
-    // Tab Font Sizes
+    /**
+     * Tab Font Sizes
+     */
+
+    // Extra Extra Extra Small
     {
-      'class': 'tab_label',
-      'settings': [stOpts.tabsFontSizeXxxs],
+      class: 'tab_label',
+      settings: [stOpts.tabsFontSizeXxxs],
       'font.size': 7,
     },
 
+    // Extra Extra Small
     {
-      'class': 'tab_label',
-      'settings': [stOpts.tabsFontSizeXxs],
+      class: 'tab_label',
+      settings: [stOpts.tabsFontSizeXxs],
       'font.size': 8,
     },
 
+    // Extra Small
     {
-      'class': 'tab_label',
-      'settings': [stOpts.tabsFontSizeXs],
+      class: 'tab_label',
+      settings: [stOpts.tabsFontSizeXs],
       'font.size': 9,
     },
 
+    // Small
     {
-      'class': 'tab_label',
-      'settings': [stOpts.tabsFontSizeS],
+      class: 'tab_label',
+      settings: [stOpts.tabsFontSizeS],
       'font.size': 10,
     },
 
+    // Large
     {
-      'class': 'tab_label',
-      'settings': [stOpts.tabsFontSizeL],
+      class: 'tab_label',
+      settings: [stOpts.tabsFontSizeL],
       'font.size': 12,
     },
 
+    // Extra Large
     {
-      'class': 'tab_label',
-      'settings': [stOpts.tabsFontSizeXl],
+      class: 'tab_label',
+      settings: [stOpts.tabsFontSizeXl],
       'font.size': 13,
     },
 
+    // Extra Extra Large
     {
-      'class': 'tab_label',
-      'settings': [stOpts.tabsFontSizeXxl],
+      class: 'tab_label',
+      settings: [stOpts.tabsFontSizeXxl],
       'font.size': 14,
     },
 
+    // Extra Extra Extra Large
     {
-      'class': 'tab_label',
-      'settings': [stOpts.tabsFontSizeXxxl],
+      class: 'tab_label',
+      settings: [stOpts.tabsFontSizeXxxl],
       'font.size': 15,
     },
 
-    // Filetype icons in sidebar
+    /**
+     * Hide Sidebar File-Type Icons
+     */
 
     {
-      'class': 'icon_file_type',
-      'settings': [stOpts.disableFileIcons],
-      'content_margin': [0, 0],
+      class: 'icon_file_type',
+      settings: [stOpts.disableFileIcons],
+      content_margin: [0, 0],
 
       'layer0.opacity': 0,
     },
 
-    // Status Bar Size Options
+    /**
+     * Status Bar Size Options
+     */
 
     // Extra Extra Small Status Bar
     {
-      'class': 'status_container',
-      'settings': [stOpts.statusbarXxs],
-      'content_margin': [12, 3, 12, 3],
+      class: 'status_container',
+      settings: [stOpts.statusbarXxs],
+      content_margin: [12, 3, 12, 3],
     },
 
     // Extra Small Status Bar
     {
-      'class': 'status_container',
-      'settings': [stOpts.statusbarXs],
-      'content_margin': [12, 6, 12, 6],
+      class: 'status_container',
+      settings: [stOpts.statusbarXs],
+      content_margin: [12, 6, 12, 6],
     },
 
     // Small Status Bar
     {
-      'class': 'status_container',
-      'settings': [stOpts.statusbarS],
-      'content_margin': [12, 8, 12, 8],
+      class: 'status_container',
+      settings: [stOpts.statusbarS],
+      content_margin: [12, 8, 12, 8],
     },
 
     // Large Status Bar
     {
-      'class': 'status_container',
-      'settings': [stOpts.statusbarL],
-      'content_margin': [12, 13, 12, 13],
+      class: 'status_container',
+      settings: [stOpts.statusbarL],
+      content_margin: [12, 13, 12, 13],
     },
 
     // Extra Large Status Bar
     {
-      'class': 'status_container',
-      'settings': [stOpts.statusbarXl],
-      'content_margin': [12, 16, 12, 16],
+      class: 'status_container',
+      settings: [stOpts.statusbarXl],
+      content_margin: [12, 16, 12, 16],
     },
 
     // Extra Extra Large Status Bar
     {
-      'class': 'status_container',
-      'settings': [stOpts.statusbarXxl],
-      'content_margin': [12, 18, 12, 18],
+      class: 'status_container',
+      settings: [stOpts.statusbarXxl],
+      content_margin: [12, 18, 12, 18],
     },
 
-    // Sidebar Padding
+    /**
+     * Sidebar Padding
+     */
 
     // Cramped Sidebar
     {
-      'class': 'sidebar_tree',
-      'settings': [stOpts.sidebarSpacingXs],
-      'row_padding': [24, 1],
+      class: 'sidebar_tree',
+      settings: [stOpts.sidebarSpacingXs],
+      row_padding: [24, 1],
     },
 
     // Compact Sidebar
     {
-      'class': 'sidebar_tree',
-      'settings': [stOpts.sidebarSpacingS],
-      'row_padding': [24, 3],
+      class: 'sidebar_tree',
+      settings: [stOpts.sidebarSpacingS],
+      row_padding: [24, 3],
     },
 
     // Comfortable Sidebar
     {
-      'class': 'sidebar_tree',
-      'settings': [stOpts.sidebarSpacingL],
-      'row_padding': [24, 7],
+      class: 'sidebar_tree',
+      settings: [stOpts.sidebarSpacingL],
+      row_padding: [24, 7],
     },
 
     // Cozy Sidebar
     {
-      'class': 'sidebar_tree',
-      'settings': [stOpts.sidebarSpacingXl],
-      'row_padding': [24, 9],
+      class: 'sidebar_tree',
+      settings: [stOpts.sidebarSpacingXl],
+      row_padding: [24, 9],
     },
 
-    // Hide Sidebar Folder Icons
+    /**
+     * Hide Sidebar Folder Icons
+     */
     {
-      'class': 'icon_folder',
-      'settings': [stOpts.disableFolderIcons],
+      class: 'icon_folder',
+      settings: [stOpts.disableFolderIcons],
 
-      'content_margin': [0, 0],
+      content_margin: [0, 0],
     },
 
+    // Folder Loading
     {
-      'class': 'icon_folder',
-      'settings': [stOpts.disableFolderIcons],
-      'parents': [
+      class: 'icon_folder_loading',
+      settings: [stOpts.disableFolderIcons],
 
-        {
-          'class': 'tree_row',
-          'attributes': ['hover'],
-        },
-
-      ],
-
-      'content_margin': [0, 0],
+      content_margin: [0, 0],
     },
 
+    // Symlinked Folder
     {
-      'class': 'icon_folder',
-      'settings': [stOpts.disableFolderIcons],
-      'parents': [
+      class: 'icon_folder_dup',
+      settings: [stOpts.disableFolderIcons],
 
-        {
-          'class': 'tree_row',
-          'attributes': ['expanded', 'hover'],
-        },
-
-      ],
-
-      'content_margin': [0, 0],
+      content_margin: [0, 0],
     },
 
-    {
-      'class': 'icon_folder',
-      'settings': [stOpts.disableFolderIcons],
-      'parents': [
-
-        {
-          'class': 'tree_row',
-          'attributes': ['expanded'],
-        },
-
-      ],
-
-      'content_margin': [0, 0],
-    },
-
-    // Folder loading
-    {
-      'class': 'icon_folder_loading',
-      'settings': [stOpts.disableFolderIcons],
-
-      'content_margin': [0, 0],
-    },
-
-    // Symlinked
-    {
-      'class': 'icon_folder_dup',
-      'settings': [stOpts.disableFolderIcons],
-
-      'content_margin': [0, 0],
-    },
-
-    {
-      'class': 'icon_folder_dup',
-      'settings': [stOpts.disableFolderIcons],
-
-      'parents': [
-
-        {
-          'class': 'tree_row',
-          'attributes': ['hover'],
-        },
-
-      ],
-
-      'content_margin': [0, 0],
-    },
-
-    {
-      'class': 'icon_folder_dup',
-      'settings': [stOpts.disableFolderIcons],
-
-      'parents': [
-
-        {
-          'class': 'tree_row',
-          'attributes': ['expanded', 'hover'],
-        },
-
-      ],
-
-      'content_margin': [0, 0],
-    },
-
-    {
-      'class': 'icon_folder_dup',
-      'settings': [stOpts.disableFolderIcons],
-
-      'parents': [
-
-        {
-          'class': 'tree_row',
-          'attributes': ['expanded'],
-        },
-
-      ],
-
-      'content_margin': [0, 0],
-    },
-
-    // AutoComplete Padding
+    /**
+     * AutoComplete Padding
+     */
 
     // Cramped AutoComplete
     {
-      'class': 'auto_complete',
-      'settings': [stOpts.autocompleteSpacingXs],
-      'row_padding': [12, 2],
+      class: 'auto_complete',
+      settings: [stOpts.autocompleteSpacingXs],
+      row_padding: [12, 2],
     },
 
     // Compact AutoComplete
     {
-      'class': 'auto_complete',
-      'settings': [stOpts.autocompleteSpacingS],
-      'row_padding': [12, 4],
+      class: 'auto_complete',
+      settings: [stOpts.autocompleteSpacingS],
+      row_padding: [12, 4],
     },
 
     // Comfortable AutoComplete
     {
-      'class': 'auto_complete',
-      'settings': [stOpts.autocompleteSpacingL],
-      'row_padding': [12, 8],
+      class: 'auto_complete',
+      settings: [stOpts.autocompleteSpacingL],
+      row_padding: [12, 8],
     },
 
     // Cozy AutoComplete
     {
-      'class': 'auto_complete',
-      'settings': [stOpts.autocompleteSpacingXl],
-      'row_padding': [12, 10],
+      class: 'auto_complete',
+      settings: [stOpts.autocompleteSpacingXl],
+      row_padding: [12, 10],
     },
 
-    // Status bar panel close icon
+    /**
+     * Command Palette Padding
+     */
+
+    // Cramped Command Palette
     {
-      'class': 'panel_close_button',
-      'settings': [stOpts.enablePanelCloseButton],
-      'content_margin': [8, 8],
+      class: 'quick_panel',
+      parents: [
+
+        {
+          class: 'overlay_control',
+        },
+
+      ],
+      settings: [stOpts.commandPaletteSpacingXs],
+      row_padding: [14, 4],
+    },
+
+    // Compact Command Palette
+    {
+      class: 'quick_panel',
+      parents: [
+
+        {
+          class: 'overlay_control',
+        },
+
+      ],
+      settings: [stOpts.commandPaletteSpacingS],
+      row_padding: [14, 8],
+    },
+
+    // Comfortable Command Palette
+    {
+      class: 'quick_panel',
+      parents: [
+
+        {
+          class: 'overlay_control',
+        },
+
+      ],
+      settings: [stOpts.commandPaletteSpacingL],
+      row_padding: [14, 14],
+    },
+
+    // Cozy Command Palette
+    {
+      class: 'quick_panel',
+      parents: [
+
+        {
+          class: 'overlay_control',
+        },
+
+      ],
+      settings: [stOpts.commandPaletteSpacingXl],
+      row_padding: [14, 16],
+    },
+
+    /**
+     * Enable Status Bar Close Button
+     */
+    {
+      class: 'panel_close_button',
+      settings: [stOpts.enablePanelCloseButton],
+      content_margin: [8, 8],
     },
 
     /**
@@ -397,24 +393,24 @@ module.exports = function (values) {
 
     // Tabs
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.disableBorders],
-      'content_margin': [0, 0, 12, 0],
+      class: 'tabset_control',
+      settings: [stOpts.disableBorders],
+      content_margin: [0, 0, 12, 0],
 
       'layer1.opacity': 0,
     },
 
     {
-      'class': 'tab_control',
-      'settings': [stOpts.disableBorders],
+      class: 'tab_control',
+      settings: [stOpts.disableBorders],
 
       'layer2.opacity': 0,
     },
 
     {
-      'class': 'tab_control',
-      'settings': [stOpts.disableBorders],
-      'attributes': ['selected'],
+      class: 'tab_control',
+      settings: [stOpts.disableBorders],
+      attributes: ['selected'],
 
       'layer1.opacity': 0,
       'layer2.opacity': 0,
@@ -422,90 +418,102 @@ module.exports = function (values) {
 
     // Sidebar
     {
-      'class': 'sidebar_container',
-      'settings': [stOpts.disableBorders],
-
-      'layer1.opacity': 0,
-    },
-
-    {
-      'class': 'sidebar_tree',
-      'settings': [stOpts.disableBorders],
-
-      'layer1.opacity': 0,
-    },
-
-    {
-      'class': 'tree_row',
-      'settings': [stOpts.disableBorders],
+      class: 'sidebar_container',
+      settings: [stOpts.disableBorders],
 
       'layer1.opacity': 0,
     },
 
     // Scrollbars
     {
-      'class': 'scroll_bar_control',
-      'settings': [stOpts.disableBorders],
-
-      'layer1.opacity': 0,
-    },
-
-    {
-      'class': 'scroll_corner_control',
-      'settings': [stOpts.disableBorders],
+      class: 'scroll_bar_control',
+      settings: [stOpts.disableBorders],
 
       'layer1.opacity': 0,
     },
 
     // Status Bar
     {
-      'class': 'status_bar',
-      'settings': [stOpts.disableBorders],
+      class: 'status_bar',
+      settings: [stOpts.disableBorders],
 
       'layer2.opacity': 0,
     },
 
     {
-      'class': 'panel_control',
-      'settings': [stOpts.disableBorders],
+      class: 'panel_control',
+      settings: [stOpts.disableBorders],
 
       'layer1.opacity': 0,
     },
 
     // Command Palette
     {
-      'class': 'overlay_control',
-      'settings': [stOpts.disableBorders],
-      'content_margin': [0, 14, 0, 0],
+      class: 'overlay_control',
+      settings: [stOpts.disableBorders],
+      content_margin: [0, 14, 0, 0],
 
       'layer1.opacity': 0,
     },
 
     {
-      'class': 'mini_quick_panel_row',
-      'settings': [stOpts.disableBorders],
+      class: 'mini_quick_panel_row',
+      settings: [stOpts.disableBorders],
 
       'layer1.opacity': 0,
     },
 
     {
-      'class': 'quick_panel_row',
-      'settings': [stOpts.disableBorders],
+      class: 'quick_panel_row',
+      settings: [stOpts.disableBorders],
 
       'layer1.opacity': 0,
     },
 
-    // Enable Statusbar Border
+    /**
+     * Underline Dirty Tabs
+     */
+
+    // Default Thickness
     {
-      'class': 'status_bar',
-      'settings': [stOpts.enableStatusbarBorder],
+      class: 'tab_control',
+      settings: [stOpts.underlineDirtyTabs],
+      attributes: ['dirty'],
+
+      'layer2.tint': c.bnp.gray,
+    },
+
+    {
+      class: 'tab_control',
+      settings: [stOpts.underlineDirtyTabs],
+      attributes: ['dirty', 'selected'],
+
+      'layer2.opacity': 1, // Border - Bottom
+    },
+
+    // Thick Thickness
+    {
+      class: 'tab_control',
+      settings: [stOpts.underlineDirtyTabs, stOpts.underlineDirtyTabsThick],
+      attributes: ['dirty'],
+
+      'layer2.inner_margin': [0, 0, 0, 2],
+    },
+
+    /**
+     * Enable Statusbar Border
+     */
+
+    {
+      class: 'status_bar',
+      settings: [stOpts.enableStatusbarBorder],
 
       'layer2.opacity': 1,
     },
 
     {
-      'class': 'panel_control',
-      'settings': [stOpts.enableStatusbarBorder],
+      class: 'panel_control',
+      settings: [stOpts.enableStatusbarBorder],
 
       'layer1.opacity': 1,
     },
@@ -516,369 +524,334 @@ module.exports = function (values) {
 
     // Folder Icon
     {
-      'class': 'icon_folder',
-      'settings': [stOpts.iconsetSpacegray],
+      class: 'icon_folder',
+      settings: [stOpts.iconsetSpacegray],
 
-      'layer1.texture': `${paths.commons}spacegray__folder.png`,
-      'layer2.texture': `${paths.this}spacegray__folder--hover.png`,
-      'layer3.texture': `${paths.this}spacegray__folder--expanded.png`,
+      'layer1.texture': `${paths.commons}spacegray__folder.png`, // Default
+      'layer2.texture': `${paths.this}spacegray__folder--hover.png`, // Hover
+      'layer3.texture': `${paths.this}spacegray__folder--expanded.png`, // Expanded
     },
 
     // Symlinked Folder Icon
     {
-      'class': 'icon_folder_dup',
-      'settings': [stOpts.iconsetSpacegray],
+      class: 'icon_folder_dup',
+      settings: [stOpts.iconsetSpacegray],
 
-      'layer0.texture': `${paths.commons}spacegray__folder_dup.png`,
-      'layer1.texture': `${paths.this}spacegray__folder_dup--hover.png`,
-      'layer2.texture': `${paths.this}spacegray__folder_dup--expanded.png`,
+      'layer0.texture': `${paths.commons}spacegray__folder_dup.png`, // Default
+      'layer1.texture': `${paths.this}spacegray__folder_dup--hover.png`, // Hover
+      'layer2.texture': `${paths.this}spacegray__folder_dup--expanded.png`, // Expanded
     },
 
     // Regex Icon
     {
-      'class': 'icon_regex',
-      'settings': [stOpts.iconsetSpacegray],
+      class: 'icon_regex',
+      settings: [stOpts.iconsetSpacegray],
 
-      // Default
-      'layer0.texture': `${spacegrayPath}regex.png`,
-
-      // Hover
-      'layer1.texture': `${spacegrayPath}regex--hover.png`,
-
-      // Selected
-      'layer2.texture': `${spacegrayPath}regex--selected.png`,
+      'layer0.texture': `${paths.spacegray}regex.png`, // Default
+      'layer1.texture': `${paths.spacegray}regex--hover.png`, // Hover
+      'layer2.texture': `${paths.spacegray}regex--selected.png`, // Selected
     },
 
     // Case Sensitive
     {
-      'class': 'icon_case',
-      'settings': [stOpts.iconsetSpacegray],
+      class: 'icon_case',
+      settings: [stOpts.iconsetSpacegray],
 
-      // Default
-      'layer0.texture': `${spacegrayPath}casesensitive.png`,
-
-      // Hover
-      'layer1.texture': `${spacegrayPath}casesensitive--hover.png`,
-
-      // Selected
-      'layer2.texture': `${spacegrayPath}casesensitive--selected.png`,
+      'layer0.texture': `${paths.spacegray}casesensitive.png`, // Default
+      'layer1.texture': `${paths.spacegray}casesensitive--hover.png`, // Hover
+      'layer2.texture': `${paths.spacegray}casesensitive--selected.png`, // Selected
     },
 
     // Wholeword
     {
-      'class': 'icon_whole_word',
-      'settings': [stOpts.iconsetSpacegray],
+      class: 'icon_whole_word',
+      settings: [stOpts.iconsetSpacegray],
 
-      // Default
-      'layer0.texture': `${spacegrayPath}wholeword.png`,
-
-      // Hover
-      'layer1.texture': `${spacegrayPath}wholeword--hover.png`,
-
-      // Selected
-      'layer2.texture': `${spacegrayPath}wholeword--selected.png`,
+      'layer0.texture': `${paths.spacegray}wholeword.png`, // Default
+      'layer1.texture': `${paths.spacegray}wholeword--hover.png`, // Hover
+      'layer2.texture': `${paths.spacegray}wholeword--selected.png`, // Selected
     },
 
     // Wrap
     {
-      'class': 'icon_wrap',
-      'settings': [stOpts.iconsetSpacegray],
+      class: 'icon_wrap',
+      settings: [stOpts.iconsetSpacegray],
 
-      // Default
-      'layer0.texture': `${spacegrayPath}wrap.png`,
-
-      // Hover
-      'layer1.texture': `${spacegrayPath}wrap--hover.png`,
-
-      // Selected
-      'layer2.texture': `${spacegrayPath}wrap--selected.png`,
+      'layer0.texture': `${paths.spacegray}wrap.png`, // Default
+      'layer1.texture': `${paths.spacegray}wrap--hover.png`, // Hover
+      'layer2.texture': `${paths.spacegray}wrap--selected.png`, // Selected
     },
 
     // In selection
     {
-      'class': 'icon_in_selection',
-      'settings': [stOpts.iconsetSpacegray],
+      class: 'icon_in_selection',
+      settings: [stOpts.iconsetSpacegray],
 
-      // Default
-      'layer0.texture': `${spacegrayPath}inselection.png`,
-
-      // Hover
-      'layer1.texture': `${spacegrayPath}inselection--hover.png`,
-
-      // Selected
-      'layer2.texture': `${spacegrayPath}inselection--selected.png`,
+      'layer0.texture': `${paths.spacegray}inselection.png`, // Default
+      'layer1.texture': `${paths.spacegray}inselection--hover.png`, // Hover
+      'layer2.texture': `${paths.spacegray}inselection--selected.png`, // Selected
     },
 
     // Highlight Result
     {
-      'class': 'icon_highlight',
-      'settings': [stOpts.iconsetSpacegray],
+      class: 'icon_highlight',
+      settings: [stOpts.iconsetSpacegray],
 
-      // Default
-      'layer0.texture': `${spacegrayPath}highlight.png`,
-
-      // Hover
-      'layer1.texture': `${spacegrayPath}highlight--hover.png`,
-
-      // Selected
-      'layer2.texture': `${spacegrayPath}highlight--selected.png`,
+      'layer0.texture': `${paths.spacegray}highlight.png`, // Default
+      'layer1.texture': `${paths.spacegray}highlight--hover.png`, // Hover
+      'layer2.texture': `${paths.spacegray}highlight--selected.png`, // Selected
     },
 
     // Preserve Case
     {
-      'class': 'icon_preserve_case',
-      'settings': [stOpts.iconsetSpacegray],
+      class: 'icon_preserve_case',
+      settings: [stOpts.iconsetSpacegray],
 
-      // Default
-      'layer0.texture': `${spacegrayPath}preservecase.png`,
-
-      // Hover
-      'layer1.texture': `${spacegrayPath}preservecase--hover.png`,
-
-      // Selected
-      'layer2.texture': `${spacegrayPath}preservecase--selected.png`,
+      'layer0.texture': `${paths.spacegray}preservecase.png`, // Default
+      'layer1.texture': `${paths.spacegray}preservecase--hover.png`, // Hover
+      'layer2.texture': `${paths.spacegray}preservecase--selected.png`, // Selected
     },
 
     // Show context
     {
-      'class': 'icon_context',
-      'settings': [stOpts.iconsetSpacegray],
+      class: 'icon_context',
+      settings: [stOpts.iconsetSpacegray],
 
-      // Default
-      'layer0.texture': `${spacegrayPath}context.png`,
-
-      // Hover
-      'layer1.texture': `${spacegrayPath}context--hover.png`,
-
-      // Selected
-      'layer2.texture': `${spacegrayPath}context--selected.png`,
+      'layer0.texture': `${paths.spacegray}context.png`, // Default
+      'layer1.texture': `${paths.spacegray}context--hover.png`, // Hover
+      'layer2.texture': `${paths.spacegray}context--selected.png`, // Selected
     },
 
     // Use buffer
     {
-      'class': 'icon_use_buffer',
-      'settings': [stOpts.iconsetSpacegray],
+      class: 'icon_use_buffer',
+      settings: [stOpts.iconsetSpacegray],
 
-      // Default
-      'layer0.texture': `${spacegrayPath}buffer.png`,
-
-      // Hover
-      'layer1.texture': `${spacegrayPath}buffer--hover.png`,
-
-      // Selected
-      'layer2.texture': `${spacegrayPath}buffer--selected.png`,
+      'layer0.texture': `${paths.spacegray}buffer.png`, // Default
+      'layer1.texture': `${paths.spacegray}buffer--hover.png`, // Hover
+      'layer2.texture': `${paths.spacegray}buffer--selected.png`, // Selected
     },
 
     // Panel Switcher
     {
-      'class': 'panel_button_control',
-      'settings': [stOpts.iconsetSpacegray],
+      class: 'panel_button_control',
+      settings: [stOpts.iconsetSpacegray],
 
-      'layer0.texture': `${spacegrayPath}panels.png`,
-    },
-
-    {
-      'class': 'panel_button_control',
-      'settings': [stOpts.iconsetSpacegray],
-      'attributes': ['hover'],
-
-      'layer0.texture': `${spacegrayPath}panels--hover.png`,
+      'layer0.texture': `${paths.spacegray}panels.png`, // Default
+      'layer1.texture': `${paths.spacegray}panels--hover.png`, // Hover
     },
 
     // Textline Input Overflow Menu
     {
-      'class': 'dropdown_button_control',
-      'settings': [stOpts.iconsetSpacegray],
+      class: 'dropdown_button_control',
+      settings: [stOpts.iconsetSpacegray],
 
-      'layer0.texture': `${spacegrayPath}more.png`,
-
-      'layer1.texture': `${spacegrayPath}more--hover.png`,
+      'layer0.texture': `${paths.spacegray}more.png`, // Default
+      'layer1.texture': `${paths.spacegray}more--hover.png`, // Hover
     },
 
-    // Autocollapsing Tabs
-
+    /**
+     * Autocollapsing Tabs
+     */
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.autocollapseTabs],
+      class: 'tabset_control',
+      settings: [stOpts.autocollapseTabs],
 
-      'content_margin': [-1, 4, 12, 0],
-      'tab_height': 0,
+      content_margin: [-1, 4, 12, 0],
+      tab_height: 0,
     },
 
     // Trigger Sizes
-
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.autocollapseTabs, 'gruvbox_autocollapse_tabs_trigger_2'],
+      class: 'tabset_control',
+      settings: [stOpts.autocollapseTabs, stOpts.autocollapseTabsTriggerXs],
 
-      'content_margin': [-1, 2, 12, 0],
+      content_margin: [-1, 2, 12, 0],
     },
 
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.autocollapseTabs, 'gruvbox_autocollapse_tabs_trigger_3'],
+      class: 'tabset_control',
+      settings: [stOpts.autocollapseTabs, stOpts.autocollapseTabsTriggerS],
 
-      'content_margin': [-1, 3, 12, 0],
+      content_margin: [-1, 3, 12, 0],
     },
 
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.autocollapseTabs, 'gruvbox_autocollapse_tabs_trigger_5'],
+      class: 'tabset_control',
+      settings: [stOpts.autocollapseTabs, stOpts.autocollapseTabsTriggerL],
 
-      'content_margin': [-1, 5, 12, 0],
+      content_margin: [-1, 5, 12, 0],
     },
 
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.autocollapseTabs, 'gruvbox_autocollapse_tabs_trigger_6'],
+      class: 'tabset_control',
+      settings: [stOpts.autocollapseTabs, stOpts.autocollapseTabsTriggerXl],
 
-      'content_margin': [-1, 6, 12, 0],
+      content_margin: [-1, 6, 12, 0],
     },
 
     // Autocollapse Hover
-
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.autocollapseTabs],
-      'attributes': ['hover'],
+      class: 'tabset_control',
+      settings: [stOpts.autocollapseTabs],
+      attributes: ['hover'],
 
-      'content_margin': [-1, 0, 12, 0],
+      content_margin: [-1, 0, 12, 0],
     },
 
     // Default Tabs
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.autocollapseTabs],
-      'attributes': ['hover'],
+      class: 'tabset_control',
+      settings: [stOpts.autocollapseTabs],
+      attributes: ['hover'],
 
-      'tab_height': 51,
+      tab_height: 51,
     },
 
     // Extra Extra Small Tabs
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.tabsXxs, stOpts.autocollapseTabs],
-      'attributes': ['hover'],
-      'tab_height': 33,
+      class: 'tabset_control',
+      settings: [stOpts.tabsXxs, stOpts.autocollapseTabs],
+      attributes: ['hover'],
+      tab_height: 33,
     },
 
     // Extra Small Tabs
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.tabsXs, stOpts.autocollapseTabs],
-      'attributes': ['hover'],
-      'tab_height': 39,
+      class: 'tabset_control',
+      settings: [stOpts.tabsXs, stOpts.autocollapseTabs],
+      attributes: ['hover'],
+      tab_height: 39,
     },
 
     // Small Tabs
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.tabsS, stOpts.autocollapseTabs],
-      'attributes': ['hover'],
-      'tab_height': 45,
+      class: 'tabset_control',
+      settings: [stOpts.tabsS, stOpts.autocollapseTabs],
+      attributes: ['hover'],
+      tab_height: 45,
     },
 
     // Large Tabs
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.tabsL, stOpts.autocollapseTabs],
-      'attributes': ['hover'],
-      'tab_height': 57,
+      class: 'tabset_control',
+      settings: [stOpts.tabsL, stOpts.autocollapseTabs],
+      attributes: ['hover'],
+      tab_height: 57,
     },
 
     // Extra Large Tabs
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.tabsXl, stOpts.autocollapseTabs],
-      'attributes': ['hover'],
-      'tab_height': 63,
+      class: 'tabset_control',
+      settings: [stOpts.tabsXl, stOpts.autocollapseTabs],
+      attributes: ['hover'],
+      tab_height: 63,
     },
 
     // Extra Extra Large Tabs
     {
-      'class': 'tabset_control',
-      'settings': [stOpts.tabsXxl, stOpts.autocollapseTabs],
-      'attributes': ['hover'],
-      'tab_height': 69,
+      class: 'tabset_control',
+      settings: [stOpts.tabsXxl, stOpts.autocollapseTabs],
+      attributes: ['hover'],
+      tab_height: 69,
     },
 
+    // Tab Scroll Left Button
     {
-      'class': 'scroll_tabs_left_button',
-      'settings': [stOpts.autocollapseTabs],
+      class: 'scroll_tabs_left_button',
+      settings: [stOpts.autocollapseTabs],
 
-      'content_margin': [0, 0],
+      content_margin: [0, 0],
     },
 
+    // Tab Scroll Left Button Hover
     {
-      'class': 'scroll_tabs_left_button',
-      'settings': [stOpts.autocollapseTabs],
-      'parents': [
+      class: 'scroll_tabs_left_button',
+      settings: [stOpts.autocollapseTabs],
+      parents: [
 
         {
-          'class': 'tabset_control',
-          'attributes': ['hover'],
+          class: 'tabset_control',
+          attributes: ['hover'],
         },
 
       ],
 
-      'content_margin': [14, 7],
+      content_margin: [14, 7],
     },
 
+    // Tab Scroll Right Button
     {
-      'class': 'scroll_tabs_right_button',
-      'settings': [stOpts.autocollapseTabs],
+      class: 'scroll_tabs_right_button',
+      settings: [stOpts.autocollapseTabs],
 
-      'content_margin': [0, 0],
+      content_margin: [0, 0],
     },
 
+    // Tab Scroll Right Button Hover
     {
-      'class': 'scroll_tabs_right_button',
-      'settings': [stOpts.autocollapseTabs],
-      'parents': [
+      class: 'scroll_tabs_right_button',
+      settings: [stOpts.autocollapseTabs],
+      parents: [
 
         {
-          'class': 'tabset_control',
-          'attributes': ['hover'],
+          class: 'tabset_control',
+          attributes: ['hover'],
         },
 
       ],
 
-      'content_margin': [14, 7],
+      content_margin: [14, 7],
     },
 
+    // Tab Scroll Overflow Menu Button
     {
-      'class': 'show_tabs_dropdown_button',
-      'settings': [stOpts.autocollapseTabs],
+      class: 'show_tabs_dropdown_button',
+      settings: [stOpts.autocollapseTabs],
 
-      'content_margin': [0, 0],
+      content_margin: [0, 0],
     },
 
+    // Tab Scroll Overflow Menu Button Hover
     {
-      'class': 'show_tabs_dropdown_button',
-      'settings': [stOpts.autocollapseTabs],
-      'parents': [
+      class: 'show_tabs_dropdown_button',
+      settings: [stOpts.autocollapseTabs],
+      parents: [
 
         {
-          'class': 'tabset_control',
-          'attributes': ['hover'],
+          class: 'tabset_control',
+          attributes: ['hover'],
         },
 
       ],
 
-      'content_margin': [12, 12],
+      content_margin: [12, 12],
     },
 
-    // Disable Panel Switcher
+    /**
+     * Disable Panel Switcher
+     */
+
     {
-      'class': 'panel_button_control',
-      'settings': [stOpts.disablePanelsButton],
-      'content_margin': [0, 0],
+      class: 'panel_button_control',
+      settings: [stOpts.disablePanelsButton],
+      content_margin: [0, 0],
     },
 
-    // File icons and folder Opacity
+    // Remove the status_bar margin to compensate
     {
-      'class': 'icon_file_type',
-      'settings': [stOpts.disableFadedFileIcons],
+      class: 'status_bar',
+      settings: [stOpts.disablePanelsButton],
+      content_margin: [0, 0],
+    },
+
+    /**
+     * Disable Faded File Icons
+     */
+
+    {
+      class: 'icon_file_type',
+      settings: [stOpts.disableFadedFileIcons],
 
       'layer0.opacity': 1,
     },
@@ -888,305 +861,304 @@ module.exports = function (values) {
      */
 
     // Button labels
-
     {
-      'class': 'label_control',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'label_control',
+      settings: [stOpts.disableGreyscaleColors],
 
-      'parents': [
+      parents: [
 
         {
-          'class': 'button_control',
+          class: 'button_control',
         },
 
       ],
 
-      'color': c.bnp.fg[info.contrast],
+      color: c.bnp.fg[info.contrast],
     },
 
     // All labels
     {
-      'class': 'label_control',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'label_control',
+      settings: [stOpts.disableGreyscaleColors],
 
-      'color': c.bnp.fg3,
+      color: c.bnp.fg3,
     },
 
     // Status bar labels
     {
-      'class': 'label_control',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'label_control',
+      settings: [stOpts.disableGreyscaleColors],
 
-      'parents': [
+      parents: [
 
         {
-          'class': 'status_bar',
+          class: 'status_bar',
         },
 
       ],
 
-      'color': c.bnp.fg3,
+      color: c.bnp.fg3,
     },
 
     {
-      'class': 'status_button',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'status_button',
+      settings: [stOpts.disableGreyscaleColors],
 
       'layer0.tint': c.bnp.bg1,
     },
 
     {
-      'class': 'label_control',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'label_control',
+      settings: [stOpts.disableGreyscaleColors],
 
-      'parents': [
+      parents: [
 
         {
-          'class': 'status_button',
-          'attributes': ['hover'],
+          class: 'status_button',
+          attributes: ['hover'],
         },
 
       ],
 
-      'color': c.bnp.fg1,
+      color: c.bnp.fg1,
     },
 
     // Sidebar
     {
-      'class': 'sidebar_heading',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'sidebar_heading',
+      settings: [stOpts.disableGreyscaleColors],
 
-      'color': c.bnp.fg1,
+      color: c.bnp.fg1,
     },
 
     {
-      'class': 'sidebar_label',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'sidebar_label',
+      settings: [stOpts.disableGreyscaleColors],
 
-      'color': c.bnp.gray,
+      color: c.bnp.gray,
     },
 
     {
-      'class': 'sidebar_label',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'sidebar_label',
+      settings: [stOpts.disableGreyscaleColors],
 
-      'parents': [
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['hover'],
+          class: 'tree_row',
+          attributes: ['hover'],
         },
 
       ],
 
-      'color': c.bnp.fg1,
+      color: c.bnp.fg1,
     },
 
     {
-      'class': 'sidebar_label',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'sidebar_label',
+      settings: [stOpts.disableGreyscaleColors],
 
-      'parents': [
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['selected'],
+          class: 'tree_row',
+          attributes: ['selected'],
         },
 
       ],
 
-      'color': c.bnp.fg1,
+      color: c.bnp.fg1,
     },
 
     {
-      'class': 'sidebar_label',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'sidebar_label',
+      settings: [stOpts.disableGreyscaleColors],
 
-      'parents': [
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['expandable'],
+          class: 'tree_row',
+          attributes: ['expandable'],
         },
 
       ],
 
-      'color': c.bnp.fg4,
+      color: c.bnp.fg4,
     },
 
     {
-      'class': 'sidebar_label',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'sidebar_label',
+      settings: [stOpts.disableGreyscaleColors],
 
-      'parents': [
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['expanded'],
+          class: 'tree_row',
+          attributes: ['expanded'],
         },
 
       ],
 
-      'color': c.bnp.fg1,
+      color: c.bnp.fg1,
     },
 
     {
-      'class': 'sidebar_label',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'sidebar_label',
+      settings: [stOpts.disableGreyscaleColors],
 
-      'parents': [
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['hover'],
+          class: 'tree_row',
+          attributes: ['hover'],
         },
 
       ],
 
-      'color': c.bnp.fg1,
+      color: c.bnp.fg1,
     },
 
     {
-      'class': 'sidebar_label',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'sidebar_label',
+      settings: [stOpts.disableGreyscaleColors],
 
-      'parents': [
+      parents: [
 
         {
-          'class': 'tree_row',
-          'attributes': ['expanded', 'selected'],
+          class: 'tree_row',
+          attributes: ['expanded', 'selected'],
         },
 
       ],
 
-      'color': c.bnp.fg1,
+      color: c.bnp.fg1,
     },
 
     {
-      'class': 'sidebar_label',
-      'settings': [stOpts.disableGreyscaleColors],
-      'attributes': ['transient'],
+      class: 'sidebar_label',
+      settings: [stOpts.disableGreyscaleColors],
+      attributes: ['transient'],
 
-      'color': c.bnp.fg1,
+      color: c.bnp.fg1,
     },
 
     // Tab Label
     {
-      'class': 'tab_label',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'tab_label',
+      settings: [stOpts.disableGreyscaleColors],
 
-      'fg': c.bnp.gray,
+      fg: c.bnp.gray,
     },
 
     // Selected Tab Tab Label
     {
-      'class': 'tab_label',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'tab_label',
+      settings: [stOpts.disableGreyscaleColors],
 
-      'parents': [
+      parents: [
 
         {
-          'class': 'tab_control',
-          'attributes': ['selected'],
+          class: 'tab_control',
+          attributes: ['selected'],
         },
 
       ],
 
-      'fg': c.bnp.fg2,
+      fg: c.bnp.fg2,
     },
 
     // Hovered Tab Tab Label
     {
-      'class': 'tab_label',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'tab_label',
+      settings: [stOpts.disableGreyscaleColors],
 
-      'parents': [
+      parents: [
 
         {
-          'class': 'tab_control',
-          'attributes': ['hover'],
+          class: 'tab_control',
+          attributes: ['hover'],
         },
 
       ],
 
-      'fg': c.bnp.fg3,
+      fg: c.bnp.fg3,
     },
 
     // Selected & Hovered Tab Tab Label
     {
-      'class': 'tab_label',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'tab_label',
+      settings: [stOpts.disableGreyscaleColors],
 
-      'parents': [
+      parents: [
 
         {
-          'class': 'tab_control',
-          'attributes': ['selected', 'hover'],
+          class: 'tab_control',
+          attributes: ['selected', 'hover'],
         },
 
       ],
 
-      'fg': c.bnp.fg2,
+      fg: c.bnp.fg2,
     },
 
     // Panel labels
     {
-      'class': 'quick_panel_label',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'quick_panel_label',
+      settings: [stOpts.disableGreyscaleColors],
 
-      'fg': c.bnp.fg4,
-      'match_fg': c.bnp.fg1,
-      'selected_fg': c.bnp.fg4,
-      'selected_match_fg': c.bnp.fg1,
+      fg: c.bnp.fg4,
+      match_fg: c.bnp.fg1,
+      selected_fg: c.bnp.fg4,
+      selected_match_fg: c.bnp.fg1,
     },
 
     // Panel labels
     {
-      'class': 'quick_panel_label',
-      'settings': [stOpts.disableGreyscaleColors],
-      'parents': [
+      class: 'quick_panel_label',
+      settings: [stOpts.disableGreyscaleColors],
+      parents: [
 
         {
-          'class': 'overlay_control',
+          class: 'overlay_control',
         },
 
       ],
 
-      'fg': c.bnp.fg4,
-      'match_fg': c.bnp.fg1,
-      'selected_fg': c.bnp.fg4,
-      'selected_match_fg': c.bnp.fg1,
+      fg: c.bnp.fg4,
+      match_fg: c.bnp.fg1,
+      selected_fg: c.bnp.fg4,
+      selected_match_fg: c.bnp.fg1,
     },
 
     // Panels sublabels
     {
-      'class': 'quick_panel_path_label',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'quick_panel_path_label',
+      settings: [stOpts.disableGreyscaleColors],
 
-      'fg': c.bnp.fg4,
-      'match_fg': c.bnp.fg1,
-      'selected_fg': c.bnp.fg4,
-      'selected_match_fg': c.bnp.fg1,
+      fg: c.bnp.fg4,
+      match_fg: c.bnp.fg1,
+      selected_fg: c.bnp.fg4,
+      selected_match_fg: c.bnp.fg1,
     },
 
     // Panels data / score
     {
-      'class': 'quick_panel_score_label',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'quick_panel_score_label',
+      settings: [stOpts.disableGreyscaleColors],
 
-      'fg': c.bnp.fg4,
-      'selected_fg': c.bnp.fg1,
+      fg: c.bnp.fg4,
+      selected_fg: c.bnp.fg1,
     },
 
     // Autocomplete
     {
-      'class': 'auto_complete_label',
-      'settings': [stOpts.disableGreyscaleColors],
+      class: 'auto_complete_label',
+      settings: [stOpts.disableGreyscaleColors],
 
-      'fg': c.bnp.fg4,
-      'match_fg': c.bnp.fg1,
-      'selected_fg': c.bnp.fg4,
-      'selected_match_fg': c.bnp.fg1,
+      fg: c.bnp.fg4,
+      match_fg: c.bnp.fg1,
+      selected_fg: c.bnp.fg4,
+      selected_match_fg: c.bnp.fg1,
     },
 
     /**
@@ -1194,8 +1166,8 @@ module.exports = function (values) {
      */
 
     {
-      'class': 'icon_folder',
-      'settings': [stOpts.enableSquareFolderIcons],
+      class: 'icon_folder',
+      settings: [stOpts.enableSquareFolderIcons],
 
       'layer1.texture': `${paths.commons}folder__square.png`,
       'layer2.texture': `${paths.this}folder__square--expanded.png`,
@@ -1204,8 +1176,8 @@ module.exports = function (values) {
 
     // Symlinked
     {
-      'class': 'icon_folder_dup',
-      'settings': [stOpts.enableSquareFolderIcons],
+      class: 'icon_folder_dup',
+      settings: [stOpts.enableSquareFolderIcons],
 
       'layer0.texture': `${paths.commons}folder__square_dup.png`,
       'layer1.texture': `${paths.this}folder__square_dup--expanded.png`,
@@ -1217,8 +1189,8 @@ module.exports = function (values) {
      */
 
     {
-      'class': 'icon_folder',
-      'settings': [stOpts.enableLiteralFolderIcons],
+      class: 'icon_folder',
+      settings: [stOpts.enableLiteralFolderIcons],
 
       'layer1.texture': `${paths.commons}folder__literal.png`,
       'layer2.texture': `${paths.this}folder__literal--hover.png`,
@@ -1227,8 +1199,8 @@ module.exports = function (values) {
 
     // Symlinked
     {
-      'class': 'icon_folder_dup',
-      'settings': [stOpts.enableLiteralFolderIcons],
+      class: 'icon_folder_dup',
+      settings: [stOpts.enableLiteralFolderIcons],
 
       'layer0.texture': `${paths.commons}folder__literal_dup.png`,
       'layer1.texture': `${paths.this}folder__literal_dup--hover.png`,
@@ -1240,22 +1212,22 @@ module.exports = function (values) {
      */
 
     {
-      'class': 'icon_folder',
-      'settings': [stOpts.enablePlusMinusFolderIcons],
+      class: 'icon_folder',
+      settings: [stOpts.enablePlusMinusFolderIcons],
 
-      'layer1.texture': `${paths.commons}folder__pm.png`,
-      'layer2.texture': `${paths.this}folder__pm--hover.png`,
-      'layer3.texture': `${paths.this}folder__pm--expanded.png`,
+      'layer1.texture': `${paths.commons}folder__plus_minus.png`,
+      'layer2.texture': `${paths.this}folder__plus_minus--hover.png`,
+      'layer3.texture': `${paths.this}folder__plus_minus--expanded.png`,
     },
 
     // Symlinked
     {
-      'class': 'icon_folder_dup',
-      'settings': [stOpts.enablePlusMinusFolderIcons],
+      class: 'icon_folder_dup',
+      settings: [stOpts.enablePlusMinusFolderIcons],
 
-      'layer0.texture': `${paths.commons}folder__pm_dup.png`,
-      'layer1.texture': `${paths.this}folder__pm_dup--hover.png`,
-      'layer2.texture': `${paths.this}folder__pm_dup--expanded.png`,
+      'layer0.texture': `${paths.commons}folder__plus_minus_dup.png`,
+      'layer1.texture': `${paths.this}folder__plus_minus_dup--hover.png`,
+      'layer2.texture': `${paths.this}folder__plus_minus_dup--expanded.png`,
     },
 
     /**
@@ -1263,85 +1235,85 @@ module.exports = function (values) {
      */
 
     {
-      'class': 'sidebar_heading',
-      'settings': [stOpts.sidebarFontSizeXxs],
+      class: 'sidebar_heading',
+      settings: [stOpts.sidebarFontSizeXxs],
 
       'font.size': 11,
     },
 
     {
-      'class': 'sidebar_label',
-      'settings': [stOpts.sidebarFontSizeXxs],
+      class: 'sidebar_label',
+      settings: [stOpts.sidebarFontSizeXxs],
 
       'font.size': 10,
     },
 
     {
-      'class': 'sidebar_heading',
-      'settings': [stOpts.sidebarFontSizeXs],
+      class: 'sidebar_heading',
+      settings: [stOpts.sidebarFontSizeXs],
 
       'font.size': 13,
     },
 
     {
-      'class': 'sidebar_label',
-      'settings': [stOpts.sidebarFontSizeXs],
+      class: 'sidebar_label',
+      settings: [stOpts.sidebarFontSizeXs],
 
       'font.size': 12,
     },
 
     {
-      'class': 'sidebar_heading',
-      'settings': [stOpts.sidebarFontSizeS],
+      class: 'sidebar_heading',
+      settings: [stOpts.sidebarFontSizeS],
 
       'font.size': 14,
     },
 
     {
-      'class': 'sidebar_label',
-      'settings': [stOpts.sidebarFontSizeS],
+      class: 'sidebar_label',
+      settings: [stOpts.sidebarFontSizeS],
 
       'font.size': 13,
     },
 
     {
-      'class': 'sidebar_heading',
-      'settings': [stOpts.sidebarFontSizeL],
+      class: 'sidebar_heading',
+      settings: [stOpts.sidebarFontSizeL],
 
       'font.size': 15,
     },
 
     {
-      'class': 'sidebar_label',
-      'settings': [stOpts.sidebarFontSizeL],
+      class: 'sidebar_label',
+      settings: [stOpts.sidebarFontSizeL],
 
       'font.size': 14,
     },
 
     {
-      'class': 'sidebar_heading',
-      'settings': [stOpts.sidebarFontSizeXl],
+      class: 'sidebar_heading',
+      settings: [stOpts.sidebarFontSizeXl],
 
       'font.size': 16,
     },
 
     {
-      'class': 'sidebar_label',
-      'settings': [stOpts.sidebarFontSizeXl],
+      class: 'sidebar_label',
+      settings: [stOpts.sidebarFontSizeXl],
 
       'font.size': 15,
     },
 
     {
-      'class': 'sidebar_heading',
-      'settings': [stOpts.sidebarFontSizeXxl],
+      class: 'sidebar_heading',
+      settings: [stOpts.sidebarFontSizeXxl],
 
       'font.size': 17,
     },
 
     {
-      'class': 'sidebar_label',
-      'settings': [stOpts.sidebarFontSizeXxl],
+      class: 'sidebar_label',
+      settings: [stOpts.sidebarFontSizeXxl],
 
       'font.size': 16,
     },
@@ -1351,12 +1323,130 @@ module.exports = function (values) {
      */
 
     {
-      'class': 'tree_row',
-      'settings': [stOpts.enableTreeRowHighlight],
+      class: 'tree_row',
+      settings: [stOpts.enableTreeRowHighlight],
 
-      'attributes': ['selected'],
+      attributes: ['selected'],
 
       'layer0.opacity': 1,
+    },
+
+    /**
+     * Scrollbar Width
+     */
+
+    // Extra Small Scrollbar Width
+
+    // Vertical Scrollbar Puck
+    {
+      class: 'puck_control',
+      settings: [stOpts.scrollbarWidthXs],
+      content_margin: [6, 16],
+    },
+
+    // Horizontal Scrollbar Puck
+    {
+      class: 'puck_control',
+      settings: [stOpts.scrollbarWidthXs],
+      attributes: ['horizontal'],
+      content_margin: [16, 6],
+    },
+
+    // Small Scrollbar Width
+
+    // Vertical Scrollbar Puck
+    {
+      class: 'puck_control',
+      settings: [stOpts.scrollbarWidthS],
+      content_margin: [7, 16],
+    },
+
+    // Horizontal Scrollbar Puck
+    {
+      class: 'puck_control',
+      settings: [stOpts.scrollbarWidthS],
+      attributes: ['horizontal'],
+      content_margin: [16, 7],
+    },
+
+    // Large Scrollbar Width
+
+    // Vertical Scrollbar Puck
+    {
+      class: 'puck_control',
+      settings: [stOpts.scrollbarWidthL],
+      content_margin: [9, 16],
+    },
+
+    // Horizontal Scrollbar Puck
+    {
+      class: 'puck_control',
+      settings: [stOpts.scrollbarWidthL],
+      attributes: ['horizontal'],
+      content_margin: [16, 9],
+    },
+
+    // Extra Large Scrollbar Width
+
+    // Vertical Scrollbar Puck
+    {
+      class: 'puck_control',
+      settings: [stOpts.scrollbarWidthXl],
+      content_margin: [10, 16],
+    },
+
+    // Horizontal Scrollbar Puck
+    {
+      class: 'puck_control',
+      settings: [stOpts.scrollbarWidthXl],
+      attributes: ['horizontal'],
+      content_margin: [16, 10],
+    },
+
+    /**
+     * Find & Replace & Console Size
+     */
+
+    // Extra Extra Small
+    {
+      class: 'panel_control',
+      settings: [stOpts.panelXxs],
+      content_margin: [6, 2, 6, 2],
+    },
+
+    // Extra Small
+    {
+      class: 'panel_control',
+      settings: [stOpts.panelXs],
+      content_margin: [6, 4, 6, 4],
+    },
+
+    // Small
+    {
+      class: 'panel_control',
+      settings: [stOpts.panelS],
+      content_margin: [6, 8, 6, 8],
+    },
+
+    // Large
+    {
+      class: 'panel_control',
+      settings: [stOpts.panelL],
+      content_margin: [6, 13, 6, 13],
+    },
+
+    // Extra Large
+    {
+      class: 'panel_control',
+      settings: [stOpts.panelXl],
+      content_margin: [6, 15, 6, 15],
+    },
+
+    // Extra Extra Large
+    {
+      class: 'panel_control',
+      settings: [stOpts.panelXxl],
+      content_margin: [6, 17, 6, 17],
     },
 
   ];

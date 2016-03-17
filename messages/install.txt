@@ -101,6 +101,17 @@ Theme options:
     "gruvbox_sidebar_cramped": true,      //  v  9
 
 
+  Command Palette Spacing
+
+        Change the space between command palette rows
+
+    "gruvbox_command_palette_comfortable": true,  //  v  4
+    "gruvbox_command_palette_compact": true,      //  |  8
+                                                  //  |  12 (Default)
+    "gruvbox_command_palette_cozy": true,         //  |  14
+    "gruvbox_command_palette_cramped": true,      //  v  16
+
+
   Sidebar Font Sizes
 
         Change the font size of the sidebar labels
@@ -161,7 +172,7 @@ Theme options:
 
         Autocollapse the tabs when not in use
 
-  "gruvbox_autocollapse_tabs": true, // enable the autocollapsing tabs
+  "gruvbox_autocollapse_tabs": true,            // enable the autocollapsing tabs
 
   // Set the height of the trigger area which shows the tabs
   "gruvbox_autocollapse_tabs_trigger_2": true,  //  v  2
@@ -169,6 +180,41 @@ Theme options:
                                                 //  |  4 (Default)
   "gruvbox_autocollapse_tabs_trigger_5": true,  //  |  5
   "gruvbox_autocollapse_tabs_trigger_6": true,  //  v  6
+
+
+  Underline Modified Tabs
+
+        Underline modified tabs with the current accent color
+
+  "gruvbox_underline_modified_tabs": true,        // enable the underlined tabs
+
+  // Set the thickness of the underline stroke (size in px)
+  "gruvbox_underline_modified_tabs_thick": true,  //  v  2
+                                                  //  |  1 (Default)
+
+
+  Find, Replace, and Console Sizes
+
+        Adjust the top & bottom margins of the Find, Replace, and Console panels
+
+  "gruvbox_panel_xxs": true,  //  v  2
+  "gruvbox_panel_xs": true,   //  |  4
+  "gruvbox_panel_s": true,    //  |  8
+                              //  |  11 (Default)
+  "gruvbox_panel_l": true,    //  |  13
+  "gruvbox_panel_xl": true,   //  |  15
+  "gruvbox_panel_xxl": true,  //  v  17
+
+
+  Scrollbar Widths
+
+        Adjust the width of the scrollbars
+
+  "gruvbox_scrollbar_width_xs": true,  //  v  12
+  "gruvbox_scrollbar_width_s": true,   //  |  14
+                                       //  |  16 (Default)
+  "gruvbox_scrollbar_width_l": true,   //  |  18
+  "gruvbox_scrollbar_width_xl": true,  //  v  20
 
 
   Alternate Folder Icons
@@ -189,19 +235,31 @@ Theme options:
           "gruvbox_iconset_spacegray": true,
 
 
+  PlainTasks Support
+
+        To use the color scheme with the Plain​Tasks plugin,
+        add the color scheme path to the "color_scheme" key in
+        "Preferences > Package Settings > PlainTasks > Settings - User" like so:
+
+        // PlainTasks.sublime-settings
+        {
+            "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme",
+        }
+
+
   Even More Settings...
 
-  "gruvbox_colored_tooltips": true,             // Color the tooltip backgrounds with the current accent color
-  "gruvbox_disable_borders": true,              // Disable all borders
-  "gruvbox_disable_faded_file_icons": true,     // Make file-type icons opaque
-  "gruvbox_disable_fileicons": true,            // Disable the sidebar file icons
-  "gruvbox_disable_folder_icons": true,         // Disable the sidebar folder icons
-  "gruvbox_disable_greyscale": true,            // Use gruvbox colors instead of greyscale colors for certain text
-  "gruvbox_disable_panels_button": true,        // Hide the panel-switching button
-  "gruvbox_enable_panel_close_button": true,    // Enable the panel close button
-  "gruvbox_enable_statusbar_border": true,      // Enable borders for the status bar
-  "gruvbox_highlight_active_tree_row": true,    // Highlight the active file in the sidebar tree
-  "gruvbox_tabs_autowidth": true,               // Auto-size the tabs
-  "gruvbox_tabs_bold": true,                    // Enable bold tabs
+  "gruvbox_colored_tooltips": true,           // Color the tooltip backgrounds with the current accent color
+  "gruvbox_disable_borders": true,            // Disable all borders
+  "gruvbox_disable_faded_file_icons": true,   // Make file-type icons opaque
+  "gruvbox_disable_fileicons": true,          // Disable the sidebar file icons
+  "gruvbox_disable_folder_icons": true,       // Disable the sidebar folder icons
+  "gruvbox_disable_greyscale": true,          // Use gruvbox colors instead of greyscale colors for certain text
+  "gruvbox_disable_panels_button": true,      // Hide the panel-switching button
+  "gruvbox_enable_panel_close_button": true,  // Enable the panel close button
+  "gruvbox_enable_statusbar_border": true,    // Enable borders for the status bar
+  "gruvbox_highlight_active_tree_row": true,  // Highlight the active file in the sidebar tree
+  "gruvbox_tabs_autowidth": true,             // Auto-size the tabs
+  "gruvbox_tabs_bold": true,                  // Enable bold tabs
 
   * Having an issue or want a feature added? Visit https://github.com/briles/gruvbox/issues

@@ -7,71 +7,72 @@ module.exports = function (values) {
 
   return [
 
-    // Button labels
-
+    // Button Label
     {
-      'class': 'label_control',
-      'parents': [
+      class: 'label_control',
+      parents: [
 
         {
-          'class': 'button_control',
+          class: 'button_control',
         },
 
       ],
 
-      'color': c.gs.fg[info.contrast],
+      color: c.gs.fg[info.contrast],
       'font.bold': false,
     },
 
+    // Button
     {
-      'class': 'button_control',
-      'content_margin': [15, 12, 15, 12],
-      'min_size': [70, 0],
+      class: 'button_control',
+      content_margin: [15, 10, 15, 11],
+      min_size: [70, 15],
 
+      // Background
       'layer0.tint': c.container,
       'layer0.opacity': 1,
 
+      // Background Hover
       'layer1.tint': c.background,
       'layer1.opacity': 0,
 
+      // Background Pressed
       'layer2.tint': c.border,
       'layer2.opacity': 0,
     },
 
     {
-      'class': 'button_control',
-      'attributes': ['hover'],
+      class: 'button_control',
+      attributes: ['hover'],
 
-      'layer1.opacity': 1,
+      'layer1.opacity': 1, // Background Hover
     },
 
     {
-      'class': 'button_control',
-      'attributes': ['pressed'],
+      class: 'button_control',
+      attributes: ['pressed'],
 
-      'layer2.opacity': 1,
+      'layer2.opacity': 1, // Background Pressed
     },
 
     {
-      'class': 'button_control',
-      'attributes': ['pressed', 'hover'],
+      class: 'button_control',
+      attributes: ['pressed', 'hover'],
 
-      'layer2.opacity': 1,
+      'layer2.opacity': 1, // Background Pressed
     },
 
-    // Small Icon Buttons
+    // Status Bar Icon Buttons
     {
-      'class': 'icon_button_control',
+      class: 'icon_button_control',
 
-      'content_margin': [10, 6],
+      content_margin: [10, 6],
     },
-
-    /* Buttons icons settings
-    ===================================================================== */
 
     // Regex Icon
     {
-      'class': 'icon_regex',
+      class: 'icon_regex',
+      content_margin: [12, 12],
 
       // Default
       'layer0.texture': `${paths.this}regex.png`,
@@ -84,45 +85,40 @@ module.exports = function (values) {
       // Selected
       'layer2.texture': `${paths.this}regex--selected.png`,
       'layer2.opacity': 0,
-
-      'content_margin': [12, 12],
     },
 
     {
-      'class': 'icon_regex',
-      'parents': [
+      class: 'icon_regex',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['hover'],
+          class: 'icon_button_control',
+          attributes: ['hover'],
         },
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 1,
-      'layer2.opacity': 0,
+      'layer1.opacity': 1, // Hover
     },
 
     {
-      'class': 'icon_regex',
-      'parents': [
+      class: 'icon_regex',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['selected'],
+          class: 'icon_button_control',
+          attributes: ['selected'],
         },
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 1,
+      'layer2.opacity': 1, // Selected
     },
 
-    // Case Sensitive
+    // Case Sensitive Icon
     {
-      'class': 'icon_case',
+      class: 'icon_case',
+      content_margin: [12, 12],
 
       // Default
       'layer0.texture': `${paths.this}casesensitive.png`,
@@ -135,46 +131,40 @@ module.exports = function (values) {
       // Selected
       'layer2.texture': `${paths.this}casesensitive--selected.png`,
       'layer2.opacity': 0,
-
-      'content_margin': [12, 12],
     },
 
     {
-      'class': 'icon_case',
-      'parents': [
+      class: 'icon_case',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['hover'],
+          class: 'icon_button_control',
+          attributes: ['hover'],
         },
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 1,
-      'layer2.opacity': 0,
+      'layer1.opacity': 1, // Hover
     },
 
     {
-      'class': 'icon_case',
-      'parents': [
+      class: 'icon_case',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['selected'],
+          class: 'icon_button_control',
+          attributes: ['selected'],
         },
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 1,
+      'layer2.opacity': 1, // Selected
     },
 
-    // Wholeword
-
+    // Wholeword Icon
     {
-      'class': 'icon_whole_word',
+      class: 'icon_whole_word',
+      content_margin: [12, 12],
 
       // Default
       'layer0.texture': `${paths.this}wholeword.png`,
@@ -187,46 +177,40 @@ module.exports = function (values) {
       // Selected
       'layer2.texture': `${paths.this}wholeword--selected.png`,
       'layer2.opacity': 0,
-
-      'content_margin': [12, 12],
     },
 
     {
-      'class': 'icon_whole_word',
-      'parents': [
+      class: 'icon_whole_word',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['hover'],
+          class: 'icon_button_control',
+          attributes: ['hover'],
         },
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 1,
-      'layer2.opacity': 0,
+      'layer1.opacity': 1, // Hover
     },
 
     {
-      'class': 'icon_whole_word',
-      'parents': [
+      class: 'icon_whole_word',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['selected'],
+          class: 'icon_button_control',
+          attributes: ['selected'],
         },
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 1,
+      'layer2.opacity': 1, // Selected
     },
 
-    // Wrap
-
+    // Wrap Icon
     {
-      'class': 'icon_wrap',
+      class: 'icon_wrap',
+      content_margin: [12, 12],
 
       // Default
       'layer0.texture': `${paths.this}wrap.png`,
@@ -239,46 +223,40 @@ module.exports = function (values) {
       // Selected
       'layer2.texture': `${paths.this}wrap--selected.png`,
       'layer2.opacity': 0,
-
-      'content_margin': [12, 12],
     },
 
     {
-      'class': 'icon_wrap',
-      'parents': [
+      class: 'icon_wrap',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['hover'],
+          class: 'icon_button_control',
+          attributes: ['hover'],
         },
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 1,
-      'layer2.opacity': 0,
+      'layer1.opacity': 1, // Hover
     },
 
     {
-      'class': 'icon_wrap',
-      'parents': [
+      class: 'icon_wrap',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['selected'],
+          class: 'icon_button_control',
+          attributes: ['selected'],
         },
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 1,
+      'layer2.opacity': 1, // Selected
     },
 
-    // In selection
-
+    // In Selection Icon
     {
-      'class': 'icon_in_selection',
+      class: 'icon_in_selection',
+      content_margin: [12, 12],
 
       // Default
       'layer0.texture': `${paths.this}inselection.png`,
@@ -291,46 +269,40 @@ module.exports = function (values) {
       // Selected
       'layer2.texture': `${paths.this}inselection--selected.png`,
       'layer2.opacity': 0,
-
-      'content_margin': [12, 12],
     },
 
     {
-      'class': 'icon_in_selection',
-      'parents': [
+      class: 'icon_in_selection',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['hover'],
+          class: 'icon_button_control',
+          attributes: ['hover'],
         },
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 1,
-      'layer2.opacity': 0,
+      'layer1.opacity': 1, // Hover
     },
 
     {
-      'class': 'icon_in_selection',
-      'parents': [
+      class: 'icon_in_selection',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['selected'],
+          class: 'icon_button_control',
+          attributes: ['selected'],
         },
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 1,
+      'layer2.opacity': 1, // Selected
     },
 
-    // Highlight Result
-
+    // Highlight Result Icon
     {
-      'class': 'icon_highlight',
+      class: 'icon_highlight',
+      content_margin: [12, 12],
 
       // Default
       'layer0.texture': `${paths.this}highlight.png`,
@@ -343,46 +315,40 @@ module.exports = function (values) {
       // Selected
       'layer2.texture': `${paths.this}highlight--selected.png`,
       'layer2.opacity': 0,
-
-      'content_margin': [12, 12],
     },
 
     {
-      'class': 'icon_highlight',
-      'parents': [
+      class: 'icon_highlight',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['hover'],
+          class: 'icon_button_control',
+          attributes: ['hover'],
         },
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 1,
-      'layer2.opacity': 0,
+      'layer1.opacity': 1, // Hover
     },
 
     {
-      'class': 'icon_highlight',
-      'parents': [
+      class: 'icon_highlight',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['selected'],
+          class: 'icon_button_control',
+          attributes: ['selected'],
         },
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 1,
+      'layer2.opacity': 1, // Selected
     },
 
-    // Preserve Case
-
+    // Preserve Case Icon
     {
-      'class': 'icon_preserve_case',
+      class: 'icon_preserve_case',
+      content_margin: [12, 12],
 
       // Default
       'layer0.texture': `${paths.this}preservecase.png`,
@@ -395,46 +361,40 @@ module.exports = function (values) {
       // Selected
       'layer2.texture': `${paths.this}preservecase--selected.png`,
       'layer2.opacity': 0,
-
-      'content_margin': [12, 12],
     },
 
     {
-      'class': 'icon_preserve_case',
-      'parents': [
+      class: 'icon_preserve_case',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['hover'],
+          class: 'icon_button_control',
+          attributes: ['hover'],
         },
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 1,
-      'layer2.opacity': 0,
+      'layer1.opacity': 1, // Hover
     },
 
     {
-      'class': 'icon_preserve_case',
-      'parents': [
+      class: 'icon_preserve_case',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['selected'],
+          class: 'icon_button_control',
+          attributes: ['selected'],
         },
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 1,
+      'layer2.opacity': 1, // Selected
     },
 
-    // Show context
-
+    // Show Context Icon
     {
-      'class': 'icon_context',
+      class: 'icon_context',
+      content_margin: [12, 12],
 
       // Default
       'layer0.texture': `${paths.this}context.png`,
@@ -447,46 +407,40 @@ module.exports = function (values) {
       // Selected
       'layer2.texture': `${paths.this}context--selected.png`,
       'layer2.opacity': 0,
-
-      'content_margin': [12, 12],
     },
 
     {
-      'class': 'icon_context',
-      'parents': [
+      class: 'icon_context',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['hover'],
+          class: 'icon_button_control',
+          attributes: ['hover'],
         },
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 1,
-      'layer2.opacity': 0,
+      'layer1.opacity': 1, // Hover
     },
 
     {
-      'class': 'icon_context',
-      'parents': [
+      class: 'icon_context',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['selected'],
+          class: 'icon_button_control',
+          attributes: ['selected'],
         },
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 1,
+      'layer2.opacity': 1, // Selected
     },
 
-    // Use buffer
-
+    // Use Buffer Icon
     {
-      'class': 'icon_use_buffer',
+      class: 'icon_use_buffer',
+      content_margin: [12, 12],
 
       // Default
       'layer0.texture': `${paths.this}buffer.png`,
@@ -499,40 +453,34 @@ module.exports = function (values) {
       // Selected
       'layer2.texture': `${paths.this}buffer--selected.png`,
       'layer2.opacity': 0,
-
-      'content_margin': [12, 12],
     },
 
     {
-      'class': 'icon_use_buffer',
-      'parents': [
+      class: 'icon_use_buffer',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['hover'],
+          class: 'icon_button_control',
+          attributes: ['hover'],
         },
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 1,
-      'layer2.opacity': 0,
+      'layer1.opacity': 1, // Hover
     },
 
     {
-      'class': 'icon_use_buffer',
-      'parents': [
+      class: 'icon_use_buffer',
+      parents: [
 
         {
-          'class': 'icon_button_control',
-          'attributes': ['selected'],
+          class: 'icon_button_control',
+          attributes: ['selected'],
         },
 
       ],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 0,
-      'layer2.opacity': 1,
+      'layer2.opacity': 1, // Selected
     },
 
   ];

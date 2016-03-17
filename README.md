@@ -47,12 +47,14 @@ Features
 * Lots of customization options
 * Support for High-DPI displays
 * Support for:
-    * [GitGutter](https://packagecontrol.io/packages/GitGutter)
     * [Bracket Highlighter](https://packagecontrol.io/packages/BracketHighlighter)
-    * [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter)
+    * [Bracket​Guard](https://packagecontrol.io/packages/BracketGuard)
     * [Doc​Blockr](https://packagecontrol.io/packages/DocBlockr)
-    * [Markdown Extended](https://packagecontrol.io/packages/Markdown%20Extended)
+    * [GitGutter](https://packagecontrol.io/packages/GitGutter)
     * [HexViewer](https://packagecontrol.io/packages/HexViewer)
+    * [Markdown Extended](https://packagecontrol.io/packages/Markdown%20Extended)
+    * [Plain​Tasks](https://packagecontrol.io/packages/PlainTasks)
+    * [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter)
 * Support for the latest Sublime Text features
 
 ![High DPI](http://i.imgur.com/xiEzVPe.png)
@@ -184,6 +186,19 @@ Change the space between sidebar tree rows
   "gruvbox_sidebar_cramped": true,      //  v  9
 ```
 
+#### Command Palette Spacing
+
+Change the space between command palette rows
+
+```json
+  // sizes are top/bottom in px
+  "gruvbox_command_palette_comfortable": true,  //  v  4
+  "gruvbox_command_palette_compact": true,      //  |  8
+                                                //  |  12 (Default)
+  "gruvbox_command_palette_cozy": true,         //  |  14
+  "gruvbox_command_palette_cramped": true,      //  v  16
+```
+
 #### Sidebar Font Sizes
 
 Change the font size of the sidebar labels
@@ -265,6 +280,45 @@ Autocollapse the tabs when not in use
   "gruvbox_autocollapse_tabs_trigger_6": true,  //  v  6
 ```
 
+#### Underline Modified Tabs
+
+Underline modified tabs with the current accent color
+
+```json
+  "gruvbox_underline_modified_tabs": true,        // enable the underlined tabs
+
+  // Set the thickness of the underline stroke
+  "gruvbox_underline_modified_tabs_thick": true,  //  v  2
+                                                  //  |  1 (Default)
+```
+
+#### Find, Replace, and Console Sizes
+
+Adjust the top & bottom margins of the Find, Replace, and Console panels
+
+```json
+  "gruvbox_panel_xxs": true,  //  v  2
+  "gruvbox_panel_xs": true,   //  |  4
+  "gruvbox_panel_s": true,    //  |  8
+                              //  |  11 (Default)
+  "gruvbox_panel_l": true,    //  |  13
+  "gruvbox_panel_xl": true,   //  |  15
+  "gruvbox_panel_xxl": true,  //  v  17
+```
+
+#### Scrollbar Widths
+
+Adjust the width of the scrollbars
+
+```json
+  // sizes are total width in px
+  "gruvbox_scrollbar_width_xs": true,  //  v  12
+  "gruvbox_scrollbar_width_s": true,   //  |  14
+                                       //  |  16 (Default)
+  "gruvbox_scrollbar_width_l": true,   //  |  18
+  "gruvbox_scrollbar_width_xl": true,  //  v  20
+```
+
 #### Alternate Folder Icons
 
 ##### Square Folder Icons
@@ -309,21 +363,39 @@ Use spacegray-like icons
 "gruvbox_iconset_spacegray": true,
 ```
 
+#### PlainTasks Support
+
+To use the color scheme with the
+[Plain​Tasks](https://packagecontrol.io/packages/PlainTasks) plugin,
+add the color scheme path to the `"color_scheme"` key in
+ `Preferences > Package Settings > PlainTasks > Settings - User`
+ like so:
+
+```json
+
+// PlainTasks.sublime-settings
+
+{
+    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme",
+}
+
+```
+
 #### Even More Settings...
 
 ```json
-  "gruvbox_colored_tooltips": true,             // Color the tooltip backgrounds with the current accent color
-  "gruvbox_disable_borders": true,              // Disable all borders
-  "gruvbox_disable_faded_file_icons": true,     // Make file-type icons opaque
-  "gruvbox_disable_fileicons": true,            // Disable the sidebar file icons
-  "gruvbox_disable_folder_icons": true,         // Disable the sidebar folder icons
-  "gruvbox_disable_greyscale": true,            // Use gruvbox colors instead of greyscale colors for certain text
-  "gruvbox_disable_panels_button": true,        // Hide the panel-switching button
-  "gruvbox_enable_panel_close_button": true,    // Enable the panel close button
-  "gruvbox_enable_statusbar_border": true,      // Enable borders for the status bar
-  "gruvbox_highlight_active_tree_row": true,    // Highlight the active file in the sidebar tree
-  "gruvbox_tabs_autowidth": true,               // Auto-size the tabs
-  "gruvbox_tabs_bold": true,                    // Enable bold tabs
+  "gruvbox_colored_tooltips": true,           // Color the tooltip backgrounds with the current accent color
+  "gruvbox_disable_borders": true,            // Disable all borders
+  "gruvbox_disable_faded_file_icons": true,   // Make file-type icons opaque
+  "gruvbox_disable_fileicons": true,          // Disable the sidebar file icons
+  "gruvbox_disable_folder_icons": true,       // Disable the sidebar folder icons
+  "gruvbox_disable_greyscale": true,          // Use gruvbox colors instead of greyscale colors for certain text
+  "gruvbox_disable_panels_button": true,      // Hide the panel-switching button
+  "gruvbox_enable_panel_close_button": true,  // Enable the panel close button
+  "gruvbox_enable_statusbar_border": true,    // Enable borders for the status bar
+  "gruvbox_highlight_active_tree_row": true,  // Highlight the active file in the sidebar tree
+  "gruvbox_tabs_autowidth": true,             // Auto-size the tabs
+  "gruvbox_tabs_bold": true,                  // Enable bold tabs
 ```
 
 Extras
@@ -338,6 +410,15 @@ Activation:
 1. Add the `gruvbox` directory from `extras/sublimelinter gutter-themes/` to `Sublime Text/Data/Packages/SublimeLinter/gutter-themes/`
 2. Set `gruvbox` as the gutter theme by choosing `SublimeLinter: Choose Gutter Theme` from the command palette and selecting `gruvbox` *or* by changing `"gutter_theme"` to `"Packages/SublimeLinter/gutter-themes/gruvbox/gruvbox.gutter-theme"` in `SublimeLinter.sublime-settings`
 3. Restart Sublime Text
+
+### Bracket Highlighter Icons
+
+![Bracket Highlighter Icons](http://i.imgur.com/8z0feh7.png)
+
+Activation:
+
+1. Move all images in `extras/BracketHighlighter/icons/` to `Sublime Text/Data/Packages/BracketHighlighter/icons/`
+2. Restart Sublime Text
 
 ### Code Fold Icon
 

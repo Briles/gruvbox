@@ -29,7 +29,18 @@ directly as your changes will not be retained on the next build
 To build the themes, schemes, and widgets you will need [Node.js](https://nodejs.org/)
 
 1. Install the dependencies with `npm install`
-2. Run `./src/build.js` with Node to build everything.
+2. Run `./src/build.js` with Node to build everything
+
+```bash
+ Usage: build [options]
+
+  Options:
+
+    -h, --help    output usage information
+    -t, --theme   Build Themes
+    -s, --scheme  Build Schemes
+    -w, --widget  Build Widgets
+```
 
 Optionally, you can use gulp to ease the build process. You will need to have
 [gulp](https://github.com/gulpjs/gulp) installed globally.
@@ -38,13 +49,16 @@ The following gulp tasks are available:
 
 - `gulp` runs the default `watch` task.
 - `gulp watch` watches `./src/*.js` and builds everything on change.
-- `gulp build` builds everything.
+- `gulp build_theme` builds theme `.sublime-themes`
+- `gulp build_scheme` builds color scheme `.tmThemes`
+- `gulp build_widget` builds widget `.sublime-settings`
+- `gulp build_all` builds themes, schemes, and widgets
 - `gulp build_icons` builds file-type icon `.tmPreferences`
-- `gulp build_theme` builds color schemes and themes
+- `gulp build` builds themes, schemes, widgets, and icons
 
 ## Navigating the Files
 
-- `./src/build.js` the main script which builds everything
+- `./src/build.js` the main script which builds themes, schemes, and widgets
 - `./src/icons.js` script which creates `.tmPreferences` for all icons in `./src/icons/`
 - `./src/components/*.js` contains all the `.sublime-theme` components
 - `./src/scheme.js` contains all the `.tmTheme` components
@@ -57,10 +71,6 @@ established in the code.
 
 All `*.js` files should follow the
 [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
-with a few exceptions:
-
-- **Sublime Text Theme Components**:<br>
-  Single-quote all object keys which are outputted to a theme.
 
 Guidelines are enforced using [JSCS](https://www.npmjs.com/package/jscs):
 

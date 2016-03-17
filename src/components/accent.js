@@ -13,263 +13,267 @@ module.exports = function (values) {
   function populateData(colordata) {
     const name = colordata.name;
     const color = colordata.color;
-    const assets = slash(path.join(paths.assets, `accent-${name}/`));
+    color.this = color[info.brightness];
+    color.opposite = color[info.oppositeBrightness];
 
-    const brightnessAssets = slash(path.join(assets, `${info.brightness}__`));
-    const spacegrayPath = `${brightnessAssets}spacegray__`;
+    var assets = {};
+    assets.accent = [paths.assets, `accent-${name}/`];
 
-    const oppositeBrightnessAssets = slash(path.join(assets, `${info.oppositeBrightness}__`));
-    const oppositeSpacegrayPath = `${oppositeBrightnessAssets}spacegray__`;
+    assets.this = [assets.accent, `${info.brightness}__`];
+    assets.opposite = [assets.accent, `${info.oppositeBrightness}__`];
+    assets.neutral = [assets.accent, 'neutral__'];
 
-    const neutralAssets = slash(path.join(assets, 'neutral__'));
-    const neutralSpacegrayPath = `${neutralAssets}spacegray__`;
+    assets = _.mapValues(assets, function (p) {
+      return slash(path.join.apply(null, _.flattenDeep(p)));
+    });
 
-    return [
+    var spacegray = {
+      this: `${assets.this}spacegray__`,
+      opposite: `${assets.opposite}spacegray__`,
+      neutral: `${assets.neutral}spacegray__`,
+    };
+
+    /**
+     * appends the appropriate accent setting to each object
+     * @param  {object} obj the object the settings will be applied to
+     * @return {object}     the object passed in with a modified settings property
+     */
+    var populateSettings = function (obj) {
+      var setting = stOpts[`accent${_.upperFirst(name)}`];
+      obj.settings = obj.settings || [];
+      obj.settings.push(setting);
+
+      return obj;
+    };
+
+    var data = [
 
       {
-        'class': 'auto_complete_label',
+        class: 'auto_complete_label',
 
-        'match_fg': color[info.brightness],
-        'selected_match_fg': color[info.brightness],
+        match_fg: color.this,
+        selected_match_fg: color.this,
       },
 
       // Sidebar tree highlight
       {
-        'class': 'sidebar_label',
+        class: 'sidebar_label',
 
-        'parents': [
+        parents: [
 
           {
-            'class': 'tree_row',
-            'attributes': ['expanded'],
+            class: 'tree_row',
+            attributes: ['expanded'],
           },
 
         ],
 
-        'color': color[info.brightness],
+        color: color.this,
       },
 
       {
-        'class': 'sidebar_label',
+        class: 'sidebar_label',
 
-        'parents': [
+        parents: [
 
           {
-            'class': 'tree_row',
-            'attributes': ['hover'],
+            class: 'tree_row',
+            attributes: ['hover'],
           },
 
         ],
 
-        'color': color[info.brightness],
+        color: color.this,
       },
 
       {
-        'class': 'sidebar_label',
+        class: 'sidebar_label',
 
-        'parents': [
+        parents: [
 
           {
-            'class': 'tree_row',
-            'attributes': ['selected'],
+            class: 'tree_row',
+            attributes: ['selected'],
           },
 
         ],
 
-        'color': color[info.brightness],
+        color: color.this,
       },
 
       {
-        'class': 'icon_folder',
+        class: 'icon_folder',
 
-        'layer2.texture': `${brightnessAssets}folder--expanded.png`,
-        'layer3.texture': `${brightnessAssets}folder--expanded.png`,
+        'layer2.texture': `${assets.this}folder--expanded.png`,
+        'layer3.texture': `${assets.this}folder--expanded.png`,
       },
 
       // Folder Symlink
       {
-        'class': 'icon_folder_dup',
+        class: 'icon_folder_dup',
 
-        'layer1.texture': `${brightnessAssets}folder_dup--expanded.png`,
-        'layer2.texture': `${brightnessAssets}folder_dup--expanded.png`,
+        'layer1.texture': `${assets.this}folder_dup--expanded.png`,
+        'layer2.texture': `${assets.this}folder_dup--expanded.png`,
       },
 
       // Tab Scroll Left
       {
-        'class': 'scroll_tabs_left_button',
+        class: 'scroll_tabs_left_button',
 
-        'layer1.texture': `${brightnessAssets}prevtab--hover.png`,
+        'layer1.texture': `${assets.this}prevtab--hover.png`,
       },
 
       // Tab Scroll Right
       {
-        'class': 'scroll_tabs_right_button',
+        class: 'scroll_tabs_right_button',
 
-        'layer1.texture': `${brightnessAssets}nexttab--hover.png`,
+        'layer1.texture': `${assets.this}nexttab--hover.png`,
       },
 
       // Code Folding Button
       {
-        'class': 'fold_button_control',
+        class: 'fold_button_control',
 
-        'layer1.texture': `${brightnessAssets}fold--hover.png`,
-        'layer3.texture': `${brightnessAssets}unfold--hover.png`,
+        'layer1.texture': `${assets.this}fold--hover.png`,
+        'layer3.texture': `${assets.this}unfold--hover.png`,
       },
 
       // Panel Labels
       {
-        'class': 'quick_panel_label',
+        class: 'quick_panel_label',
 
-        'match_fg': color[info.brightness],
-        'selected_match_fg': color[info.brightness],
-      },
-
-      // Panel Labels
-      {
-        'class': 'quick_panel_label',
-
-        'parents': [
-
-          {
-            'class': 'overlay_control',
-          },
-
-        ],
-
-        'match_fg': color[info.brightness],
-        'selected_match_fg': color[info.brightness],
+        match_fg: color.this,
+        selected_match_fg: color.this,
       },
 
       // Panels Sublabels
       {
-        'class': 'quick_panel_path_label',
+        class: 'quick_panel_path_label',
 
-        'match_fg': color[info.brightness],
-        'selected_match_fg': color[info.brightness],
+        match_fg: color.this,
+        selected_match_fg: color.this,
       },
 
       // Panels Match Score
       {
-        'class': 'quick_panel_score_label',
+        class: 'quick_panel_score_label',
 
-        'selected_fg': color[info.brightness],
+        selected_fg: color.this,
       },
 
       // List Tabs Button
-
       {
-        'class': 'show_tabs_dropdown_button',
+        class: 'show_tabs_dropdown_button',
 
-        'layer1.texture': `${brightnessAssets}more.png`,
+        'layer1.texture': `${assets.this}more.png`,
       },
 
       // Input History Button
       {
-        'class': 'dropdown_button_control',
+        class: 'dropdown_button_control',
 
-        'layer1.texture': `${brightnessAssets}more.png`,
+        'layer1.texture': `${assets.this}more.png`,
       },
 
       // Panel Switcher
       {
-        'class': 'panel_button_control',
+        class: 'panel_button_control',
 
-        'layer1.texture': `${brightnessAssets}panels.png`,
+        'layer1.texture': `${assets.this}panels.png`,
       },
 
       // Regex Icon
       {
-        'class': 'icon_regex',
+        class: 'icon_regex',
 
-        'layer2.texture': `${brightnessAssets}regex.png`,
+        'layer2.texture': `${assets.this}regex.png`,
       },
 
       // Preserve case sensitive
       {
-        'class': 'icon_case',
+        class: 'icon_case',
 
-        'layer2.texture': `${brightnessAssets}casesensitive.png`,
+        'layer2.texture': `${assets.this}casesensitive.png`,
       },
 
       // Wholeword
       {
-        'class': 'icon_whole_word',
+        class: 'icon_whole_word',
 
-        'layer2.texture': `${brightnessAssets}wholeword.png`,
+        'layer2.texture': `${assets.this}wholeword.png`,
       },
 
       // Wrap
       {
-        'class': 'icon_wrap',
+        class: 'icon_wrap',
 
-        'layer2.texture': `${brightnessAssets}wrap.png`,
+        'layer2.texture': `${assets.this}wrap.png`,
       },
 
       // In Selection
       {
-        'class': 'icon_in_selection',
+        class: 'icon_in_selection',
 
-        'layer2.texture': `${brightnessAssets}inselection.png`,
+        'layer2.texture': `${assets.this}inselection.png`,
       },
 
       // Highlight Result
-
       {
-        'class': 'icon_highlight',
+        class: 'icon_highlight',
 
-        'layer2.texture': `${brightnessAssets}highlight.png`,
+        'layer2.texture': `${assets.this}highlight.png`,
       },
 
       // Preserve Case
       {
-        'class': 'icon_preserve_case',
+        class: 'icon_preserve_case',
 
-        'layer2.texture': `${brightnessAssets}preservecase.png`,
+        'layer2.texture': `${assets.this}preservecase.png`,
       },
 
       // Show Context
       {
-        'class': 'icon_context',
+        class: 'icon_context',
 
-        'layer2.texture': `${brightnessAssets}context.png`,
+        'layer2.texture': `${assets.this}context.png`,
       },
 
       // Use Buffer
       {
-        'class': 'icon_use_buffer',
+        class: 'icon_use_buffer',
 
-        'layer2.texture': `${brightnessAssets}buffer.png`,
+        'layer2.texture': `${assets.this}buffer.png`,
       },
 
       // Status Bar Buttons
       {
-        'class': 'label_control',
+        class: 'label_control',
 
-        'parents': [
+        parents: [
 
           {
-            'class': 'status_button',
-            'attributes': ['hover'],
+            class: 'status_button',
+            attributes: ['hover'],
           },
 
         ],
 
-        'color': color[info.brightness],
+        color: color.this,
       },
 
       // Colored Tooltips
       {
-        'class': 'tool_tip_control',
-        'settings': [stOpts.coloredTooltips],
+        class: 'tool_tip_control',
+        settings: [stOpts.coloredTooltips],
 
-        'layer0.tint': color[info.brightness],
+        'layer0.tint': color.this,
       },
 
       {
-        'class': 'tool_tip_label_control',
-        'settings': [stOpts.coloredTooltips],
+        class: 'tool_tip_label_control',
+        settings: [stOpts.coloredTooltips],
 
-        'color': c.white,
+        color: c.white,
       },
 
       /**
@@ -278,110 +282,110 @@ module.exports = function (values) {
 
       // Folder Icon
       {
-        'class': 'icon_folder',
-        'settings': [stOpts.iconsetSpacegray],
+        class: 'icon_folder',
+        settings: [stOpts.iconsetSpacegray],
 
-        'layer2.texture': `${spacegrayPath}folder--hover.png`,
-        'layer3.texture': `${spacegrayPath}folder--expanded.png`,
+        'layer2.texture': `${spacegray.this}folder--hover.png`,
+        'layer3.texture': `${spacegray.this}folder--expanded.png`,
       },
 
       // Symlinked Folder Icon
       {
-        'class': 'icon_folder_dup',
-        'settings': [stOpts.iconsetSpacegray],
+        class: 'icon_folder_dup',
+        settings: [stOpts.iconsetSpacegray],
 
-        'layer1.texture': `${spacegrayPath}folder_dup--hover.png`,
-        'layer2.texture': `${spacegrayPath}folder_dup--expanded.png`,
+        'layer1.texture': `${spacegray.this}folder_dup--hover.png`,
+        'layer2.texture': `${spacegray.this}folder_dup--expanded.png`,
       },
 
       // Regex Icon
       {
-        'class': 'icon_regex',
-        'settings': [stOpts.iconsetSpacegray],
+        class: 'icon_regex',
+        settings: [stOpts.iconsetSpacegray],
 
-        'layer2.texture': `${spacegrayPath}regex.png`,
+        'layer2.texture': `${spacegray.this}regex.png`,
       },
 
       // Case Sensitive
       {
-        'class': 'icon_case',
-        'settings': [stOpts.iconsetSpacegray],
+        class: 'icon_case',
+        settings: [stOpts.iconsetSpacegray],
 
-        'layer2.texture': `${spacegrayPath}casesensitive.png`,
+        'layer2.texture': `${spacegray.this}casesensitive.png`,
       },
 
       // Wholeword
       {
-        'class': 'icon_whole_word',
-        'settings': [stOpts.iconsetSpacegray],
+        class: 'icon_whole_word',
+        settings: [stOpts.iconsetSpacegray],
 
-        'layer2.texture': `${spacegrayPath}wholeword.png`,
+        'layer2.texture': `${spacegray.this}wholeword.png`,
       },
 
       // Wrap
       {
-        'class': 'icon_wrap',
-        'settings': [stOpts.iconsetSpacegray],
+        class: 'icon_wrap',
+        settings: [stOpts.iconsetSpacegray],
 
-        'layer2.texture': `${spacegrayPath}wrap.png`,
+        'layer2.texture': `${spacegray.this}wrap.png`,
       },
 
       // In Selection
       {
-        'class': 'icon_in_selection',
-        'settings': [stOpts.iconsetSpacegray],
+        class: 'icon_in_selection',
+        settings: [stOpts.iconsetSpacegray],
 
-        'layer2.texture': `${spacegrayPath}inselection.png`,
+        'layer2.texture': `${spacegray.this}inselection.png`,
       },
 
       // Highlight Result
       {
-        'class': 'icon_highlight',
-        'settings': [stOpts.iconsetSpacegray],
+        class: 'icon_highlight',
+        settings: [stOpts.iconsetSpacegray],
 
-        'layer2.texture': `${spacegrayPath}highlight.png`,
+        'layer2.texture': `${spacegray.this}highlight.png`,
       },
 
       // Preserve Case
       {
-        'class': 'icon_preserve_case',
-        'settings': [stOpts.iconsetSpacegray],
+        class: 'icon_preserve_case',
+        settings: [stOpts.iconsetSpacegray],
 
-        'layer2.texture': `${spacegrayPath}preservecase.png`,
+        'layer2.texture': `${spacegray.this}preservecase.png`,
       },
 
       // Show Context
       {
-        'class': 'icon_context',
-        'settings': [stOpts.iconsetSpacegray],
+        class: 'icon_context',
+        settings: [stOpts.iconsetSpacegray],
 
-        'layer2.texture': `${spacegrayPath}context.png`,
+        'layer2.texture': `${spacegray.this}context.png`,
       },
 
       // Use Buffer
       {
-        'class': 'icon_use_buffer',
-        'settings': [stOpts.iconsetSpacegray],
+        class: 'icon_use_buffer',
+        settings: [stOpts.iconsetSpacegray],
 
-        'layer2.texture': `${spacegrayPath}buffer.png`,
+        'layer2.texture': `${spacegray.this}buffer.png`,
       },
 
       // Input History Button
       {
-        'class': 'dropdown_button_control',
-        'settings': [stOpts.iconsetSpacegray],
+        class: 'dropdown_button_control',
+        settings: [stOpts.iconsetSpacegray],
 
-        'layer1.texture': `${spacegrayPath}more.png`,
+        'layer1.texture': `${spacegray.this}more.png`,
       },
 
       // Panel Switcher
       {
-        'class': 'panel_button_control',
-        'settings': [stOpts.iconsetSpacegray],
+        class: 'panel_button_control',
+        settings: [stOpts.iconsetSpacegray],
 
-        'attributes': ['hover'],
+        attributes: ['hover'],
 
-        'layer0.texture': `${spacegrayPath}panels.png`,
+        'layer0.texture': `${spacegray.this}panels.png`,
       },
 
       /**
@@ -389,239 +393,237 @@ module.exports = function (values) {
        */
 
       {
-        'class': 'auto_complete_label',
-        'settings': [stOpts.accentOpposite],
+        class: 'auto_complete_label',
+        settings: [stOpts.accentOpposite],
 
-        'match_fg': color[info.oppositeBrightness],
-        'selected_match_fg': color[info.oppositeBrightness],
+        match_fg: color.opposite,
+        selected_match_fg: color.opposite,
       },
 
       // Sidebar tree highlight
       {
-        'class': 'sidebar_label',
-        'settings': [stOpts.accentOpposite],
-        'parents': [
+        class: 'sidebar_label',
+        settings: [stOpts.accentOpposite],
+        parents: [
 
           {
-            'class': 'tree_row',
-            'attributes': ['expanded'],
+            class: 'tree_row',
+            attributes: ['expanded'],
           },
 
         ],
 
-        'color': color[info.oppositeBrightness],
+        color: color.opposite,
       },
 
       {
-        'class': 'sidebar_label',
-        'settings': [stOpts.accentOpposite],
-        'parents': [
+        class: 'sidebar_label',
+        settings: [stOpts.accentOpposite],
+        parents: [
 
           {
-            'class': 'tree_row',
-            'attributes': ['hover'],
+            class: 'tree_row',
+            attributes: ['hover'],
           },
 
         ],
 
-        'color': color[info.oppositeBrightness],
+        color: color.opposite,
       },
 
       {
-        'class': 'sidebar_label',
-        'settings': [stOpts.accentOpposite],
-        'parents': [
+        class: 'sidebar_label',
+        settings: [stOpts.accentOpposite],
+        parents: [
 
           {
-            'class': 'tree_row',
-            'attributes': ['selected'],
+            class: 'tree_row',
+            attributes: ['selected'],
           },
 
         ],
 
-        'color': color[info.oppositeBrightness],
+        color: color.opposite,
       },
 
       {
-        'class': 'icon_folder',
-        'settings': [stOpts.accentOpposite],
+        class: 'icon_folder',
+        settings: [stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeBrightnessAssets}folder--expanded.png`,
-        'layer3.texture': `${oppositeBrightnessAssets}folder--expanded.png`,
+        'layer2.texture': `${assets.opposite}folder--expanded.png`,
+        'layer3.texture': `${assets.opposite}folder--expanded.png`,
       },
 
       // Folder Symlink
       {
-        'class': 'icon_folder_dup',
-        'settings': [stOpts.accentOpposite],
+        class: 'icon_folder_dup',
+        settings: [stOpts.accentOpposite],
 
-        'layer1.texture': `${oppositeBrightnessAssets}folder_dup--expanded.png`,
-        'layer2.texture': `${oppositeBrightnessAssets}folder_dup--expanded.png`,
+        'layer1.texture': `${assets.opposite}folder_dup--expanded.png`,
+        'layer2.texture': `${assets.opposite}folder_dup--expanded.png`,
       },
 
       // Tab Scroll Left
       {
-        'class': 'scroll_tabs_left_button',
-        'settings': [stOpts.accentOpposite],
+        class: 'scroll_tabs_left_button',
+        settings: [stOpts.accentOpposite],
 
-        'layer1.texture': `${oppositeBrightnessAssets}prevtab--hover.png`,
+        'layer1.texture': `${assets.opposite}prevtab--hover.png`,
       },
 
       // Tab Scroll Right
       {
-        'class': 'scroll_tabs_right_button',
-        'settings': [stOpts.accentOpposite],
+        class: 'scroll_tabs_right_button',
+        settings: [stOpts.accentOpposite],
 
-        'layer1.texture': `${oppositeBrightnessAssets}nexttab--hover.png`,
+        'layer1.texture': `${assets.opposite}nexttab--hover.png`,
       },
 
       // Code Folding Button
       {
-        'class': 'fold_button_control',
-        'settings': [stOpts.accentOpposite],
+        class: 'fold_button_control',
+        settings: [stOpts.accentOpposite],
 
-        'layer1.texture': `${oppositeBrightnessAssets}fold--hover.png`,
-        'layer3.texture': `${oppositeBrightnessAssets}unfold--hover.png`,
+        'layer1.texture': `${assets.opposite}fold--hover.png`,
+        'layer3.texture': `${assets.opposite}unfold--hover.png`,
       },
 
       // Panel Labels
       {
-        'class': 'quick_panel_label',
-        'settings': [stOpts.accentOpposite],
+        class: 'quick_panel_label',
+        settings: [stOpts.accentOpposite],
 
-        'match_fg': color[info.oppositeBrightness],
-        'selected_match_fg': color[info.oppositeBrightness],
+        match_fg: color.opposite,
+        selected_match_fg: color.opposite,
       },
 
       // Panel Labels
       {
-        'class': 'quick_panel_label',
-        'settings': [stOpts.accentOpposite],
-        'parents': [
+        class: 'quick_panel_label',
+        settings: [stOpts.accentOpposite],
+        parents: [
 
           {
-            'class': 'overlay_control',
+            class: 'overlay_control',
           },
 
         ],
 
-        'match_fg': color[info.oppositeBrightness],
-        'selected_match_fg': color[info.oppositeBrightness],
+        match_fg: color.opposite,
+        selected_match_fg: color.opposite,
       },
 
       // Panels Sublabels
       {
-        'class': 'quick_panel_path_label',
-        'settings': [stOpts.accentOpposite],
+        class: 'quick_panel_path_label',
+        settings: [stOpts.accentOpposite],
 
-        'match_fg': color[info.oppositeBrightness],
-        'selected_match_fg': color[info.oppositeBrightness],
+        match_fg: color.opposite,
+        selected_match_fg: color.opposite,
       },
 
       // Panels Match Score
       {
-        'class': 'quick_panel_score_label',
-        'settings': [stOpts.accentOpposite],
+        class: 'quick_panel_score_label',
+        settings: [stOpts.accentOpposite],
 
-        'selected_fg': color[info.oppositeBrightness],
+        selected_fg: color.opposite,
       },
 
       // List Tabs Button
-
       {
-        'class': 'show_tabs_dropdown_button',
-        'settings': [stOpts.accentOpposite],
+        class: 'show_tabs_dropdown_button',
+        settings: [stOpts.accentOpposite],
 
-        'layer1.texture': `${oppositeBrightnessAssets}more.png`,
+        'layer1.texture': `${assets.opposite}more.png`,
       },
 
       // Input History Button
       {
-        'class': 'dropdown_button_control',
-        'settings': [stOpts.accentOpposite],
+        class: 'dropdown_button_control',
+        settings: [stOpts.accentOpposite],
 
-        'layer1.texture': `${oppositeBrightnessAssets}more.png`,
+        'layer1.texture': `${assets.opposite}more.png`,
       },
 
       // Panel Switcher
       {
-        'class': 'panel_button_control',
-        'settings': [stOpts.accentOpposite],
+        class: 'panel_button_control',
+        settings: [stOpts.accentOpposite],
 
-        'layer1.texture': `${oppositeBrightnessAssets}panels.png`,
+        'layer1.texture': `${assets.opposite}panels.png`,
       },
 
       // Regex Icon
       {
-        'class': 'icon_regex',
-        'settings': [stOpts.accentOpposite],
+        class: 'icon_regex',
+        settings: [stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeBrightnessAssets}regex.png`,
+        'layer2.texture': `${assets.opposite}regex.png`,
       },
 
       // Preserve case sensitive
       {
-        'class': 'icon_case',
-        'settings': [stOpts.accentOpposite],
+        class: 'icon_case',
+        settings: [stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeBrightnessAssets}casesensitive.png`,
+        'layer2.texture': `${assets.opposite}casesensitive.png`,
       },
 
       // Wholeword
       {
-        'class': 'icon_whole_word',
-        'settings': [stOpts.accentOpposite],
+        class: 'icon_whole_word',
+        settings: [stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeBrightnessAssets}wholeword.png`,
+        'layer2.texture': `${assets.opposite}wholeword.png`,
       },
 
       // Wrap
       {
-        'class': 'icon_wrap',
-        'settings': [stOpts.accentOpposite],
+        class: 'icon_wrap',
+        settings: [stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeBrightnessAssets}wrap.png`,
+        'layer2.texture': `${assets.opposite}wrap.png`,
       },
 
       // In Selection
       {
-        'class': 'icon_in_selection',
-        'settings': [stOpts.accentOpposite],
+        class: 'icon_in_selection',
+        settings: [stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeBrightnessAssets}inselection.png`,
+        'layer2.texture': `${assets.opposite}inselection.png`,
       },
 
       // Highlight Result
-
       {
-        'class': 'icon_highlight',
-        'settings': [stOpts.accentOpposite],
+        class: 'icon_highlight',
+        settings: [stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeBrightnessAssets}highlight.png`,
+        'layer2.texture': `${assets.opposite}highlight.png`,
       },
 
       // Preserve Case
       {
-        'class': 'icon_preserve_case',
-        'settings': [stOpts.accentOpposite],
+        class: 'icon_preserve_case',
+        settings: [stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeBrightnessAssets}preservecase.png`,
+        'layer2.texture': `${assets.opposite}preservecase.png`,
       },
 
       // Show Context
       {
-        'class': 'icon_context',
-        'settings': [stOpts.accentOpposite],
+        class: 'icon_context',
+        settings: [stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeBrightnessAssets}context.png`,
+        'layer2.texture': `${assets.opposite}context.png`,
       },
 
       // Use Buffer
       {
-        'class': 'icon_use_buffer',
-        'settings': [stOpts.accentOpposite],
+        class: 'icon_use_buffer',
+        settings: [stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeBrightnessAssets}buffer.png`,
+        'layer2.texture': `${assets.opposite}buffer.png`,
       },
 
       /**
@@ -630,133 +632,133 @@ module.exports = function (values) {
 
       // Folder Icon
       {
-        'class': 'icon_folder',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentOpposite],
+        class: 'icon_folder',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeSpacegrayPath}folder--hover.png`,
-        'layer3.texture': `${oppositeSpacegrayPath}folder--expanded.png`,
+        'layer2.texture': `${spacegray.opposite}folder--hover.png`,
+        'layer3.texture': `${spacegray.opposite}folder--expanded.png`,
       },
 
       // Symlinked Folder Icon
       {
-        'class': 'icon_folder_dup',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentOpposite],
+        class: 'icon_folder_dup',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentOpposite],
 
-        'layer1.texture': `${oppositeSpacegrayPath}folder_dup--hover.png`,
-        'layer2.texture': `${oppositeSpacegrayPath}folder_dup--expanded.png`,
+        'layer1.texture': `${spacegray.opposite}folder_dup--hover.png`,
+        'layer2.texture': `${spacegray.opposite}folder_dup--expanded.png`,
       },
 
       // Regex Icon
       {
-        'class': 'icon_regex',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentOpposite],
+        class: 'icon_regex',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeSpacegrayPath}regex.png`,
+        'layer2.texture': `${spacegray.opposite}regex.png`,
       },
 
       // Case Sensitive
       {
-        'class': 'icon_case',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentOpposite],
+        class: 'icon_case',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeSpacegrayPath}casesensitive.png`,
+        'layer2.texture': `${spacegray.opposite}casesensitive.png`,
       },
 
       // Wholeword
       {
-        'class': 'icon_whole_word',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentOpposite],
+        class: 'icon_whole_word',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeSpacegrayPath}wholeword.png`,
+        'layer2.texture': `${spacegray.opposite}wholeword.png`,
       },
 
       // Wrap
       {
-        'class': 'icon_wrap',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentOpposite],
+        class: 'icon_wrap',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeSpacegrayPath}wrap.png`,
+        'layer2.texture': `${spacegray.opposite}wrap.png`,
       },
 
       // In Selection
       {
-        'class': 'icon_in_selection',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentOpposite],
+        class: 'icon_in_selection',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeSpacegrayPath}inselection.png`,
+        'layer2.texture': `${spacegray.opposite}inselection.png`,
       },
 
       // Highlight Result
       {
-        'class': 'icon_highlight',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentOpposite],
+        class: 'icon_highlight',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeSpacegrayPath}highlight.png`,
+        'layer2.texture': `${spacegray.opposite}highlight.png`,
       },
 
       // Preserve Case
       {
-        'class': 'icon_preserve_case',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentOpposite],
+        class: 'icon_preserve_case',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeSpacegrayPath}preservecase.png`,
+        'layer2.texture': `${spacegray.opposite}preservecase.png`,
       },
 
       // Show Context
       {
-        'class': 'icon_context',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentOpposite],
+        class: 'icon_context',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeSpacegrayPath}context.png`,
+        'layer2.texture': `${spacegray.opposite}context.png`,
       },
 
       // Use Buffer
       {
-        'class': 'icon_use_buffer',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentOpposite],
+        class: 'icon_use_buffer',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeSpacegrayPath}buffer.png`,
+        'layer2.texture': `${spacegray.opposite}buffer.png`,
       },
 
       // Input History Button
       {
-        'class': 'dropdown_button_control',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentOpposite],
+        class: 'dropdown_button_control',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentOpposite],
 
-        'layer1.texture': `${oppositeSpacegrayPath}more.png`,
+        'layer1.texture': `${spacegray.opposite}more.png`,
       },
 
       // Panel Switcher
       {
-        'class': 'panel_button_control',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentOpposite],
-        'attributes': ['hover'],
+        class: 'panel_button_control',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentOpposite],
+        attributes: ['hover'],
 
-        'layer0.texture': `${oppositeSpacegrayPath}panels.png`,
+        'layer0.texture': `${spacegray.opposite}panels.png`,
       },
 
       // Status Bar Buttons
       {
-        'class': 'label_control',
-        'settings': [stOpts.accentOpposite],
-        'parents': [
+        class: 'label_control',
+        settings: [stOpts.accentOpposite],
+        parents: [
 
           {
-            'class': 'status_button',
-            'attributes': ['hover'],
+            class: 'status_button',
+            attributes: ['hover'],
           },
 
         ],
 
-        'color': color[info.oppositeBrightness],
+        color: color.opposite,
       },
 
       // Colored Tooltips
       {
-        'class': 'tool_tip_control',
-        'settings': [stOpts.coloredTooltips, stOpts.accentOpposite],
+        class: 'tool_tip_control',
+        settings: [stOpts.coloredTooltips, stOpts.accentOpposite],
 
-        'layer0.tint': color[info.oppositeBrightness],
+        'layer0.tint': color.opposite,
       },
 
       /**
@@ -764,243 +766,241 @@ module.exports = function (values) {
        */
 
       {
-        'class': 'auto_complete_label',
-        'settings': [stOpts.accentNeutral],
+        class: 'auto_complete_label',
+        settings: [stOpts.accentNeutral],
 
-        'match_fg': color.neutral,
-        'selected_match_fg': color.neutral,
+        match_fg: color.neutral,
+        selected_match_fg: color.neutral,
       },
 
       // Sidebar tree highlight
       {
-        'class': 'sidebar_label',
-        'settings': [stOpts.accentNeutral],
+        class: 'sidebar_label',
+        settings: [stOpts.accentNeutral],
 
-        'parents': [
+        parents: [
 
           {
-            'class': 'tree_row',
-            'attributes': ['expanded'],
+            class: 'tree_row',
+            attributes: ['expanded'],
           },
 
         ],
 
-        'color': color.neutral,
+        color: color.neutral,
       },
 
       {
-        'class': 'sidebar_label',
-        'settings': [stOpts.accentNeutral],
+        class: 'sidebar_label',
+        settings: [stOpts.accentNeutral],
 
-        'parents': [
+        parents: [
 
           {
-            'class': 'tree_row',
-            'attributes': ['hover'],
+            class: 'tree_row',
+            attributes: ['hover'],
           },
 
         ],
 
-        'color': color.neutral,
+        color: color.neutral,
       },
 
       {
-        'class': 'sidebar_label',
-        'settings': [stOpts.accentNeutral],
+        class: 'sidebar_label',
+        settings: [stOpts.accentNeutral],
 
-        'parents': [
+        parents: [
 
           {
-            'class': 'tree_row',
-            'attributes': ['selected'],
+            class: 'tree_row',
+            attributes: ['selected'],
           },
 
         ],
 
-        'color': color.neutral,
+        color: color.neutral,
       },
 
       {
-        'class': 'icon_folder',
-        'settings': [stOpts.accentNeutral],
+        class: 'icon_folder',
+        settings: [stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralAssets}folder--expanded.png`,
-        'layer3.texture': `${neutralAssets}folder--expanded.png`,
+        'layer2.texture': `${assets.neutral}folder--expanded.png`,
+        'layer3.texture': `${assets.neutral}folder--expanded.png`,
       },
 
       // Folder Symlink
       {
-        'class': 'icon_folder_dup',
-        'settings': [stOpts.accentNeutral],
+        class: 'icon_folder_dup',
+        settings: [stOpts.accentNeutral],
 
-        'layer1.texture': `${neutralAssets}folder_dup--expanded.png`,
-        'layer2.texture': `${neutralAssets}folder_dup--expanded.png`,
+        'layer1.texture': `${assets.neutral}folder_dup--expanded.png`,
+        'layer2.texture': `${assets.neutral}folder_dup--expanded.png`,
       },
 
       // Tab Scroll Left
       {
-        'class': 'scroll_tabs_left_button',
-        'settings': [stOpts.accentNeutral],
+        class: 'scroll_tabs_left_button',
+        settings: [stOpts.accentNeutral],
 
-        'layer1.texture': `${neutralAssets}prevtab--hover.png`,
+        'layer1.texture': `${assets.neutral}prevtab--hover.png`,
       },
 
       // Tab Scroll Right
       {
-        'class': 'scroll_tabs_right_button',
-        'settings': [stOpts.accentNeutral],
+        class: 'scroll_tabs_right_button',
+        settings: [stOpts.accentNeutral],
 
-        'layer1.texture': `${neutralAssets}nexttab--hover.png`,
+        'layer1.texture': `${assets.neutral}nexttab--hover.png`,
       },
 
       // Code Folding Button
       {
-        'class': 'fold_button_control',
-        'settings': [stOpts.accentNeutral],
+        class: 'fold_button_control',
+        settings: [stOpts.accentNeutral],
 
-        'layer1.texture': `${neutralAssets}fold--hover.png`,
-        'layer3.texture': `${neutralAssets}unfold--hover.png`,
+        'layer1.texture': `${assets.neutral}fold--hover.png`,
+        'layer3.texture': `${assets.neutral}unfold--hover.png`,
       },
 
       // Panel Labels
       {
-        'class': 'quick_panel_label',
-        'settings': [stOpts.accentNeutral],
+        class: 'quick_panel_label',
+        settings: [stOpts.accentNeutral],
 
-        'match_fg': color.neutral,
-        'selected_match_fg': color.neutral,
+        match_fg: color.neutral,
+        selected_match_fg: color.neutral,
       },
 
       // Panel Labels
       {
-        'class': 'quick_panel_label',
-        'settings': [stOpts.accentNeutral],
+        class: 'quick_panel_label',
+        settings: [stOpts.accentNeutral],
 
-        'parents': [
+        parents: [
 
           {
-            'class': 'overlay_control',
+            class: 'overlay_control',
           },
 
         ],
 
-        'match_fg': color.neutral,
-        'selected_match_fg': color.neutral,
+        match_fg: color.neutral,
+        selected_match_fg: color.neutral,
       },
 
       // Panels Sublabels
       {
-        'class': 'quick_panel_path_label',
-        'settings': [stOpts.accentNeutral],
+        class: 'quick_panel_path_label',
+        settings: [stOpts.accentNeutral],
 
-        'match_fg': color.neutral,
-        'selected_match_fg': color.neutral,
+        match_fg: color.neutral,
+        selected_match_fg: color.neutral,
       },
 
       // Panels Match Score
       {
-        'class': 'quick_panel_score_label',
-        'settings': [stOpts.accentNeutral],
+        class: 'quick_panel_score_label',
+        settings: [stOpts.accentNeutral],
 
-        'selected_fg': color.neutral,
+        selected_fg: color.neutral,
       },
 
       // List Tabs Button
-
       {
-        'class': 'show_tabs_dropdown_button',
-        'settings': [stOpts.accentNeutral],
+        class: 'show_tabs_dropdown_button',
+        settings: [stOpts.accentNeutral],
 
-        'layer1.texture': `${neutralAssets}more.png`,
+        'layer1.texture': `${assets.neutral}more.png`,
       },
 
       // Input History Button
       {
-        'class': 'dropdown_button_control',
-        'settings': [stOpts.accentNeutral],
+        class: 'dropdown_button_control',
+        settings: [stOpts.accentNeutral],
 
-        'layer1.texture': `${neutralAssets}more.png`,
+        'layer1.texture': `${assets.neutral}more.png`,
       },
 
       // Panel Switcher
       {
-        'class': 'panel_button_control',
-        'settings': [stOpts.accentNeutral],
+        class: 'panel_button_control',
+        settings: [stOpts.accentNeutral],
 
-        'layer1.texture': `${neutralAssets}panels.png`,
+        'layer1.texture': `${assets.neutral}panels.png`,
       },
 
       // Regex Icon
       {
-        'class': 'icon_regex',
-        'settings': [stOpts.accentNeutral],
+        class: 'icon_regex',
+        settings: [stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralAssets}regex.png`,
+        'layer2.texture': `${assets.neutral}regex.png`,
       },
 
       // Preserve case sensitive
       {
-        'class': 'icon_case',
-        'settings': [stOpts.accentNeutral],
+        class: 'icon_case',
+        settings: [stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralAssets}casesensitive.png`,
+        'layer2.texture': `${assets.neutral}casesensitive.png`,
       },
 
       // Wholeword
       {
-        'class': 'icon_whole_word',
-        'settings': [stOpts.accentNeutral],
+        class: 'icon_whole_word',
+        settings: [stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralAssets}wholeword.png`,
+        'layer2.texture': `${assets.neutral}wholeword.png`,
       },
 
       // Wrap
       {
-        'class': 'icon_wrap',
-        'settings': [stOpts.accentNeutral],
+        class: 'icon_wrap',
+        settings: [stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralAssets}wrap.png`,
+        'layer2.texture': `${assets.neutral}wrap.png`,
       },
 
       // In Selection
       {
-        'class': 'icon_in_selection',
-        'settings': [stOpts.accentNeutral],
+        class: 'icon_in_selection',
+        settings: [stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralAssets}inselection.png`,
+        'layer2.texture': `${assets.neutral}inselection.png`,
       },
 
       // Highlight Result
-
       {
-        'class': 'icon_highlight',
-        'settings': [stOpts.accentNeutral],
+        class: 'icon_highlight',
+        settings: [stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralAssets}highlight.png`,
+        'layer2.texture': `${assets.neutral}highlight.png`,
       },
 
       // Preserve Case
       {
-        'class': 'icon_preserve_case',
-        'settings': [stOpts.accentNeutral],
+        class: 'icon_preserve_case',
+        settings: [stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralAssets}preservecase.png`,
+        'layer2.texture': `${assets.neutral}preservecase.png`,
       },
 
       // Show Context
       {
-        'class': 'icon_context',
-        'settings': [stOpts.accentNeutral],
+        class: 'icon_context',
+        settings: [stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralAssets}context.png`,
+        'layer2.texture': `${assets.neutral}context.png`,
       },
 
       // Use Buffer
       {
-        'class': 'icon_use_buffer',
-        'settings': [stOpts.accentNeutral],
+        class: 'icon_use_buffer',
+        settings: [stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralAssets}buffer.png`,
+        'layer2.texture': `${assets.neutral}buffer.png`,
       },
 
       /**
@@ -1009,131 +1009,131 @@ module.exports = function (values) {
 
       // Folder Icon
       {
-        'class': 'icon_folder',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentNeutral],
+        class: 'icon_folder',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralSpacegrayPath}folder--hover.png`,
-        'layer3.texture': `${neutralSpacegrayPath}folder--expanded.png`,
+        'layer2.texture': `${spacegray.neutral}folder--hover.png`,
+        'layer3.texture': `${spacegray.neutral}folder--expanded.png`,
       },
 
       // Symlinked Folder Icon
       {
-        'class': 'icon_folder_dup',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentNeutral],
+        class: 'icon_folder_dup',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentNeutral],
 
-        'layer1.texture': `${neutralSpacegrayPath}folder_dup--hover.png`,
-        'layer2.texture': `${neutralSpacegrayPath}folder_dup--expanded.png`,
+        'layer1.texture': `${spacegray.neutral}folder_dup--hover.png`,
+        'layer2.texture': `${spacegray.neutral}folder_dup--expanded.png`,
       },
 
       // Regex Icon
       {
-        'class': 'icon_regex',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentNeutral],
+        class: 'icon_regex',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralSpacegrayPath}regex.png`,
+        'layer2.texture': `${spacegray.neutral}regex.png`,
       },
 
       // Case Sensitive
       {
-        'class': 'icon_case',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentNeutral],
+        class: 'icon_case',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralSpacegrayPath}casesensitive.png`,
+        'layer2.texture': `${spacegray.neutral}casesensitive.png`,
       },
 
       // Wholeword
       {
-        'class': 'icon_whole_word',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentNeutral],
+        class: 'icon_whole_word',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralSpacegrayPath}wholeword.png`,
+        'layer2.texture': `${spacegray.neutral}wholeword.png`,
       },
 
       // Wrap
       {
-        'class': 'icon_wrap',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentNeutral],
+        class: 'icon_wrap',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralSpacegrayPath}wrap.png`,
+        'layer2.texture': `${spacegray.neutral}wrap.png`,
       },
 
       // In Selection
       {
-        'class': 'icon_in_selection',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentNeutral],
+        class: 'icon_in_selection',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralSpacegrayPath}inselection.png`,
+        'layer2.texture': `${spacegray.neutral}inselection.png`,
       },
 
       // Highlight Result
       {
-        'class': 'icon_highlight',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentNeutral],
+        class: 'icon_highlight',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralSpacegrayPath}highlight.png`,
+        'layer2.texture': `${spacegray.neutral}highlight.png`,
       },
 
       // Preserve Case
       {
-        'class': 'icon_preserve_case',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentNeutral],
+        class: 'icon_preserve_case',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralSpacegrayPath}preservecase.png`,
+        'layer2.texture': `${spacegray.neutral}preservecase.png`,
       },
 
       // Show Context
       {
-        'class': 'icon_context',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentNeutral],
+        class: 'icon_context',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralSpacegrayPath}context.png`,
+        'layer2.texture': `${spacegray.neutral}context.png`,
       },
 
       // Use Buffer
       {
-        'class': 'icon_use_buffer',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentNeutral],
+        class: 'icon_use_buffer',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralSpacegrayPath}buffer.png`,
+        'layer2.texture': `${spacegray.neutral}buffer.png`,
       },
 
       // Input History Button
       {
-        'class': 'dropdown_button_control',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentNeutral],
+        class: 'dropdown_button_control',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentNeutral],
 
-        'layer1.texture': `${neutralSpacegrayPath}more.png`,
+        'layer1.texture': `${spacegray.neutral}more.png`,
       },
 
       // Panel Switcher
       {
-        'class': 'panel_button_control',
-        'settings': [stOpts.iconsetSpacegray, stOpts.accentNeutral],
-        'attributes': ['hover'],
+        class: 'panel_button_control',
+        settings: [stOpts.iconsetSpacegray, stOpts.accentNeutral],
+        attributes: ['hover'],
 
-        'layer0.texture': `${neutralSpacegrayPath}panels.png`,
+        'layer0.texture': `${spacegray.neutral}panels.png`,
       },
 
       // Status Bar Buttons
       {
-        'class': 'label_control',
-        'settings': [stOpts.accentNeutral],
-        'parents': [
+        class: 'label_control',
+        settings: [stOpts.accentNeutral],
+        parents: [
 
           {
-            'class': 'status_button',
-            'attributes': ['hover'],
+            class: 'status_button',
+            attributes: ['hover'],
           },
 
         ],
 
-        'color': color.neutral,
+        color: color.neutral,
       },
 
       // Colored Tooltips
       {
-        'class': 'tool_tip_control',
-        'settings': [stOpts.coloredTooltips, stOpts.accentNeutral],
+        class: 'tool_tip_control',
+        settings: [stOpts.coloredTooltips, stOpts.accentNeutral],
 
         'layer0.tint': color.neutral,
       },
@@ -1143,20 +1143,20 @@ module.exports = function (values) {
        */
 
       {
-        'class': 'icon_folder',
-        'settings': [stOpts.enableSquareFolderIcons],
+        class: 'icon_folder',
+        settings: [stOpts.enableSquareFolderIcons],
 
-        'layer2.texture': `${brightnessAssets}folder__square--expanded.png`,
-        'layer3.texture': `${brightnessAssets}folder__square--expanded.png`,
+        'layer2.texture': `${assets.this}folder__square--expanded.png`,
+        'layer3.texture': `${assets.this}folder__square--expanded.png`,
       },
 
       // Symlinked
       {
-        'class': 'icon_folder_dup',
-        'settings': [stOpts.enableSquareFolderIcons],
+        class: 'icon_folder_dup',
+        settings: [stOpts.enableSquareFolderIcons],
 
-        'layer1.texture': `${brightnessAssets}folder__square_dup--expanded.png`,
-        'layer2.texture': `${brightnessAssets}folder__square_dup--expanded.png`,
+        'layer1.texture': `${assets.this}folder__square_dup--expanded.png`,
+        'layer2.texture': `${assets.this}folder__square_dup--expanded.png`,
       },
 
       /**
@@ -1164,20 +1164,20 @@ module.exports = function (values) {
        */
 
       {
-        'class': 'icon_folder',
-        'settings': [stOpts.enableLiteralFolderIcons],
+        class: 'icon_folder',
+        settings: [stOpts.enableLiteralFolderIcons],
 
-        'layer2.texture': `${brightnessAssets}folder__literal--hover.png`,
-        'layer3.texture': `${brightnessAssets}folder__literal--expanded.png`,
+        'layer2.texture': `${assets.this}folder__literal--hover.png`,
+        'layer3.texture': `${assets.this}folder__literal--expanded.png`,
       },
 
       // Symlinked
       {
-        'class': 'icon_folder_dup',
-        'settings': [stOpts.enableLiteralFolderIcons],
+        class: 'icon_folder_dup',
+        settings: [stOpts.enableLiteralFolderIcons],
 
-        'layer1.texture': `${brightnessAssets}folder__literal_dup--hover.png`,
-        'layer2.texture': `${brightnessAssets}folder__literal_dup--expanded.png`,
+        'layer1.texture': `${assets.this}folder__literal_dup--hover.png`,
+        'layer2.texture': `${assets.this}folder__literal_dup--expanded.png`,
       },
 
       /**
@@ -1185,20 +1185,20 @@ module.exports = function (values) {
        */
 
       {
-        'class': 'icon_folder',
-        'settings': [stOpts.enablePlusMinusFolderIcons],
+        class: 'icon_folder',
+        settings: [stOpts.enablePlusMinusFolderIcons],
 
-        'layer2.texture': `${brightnessAssets}folder__pm--hover.png`,
-        'layer3.texture': `${brightnessAssets}folder__pm--expanded.png`,
+        'layer2.texture': `${assets.this}folder__plus_minus--hover.png`,
+        'layer3.texture': `${assets.this}folder__plus_minus--expanded.png`,
       },
 
       // Symlinked
       {
-        'class': 'icon_folder_dup',
-        'settings': [stOpts.enablePlusMinusFolderIcons],
+        class: 'icon_folder_dup',
+        settings: [stOpts.enablePlusMinusFolderIcons],
 
-        'layer1.texture': `${brightnessAssets}folder__pm_dup--hover.png`,
-        'layer2.texture': `${brightnessAssets}folder__pm_dup--expanded.png`,
+        'layer1.texture': `${assets.this}folder__plus_minus_dup--hover.png`,
+        'layer2.texture': `${assets.this}folder__plus_minus_dup--expanded.png`,
       },
 
       /**
@@ -1210,20 +1210,20 @@ module.exports = function (values) {
        */
 
       {
-        'class': 'icon_folder',
-        'settings': [stOpts.enableSquareFolderIcons, stOpts.accentOpposite],
+        class: 'icon_folder',
+        settings: [stOpts.enableSquareFolderIcons, stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeBrightnessAssets}folder__square--expanded.png`,
-        'layer3.texture': `${oppositeBrightnessAssets}folder__square--expanded.png`,
+        'layer2.texture': `${assets.opposite}folder__square--expanded.png`,
+        'layer3.texture': `${assets.opposite}folder__square--expanded.png`,
       },
 
       // Symlinked
       {
-        'class': 'icon_folder_dup',
-        'settings': [stOpts.enableSquareFolderIcons, stOpts.accentOpposite],
+        class: 'icon_folder_dup',
+        settings: [stOpts.enableSquareFolderIcons, stOpts.accentOpposite],
 
-        'layer1.texture': `${oppositeBrightnessAssets}folder__square_dup--expanded.png`,
-        'layer2.texture': `${oppositeBrightnessAssets}folder__square_dup--expanded.png`,
+        'layer1.texture': `${assets.opposite}folder__square_dup--expanded.png`,
+        'layer2.texture': `${assets.opposite}folder__square_dup--expanded.png`,
       },
 
       /**
@@ -1231,20 +1231,20 @@ module.exports = function (values) {
        */
 
       {
-        'class': 'icon_folder',
-        'settings': [stOpts.enableLiteralFolderIcons, stOpts.accentOpposite],
+        class: 'icon_folder',
+        settings: [stOpts.enableLiteralFolderIcons, stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeBrightnessAssets}folder__literal--hover.png`,
-        'layer3.texture': `${oppositeBrightnessAssets}folder__literal--expanded.png`,
+        'layer2.texture': `${assets.opposite}folder__literal--hover.png`,
+        'layer3.texture': `${assets.opposite}folder__literal--expanded.png`,
       },
 
       // Symlinked
       {
-        'class': 'icon_folder_dup',
-        'settings': [stOpts.enableLiteralFolderIcons, stOpts.accentOpposite],
+        class: 'icon_folder_dup',
+        settings: [stOpts.enableLiteralFolderIcons, stOpts.accentOpposite],
 
-        'layer1.texture': `${oppositeBrightnessAssets}folder__literal_dup--hover.png`,
-        'layer2.texture': `${oppositeBrightnessAssets}folder__literal_dup--expanded.png`,
+        'layer1.texture': `${assets.opposite}folder__literal_dup--hover.png`,
+        'layer2.texture': `${assets.opposite}folder__literal_dup--expanded.png`,
       },
 
       /**
@@ -1252,20 +1252,20 @@ module.exports = function (values) {
        */
 
       {
-        'class': 'icon_folder',
-        'settings': [stOpts.enablePlusMinusFolderIcons, stOpts.accentOpposite],
+        class: 'icon_folder',
+        settings: [stOpts.enablePlusMinusFolderIcons, stOpts.accentOpposite],
 
-        'layer2.texture': `${oppositeBrightnessAssets}folder__pm--hover.png`,
-        'layer3.texture': `${oppositeBrightnessAssets}folder__pm--expanded.png`,
+        'layer2.texture': `${assets.opposite}folder__plus_minus--hover.png`,
+        'layer3.texture': `${assets.opposite}folder__plus_minus--expanded.png`,
       },
 
       // Symlinked
       {
-        'class': 'icon_folder_dup',
-        'settings': [stOpts.enablePlusMinusFolderIcons, stOpts.accentOpposite],
+        class: 'icon_folder_dup',
+        settings: [stOpts.enablePlusMinusFolderIcons, stOpts.accentOpposite],
 
-        'layer1.texture': `${oppositeBrightnessAssets}folder__pm_dup--hover.png`,
-        'layer2.texture': `${oppositeBrightnessAssets}folder__pm_dup--expanded.png`,
+        'layer1.texture': `${assets.opposite}folder__plus_minus_dup--hover.png`,
+        'layer2.texture': `${assets.opposite}folder__plus_minus_dup--expanded.png`,
       },
 
       /**
@@ -1277,20 +1277,20 @@ module.exports = function (values) {
        */
 
       {
-        'class': 'icon_folder',
-        'settings': [stOpts.enableSquareFolderIcons, stOpts.accentNeutral],
+        class: 'icon_folder',
+        settings: [stOpts.enableSquareFolderIcons, stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralAssets}folder__square--expanded.png`,
-        'layer3.texture': `${neutralAssets}folder__square--expanded.png`,
+        'layer2.texture': `${assets.neutral}folder__square--expanded.png`,
+        'layer3.texture': `${assets.neutral}folder__square--expanded.png`,
       },
 
       // Symlinked
       {
-        'class': 'icon_folder_dup',
-        'settings': [stOpts.enableSquareFolderIcons, stOpts.accentNeutral],
+        class: 'icon_folder_dup',
+        settings: [stOpts.enableSquareFolderIcons, stOpts.accentNeutral],
 
-        'layer1.texture': `${neutralAssets}folder__square_dup--expanded.png`,
-        'layer2.texture': `${neutralAssets}folder__square_dup--expanded.png`,
+        'layer1.texture': `${assets.neutral}folder__square_dup--expanded.png`,
+        'layer2.texture': `${assets.neutral}folder__square_dup--expanded.png`,
       },
 
       /**
@@ -1298,20 +1298,20 @@ module.exports = function (values) {
        */
 
       {
-        'class': 'icon_folder',
-        'settings': [stOpts.enableLiteralFolderIcons, stOpts.accentNeutral],
+        class: 'icon_folder',
+        settings: [stOpts.enableLiteralFolderIcons, stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralAssets}folder__literal--hover.png`,
-        'layer3.texture': `${neutralAssets}folder__literal--expanded.png`,
+        'layer2.texture': `${assets.neutral}folder__literal--hover.png`,
+        'layer3.texture': `${assets.neutral}folder__literal--expanded.png`,
       },
 
       // Symlinked
       {
-        'class': 'icon_folder_dup',
-        'settings': [stOpts.enableLiteralFolderIcons, stOpts.accentNeutral],
+        class: 'icon_folder_dup',
+        settings: [stOpts.enableLiteralFolderIcons, stOpts.accentNeutral],
 
-        'layer1.texture': `${neutralAssets}folder__literal_dup--hover.png`,
-        'layer2.texture': `${neutralAssets}folder__literal_dup--expanded.png`,
+        'layer1.texture': `${assets.neutral}folder__literal_dup--hover.png`,
+        'layer2.texture': `${assets.neutral}folder__literal_dup--expanded.png`,
       },
 
       /**
@@ -1319,39 +1319,56 @@ module.exports = function (values) {
        */
 
       {
-        'class': 'icon_folder',
-        'settings': [stOpts.enablePlusMinusFolderIcons, stOpts.accentNeutral],
+        class: 'icon_folder',
+        settings: [stOpts.enablePlusMinusFolderIcons, stOpts.accentNeutral],
 
-        'layer2.texture': `${neutralAssets}folder__pm--hover.png`,
-        'layer3.texture': `${neutralAssets}folder__pm--expanded.png`,
+        'layer2.texture': `${assets.neutral}folder__plus_minus--hover.png`,
+        'layer3.texture': `${assets.neutral}folder__plus_minus--expanded.png`,
       },
 
       // Symlinked
       {
-        'class': 'icon_folder_dup',
-        'settings': [stOpts.enablePlusMinusFolderIcons, stOpts.accentNeutral],
+        class: 'icon_folder_dup',
+        settings: [stOpts.enablePlusMinusFolderIcons, stOpts.accentNeutral],
 
-        'layer1.texture': `${neutralAssets}folder__pm_dup--hover.png`,
-        'layer2.texture': `${neutralAssets}folder__pm_dup--expanded.png`,
+        'layer1.texture': `${assets.neutral}folder__plus_minus_dup--hover.png`,
+        'layer2.texture': `${assets.neutral}folder__plus_minus_dup--expanded.png`,
       },
 
-    ].map(function (obj) {
+      /**
+       * Underline Dirty Tabs
+       */
 
-      // auto-add the appropriate 'settings' for each accent
-      var setting = stOpts[`accent${_.upperFirst(name)}`];
-      if (obj.settings) {
-        var io = obj.settings.indexOf(setting);
-        if (io !== -1) {
-          obj.settings[io] = setting;
-        } else {
-          obj.settings.push(setting);
-        }
-      } else {
-        obj.settings = [setting];
-      }
+      // Default Color
+      {
+        class: 'tab_control',
+        settings: [stOpts.underlineDirtyTabs],
+        attributes: ['dirty'],
 
-      return obj;
-    });
+        'layer2.tint': color.this,
+      },
+
+      // Opposite Color
+      {
+        class: 'tab_control',
+        settings: [stOpts.underlineDirtyTabs, stOpts.accentOpposite],
+        attributes: ['dirty'],
+
+        'layer2.tint': color.opposite,
+      },
+
+      // Neutral Color
+      {
+        class: 'tab_control',
+        settings: [stOpts.underlineDirtyTabs, stOpts.accentNeutral],
+        attributes: ['dirty'],
+
+        'layer2.tint': color.neutral,
+      },
+
+    ];
+
+    return data.map(populateSettings);
   }
 
   // Create data for each accent color

@@ -2,32 +2,30 @@ module.exports = function (values) {
   'use strict';
 
   const c = values.colors;
-  const info = values.info;
-  const paths = values.paths;
 
   return [
 
+    // Minimap
     {
-      'class': 'minimap_control',
-      'settings': ['always_show_minimap_viewport'],
+      class: 'minimap_control',
 
-      'viewport_color': c.bnp[info.contrast],
-      'viewport_opacity': 0.57,
+      viewport_color: c.background,
+      viewport_opacity: 0,
     },
 
     {
-      'class': 'minimap_control',
-      'settings': ['!always_show_minimap_viewport'],
+      class: 'minimap_control',
+      settings: ['always_show_minimap_viewport'],
 
-      'viewport_color': c.bnp[info.contrast],
-      'viewport_opacity': 0,
+      viewport_opacity: 0.57,
     },
 
+    // Minimap Hover
     {
-      'class': 'minimap_control',
-      'attributes': ['hover'],
+      class: 'minimap_control',
+      attributes: ['hover'],
 
-      'viewport_opacity': 1,
+      viewport_opacity: 1,
     },
 
   ];

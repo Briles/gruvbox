@@ -1,5 +1,4 @@
 {
     "preset": "airbnb",
-    "maxErrors": 2000,
-    "disallowQuotedKeysInObjects": null
+    "maxErrors": 2000
 }

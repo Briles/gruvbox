@@ -1,6 +1,6 @@
 {
   "name": "gruvbox-sublime",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "description": "gruvbox for vim theme ported to Sublime Text",
   "repository": {
     "type": "git",
@@ -12,6 +12,7 @@
   },
   "homepage": "https://github.com/briles/gruvbox#readme",
   "devDependencies": {
+    "commander": "^2.9.0",
     "gulp": "^3.9.1",
     "jscs": "^2.10.1",
     "lodash": "^4.5.1",
@@ -24,8 +25,7 @@
   },
   "dependencies": {},
   "scripts": {
-    "style": "npm run style:main & npm run style:components",
-    "style:main": "jscs src/*.js --preset=airbnb",
-    "style:components": "jscs src/components/*.js"
+    "style": "npm run style:main",
+    "style:main": "jscs src/"
   }
 }

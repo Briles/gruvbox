@@ -2,90 +2,88 @@ module.exports = function (values) {
   'use strict';
 
   const c = values.colors;
-  const info = values.info;
   const paths = values.paths;
 
   return [
 
-    // Status bar panel
+    // Find & Replace & Console Panel
     {
-      'class': 'panel_control',
-      'content_margin': [6, 14, 6, 8],
+      class: 'panel_control',
+      content_margin: [6, 11, 6, 11],
 
+      // Background
       'layer0.tint': c.container,
-      'layer0.inner_margin': [0, 0, 0, 0],
       'layer0.opacity': 1,
 
+      // Border - Top
       'layer1.tint': c.border,
       'layer1.draw_center': false,
-
       'layer1.inner_margin': [0, 1, 0, 0],
       'layer1.opacity': 1,
     },
 
-    // Status bar panel close icon
-
+    // Status Bar Panel Close Icon
     {
-      'class': 'panel_close_button',
-      'content_margin': [0, 0], // 8,8 to show
+      class: 'panel_close_button',
+      content_margin: [0, 0],
 
+      // Default
       'layer0.texture': `${paths.this}close.png`,
-      'layer0.opacity': 0.6,
+      'layer0.opacity': 1,
 
+      // Hover
       'layer1.texture': `${paths.this}close--hover.png`,
       'layer1.opacity': 0,
     },
 
+    // Status Bar Panel Close Icon Hover
     {
-      'class': 'panel_close_button',
-      'attributes': ['hover'],
+      class: 'panel_close_button',
+      attributes: ['hover'],
 
-      'layer0.opacity': 0,
-      'layer1.opacity': 1,
+      'layer1.opacity': 1, // Hover
     },
 
     // Textline Input
-
     {
-      'class': 'text_line_control',
-      'content_margin': [18, 2, 18, 2],
+      class: 'text_line_control',
+      content_margin: [18, 0, 18, 0],
     },
 
     // Textline Input Inside Overlay Panels
-
     {
-      'class': 'text_line_control',
-      'parents': [
+      class: 'text_line_control',
+      parents: [
 
         {
-          'class': 'overlay_control',
+          class: 'overlay_control',
         },
 
       ],
 
-      'content_margin': [18, 4, 18, 14],
+      content_margin: [18, 4, 18, 14],
     },
 
     // Textline Input Overflow Menu
-
     {
-      'class': 'dropdown_button_control',
-      'content_margin': [12, 12],
+      class: 'dropdown_button_control',
+      content_margin: [12, 12],
 
+      // Default
       'layer0.texture': `${paths.this}more.png`,
       'layer0.opacity': 1,
-      'layer0.inner_margin': [0, 0],
 
+      // Hover
       'layer1.texture': `${paths.this}more--hover.png`,
       'layer1.opacity': 0,
-      'layer1.inner_margin': [0, 0],
     },
 
+    // Textline Input Overflow Menu Hover
     {
-      'class': 'dropdown_button_control',
-      'attributes': ['hover'],
+      class: 'dropdown_button_control',
+      attributes: ['hover'],
 
-      'layer1.opacity': 1,
+      'layer1.opacity': 1, // Hover
     },
 
   ];
