@@ -47,7 +47,7 @@ module.exports = function (values) {
     // Textline Input
     {
       class: 'text_line_control',
-      content_margin: [18, 2, 18, 2],
+      content_margin: [18, 0, 18, 0],
     },
 
     // Textline Input Inside Overlay Panels

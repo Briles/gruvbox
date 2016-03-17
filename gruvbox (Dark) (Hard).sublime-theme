@@ -1477,9 +1477,9 @@
     "class": "text_line_control",
     "content_margin": [
       18,
-      2,
+      0,
       18,
-      2
+      0
     ]
   },
   {
@@ -1532,13 +1532,13 @@
     "class": "button_control",
     "content_margin": [
       15,
-      12,
+      10,
       15,
-      12
+      11
     ],
     "min_size": [
       70,
-      0
+      15
     ],
     "layer0.tint": [
       14,

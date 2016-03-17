@@ -25,8 +25,8 @@ module.exports = function (values) {
     // Button
     {
       class: 'button_control',
-      content_margin: [15, 12, 15, 12],
-      min_size: [70, 0],
+      content_margin: [15, 10, 15, 11],
+      min_size: [70, 15],
 
       // Background
       'layer0.tint': c.container,
