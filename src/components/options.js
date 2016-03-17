@@ -6,8 +6,6 @@ module.exports = function (values) {
   const paths = values.paths;
   const stOpts = values.options;
 
-  const spacegrayPath = `${paths.this}spacegray__`;
-
   return [
 
     /**
@@ -549,9 +547,9 @@ module.exports = function (values) {
       class: 'icon_regex',
       settings: [stOpts.iconsetSpacegray],
 
-      'layer0.texture': `${spacegrayPath}regex.png`, // Default
-      'layer1.texture': `${spacegrayPath}regex--hover.png`, // Hover
-      'layer2.texture': `${spacegrayPath}regex--selected.png`, // Selected
+      'layer0.texture': `${paths.spacegray}regex.png`, // Default
+      'layer1.texture': `${paths.spacegray}regex--hover.png`, // Hover
+      'layer2.texture': `${paths.spacegray}regex--selected.png`, // Selected
     },
 
     // Case Sensitive
@@ -559,9 +557,9 @@ module.exports = function (values) {
       class: 'icon_case',
       settings: [stOpts.iconsetSpacegray],
 
-      'layer0.texture': `${spacegrayPath}casesensitive.png`, // Default
-      'layer1.texture': `${spacegrayPath}casesensitive--hover.png`, // Hover
-      'layer2.texture': `${spacegrayPath}casesensitive--selected.png`, // Selected
+      'layer0.texture': `${paths.spacegray}casesensitive.png`, // Default
+      'layer1.texture': `${paths.spacegray}casesensitive--hover.png`, // Hover
+      'layer2.texture': `${paths.spacegray}casesensitive--selected.png`, // Selected
     },
 
     // Wholeword
@@ -569,9 +567,9 @@ module.exports = function (values) {
       class: 'icon_whole_word',
       settings: [stOpts.iconsetSpacegray],
 
-      'layer0.texture': `${spacegrayPath}wholeword.png`, // Default
-      'layer1.texture': `${spacegrayPath}wholeword--hover.png`, // Hover
-      'layer2.texture': `${spacegrayPath}wholeword--selected.png`, // Selected
+      'layer0.texture': `${paths.spacegray}wholeword.png`, // Default
+      'layer1.texture': `${paths.spacegray}wholeword--hover.png`, // Hover
+      'layer2.texture': `${paths.spacegray}wholeword--selected.png`, // Selected
     },
 
     // Wrap
@@ -579,9 +577,9 @@ module.exports = function (values) {
       class: 'icon_wrap',
       settings: [stOpts.iconsetSpacegray],
 
-      'layer0.texture': `${spacegrayPath}wrap.png`, // Default
-      'layer1.texture': `${spacegrayPath}wrap--hover.png`, // Hover
-      'layer2.texture': `${spacegrayPath}wrap--selected.png`, // Selected
+      'layer0.texture': `${paths.spacegray}wrap.png`, // Default
+      'layer1.texture': `${paths.spacegray}wrap--hover.png`, // Hover
+      'layer2.texture': `${paths.spacegray}wrap--selected.png`, // Selected
     },
 
     // In selection
@@ -589,9 +587,9 @@ module.exports = function (values) {
       class: 'icon_in_selection',
       settings: [stOpts.iconsetSpacegray],
 
-      'layer0.texture': `${spacegrayPath}inselection.png`, // Default
-      'layer1.texture': `${spacegrayPath}inselection--hover.png`, // Hover
-      'layer2.texture': `${spacegrayPath}inselection--selected.png`, // Selected
+      'layer0.texture': `${paths.spacegray}inselection.png`, // Default
+      'layer1.texture': `${paths.spacegray}inselection--hover.png`, // Hover
+      'layer2.texture': `${paths.spacegray}inselection--selected.png`, // Selected
     },
 
     // Highlight Result
@@ -599,9 +597,9 @@ module.exports = function (values) {
       class: 'icon_highlight',
       settings: [stOpts.iconsetSpacegray],
 
-      'layer0.texture': `${spacegrayPath}highlight.png`, // Default
-      'layer1.texture': `${spacegrayPath}highlight--hover.png`, // Hover
-      'layer2.texture': `${spacegrayPath}highlight--selected.png`, // Selected
+      'layer0.texture': `${paths.spacegray}highlight.png`, // Default
+      'layer1.texture': `${paths.spacegray}highlight--hover.png`, // Hover
+      'layer2.texture': `${paths.spacegray}highlight--selected.png`, // Selected
     },
 
     // Preserve Case
@@ -609,9 +607,9 @@ module.exports = function (values) {
       class: 'icon_preserve_case',
       settings: [stOpts.iconsetSpacegray],
 
-      'layer0.texture': `${spacegrayPath}preservecase.png`, // Default
-      'layer1.texture': `${spacegrayPath}preservecase--hover.png`, // Hover
-      'layer2.texture': `${spacegrayPath}preservecase--selected.png`, // Selected
+      'layer0.texture': `${paths.spacegray}preservecase.png`, // Default
+      'layer1.texture': `${paths.spacegray}preservecase--hover.png`, // Hover
+      'layer2.texture': `${paths.spacegray}preservecase--selected.png`, // Selected
     },
 
     // Show context
@@ -619,9 +617,9 @@ module.exports = function (values) {
       class: 'icon_context',
       settings: [stOpts.iconsetSpacegray],
 
-      'layer0.texture': `${spacegrayPath}context.png`, // Default
-      'layer1.texture': `${spacegrayPath}context--hover.png`, // Hover
-      'layer2.texture': `${spacegrayPath}context--selected.png`, // Selected
+      'layer0.texture': `${paths.spacegray}context.png`, // Default
+      'layer1.texture': `${paths.spacegray}context--hover.png`, // Hover
+      'layer2.texture': `${paths.spacegray}context--selected.png`, // Selected
     },
 
     // Use buffer
@@ -629,9 +627,9 @@ module.exports = function (values) {
       class: 'icon_use_buffer',
       settings: [stOpts.iconsetSpacegray],
 
-      'layer0.texture': `${spacegrayPath}buffer.png`, // Default
-      'layer1.texture': `${spacegrayPath}buffer--hover.png`, // Hover
-      'layer2.texture': `${spacegrayPath}buffer--selected.png`, // Selected
+      'layer0.texture': `${paths.spacegray}buffer.png`, // Default
+      'layer1.texture': `${paths.spacegray}buffer--hover.png`, // Hover
+      'layer2.texture': `${paths.spacegray}buffer--selected.png`, // Selected
     },
 
     // Panel Switcher
@@ -639,8 +637,8 @@ module.exports = function (values) {
       class: 'panel_button_control',
       settings: [stOpts.iconsetSpacegray],
 
-      'layer0.texture': `${spacegrayPath}panels.png`, // Default
-      'layer1.texture': `${spacegrayPath}panels--hover.png`, // Hover
+      'layer0.texture': `${paths.spacegray}panels.png`, // Default
+      'layer1.texture': `${paths.spacegray}panels--hover.png`, // Hover
     },
 
     // Textline Input Overflow Menu
@@ -648,8 +646,8 @@ module.exports = function (values) {
       class: 'dropdown_button_control',
       settings: [stOpts.iconsetSpacegray],
 
-      'layer0.texture': `${spacegrayPath}more.png`, // Default
-      'layer1.texture': `${spacegrayPath}more--hover.png`, // Hover
+      'layer0.texture': `${paths.spacegray}more.png`, // Default
+      'layer1.texture': `${paths.spacegray}more--hover.png`, // Hover
     },
 
     /**
