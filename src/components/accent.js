@@ -23,7 +23,20 @@ module.exports = function (values) {
     const neutralAssets = utils.slashJoin(assets, 'neutral__');
     const neutralSpacegrayPath = `${neutralAssets}spacegray__`;
 
-    return [
+    /**
+     * appends the appropriate accent setting to each object
+     * @param  {object} obj the object the settings will be applied to
+     * @return {object}     the object passed in with a modified settings property
+     */
+    var populateSettings = function (obj) {
+      var setting = stOpts[`accent${_.upperFirst(name)}`];
+      obj.settings = obj.settings || [];
+      obj.settings.push(setting);
+
+      return obj;
+    };
+
+    var data = [
 
       {
         class: 'auto_complete_label',
@@ -1343,23 +1356,9 @@ module.exports = function (values) {
         'layer2.tint': color.neutral,
       },
 
-    ].map(function (obj) {
+    ];
 
-      // auto-add the appropriate 'settings' for each accent
-      var setting = stOpts[`accent${_.upperFirst(name)}`];
-      if (obj.settings) {
-        var io = obj.settings.indexOf(setting);
-        if (io !== -1) {
-          obj.settings[io] = setting;
-        } else {
-          obj.settings.push(setting);
-        }
-      } else {
-        obj.settings = [setting];
-      }
-
-      return obj;
-    });
+    return data.map(populateSettings);
   }
 
   // Create data for each accent color
