@@ -29,10 +29,6 @@ module.exports = function (values) {
       indent: 16,
       indent_offset: 0,
       indent_top_level: false,
-
-      // Background
-      'layer0.tint': c.container,
-      'layer0.opacity': 1,
     },
 
     // Sidebar Heading
