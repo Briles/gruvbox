@@ -206,13 +206,13 @@ Change the font size of the sidebar labels
 *Increasing the font size will distort the icons in the sidebar.*
 
 ```json
-    "gruvbox_sidebar_font_size_10": true,  //  v  10
-                                           //  |  11 (Default)
-    "gruvbox_sidebar_font_size_12": true,  //  |  12
-    "gruvbox_sidebar_font_size_13": true,  //  |  13
-    "gruvbox_sidebar_font_size_14": true,  //  |  14
-    "gruvbox_sidebar_font_size_15": true,  //  |  15
-    "gruvbox_sidebar_font_size_16": true,  //  v  16
+  "gruvbox_sidebar_font_size_10": true,  //  v  10
+                                         //  |  11 (Default)
+  "gruvbox_sidebar_font_size_12": true,  //  |  12
+  "gruvbox_sidebar_font_size_13": true,  //  |  13
+  "gruvbox_sidebar_font_size_14": true,  //  |  14
+  "gruvbox_sidebar_font_size_15": true,  //  |  15
+  "gruvbox_sidebar_font_size_16": true,  //  v  16
 ```
 
 #### Statusbar Sizes
@@ -376,7 +376,7 @@ add the color scheme path to the `"color_scheme"` key in
 // PlainTasks.sublime-settings
 
 {
-    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme",
+  "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme",
 }
 
 ```
