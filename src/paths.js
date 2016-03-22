@@ -1,10 +1,6 @@
 var paths = function (packageName) {
   'use strict';
 
-  if (typeof packageName === 'undefined') {
-    throw new Error('packageName is undefined');
-  }
-
   const path = require('path');
 
   // External Paths:
