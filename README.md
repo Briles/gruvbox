@@ -394,6 +394,7 @@ add the color scheme path to the `"color_scheme"` key in
   "gruvbox_enable_panel_close_button": true,  // Enable the panel close button
   "gruvbox_enable_statusbar_border": true,    // Enable borders for the status bar
   "gruvbox_highlight_active_tree_row": true,  // Highlight the active file in the sidebar tree
+  "gruvbox_less_contrast": true,              // Use less contrasting colors in sidebar, tabs, etc.
   "gruvbox_tabs_autowidth": true,             // Auto-size the tabs
   "gruvbox_tabs_bold": true,                  // Enable bold tabs
 ```
