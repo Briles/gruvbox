@@ -5,9 +5,7 @@ var paths = function (packageName) {
     throw new Error('packageName is undefined');
   }
 
-  const _ = require('lodash');
   const path = require('path');
-  const slash = require('slash');
 
   // External Paths:
   // Paths used for writing files and navigating the package source
@@ -18,6 +16,8 @@ var paths = function (packageName) {
   // Internal Paths:
   // Paths used inside themes, schemes, widgets, etc.
   // Relative to the Sublime Text Packages directory
+  //
+  // Sublime Text expects forward-slashed paths
   const packagesRoot = `Packages/${packageName}/`;
   const assetsDirectory = `${packageName}/assets/`;
   const commonsDirectory = `${assetsDirectory}commons/`;
@@ -35,9 +35,6 @@ var paths = function (packageName) {
       widgets: `${packagesRoot}widgets/`,
     },
   };
-
-  // Sublime Text expects forward-slashed paths
-  paths.internal = _.mapValues(paths.internal, p => slash(p));
 
   return paths;
 };
