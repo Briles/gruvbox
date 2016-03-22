@@ -8,24 +8,26 @@ module.exports = function (values) {
     // Minimap
     {
       class: 'minimap_control',
+      settings: ['always_show_minimap_viewport'],
 
       viewport_color: c.background,
-      viewport_opacity: 0,
+      viewport_opacity: 0.5,
     },
 
     {
       class: 'minimap_control',
-      settings: ['always_show_minimap_viewport'],
+      settings: ['!always_show_minimap_viewport'],
 
-      viewport_opacity: 0.57,
+      viewport_opacity: 0,
     },
 
     // Minimap Hover
     {
       class: 'minimap_control',
+      settings: ['!always_show_minimap_viewport'],
       attributes: ['hover'],
 
-      viewport_opacity: 1,
+      viewport_opacity: 0.5,
     },
 
   ];

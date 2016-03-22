@@ -711,13 +711,7 @@
     ],
     "indent": 16,
     "indent_offset": 0,
-    "indent_top_level": false,
-    "layer0.tint": [
-      24,
-      24,
-      24
-    ],
-    "layer0.opacity": 1
+    "indent_top_level": false
   },
   {
     "class": "sidebar_heading",
@@ -1283,26 +1277,32 @@
   },
   {
     "class": "minimap_control",
+    "settings": [
+      "always_show_minimap_viewport"
+    ],
     "viewport_color": [
       40,
       40,
       40
+    ],
+    "viewport_opacity": 0.5
+  },
+  {
+    "class": "minimap_control",
+    "settings": [
+      "!always_show_minimap_viewport"
     ],
     "viewport_opacity": 0
   },
   {
     "class": "minimap_control",
     "settings": [
-      "always_show_minimap_viewport"
+      "!always_show_minimap_viewport"
     ],
-    "viewport_opacity": 0.57
-  },
-  {
-    "class": "minimap_control",
     "attributes": [
       "hover"
     ],
-    "viewport_opacity": 1
+    "viewport_opacity": 0.5
   },
   {
     "class": "label_control",
@@ -3619,6 +3619,238 @@
       17,
       6,
       17
+    ]
+  },
+  {
+    "class": "sidebar_container",
+    "settings": [
+      "gruvbox_less_contrast"
+    ],
+    "layer0.tint": [
+      33,
+      33,
+      33
+    ],
+    "layer1.tint": [
+      23,
+      23,
+      23
+    ]
+  },
+  {
+    "class": "tabset_control",
+    "settings": [
+      "gruvbox_less_contrast"
+    ],
+    "layer0.tint": [
+      33,
+      33,
+      33
+    ],
+    "layer1.tint": [
+      23,
+      23,
+      23
+    ]
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_less_contrast"
+    ],
+    "layer0.tint": [
+      33,
+      33,
+      33
+    ],
+    "layer1.tint": [
+      23,
+      23,
+      23
+    ],
+    "layer2.tint": [
+      23,
+      23,
+      23
+    ]
+  },
+  {
+    "class": "tab_control",
+    "attributes": [
+      "selected"
+    ],
+    "layer0.tint": [
+      40,
+      40,
+      40
+    ]
+  },
+  {
+    "class": "scroll_bar_control",
+    "settings": [
+      "gruvbox_less_contrast"
+    ],
+    "layer0.tint": [
+      33,
+      33,
+      33
+    ],
+    "layer1.tint": [
+      23,
+      23,
+      23
+    ]
+  },
+  {
+    "class": "scroll_corner_control",
+    "settings": [
+      "gruvbox_less_contrast"
+    ],
+    "layer0.tint": [
+      33,
+      33,
+      33
+    ]
+  },
+  {
+    "class": "status_bar",
+    "settings": [
+      "gruvbox_less_contrast"
+    ],
+    "layer0.tint": [
+      33,
+      33,
+      33
+    ],
+    "layer2.tint": [
+      23,
+      23,
+      23
+    ]
+  },
+  {
+    "class": "panel_control",
+    "settings": [
+      "gruvbox_less_contrast"
+    ],
+    "layer0.tint": [
+      33,
+      33,
+      33
+    ],
+    "layer1.tint": [
+      23,
+      23,
+      23
+    ]
+  },
+  {
+    "class": "button_control",
+    "settings": [
+      "gruvbox_less_contrast"
+    ],
+    "layer0.tint": [
+      33,
+      33,
+      33
+    ],
+    "layer2.tint": [
+      23,
+      23,
+      23
+    ]
+  },
+  {
+    "class": "overlay_control",
+    "settings": [
+      "gruvbox_less_contrast"
+    ],
+    "layer0.tint": [
+      33,
+      33,
+      33
+    ],
+    "layer1.tint": [
+      23,
+      23,
+      23
+    ]
+  },
+  {
+    "class": "mini_quick_panel_row",
+    "settings": [
+      "gruvbox_less_contrast"
+    ],
+    "layer1.tint": [
+      23,
+      23,
+      23
+    ]
+  },
+  {
+    "class": "quick_panel",
+    "settings": [
+      "gruvbox_less_contrast"
+    ],
+    "layer0.tint": [
+      33,
+      33,
+      33
+    ]
+  },
+  {
+    "class": "quick_panel_row",
+    "settings": [
+      "gruvbox_less_contrast"
+    ],
+    "layer1.tint": [
+      23,
+      23,
+      23
+    ]
+  },
+  {
+    "class": "dialog",
+    "settings": [
+      "gruvbox_less_contrast"
+    ],
+    "layer0.tint": [
+      33,
+      33,
+      33
+    ]
+  },
+  {
+    "class": "grid_layout_control",
+    "settings": [
+      "gruvbox_less_contrast"
+    ],
+    "border_color": [
+      23,
+      23,
+      23
+    ]
+  },
+  {
+    "class": "popup_control",
+    "settings": [
+      "gruvbox_less_contrast"
+    ],
+    "layer0.tint": [
+      33,
+      33,
+      33
+    ]
+  },
+  {
+    "class": "auto_complete",
+    "settings": [
+      "gruvbox_less_contrast"
+    ],
+    "layer0.tint": [
+      33,
+      33,
+      33
     ]
   },
   {
