@@ -1,6 +1,6 @@
 const _ = require('lodash');
 const path = require('path');
-const slash = require('slash');
+const slash = require('../utils.js').slash;
 
 module.exports = function (values) {
   'use strict';

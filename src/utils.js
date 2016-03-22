@@ -3,8 +3,6 @@
 
   const fs = require('fs');
   const path = require('path');
-  const _ = require('lodash');
-  const slash = require('slash');
 
   /**
    * Utility Functions
@@ -27,6 +25,24 @@
   };
 
   /**
+   * Convert Windows backslash paths to slash paths
+   * @author Sindre Sorhus <https://github.com/sindresorhus>
+   * @license MIT
+   * @param  {string} str path to slash
+   * @return {string}     forward-slashed path
+   */
+  var slash = function (str) {
+    var isExtendedLengthPath = /^\\\\\?\\/.test(str);
+    var hasNonAscii = /[^\x00-\x80]+/.test(str);
+
+    if (isExtendedLengthPath || hasNonAscii) {
+      return str;
+    }
+
+    return str.replace(/\\/g, '/');
+  };
+
+  /**
    * wraps path.join with slash()
    * @return {string} forward-slashed path
    */
@@ -36,6 +52,7 @@
 
   const utilities = {
     writeOutput: writeOutput,
+    slash: slash,
     slashJoin: slashJoin,
   };
 
