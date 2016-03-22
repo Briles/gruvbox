@@ -1277,26 +1277,32 @@
   },
   {
     "class": "minimap_control",
+    "settings": [
+      "always_show_minimap_viewport"
+    ],
     "viewport_color": [
       249,
       245,
       215
+    ],
+    "viewport_opacity": 0.5
+  },
+  {
+    "class": "minimap_control",
+    "settings": [
+      "!always_show_minimap_viewport"
     ],
     "viewport_opacity": 0
   },
   {
     "class": "minimap_control",
     "settings": [
-      "always_show_minimap_viewport"
+      "!always_show_minimap_viewport"
     ],
-    "viewport_opacity": 0.57
-  },
-  {
-    "class": "minimap_control",
     "attributes": [
       "hover"
     ],
-    "viewport_opacity": 1
+    "viewport_opacity": 0.5
   },
   {
     "class": "label_control",
