@@ -517,7 +517,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>entity.other.attribute-name.placeholder punctuation.definition.entity, entity.other.attribute-name.pseudo-class, entity.other.attribute-name.pseudo-element, entity.other.attribute-name.tag.pseudo-class, entity.other.attribute-name.tag.pseudo-element</string>
+        <string>entity.other.attribute-name.placeholder punctuation.definition.entity, entity.other.attribute-name.pseudo-class, entity.other.attribute-name.pseudo-element, entity.other.attribute-name.tag.pseudo-class, entity.other.attribute-name.tag.pseudo-element, support.type.vendor-prefix</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -664,6 +664,17 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>CSS Property Name Vendor Prefixes</string>
+        <key>scope</key>
+        <string>meta.property-name support.type.vendor-prefix</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#98971a</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>CSS</string>
         <key>scope</key>
         <string>constant.string.sass, meta.property-value, support.constant.property-value</string>
@@ -671,6 +682,17 @@
         <dict>
           <key>foreground</key>
           <string>#1d2021</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>CSS Property Value Vendor Prefixes</string>
+        <key>scope</key>
+        <string>meta.property-value support.type.vendor-prefix</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#665c54</string>
         </dict>
       </dict>
       <dict>
@@ -1221,6 +1243,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>1c10391a-da56-49b5-8a4d-ca0ac97e867b</string>
+    <string>b9951061-29cb-428d-8448-b9a01d42ad51</string>
   </dict>
 </plist>

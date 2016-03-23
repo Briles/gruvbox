@@ -543,6 +543,7 @@ module.exports = function (values) {
           'entity.other.attribute-name.pseudo-element',
           'entity.other.attribute-name.tag.pseudo-class',
           'entity.other.attribute-name.tag.pseudo-element',
+          'support.type.vendor-prefix',
         ],
         settings: {
           foreground: c.neutralYellow,
@@ -690,6 +691,16 @@ module.exports = function (values) {
       },
 
       {
+        name: 'CSS Property Name Vendor Prefixes',
+        scope: [
+          'meta.property-name support.type.vendor-prefix',
+        ],
+        settings: {
+          foreground: c.neutralGreen,
+        },
+      },
+
+      {
         name: 'CSS',
         scope: [
           'constant.string.sass',
@@ -698,6 +709,16 @@ module.exports = function (values) {
         ],
         settings: {
           foreground: c.bnp.fg[info.contrast],
+        },
+      },
+
+      {
+        name: 'CSS Property Value Vendor Prefixes',
+        scope: [
+          'meta.property-value support.type.vendor-prefix',
+        ],
+        settings: {
+          foreground: c.bnp.fg3,
         },
       },
 
