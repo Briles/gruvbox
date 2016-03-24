@@ -136,9 +136,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-csscomb');
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-uncss');
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('build_html', ['jade', 'htmlmin']);
-  grunt.registerTask('build_css', ['sass', 'concat', 'uncss', 'postcss', 'csscomb', 'cssmin']);
+  grunt.registerTask('build_css', ['sass', 'concat', 'postcss', 'csscomb', 'cssmin']);
   grunt.registerTask('build', ['build_html', 'build_css']);
 };
