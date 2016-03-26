@@ -1,0 +1,203 @@
+@each $brightness-identifier in $--BRIGHTNESS-MODES {
+  $opposite-brightness-identifier: without($--BRIGHTNESS-MODES, $brightness-identifier);
+  //  Set up some variables specific to this brightness mode
+  $brightness-palette: map-get($palette, $brightness-identifier);
+  $opposite-brightness-palette: map-get-deep($palette, $opposite-brightness-identifier);
+  // Variables decorators for easy access
+  $bnp: $brightness-palette;
+  $obnp: $opposite-brightness-palette;
+
+  .#{$brightness-identifier} {
+    @each $contrast in $--CONTRAST-MODES {
+      $background: map-get-deep($bnp, 'bg', $contrast);
+      $border: darken($background, 12.3);
+      $container: darken($background, 6.2);
+      $panel-row: lighten($background, 2.35);
+      $border-softer: darken($background, 6.5);
+      $container-softer: darken($background, 2.8);
+
+      &.#{$contrast} {
+        .editor {
+          color: map-get-deep($bnp, 'fg', $contrast);
+          background-color: $background;
+        }
+        .sidebar {
+          border-right-color: $border;
+          background-color: $container;
+        }
+        .tabs {
+          color: grayscale(map-get($bnp, 'fg3'));
+          border-bottom-color: $border;
+          background-color: $container;
+        }
+        .statusbar {
+          border-top-color: $border;
+          background-color: $container;
+        }
+        .tab {
+          &.selected {
+            border-right-color: $border;
+            border-left-color: $border;
+            background-color: $background;
+          }
+        }
+        /**
+         * Configurator
+         */
+        .config-sections {
+          border-color: map-get($bnp, 'bg2');
+          li {
+            h1 {
+              code {
+                color: map-get($bnp, 'green');
+                background-color: $container;
+              }
+            }
+          }
+        }
+
+        .pill-switch {
+          input:checked + label {
+            color: $background;
+          }
+        }
+
+        .checkbox {
+          input:checked + label .icon {
+            color: map-get($bnp, 'aqua');
+          }
+        }
+      }
+      // END CONTRAST MODES
+    }
+
+    a {
+      color: map-get($bnp, 'blue');
+    }
+
+    .banner-image {
+      color: grayscale(map-get($bnp, 'fg1'));
+    }
+
+    .icon {
+      color: map-get($bnp, 'bg3');
+      &:hover {
+        color: map-get($bnp, 'fg4');
+      }
+      &:active {
+        color: map-get($bnp, 'fg1');
+      }
+    }
+
+    .sidebar {
+      h1 {
+        color: grayscale(map-get($bnp, 'fg1'));
+      }
+    }
+
+    .tree-view {
+      color: grayscale(map-get($bnp, 'gray'));
+      > li {
+        .icon {
+          color: map-get($bnp, 'gray');
+        }
+        &.expanded, &.selected, &:hover {
+          color: grayscale(map-get($bnp, 'fg1'));
+          > .icon {
+            color: map-get($bnp, 'fg2');
+          }
+        }
+      }
+    }
+
+    .tab {
+      color: grayscale(map-get($bnp, 'gray'));
+      &:hover {
+        color: grayscale(map-get($bnp, 'fg3'));
+      }
+      &.selected {
+        color: grayscale(map-get($bnp, 'fg2'));
+      }
+      .icon:hover {
+        color: map-get($bnp, 'red');
+      }
+    }
+
+    &.underline-modified-tabs .tab.selected {
+      border-bottom-color: map-get($bnp, 'gray');
+    }
+    .statusbar {
+      color: grayscale(map-get($bnp, 'fg3'));
+    }
+
+    .status-button {
+      li {
+        border-left-color: map-get($bnp, 'bg1');
+        &:hover {
+          color: grayscale(map-get($bnp, 'fg1'));
+        }
+      }
+    }
+
+    /**
+     * Configurator
+     */
+    .configurator {
+      color: grayscale(map-get($bnp, 'fg3'));
+    }
+
+    .pill-switch {
+      label {
+        color: grayscale(map-get($bnp, 'fg4'));
+        &:hover {
+          color: grayscale(map-get($bnp, 'fg1'));
+        }
+      }
+      input:checked + label {
+        background-color: map-get($bnp, 'aqua');
+      }
+      &.accents {
+        input {
+          &:checked + label {
+            color: grayscale(map-get($bnp, 'fg1'));
+            background-color: $transparent;
+          }
+        }
+        @each $k, $v in map-get($palette, 'accents') {
+          $brightness-accent: map-get-deep($v, $brightness-identifier);
+          label[for='accent-#{$k}'] {
+            &::after {
+              background-color: $brightness-accent;
+            }
+          }
+        }
+      }
+    }
+    /**
+   * Accent Colors
+   */
+    @each $k, $v in map-get($palette, 'accents') {
+      $opposite-color: map-get($v, '#{$opposite-brightness-identifier}');
+      $color: map-get($v, '#{$brightness-identifier}');
+      &.#{$k} {
+        @include accent-colored($color);
+        &.opposite {
+          @include accent-colored($opposite-color);
+        }
+      }
+    }
+  }
+  // END ACCENT COLORS
+}
+
+/**
+ * Neutral Accent Colors
+ */
+&.neutral {
+  @each $k, $v in map-get($palette, 'accents') {
+    &.#{$k} {
+      $neutral-color: map-get($v, 'neutral');
+      @include accent-colored($neutral-color);
+    }
+  }
+}

@@ -50,3 +50,125 @@ $neutral-blue: #458588;
 $neutral-purple: #b16286;
 $neutral-aqua: #689d6a;
 $neutral-gray: #928374;
+$palette: (
+
+    'dark': (
+      'bg': (
+        'hard': #1d2021,
+        'medium': #282828,
+        'soft': #32302f,
+      ),
+      'bg1': #3c3836,
+      'bg2': #504945,
+      'bg3': #665c54,
+      'bg4': #7c6f64,
+      'gray': #928374,
+      'fg': (
+        'hard': #f9f5d7,
+        'medium': #fbf1c7,
+        'soft': #f2e5bc,
+      ),
+      'fg1': #ebdbb2,
+      'fg2': #d5c4a1,
+      'fg3': #bdae93,
+      'fg4': #a89984,
+      'red': #fb4934,
+      'green': #b8bb26,
+      'yellow': #fabd2f,
+      'blue': #83a598,
+      'purple': #d3869b,
+      'aqua': #8ec07c,
+      'orange': #fe8019,
+    ),
+
+    'light': (
+      'bg': (
+        'hard': #f9f5d7,
+        'medium': #fbf1c7,
+        'soft': #f2e5bc,
+      ),
+      'bg1': #ebdbb2,
+      'bg2': #d5c4a1,
+      'bg3': #bdae93,
+      'bg4': #a89984,
+      'gray': #928374,
+      'fg': (
+        'hard': #1d2021,
+        'medium': #282828,
+        'soft': #32302f,
+      ),
+      'fg1': #3c3836,
+      'fg2': #504945,
+      'fg3': #665c54,
+      'fg4': #7c6f64,
+      'red': #9d0006,
+      'green': #79740e,
+      'yellow': #b57614,
+      'blue': #076678,
+      'purple': #8f3f71,
+      'aqua': #427b58,
+      'orange': #af3a03,
+    ),
+
+    'brightRed': #fb4934,
+    'brightGreen': #b8bb26,
+    'brightYellow': #fabd2f,
+    'brightBlue': #83a598,
+    'brightPurple': #d3869b,
+    'brightAqua': #8ec07c,
+    'brightOrange': #fe8019,
+
+    'neutralRed': #cc241d,
+    'neutralGreen': #98971a,
+    'neutralYellow': #d79921,
+    'neutralBlue': #458588,
+    'neutralPurple': #b16286,
+    'neutralAqua': #689d6a,
+    'neutralOrange': #d65d0e,
+
+    'fadedRed': #9d0006,
+    'fadedGreen': #79740e,
+    'fadedYellow': #b57614,
+    'fadedBlue': #076678,
+    'fadedPurple': #8f3f71,
+    'fadedAqua': #427b58,
+    'fadedOrange': #af3a03,
+
+    'accents': (
+      'red': (
+        'dark': #fb4934,
+        'neutral': #cc241d,
+        'light': #9d0006,
+      ),
+      'green': (
+        'dark': #b8bb26,
+        'neutral': #98971a,
+        'light': #79740e,
+      ),
+      'yellow': (
+        'dark': #fabd2f,
+        'neutral': #d79921,
+        'light': #b57614,
+      ),
+      'blue': (
+        'dark': #83a598,
+        'neutral': #458588,
+        'light': #076678,
+      ),
+      'purple': (
+        'dark': #d3869b,
+        'neutral': #b16286,
+        'light': #8f3f71,
+      ),
+      'aqua': (
+        'dark': #8ec07c,
+        'neutral': #689d6a,
+        'light': #427b58,
+      ),
+      'orange': (
+        'dark': #fe8019,
+        'neutral': #d65d0e,
+        'light': #af3a03,
+      ),
+    ),
+  );

@@ -67,6 +67,29 @@ module.exports = function (grunt) {
         dest: 'main.min.css',
       },
     },
+    browserify: {
+      main: {
+        files: {
+          'main.min.js': ['src/js/main.js'],
+        },
+        options: {},
+      },
+    },
+    uglify: {
+      options: {
+        mangle: false,
+      },
+      main: {
+        options: {
+          compress: {
+            drop_console: false,
+          },
+        },
+        files: {
+          'main.min.js': ['main.min.js'],
+        },
+      },
+    },
     jade: {
       compile: {
         options: {
@@ -75,7 +98,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: srcPath + 'templates/',
-          src: ['{,*/}*.jade'],
+          src: ['index.jade'],
           dest: '',
           ext: '.html',
         }],
@@ -121,6 +144,10 @@ module.exports = function (grunt) {
         files: [srcPath + 'scss/**/*.scss'],
         tasks: ['build_css'],
       },
+      js: {
+        files: [srcPath + 'js/**/*.js'],
+        tasks: ['build_js'],
+      },
       html: {
         files: [srcPath + 'templates/**/*.jade'],
         tasks: ['build_html'],
@@ -128,6 +155,8 @@ module.exports = function (grunt) {
     },
   });
 
+  grunt.loadNpmTasks('grunt-browserify');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
@@ -138,6 +167,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('build_html', ['jade', 'htmlmin']);
+  grunt.registerTask('build_js', ['browserify', 'uglify']);
   grunt.registerTask('build_css', ['sass', 'concat', 'postcss', 'csscomb', 'cssmin']);
-  grunt.registerTask('build', ['build_html', 'build_css']);
+  grunt.registerTask('build', ['build_html', 'build_css', 'build_js']);
 };

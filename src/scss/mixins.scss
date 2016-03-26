@@ -1,0 +1,24 @@
+@mixin accent-colored($color) {
+  .panel-button-control:hover {
+    color: $color;
+  }
+
+  .status-button li:hover {
+    color: $color;
+  }
+
+  .tabs > .icon:hover {
+    color: $color;
+  }
+
+  .tree-view {
+    > li {
+      &.expanded, &.selected, &:hover {
+        color: $color;
+        > .icon {
+          color: $color;
+        }
+      }
+    }
+  }
+}

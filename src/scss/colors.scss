@@ -1,0 +1,19 @@
+@import 'gruvbox';
+
+$transparent: hsla(0, 0%, 0%, 0);
+$black: hsla(0, 0%, 0%, 1);
+$white: hsla(360, 100%, 100%, 1);
+$faded-border: fade-out($dark-bg, .93);
+$groove-colors-palette: (
+  $dark-red,
+  $dark-green,
+  $dark-yellow,
+  $dark-blue,
+  $dark-purple,
+  $neutral-red,
+  $neutral-green,
+  $neutral-yellow,
+  $neutral-blue,
+  $neutral-purple,
+  $neutral-aqua
+);

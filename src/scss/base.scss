@@ -5,35 +5,28 @@
 }
 
 body {
-  font: normal normal 14px/24px 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font: normal normal 12px / 24px $--font-stack-os;
 
   text-rendering: optimizeLegibility;
-
-  color: $dark-bg;
-  background-color: $white;
 
   -webkit-font-smoothing: antialiased;
 }
 
-a {
-  text-decoration: none;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
 
-  color: $neutral-blue;
-  &:hover {
-    color: $light-blue;
-  }
+  margin: 0;
 }
 
-.centered {
-  text-align: center;
+code {
+  font-family: $--font-stack-monospaced;
 }
 
-.logo {
-  display: block;
+.de-emph {
+  font-size: .8em;
+  font-weight: normal;
 
-  width: 100%;
-  max-width: 30em;
-  margin: 3em auto;
+  opacity: .85;
 }
 
 .tagline {
@@ -41,33 +34,10 @@ a {
   font-weight: 200;
   line-height: 1.5em;
 
-  display: inline-block;
+  margin-bottom: 20px;
+  padding: 1em 0;
 
-  margin: 0 auto;
-  padding: 1em 1.8em;
-
-  text-align: center;
   white-space: nowrap;
-
-  color: $dark-bg4;
-  border: 1px solid $faded-border;
-  border-right: 0;
-  border-left: 0;
-}
-
-.cta {
-  font-size: 2em;
-  font-weight: 200;
-
-  display: inline-block;
-
-  width: 300px;
-  padding: 1em 1.8em;
-
-  text-decoration: none;
-  &:last-of-type {
-    border-left: 1px solid $faded-border;
-  }
 }
 
 .groove {
@@ -80,56 +50,94 @@ a {
   }
 }
 
-.screenshot-stack {
-  padding: 40px;
-}
 
-.screenshot {
-  width: 100%;
-  min-width: 1200px;
+.banner-image {
+  display: block;
+
   margin: 0 auto;
-  margin-bottom: 100px;
-  h2 {
-    font-size: 3em;
-    font-weight: 300;
 
-    margin-bottom: 1em;
-  }
-  img {
-    width: 100%;
-    max-width: 1913px;
-    height: auto;
-
-    vertical-align: top;
-  }
-  &:last-child {
-    margin-bottom: 0;
-  }
+  fill: currentColor;
 }
 
-.copyright {
-  font-size: .9em;
-
-  padding: 1em 0;
-
-  text-align: center;
-
-  color: $neutral-gray;
-}
-
-.heart {
-  font: 0/0 a;
-
+.icon {
   display: inline-block;
 
-  width: 11px;
-  height: 9px;
-  margin: 0 5px;
+  vertical-align: text-top;
 
-  vertical-align: middle;
+  fill: currentColor;
+}
 
-  background-image: url('src/assets/images/heart.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100%;
+.pill-switch {
+  display: inline-block;
+  label {
+    font-size: 13px;
+
+    position: relative;
+
+    display: inline-block;
+
+    margin-right: 2px;
+    padding: 3px 12px;
+
+    cursor: pointer;
+    transition: $--transition;
+
+    border-radius: $--border-radius;
+    background: $transparent;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  input {
+    display: none;
+  }
+  & + & {
+    margin-left: 40px;
+  }
+  &.accents {
+    label {
+      &::after {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+
+        display: block;
+
+        width: 100%;
+        height: 2px;
+        margin-top: 2px;
+        margin-left: -50%;
+
+        content: '';
+        transition: $--transition;
+        transform: scaleX(.5);
+      }
+      &:hover::after {
+        transform: scaleX(1);
+      }
+    }
+    input:checked + label {
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+.checkbox {
+  display: inline-block;
+
+  vertical-align: top;
+
+  label {
+    display: block;
+
+    width: 24px;
+    height: 24px;
+
+    cursor: pointer;
+  }
+  input {
+    display: none;
+  }
 }

@@ -1,5 +1,7 @@
+include mixins/icons
+include mixins/mixins
 doctype html
-html
+html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
@@ -9,36 +11,117 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='icon', type='image/x-icon', href='favicon.ico')
     link(href='main.min.css', rel='stylesheet', type='text/css', media='all')
-    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css')
-  body
-    img.logo(src="src/assets/images/banner-image.svg" alt="gruvbox for Sublime Text logo")
-    .centered
-        h1.tagline a bright theme with pastel '
-            span.groove r
-            span.groove e
-            span.groove t
-            span.groove r
-            span.groove o
-            =' '
-            span.groove g
-            span.groove r
-            span.groove o
-            span.groove o
-            span.groove v
-            span.groove e
-            |' colors
-    p.centered
-        a.cta(href="https://packagecontrol.io/packages/gruvbox") download
-        a.cta(href="https://github.com/Briles/gruvbox") view on GitHub
-    .screenshot-stack
-        .screenshot
-            h2 dark
-            img(src="src/assets/images/dark.png" alt="gruvbox dark")
-        .screenshot
-            h2 light
-            img(src="src/assets/images/light.png" alt="gruvbox light")
-    p.copyright Made with
-        span.heart &lt;3
-        ='by '
-        a(href="https://github.com/briles") Brian Reilly
+    link(href='https://fonts.googleapis.com/css?family=Fira+Mono:400|Open+Sans:400,300' rel='stylesheet' type='text/css')
+    //- script(src="//localhost:35729/livereload.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js")
+    script(src="main.min.js")
+  body(class="{{brightness}} {{contrast}}")
+    .editor
+      .pane.top
+        .pane.sidebar
+          div
+            h1 FOLDERS
+            ul.tree-view
+              li.directory.expanded
+                +icon-folder
+                |gruvbox
+                ul.tree-view
+                  li.directory
+                    +icon-folder
+                    |.github
+                  li.directory
+                    +icon-folder
+                    |assets
+                  li.directory
+                    +icon-folder
+                    |extras
+                  li.directory
+                    +icon-folder
+                    |icons
+                  li.directory
+                    +icon-folder
+                    |messages
+                  li.directory
+                    +icon-folder
+                    |prefs
+                  li.directory
+                    +icon-folder
+                    |src
+                  li.directory
+                    +icon-folder
+                    |widgets
+                  li .gitignore
+                  li .jscsrc
+                  li gruvbox (Dark) (Hard).sublime-theme
+                  li gruvbox (Dark) (Hard).tmTheme
+                  li.selected gruvbox (Dark) (Medium).sublime-theme
+                  li gruvbox (Dark) (Medium).tmTheme
+                  li gruvbox (Dark) (Soft).sublime-theme
+                  li gruvbox (Dark) (Soft).tmTheme
+                  li gruvbox (Light) (Hard).sublime-theme
+                  li gruvbox (Light) (Hard).tmTheme
+                  li gruvbox (Light) (Medium).sublime-theme
+                  li gruvbox (Light) (Medium).tmTheme
+                  li gruvbox (Light) (Soft).sublime-theme
+                  li gruvbox (Light) (Soft).tmTheme
+                  li gulpfile.js
+                  li LICENSE
+                  li messages.json
+                  li package.json
+                  li README.md
+        .pane.view
+          .pane.tabs
+            .tab.selected gruvbox for Sublime Text
+              +icon-tab-close
+            a.tab(href="https://github.com/briles/gruvbox") gruvbox on GitHub
+              +icon-tab-close
+            a.tab(href="https://packagecontrol.io/packages/gruvbox") gruvbox on Package Control
+              +icon-tab-close
+            +icon-more
+          .pane.code
+            .configurator
+              +banner
+              h1.tagline a bright theme with pastel '
+                span.groove r
+                span.groove e
+                span.groove t
+                span.groove r
+                span.groove o
+                =' '
+                span.groove g
+                span.groove r
+                span.groove o
+                span.groove o
+                span.groove v
+                span.groove e
+                |' colors
+              ul.config-sections
+                li
+                  h1 Brightness Mode
+                  div
+                    .pill-switch
+                      input(type="radio" id="theme_dark" name="brightness" value="dark" ng-model="brightness" checked)
+                      label(for="theme_dark") Dark
+                      input(type="radio" id="theme_light" name="brightness" value="light" ng-model="brightness")
+                      label(for="theme_light") Light
+                li
+                  h1 Contrast Alternatives
+                  div
+                    .pill-switch
+                      input(type="radio" id="theme_soft" name="contrast" value="soft" ng-model="contrast")
+                      label(for="theme_soft") Soft
+                      input(type="radio" id="theme_medium" name="contrast" value="medium" ng-model="contrast" checked)
+                      label(for="theme_medium") Medium
+                      input(type="radio" id="theme_hard" name="contrast" value="hard" ng-model="contrast")
+                      label(for="theme_hard") Hard
+      .pane.statusbar
+        +icon-panels-button("panel-button-control")
+        p.status-container Comparing against : HEAD, Modified : 13, Line 24, Column 84 -- Made with &lt;3 by
+          =' '
+          a(href="https://github.com/briles") Brian Reilly
+        ul.status-button
+          li UTF-8
+          li Unix
+          li Spaces: 2
+          li JSON
 

@@ -1,0 +1,296 @@
+.editor {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: stretch;
+}
+
+.pane {
+  position: relative;
+
+  display: flex;
+  &.top, &.statusbar {
+    order: 0;
+    align-self: stretch;
+  }
+  &.top {
+    flex: 1 1 auto;
+  }
+  &.statusbar {
+    flex: 0 0 auto;
+  }
+  &.view {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+  }
+  &.tabs {
+    flex: 0 0 auto;
+  }
+  &.code {
+    flex: 1 1 auto;
+  }
+}
+
+.sidebar {
+  line-height: 16px;
+
+  padding: 14px 0 0 24px;
+
+  cursor: default;
+  white-space: nowrap;
+
+  border-right: 1px solid $transparent;
+  h1 {
+    font-size: 13px;
+
+    margin-bottom: 5px;
+
+    text-transform: uppercase;
+  }
+}
+
+.tree-view {
+  display: block;
+
+  list-style-type: none;
+  li {
+    padding: 5px 24px 5px 16px;
+    .icon {
+      margin-right: 4px;
+
+      vertical-align: middle;
+    }
+    > ul {
+      margin-top: 5px;
+      padding-bottom: 0;
+    }
+  }
+}
+
+@each $k, $v in $opt-sidebar-spacing {
+  .sidebar-#{$k} .tree-view li {
+    padding-top: #{$v}px;
+    padding-bottom: #{$v}px;
+  }
+}
+
+@each $v in $opt-sidebar-font-size {
+  .sidebar-font-size-#{$v} {
+    .tree-view li {
+      font-size: $v + 1px;
+    }
+    .sidebar h1 {
+      font-size: $v + 2px;
+    }
+  }
+}
+
+
+.tabs {
+  line-height: 51px;
+
+  height: 51px;
+  padding-right: 48px;
+
+  border-bottom: 1px solid $transparent;
+  > .icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+
+    transform: translateY(-50%);
+  }
+}
+
+@each $k, $v in $opt-tabs-size {
+  .tabs-#{$k} {
+    .tabs {
+      line-height: $v * 1px;
+
+      height: $v * 1px;
+    }
+  }
+}
+
+.tab {
+  min-width: 80px;
+  margin-bottom: -1px;
+  padding: 0 12px;
+  padding-left: 16px;
+
+  cursor: default;
+  white-space: nowrap;
+  text-decoration: none;
+
+  border-right: 1px solid $transparent;
+  border-left: 1px solid $transparent;
+  .icon {
+    margin-left: 8px;
+
+    vertical-align: middle;
+  }
+  &:first-of-type {
+    border-left: 0;
+  }
+}
+
+@each $v in $opt-tabs-font-size {
+  .tabs-font-size-#{$v} {
+    .tab {
+      font-size: $v + 1px;
+    }
+  }
+}
+
+.underline-modified-tabs {
+  .tab {
+    border-bottom: 1px solid $transparent;
+  }
+  @each $k, $v in $opt-underline-modified-thickness {
+    &.underline-modified-#{$k} {
+      .tab {
+        border-bottom-width: $v * 1px;
+      }
+    }
+  }
+}
+
+.statusbar {
+  $initial-padding: 12px;
+
+  padding: 6px $initial-padding;
+  padding-right: 312px;
+
+  border-top: 1px solid $transparent;
+}
+
+@each $k, $v in $opt-statusbar-size {
+  .statusbar-#{$k} {
+    .statusbar {
+      padding-top: $v * 1px;
+      padding-bottom: $v * 1px;
+    }
+  }
+}
+
+.code {
+  font-family: $--font-stack-monospaced;
+  font-size: 16px;
+
+  overflow-y: auto;
+
+  cursor: text;
+  white-space: nowrap;
+}
+
+.configurator {
+  font-family: $--font-stack-os;
+
+  padding: 15px 40px;
+}
+
+.config-sections {
+  display: block;
+
+  padding: 24px;
+
+  list-style-type: none;
+
+  border: 1px solid $transparent;
+  border-right: 0;
+  border-left: 0;
+  li {
+    display: inline-block;
+
+    margin-right: 50px;
+
+    transition: $--transition;
+    h1 {
+      font-size: 15px;
+      font-weight: 600;
+      .de-emph {
+        margin-left: 12px;
+      }
+      code {
+        font-size: .8em;
+        font-weight: normal;
+
+        margin-left: 24px;
+        padding: 3px 8px;
+
+        transition: $--transition;
+
+        opacity: 0;
+      }
+      + div {
+        margin-top: 13px;
+      }
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &:hover {
+      h1 > code {
+        opacity: 1;
+      }
+    }
+    > div {
+      padding-left: 10px;
+    }
+  }
+}
+
+li.single-option {
+  h1 {
+    display: inline-block;
+    + div {
+      margin-top: 0;
+    }
+  }
+  > div {
+    padding-left: 12px;
+  }
+}
+
+.status-container {
+  cursor: default;
+}
+
+.status-button {
+  position: absolute;
+  right: 0;
+
+  display: block;
+  li {
+    line-height: 16px;
+
+    display: inline-block;
+
+    min-width: 75px;
+    padding: 0 12px;
+
+    cursor: default;
+    text-align: center;
+
+    border-left: 1px solid $transparent;
+  }
+}
+
+.panel-button-control {
+  margin-right: 12px;
+}

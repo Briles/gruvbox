@@ -1,16 +1,59 @@
-$white: #fff;
-$black: #000;
-$faded-border: fade-out($dark-bg, .93);
-$groove-colors-palette: (
-  $dark-red,
-  $dark-green,
-  $dark-yellow,
-  $dark-blue,
-  $dark-purple,
-  $neutral-red,
-  $neutral-green,
-  $neutral-yellow,
-  $neutral-blue,
-  $neutral-purple,
-  $neutral-aqua
+$--font-stack-os: -apple-system, 'SFNSText-Regular', 'Helvetica Neue', 'Roboto', 'Segoe UI', sans-serif;
+$--font-stack-monospaced: 'Fira Mono', monospaced;
+$--BRIGHTNESS-MODES: ('dark', 'light');
+$--CONTRAST-MODES: ('soft', 'medium', 'hard');
+$--transition: all 200ms linear;
+$--border-radius: 3px;
+
+/**
+ * Sublime Options
+ */
+
+$opt-sidebar-spacing: (
+  'cramped': 1,
+  'compact': 3,
+  'comfortable': 7,
+  'cozy': 9,
+);
+
+$opt-sidebar-font-size: (
+  10,
+  12,
+  13,
+  14,
+  15,
+  16,
+);
+
+$opt-statusbar-size: (
+  'xxs': 0,
+  'xs': 2,
+  's': 4,
+  'l': 8,
+  'xl': 10,
+  'xxl': 12,
+);
+
+$opt-tabs-size: (
+  'xxs': 33,
+  'xs': 39,
+  's': 45,
+  'l': 57,
+  'xl': 63,
+  'xxl': 69,
+);
+
+$opt-tabs-font-size: (
+  7,
+  8,
+  9,
+  10,
+  12,
+  13,
+  14,
+  15,
+);
+
+$opt-underline-modified-thickness: (
+  'thick': 2,
 );
