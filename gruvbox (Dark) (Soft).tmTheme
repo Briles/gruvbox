@@ -122,7 +122,7 @@
         <key>name</key>
         <string>Entity</string>
         <key>scope</key>
-        <string>entity.name.type, entity.other.inherited-class</string>
+        <string>constant.language.name, entity.name.type, entity.other.inherited-class</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -144,7 +144,7 @@
         <key>name</key>
         <string>Keywords</string>
         <key>scope</key>
-        <string>keyword, keyword.control, keyword.operator.logical.python, meta.at-rule.media support.function.misc, meta.prolog.haml, meta.tag.sgml.doctype.html, source.cs keyword.operator, storage.type.import.haxe, variable.documentroot</string>
+        <string>js.embedded.control.flow keyword.operator.js, keyword, keyword.control, keyword.operator.logical.python, meta.at-rule.media support.function.misc, meta.prolog.haml, meta.tag.sgml.doctype.html, source.cs keyword.operator, storage.type.function.jade, storage.type.import.haxe, storage.type.import.include.jade, variable.documentroot</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1203,6 +1203,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>4a5ea48f-fed9-4cfa-94fb-db0348e3554f</string>
+    <string>3f382e9e-aaf1-4c35-9dfa-9c948a7633f4</string>
   </dict>
 </plist>

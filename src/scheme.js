@@ -114,6 +114,7 @@ module.exports = function (values) {
         scope: [
           'entity.name.type',
           'entity.other.inherited-class',
+          'constant.language.name',
         ],
         settings: {
           foreground: c.bnp.yellow,
@@ -145,6 +146,9 @@ module.exports = function (values) {
           'meta.at-rule.media support.function.misc',
           'source.cs keyword.operator',
           'keyword.operator.logical.python',
+          'storage.type.function.jade',
+          'js.embedded.control.flow keyword.operator.js',
+          'storage.type.import.include.jade',
         ],
         settings: {
           foreground: c.bnp.red,
