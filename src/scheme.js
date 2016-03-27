@@ -629,16 +629,6 @@ module.exports = function (values) {
 
       {
         scope: [
-          'markup.changed',
-        ],
-        settings: {
-          foreground: c.bnp.red,
-        },
-      },
-
-      {
-        scope: [
-          'markup.deleted',
           'markup.list',
           'punctuation.definition.list_item.number',
           'punctuation.definition.list_item.markdown',
@@ -669,7 +659,6 @@ module.exports = function (values) {
 
       {
         scope: [
-          'markup.inserted',
           'markup.raw.inline',
         ],
         settings: {
@@ -740,7 +729,7 @@ module.exports = function (values) {
       },
 
       {
-        name: 'DIFF',
+        name: 'Diff Foreground Text',
         scope: [
           'source.diff',
         ],
@@ -750,8 +739,9 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Diff Header Text From',
         scope: [
-          'source.diff meta',
+          'meta.diff.header.from-file',
         ],
         settings: {
           foreground: c.bnp.blue,
@@ -759,20 +749,40 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Diff Header Text From Punctuation',
         scope: [
-          'source.diff meta.header.from-file',
-          'source.diff meta.header.to-file',
+          'punctuation.definition.from-file',
         ],
         settings: {
-          foreground: c.bnp.aqua,
+          foreground: c.neutralBlue,
         },
       },
 
       {
+        name: 'Diff Header Text To',
         scope: [
-          'source.diff meta.diff.range',
-          'source.diff meta.diff.line-number',
-          'source.diff punctuation.range',
+          'meta.diff.header.to-file',
+        ],
+        settings: {
+          foreground: c.bnp.purple,
+        },
+      },
+
+      {
+        name: 'Diff Header Text To Punctuation',
+        scope: [
+          'punctuation.definition.to-file',
+        ],
+        settings: {
+          foreground: c.neutralPurple,
+        },
+      },
+
+      {
+        name: 'Diff Additions & Deletions Stats',
+        scope: [
+          'meta.diff.range',
+          'meta.toc-list.line-number',
         ],
         settings: {
           foreground: c.bnp.yellow,
@@ -780,22 +790,12 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Diff Additions & Deletions Stats Punctuation',
         scope: [
-          'source.diff markup.deleted',
-          'source.diff punctuation.deleted',
+          'punctuation.definition.range.diff',
         ],
         settings: {
-          foreground: c.bnp.red,
-        },
-      },
-
-      {
-        scope: [
-          'source.diff markup.inserted',
-          'source.diff punctuation.inserted',
-        ],
-        settings: {
-          foreground: c.bnp.green,
+          foreground: c.neutralYellow,
         },
       },
 
@@ -811,9 +811,10 @@ module.exports = function (values) {
 
       // GitGutter
       {
-        name: 'GitGutter deleted',
+        name: 'GitGutter & Diff Deleted',
         scope: [
-          'markup.deleted.git_gutter',
+          'markup.deleted',
+          'punctuation.definition.deleted',
         ],
         settings: {
           foreground: c.bnp.red,
@@ -821,9 +822,10 @@ module.exports = function (values) {
       },
 
       {
-        name: 'GitGutter inserted',
+        name: 'GitGutter & Diff Inserted',
         scope: [
-          'markup.inserted.git_gutter',
+          'markup.inserted',
+          'punctuation.definition.inserted',
         ],
         settings: {
           foreground: c.bnp.green,
@@ -831,9 +833,10 @@ module.exports = function (values) {
       },
 
       {
-        name: 'GitGutter changed',
+        name: 'GitGutter & Diff Changed',
         scope: [
-          'markup.changed.git_gutter',
+          'markup.changed',
+          'punctuation.definition.changed',
         ],
         settings: {
           foreground: c.bnp.yellow,
@@ -843,7 +846,7 @@ module.exports = function (values) {
       {
         name: 'GitGutter ignored',
         scope: [
-          'markup.ignored.git_gutter',
+          'markup.ignored',
         ],
         settings: {
           foreground: c.bnp.gray,
@@ -853,7 +856,7 @@ module.exports = function (values) {
       {
         name: 'GitGutter untracked',
         scope: [
-          'markup.untracked.git_gutter',
+          'markup.untracked',
         ],
         settings: {
           foreground: c.bnp.gray,
