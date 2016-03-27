@@ -144,7 +144,7 @@
         <key>name</key>
         <string>Keywords</string>
         <key>scope</key>
-        <string>keyword, keyword.control, meta.at-rule.media support.function.misc, meta.prolog.haml, meta.tag.sgml.doctype.html, storage.type.import.haxe, variable.documentroot</string>
+        <string>keyword, keyword.control, keyword.operator.logical.python, meta.at-rule.media support.function.misc, meta.prolog.haml, meta.tag.sgml.doctype.html, source.cs keyword.operator, storage.type.import.haxe, variable.documentroot</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -260,19 +260,10 @@
         </dict>
       </dict>
       <dict>
-        <key>scope</key>
-        <string>variable.language</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#8f3f71</string>
-        </dict>
-      </dict>
-      <dict>
         <key>name</key>
         <string>Constants</string>
         <key>scope</key>
-        <string>constant, constant.numeric, constant.other, constant.other.color, constant.other.symbol, punctuation.definition.constant.scss, support.constant.color</string>
+        <string>constant, constant.numeric, constant.other, constant.other.color, constant.other.symbol, punctuation.definition.constant.scss, support.constant.color, variable.language</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -667,17 +658,6 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>C# Keyword Reset</string>
-        <key>scope</key>
-        <string>source.cs keyword.operator</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#9d0006</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>name</key>
         <string>CSS</string>
         <key>scope</key>
         <string>meta.property-name, support.type.property-name</string>
@@ -795,17 +775,6 @@
         <dict>
           <key>foreground</key>
           <string>#d79921</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>PYTHON</string>
-        <key>scope</key>
-        <string>keyword.operator.logical.python</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#9d0006</string>
         </dict>
       </dict>
       <dict>
@@ -1211,6 +1180,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>e4261e74-6951-4dbd-9a63-8e9bf0f68c00</string>
+    <string>6f70b4b1-3bb1-4a83-8c86-311c01858521</string>
   </dict>
 </plist>

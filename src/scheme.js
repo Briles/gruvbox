@@ -142,6 +142,8 @@ module.exports = function (values) {
           'storage.type.import.haxe',
           'variable.documentroot',
           'meta.at-rule.media support.function.misc',
+          'source.cs keyword.operator',
+          'keyword.operator.logical.python',
         ],
         settings: {
           foreground: c.bnp.red,
@@ -266,15 +268,6 @@ module.exports = function (values) {
       },
 
       {
-        scope: [
-          'variable.language',
-        ],
-        settings: {
-          foreground: c.bnp.purple,
-        },
-      },
-
-      {
         name: 'Constants',
         scope: [
           'constant',
@@ -284,6 +277,7 @@ module.exports = function (values) {
           'constant.other.color',
           'support.constant.color',
           'punctuation.definition.constant.scss',
+          'variable.language',
         ],
         settings: {
           foreground: c.bnp.purple,
@@ -676,16 +670,6 @@ module.exports = function (values) {
       },
 
       {
-        name: 'C# Keyword Reset',
-        scope: [
-          'source.cs keyword.operator',
-        ],
-        settings: {
-          foreground: c.bnp.red,
-        },
-      },
-
-      {
         name: 'CSS',
         scope: [
           'meta.property-name',
@@ -796,16 +780,6 @@ module.exports = function (values) {
         ],
         settings: {
           foreground: c.neutralYellow,
-        },
-      },
-
-      {
-        name: 'PYTHON',
-        scope: [
-          'keyword.operator.logical.python',
-        ],
-        settings: {
-          foreground: c.bnp.red,
         },
       },
 
