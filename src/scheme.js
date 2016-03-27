@@ -800,88 +800,12 @@ module.exports = function (values) {
       },
 
       {
-        name: 'GFM',
-        scope: [
-          'source.gfm.markup.heading',
-        ],
-        settings: {
-          foreground: c.bnp.blue,
-        },
-      },
-
-      {
-        scope: [
-          'source.gfm.markup.link',
-        ],
-        settings: {
-          foreground: c.bnp.red,
-        },
-      },
-
-      {
-        scope: [
-          'source.gfm.link.entity',
-        ],
-        settings: {
-          foreground: c.bnp.green,
-        },
-      },
-
-      {
-        name: 'INI',
-        scope: [
-          'source.ini.keyword.other.definition.ini',
-        ],
-        settings: {
-          foreground: c.bnp.blue,
-        },
-      },
-
-      {
-        name: 'JAVA',
-        scope: [
-          'source.java.storage.modifier.import',
-          'source.java.storage.type',
-        ],
-        settings: {
-          foreground: c.bnp.yellow,
-        },
-      },
-
-      {
-        scope: [
-          'source.java-properties.meta.key-pair',
-        ],
-        settings: {
-          foreground: c.bnp.blue,
-        },
-      },
-
-      {
         name: 'PYTHON',
         scope: [
           'keyword.operator.logical.python',
         ],
         settings: {
           foreground: c.bnp.red,
-        },
-      },
-
-      {
-        scope: [
-          'variable.parameter.python',
-        ],
-        settings: {
-          foreground: c.bnp.purple,
-        },
-      },
-
-      {
-        scope: [
-          'source.ruby.punctuation.separator.namespace',
-        ],
-        settings: {
-          foreground: c.bnp.yellow,
         },
       },
 

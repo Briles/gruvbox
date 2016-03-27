@@ -108,6 +108,8 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>DocBlockr &amp; Other Keywords Inside Comments</string>
         <key>scope</key>
         <string>comment.parameter, comment.punctuation, comment.string, comment.type, storage.type.class.jsdoc</string>
         <key>settings</key>
@@ -172,6 +174,8 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>Constants Punctuation</string>
         <key>scope</key>
         <string>constant.other.color punctuation.definition.constant, constant.other.color.rgb-value.scss, constant.other.unit, keyword.other.unit</string>
         <key>settings</key>
@@ -201,6 +205,8 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>Function Keyword</string>
         <key>scope</key>
         <string>storage.type.function</string>
         <key>settings</key>
@@ -244,7 +250,7 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>SASS import url</string>
+        <string>SASS Import URL</string>
         <key>scope</key>
         <string>variable.parameter.url</string>
         <key>settings</key>
@@ -283,6 +289,8 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>Escaped Characters</string>
         <key>scope</key>
         <string>constant.character.escape, constant.character.escaped, constant.other.character-class.escape</string>
         <key>settings</key>
@@ -316,6 +324,8 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>Regular Expressions</string>
         <key>scope</key>
         <string>string.regexp</string>
         <key>settings</key>
@@ -325,6 +335,8 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>Embedded Ruby Regular Expressions</string>
         <key>scope</key>
         <string>string.regexp.source.ruby.embedded</string>
         <key>settings</key>
@@ -334,6 +346,8 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>Hyperlinks</string>
         <key>scope</key>
         <string>string.other.link</string>
         <key>settings</key>
@@ -343,6 +357,8 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>Markup Tag Punctuation</string>
         <key>scope</key>
         <string>punctuation.definition.tag</string>
         <key>settings</key>
@@ -352,6 +368,8 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>Markdown Heading</string>
         <key>scope</key>
         <string>punctuation.definition.heading, punctuation.definition.identity</string>
         <key>settings</key>
@@ -361,6 +379,8 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>Markdown Bold Text</string>
         <key>scope</key>
         <string>punctuation.definition.bold</string>
         <key>settings</key>
@@ -372,6 +392,8 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>Markdown Italic Text</string>
         <key>scope</key>
         <string>punctuation.definition.italic</string>
         <key>settings</key>
@@ -414,6 +436,8 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>Special Variables</string>
         <key>scope</key>
         <string>support.module</string>
         <key>settings</key>
@@ -424,7 +448,7 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>Entity</string>
+        <string>Entities</string>
         <key>scope</key>
         <string>entity.name.function, entity.name.section</string>
         <key>settings</key>
@@ -498,6 +522,8 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>Markup Tag</string>
         <key>scope</key>
         <string>entity.name.tag, entity.tag, keyword.control.untitled, keyword.doctype.xml, punctuation.definition.prolog.haml, source.less keyword.control.html.elements</string>
         <key>settings</key>
@@ -507,6 +533,8 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>HTML Attribute Names</string>
         <key>scope</key>
         <string>entity.name.attribute-name, entity.other.attribute-name, meta.section.attributes.haml constant.other.symbol.ruby</string>
         <key>settings</key>
@@ -516,6 +544,8 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>CSS Pseudo Elements/Classes &amp; Vendor Prefixes</string>
         <key>scope</key>
         <string>entity.other.attribute-name.placeholder punctuation.definition.entity, entity.other.attribute-name.pseudo-class, entity.other.attribute-name.pseudo-element, entity.other.attribute-name.tag.pseudo-class, entity.other.attribute-name.tag.pseudo-element, support.type.vendor-prefix</string>
         <key>settings</key>
@@ -545,6 +575,8 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>Markdown Image &amp; Hyperlink</string>
         <key>scope</key>
         <string>meta.image, meta.link</string>
         <key>settings</key>
@@ -563,6 +595,8 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>Function with Parameters Punctuation</string>
         <key>scope</key>
         <string>meta.brace.round, punctuation.definition.parameters</string>
         <key>settings</key>
@@ -642,7 +676,7 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>CS</string>
+        <string>C# Keyword Reset</string>
         <key>scope</key>
         <string>source.cs keyword.operator</string>
         <key>settings</key>
@@ -753,66 +787,6 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>GFM</string>
-        <key>scope</key>
-        <string>source.gfm.markup.heading</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#076678</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>source.gfm.markup.link</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#9d0006</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>source.gfm.link.entity</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#79740e</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>INI</string>
-        <key>scope</key>
-        <string>source.ini.keyword.other.definition.ini</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#076678</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>JAVA</string>
-        <key>scope</key>
-        <string>source.java.storage.modifier.import, source.java.storage.type</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#b57614</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>source.java-properties.meta.key-pair</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#076678</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>name</key>
         <string>PYTHON</string>
         <key>scope</key>
         <string>keyword.operator.logical.python</string>
@@ -820,24 +794,6 @@
         <dict>
           <key>foreground</key>
           <string>#9d0006</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>variable.parameter.python</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#8f3f71</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>source.ruby.punctuation.separator.namespace</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#b57614</string>
         </dict>
       </dict>
       <dict>
@@ -1243,6 +1199,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>5c385d73-7434-44b0-b5b9-08f90b826f66</string>
+    <string>15c349e8-4218-4834-bc8e-618d54bacbdc</string>
   </dict>
 </plist>
