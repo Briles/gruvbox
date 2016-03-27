@@ -20,7 +20,7 @@ module.exports = function (values) {
     {
       class: 'tool_tip_label_control',
 
-      color: c.bnp.bg[info.contrast],
+      color: c.background,
     },
 
   ];
