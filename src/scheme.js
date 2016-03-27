@@ -542,6 +542,7 @@ module.exports = function (values) {
         name: 'HTML & CSS ID',
         scope: [
           'entity.other.attribute-name.id',
+          'constant.id.tag',
         ],
         settings: {
           foreground: c.bnp.orange,
