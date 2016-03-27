@@ -873,7 +873,7 @@ module.exports = function (values) {
 
       ],
 
-      color: c.bnp.fg[info.contrast],
+      color: c.foreground,
     },
 
     // All labels

@@ -31,8 +31,8 @@ module.exports = function (values) {
           bracketsOptions: 'underline',
           bracketsForeground: c.bnp.fg4,
           gutterForeground: c.bnp.gray,
-          highlight: c.bnp.fg[info.contrast],
-          highlightForeground: c.bnp.fg[info.contrast],
+          highlight: c.foreground,
+          highlightForeground: c.foreground,
           findHighlight: c.neutralYellow,
           findHighlightForeground: c.background,
           tagsOptions: 'underline',
@@ -49,7 +49,7 @@ module.exports = function (values) {
           'text',
         ],
         settings: {
-          foreground: c.bnp.fg[info.contrast],
+          foreground: c.foreground,
         },
       },
 
@@ -64,7 +64,7 @@ module.exports = function (values) {
           'punctuation',
         ],
         settings: {
-          foreground: c.bnp.fg[info.contrast],
+          foreground: c.foreground,
         },
       },
 
@@ -201,7 +201,7 @@ module.exports = function (values) {
           'storage.type.import',
         ],
         settings: {
-          foreground: c.bnp.fg[info.contrast],
+          foreground: c.foreground,
         },
       },
 
@@ -248,7 +248,7 @@ module.exports = function (values) {
           'meta.parameters',
         ],
         settings: {
-          foreground: c.bnp.fg[info.contrast],
+          foreground: c.foreground,
         },
       },
 
@@ -313,7 +313,7 @@ module.exports = function (values) {
           'invalid',
         ],
         settings: {
-          foreground: c.bnp.fg[info.contrast],
+          foreground: c.foreground,
           background: c.bnp.red,
         },
       },
@@ -566,7 +566,7 @@ module.exports = function (values) {
           'meta.tag',
         ],
         settings: {
-          foreground: c.bnp.fg[info.contrast],
+          foreground: c.foreground,
         },
       },
 
@@ -708,7 +708,7 @@ module.exports = function (values) {
           'support.constant.property-value',
         ],
         settings: {
-          foreground: c.bnp.fg[info.contrast],
+          foreground: c.foreground,
         },
       },
 
@@ -1028,7 +1028,7 @@ module.exports = function (values) {
           'raw.nibble.upper',
         ],
         settings: {
-          foreground: c.bnp.fg[info.contrast],
+          foreground: c.foreground,
         },
       },
 
@@ -1038,7 +1038,7 @@ module.exports = function (values) {
           'raw.nibble.lower',
         ],
         settings: {
-          foreground: c.bnp.fg[info.contrast],
+          foreground: c.foreground,
         },
       },
 
@@ -1127,7 +1127,7 @@ module.exports = function (values) {
           'meta.item.todo.pending',
         ],
         settings: {
-          foreground: c.bnp.fg[info.contrast],
+          foreground: c.foreground,
         },
       },
 
