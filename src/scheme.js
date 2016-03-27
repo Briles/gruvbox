@@ -96,6 +96,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'DocBlockr & Other Keywords Inside Comments',
         scope: [
           'comment.parameter',
           'comment.punctuation',
@@ -171,6 +172,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Constants Punctuation',
         scope: [
           'constant.other.color punctuation.definition.constant',
           'constant.other.color.rgb-value.scss',
@@ -206,6 +208,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Function Keyword',
         scope: [
           'storage.type.function',
         ],
@@ -253,7 +256,7 @@ module.exports = function (values) {
       },
 
       {
-        name: 'SASS import url',
+        name: 'SASS Import URL',
         scope: [
           'variable.parameter.url',
         ],
@@ -297,6 +300,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Escaped Characters',
         scope: [
           'constant.character.escape',
           'constant.character.escaped',
@@ -329,6 +333,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Regular Expressions',
         scope: [
           'string.regexp',
         ],
@@ -338,6 +343,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Embedded Ruby Regular Expressions',
         scope: [
           'string.regexp.source.ruby.embedded',
         ],
@@ -347,6 +353,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Hyperlinks',
         scope: [
           'string.other.link',
         ],
@@ -356,6 +363,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Markup Tag Punctuation',
         scope: [
           'punctuation.definition.tag',
         ],
@@ -365,6 +373,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Markdown Heading',
         scope: [
           'punctuation.definition.heading',
           'punctuation.definition.identity',
@@ -375,6 +384,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Markdown Bold Text',
         scope: [
           'punctuation.definition.bold',
         ],
@@ -385,6 +395,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Markdown Italic Text',
         scope: [
           'punctuation.definition.italic',
         ],
@@ -432,6 +443,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Special Variables',
         scope: [
           'support.module',
         ],
@@ -441,7 +453,7 @@ module.exports = function (values) {
       },
 
       {
-        name: 'Entity',
+        name: 'Entities',
         scope: [
           'entity.name.function',
           'entity.name.section',
@@ -512,6 +524,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Markup Tag',
         scope: [
           'entity.name.tag',
           'entity.tag',
@@ -526,6 +539,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'HTML Attribute Names',
         scope: [
           'entity.name.attribute-name',
           'entity.other.attribute-name',
@@ -537,6 +551,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'CSS Pseudo Elements/Classes & Vendor Prefixes',
         scope: [
           'entity.other.attribute-name.placeholder punctuation.definition.entity',
           'entity.other.attribute-name.pseudo-class',
@@ -571,6 +586,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Markdown Image & Hyperlink',
         scope: [
           'meta.link',
           'meta.image',
@@ -590,6 +606,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Function with Parameters Punctuation',
         scope: [
           'meta.brace.round',
           'punctuation.definition.parameters',
@@ -670,7 +687,7 @@ module.exports = function (values) {
       },
 
       {
-        name: 'CS',
+        name: 'C# Keyword Reset',
         scope: [
           'source.cs keyword.operator',
         ],
