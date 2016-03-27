@@ -239,6 +239,17 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>Object Properties</string>
+        <key>scope</key>
+        <string>meta.property.object</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#fbf1c7</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>Parameters</string>
         <key>scope</key>
         <string>meta.parameters, variable.parameter</string>
@@ -1192,6 +1203,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>f9d04cfb-d107-43fd-9df7-0804a9b3e702</string>
+    <string>ffb43752-edfd-4813-951f-396486a484ca</string>
   </dict>
 </plist>

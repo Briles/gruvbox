@@ -247,6 +247,16 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Object Properties',
+        scope: [
+          'meta.property.object',
+        ],
+        settings: {
+          foreground: c.foreground,
+        },
+      },
+
+      {
         name: 'Parameters',
         scope: [
           'variable.parameter',
