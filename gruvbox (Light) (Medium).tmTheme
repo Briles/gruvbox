@@ -672,7 +672,7 @@
         <key>name</key>
         <string>Function with Parameters Punctuation</string>
         <key>scope</key>
-        <string>meta.brace.round, punctuation.definition.parameters</string>
+        <string>constant.name.attribute.tag.jade, meta.brace.round, punctuation.definition.parameters</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1203,6 +1203,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>ca6bf9cf-8d8e-4653-8a08-a7210518e5b2</string>
+    <string>80597033-0261-48b0-829b-36233e861be6</string>
   </dict>
 </plist>

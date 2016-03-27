@@ -686,6 +686,7 @@ module.exports = function (values) {
         scope: [
           'meta.brace.round',
           'punctuation.definition.parameters',
+          'constant.name.attribute.tag.jade',
         ],
         settings: {
           foreground: c.bnp.fg3,
