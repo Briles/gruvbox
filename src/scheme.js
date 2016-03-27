@@ -126,6 +126,7 @@ module.exports = function (values) {
           'punctuation.quasi',
           'punctuation.section.embedded',
           'variable.other.interpolation.scss',
+          'string.interpolated',
         ],
         settings: {
           foreground: c.bnp.aqua,

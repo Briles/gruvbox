@@ -133,7 +133,7 @@
         <key>name</key>
         <string>Template String Punctuation</string>
         <key>scope</key>
-        <string>punctuation.quasi, punctuation.section.embedded, variable.other.interpolation.scss</string>
+        <string>punctuation.quasi, punctuation.section.embedded, string.interpolated, variable.other.interpolation.scss</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1203,6 +1203,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>1fda01d4-6379-4017-8126-86edb8bc5006</string>
+    <string>73a899b4-0828-4ea2-91b1-d9282a62bae2</string>
   </dict>
 </plist>
