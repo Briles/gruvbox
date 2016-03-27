@@ -268,7 +268,7 @@ module.exports = function (values) {
       },
 
       {
-        name: 'Constants',
+        name: 'Language Constants',
         scope: [
           'constant',
           'constant.numeric',
@@ -285,6 +285,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'User-Defined Constants',
         scope: [
           'variable.other.constant',
         ],
@@ -350,6 +351,7 @@ module.exports = function (values) {
         name: 'Hyperlinks',
         scope: [
           'string.other.link',
+          'constant.other.reference.link',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -369,8 +371,7 @@ module.exports = function (values) {
       {
         name: 'Markdown Heading',
         scope: [
-          'punctuation.definition.heading',
-          'punctuation.definition.identity',
+          'markup.heading',
         ],
         settings: {
           foreground: c.bnp.green,
@@ -378,12 +379,34 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Markdown Heading Punctuation',
+        scope: [
+          'punctuation.definition.heading',
+          'punctuation.definition.identity',
+        ],
+        settings: {
+          foreground: c.neutralGreen,
+        },
+      },
+
+      {
         name: 'Markdown Bold Text',
+        scope: [
+          'markup.bold',
+        ],
+        settings: {
+          foreground: c.bnp.orange,
+          fontStyle: 'bold',
+        },
+      },
+
+      {
+        name: 'Markdown Bold Text Punctuation',
         scope: [
           'punctuation.definition.bold',
         ],
         settings: {
-          foreground: c.bnp.yellow,
+          foreground: c.neutralOrange,
           fontStyle: 'bold',
         },
       },
@@ -391,11 +414,54 @@ module.exports = function (values) {
       {
         name: 'Markdown Italic Text',
         scope: [
-          'punctuation.definition.italic',
+          'markup.italic',
         ],
         settings: {
           foreground: c.bnp.red,
           fontStyle: 'italic',
+        },
+      },
+
+      {
+        name: 'Markdown Italic Text Punctuation',
+        scope: [
+          'punctuation.definition.italic',
+        ],
+        settings: {
+          foreground: c.neutralRed,
+          fontStyle: 'italic',
+        },
+      },
+
+      {
+        name: 'Markdown Inline Code',
+        scope: [
+          'markup.raw.inline',
+        ],
+        settings: {
+          foreground: c.bnp.yellow,
+        },
+      },
+
+      {
+        name: 'Markdown Quoted',
+        scope: [
+          'markup.quote',
+        ],
+        settings: {
+          foreground: c.bnp.purple,
+        },
+      },
+
+      {
+        name: 'Markdown List',
+        scope: [
+          'markup.list',
+          'punctuation.definition.list_item.number',
+          'punctuation.definition.list_item.markdown',
+        ],
+        settings: {
+          foreground: c.bnp.blue,
         },
       },
 
@@ -611,66 +677,7 @@ module.exports = function (values) {
       },
 
       {
-        name: 'Markup',
-        scope: [
-          'markup.bold',
-        ],
-        settings: {
-          foreground: c.bnp.purple,
-          fontStyle: 'bold',
-        },
-      },
-
-      {
-        scope: [
-          'markup.list',
-          'punctuation.definition.list_item.number',
-          'punctuation.definition.list_item.markdown',
-        ],
-        settings: {
-          foreground: c.bnp.blue,
-        },
-      },
-
-      {
-        scope: [
-          'markup.italic',
-        ],
-        settings: {
-          foreground: c.bnp.red,
-          fontStyle: 'italic',
-        },
-      },
-
-      {
-        scope: [
-          'markup.heading',
-        ],
-        settings: {
-          foreground: c.bnp.green,
-        },
-      },
-
-      {
-        scope: [
-          'markup.raw.inline',
-        ],
-        settings: {
-          foreground: c.bnp.yellow,
-        },
-      },
-
-      {
-        scope: [
-          'markup.quote',
-        ],
-        settings: {
-          foreground: c.bnp.purple,
-        },
-      },
-
-      {
-        name: 'CSS',
+        name: 'CSS Property Names',
         scope: [
           'meta.property-name',
           'support.type.property-name',
@@ -691,7 +698,7 @@ module.exports = function (values) {
       },
 
       {
-        name: 'CSS',
+        name: 'CSS Property Values',
         scope: [
           'constant.string.sass',
           'meta.property-value',

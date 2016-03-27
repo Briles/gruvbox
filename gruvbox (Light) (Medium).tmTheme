@@ -261,7 +261,7 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>Constants</string>
+        <string>Language Constants</string>
         <key>scope</key>
         <string>constant, constant.numeric, constant.other, constant.other.color, constant.other.symbol, punctuation.definition.constant.scss, support.constant.color, variable.language</string>
         <key>settings</key>
@@ -271,6 +271,8 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>User-Defined Constants</string>
         <key>scope</key>
         <string>variable.other.constant</string>
         <key>settings</key>
@@ -340,7 +342,7 @@
         <key>name</key>
         <string>Hyperlinks</string>
         <key>scope</key>
-        <string>string.other.link</string>
+        <string>constant.other.reference.link, string.other.link</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -362,7 +364,7 @@
         <key>name</key>
         <string>Markdown Heading</string>
         <key>scope</key>
-        <string>punctuation.definition.heading, punctuation.definition.identity</string>
+        <string>markup.heading</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -371,13 +373,37 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>Markdown Heading Punctuation</string>
+        <key>scope</key>
+        <string>punctuation.definition.heading, punctuation.definition.identity</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#98971a</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>Markdown Bold Text</string>
+        <key>scope</key>
+        <string>markup.bold</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#af3a03</string>
+          <key>fontStyle</key>
+          <string>bold</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Markdown Bold Text Punctuation</string>
         <key>scope</key>
         <string>punctuation.definition.bold</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#b57614</string>
+          <string>#d65d0e</string>
           <key>fontStyle</key>
           <string>bold</string>
         </dict>
@@ -386,13 +412,59 @@
         <key>name</key>
         <string>Markdown Italic Text</string>
         <key>scope</key>
-        <string>punctuation.definition.italic</string>
+        <string>markup.italic</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
           <string>#9d0006</string>
           <key>fontStyle</key>
           <string>italic</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Markdown Italic Text Punctuation</string>
+        <key>scope</key>
+        <string>punctuation.definition.italic</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#cc241d</string>
+          <key>fontStyle</key>
+          <string>italic</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Markdown Inline Code</string>
+        <key>scope</key>
+        <string>markup.raw.inline</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#b57614</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Markdown Quoted</string>
+        <key>scope</key>
+        <string>markup.quote</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#8f3f71</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Markdown List</string>
+        <key>scope</key>
+        <string>markup.list, punctuation.definition.list_item.markdown, punctuation.definition.list_item.number</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#076678</string>
         </dict>
       </dict>
       <dict>
@@ -598,67 +670,7 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>Markup</string>
-        <key>scope</key>
-        <string>markup.bold</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#8f3f71</string>
-          <key>fontStyle</key>
-          <string>bold</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>markup.list, punctuation.definition.list_item.markdown, punctuation.definition.list_item.number</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#076678</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>markup.italic</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#9d0006</string>
-          <key>fontStyle</key>
-          <string>italic</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>markup.heading</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#79740e</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>markup.raw.inline</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#b57614</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>scope</key>
-        <string>markup.quote</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#8f3f71</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>name</key>
-        <string>CSS</string>
+        <string>CSS Property Names</string>
         <key>scope</key>
         <string>meta.property-name, support.type.property-name</string>
         <key>settings</key>
@@ -680,7 +692,7 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>CSS</string>
+        <string>CSS Property Values</string>
         <key>scope</key>
         <string>constant.string.sass, meta.property-value, support.constant.property-value</string>
         <key>settings</key>
@@ -1180,6 +1192,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>9d99f911-7d55-4877-9b1f-dc19cc1515f9</string>
+    <string>249e683f-77a0-48dd-bc61-27a5778e3672</string>
   </dict>
 </plist>
