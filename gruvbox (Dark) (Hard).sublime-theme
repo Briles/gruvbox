@@ -2516,6 +2516,13 @@
     "layer1.opacity": 1
   },
   {
+    "class": "sidebar_container",
+    "settings": [
+      "gruvbox_enable_sidebar_border"
+    ],
+    "layer1.opacity": 1
+  },
+  {
     "class": "icon_folder",
     "settings": [
       "gruvbox_iconset_spacegray"

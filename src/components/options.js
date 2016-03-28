@@ -519,6 +519,17 @@ module.exports = function (values) {
     },
 
     /**
+     * Enable Sidebar Border
+     */
+
+    {
+      class: 'sidebar_container',
+      settings: [stOpts.enableSidebarBorder],
+
+      'layer1.opacity': 1,
+    },
+
+    /**
      * Spacegray Iconset
      */
 

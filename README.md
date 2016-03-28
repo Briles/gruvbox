@@ -392,6 +392,7 @@ add the color scheme path to the `"color_scheme"` key in
   "gruvbox_disable_greyscale": true,          // Use gruvbox colors instead of greyscale colors for certain text
   "gruvbox_disable_panels_button": true,      // Hide the panel-switching button
   "gruvbox_enable_panel_close_button": true,  // Enable the panel close button
+  "gruvbox_enable_sidebar_border": true,      // Enable the sidebar border
   "gruvbox_enable_statusbar_border": true,    // Enable borders for the status bar
   "gruvbox_highlight_active_buttons": true,   // Highlight selected buttons in the Find & Replace panel
   "gruvbox_highlight_active_tree_row": true,  // Highlight the active file in the sidebar tree

@@ -37,6 +37,7 @@ module.exports = {
   enablePanelCloseButton: 'gruvbox_enable_panel_close_button',
   enablePlusMinusFolderIcons: 'gruvbox_enable_plus_minus_folder_icons',
   enableSquareFolderIcons: 'gruvbox_enable_square_folder_icons',
+  enableSidebarBorder: 'gruvbox_enable_sidebar_border',
   enableStatusbarBorder: 'gruvbox_enable_statusbar_border',
   enableTreeRowHighlight: 'gruvbox_highlight_active_tree_row',
   underlineDirtyTabs: 'gruvbox_underline_modified_tabs',
