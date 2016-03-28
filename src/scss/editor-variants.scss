@@ -10,6 +10,7 @@
   .#{$brightness-identifier} {
     @each $contrast in $--CONTRAST-MODES {
       $background: map-get-deep($bnp, 'bg', $contrast);
+      $foreground: map-get-deep($bnp, 'fg', $contrast);
       $border: darken($background, 12.3);
       $container: darken($background, 6.2);
       $panel-row: lighten($background, 2.35);
@@ -17,23 +18,49 @@
       $container-softer: darken($background, 2.8);
 
       &.#{$contrast} {
+        ::selection {
+          background: $background;
+        }
+
         .editor {
           color: map-get-deep($bnp, 'fg', $contrast);
           background-color: $background;
         }
+
         .sidebar {
           border-right-color: $border;
           background-color: $container;
         }
+
         .tabs {
           color: grayscale(map-get($bnp, 'fg3'));
           border-bottom-color: $border;
           background-color: $container;
         }
+
+        .findreplace {
+          border-top-color: $border;
+          background-color: $container;
+          input {
+            color: $foreground;
+            background-color: $background;
+          }
+          button {
+            color: grayscale($foreground);
+            &:hover {
+              background-color: $background;
+            }
+            &:active {
+              background-color: $border;
+            }
+          }
+        }
+
         .statusbar {
           border-top-color: $border;
           background-color: $container;
         }
+
         .tab {
           &.selected {
             border-right-color: $border;
@@ -41,6 +68,7 @@
             background-color: $background;
           }
         }
+
         /**
          * Configurator
          */
@@ -126,6 +154,7 @@
     &.underline-modified-tabs .tab.selected {
       border-bottom-color: map-get($bnp, 'gray');
     }
+
     .statusbar {
       color: grayscale(map-get($bnp, 'fg3'));
     }

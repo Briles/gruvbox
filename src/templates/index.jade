@@ -114,14 +114,35 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
                       label(for="theme_medium") Medium
                       input(type="radio" id="theme_hard" name="contrast" value="hard" ng-model="contrast")
                       label(for="theme_hard") Hard
-      .pane.statusbar
-        +icon-panels-button("panel-button-control")
-        p.status-container Comparing against : HEAD, Modified : 13, Line 24, Column 84 -- Made with &lt;3 by
-          =' '
-          a(href="https://github.com/briles") Brian Reilly
-        ul.status-button
-          li UTF-8
-          li Unix
-          li Spaces: 2
-          li JSON
+      .pane.panel
+        .pane.findreplace
+          .row
+            .icon-bar
+              .icon-button
+                +icon-regex
+              .icon-button
+                +icon-case-sensitive
+              .icon-button
+                +icon-whole-word
+              .icon-button
+                +icon-wrap
+              .icon-button
+                +icon-in-selection
+              .icon-button
+                +icon-highlight-matches
+            input(type="text")
+            +icon-more
+            button Find
+            button Find Prev
+            button Find All
+        .pane.statusbar
+          +icon-panels-button("panel-button-control")
+          p.status-container Comparing against : HEAD, Modified : 13, Line 24, Column 84 -- Made with &lt;3 by
+            =' '
+            a(href="https://github.com/briles") Brian Reilly
+          ul.status-button
+            li UTF-8
+            li Unix
+            li Spaces: 2
+            li JSON
 

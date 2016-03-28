@@ -18,17 +18,11 @@
   position: relative;
 
   display: flex;
-  &.top, &.statusbar {
+  &.top, &.panel {
     order: 0;
     align-self: stretch;
   }
-  &.top {
-    flex: 1 1 auto;
-  }
-  &.statusbar {
-    flex: 0 0 auto;
-  }
-  &.view {
+  &.view, &.panel {
     display: flex;
     flex-direction: column;
 
@@ -38,10 +32,13 @@
     align-content: stretch;
     align-items: stretch;
   }
-  &.tabs {
+  &.tabs, &.panel {
     flex: 0 0 auto;
   }
-  &.code {
+  &.top, &.code, &.statusbar {
+    flex: 1 1 auto;
+  }
+  &.findreplace {
     flex: 1 1 auto;
   }
 }
@@ -99,7 +96,6 @@
     }
   }
 }
-
 
 .tabs {
   line-height: 51px;
@@ -170,6 +166,10 @@
   }
 }
 
+.panel {
+  white-space: nowrap;
+}
+
 .statusbar {
   $initial-padding: 12px;
 
@@ -185,6 +185,73 @@
       padding-top: $v * 1px;
       padding-bottom: $v * 1px;
     }
+  }
+}
+
+.findreplace {
+  padding: 15px 14px;
+
+  border-top: 1px solid $transparent;
+  .row {
+    display: inline-flex;
+    flex-direction: row;
+
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+  }
+  input {
+    font-family: $--font-stack-monospaced;
+    font-size: 15px;
+
+    display: flex;
+
+    min-height: 36px;
+    padding: 4px;
+
+    border: 0;
+    outline: none;
+
+    flex: 1 1 auto;
+    + .icon {
+      margin: 6px 4px;
+
+      vertical-align: middle;
+    }
+  }
+  button {
+    min-width: 100px;
+    height: 36px;
+    padding: 0 30px;
+
+    cursor: default;
+    vertical-align: top;
+
+    border: 0;
+    outline: none;
+    background-color: $transparent;
+    &:first-of-type {
+      margin-left: 20px;
+    }
+  }
+}
+
+.icon-bar {
+  display: inline-block;
+
+  margin-right: 20px;
+
+  vertical-align: top;
+}
+
+.icon-button {
+  display: inline-block;
+
+  padding: 6px 12px;
+  .icon {
+    vertical-align: top;
   }
 }
 
