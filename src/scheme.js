@@ -315,6 +315,7 @@ module.exports = function (values) {
           'constant.character.escape',
           'constant.character.escaped',
           'constant.other.character-class.escape',
+          'constant.character.quoted',
         ],
         settings: {
           foreground: c.bnp.red,

@@ -296,7 +296,7 @@
         <key>name</key>
         <string>Escaped Characters</string>
         <key>scope</key>
-        <string>constant.character.escape, constant.character.escaped, constant.other.character-class.escape</string>
+        <string>constant.character.escape, constant.character.escaped, constant.character.quoted, constant.other.character-class.escape</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1203,6 +1203,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>16c4811d-e943-45d5-97f0-51636a37efd0</string>
+    <string>6f32b164-95aa-4140-8f89-caa0efb54c9f</string>
   </dict>
 </plist>
