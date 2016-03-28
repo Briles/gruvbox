@@ -96,6 +96,30 @@
             color: map-get($bnp, 'aqua');
           }
         }
+
+        .buffer li *::selection {
+          background: fade-out(map-get($bnp, 'bg1'), .01);
+        }
+
+        /**
+         * Syntax Highlighting
+         */
+
+        .punctuation {
+          color: $foreground;
+        }
+
+        .whitespace {
+          color: fade-out(map-get($bnp, 'fg1'), .5);
+        }
+
+        .string {
+          color: map-get($bnp, 'green');
+        }
+
+        .constant {
+          color: map-get($bnp, 'purple');
+        }
       }
       // END CONTRAST MODES
     }
@@ -167,6 +191,10 @@
           color: grayscale(map-get($bnp, 'fg1'));
         }
       }
+    }
+
+    .line-numbers {
+      color: map-get($bnp, 'gray');
     }
 
     /**

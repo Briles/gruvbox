@@ -2,6 +2,22 @@
 
 var srcPath = 'src/';
 
+var range = function (start, end) {
+  var arr = [];
+  for (var i = start; i < end; i++) arr.push(i);
+  return arr;
+};
+
+function getGruvboxOptions() {
+  var options = [];
+  const gruvboxOptions = require('../gruvbox/src/sublime-options.js');
+  for (var opt in gruvboxOptions) {
+    options.push(gruvboxOptions[opt]);
+  }
+
+  return options.sort();
+}
+
 module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -93,12 +109,15 @@ module.exports = function (grunt) {
     jade: {
       compile: {
         options: {
-          data: {},
+          data: {
+            range: range,
+            sublimeOptions: getGruvboxOptions(),
+          },
         },
         files: [{
           expand: true,
           cwd: srcPath + 'templates/',
-          src: ['index.jade'],
+          src: ['*.jade'],
           dest: '',
           ext: '.html',
         }],

@@ -3,6 +3,7 @@ include mixins/mixins
 doctype html
 html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
   head
+    base(href="/")
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(http-equiv='content-type', content='text/html; charset=UTF-8')
@@ -13,7 +14,8 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
     link(href='main.min.css', rel='stylesheet', type='text/css', media='all')
     link(href='https://fonts.googleapis.com/css?family=Fira+Mono:400|Open+Sans:400,300' rel='stylesheet' type='text/css')
     //- script(src="//localhost:35729/livereload.js")
-    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js")
     script(src="main.min.js")
   body(class="{{brightness}} {{contrast}}")
     .editor
@@ -71,7 +73,17 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
                   li README.md
         .pane.view
           .pane.tabs
-            .tab.selected.tooltipped.tooltipped-s(aria-label="http://brianreilly.me/gruvbox/") gruvbox for Sublime Text
+            a.tab.tooltipped.tooltipped-s(
+            aria-label="http://brianreilly.me/gruvbox/"
+            ng-class="{selected: location === '/'}"
+            ng-click="location = '/'"
+            href="/#/") gruvbox for Sublime Text
+              +icon-tab-close
+            a.tab.tooltipped.tooltipped-s(
+              aria-label="http://brianreilly.me/gruvbox/options"
+              ng-class="{selected: location === '/options'}"
+              ng-click="location = '/options'"
+              href="/#/options") Options
               +icon-tab-close
             a.tab.tooltipped.tooltipped-s(
               aria-label="https://github.com/briles/gruvbox"
@@ -82,42 +94,7 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
               href="https://packagecontrol.io/packages/gruvbox") gruvbox on Package Control
               +icon-tab-close
             +icon-more
-          .pane.code
-            .configurator
-              +banner
-              h1.tagline a bright theme with pastel '
-                span.groove r
-                span.groove e
-                span.groove t
-                span.groove r
-                span.groove o
-                =' '
-                span.groove g
-                span.groove r
-                span.groove o
-                span.groove o
-                span.groove v
-                span.groove e
-                |' colors
-              ul.config-sections
-                li
-                  h1 Brightness Mode
-                  div
-                    .pill-switch
-                      input(type="radio" id="theme_dark" name="brightness" value="dark" ng-model="brightness" checked)
-                      label(for="theme_dark") Dark
-                      input(type="radio" id="theme_light" name="brightness" value="light" ng-model="brightness")
-                      label(for="theme_light") Light
-                li
-                  h1 Contrast Alternatives
-                  div
-                    .pill-switch
-                      input(type="radio" id="theme_soft" name="contrast" value="soft" ng-model="contrast")
-                      label(for="theme_soft") Soft
-                      input(type="radio" id="theme_medium" name="contrast" value="medium" ng-model="contrast" checked)
-                      label(for="theme_medium") Medium
-                      input(type="radio" id="theme_hard" name="contrast" value="hard" ng-model="contrast")
-                      label(for="theme_hard") Hard
+          .pane.code(ng-view)
       .pane.panel
         .pane.findreplace
           .row

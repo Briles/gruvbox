@@ -1,0 +1,27 @@
+.code-sample
+  ul.line-numbers
+    li 1
+    each opt, index in sublimeOptions
+      li=index+2
+    li=(sublimeOptions.length + 2)
+    li=(sublimeOptions.length + 3)
+  ul.buffer
+    li
+      pre
+        code
+          span.punctuation {
+      each option in sublimeOptions
+        li
+          pre
+            code
+              span.whitespace &nbsp;&nbsp;
+              span.punctuation "
+              span.string #{option}
+              span.punctuation ":
+              span.whitespace &nbsp;
+              span.constant false
+              span.punctuation ,
+    li
+      pre
+        code
+          span.punctuation }

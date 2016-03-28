@@ -1,0 +1,37 @@
+include mixins/mixins
+
+.configurator
+  +banner
+  h1.tagline a bright theme with pastel '
+    span.groove r
+    span.groove e
+    span.groove t
+    span.groove r
+    span.groove o
+    =' '
+    span.groove g
+    span.groove r
+    span.groove o
+    span.groove o
+    span.groove v
+    span.groove e
+    |' colors
+  ul.config-sections
+    li
+      h1 Brightness Mode
+      div
+        .pill-switch
+          input(type="radio" id="theme_dark" name="brightness" value="dark" ng-model="$parent.brightness" checked)
+          label(for="theme_dark") Dark
+          input(type="radio" id="theme_light" name="brightness" value="light" ng-model="$parent.brightness")
+          label(for="theme_light") Light
+    li
+      h1 Contrast Alternatives
+      div
+        .pill-switch
+          input(type="radio" id="theme_soft" name="contrast" value="soft" ng-model="$parent.contrast")
+          label(for="theme_soft") Soft
+          input(type="radio" id="theme_medium" name="contrast" value="medium" ng-model="$parent.contrast" checked)
+          label(for="theme_medium") Medium
+          input(type="radio" id="theme_hard" name="contrast" value="hard" ng-model="$parent.contrast")
+          label(for="theme_hard") Hard

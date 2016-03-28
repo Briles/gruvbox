@@ -1,0 +1,33 @@
+.code-sample {
+  padding-bottom: 10%;
+}
+
+.line-numbers, .buffer {
+  display: block;
+
+  padding-bottom: 50%;
+
+  list-style-type: none;
+  li {
+    display: block;
+  }
+}
+
+.line-numbers {
+  float: left;
+
+  padding: 0 12px 0 24px;
+
+  text-align: right;
+  li {
+    line-height: 28px;
+  }
+}
+
+.buffer {
+  pre, code {
+    line-height: 16px;
+
+    padding: 6px 0;
+  }
+}
