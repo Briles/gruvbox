@@ -128,6 +128,7 @@ module.exports = function (values) {
           'punctuation.section.embedded',
           'variable.other.interpolation.scss',
           'string.interpolated',
+          'entity.name.tag.mustache',
         ],
         settings: {
           foreground: c.bnp.aqua,
