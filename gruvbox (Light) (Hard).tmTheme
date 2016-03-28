@@ -557,7 +557,7 @@
         <key>name</key>
         <string>HTML &amp; CSS Class</string>
         <key>scope</key>
-        <string>entity.other.attribute-name.class</string>
+        <string>entity.name.tag.class, entity.other.attribute-name.class</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1203,6 +1203,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>aebfb8fa-c1eb-4bbe-95c0-b9ad4b7e671b</string>
+    <string>cb148cc2-8e64-43ed-afb8-d0c50c437c42</string>
   </dict>
 </plist>

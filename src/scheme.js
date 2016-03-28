@@ -564,6 +564,7 @@ module.exports = function (values) {
       {
         name: 'HTML & CSS Class',
         scope: [
+          'entity.name.tag.class',
           'entity.other.attribute-name.class',
         ],
         settings: {
