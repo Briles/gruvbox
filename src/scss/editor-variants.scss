@@ -22,6 +22,11 @@
           background: $background;
         }
 
+        .tooltipped::after {
+          color: $background;
+          background: map-get-deep($obnp, 'bg', $contrast);
+        }
+
         .editor {
           color: map-get-deep($bnp, 'fg', $contrast);
           background-color: $background;

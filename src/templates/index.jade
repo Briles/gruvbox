@@ -71,11 +71,15 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
                   li README.md
         .pane.view
           .pane.tabs
-            .tab.selected gruvbox for Sublime Text
+            .tab.selected.tooltipped.tooltipped-s(aria-label="http://brianreilly.me/gruvbox/") gruvbox for Sublime Text
               +icon-tab-close
-            a.tab(href="https://github.com/briles/gruvbox") gruvbox on GitHub
+            a.tab.tooltipped.tooltipped-s(
+              aria-label="https://github.com/briles/gruvbox"
+              href="https://github.com/briles/gruvbox") gruvbox on GitHub
               +icon-tab-close
-            a.tab(href="https://packagecontrol.io/packages/gruvbox") gruvbox on Package Control
+            a.tab.tooltipped.tooltipped-s(
+              aria-label="https://packagecontrol.io/packages/gruvbox"
+              href="https://packagecontrol.io/packages/gruvbox") gruvbox on Package Control
               +icon-tab-close
             +icon-more
           .pane.code
@@ -136,7 +140,8 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
             button Find Prev
             button Find All
         .pane.statusbar
-          +icon-panels-button("panel-button-control")
+          .panel-button-control.tooltipped.tooltipped-ne(aria-label="Switch Panel")
+            +icon-panels-button
           p.status-container Comparing against : HEAD, Modified : 13, Line 24, Column 84 -- Made with &lt;3 by
             =' '
             a(href="https://github.com/briles") Brian Reilly

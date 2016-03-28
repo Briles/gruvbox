@@ -1,0 +1,89 @@
+// Simple tooltips - Inspired by Tipsy (https://github.com/jaz303/tipsy)
+//
+// Usage:   .toolipped .toolipped-[n/s/e/w/ne/nw/se/sw]
+// North and East position the tooltip above and to the right of the element, respectively.
+// The tooltip overrides position, therefore must be wrapped in their own element when used with positioned elements.
+// The tooltip content is the element's 'aria-label' attribute content
+//
+
+.tooltipped {
+  position: relative;
+  &::after {
+    font: normal 400 12px / 24px $--font-stack-os;
+
+    position: absolute;
+    z-index: 10000001;
+
+    display: none;
+
+    padding: 2px 16px;
+
+    content: attr(aria-label);
+    text-align: center;
+    white-space: pre;
+    text-decoration: none;
+    letter-spacing: .02em;
+    text-transform: initial;
+    pointer-events: none;
+
+    color: $white;
+    background: $black;
+
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+  &:hover {
+    &::after {
+      display: inline-block;
+
+      text-decoration: none;
+    }
+  }
+}
+
+
+.tooltipped-n::after, .tooltipped-ne::after, .tooltipped-nw::after {
+  right: 50%;
+  bottom: 100%;
+}
+
+.tooltipped-s::after, .tooltipped-se::after, .tooltipped-sw::after {
+  top: 100%;
+  right: 50%;
+}
+
+.tooltipped-s::after, .tooltipped-n::after {
+  transform: translateX(50%);
+}
+
+.tooltipped-w {
+  &::after {
+    right: 100%;
+
+    margin-right: 5px;
+  }
+}
+
+.tooltipped-e {
+  &::after {
+    left: 100%;
+
+    margin-left: 5px;
+  }
+}
+
+.tooltipped-e::after, .tooltipped-w::after {
+  bottom: 50%;
+
+  transform: translateY(50%);
+}
+
+.tooltipped-nw::after, .tooltipped-sw::after {
+  margin-right: -15px;
+}
+
+.tooltipped-ne::after, .tooltipped-se::after {
+  right: auto;
+  left: 50%;
+
+  margin-left: -15px;
+}
