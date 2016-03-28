@@ -18,10 +18,6 @@
       $container-softer: darken($background, 2.8);
 
       &.#{$contrast} {
-        ::selection {
-          background: $background;
-        }
-
         .tooltipped::after {
           color: $background;
           background: map-get-deep($obnp, 'bg', $contrast);
