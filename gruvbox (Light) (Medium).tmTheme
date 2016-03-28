@@ -535,7 +535,7 @@
         <key>name</key>
         <string>HTML &amp; CSS ID</string>
         <key>scope</key>
-        <string>constant.id.tag, entity.other.attribute-name.id</string>
+        <string>constant.id.tag, entity.name.tag.id, entity.other.attribute-name.id</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1203,6 +1203,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>db27af1c-a10f-4b8e-87de-a793ba71e25c</string>
+    <string>6ef8e450-6d04-4086-9e9f-bcd08805fb67</string>
   </dict>
 </plist>
