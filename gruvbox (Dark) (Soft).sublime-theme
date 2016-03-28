@@ -1586,7 +1586,13 @@
     "content_margin": [
       10,
       6
-    ]
+    ],
+    "layer0.tint": [
+      50,
+      48,
+      47
+    ],
+    "layer0.opacity": 0
   },
   {
     "class": "icon_regex",
@@ -3852,6 +3858,16 @@
       41,
       40
     ]
+  },
+  {
+    "class": "icon_button_control",
+    "settings": [
+      "gruvbox_highlight_active_buttons"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer0.opacity": 1
   },
   {
     "class": "auto_complete_label",

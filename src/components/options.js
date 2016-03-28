@@ -1630,5 +1630,17 @@ module.exports = function (values) {
       'layer0.tint': c.containerSofter,
     },
 
+    /**
+     * Highlight Active Buttons
+     */
+
+    {
+      class: 'icon_button_control',
+      settings: [stOpts.enableActiveButtonHighlight],
+      attributes: ['selected'],
+
+      'layer0.opacity': 1,
+    },
+
   ];
 };

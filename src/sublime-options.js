@@ -32,6 +32,7 @@ module.exports = {
   disableFolderIcons: 'gruvbox_disable_folder_icons',
   disablePanelsButton: 'gruvbox_disable_panels_button',
   disableGreyscaleColors: 'gruvbox_disable_greyscale',
+  enableActiveButtonHighlight: 'gruvbox_highlight_active_buttons',
   enableLiteralFolderIcons: 'gruvbox_enable_literal_folder_icons',
   enablePanelCloseButton: 'gruvbox_enable_panel_close_button',
   enablePlusMinusFolderIcons: 'gruvbox_enable_plus_minus_folder_icons',

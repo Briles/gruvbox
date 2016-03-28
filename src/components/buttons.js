@@ -65,8 +65,10 @@ module.exports = function (values) {
     // Status Bar Icon Buttons
     {
       class: 'icon_button_control',
-
       content_margin: [10, 6],
+
+      'layer0.tint': c.background,
+      'layer0.opacity': 0,
     },
 
     // Regex Icon
