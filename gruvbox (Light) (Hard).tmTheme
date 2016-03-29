@@ -250,6 +250,17 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>Object Literal Properties</string>
+        <key>scope</key>
+        <string>constant.other.object.key string, meta.object-literal.key</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#1d2021</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>Parameters</string>
         <key>scope</key>
         <string>meta.parameters, variable.parameter</string>
@@ -1203,6 +1214,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>cc0c8daf-8995-424e-a8d2-5a2d07f96517</string>
+    <string>2a475b0c-a2a0-480d-b21f-af260b6254eb</string>
   </dict>
 </plist>

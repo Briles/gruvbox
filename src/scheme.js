@@ -265,6 +265,17 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Object Literal Properties',
+        scope: [
+          'constant.other.object.key string',
+          'meta.object-literal.key',
+        ],
+        settings: {
+          foreground: c.foreground,
+        },
+      },
+
+      {
         name: 'Parameters',
         scope: [
           'variable.parameter',
