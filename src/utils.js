@@ -3,10 +3,20 @@
 
   const fs = require('fs');
   const path = require('path');
+  const _ = require('lodash');
 
   /**
    * Utility Functions
    */
+
+  /**
+   * Join array of scopes
+   * @param  {array} scopes the scopes to join
+   * @return {string}        the joined array
+   */
+  var joinScopes = function (scopes) {
+    return _(scopes).sort().sortedUniq().join(', ');
+  };
 
   /**
    * Wraps fs.writeFileSync for common usage
@@ -51,9 +61,10 @@
   };
 
   const utilities = {
-    writeOutput: writeOutput,
+    joinScopes: joinScopes,
     slash: slash,
     slashJoin: slashJoin,
+    writeOutput: writeOutput,
   };
 
   module.exports = utilities;

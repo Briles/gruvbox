@@ -4,6 +4,7 @@ module.exports = function (values) {
   const _ = require('lodash');
   const plist = require('plist');
   const uuid = require('uuid');
+  const utils = require('./utils.js');
 
   const c = values.colors;
   const info = values.info;
@@ -1224,7 +1225,7 @@ module.exports = function (values) {
     });
 
     // Join the scope arrays for compatibility with Sublime Text
-    v.scope = _(v.scope).sort().sortedUniq().join(', ');
+    v.scope = utils.joinScopes(v.scope);
   });
 
   return plist.build(scheme);
