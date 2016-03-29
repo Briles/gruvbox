@@ -1706,5 +1706,23 @@ module.exports = function (values) {
       'font.bold': true,
     },
 
+    /**
+     * Bold Button Labels
+     */
+
+    {
+      class: 'label_control',
+      settings: [stOpts.buttonsBold],
+      parents: [
+
+        {
+          class: 'button_control',
+        },
+
+      ],
+
+      'font.bold': true,
+    },
+
   ];
 };

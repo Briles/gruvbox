@@ -384,6 +384,7 @@ add the color scheme path to the `"color_scheme"` key in
 #### Even More Settings...
 
 ```json
+  "gruvbox_buttons_bold": true,               // Enable bold button labels
   "gruvbox_colored_tooltips": true,           // Color the tooltip backgrounds with the current accent color
   "gruvbox_disable_borders": true,            // Disable all borders
   "gruvbox_disable_faded_file_icons": true,   // Make file-type icons opaque

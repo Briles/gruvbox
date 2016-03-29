@@ -3942,6 +3942,18 @@
     "font.bold": true
   },
   {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_buttons_bold"
+    ],
+    "parents": [
+      {
+        "class": "button_control"
+      }
+    ],
+    "font.bold": true
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       251,

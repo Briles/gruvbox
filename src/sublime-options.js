@@ -21,6 +21,7 @@ module.exports = {
   autocompleteSpacingS: 'gruvbox_autocomplete_compact',
   autocompleteSpacingXl: 'gruvbox_autocomplete_cozy',
   autocompleteSpacingXs: 'gruvbox_autocomplete_cramped',
+  buttonsBold: 'gruvbox_buttons_bold',
   commandPaletteSpacingL: 'gruvbox_command_palette_comfortable',
   commandPaletteSpacingS: 'gruvbox_command_palette_compact',
   commandPaletteSpacingXl: 'gruvbox_command_palette_cozy',
