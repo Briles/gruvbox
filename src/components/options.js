@@ -1688,5 +1688,23 @@ module.exports = function (values) {
       'layer0.opacity': 1,
     },
 
+    /**
+     * Bold Statusbar Labels
+     */
+
+    {
+      class: 'label_control',
+      settings: [stOpts.statusbarBold],
+      parents: [
+
+        {
+          class: 'status_bar',
+        },
+
+      ],
+
+      'font.bold': true,
+    },
+
   ];
 };

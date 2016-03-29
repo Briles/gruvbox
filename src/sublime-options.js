@@ -65,6 +65,7 @@ module.exports = {
   sidebarFontSizeXs: 'gruvbox_sidebar_font_size_12',
   sidebarFontSizeXxs: 'gruvbox_sidebar_font_size_10',
   sidebarFontSizeXxl: 'gruvbox_sidebar_font_size_16',
+  statusbarBold: 'gruvbox_statusbar_bold',
   statusbarL: 'gruvbox_statusbar_l',
   statusbarS: 'gruvbox_statusbar_s',
   statusbarXl: 'gruvbox_statusbar_xl',

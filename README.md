@@ -398,6 +398,7 @@ add the color scheme path to the `"color_scheme"` key in
   "gruvbox_highlight_active_buttons": true,   // Highlight selected buttons in the Find & Replace panel
   "gruvbox_highlight_active_tree_row": true,  // Highlight the active file in the sidebar tree
   "gruvbox_less_contrast": true,              // Use less contrasting colors in sidebar, tabs, etc.
+  "gruvbox_statusbar_bold": true,             // Enable bold status bar labels
   "gruvbox_tabs_autowidth": true,             // Auto-size the tabs
   "gruvbox_tabs_bold": true,                  // Enable bold tabs
 ```

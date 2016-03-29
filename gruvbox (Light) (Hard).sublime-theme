@@ -3930,6 +3930,18 @@
     "layer0.opacity": 1
   },
   {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_statusbar_bold"
+    ],
+    "parents": [
+      {
+        "class": "status_bar"
+      }
+    ],
+    "font.bold": true
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       157,

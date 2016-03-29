@@ -262,6 +262,7 @@ Theme options:
   "gruvbox_enable_tab_borders": true,         // Enable borders for the tabs
   "gruvbox_highlight_active_buttons": true,   // Highlight selected buttons in the Find & Replace panel
   "gruvbox_highlight_active_tree_row": true,  // Highlight the active file in the sidebar tree
+  "gruvbox_statusbar_bold": true,             // Enable bold status bar labels
   "gruvbox_tabs_autowidth": true,             // Auto-size the tabs
   "gruvbox_tabs_bold": true,                  // Enable bold tabs
 
