@@ -125,11 +125,12 @@ module.exports = function (values) {
       {
         name: 'Template String Punctuation',
         scope: [
+          'entity.name.tag.mustache',
+          'punctuation.definition.template-expression',
           'punctuation.quasi',
           'punctuation.section.embedded',
-          'variable.other.interpolation.scss',
           'string.interpolated',
-          'entity.name.tag.mustache',
+          'variable.other.interpolation.scss',
         ],
         settings: {
           foreground: c.bnp.aqua,
