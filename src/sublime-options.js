@@ -39,6 +39,7 @@ module.exports = {
   enableSquareFolderIcons: 'gruvbox_enable_square_folder_icons',
   enableSidebarBorder: 'gruvbox_enable_sidebar_border',
   enableStatusbarBorder: 'gruvbox_enable_statusbar_border',
+  enableTabBorders: 'gruvbox_enable_tab_borders',
   enableTreeRowHighlight: 'gruvbox_highlight_active_tree_row',
   underlineDirtyTabs: 'gruvbox_underline_modified_tabs',
   underlineDirtyTabsThick: 'gruvbox_underline_modified_tabs_thick',

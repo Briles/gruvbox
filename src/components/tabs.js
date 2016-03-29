@@ -25,6 +25,12 @@ module.exports = function (values) {
       'layer1.tint': c.border,
       'layer1.draw_center': false,
       'layer1.inner_margin': [0, 0, 0, 1],
+
+      // Border - Left
+      'layer2.opacity': 0,
+      'layer2.tint': c.border,
+      'layer2.draw_center': false,
+      'layer2.inner_margin': [1, 0, 0, 0],
     },
 
     // Reset tab scrolling
