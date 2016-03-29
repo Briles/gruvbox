@@ -584,9 +584,10 @@ module.exports = function (values) {
       },
 
       {
-        name: 'HTML Entity Punctuation',
+        name: 'HTML & XML Entity Punctuation',
         scope: [
           'constant.character.entity punctuation.definition.entity',
+          'constant.character.entity punctuation.definition.constant',
         ],
         settings: {
           foreground: c.neutralPurple,

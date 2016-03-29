@@ -577,9 +577,9 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>HTML Entity Punctuation</string>
+        <string>HTML &amp; XML Entity Punctuation</string>
         <key>scope</key>
-        <string>constant.character.entity punctuation.definition.entity</string>
+        <string>constant.character.entity punctuation.definition.constant, constant.character.entity punctuation.definition.entity</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1203,6 +1203,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>ca340ea4-69e9-458e-bff7-8839f5c99f97</string>
+    <string>e7946c50-865f-4a81-b38d-d3778db843ef</string>
   </dict>
 </plist>
