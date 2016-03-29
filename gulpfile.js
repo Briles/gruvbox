@@ -18,15 +18,15 @@ function execNode(command) {
   });
 }
 
-gulp.task('build_theme', function () {
+gulp.task('build_themes', function () {
   execNode(`${srcPath}build.js -t`);
 });
 
-gulp.task('build_scheme', function () {
+gulp.task('build_schemes', function () {
   execNode(`${srcPath}build.js -s`);
 });
 
-gulp.task('build_widget', function () {
+gulp.task('build_widgets', function () {
   execNode(`${srcPath}build.js -w`);
 });
 
@@ -77,9 +77,9 @@ gulp.task('watch', function () {
 
   gulp.watch(commonFiles, ['build_all']);
   gulp.watch(iconFiles, ['build_icons']);
-  gulp.watch(schemeFiles, ['build_scheme']);
-  gulp.watch(themeFiles, ['build_theme']);
-  gulp.watch(widgetFiles, ['build_widget']);
+  gulp.watch(schemeFiles, ['build_schemes']);
+  gulp.watch(themeFiles, ['build_themes']);
+  gulp.watch(widgetFiles, ['build_widgets']);
 });
 
 gulp.task('default', function (callback) {
