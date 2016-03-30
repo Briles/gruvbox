@@ -6,4 +6,8 @@ module.exports = function ($scope, $routeParams, $location) {
   $scope.accent = '';
   $scope.accentMod = '';
   $scope.location = $location.$$path;
+
+  $scope.getTheme = function () {
+    return $scope.brightness + $scope.contrast;
+  };
 };
