@@ -18,6 +18,18 @@ function getGruvboxOptions() {
   return options.sort();
 }
 
+const uglifyJSFiles = {
+  'main.min.js': ['main.min.js'],
+};
+
+const jadeFiles = [{
+  expand: true,
+  cwd: srcPath + 'templates/',
+  src: ['*.jade'],
+  dest: '',
+  ext: '.html',
+}];
+
 module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -27,20 +39,20 @@ module.exports = function (grunt) {
         precision: 10,
         sourceMap: false,
       },
-      main: {
+      dev: {
         files: {
           'main.min.css': srcPath + 'scss/main.scss',
         },
       },
     },
     concat: {
-      main: {
+      dev: {
         src: ['node_modules/normalize.css/normalize.css', 'main.min.css'],
         dest: 'main.min.css',
       },
     },
     uncss: {
-      main: {
+      dev: {
         options: {
           ignore: ['.js-*', /::?-[\w\d]+/],
           stylesheets: ['main.min.css'],
@@ -60,13 +72,13 @@ module.exports = function (grunt) {
           }),
         ],
       },
-      main: {
+      dev: {
         src: 'main.min.css',
         dest: 'main.min.css',
       },
     },
     csscomb: {
-      main: {
+      dev: {
         src: 'main.min.css',
         dest: 'main.min.css',
       },
@@ -78,13 +90,13 @@ module.exports = function (grunt) {
         aggressiveMerging: true,
         advanced: true,
       },
-      main: {
+      dev: {
         src: 'main.min.css',
         dest: 'main.min.css',
       },
     },
     browserify: {
-      main: {
+      dev: {
         files: {
           'main.min.js': ['src/js/main.js'],
         },
@@ -95,36 +107,47 @@ module.exports = function (grunt) {
       options: {
         mangle: false,
       },
-      main: {
+      dev: {
         options: {
           compress: {
             drop_console: false,
           },
         },
-        files: {
-          'main.min.js': ['main.min.js'],
+        files: uglifyJSFiles,
+      },
+      release: {
+        options: {
+          compress: {
+            drop_console: true,
+          },
         },
+        files: uglifyJSFiles,
       },
     },
     jade: {
-      compile: {
+      dev: {
         options: {
           data: {
+            release: false,
             range: range,
             sublimeOptions: getGruvboxOptions(),
           },
         },
-        files: [{
-          expand: true,
-          cwd: srcPath + 'templates/',
-          src: ['*.jade'],
-          dest: '',
-          ext: '.html',
-        }],
+        files: jadeFiles,
+      },
+      release: {
+        options: {
+          data: {
+            release: true,
+            range: range,
+            sublimeOptions: getGruvboxOptions(),
+          },
+        },
+        files: jadeFiles,
       },
     },
     htmlmin: {
-      main: {
+      dev: {
         options: {
           caseSensitive: true,
           collapseBooleanAttributes: true,
@@ -185,8 +208,12 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-sass');
   grunt.registerTask('default', ['watch']);
-  grunt.registerTask('build_html', ['jade', 'htmlmin']);
-  grunt.registerTask('build_js', ['browserify', 'uglify']);
+  grunt.registerTask('build_html', ['jade:dev', 'htmlmin']);
+  grunt.registerTask('build_js', ['browserify', 'uglify:dev']);
   grunt.registerTask('build_css', ['sass', 'concat', 'postcss', 'csscomb', 'cssmin']);
   grunt.registerTask('build', ['build_html', 'build_css', 'build_js']);
+  grunt.registerTask('release_html', ['jade:release', 'htmlmin']);
+  grunt.registerTask('release_js', ['browserify', 'uglify:release']);
+  grunt.registerTask('release_css', ['build_css']);
+  grunt.registerTask('release', ['release_html', 'release_css', 'release_js']);
 };
