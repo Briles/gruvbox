@@ -10,7 +10,7 @@ var range = function (start, end) {
 
 function getGruvboxOptions() {
   var options = [];
-  const gruvboxOptions = require('../gruvbox/src/sublime-options.js');
+  const gruvboxOptions = require('../../gruvbox/src/sublime-options.js');
   for (var opt in gruvboxOptions) {
     options.push(gruvboxOptions[opt]);
   }

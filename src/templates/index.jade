@@ -13,7 +13,7 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
     link(rel='icon', type='image/x-icon', href='favicon.ico')
     link(href='main.min.css', rel='stylesheet', type='text/css', media='all')
     link(href='https://fonts.googleapis.com/css?family=Fira+Mono:400|Open+Sans:400,300' rel='stylesheet' type='text/css')
-    //- script(src="//localhost:35729/livereload.js")
+    script(src="//localhost:35729/livereload.js")
     script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js")
     script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js")
     script(src="main.min.js")
@@ -75,7 +75,7 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
           .pane.tabs
             a.tab.tooltipped.tooltipped-s(
             aria-label="http://brianreilly.me/gruvbox/"
-            ng-class="{selected: location === '/'}"
+            ng-class="{selected: location === '/' || location === ''}"
             ng-click="location = '/'"
             href="#/") gruvbox for Sublime Text
               +icon-tab-close
