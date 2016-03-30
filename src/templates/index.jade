@@ -13,11 +13,11 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
     link(rel='icon', type='image/x-icon', href='favicon.ico')
     link(href='main.min.css', rel='stylesheet', type='text/css', media='all')
     link(href='https://fonts.googleapis.com/css?family=Fira+Mono:400|Open+Sans:400,300' rel='stylesheet' type='text/css')
-    script(src="//localhost:35729/livereload.js")
+    //- script(src="//localhost:35729/livereload.js")
     script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js")
     script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js")
     script(src="main.min.js")
-  body(class="{{brightness}} {{contrast}}")
+  body(class="{{brightness}} {{contrast}} {{accent}} {{accentMod}}")
     .editor
       .pane.top
         .pane.sidebar
@@ -99,17 +99,17 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
         .pane.findreplace
           .row
             .icon-bar
-              .icon-button
+              .icon-button.selected
                 +icon-regex
               .icon-button
                 +icon-case-sensitive
               .icon-button
                 +icon-whole-word
-              .icon-button
+              .icon-button.selected
                 +icon-wrap
               .icon-button
                 +icon-in-selection
-              .icon-button
+              .icon-button.selected
                 +icon-highlight-matches
             input(type="text")
             +icon-more

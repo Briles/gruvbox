@@ -7,8 +7,16 @@
     color: $color;
   }
 
-  .tabs > .icon:hover {
-    color: $color;
+  .tabs, .row {
+    > .icon:hover {
+      color: $color;
+    }
+  }
+
+  .icon-button {
+    &.selected > .icon {
+      color: $color;
+    }
   }
 
   .tree-view {

@@ -274,19 +274,18 @@
 .config-sections {
   display: block;
 
-  padding: 24px;
+  padding: 24px 0;
 
   list-style-type: none;
-
-  border: 1px solid $transparent;
-  border-right: 0;
-  border-left: 0;
   li {
-    display: inline-block;
+    display: block;
 
-    margin-right: 50px;
+    margin-bottom: 30px;
+    padding-bottom: 29px;
 
     transition: $--transition;
+
+    border-bottom: 1px solid $transparent;
     h1 {
       font-size: 15px;
       font-weight: 600;
@@ -309,7 +308,9 @@
       }
     }
     &:last-of-type {
-      margin-right: 0;
+      margin-bottom: 0;
+
+      border-bottom: 0;
     }
     &:hover {
       h1 > code {

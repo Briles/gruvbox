@@ -35,3 +35,34 @@ include mixins/mixins
           label(for="theme_medium") Medium
           input(type="radio" id="theme_hard" name="contrast" value="hard" ng-model="$parent.contrast")
           label(for="theme_hard") Hard
+    li
+      h1 Accent Colors
+      div
+        .pill-switch
+          input(type="radio" id="accent_none" name="accent" value="" ng-model="$parent.accent" checked)
+          label(for="accent_none") None
+          input(type="radio" id="accent_red" name="accent" value="red" ng-model="$parent.accent")
+          label(for="accent_red") Red
+          input(type="radio" id="accent_green" name="accent" value="green" ng-model="$parent.accent")
+          label(for="accent_green") Green
+          input(type="radio" id="accent_yellow" name="accent" value="yellow" ng-model="$parent.accent")
+          label(for="accent_yellow") Yellow
+          input(type="radio" id="accent_blue" name="accent" value="blue" ng-model="$parent.accent")
+          label(for="accent_blue") Blue
+          input(type="radio" id="accent_purple" name="accent" value="purple" ng-model="$parent.accent")
+          label(for="accent_purple") Purple
+          input(type="radio" id="accent_aqua" name="accent" value="aqua" ng-model="$parent.accent")
+          label(for="accent_aqua") Aqua
+          input(type="radio" id="accent_orange" name="accent" value="orange" ng-model="$parent.accent")
+          label(for="accent_orange") Orange
+    li
+      h1 Accent Color Modifiers
+      div
+        .pill-switch
+          input(type="radio" id="accent_mod_none" name="accent-mod" value="" ng-model="$parent.accentMod" checked)
+          label(for="accent_mod_none") None
+          input(type="radio" id="accent_mod_neutral" name="accent-mod" value="neutral" ng-model="$parent.accentMod")
+          label(for="accent_mod_neutral") Neutral
+          input(type="radio" id="accent_mod_opposite" name="accent-mod" value="opposite" ng-model="$parent.accentMod")
+          label(for="accent_mod_opposite") Opposite
+

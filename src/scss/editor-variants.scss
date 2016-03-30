@@ -76,6 +76,7 @@
         .config-sections {
           border-color: map-get($bnp, 'bg2');
           li {
+            border-color: map-get($bnp, 'bg2');
             h1 {
               code {
                 color: map-get($bnp, 'green');
@@ -137,7 +138,13 @@
       &:hover {
         color: map-get($bnp, 'fg4');
       }
-      &:active {
+      &:active, &.selected {
+        color: map-get($bnp, 'fg1');
+      }
+    }
+
+    .icon-button {
+      &.selected > .icon {
         color: map-get($bnp, 'fg1');
       }
     }

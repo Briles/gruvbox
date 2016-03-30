@@ -3,5 +3,7 @@ module.exports = function ($scope, $routeParams, $location) {
 
   $scope.brightness = 'dark';
   $scope.contrast = 'medium';
+  $scope.accent = '';
+  $scope.accentMod = '';
   $scope.location = $location.$$path;
 };
