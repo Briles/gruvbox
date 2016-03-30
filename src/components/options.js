@@ -519,6 +519,52 @@ module.exports = function (values) {
     },
 
     /**
+     * Enable Sidebar Border
+     */
+
+    {
+      class: 'sidebar_container',
+      settings: [stOpts.enableSidebarBorder],
+
+      'layer1.opacity': 1,
+    },
+
+    /**
+     * Enable Tab Borders
+     */
+
+    {
+      class: 'tabset_control',
+      settings: [stOpts.enableTabBorders],
+      content_margin: [-1, 0, 12, 0],
+
+      'layer1.opacity': 1,
+      'layer2.opacity': 1,
+    },
+
+    {
+      class: 'tabset_control',
+      settings: [stOpts.enableTabBorders, stOpts.enableSidebarBorder],
+
+      'layer2.opacity': 0,
+    },
+
+    {
+      class: 'tab_control',
+      settings: [stOpts.enableTabBorders],
+
+      'layer2.opacity': 1,
+    },
+
+    {
+      class: 'tab_control',
+      settings: [stOpts.enableTabBorders],
+      attributes: ['selected'],
+
+      'layer1.opacity': 1, // Border - Left & Right
+      'layer2.opacity': 0, // Border - Bottom
+    },
+    /**
      * Spacegray Iconset
      */
 
@@ -873,7 +919,7 @@ module.exports = function (values) {
 
       ],
 
-      color: c.bnp.fg[info.contrast],
+      color: c.foreground,
     },
 
     // All labels
@@ -1628,6 +1674,54 @@ module.exports = function (values) {
       settings: [stOpts.lessContrast],
 
       'layer0.tint': c.containerSofter,
+    },
+
+    /**
+     * Highlight Active Buttons
+     */
+
+    {
+      class: 'icon_button_control',
+      settings: [stOpts.enableActiveButtonHighlight],
+      attributes: ['selected'],
+
+      'layer0.opacity': 1,
+    },
+
+    /**
+     * Bold Statusbar Labels
+     */
+
+    {
+      class: 'label_control',
+      settings: [stOpts.statusbarBold],
+      parents: [
+
+        {
+          class: 'status_bar',
+        },
+
+      ],
+
+      'font.bold': true,
+    },
+
+    /**
+     * Bold Button Labels
+     */
+
+    {
+      class: 'label_control',
+      settings: [stOpts.buttonsBold],
+      parents: [
+
+        {
+          class: 'button_control',
+        },
+
+      ],
+
+      'font.bold': true,
     },
 
   ];

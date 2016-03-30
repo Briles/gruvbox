@@ -384,6 +384,7 @@ add the color scheme path to the `"color_scheme"` key in
 #### Even More Settings...
 
 ```json
+  "gruvbox_buttons_bold": true,               // Enable bold button labels
   "gruvbox_colored_tooltips": true,           // Color the tooltip backgrounds with the current accent color
   "gruvbox_disable_borders": true,            // Disable all borders
   "gruvbox_disable_faded_file_icons": true,   // Make file-type icons opaque
@@ -392,9 +393,13 @@ add the color scheme path to the `"color_scheme"` key in
   "gruvbox_disable_greyscale": true,          // Use gruvbox colors instead of greyscale colors for certain text
   "gruvbox_disable_panels_button": true,      // Hide the panel-switching button
   "gruvbox_enable_panel_close_button": true,  // Enable the panel close button
+  "gruvbox_enable_sidebar_border": true,      // Enable the sidebar border
   "gruvbox_enable_statusbar_border": true,    // Enable borders for the status bar
+  "gruvbox_enable_tab_borders": true,         // Enable borders for the tabs
+  "gruvbox_highlight_active_buttons": true,   // Highlight selected buttons in the Find & Replace panel
   "gruvbox_highlight_active_tree_row": true,  // Highlight the active file in the sidebar tree
   "gruvbox_less_contrast": true,              // Use less contrasting colors in sidebar, tabs, etc.
+  "gruvbox_statusbar_bold": true,             // Enable bold status bar labels
   "gruvbox_tabs_autowidth": true,             // Auto-size the tabs
   "gruvbox_tabs_bold": true,                  // Enable bold tabs
 ```

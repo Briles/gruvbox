@@ -48,6 +48,7 @@
     CONTRAST_MODES.forEach(function (contrast) {
       const contrastIdentifier = _.toLower(contrast);
       const backgroundColor = brightnessPalette.bg[contrastIdentifier];
+      const foregroundColor = brightnessPalette.fg[contrastIdentifier];
 
       const colors = {
         test: TEST_COLOR,
@@ -56,6 +57,7 @@
         white: 'rgb(255, 255, 255)',
 
         background: backgroundColor,
+        foreground: foregroundColor,
         bnp: brightnessPalette,
         obnp: oppositeBrightnessPalette,
         gs: _.deepMapValues(brightnessPalette, c => tinycolor(c).greyscale().toRgbString()),

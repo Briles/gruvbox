@@ -387,6 +387,19 @@
       0,
       0,
       1
+    ],
+    "layer2.opacity": 0,
+    "layer2.tint": [
+      247,
+      226,
+      140
+    ],
+    "layer2.draw_center": false,
+    "layer2.inner_margin": [
+      1,
+      0,
+      0,
+      0
     ]
   },
   {
@@ -1586,7 +1599,13 @@
     "content_margin": [
       10,
       6
-    ]
+    ],
+    "layer0.tint": [
+      251,
+      241,
+      199
+    ],
+    "layer0.opacity": 0
   },
   {
     "class": "icon_regex",
@@ -2508,6 +2527,53 @@
       "gruvbox_enable_statusbar_border"
     ],
     "layer1.opacity": 1
+  },
+  {
+    "class": "sidebar_container",
+    "settings": [
+      "gruvbox_enable_sidebar_border"
+    ],
+    "layer1.opacity": 1
+  },
+  {
+    "class": "tabset_control",
+    "settings": [
+      "gruvbox_enable_tab_borders"
+    ],
+    "content_margin": [
+      -1,
+      0,
+      12,
+      0
+    ],
+    "layer1.opacity": 1,
+    "layer2.opacity": 1
+  },
+  {
+    "class": "tabset_control",
+    "settings": [
+      "gruvbox_enable_tab_borders",
+      "gruvbox_enable_sidebar_border"
+    ],
+    "layer2.opacity": 0
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_enable_tab_borders"
+    ],
+    "layer2.opacity": 1
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_enable_tab_borders"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer1.opacity": 1,
+    "layer2.opacity": 0
   },
   {
     "class": "icon_folder",
@@ -3852,6 +3918,40 @@
       238,
       186
     ]
+  },
+  {
+    "class": "icon_button_control",
+    "settings": [
+      "gruvbox_highlight_active_buttons"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer0.opacity": 1
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_statusbar_bold"
+    ],
+    "parents": [
+      {
+        "class": "status_bar"
+      }
+    ],
+    "font.bold": true
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_buttons_bold"
+    ],
+    "parents": [
+      {
+        "class": "button_control"
+      }
+    ],
+    "font.bold": true
   },
   {
     "class": "auto_complete_label",

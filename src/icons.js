@@ -17,7 +17,7 @@
     var source = require(sourcePath);
 
     if (_.isArray(source.scope)) {
-      source.scope = source.scope.map(scope => scope.trim()).join(', ');
+      source.scope = utils.joinScopes(source.scope);
     }
 
     var plistFileName = path.basename(sourcePath, '.json');

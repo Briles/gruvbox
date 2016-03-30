@@ -4,6 +4,7 @@ module.exports = function (values) {
   const _ = require('lodash');
   const plist = require('plist');
   const uuid = require('uuid');
+  const utils = require('./utils.js');
 
   const c = values.colors;
   const info = values.info;
@@ -31,8 +32,8 @@ module.exports = function (values) {
           bracketsOptions: 'underline',
           bracketsForeground: c.bnp.fg4,
           gutterForeground: c.bnp.gray,
-          highlight: c.bnp.fg[info.contrast],
-          highlightForeground: c.bnp.fg[info.contrast],
+          highlight: c.foreground,
+          highlightForeground: c.foreground,
           findHighlight: c.neutralYellow,
           findHighlightForeground: c.background,
           tagsOptions: 'underline',
@@ -49,7 +50,7 @@ module.exports = function (values) {
           'text',
         ],
         settings: {
-          foreground: c.bnp.fg[info.contrast],
+          foreground: c.foreground,
         },
       },
 
@@ -64,7 +65,7 @@ module.exports = function (values) {
           'punctuation',
         ],
         settings: {
-          foreground: c.bnp.fg[info.contrast],
+          foreground: c.foreground,
         },
       },
 
@@ -96,6 +97,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'DocBlockr & Other Keywords Inside Comments',
         scope: [
           'comment.parameter',
           'comment.punctuation',
@@ -113,6 +115,7 @@ module.exports = function (values) {
         scope: [
           'entity.name.type',
           'entity.other.inherited-class',
+          'constant.language.name',
         ],
         settings: {
           foreground: c.bnp.yellow,
@@ -122,8 +125,11 @@ module.exports = function (values) {
       {
         name: 'Template String Punctuation',
         scope: [
+          'entity.name.tag.mustache',
+          'punctuation.definition.template-expression',
           'punctuation.quasi',
           'punctuation.section.embedded',
+          'string.interpolated',
           'variable.other.interpolation.scss',
         ],
         settings: {
@@ -141,6 +147,11 @@ module.exports = function (values) {
           'storage.type.import.haxe',
           'variable.documentroot',
           'meta.at-rule.media support.function.misc',
+          'source.cs keyword.operator',
+          'keyword.operator.logical.python',
+          'storage.type.function.jade',
+          'js.embedded.control.flow keyword.operator.js',
+          'storage.type.import.include.jade',
         ],
         settings: {
           foreground: c.bnp.red,
@@ -171,6 +182,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Constants Punctuation',
         scope: [
           'constant.other.color punctuation.definition.constant',
           'constant.other.color.rgb-value.scss',
@@ -201,11 +213,12 @@ module.exports = function (values) {
           'storage.type.import',
         ],
         settings: {
-          foreground: c.bnp.fg[info.contrast],
+          foreground: c.foreground,
         },
       },
 
       {
+        name: 'Function Keyword',
         scope: [
           'storage.type.function',
         ],
@@ -242,18 +255,39 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Object Properties',
+        scope: [
+          'meta.property.object',
+        ],
+        settings: {
+          foreground: c.foreground,
+        },
+      },
+
+      {
+        name: 'Object Literal Properties',
+        scope: [
+          'constant.other.object.key string',
+          'meta.object-literal.key',
+        ],
+        settings: {
+          foreground: c.foreground,
+        },
+      },
+
+      {
         name: 'Parameters',
         scope: [
           'variable.parameter',
           'meta.parameters',
         ],
         settings: {
-          foreground: c.bnp.fg[info.contrast],
+          foreground: c.foreground,
         },
       },
 
       {
-        name: 'SASS import url',
+        name: 'SASS Import URL',
         scope: [
           'variable.parameter.url',
         ],
@@ -263,16 +297,7 @@ module.exports = function (values) {
       },
 
       {
-        scope: [
-          'variable.language',
-        ],
-        settings: {
-          foreground: c.bnp.purple,
-        },
-      },
-
-      {
-        name: 'Constants',
+        name: 'Language Constants',
         scope: [
           'constant',
           'constant.numeric',
@@ -281,6 +306,7 @@ module.exports = function (values) {
           'constant.other.color',
           'support.constant.color',
           'punctuation.definition.constant.scss',
+          'variable.language',
         ],
         settings: {
           foreground: c.bnp.purple,
@@ -288,6 +314,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'User-Defined Constants',
         scope: [
           'variable.other.constant',
         ],
@@ -297,10 +324,12 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Escaped Characters',
         scope: [
           'constant.character.escape',
           'constant.character.escaped',
           'constant.other.character-class.escape',
+          'constant.character.quoted',
         ],
         settings: {
           foreground: c.bnp.red,
@@ -313,7 +342,7 @@ module.exports = function (values) {
           'invalid',
         ],
         settings: {
-          foreground: c.bnp.fg[info.contrast],
+          foreground: c.foreground,
           background: c.bnp.red,
         },
       },
@@ -329,6 +358,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Regular Expressions',
         scope: [
           'string.regexp',
         ],
@@ -338,6 +368,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Embedded Ruby Regular Expressions',
         scope: [
           'string.regexp.source.ruby.embedded',
         ],
@@ -347,8 +378,10 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Hyperlinks',
         scope: [
           'string.other.link',
+          'constant.other.reference.link',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -356,6 +389,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Markup Tag Punctuation',
         scope: [
           'punctuation.definition.tag',
         ],
@@ -365,9 +399,9 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Markdown Heading',
         scope: [
-          'punctuation.definition.heading',
-          'punctuation.definition.identity',
+          'markup.heading',
         ],
         settings: {
           foreground: c.bnp.green,
@@ -375,22 +409,89 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Markdown Heading Punctuation',
         scope: [
-          'punctuation.definition.bold',
+          'punctuation.definition.heading',
+          'punctuation.definition.identity',
         ],
         settings: {
-          foreground: c.bnp.yellow,
+          foreground: c.neutralGreen,
+        },
+      },
+
+      {
+        name: 'Markdown Bold Text',
+        scope: [
+          'markup.bold',
+        ],
+        settings: {
+          foreground: c.bnp.orange,
           fontStyle: 'bold',
         },
       },
 
       {
+        name: 'Markdown Bold Text Punctuation',
         scope: [
-          'punctuation.definition.italic',
+          'punctuation.definition.bold',
+        ],
+        settings: {
+          foreground: c.neutralOrange,
+          fontStyle: 'bold',
+        },
+      },
+
+      {
+        name: 'Markdown Italic Text',
+        scope: [
+          'markup.italic',
         ],
         settings: {
           foreground: c.bnp.red,
           fontStyle: 'italic',
+        },
+      },
+
+      {
+        name: 'Markdown Italic Text Punctuation',
+        scope: [
+          'punctuation.definition.italic',
+        ],
+        settings: {
+          foreground: c.neutralRed,
+          fontStyle: 'italic',
+        },
+      },
+
+      {
+        name: 'Markdown Inline Code',
+        scope: [
+          'markup.raw.inline',
+        ],
+        settings: {
+          foreground: c.bnp.yellow,
+        },
+      },
+
+      {
+        name: 'Markdown Quoted',
+        scope: [
+          'markup.quote',
+        ],
+        settings: {
+          foreground: c.bnp.purple,
+        },
+      },
+
+      {
+        name: 'Markdown List',
+        scope: [
+          'markup.list',
+          'punctuation.definition.list_item.number',
+          'punctuation.definition.list_item.markdown',
+        ],
+        settings: {
+          foreground: c.bnp.blue,
         },
       },
 
@@ -432,6 +533,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Special Variables',
         scope: [
           'support.module',
         ],
@@ -441,7 +543,7 @@ module.exports = function (values) {
       },
 
       {
-        name: 'Entity',
+        name: 'Entities',
         scope: [
           'entity.name.function',
           'entity.name.section',
@@ -455,6 +557,8 @@ module.exports = function (values) {
         name: 'HTML & CSS ID',
         scope: [
           'entity.other.attribute-name.id',
+          'constant.id.tag',
+          'entity.name.tag.id',
         ],
         settings: {
           foreground: c.bnp.orange,
@@ -474,6 +578,7 @@ module.exports = function (values) {
       {
         name: 'HTML & CSS Class',
         scope: [
+          'entity.name.tag.class',
           'entity.other.attribute-name.class',
         ],
         settings: {
@@ -492,9 +597,10 @@ module.exports = function (values) {
       },
 
       {
-        name: 'HTML Entity Punctuation',
+        name: 'HTML & XML Entity Punctuation',
         scope: [
           'constant.character.entity punctuation.definition.entity',
+          'constant.character.entity punctuation.definition.constant',
         ],
         settings: {
           foreground: c.neutralPurple,
@@ -512,6 +618,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Markup Tag',
         scope: [
           'entity.name.tag',
           'entity.tag',
@@ -526,6 +633,7 @@ module.exports = function (values) {
       },
 
       {
+        name: 'HTML Attribute Names',
         scope: [
           'entity.name.attribute-name',
           'entity.other.attribute-name',
@@ -537,12 +645,14 @@ module.exports = function (values) {
       },
 
       {
+        name: 'CSS Pseudo Elements/Classes & Vendor Prefixes',
         scope: [
           'entity.other.attribute-name.placeholder punctuation.definition.entity',
           'entity.other.attribute-name.pseudo-class',
           'entity.other.attribute-name.pseudo-element',
           'entity.other.attribute-name.tag.pseudo-class',
           'entity.other.attribute-name.tag.pseudo-element',
+          'support.type.vendor-prefix',
         ],
         settings: {
           foreground: c.neutralYellow,
@@ -565,11 +675,12 @@ module.exports = function (values) {
           'meta.tag',
         ],
         settings: {
-          foreground: c.bnp.fg[info.contrast],
+          foreground: c.foreground,
         },
       },
 
       {
+        name: 'Markdown Image & Hyperlink',
         scope: [
           'meta.link',
           'meta.image',
@@ -589,9 +700,11 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Function with Parameters Punctuation',
         scope: [
           'meta.brace.round',
           'punctuation.definition.parameters',
+          'constant.name.attribute.tag.jade',
         ],
         settings: {
           foreground: c.bnp.fg3,
@@ -599,87 +712,7 @@ module.exports = function (values) {
       },
 
       {
-        name: 'Markup',
-        scope: [
-          'markup.bold',
-        ],
-        settings: {
-          foreground: c.bnp.purple,
-          fontStyle: 'bold',
-        },
-      },
-
-      {
-        scope: [
-          'markup.changed',
-        ],
-        settings: {
-          foreground: c.bnp.red,
-        },
-      },
-
-      {
-        scope: [
-          'markup.deleted',
-          'markup.list',
-          'punctuation.definition.list_item.number',
-          'punctuation.definition.list_item.markdown',
-        ],
-        settings: {
-          foreground: c.bnp.blue,
-        },
-      },
-
-      {
-        scope: [
-          'markup.italic',
-        ],
-        settings: {
-          foreground: c.bnp.red,
-          fontStyle: 'italic',
-        },
-      },
-
-      {
-        scope: [
-          'markup.heading',
-        ],
-        settings: {
-          foreground: c.bnp.green,
-        },
-      },
-
-      {
-        scope: [
-          'markup.inserted',
-          'markup.raw.inline',
-        ],
-        settings: {
-          foreground: c.bnp.yellow,
-        },
-      },
-
-      {
-        scope: [
-          'markup.quote',
-        ],
-        settings: {
-          foreground: c.bnp.purple,
-        },
-      },
-
-      {
-        name: 'CS',
-        scope: [
-          'source.cs keyword.operator',
-        ],
-        settings: {
-          foreground: c.bnp.red,
-        },
-      },
-
-      {
-        name: 'CSS',
+        name: 'CSS Property Names',
         scope: [
           'meta.property-name',
           'support.type.property-name',
@@ -690,19 +723,39 @@ module.exports = function (values) {
       },
 
       {
-        name: 'CSS',
+        name: 'CSS Property Name Vendor Prefixes',
+        scope: [
+          'meta.property-name support.type.vendor-prefix',
+        ],
+        settings: {
+          foreground: c.neutralGreen,
+        },
+      },
+
+      {
+        name: 'CSS Property Values',
         scope: [
           'constant.string.sass',
           'meta.property-value',
           'support.constant.property-value',
         ],
         settings: {
-          foreground: c.bnp.fg[info.contrast],
+          foreground: c.foreground,
         },
       },
 
       {
-        name: 'DIFF',
+        name: 'CSS Property Value Vendor Prefixes',
+        scope: [
+          'meta.property-value support.type.vendor-prefix',
+        ],
+        settings: {
+          foreground: c.bnp.fg3,
+        },
+      },
+
+      {
+        name: 'Diff Foreground Text',
         scope: [
           'source.diff',
         ],
@@ -712,8 +765,9 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Diff Header Text From',
         scope: [
-          'source.diff meta',
+          'meta.diff.header.from-file',
         ],
         settings: {
           foreground: c.bnp.blue,
@@ -721,117 +775,19 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Diff Header Text From Punctuation',
         scope: [
-          'source.diff meta.header.from-file',
-          'source.diff meta.header.to-file',
+          'punctuation.definition.from-file',
         ],
         settings: {
-          foreground: c.bnp.aqua,
+          foreground: c.neutralBlue,
         },
       },
 
       {
+        name: 'Diff Header Text To',
         scope: [
-          'source.diff meta.diff.range',
-          'source.diff meta.diff.line-number',
-          'source.diff punctuation.range',
-        ],
-        settings: {
-          foreground: c.bnp.yellow,
-        },
-      },
-
-      {
-        scope: [
-          'source.diff markup.deleted',
-          'source.diff punctuation.deleted',
-        ],
-        settings: {
-          foreground: c.bnp.red,
-        },
-      },
-
-      {
-        scope: [
-          'source.diff markup.inserted',
-          'source.diff punctuation.inserted',
-        ],
-        settings: {
-          foreground: c.bnp.green,
-        },
-      },
-
-      {
-        name: 'GFM',
-        scope: [
-          'source.gfm.markup.heading',
-        ],
-        settings: {
-          foreground: c.bnp.blue,
-        },
-      },
-
-      {
-        scope: [
-          'source.gfm.markup.link',
-        ],
-        settings: {
-          foreground: c.bnp.red,
-        },
-      },
-
-      {
-        scope: [
-          'source.gfm.link.entity',
-        ],
-        settings: {
-          foreground: c.bnp.green,
-        },
-      },
-
-      {
-        name: 'INI',
-        scope: [
-          'source.ini.keyword.other.definition.ini',
-        ],
-        settings: {
-          foreground: c.bnp.blue,
-        },
-      },
-
-      {
-        name: 'JAVA',
-        scope: [
-          'source.java.storage.modifier.import',
-          'source.java.storage.type',
-        ],
-        settings: {
-          foreground: c.bnp.yellow,
-        },
-      },
-
-      {
-        scope: [
-          'source.java-properties.meta.key-pair',
-        ],
-        settings: {
-          foreground: c.bnp.blue,
-        },
-      },
-
-      {
-        name: 'PYTHON',
-        scope: [
-          'keyword.operator.logical.python',
-        ],
-        settings: {
-          foreground: c.bnp.red,
-        },
-      },
-
-      {
-        scope: [
-          'variable.parameter.python',
+          'meta.diff.header.to-file',
         ],
         settings: {
           foreground: c.bnp.purple,
@@ -839,19 +795,42 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Diff Header Text To Punctuation',
         scope: [
-          'source.ruby.punctuation.separator.namespace',
+          'punctuation.definition.to-file',
+        ],
+        settings: {
+          foreground: c.neutralPurple,
+        },
+      },
+
+      {
+        name: 'Diff Additions & Deletions Stats',
+        scope: [
+          'meta.diff.range',
+          'meta.toc-list.line-number',
         ],
         settings: {
           foreground: c.bnp.yellow,
         },
       },
 
+      {
+        name: 'Diff Additions & Deletions Stats Punctuation',
+        scope: [
+          'punctuation.definition.range.diff',
+        ],
+        settings: {
+          foreground: c.neutralYellow,
+        },
+      },
+
       // GitGutter
       {
-        name: 'GitGutter deleted',
+        name: 'GitGutter & Diff Deleted',
         scope: [
-          'markup.deleted.git_gutter',
+          'markup.deleted',
+          'punctuation.definition.deleted',
         ],
         settings: {
           foreground: c.bnp.red,
@@ -859,9 +838,10 @@ module.exports = function (values) {
       },
 
       {
-        name: 'GitGutter inserted',
+        name: 'GitGutter & Diff Inserted',
         scope: [
-          'markup.inserted.git_gutter',
+          'markup.inserted',
+          'punctuation.definition.inserted',
         ],
         settings: {
           foreground: c.bnp.green,
@@ -869,9 +849,10 @@ module.exports = function (values) {
       },
 
       {
-        name: 'GitGutter changed',
+        name: 'GitGutter & Diff Changed',
         scope: [
-          'markup.changed.git_gutter',
+          'markup.changed',
+          'punctuation.definition.changed',
         ],
         settings: {
           foreground: c.bnp.yellow,
@@ -881,7 +862,7 @@ module.exports = function (values) {
       {
         name: 'GitGutter ignored',
         scope: [
-          'markup.ignored.git_gutter',
+          'markup.ignored',
         ],
         settings: {
           foreground: c.bnp.gray,
@@ -891,7 +872,7 @@ module.exports = function (values) {
       {
         name: 'GitGutter untracked',
         scope: [
-          'markup.untracked.git_gutter',
+          'markup.untracked',
         ],
         settings: {
           foreground: c.bnp.gray,
@@ -1007,7 +988,7 @@ module.exports = function (values) {
           'raw.nibble.upper',
         ],
         settings: {
-          foreground: c.bnp.fg[info.contrast],
+          foreground: c.foreground,
         },
       },
 
@@ -1017,7 +998,7 @@ module.exports = function (values) {
           'raw.nibble.lower',
         ],
         settings: {
-          foreground: c.bnp.fg[info.contrast],
+          foreground: c.foreground,
         },
       },
 
@@ -1106,7 +1087,7 @@ module.exports = function (values) {
           'meta.item.todo.pending',
         ],
         settings: {
-          foreground: c.bnp.fg[info.contrast],
+          foreground: c.foreground,
         },
       },
 
@@ -1256,7 +1237,7 @@ module.exports = function (values) {
     });
 
     // Join the scope arrays for compatibility with Sublime Text
-    v.scope = _(v.scope).sort().sortedUniq().join(', ');
+    v.scope = utils.joinScopes(v.scope);
   });
 
   return plist.build(scheme);

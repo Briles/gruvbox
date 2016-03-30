@@ -3,7 +3,7 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>source.jade, text.jade, source.pyjade</string>
+    <string>source.jade, source.pyjade, text.jade</string>
     <key>settings</key>
     <dict>
       <key>icon</key>

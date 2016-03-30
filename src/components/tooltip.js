@@ -12,7 +12,7 @@ module.exports = function (values) {
       content_margin: [16, 8],
 
       // Background
-      'layer0.tint': c.bnp.fg[info.contrast],
+      'layer0.tint': c.foreground,
       'layer0.opacity': 1,
     },
 
@@ -20,7 +20,7 @@ module.exports = function (values) {
     {
       class: 'tool_tip_label_control',
 
-      color: c.bnp.bg[info.contrast],
+      color: c.background,
     },
 
   ];

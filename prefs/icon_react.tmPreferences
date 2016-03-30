@@ -3,7 +3,7 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>source.jsx, source.js.jsx, source.tsx</string>
+    <string>source.js.jsx, source.jsx, source.tsx</string>
     <key>settings</key>
     <dict>
       <key>icon</key>
