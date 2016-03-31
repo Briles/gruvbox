@@ -10,6 +10,7 @@ module.exports = function ($scope, $routeParams, $location) {
     sidebarFontSize: '11',
     statusbarHeight: 'default',
     tabSize: 'default',
+    tabFontSize: '11',
   };
 
   var getConfiguration = function () {

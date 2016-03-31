@@ -98,6 +98,23 @@
                 "xxl"
             ],
             "default": "Default"
+        },
+        "Tab Font Sizes": {
+            "group": "tabFontSize",
+            "prefix": "tabs-font-size-",
+            "values": [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+            ],
+            "default": 11,
+            "defaultLabel": "11 (Default)"
         }
     }
 }
