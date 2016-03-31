@@ -18,7 +18,7 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
     script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js")
     script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js")
     script(src="main.min.js")
-  body(class="{{brightness}} {{contrast}} {{accent}} {{accentMod}}")
+  body(class="{{getClassList()}}")
     .editor
       .pane.top
         .pane.sidebar
