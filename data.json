@@ -70,6 +70,20 @@
             ],
             "default": 11,
             "defaultLabel": "11 (Default)"
+        },
+        "Statusbar Height": {
+            "group": "statusbarHeight",
+            "prefix": "statusbar-",
+            "values": [
+                "xxs",
+                "xs",
+                "s",
+                "Default",
+                "l",
+                "xl",
+                "xxl"
+            ],
+            "default": "Default"
         }
     }
 }

@@ -8,6 +8,7 @@ module.exports = function ($scope, $routeParams, $location) {
     accentMod: 'none',
     sidebarSpacing: 'default',
     sidebarFontSize: '11',
+    statusbarHeight: 'default',
   };
 
   var getConfiguration = function () {
