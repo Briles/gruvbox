@@ -9,6 +9,7 @@ module.exports = function ($scope, $routeParams, $location) {
     sidebarSpacing: 'default',
     sidebarFontSize: '11',
     statusbarHeight: 'default',
+    tabSize: 'default',
   };
 
   var getConfiguration = function () {

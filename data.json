@@ -84,6 +84,20 @@
                 "xxl"
             ],
             "default": "Default"
+        },
+        "Tab Sizes": {
+            "group": "tabSize",
+            "prefix": "tabs-",
+            "values": [
+                "xxs",
+                "xs",
+                "s",
+                "Default",
+                "l",
+                "xl",
+                "xxl"
+            ],
+            "default": "Default"
         }
     }
 }
