@@ -1,8 +1,6 @@
 module.exports = function ($scope, $routeParams, $location) {
   'use strict';
 
-  $scope.location = $location.$$path;
-
   $scope.conf = {
     brightness: 'dark',
     contrast: 'medium',
@@ -26,5 +24,9 @@ module.exports = function ($scope, $routeParams, $location) {
 
   $scope.getTheme = function () {
     return $scope.brightness + $scope.contrast;
+  };
+
+  $scope.getLocation = function () {
+    return $location.$$path;
   };
 };

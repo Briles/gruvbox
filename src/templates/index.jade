@@ -89,22 +89,19 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
           .pane.tabs
             a.tab.tooltipped.tooltipped-s(
               aria-label="http://brianreilly.me/gruvbox/"
-              ng-class="{selected: location === '/' || location === ''}"
-              ng-click="location = '/'"
+              ng-class="{selected: getLocation() === '/' || getLocation() === ''}"
               href="#/"
             ) gruvbox for Sublime Text
               +icon-tab-close
             a.tab.tooltipped.tooltipped-s(
               aria-label="http://brianreilly.me/gruvbox/experiment"
-              ng-class="{selected: location === '/experiment'}"
-              ng-click="location = '/experiment'"
+              ng-class="{selected: getLocation() === '/experiment'}"
               href="#/experiment"
             ) Preview Features
               +icon-tab-close
             a.tab.tooltipped.tooltipped-s(
               aria-label="http://brianreilly.me/gruvbox/options"
-              ng-class="{selected: location === '/options'}"
-              ng-click="location = '/options'"
+              ng-class="{selected: getLocation() === '/options'}"
               href="#/options"
             ) Options
               +icon-tab-close
