@@ -8,11 +8,18 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(http-equiv='content-type', content='text/html; charset=UTF-8')
     title gruvbox for Sublime Text 3
-    meta(name='description', content='a bright Sublime Text 3 theme with pastel \'retro groove\' colors that are easy on the eyes.')
+    meta(
+      name='description'
+      content="a bright Sublime Text 3 theme with pastel 'retro groove' colors that are easy on the eyes."
+    )
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='icon', type='image/x-icon', href='favicon.ico')
     link(href='main.min.css', rel='stylesheet', type='text/css', media='all')
-    link(href='https://fonts.googleapis.com/css?family=Fira+Mono:400|Open+Sans:400,300' rel='stylesheet' type='text/css')
+    link(
+      href='https://fonts.googleapis.com/css?family=Fira+Mono:400|Open+Sans:400,300'
+      rel='stylesheet'
+      type='text/css'
+    )
     - if (release === false)
       script(src="//localhost:35729/livereload.js")
     script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js")
@@ -81,24 +88,28 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
         .pane.view
           .pane.tabs
             a.tab.tooltipped.tooltipped-s(
-            aria-label="http://brianreilly.me/gruvbox/"
-            ng-class="{selected: location === '/' || location === ''}"
-            ng-click="location = '/'"
-            href="#/") gruvbox for Sublime Text
+              aria-label="http://brianreilly.me/gruvbox/"
+              ng-class="{selected: location === '/' || location === ''}"
+              ng-click="location = '/'"
+              href="#/"
+            ) gruvbox for Sublime Text
               +icon-tab-close
             a.tab.tooltipped.tooltipped-s(
               aria-label="http://brianreilly.me/gruvbox/options"
               ng-class="{selected: location === '/options'}"
               ng-click="location = '/options'"
-              href="#/options") Options
+              href="#/options"
+            ) Options
               +icon-tab-close
             a.tab.tooltipped.tooltipped-s(
               aria-label="https://github.com/briles/gruvbox"
-              href="https://github.com/briles/gruvbox") gruvbox on GitHub
+              href="https://github.com/briles/gruvbox"
+            ) gruvbox on GitHub
               +icon-tab-close
             a.tab.tooltipped.tooltipped-s(
               aria-label="https://packagecontrol.io/packages/gruvbox"
-              href="https://packagecontrol.io/packages/gruvbox") gruvbox on Package Control
+              href="https://packagecontrol.io/packages/gruvbox"
+            ) gruvbox on Package Control
               +icon-tab-close
             +icon-more
           .pane.code(ng-view)
@@ -124,11 +135,14 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
             button Find Prev
             button Find All
         .pane.statusbar
-          .panel-button-control.tooltipped.tooltipped-ne(aria-label="Switch Panel")
+          .panel-button-control.tooltipped.tooltipped-ne(
+            aria-label="Switch Panel"
+          )
             +icon-panels-button
-          p.status-container Comparing against : HEAD, Modified : 13, Line 24, Column 84 -- Made with &lt;3 by
-            =' '
-            a(href="https://github.com/briles") Brian Reilly
+          p.status-container.
+            Comparing against : HEAD, Modified : 13, Line 24, Column 84
+            -- Made with &lt;3 by
+            #[a(href="https://github.com/briles") Brian Reilly]
           ul.status-button
             li UTF-8
             li Unix
