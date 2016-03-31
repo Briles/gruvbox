@@ -197,3 +197,20 @@
             ng-model="$parent.conf.sidebarSpacing"
           )
           label(for="sidebar_spacing_cramped") Cramped
+
+    li
+      h1 Sidebar Font Size
+      div
+        .pill-switch
+          each fontSize in [10, '11 (Default)', 12, 13, 14, 15, 16]
+            - var value = `sidebar-font-size-${fontSize}`
+            if fontSize === '11 (Default)'
+              - value = '';
+            input(
+              type="radio"
+              id="sidebar_font_#{fontSize}"
+              name="sidebar-font"
+              value="#{value}"
+              ng-model="$parent.conf.sidebarFontSize"
+            )
+            label(for="sidebar_font_#{fontSize}") #{fontSize}
