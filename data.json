@@ -1,0 +1,75 @@
+{
+    "configuratorCategories": {
+        "Brightness Mode": {
+            "group": "brightness",
+            "prefix": "",
+            "values": [
+                "Dark",
+                "Light"
+            ],
+            "default": "Dark"
+        },
+        "Contrast Alternatives": {
+            "group": "contrast",
+            "prefix": "",
+            "values": [
+                "Soft",
+                "Medium",
+                "Hard"
+            ],
+            "default": "Medium"
+        },
+        "Accent Colors": {
+            "group": "accent",
+            "prefix": "",
+            "values": [
+                "None",
+                "Red",
+                "Green",
+                "Yellow",
+                "Blue",
+                "Purple",
+                "Aqua",
+                "Orange"
+            ],
+            "default": "None"
+        },
+        "Accent Color Modifiers": {
+            "group": "accentMod",
+            "prefix": "",
+            "values": [
+                "None",
+                "Neutral",
+                "Opposite"
+            ],
+            "default": "None"
+        },
+        "Sidebar Spacing": {
+            "group": "sidebarSpacing",
+            "prefix": "sidebar-",
+            "values": [
+                "Cozy",
+                "Comfortable",
+                "Default",
+                "Compact",
+                "Cramped"
+            ],
+            "default": "Default"
+        },
+        "Sidebar Font Size": {
+            "group": "sidebarFontSize",
+            "prefix": "sidebar-font-size-",
+            "values": [
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16
+            ],
+            "default": 11,
+            "defaultLabel": "11 (Default)"
+        }
+    }
+}

@@ -31,6 +31,8 @@ const jadeFiles = [{
 }];
 
 module.exports = function (grunt) {
+  const jadeData = grunt.file.readJSON('data.json');
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     sass: {
@@ -128,6 +130,7 @@ module.exports = function (grunt) {
       dev: {
         options: {
           data: {
+            configuratorCategories: jadeData.configuratorCategories,
             release: false,
             range: range,
             sublimeOptions: getGruvboxOptions(),
@@ -138,6 +141,7 @@ module.exports = function (grunt) {
       release: {
         options: {
           data: {
+            configuratorCategories: jadeData.configuratorCategories,
             release: true,
             range: range,
             sublimeOptions: getGruvboxOptions(),

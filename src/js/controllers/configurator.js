@@ -4,10 +4,10 @@ module.exports = function ($scope, $routeParams, $location) {
   $scope.conf = {
     brightness: 'dark',
     contrast: 'medium',
-    accent: '',
-    accentMod: '',
-    sidebarSpacing: '',
-    sidebarFontSize: '',
+    accent: 'none',
+    accentMod: 'none',
+    sidebarSpacing: 'default',
+    sidebarFontSize: '11',
   };
 
   var getConfiguration = function () {
