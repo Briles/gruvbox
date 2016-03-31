@@ -59,6 +59,18 @@ code {
   fill: currentColor;
 }
 
+.call-to-action {
+  display: inline-block;
+
+  margin: 0 20px;
+  padding: 12px 30px;
+
+  text-decoration: none;
+
+  border: 1px solid;
+  border-radius: .2em;
+}
+
 .icon {
   display: inline-block;
 

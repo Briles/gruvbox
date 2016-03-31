@@ -95,6 +95,13 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
             ) gruvbox for Sublime Text
               +icon-tab-close
             a.tab.tooltipped.tooltipped-s(
+              aria-label="http://brianreilly.me/gruvbox/experiment"
+              ng-class="{selected: location === '/experiment'}"
+              ng-click="location = '/experiment'"
+              href="#/experiment"
+            ) Preview Features
+              +icon-tab-close
+            a.tab.tooltipped.tooltipped-s(
               aria-label="http://brianreilly.me/gruvbox/options"
               ng-class="{selected: location === '/options'}"
               ng-click="location = '/options'"

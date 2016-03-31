@@ -265,8 +265,10 @@
   white-space: nowrap;
 }
 
-.configurator {
+.content-body {
   font-family: $--font-stack-os;
+
+  position: relative;
 
   padding: 15px 40px;
 }
