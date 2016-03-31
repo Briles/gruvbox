@@ -21,6 +21,7 @@
             ng-model="$parent.conf.brightness"
           )
           label(for="theme_light") Light
+
     li
       h1 Contrast Alternatives
       div
@@ -50,6 +51,7 @@
             ng-model="$parent.conf.contrast"
           )
           label(for="theme_hard") Hard
+
     li
       h1 Accent Colors
       div
@@ -119,6 +121,7 @@
             ng-model="$parent.conf.accent"
           )
           label(for="accent_orange") Orange
+
     li
       h1 Accent Color Modifiers
       div
@@ -148,3 +151,49 @@
             ng-model="$parent.conf.accentMod"
           )
           label(for="accent_mod_opposite") Opposite
+
+    li
+      h1 Sidebar Spacing
+      div
+        .pill-switch
+          input(
+            type="radio"
+            id="sidebar_spacing_cozy"
+            name="sidebar-spacing"
+            value="sidebar-cozy"
+            ng-model="$parent.conf.sidebarSpacing"
+          )
+          label(for="sidebar_spacing_cozy") Cozy
+          input(
+            type="radio"
+            id="sidebar_spacing_comfortable"
+            name="sidebar-spacing"
+            value="sidebar-comfortable"
+            ng-model="$parent.conf.sidebarSpacing"
+          )
+          label(for="sidebar_spacing_comfortable") Comfortable
+          input(
+            type="radio"
+            id="sidebar_spacing_default"
+            name="sidebar-spacing"
+            value=""
+            ng-model="$parent.conf.sidebarSpacing"
+            checked
+          )
+          label(for="sidebar_spacing_default") Default
+          input(
+            type="radio"
+            id="sidebar_spacing_compact"
+            name="sidebar-spacing"
+            value="sidebar-compact"
+            ng-model="$parent.conf.sidebarSpacing"
+          )
+          label(for="sidebar_spacing_compact") Compact
+          input(
+            type="radio"
+            id="sidebar_spacing_cramped"
+            name="sidebar-spacing"
+            value="sidebar-cramped"
+            ng-model="$parent.conf.sidebarSpacing"
+          )
+          label(for="sidebar_spacing_cramped") Cramped

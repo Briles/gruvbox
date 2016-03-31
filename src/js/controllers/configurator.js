@@ -6,6 +6,7 @@ module.exports = function ($scope, $routeParams, $location) {
     contrast: 'medium',
     accent: '',
     accentMod: '',
+    sidebarSpacing: '',
   };
 
   var getConfiguration = function () {
