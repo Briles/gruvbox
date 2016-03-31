@@ -11,6 +11,7 @@ module.exports = function ($scope, $routeParams, $location) {
     statusbarHeight: 'default',
     tabSize: 'default',
     tabFontSize: '11',
+    panelSize: 'default',
   };
 
   var getConfiguration = function () {

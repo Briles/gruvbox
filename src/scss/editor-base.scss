@@ -238,6 +238,15 @@
   }
 }
 
+@each $k, $v in $opt-panel-size {
+  .panel-#{$k} {
+    .findreplace {
+      padding-top: $v + 4px;
+      padding-bottom: $v + 4px;
+    }
+  }
+}
+
 .icon-bar {
   display: inline-block;
 

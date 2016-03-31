@@ -115,6 +115,20 @@
             ],
             "default": 11,
             "defaultLabel": "11 (Default)"
+        },
+        "Find, Replace, & Console Sizes": {
+            "group": "panelSize",
+            "prefix": "panel-",
+            "values": [
+                "xxs",
+                "xs",
+                "s",
+                "Default",
+                "l",
+                "xl",
+                "xxl"
+            ],
+            "default": "Default"
         }
     }
 }
