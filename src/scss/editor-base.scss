@@ -408,3 +408,13 @@ li.single-option {
     border-left: 0;
   }
 }
+
+/**
+ * Disable Folder Icons
+ */
+
+.disable-folder-icons {
+  .tree-view li .icon {
+    display: none;
+  }
+}

@@ -173,6 +173,10 @@
             "Highlight Active Buttons": {
                 "group": "highlightActiveButtons",
                 "trueValue": "highlight-active-buttons"
+            },
+            "Disable Folder Icons": {
+                "group": "disableFolderIcons",
+                "trueValue": "disable-folder-icons"
             }
         }
     }
