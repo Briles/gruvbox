@@ -131,6 +131,17 @@
                 "xxl"
             ],
             "default": "Default"
+        },
+        "Underline Modified Tabs": {
+            "group": "underlineTabs",
+            "prefix": "underline-modified-tabs underline-modified-tabs-",
+            "values": [
+                "Off",
+                "Default",
+                "Thick"
+            ],
+            "default": "Off",
+            "defaultValue": ""
         }
     }
 }

@@ -209,12 +209,15 @@
       &.selected {
         color: grayscale(map-get($bnp, 'fg2'));
       }
-      .icon:hover {
+      &.modified > .icon {
+        color: map-get($bnp, 'yellow');
+      }
+      &:not(.modified) > .icon:hover {
         color: map-get($bnp, 'red');
       }
     }
 
-    &.underline-modified-tabs .tab.selected {
+    &.underline-modified-tabs .tab.modified {
       border-bottom-color: map-get($bnp, 'gray');
     }
 

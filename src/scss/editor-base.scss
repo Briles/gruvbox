@@ -154,13 +154,10 @@
 }
 
 .underline-modified-tabs {
-  .tab {
-    border-bottom: 1px solid $transparent;
-  }
   @each $k, $v in $opt-underline-modified-thickness {
-    &.underline-modified-#{$k} {
+    &.underline-modified-tabs-#{$k} {
       .tab {
-        border-bottom-width: $v * 1px;
+        border-bottom: ($v * 1px) solid $transparent;
       }
     }
   }
