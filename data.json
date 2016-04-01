@@ -161,6 +161,10 @@
             "Less Contrast": {
                 "group": "lessContrast",
                 "trueValue": "contrast-less"
+            },
+            "Disable Borders": {
+                "group": "disableBorders",
+                "trueValue": "no-borders"
             }
         }
     }

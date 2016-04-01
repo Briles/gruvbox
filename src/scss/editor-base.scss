@@ -389,3 +389,22 @@ li.single-option {
     vertical-align: top;
   }
 }
+
+/**
+ * Disable Borders Option
+ */
+
+.no-borders {
+  .statusbar, .findreplace {
+    border-top: 0;
+  }
+  .tabs {
+    border-bottom: 0;
+  }
+  .sidebar, .tab {
+    border-right: 0;
+  }
+  .tab {
+    border-left: 0;
+  }
+}
