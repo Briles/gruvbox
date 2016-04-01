@@ -29,4 +29,13 @@
       }
     }
   }
+
+  /**
+   * Colored Tooltips
+   */
+  &.colored-tooltips {
+    .tooltipped::after {
+      background-color: $color;
+    }
+  }
 }

@@ -165,6 +165,10 @@
             "Disable Borders": {
                 "group": "disableBorders",
                 "trueValue": "no-borders"
+            },
+            "Colored Tooltips": {
+                "group": "coloredTooltips",
+                "trueValue": "colored-tooltips"
             }
         }
     }
