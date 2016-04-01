@@ -10,7 +10,7 @@ module.exports = function (values) {
   const info = values.info;
 
   var scheme = {
-    comment: 'Based on gruvbox for vim (https://github.com/morhetz/gruvbox)',
+    comment: 'Based on gruvbox for Vim (https://github.com/morhetz/gruvbox)',
     originalAuthor: 'Pavel Pertsev (https://github.com/morhetz)',
     author: 'Brian Reilly (https://github.com/briles/gruvbox)',
     name: info.name,
