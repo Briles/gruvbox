@@ -153,6 +153,10 @@
             "Bold Tab Labels": {
                 "group": "tabsBold",
                 "trueValue": "tabs-bold"
+            },
+            "Bold Statusbar Labels": {
+                "group": "statusbarBold",
+                "trueValue": "statusbar-bold"
             }
         }
     }

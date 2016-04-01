@@ -15,6 +15,7 @@ module.exports = function ($scope, $routeParams, $location) {
     underlineTabs: '',
     buttonsBold: '',
     tabsBold: '',
+    statusbarBold: '',
   };
 
   var getConfiguration = function () {
