@@ -29,7 +29,7 @@ module.exports = function ($scope, $routeParams, $location) {
   };
 
   $scope.getTheme = function () {
-    return $scope.brightness + $scope.contrast;
+    return $scope.conf.brightness + $scope.conf.contrast;
   };
 
   $scope.getLocation = function () {
