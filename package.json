@@ -1,7 +1,7 @@
 {
   "name": "gruvbox-sublime",
   "version": "1.13.0",
-  "description": "gruvbox for vim theme ported to Sublime Text",
+  "description": "gruvbox for Vim theme ported to Sublime Text",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/briles/gruvbox.git"

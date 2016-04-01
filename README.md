@@ -6,7 +6,7 @@
 
 <p align="center"><img src="https://cdn.rawgit.com/Briles/gruvbox/master/assets/banner-image.svg" alt="gruvbox for Sublime Text" width="327px" height="122px"></p>
 
-Based on [gruvbox for vim](https://github.com/morhetz/gruvbox)
+Based on [gruvbox for Vim](https://github.com/morhetz/gruvbox)
 
 > gruvbox is heavily inspired by [badwolf][], [jellybeans][] and [solarized][].
 
@@ -16,7 +16,7 @@ Based on [gruvbox for vim](https://github.com/morhetz/gruvbox)
    [jellybeans]: https://github.com/nanotech/jellybeans.vim
    [solarized]: http://ethanschoonover.com/solarized
 
-> &mdash; <cite>[Pavel Pertsev](https://github.com/morhetz), creator of gruvbox for vim</cite>
+> &mdash; <cite>[Pavel Pertsev](https://github.com/morhetz), creator of gruvbox for Vim</cite>
 
 ![Screenshot Dark](http://i.imgur.com/VyXrbOv.png)
 ![Screenshot Light](http://i.imgur.com/1UHJx8B.png)
@@ -462,6 +462,6 @@ Thanks
 
 Thanks to:
 
-* [Pavel Pertsev](https://github.com/morhetz) for creating gruvbox for vim.
+* [Pavel Pertsev](https://github.com/morhetz) for creating gruvbox for Vim.
 * [Will Bond](https://github.com/wbond) for the mathematical [Package Control](https://packagecontrol.io/)
 * [Spacegray](http://kkga.github.io/spacegray/) and [Material Theme](http://equinusocio.github.io/material-theme) for inspiration
