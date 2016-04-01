@@ -4,14 +4,14 @@ module.exports = function ($scope, $routeParams, $location) {
   $scope.conf = {
     brightness: 'dark',
     contrast: 'medium',
-    accent: 'none',
-    accentMod: 'none',
-    sidebarSpacing: 'default',
-    sidebarFontSize: '11',
-    statusbarHeight: 'default',
-    tabSize: 'default',
-    tabFontSize: '11',
-    panelSize: 'default',
+    accent: '',
+    accentMod: '',
+    sidebarSpacing: '',
+    sidebarFontSize: '',
+    statusbarHeight: '',
+    tabSize: '',
+    tabFontSize: '',
+    panelSize: '',
   };
 
   var getConfiguration = function () {
@@ -25,7 +25,7 @@ module.exports = function ($scope, $routeParams, $location) {
   };
 
   $scope.getClassList = function () {
-    return getConfiguration().join(' ');
+    return getConfiguration().join(' ').trim();
   };
 
   $scope.getTheme = function () {

@@ -11,6 +11,7 @@ include mixins/mixins
               - var isDefault = opt === params.default;
               - var label = isDefault ? (params.defaultLabel || opt) : opt;
               - var value = isDefault ? params.default : `${params.prefix}${opt}`;
+              - if (isDefault) { value = params.defaultValue === undefined ? '' : params.defaultValue; }
               input(
                 type="radio"
                 id="#{params.group}_#{opt}"
