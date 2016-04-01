@@ -156,6 +156,15 @@
             border-left-color: $border-softer;
           }
         }
+
+        /**
+         * Highlight Active Buttons
+         */
+        &.highlight-active-buttons {
+          .icon-button.selected {
+            background-color: $background;
+          }
+        }
       }
       // END CONTRAST MODES
     }
@@ -307,6 +316,7 @@
         }
       }
     }
+
     /**
    * Accent Colors
    */

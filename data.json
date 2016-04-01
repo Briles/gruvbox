@@ -169,6 +169,10 @@
             "Colored Tooltips": {
                 "group": "coloredTooltips",
                 "trueValue": "colored-tooltips"
+            },
+            "Highlight Active Buttons": {
+                "group": "highlightActiveButtons",
+                "trueValue": "highlight-active-buttons"
             }
         }
     }
