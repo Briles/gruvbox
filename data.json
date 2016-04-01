@@ -177,6 +177,10 @@
             "Disable Folder Icons": {
                 "group": "disableFolderIcons",
                 "trueValue": "disable-folder-icons"
+            },
+            "Disable Panels Button": {
+                "group": "disablePanelsButton",
+                "trueValue": "disable-panels-button"
             }
         }
     }

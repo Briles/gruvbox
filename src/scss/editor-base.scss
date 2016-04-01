@@ -418,3 +418,13 @@ li.single-option {
     display: none;
   }
 }
+
+/**
+ * Disable Panels Button
+ */
+
+.disable-panels-button {
+  .panel-button-control {
+    display: none;
+  }
+}
