@@ -145,6 +145,11 @@
                 "defaultValue": ""
             }
         },
-        "single": {}
+        "single": {
+            "Bold Button Labels": {
+                "group": "buttonsBold",
+                "trueValue": "buttons-bold"
+            }
+        }
     }
 }

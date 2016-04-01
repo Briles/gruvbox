@@ -13,6 +13,7 @@ module.exports = function ($scope, $routeParams, $location) {
     tabFontSize: '',
     panelSize: '',
     underlineTabs: '',
+    buttonsBold: '',
   };
 
   var getConfiguration = function () {

@@ -21,16 +21,16 @@ include mixins/mixins
               )
               label(for="#{params.group}_#{opt}") #{label}
     each params, category in configuratorCategories.single
-      li
+      li.single-option
         h1 #{category}
-        div
-          .checkbox
-            input(
-              type="checkbox"
-              name=""
-              ng-model=""
-              ng-true-value=""
-              ng-false-value=""
-            )
-            label(for="")
-              +icon-checkmark
+        .checkbox
+          input(
+            type="checkbox"
+            id="#{params.group}"
+            name="#{params.group}"
+            ng-model="$parent.conf.#{params.group}"
+            ng-true-value="'#{params.trueValue}'"
+            ng-false-value="'#{params.falseValue === undefined ? '' : params.falseValue}'"
+          )
+          label(for="#{params.group}")
+            +icon-checkmark
