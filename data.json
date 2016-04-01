@@ -149,6 +149,10 @@
             "Bold Button Labels": {
                 "group": "buttonsBold",
                 "trueValue": "buttons-bold"
+            },
+            "Bold Tab Labels": {
+                "group": "tabsBold",
+                "trueValue": "tabs-bold"
             }
         }
     }
