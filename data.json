@@ -1,147 +1,150 @@
 {
     "configuratorCategories": {
-        "Brightness Mode": {
-            "group": "brightness",
-            "prefix": "",
-            "values": [
-                "Dark",
-                "Light"
-            ],
-            "default": "Dark",
-            "defaultValue": "dark"
+        "multi": {
+            "Brightness Mode": {
+                "group": "brightness",
+                "prefix": "",
+                "values": [
+                    "Dark",
+                    "Light"
+                ],
+                "default": "Dark",
+                "defaultValue": "dark"
+            },
+            "Contrast Alternatives": {
+                "group": "contrast",
+                "prefix": "",
+                "values": [
+                    "Soft",
+                    "Medium",
+                    "Hard"
+                ],
+                "default": "Medium",
+                "defaultValue": "medium"
+            },
+            "Accent Colors": {
+                "group": "accent",
+                "prefix": "",
+                "values": [
+                    "None",
+                    "Red",
+                    "Green",
+                    "Yellow",
+                    "Blue",
+                    "Purple",
+                    "Aqua",
+                    "Orange"
+                ],
+                "default": "None"
+            },
+            "Accent Color Modifiers": {
+                "group": "accentMod",
+                "prefix": "",
+                "values": [
+                    "None",
+                    "Neutral",
+                    "Opposite"
+                ],
+                "default": "None"
+            },
+            "Sidebar Spacing": {
+                "group": "sidebarSpacing",
+                "prefix": "sidebar-",
+                "values": [
+                    "Cozy",
+                    "Comfortable",
+                    "Default",
+                    "Compact",
+                    "Cramped"
+                ],
+                "default": "Default"
+            },
+            "Sidebar Font Size": {
+                "group": "sidebarFontSize",
+                "prefix": "sidebar-font-size-",
+                "values": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16
+                ],
+                "default": 11,
+                "defaultLabel": "11 (Default)"
+            },
+            "Statusbar Height": {
+                "group": "statusbarHeight",
+                "prefix": "statusbar-",
+                "values": [
+                    "xxs",
+                    "xs",
+                    "s",
+                    "Default",
+                    "l",
+                    "xl",
+                    "xxl"
+                ],
+                "default": "Default"
+            },
+            "Tab Sizes": {
+                "group": "tabSize",
+                "prefix": "tabs-",
+                "values": [
+                    "xxs",
+                    "xs",
+                    "s",
+                    "Default",
+                    "l",
+                    "xl",
+                    "xxl"
+                ],
+                "default": "Default"
+            },
+            "Tab Font Sizes": {
+                "group": "tabFontSize",
+                "prefix": "tabs-font-size-",
+                "values": [
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15
+                ],
+                "default": 11,
+                "defaultLabel": "11 (Default)"
+            },
+            "Find, Replace, & Console Sizes": {
+                "group": "panelSize",
+                "prefix": "panel-",
+                "values": [
+                    "xxs",
+                    "xs",
+                    "s",
+                    "Default",
+                    "l",
+                    "xl",
+                    "xxl"
+                ],
+                "default": "Default"
+            },
+            "Underline Modified Tabs": {
+                "group": "underlineTabs",
+                "prefix": "underline-modified-tabs underline-modified-tabs-",
+                "values": [
+                    "Off",
+                    "Default",
+                    "Thick"
+                ],
+                "default": "Off",
+                "defaultValue": ""
+            }
         },
-        "Contrast Alternatives": {
-            "group": "contrast",
-            "prefix": "",
-            "values": [
-                "Soft",
-                "Medium",
-                "Hard"
-            ],
-            "default": "Medium",
-            "defaultValue": "medium"
-        },
-        "Accent Colors": {
-            "group": "accent",
-            "prefix": "",
-            "values": [
-                "None",
-                "Red",
-                "Green",
-                "Yellow",
-                "Blue",
-                "Purple",
-                "Aqua",
-                "Orange"
-            ],
-            "default": "None"
-        },
-        "Accent Color Modifiers": {
-            "group": "accentMod",
-            "prefix": "",
-            "values": [
-                "None",
-                "Neutral",
-                "Opposite"
-            ],
-            "default": "None"
-        },
-        "Sidebar Spacing": {
-            "group": "sidebarSpacing",
-            "prefix": "sidebar-",
-            "values": [
-                "Cozy",
-                "Comfortable",
-                "Default",
-                "Compact",
-                "Cramped"
-            ],
-            "default": "Default"
-        },
-        "Sidebar Font Size": {
-            "group": "sidebarFontSize",
-            "prefix": "sidebar-font-size-",
-            "values": [
-                10,
-                11,
-                12,
-                13,
-                14,
-                15,
-                16
-            ],
-            "default": 11,
-            "defaultLabel": "11 (Default)"
-        },
-        "Statusbar Height": {
-            "group": "statusbarHeight",
-            "prefix": "statusbar-",
-            "values": [
-                "xxs",
-                "xs",
-                "s",
-                "Default",
-                "l",
-                "xl",
-                "xxl"
-            ],
-            "default": "Default"
-        },
-        "Tab Sizes": {
-            "group": "tabSize",
-            "prefix": "tabs-",
-            "values": [
-                "xxs",
-                "xs",
-                "s",
-                "Default",
-                "l",
-                "xl",
-                "xxl"
-            ],
-            "default": "Default"
-        },
-        "Tab Font Sizes": {
-            "group": "tabFontSize",
-            "prefix": "tabs-font-size-",
-            "values": [
-                7,
-                8,
-                9,
-                10,
-                11,
-                12,
-                13,
-                14,
-                15
-            ],
-            "default": 11,
-            "defaultLabel": "11 (Default)"
-        },
-        "Find, Replace, & Console Sizes": {
-            "group": "panelSize",
-            "prefix": "panel-",
-            "values": [
-                "xxs",
-                "xs",
-                "s",
-                "Default",
-                "l",
-                "xl",
-                "xxl"
-            ],
-            "default": "Default"
-        },
-        "Underline Modified Tabs": {
-            "group": "underlineTabs",
-            "prefix": "underline-modified-tabs underline-modified-tabs-",
-            "values": [
-                "Off",
-                "Default",
-                "Thick"
-            ],
-            "default": "Off",
-            "defaultValue": ""
-        }
+        "single": {}
     }
 }

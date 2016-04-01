@@ -2,7 +2,7 @@ include mixins/mixins
 
 .content-body
   ul.config-sections
-    each params, category in configuratorCategories
+    each params, category in configuratorCategories.multi
       li
         h1 #{category}
         div
@@ -20,3 +20,17 @@ include mixins/mixins
                 ng-model="$parent.conf.#{params.group}"
               )
               label(for="#{params.group}_#{opt}") #{label}
+    each params, category in configuratorCategories.single
+      li
+        h1 #{category}
+        div
+          .checkbox
+            input(
+              type="checkbox"
+              name=""
+              ng-model=""
+              ng-true-value=""
+              ng-false-value=""
+            )
+            label(for="")
+              +icon-checkmark
