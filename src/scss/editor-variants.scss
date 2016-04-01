@@ -133,6 +133,22 @@
       color: grayscale(map-get($bnp, 'fg1'));
     }
 
+    .info {
+      border-top-color: (map-get($bnp, 'bg1'));
+      border-bottom-color: (map-get($bnp, 'bg2'));
+      > a {
+        color: grayscale(map-get($bnp, 'fg1'));
+        &:hover {
+          color: grayscale($foreground);
+        }
+      }
+      cite a {
+        animation-name: spin-colors-#{$brightness-identifier};
+
+        color: map-get($bnp, 'red');
+      }
+    }
+
     .call-to-action {
       &:first-child {
         color: map-get($bnp, 'green');

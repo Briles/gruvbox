@@ -34,10 +34,10 @@ code {
   font-weight: 200;
   line-height: 1.5em;
 
-  margin-bottom: 20px;
   padding: 1em 0;
 
   white-space: nowrap;
+  letter-spacing: .023em;
 }
 
 .groove {
@@ -69,6 +69,49 @@ code {
 
   border: 1px solid;
   border-radius: .2em;
+}
+
+.info {
+  line-height: 1.63em;
+
+  display: block;
+
+  max-width: 760px;
+  margin-bottom: 30px;
+  padding: 29px 5em 29px 0;
+
+  white-space: pre-line;
+  letter-spacing: .017em;
+
+  border-top: 1px solid $transparent;
+  border-bottom: 2px solid $transparent;
+  a {
+    text-decoration: none;
+  }
+  cite a {
+    transition: $--transition;
+    animation-duration: 3500ms;
+    animation-play-state: paused;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    &:hover{
+      animation-play-state: running;
+    }
+  }
+}
+
+@each $mode in $--BRIGHTNESS-MODES {
+  $spin-colors-i: 0;
+  @keyframes spin-colors-#{$mode} {
+    @each $k, $v in map-get($palette, 'accents') {
+      $color: map-get($v, $mode);
+      $spin-colors-i: $spin-colors-i + (100 / 7);
+      #{$spin-colors-i}% {
+        color: $color;
+      }
+    }
+  }
 }
 
 .icon {
