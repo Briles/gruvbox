@@ -198,6 +198,16 @@ module.exports = function (grunt) {
         files: [srcPath + 'templates/**/*.jade'],
         tasks: ['build_html'],
       },
+      jadeData: {
+        files: ['./data.json'],
+        tasks: ['build_html'],
+        options: {
+          reload: true,
+        },
+      },
+      grunt: {
+        files: ['gruntfile.js'],
+      },
     },
   });
 
