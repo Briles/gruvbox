@@ -20,10 +20,13 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
       rel='stylesheet'
       type='text/css'
     )
-    - if (release === false)
+    if (release === false)
       script(src="//localhost:35729/livereload.js")
-    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js")
-    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js")
+      script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js")
+      script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js")
+    else
+      script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js")
+      script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.min.js")
     script(src="main.min.js")
   body(class="{{getClassList()}}")
     .editor
