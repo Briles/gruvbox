@@ -121,6 +121,41 @@
         .constant {
           color: map-get($bnp, 'purple');
         }
+
+        /**
+         * Less Contrast Option
+         */
+
+        &.contrast-less {
+          .sidebar {
+            border-right-color: $border-softer;
+            background-color: $container-softer;
+          }
+
+          .tabs {
+            color: grayscale(map-get($bnp, 'fg3'));
+            border-bottom-color: $border-softer;
+            background-color: $container-softer;
+          }
+
+          .findreplace {
+            border-top-color: $border-softer;
+            background-color: $container-softer;
+            button:active {
+              background-color: $border-softer;
+            }
+          }
+
+          .statusbar {
+            border-top-color: $border-softer;
+            background-color: $container-softer;
+          }
+
+          .tab.selected {
+            border-right-color: $border-softer;
+            border-left-color: $border-softer;
+          }
+        }
       }
       // END CONTRAST MODES
     }

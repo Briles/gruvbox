@@ -157,6 +157,10 @@
             "Bold Statusbar Labels": {
                 "group": "statusbarBold",
                 "trueValue": "statusbar-bold"
+            },
+            "Less Contrast": {
+                "group": "lessContrast",
+                "trueValue": "contrast-less"
             }
         }
     }
