@@ -22,11 +22,14 @@ code {
   font-family: $--font-stack-monospaced;
 }
 
-.de-emph {
-  font-size: .8em;
-  font-weight: normal;
+svg {
+  fill: currentColor;
+}
 
-  opacity: .85;
+.icon {
+  display: inline-block;
+
+  vertical-align: text-top;
 }
 
 .tagline {
@@ -55,8 +58,6 @@ code {
   display: block;
 
   margin: 0 auto;
-
-  fill: currentColor;
 }
 
 .call-to-action {
@@ -95,7 +96,7 @@ code {
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    &:hover{
+    &:hover {
       animation-play-state: running;
     }
   }
@@ -112,14 +113,6 @@ code {
       }
     }
   }
-}
-
-.icon {
-  display: inline-block;
-
-  vertical-align: text-top;
-
-  fill: currentColor;
 }
 
 .pill-switch {
@@ -145,37 +138,6 @@ code {
   }
   input {
     display: none;
-  }
-  & + & {
-    margin-left: 40px;
-  }
-  &.accents {
-    label {
-      &::after {
-        position: absolute;
-        top: 100%;
-        left: 50%;
-
-        display: block;
-
-        width: 100%;
-        height: 2px;
-        margin-top: 2px;
-        margin-left: -50%;
-
-        content: '';
-        transition: $--transition;
-        transform: scaleX(.5);
-      }
-      &:hover::after {
-        transform: scaleX(1);
-      }
-    }
-    input:checked + label {
-      &::after {
-        transform: scaleX(1);
-      }
-    }
   }
 }
 

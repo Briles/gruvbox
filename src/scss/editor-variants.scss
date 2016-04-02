@@ -298,27 +298,11 @@
       input:checked + label {
         background-color: map-get($bnp, 'aqua');
       }
-      &.accents {
-        input {
-          &:checked + label {
-            color: grayscale(map-get($bnp, 'fg1'));
-            background-color: $transparent;
-          }
-        }
-        @each $k, $v in map-get($palette, 'accents') {
-          $brightness-accent: map-get-deep($v, $brightness-identifier);
-          label[for='accent-#{$k}'] {
-            &::after {
-              background-color: $brightness-accent;
-            }
-          }
-        }
-      }
     }
 
     /**
-   * Accent Colors
-   */
+     * Accent Colors
+     */
     @each $k, $v in map-get($palette, 'accents') {
       $opposite-color: map-get($v, '#{$opposite-brightness-identifier}');
       $color: map-get($v, '#{$brightness-identifier}');
