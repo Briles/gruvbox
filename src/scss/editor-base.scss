@@ -283,8 +283,31 @@
 
   overflow-y: auto;
 
-  cursor: text;
   white-space: nowrap;
+
+  //  Scrollbar
+  &::-webkit-scrollbar {
+    width: 14px;
+    height: 16px;
+  }
+  &::-webkit-scrollbar-track {
+    border-left: 1px solid $transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    border: 4px solid $transparent;
+  }
+}
+
+// Set the scrollbar thumb background manually
+
+.dark .code::-webkit-scrollbar-thumb {
+  background: $dark-bg0_s;
+  background-clip: padding-box;
+}
+
+.light .code::-webkit-scrollbar-thumb {
+  background: $light-bg2;
+  background-clip: padding-box;
 }
 
 .content-body {
@@ -295,6 +318,12 @@
   padding: 15px 40px;
 
   cursor: default;
+}
+
+.code-sample {
+  width: 100%;
+
+  cursor: text;
 }
 
 .feature-preview {
@@ -395,6 +424,9 @@
   }
   .tab {
     border-left: 0;
+  }
+  .code::-webkit-scrollbar-track {
+    border-left: 0 !important;
   }
 }
 

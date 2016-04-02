@@ -164,6 +164,16 @@
             background-color: $background;
           }
         }
+
+        /**
+         * Scrollbars (WebKit Only)
+         */
+        .code {
+          &::-webkit-scrollbar-track {
+            border-left: 1px solid $border;
+            background: $container;
+          }
+        }
       }
       // END CONTRAST MODES
     }
