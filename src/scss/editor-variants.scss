@@ -74,14 +74,13 @@
          * Configurator
          */
         .config-sections {
-          border-color: map-get($bnp, 'bg2');
           li {
             border-color: map-get($bnp, 'bg2');
-            h1 {
-              code {
-                color: map-get($bnp, 'green');
-                background-color: $container;
-              }
+            &:nth-child(even) {
+              background-color: lighten($background, 1);
+            }
+            &:hover {
+              background-color: darken($background, 3);
             }
           }
         }

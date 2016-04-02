@@ -1,36 +1,39 @@
 include mixins/mixins
 
-.content-body
+.content-body.feature-preview
   ul.config-sections
-    each params, category in configuratorCategories.multi
-      li
-        h1 #{category}
-        div
-          .pill-switch
-            each opt in params.values
-              - var isDefault = opt === params.default;
-              - var label = isDefault ? (params.defaultLabel || opt) : opt;
-              - var value = isDefault ? params.default : `${params.prefix}${opt}`;
-              - if (isDefault) { value = params.defaultValue === undefined ? '' : params.defaultValue; }
-              input(
-                type="radio"
-                id="#{params.group}_#{opt}"
-                name="#{params.group}"
-                value="#{value.toString().toLowerCase()}"
-                ng-model="$parent.conf.#{params.group}"
-              )
-              label(for="#{params.group}_#{opt}") #{label}
-    each params, category in configuratorCategories.single
-      li.single-option
-        h1 #{category}
-        .checkbox
-          input(
-            type="checkbox"
-            id="#{params.group}"
-            name="#{params.group}"
-            ng-model="$parent.conf.#{params.group}"
-            ng-true-value="'#{params.trueValue}'"
-            ng-false-value="'#{params.falseValue === undefined ? '' : params.falseValue}'"
-          )
-          label(for="#{params.group}")
-            +icon-checkmark
+    each options, group in configuratorCategories
+      each params, category in options
+        li
+          .opt-info
+            h1 #{category}
+            if (params.info)
+              p #{params.info}
+          div
+            if group === 'multi'
+              .pill-switch
+                each opt in params.values
+                  - var isDefault = opt === params.default;
+                  - var label = isDefault ? (params.defaultLabel || opt) : opt;
+                  - var value = isDefault ? params.default : `${params.prefix}${opt}`;
+                  - if (isDefault) { value = params.defaultValue === undefined ? '' : params.defaultValue; }
+                  input(
+                    type="radio"
+                    id="#{params.group}_#{opt}"
+                    name="#{params.group}"
+                    value="#{value.toString().toLowerCase()}"
+                    ng-model="$parent.conf.#{params.group}"
+                  )
+                  label(for="#{params.group}_#{opt}") #{label}
+            else
+              .checkbox
+                input(
+                  type="checkbox"
+                  id="#{params.group}"
+                  name="#{params.group}"
+                  ng-model="$parent.conf.#{params.group}"
+                  ng-true-value="'#{params.trueValue}'"
+                  ng-false-value="'#{params.falseValue === undefined ? '' : params.falseValue}'"
+                )
+                label(for="#{params.group}")
+                  +icon-checkmark

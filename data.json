@@ -9,7 +9,8 @@
                     "Light"
                 ],
                 "default": "Dark",
-                "defaultValue": "dark"
+                "defaultValue": "dark",
+                "info": "Flip the lights on or off"
             },
             "Contrast Alternatives": {
                 "group": "contrast",
@@ -20,7 +21,8 @@
                     "Hard"
                 ],
                 "default": "Medium",
-                "defaultValue": "medium"
+                "defaultValue": "medium",
+                "info": "Adjust the contrast"
             },
             "Accent Colors": {
                 "group": "accent",
@@ -35,7 +37,8 @@
                     "Aqua",
                     "Orange"
                 ],
-                "default": "None"
+                "default": "None",
+                "info": "Inject some retro groove color"
             },
             "Accent Color Modifiers": {
                 "group": "accentMod",
@@ -45,7 +48,8 @@
                     "Neutral",
                     "Opposite"
                 ],
-                "default": "None"
+                "default": "None",
+                "info": "Swap the colors"
             },
             "Sidebar Spacing": {
                 "group": "sidebarSpacing",
@@ -57,7 +61,8 @@
                     "Compact",
                     "Cramped"
                 ],
-                "default": "Default"
+                "default": "Default",
+                "info": "Change the space between sidebar tree rows"
             },
             "Sidebar Font Size": {
                 "group": "sidebarFontSize",
@@ -72,7 +77,8 @@
                     16
                 ],
                 "default": 11,
-                "defaultLabel": "11 (Default)"
+                "defaultLabel": "11 (Default)",
+                "info": "Change the font size of the sidebar labels"
             },
             "Statusbar Height": {
                 "group": "statusbarHeight",
@@ -86,7 +92,8 @@
                     "xl",
                     "xxl"
                 ],
-                "default": "Default"
+                "default": "Default",
+                "info": "Change the height of the statusbar"
             },
             "Tab Sizes": {
                 "group": "tabSize",
@@ -100,7 +107,8 @@
                     "xl",
                     "xxl"
                 ],
-                "default": "Default"
+                "default": "Default",
+                "info": "Change the height of the tabs"
             },
             "Tab Font Sizes": {
                 "group": "tabFontSize",
@@ -117,7 +125,8 @@
                     15
                 ],
                 "default": 11,
-                "defaultLabel": "11 (Default)"
+                "defaultLabel": "11 (Default)",
+                "info": "Change the font size of the tabs"
             },
             "Find, Replace, & Console Sizes": {
                 "group": "panelSize",
@@ -131,7 +140,8 @@
                     "xl",
                     "xxl"
                 ],
-                "default": "Default"
+                "default": "Default",
+                "info": "Adjust the top & bottom margins of the Find, Replace, and Console panels"
             },
             "Underline Modified Tabs": {
                 "group": "underlineTabs",
@@ -142,45 +152,55 @@
                     "Thick"
                 ],
                 "default": "Off",
-                "defaultValue": ""
+                "defaultValue": "",
+                "info": "Underline modified tabs with the current accent color"
             }
         },
         "single": {
             "Bold Button Labels": {
                 "group": "buttonsBold",
-                "trueValue": "buttons-bold"
+                "trueValue": "buttons-bold",
+                "info": "Enable bold button labels"
             },
             "Bold Tab Labels": {
                 "group": "tabsBold",
-                "trueValue": "tabs-bold"
+                "trueValue": "tabs-bold",
+                "info": "Enable bold tabs"
             },
             "Bold Statusbar Labels": {
                 "group": "statusbarBold",
-                "trueValue": "statusbar-bold"
+                "trueValue": "statusbar-bold",
+                "info": "Enable bold statusbar labels"
             },
             "Less Contrast": {
                 "group": "lessContrast",
-                "trueValue": "contrast-less"
+                "trueValue": "contrast-less",
+                "info": "Use less contrasting colors in sidebar, tabs, statusbar, etc."
             },
             "Disable Borders": {
                 "group": "disableBorders",
-                "trueValue": "no-borders"
+                "trueValue": "no-borders",
+                "info": "Disable all borders"
             },
             "Colored Tooltips": {
                 "group": "coloredTooltips",
-                "trueValue": "colored-tooltips"
+                "trueValue": "colored-tooltips",
+                "info": "Color the tooltip backgrounds with the current accent color"
             },
             "Highlight Active Buttons": {
                 "group": "highlightActiveButtons",
-                "trueValue": "highlight-active-buttons"
+                "trueValue": "highlight-active-buttons",
+                "info": "Highlight selected buttons in the Find & Replace panel"
             },
             "Disable Folder Icons": {
                 "group": "disableFolderIcons",
-                "trueValue": "disable-folder-icons"
+                "trueValue": "disable-folder-icons",
+                "info": "Disable the sidebar folder icons"
             },
             "Disable Panels Button": {
                 "group": "disablePanelsButton",
-                "trueValue": "disable-panels-button"
+                "trueValue": "disable-panels-button",
+                "info": "Hide the panel-switching button"
             }
         }
     }
