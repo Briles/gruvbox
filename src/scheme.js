@@ -104,6 +104,11 @@ module.exports = function (values) {
           'comment.string',
           'comment.type',
           'storage.type.class.jsdoc',
+          'storage.type.annotation.coffeescript',
+          'keyword.other.phpdoc.php',
+          'source.java keyword.other.documentation',
+          'punctuation.definition.keyword.javadoc',
+          'source.groovy keyword.other.documentation',
         ],
         settings: {
           foreground: c.bnp.fg3,

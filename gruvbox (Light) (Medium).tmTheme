@@ -3,7 +3,7 @@
 <plist version="1.0">
   <dict>
     <key>comment</key>
-    <string>Based on gruvbox for vim (https://github.com/morhetz/gruvbox)</string>
+    <string>Based on gruvbox for Vim (https://github.com/morhetz/gruvbox)</string>
     <key>originalAuthor</key>
     <string>Pavel Pertsev (https://github.com/morhetz)</string>
     <key>author</key>
@@ -111,7 +111,7 @@
         <key>name</key>
         <string>DocBlockr &amp; Other Keywords Inside Comments</string>
         <key>scope</key>
-        <string>comment.parameter, comment.punctuation, comment.string, comment.type, storage.type.class.jsdoc</string>
+        <string>comment.parameter, comment.punctuation, comment.string, comment.type, keyword.other.phpdoc.php, punctuation.definition.keyword.javadoc, source.groovy keyword.other.documentation, source.java keyword.other.documentation, storage.type.annotation.coffeescript, storage.type.class.jsdoc</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1214,6 +1214,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>28fef312-639d-4795-bb56-4d2de5c6fcc2</string>
+    <string>79a272f5-88f8-473c-84f1-ab464c845834</string>
   </dict>
 </plist>
