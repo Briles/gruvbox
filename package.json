@@ -4,13 +4,13 @@
   "description": "gruvbox for Vim theme ported to Sublime Text",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/briles/gruvbox.git"
+    "url": "git+https://github.com/Briles/gruvbox.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/briles/gruvbox/issues"
+    "url": "https://github.com/Briles/gruvbox/issues"
   },
-  "homepage": "https://github.com/briles/gruvbox#readme",
+  "homepage": "https://github.com/Briles/gruvbox#readme",
   "devDependencies": {
     "commander": "^2.9.0",
     "gulp": "^3.9.1",

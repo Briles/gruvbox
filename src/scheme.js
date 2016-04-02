@@ -12,7 +12,7 @@ module.exports = function (values) {
   var scheme = {
     comment: 'Based on gruvbox for Vim (https://github.com/morhetz/gruvbox)',
     originalAuthor: 'Pavel Pertsev (https://github.com/morhetz)',
-    author: 'Brian Reilly (https://github.com/briles/gruvbox)',
+    author: 'Brian Reilly (https://github.com/Briles/gruvbox)',
     name: info.name,
     colorSpaceName: 'sRGB',
     settings: [{

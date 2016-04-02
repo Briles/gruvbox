@@ -7,7 +7,7 @@
     <key>originalAuthor</key>
     <string>Pavel Pertsev (https://github.com/morhetz)</string>
     <key>author</key>
-    <string>Brian Reilly (https://github.com/briles/gruvbox)</string>
+    <string>Brian Reilly (https://github.com/Briles/gruvbox)</string>
     <key>name</key>
     <string>gruvbox (Light) (Medium)</string>
     <key>colorSpaceName</key>
@@ -1214,6 +1214,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>59fee472-5b57-4044-b9e9-c47be3a63919</string>
+    <string>7045d5d3-384d-41ad-b2e8-fbbce7358ce7</string>
   </dict>
 </plist>

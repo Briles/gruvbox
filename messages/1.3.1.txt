@@ -1,5 +1,5 @@
 gruvbox for Sublime Text 3
-https://github.com/briles/gruvbox
+https://github.com/Briles/gruvbox
 
 Version 1.3.1
 --------------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 <p>
-  <a href="https://github.com/Briles/gruvbox/tags"><img src="https://img.shields.io/github/tag/briles/gruvbox.svg?style=flat-square" alt="GitHub tag"></a>
+  <a href="https://github.com/Briles/gruvbox/tags"><img src="https://img.shields.io/github/tag/Briles/gruvbox.svg?style=flat-square" alt="GitHub tag"></a>
   <a href="https://packagecontrol.io/packages/gruvbox"><img src="https://img.shields.io/packagecontrol/dt/gruvbox.svg?style=flat-square" alt="Package Control"></a>
-  <a href="https://github.com/Briles/gruvbox/blob/master/LICENSE"><img src="https://img.shields.io/github/license/briles/gruvbox.svg?style=flat-square" alt="GitHub license"></a>
+  <a href="https://github.com/Briles/gruvbox/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Briles/gruvbox.svg?style=flat-square" alt="GitHub license"></a>
 </p>
 
 <p align="center"><img src="https://cdn.rawgit.com/Briles/gruvbox/master/assets/banner-image.svg" alt="gruvbox for Sublime Text" width="327px" height="122px"></p>
@@ -77,7 +77,7 @@ The easiest way to install is using [Package Control](https://packagecontrol.io/
 
 You can also install the theme manually:
 
-1. [Download the .zip](https://github.com/briles/gruvbox/archive/master.zip)
+1. [Download the .zip](https://github.com/Briles/gruvbox/archive/master.zip)
 2. Unzip and rename the folder to `gruvbox`
 3. Copy the folder into `Packages` directory, which you can find using the menu item `Sublime Text -> Preferences -> Browse Packages...`
 4. [Activate the theme](#how-to-activate) by adding the code below to *Preferences > Setting - User*:
@@ -456,7 +456,7 @@ Contributing
 -------
 
 Contributions are always welcome. Before contributing please
-read [Contributing](https://github.com/briles/gruvbox/blob/master/.github/CONTRIBUTING.md)
+read [Contributing](https://github.com/Briles/gruvbox/blob/master/.github/CONTRIBUTING.md)
 
 Thanks
 ------

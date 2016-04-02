@@ -1,8 +1,8 @@
 gruvbox for Sublime Text 3
 
-For more information on gruvbox for Sublime Text: https://github.com/briles/gruvbox
+For more information on gruvbox for Sublime Text: https://github.com/Briles/gruvbox
 
-Having an issue or want a feature added? Visit https://github.com/briles/gruvbox/issues
+Having an issue or want a feature added? Visit https://github.com/Briles/gruvbox/issues
 
 ----------------------------------------------------------------------------------------------
 
@@ -267,4 +267,4 @@ Theme options:
   "gruvbox_tabs_autowidth": true,             // Auto-size the tabs
   "gruvbox_tabs_bold": true,                  // Enable bold tabs
 
-  * Having an issue or want a feature added? Visit https://github.com/briles/gruvbox/issues
+  * Having an issue or want a feature added? Visit https://github.com/Briles/gruvbox/issues
