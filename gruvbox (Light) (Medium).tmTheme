@@ -65,7 +65,7 @@
         <key>name</key>
         <string>Text and Source Base Colors</string>
         <key>scope</key>
-        <string>meta.method.body.source.cs, none, source, text</string>
+        <string>meta.method.body.java, meta.method.body.source.cs, none, source, text</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1214,6 +1214,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>79a272f5-88f8-473c-84f1-ab464c845834</string>
+    <string>59fee472-5b57-4044-b9e9-c47be3a63919</string>
   </dict>
 </plist>

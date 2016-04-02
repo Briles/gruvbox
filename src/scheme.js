@@ -45,6 +45,7 @@ module.exports = function (values) {
         name: 'Text and Source Base Colors',
         scope: [
           'meta.method.body.source.cs', // Fix poor syntax highlighting
+          'meta.method.body.java', // Fix poor syntax highlighting
           'none',
           'source',
           'text',
