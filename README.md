@@ -142,6 +142,7 @@ Settings
 ![Accent Colors](http://i.imgur.com/QhdrE58.png)
 
 Enable accent color by setting the appropriate key to `true`
+
 Accent colors affect icons and certain text.
 
 ```json
