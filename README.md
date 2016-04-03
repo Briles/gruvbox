@@ -329,7 +329,7 @@ Adjust the width of the scrollbars
 Use square folder icons in the sidebar
 
 ```json
-"gruvbox_enable_square_folder_icons": true,
+"gruvbox_folder_icons_square": true,
 ```
 
 ##### Circle Folder Icons
@@ -339,7 +339,7 @@ Use square folder icons in the sidebar
 Use 'circle' folder icons in the sidebar
 
 ```json
-"gruvbox_enable_circle_folder_icons": true,
+"gruvbox_folder_icons_circle": true,
 ```
 
 ##### Plus/Minus Folder Icons
@@ -349,7 +349,7 @@ Use 'circle' folder icons in the sidebar
 Use 'plus/minus' folder icons in the sidebar
 
 ```json
-"gruvbox_enable_plus_minus_folder_icons": true,
+"gruvbox_folder_icons_plus_minus": true,
 ```
 
 #### Alternate Icon Sets

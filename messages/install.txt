@@ -220,13 +220,13 @@ Theme options:
   Alternate Folder Icons
 
         Use square folder icons in the sidebar
-          "gruvbox_enable_square_folder_icons": true,
+          "gruvbox_folder_icons_square": true,
 
         Use 'circle' folder icons in the sidebar
-          "gruvbox_enable_circle_folder_icons": true,
+          "gruvbox_folder_icons_circle": true,
 
         Use 'plus, minus (+-)' folder icons in the sidebar
-          "gruvbox_enable_plus_minus_folder_icons": true,
+          "gruvbox_folder_icons_plus_minus": true,
 
 
   Alternate Icon Sets
