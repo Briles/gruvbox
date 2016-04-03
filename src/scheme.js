@@ -64,6 +64,8 @@ module.exports = function (values) {
           'meta.punctuation.separator',
           'meta.separator',
           'punctuation',
+          'keyword.operator operator.neon',
+          'keyword.operator keyword.operator.neon',
         ],
         settings: {
           foreground: c.foreground,
@@ -726,6 +728,8 @@ module.exports = function (values) {
           'keyword.control.untitled',
           'keyword.doctype.xml',
           'punctuation.definition.prolog.haml',
+          'entity.name.function.neon',
+          'keyword.operator support.other.neon',
         ],
         settings: {
           foreground: c.bnp.blue,

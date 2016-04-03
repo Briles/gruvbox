@@ -76,7 +76,7 @@
         <key>name</key>
         <string>Punctuation</string>
         <key>scope</key>
-        <string>meta.brace, meta.delimiter, meta.group.braces, meta.punctuation.separator, meta.separator, punctuation</string>
+        <string>keyword.operator keyword.operator.neon, keyword.operator operator.neon, meta.brace, meta.delimiter, meta.group.braces, meta.punctuation.separator, meta.separator, punctuation</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -698,7 +698,7 @@
         <key>name</key>
         <string>Markup Tag</string>
         <key>scope</key>
-        <string>entity.name.tag, entity.tag, keyword.control.untitled, keyword.doctype.xml, punctuation.definition.prolog.haml, source.less keyword.control.html.elements</string>
+        <string>entity.name.function.neon, entity.name.tag, entity.tag, keyword.control.untitled, keyword.doctype.xml, keyword.operator support.other.neon, punctuation.definition.prolog.haml, source.less keyword.control.html.elements</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1302,6 +1302,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>5b4fce87-68b3-4894-b1e1-42ba32b711bd</string>
+    <string>1612df7b-3963-4f01-9bd0-e9763fec3f23</string>
   </dict>
 </plist>
