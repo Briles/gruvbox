@@ -548,14 +548,42 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Markdown Quoted Punctuation',
+        scope: [
+          'markup.quote punctuation',
+        ],
+        settings: {
+          foreground: c.neutralPurple,
+        },
+      },
+
+      {
         name: 'Markdown List',
         scope: [
           'markup.list',
-          'punctuation.definition.list_item.number',
-          'punctuation.definition.list_item.markdown',
         ],
         settings: {
           foreground: c.bnp.blue,
+        },
+      },
+
+      {
+        name: 'Markdown List Punctuation',
+        scope: [
+          'markup.list punctuation',
+        ],
+        settings: {
+          foreground: c.neutralBlue,
+        },
+      },
+
+      {
+        name: 'Markdown Separators',
+        scope: [
+          'meta.separator.markdown',
+        ],
+        settings: {
+          foreground: c.bnp.gray,
         },
       },
 

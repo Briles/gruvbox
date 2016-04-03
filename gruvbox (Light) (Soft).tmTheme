@@ -535,13 +535,46 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>Markdown Quoted Punctuation</string>
+        <key>scope</key>
+        <string>markup.quote punctuation</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#b16286</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>Markdown List</string>
         <key>scope</key>
-        <string>markup.list, punctuation.definition.list_item.markdown, punctuation.definition.list_item.number</string>
+        <string>markup.list</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
           <string>#076678</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Markdown List Punctuation</string>
+        <key>scope</key>
+        <string>markup.list punctuation</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#458588</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Markdown Separators</string>
+        <key>scope</key>
+        <string>meta.separator.markdown</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#928374</string>
         </dict>
       </dict>
       <dict>
@@ -1269,6 +1302,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>bce221eb-b77a-4702-bd95-9d15947f390f</string>
+    <string>f363046d-ee59-4815-b4bd-00c914a694b5</string>
   </dict>
 </plist>
