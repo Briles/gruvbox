@@ -217,6 +217,8 @@ module.exports = function (values) {
           'storage.modifier.package',
           'storage.modifier.import',
           'storage.type.import',
+          'variable.package',
+          'variable.import',
         ],
         settings: {
           foreground: c.foreground,
@@ -242,6 +244,7 @@ module.exports = function (values) {
           'variable.interpolation variable',
           'variable.other.interpolation variable',
           'variable.parameter.sass',
+          'entity.name.val.declaration',
         ],
         settings: {
           foreground: c.bnp.blue,

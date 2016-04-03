@@ -197,7 +197,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>storage.modifier.import, storage.modifier.package, storage.type.import</string>
+        <string>storage.modifier.import, storage.modifier.package, storage.type.import, variable.import, variable.package</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -219,7 +219,7 @@
         <key>name</key>
         <string>Variables</string>
         <key>scope</key>
-        <string>entity.name.variable, meta.definition.variable, variable, variable.interpolation variable, variable.other.interpolation variable, variable.parameter.sass</string>
+        <string>entity.name.val.declaration, entity.name.variable, meta.definition.variable, variable, variable.interpolation variable, variable.other.interpolation variable, variable.parameter.sass</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1302,6 +1302,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>7d0b0cbd-adc3-4378-b7b0-4d1bfd8cc52c</string>
+    <string>6776a051-1d19-43f0-88cb-f0abe96a15b5</string>
   </dict>
 </plist>
