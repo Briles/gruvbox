@@ -133,7 +133,7 @@
         <key>name</key>
         <string>Template String Punctuation</string>
         <key>scope</key>
-        <string>entity.name.tag.mustache, punctuation.definition.template-expression, punctuation.quasi, punctuation.section.embedded, string.interpolated, variable.other.interpolation.scss</string>
+        <string>entity.name.tag.mustache, entity.tag.tagbraces, punctuation.definition.template-expression, punctuation.quasi, punctuation.section.embedded, string.interpolated, variable.other.interpolation.scss</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -177,7 +177,7 @@
         <key>name</key>
         <string>Constants Punctuation</string>
         <key>scope</key>
-        <string>constant.other.color punctuation.definition.constant, constant.other.color.rgb-value.scss, constant.other.unit, keyword.other.unit</string>
+        <string>constant.other.color punctuation.definition.constant, constant.other.color.rgb-value.scss, constant.other.unit, keyword.other.unit, punctuation.section.flowtype</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -219,7 +219,7 @@
         <key>name</key>
         <string>Variables</string>
         <key>scope</key>
-        <string>entity.name.val.declaration, entity.name.variable, meta.definition.variable, variable, variable.interpolation variable, variable.other.interpolation variable, variable.parameter.output.function.matlab, variable.parameter.sass</string>
+        <string>entity.name.val.declaration, entity.name.variable, meta.definition.variable, storage.type.variable, variable, variable.interpolation variable, variable.other.interpolation variable, variable.parameter.output.function.matlab, variable.parameter.sass</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1302,6 +1302,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>47550f3b-6f27-43eb-bd5a-40a024364425</string>
+    <string>5015c100-d1ff-4c0e-84df-ddc6e8059615</string>
   </dict>
 </plist>

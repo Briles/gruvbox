@@ -137,6 +137,7 @@ module.exports = function (values) {
           'punctuation.section.embedded',
           'string.interpolated',
           'variable.other.interpolation.scss',
+          'entity.tag.tagbraces',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -194,6 +195,7 @@ module.exports = function (values) {
           'constant.other.color.rgb-value.scss',
           'constant.other.unit',
           'keyword.other.unit',
+          'punctuation.section.flowtype',
         ],
         settings: {
           foreground: c.neutralPurple,
@@ -247,6 +249,7 @@ module.exports = function (values) {
           'variable.parameter.sass',
           'entity.name.val.declaration',
           'variable.parameter.output.function.matlab',
+          'storage.type.variable',
         ],
         settings: {
           foreground: c.bnp.blue,
