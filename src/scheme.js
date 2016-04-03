@@ -77,9 +77,8 @@ module.exports = function (values) {
           'comment',
           'string.comment',
           'markup.strikethrough',
-          'punctuation.definition.comment',
-          'punctuation.whitespace.comment',
           'text.cancelled',
+          'comment punctuation',
         ],
         settings: {
           fontStyle: 'italic',
