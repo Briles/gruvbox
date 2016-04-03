@@ -1231,26 +1231,26 @@ module.exports = function (values) {
     },
 
     /**
-     * Literal Folder Icons
+     * Circle Folder Icons
      */
 
     {
       class: 'icon_folder',
-      settings: [stOpts.enableLiteralFolderIcons],
+      settings: [stOpts.enableCircleFolderIcons],
 
-      'layer1.texture': `${paths.commons}folder__literal.png`,
-      'layer2.texture': `${paths.this}folder__literal--hover.png`,
-      'layer3.texture': `${paths.this}folder__literal--expanded.png`,
+      'layer1.texture': `${paths.commons}folder.png`,
+      'layer2.texture': `${paths.this}folder--expanded.png`,
+      'layer3.texture': `${paths.this}folder--expanded.png`,
     },
 
     // Symlinked
     {
       class: 'icon_folder_dup',
-      settings: [stOpts.enableLiteralFolderIcons],
+      settings: [stOpts.enableCircleFolderIcons],
 
-      'layer0.texture': `${paths.commons}folder__literal_dup.png`,
-      'layer1.texture': `${paths.this}folder__literal_dup--hover.png`,
-      'layer2.texture': `${paths.this}folder__literal_dup--expanded.png`,
+      'layer0.texture': `${paths.commons}folder_dup.png`,
+      'layer1.texture': `${paths.this}folder_dup--expanded.png`,
+      'layer2.texture': `${paths.this}folder_dup--expanded.png`,
     },
 
     /**

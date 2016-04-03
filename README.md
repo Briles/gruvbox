@@ -18,8 +18,8 @@ Based on [gruvbox for Vim](https://github.com/morhetz/gruvbox)
 
 > &mdash; <cite>[Pavel Pertsev](https://github.com/morhetz), creator of gruvbox for Vim</cite>
 
-![Screenshot Dark](http://i.imgur.com/VyXrbOv.png)
-![Screenshot Light](http://i.imgur.com/1UHJx8B.png)
+![Screenshot Dark](http://i.imgur.com/8WUkqa5.png)
+![Screenshot Light](http://i.imgur.com/hdxzwzP.png)
 
 Contrast options
 ----------------
@@ -332,14 +332,14 @@ Use square folder icons in the sidebar
 "gruvbox_enable_square_folder_icons": true,
 ```
 
-##### Literal Folder Icons
+##### Circle Folder Icons
 
-![Literal Folder Icons](http://i.imgur.com/gw7mNjI.png)
+![Circle Folder Icons](http://i.imgur.com/KgAedvC.png)
 
-Use 'literal' folder icons in the sidebar
+Use 'circle' folder icons in the sidebar
 
 ```json
-"gruvbox_enable_literal_folder_icons": true,
+"gruvbox_enable_circle_folder_icons": true,
 ```
 
 ##### Plus/Minus Folder Icons

@@ -101,19 +101,20 @@ module.exports = function (values) {
         color: color.this,
       },
 
+      // Folder Default
       {
         class: 'icon_folder',
 
-        'layer2.texture': `${assets.this}folder--expanded.png`,
-        'layer3.texture': `${assets.this}folder--expanded.png`,
+        'layer2.texture': `${assets.this}folder__literal--hover.png`,
+        'layer3.texture': `${assets.this}folder__literal--expanded.png`,
       },
 
       // Folder Symlink
       {
         class: 'icon_folder_dup',
 
-        'layer1.texture': `${assets.this}folder_dup--expanded.png`,
-        'layer2.texture': `${assets.this}folder_dup--expanded.png`,
+        'layer1.texture': `${assets.this}folder__literal_dup--hover.png`,
+        'layer2.texture': `${assets.this}folder__literal_dup--expanded.png`,
       },
 
       // Tab Scroll Left
@@ -450,8 +451,8 @@ module.exports = function (values) {
         class: 'icon_folder',
         settings: [stOpts.accentOpposite],
 
-        'layer2.texture': `${assets.opposite}folder--expanded.png`,
-        'layer3.texture': `${assets.opposite}folder--expanded.png`,
+        'layer2.texture': `${assets.opposite}folder__literal--hover.png`,
+        'layer3.texture': `${assets.opposite}folder__literal--expanded.png`,
       },
 
       // Folder Symlink
@@ -459,8 +460,8 @@ module.exports = function (values) {
         class: 'icon_folder_dup',
         settings: [stOpts.accentOpposite],
 
-        'layer1.texture': `${assets.opposite}folder_dup--expanded.png`,
-        'layer2.texture': `${assets.opposite}folder_dup--expanded.png`,
+        'layer1.texture': `${assets.opposite}folder__literal_dup--hover.png`,
+        'layer2.texture': `${assets.opposite}folder__literal_dup--expanded.png`,
       },
 
       // Tab Scroll Left
@@ -826,8 +827,8 @@ module.exports = function (values) {
         class: 'icon_folder',
         settings: [stOpts.accentNeutral],
 
-        'layer2.texture': `${assets.neutral}folder--expanded.png`,
-        'layer3.texture': `${assets.neutral}folder--expanded.png`,
+        'layer2.texture': `${assets.neutral}folder__literal--hover.png`,
+        'layer3.texture': `${assets.neutral}folder__literal--expanded.png`,
       },
 
       // Folder Symlink
@@ -835,8 +836,8 @@ module.exports = function (values) {
         class: 'icon_folder_dup',
         settings: [stOpts.accentNeutral],
 
-        'layer1.texture': `${assets.neutral}folder_dup--expanded.png`,
-        'layer2.texture': `${assets.neutral}folder_dup--expanded.png`,
+        'layer1.texture': `${assets.neutral}folder__literal_dup--hover.png`,
+        'layer2.texture': `${assets.neutral}folder__literal_dup--expanded.png`,
       },
 
       // Tab Scroll Left
@@ -1160,24 +1161,24 @@ module.exports = function (values) {
       },
 
       /**
-       * Literal Folder Icons
+       * Circle Folder Icons
        */
 
       {
         class: 'icon_folder',
-        settings: [stOpts.enableLiteralFolderIcons],
+        settings: [stOpts.enableCircleFolderIcons],
 
-        'layer2.texture': `${assets.this}folder__literal--hover.png`,
-        'layer3.texture': `${assets.this}folder__literal--expanded.png`,
+        'layer2.texture': `${assets.this}folder--expanded.png`,
+        'layer3.texture': `${assets.this}folder--expanded.png`,
       },
 
       // Symlinked
       {
         class: 'icon_folder_dup',
-        settings: [stOpts.enableLiteralFolderIcons],
+        settings: [stOpts.enableCircleFolderIcons],
 
-        'layer1.texture': `${assets.this}folder__literal_dup--hover.png`,
-        'layer2.texture': `${assets.this}folder__literal_dup--expanded.png`,
+        'layer1.texture': `${assets.this}folder_dup--expanded.png`,
+        'layer2.texture': `${assets.this}folder_dup--expanded.png`,
       },
 
       /**
@@ -1232,19 +1233,19 @@ module.exports = function (values) {
 
       {
         class: 'icon_folder',
-        settings: [stOpts.enableLiteralFolderIcons, stOpts.accentOpposite],
+        settings: [stOpts.enableCircleFolderIcons, stOpts.accentOpposite],
 
-        'layer2.texture': `${assets.opposite}folder__literal--hover.png`,
-        'layer3.texture': `${assets.opposite}folder__literal--expanded.png`,
+        'layer2.texture': `${assets.opposite}folder--expanded.png`,
+        'layer3.texture': `${assets.opposite}folder--expanded.png`,
       },
 
       // Symlinked
       {
         class: 'icon_folder_dup',
-        settings: [stOpts.enableLiteralFolderIcons, stOpts.accentOpposite],
+        settings: [stOpts.enableCircleFolderIcons, stOpts.accentOpposite],
 
-        'layer1.texture': `${assets.opposite}folder__literal_dup--hover.png`,
-        'layer2.texture': `${assets.opposite}folder__literal_dup--expanded.png`,
+        'layer1.texture': `${assets.opposite}folder_dup--expanded.png`,
+        'layer2.texture': `${assets.opposite}folder_dup--expanded.png`,
       },
 
       /**
@@ -1299,19 +1300,19 @@ module.exports = function (values) {
 
       {
         class: 'icon_folder',
-        settings: [stOpts.enableLiteralFolderIcons, stOpts.accentNeutral],
+        settings: [stOpts.enableCircleFolderIcons, stOpts.accentNeutral],
 
-        'layer2.texture': `${assets.neutral}folder__literal--hover.png`,
-        'layer3.texture': `${assets.neutral}folder__literal--expanded.png`,
+        'layer2.texture': `${assets.neutral}folder--expanded.png`,
+        'layer3.texture': `${assets.neutral}folder--expanded.png`,
       },
 
       // Symlinked
       {
         class: 'icon_folder_dup',
-        settings: [stOpts.enableLiteralFolderIcons, stOpts.accentNeutral],
+        settings: [stOpts.enableCircleFolderIcons, stOpts.accentNeutral],
 
-        'layer1.texture': `${assets.neutral}folder__literal_dup--hover.png`,
-        'layer2.texture': `${assets.neutral}folder__literal_dup--expanded.png`,
+        'layer1.texture': `${assets.neutral}folder_dup--expanded.png`,
+        'layer2.texture': `${assets.neutral}folder_dup--expanded.png`,
       },
 
       /**
