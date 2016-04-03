@@ -340,24 +340,79 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>Regular Expressions</string>
+        <string>Regular Expressions Text</string>
         <key>scope</key>
-        <string>string.regexp</string>
+        <string>source.regexp, string.regexp</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#fb4934</string>
+          <string>#b8bb26</string>
         </dict>
       </dict>
       <dict>
         <key>name</key>
-        <string>Embedded Ruby Regular Expressions</string>
+        <string>Regular Expressions Start &amp; End Punctuation</string>
         <key>scope</key>
-        <string>string.regexp.source.ruby.embedded</string>
+        <string>string.regexp punctuation.definition.string</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#bdae93</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Regular Expressions Character Class Punctuation ([])</string>
+        <key>scope</key>
+        <string>keyword.control.set.regexp, punctuation.definition.character-class, string.regexp.character-class.ruby</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#d3869b</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Regular Expressions Capturing Group</string>
+        <key>scope</key>
+        <string>string.regexp.group</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#f2e5bc</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Regular Expressions Assertions</string>
+        <key>scope</key>
+        <string>constant.other.assertion.regexp, punctuation.definition.group.assertion.regexp, punctuation.definition.group.capture.regexp</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#83a598</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Regular Expressions Character Class</string>
+        <key>scope</key>
+        <string>constant.other.character-class.escape.backslash.regexp, keyword.control.character-class.regexp, string.regexp.character-class constant.character.escape</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
           <string>#fabd2f</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Regular Expressions Quantifiers &amp; Operators</string>
+        <key>scope</key>
+        <string>string.regexp.arbitrary-repetition, string.regexp.arbitrary-repetition punctuation</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#8ec07c</string>
         </dict>
       </dict>
       <dict>
@@ -1214,6 +1269,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>5749c3a1-e89b-43a7-bd29-cefee6d6c01b</string>
+    <string>1bd6a27c-811b-47cb-b388-15b99b4a830d</string>
   </dict>
 </plist>

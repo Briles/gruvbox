@@ -364,22 +364,80 @@ module.exports = function (values) {
       },
 
       {
-        name: 'Regular Expressions',
+        name: 'Regular Expressions Text',
         scope: [
           'string.regexp',
+          'source.regexp',
         ],
         settings: {
-          foreground: c.bnp.red,
+          foreground: c.bnp.green,
         },
       },
 
       {
-        name: 'Embedded Ruby Regular Expressions',
+        name: 'Regular Expressions Start & End Punctuation',
         scope: [
-          'string.regexp.source.ruby.embedded',
+          'string.regexp punctuation.definition.string',
+        ],
+        settings: {
+          foreground: c.bnp.fg3,
+        },
+      },
+
+      {
+        name: 'Regular Expressions Character Class Punctuation ([])',
+        scope: [
+          'keyword.control.set.regexp',
+          'punctuation.definition.character-class',
+          'string.regexp.character-class.ruby',
+        ],
+        settings: {
+          foreground: c.bnp.purple,
+        },
+      },
+
+      {
+        name: 'Regular Expressions Capturing Group',
+        scope: [
+          'string.regexp.group',
+        ],
+        settings: {
+          foreground: c.foreground,
+        },
+      },
+
+      {
+        name: 'Regular Expressions Assertions',
+        scope: [
+          'constant.other.assertion.regexp',
+          'punctuation.definition.group.assertion.regexp',
+          'punctuation.definition.group.capture.regexp',
+        ],
+        settings: {
+          foreground: c.bnp.blue,
+        },
+      },
+
+      {
+        name: 'Regular Expressions Character Class',
+        scope: [
+          'keyword.control.character-class.regexp',
+          'constant.other.character-class.escape.backslash.regexp',
+          'string.regexp.character-class constant.character.escape',
         ],
         settings: {
           foreground: c.bnp.yellow,
+        },
+      },
+
+      {
+        name: 'Regular Expressions Quantifiers & Operators',
+        scope: [
+          'string.regexp.arbitrary-repetition',
+          'string.regexp.arbitrary-repetition punctuation',
+        ],
+        settings: {
+          foreground: c.bnp.aqua,
         },
       },
 
