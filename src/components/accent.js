@@ -1203,6 +1203,27 @@ module.exports = function (values) {
       },
 
       /**
+       * Spacegray Folder Icons
+       */
+
+      {
+        class: 'icon_folder',
+        settings: [stOpts.enableSpacegrayFolderIcons],
+
+        'layer2.texture': `${spacegray.this}folder--hover.png`,
+        'layer3.texture': `${spacegray.this}folder--expanded.png`,
+      },
+
+      // Symlinked Folder Icon
+      {
+        class: 'icon_folder_dup',
+        settings: [stOpts.enableSpacegrayFolderIcons],
+
+        'layer1.texture': `${spacegray.this}folder_dup--hover.png`,
+        'layer2.texture': `${spacegray.this}folder_dup--expanded.png`,
+      },
+
+      /**
        * Opposite Colors
        */
 
@@ -1228,7 +1249,7 @@ module.exports = function (values) {
       },
 
       /**
-       * Literal Folder Icons
+       * Circle Folder Icons
        */
 
       {
@@ -1270,6 +1291,27 @@ module.exports = function (values) {
       },
 
       /**
+       * Spacegray Folder Icons
+       */
+
+      {
+        class: 'icon_folder',
+        settings: [stOpts.enableSpacegrayFolderIcons, stOpts.accentOpposite],
+
+        'layer2.texture': `${spacegray.opposite}folder--hover.png`,
+        'layer3.texture': `${spacegray.opposite}folder--expanded.png`,
+      },
+
+      // Symlinked Folder Icon
+      {
+        class: 'icon_folder_dup',
+        settings: [stOpts.enableSpacegrayFolderIcons, stOpts.accentOpposite],
+
+        'layer1.texture': `${spacegray.opposite}folder_dup--hover.png`,
+        'layer2.texture': `${spacegray.opposite}folder_dup--expanded.png`,
+      },
+
+      /**
        * Neutral Colors
        */
 
@@ -1295,7 +1337,7 @@ module.exports = function (values) {
       },
 
       /**
-       * Literal Folder Icons
+       * Circle Folder Icons
        */
 
       {
@@ -1334,6 +1376,27 @@ module.exports = function (values) {
 
         'layer1.texture': `${assets.neutral}folder__plus_minus_dup--hover.png`,
         'layer2.texture': `${assets.neutral}folder__plus_minus_dup--expanded.png`,
+      },
+
+      /**
+       * Spacegray Folder Icons
+       */
+
+      {
+        class: 'icon_folder',
+        settings: [stOpts.enableSpacegrayFolderIcons, stOpts.accentNeutral],
+
+        'layer2.texture': `${spacegray.neutral}folder--hover.png`,
+        'layer3.texture': `${spacegray.neutral}folder--expanded.png`,
+      },
+
+      // Symlinked Folder Icon
+      {
+        class: 'icon_folder_dup',
+        settings: [stOpts.enableSpacegrayFolderIcons, stOpts.accentNeutral],
+
+        'layer1.texture': `${spacegray.neutral}folder_dup--hover.png`,
+        'layer2.texture': `${spacegray.neutral}folder_dup--expanded.png`,
       },
 
       /**

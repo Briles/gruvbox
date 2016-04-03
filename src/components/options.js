@@ -1277,6 +1277,30 @@ module.exports = function (values) {
     },
 
     /**
+     * Spacegray Folder Icons
+     */
+
+    // Folder Icon
+    {
+      class: 'icon_folder',
+      settings: [stOpts.enableSpacegrayFolderIcons],
+
+      'layer1.texture': `${paths.commons}spacegray__folder.png`, // Default
+      'layer2.texture': `${paths.this}spacegray__folder--hover.png`, // Hover
+      'layer3.texture': `${paths.this}spacegray__folder--expanded.png`, // Expanded
+    },
+
+    // Symlinked Folder Icon
+    {
+      class: 'icon_folder_dup',
+      settings: [stOpts.enableSpacegrayFolderIcons],
+
+      'layer0.texture': `${paths.commons}spacegray__folder_dup.png`, // Default
+      'layer1.texture': `${paths.this}spacegray__folder_dup--hover.png`, // Hover
+      'layer2.texture': `${paths.this}spacegray__folder_dup--expanded.png`, // Expanded
+    },
+
+    /**
      * Sidebar Font Sizes
      */
 

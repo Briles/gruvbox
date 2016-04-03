@@ -37,6 +37,7 @@ module.exports = {
   enableCircleFolderIcons: 'gruvbox_folder_icons_circle',
   enablePanelCloseButton: 'gruvbox_enable_panel_close_button',
   enablePlusMinusFolderIcons: 'gruvbox_folder_icons_plus_minus',
+  enableSpacegrayFolderIcons: 'gruvbox_folder_icons_spacegray',
   enableSquareFolderIcons: 'gruvbox_folder_icons_square',
   enableSidebarBorder: 'gruvbox_enable_sidebar_border',
   enableStatusbarBorder: 'gruvbox_enable_statusbar_border',

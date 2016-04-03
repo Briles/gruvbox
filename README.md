@@ -352,6 +352,14 @@ Use 'plus/minus' folder icons in the sidebar
 "gruvbox_folder_icons_plus_minus": true,
 ```
 
+##### Spacegray Folder Icons
+
+Use spacegray-like folder icons in the sidebar
+
+```json
+"gruvbox_folder_icons_spacegray": true,
+```
+
 #### Alternate Icon Sets
 
 ##### Spacegray
