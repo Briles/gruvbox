@@ -75,6 +75,7 @@ module.exports = function (values) {
         scope: [
           'comment text',
           'comment',
+          'string.comment',
           'markup.strikethrough',
           'punctuation.definition.comment',
           'punctuation.whitespace.comment',
