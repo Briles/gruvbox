@@ -229,6 +229,7 @@ module.exports = function (values) {
         name: 'Function Keyword',
         scope: [
           'storage.type.function',
+          'meta.function storage.type.matlab',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -245,6 +246,7 @@ module.exports = function (values) {
           'variable.other.interpolation variable',
           'variable.parameter.sass',
           'entity.name.val.declaration',
+          'variable.parameter.output.function.matlab',
         ],
         settings: {
           foreground: c.bnp.blue,
