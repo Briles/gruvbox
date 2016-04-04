@@ -89,7 +89,7 @@ svg {
   a {
     text-decoration: none;
   }
-  cite a {
+  cite a:first-child {
     transition: $--transition;
     animation-duration: 3500ms;
     animation-play-state: paused;

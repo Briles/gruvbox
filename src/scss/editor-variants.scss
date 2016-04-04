@@ -189,13 +189,13 @@
     .info {
       border-top-color: (map-get($bnp, 'bg1'));
       border-bottom-color: (map-get($bnp, 'bg2'));
-      > a {
+      a {
         color: grayscale(map-get($bnp, 'fg1'));
         &:hover {
           color: grayscale($foreground);
         }
       }
-      cite a {
+      cite a:first-child {
         animation-name: spin-colors-#{$brightness-identifier};
 
         color: map-get($bnp, 'red');
