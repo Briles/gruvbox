@@ -186,6 +186,22 @@
                 "default": 11,
                 "defaultLabel": "11 (Default)",
                 "info": "Change the font size of the status bar labels"
+            },
+            "Status Bar Button Width": {
+                "group": "statusbarButtonWidth",
+                "prefix": "statusbar-button-width-",
+                "values": [
+                    "xxs",
+                    "xs",
+                    "s",
+                    "Default",
+                    "l",
+                    "xl",
+                    "xxl"
+                ],
+                "default": "Default",
+                "defaultLabel": "Default",
+                "info": "Change the minimum width of the status bar buttons"
             }
         },
         "single": {

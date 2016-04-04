@@ -203,6 +203,14 @@
   }
 }
 
+@each $k, $v in $opt-statusbar-button-width {
+  .statusbar-button-width-#{$k} {
+    .status-button li {
+      min-width: $v * 1px;
+    }
+  }
+}
+
 .findreplace {
   padding: 15px 14px;
 
@@ -407,8 +415,9 @@
 
     display: inline-block;
 
+    box-sizing: content-box;
     min-width: 75px;
-    padding: 0 12px;
+    padding: 0 16px;
 
     cursor: default;
     text-align: center;
