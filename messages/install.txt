@@ -251,6 +251,19 @@ Theme options:
   "gruvbox_scrollbar_width_xl": true,  //  v  20
 
 
+  Button Font Sizes
+
+        Adjust the font size of the buttons
+
+  "gruvbox_buttons_font_size_10": true,  //  v  10
+                                         //  |  11 (Default)
+  "gruvbox_buttons_font_size_12": true,  //  |  12
+  "gruvbox_buttons_font_size_13": true,  //  |  13
+  "gruvbox_buttons_font_size_14": true,  //  |  14
+  "gruvbox_buttons_font_size_15": true,  //  |  15
+  "gruvbox_buttons_font_size_16": true,  //  v  16
+
+
   Alternate Folder Icons
 
         Use square folder icons in the sidebar

@@ -4153,6 +4153,78 @@
     "font.size": 16
   },
   {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_buttons_font_size_10"
+    ],
+    "parents": [
+      {
+        "class": "button_control"
+      }
+    ],
+    "font.size": 10
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_buttons_font_size_12"
+    ],
+    "parents": [
+      {
+        "class": "button_control"
+      }
+    ],
+    "font.size": 12
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_buttons_font_size_13"
+    ],
+    "parents": [
+      {
+        "class": "button_control"
+      }
+    ],
+    "font.size": 13
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_buttons_font_size_14"
+    ],
+    "parents": [
+      {
+        "class": "button_control"
+      }
+    ],
+    "font.size": 14
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_buttons_font_size_15"
+    ],
+    "parents": [
+      {
+        "class": "button_control"
+      }
+    ],
+    "font.size": 15
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_buttons_font_size_16"
+    ],
+    "parents": [
+      {
+        "class": "button_control"
+      }
+    ],
+    "font.size": 16
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       251,
