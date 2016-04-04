@@ -42,10 +42,6 @@
         .findreplace {
           border-top-color: $border;
           background-color: $container;
-          input {
-            color: $foreground;
-            background-color: $background;
-          }
           button {
             color: grayscale($foreground);
             &:hover {
@@ -70,6 +66,28 @@
           }
         }
 
+        .command-palette-wrapper {
+          border-color: $border;
+          background-color: $container;
+        }
+
+        .command-palette-header {
+          border-bottom-color: $border;
+        }
+
+        .commands li {
+          border-bottom-color: $border;
+          &.selected, &:hover {
+            background-color: $panel-row;
+          }
+        }
+
+        .command-palette-wrapper, .findreplace {
+          input {
+            color: $foreground;
+            background-color: $background;
+          }
+        }
         /**
          * Configurator
          */
@@ -154,6 +172,14 @@
             border-right-color: $border-softer;
             border-left-color: $border-softer;
           }
+
+          .command-palette-wrapper {
+            background-color: $container-softer;
+          }
+
+          .command-palette-wrapper, .command-palette-header, .commands li {
+            border-color: $border-softer;
+          }
         }
 
         /**
@@ -176,6 +202,14 @@
         }
       }
       // END CONTRAST MODES
+    }
+
+    .command-palette-wrapper {
+      color: grayscale(map-get($bnp, 'fg4'));
+    }
+
+    .commands li .match {
+      color: grayscale(map-get($bnp, 'fg1'));
     }
 
     a {

@@ -158,3 +158,15 @@ svg {
     display: none;
   }
 }
+
+//  Scrollbar
+::-webkit-scrollbar {
+  width: 14px;
+  height: 16px;
+}
+::-webkit-scrollbar-track {
+  border-left: 1px solid $transparent;
+}
+::-webkit-scrollbar-thumb {
+  border: 4px solid $transparent;
+}

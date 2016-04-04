@@ -30,6 +30,10 @@
     }
   }
 
+  .commands li .match {
+    color: $color;
+  }
+
   /**
    * Underline Modified Tabs
    */
@@ -46,4 +50,15 @@
       background-color: $color;
     }
   }
+}
+
+@mixin widget-input {
+  font-family: $--font-stack-monospaced;
+  font-size: 15px;
+
+  min-height: 36px;
+  padding: 4px;
+
+  border: 0;
+  outline: none;
 }

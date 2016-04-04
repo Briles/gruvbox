@@ -226,16 +226,9 @@
     align-items: stretch;
   }
   input {
-    font-family: $--font-stack-monospaced;
-    font-size: 15px;
+    @include widget-input;
 
     display: flex;
-
-    min-height: 36px;
-    padding: 4px;
-
-    border: 0;
-    outline: none;
 
     flex: 1 1 auto;
     + .icon {
@@ -308,28 +301,15 @@
   overflow-y: auto;
 
   white-space: nowrap;
-
-  //  Scrollbar
-  &::-webkit-scrollbar {
-    width: 14px;
-    height: 16px;
-  }
-  &::-webkit-scrollbar-track {
-    border-left: 1px solid $transparent;
-  }
-  &::-webkit-scrollbar-thumb {
-    border: 4px solid $transparent;
-  }
 }
 
 // Set the scrollbar thumb background manually
-
-.dark .code::-webkit-scrollbar-thumb {
+.dark ::-webkit-scrollbar-thumb {
   background: $dark-bg0_s;
   background-clip: padding-box;
 }
 
-.light .code::-webkit-scrollbar-thumb {
+.light ::-webkit-scrollbar-thumb {
   background: $light-bg2;
   background-clip: padding-box;
 }
@@ -441,7 +421,7 @@
   .statusbar, .findreplace {
     border-top: 0;
   }
-  .tabs {
+  .tabs, .commands li, .command-palette-header {
     border-bottom: 0;
   }
   .sidebar, .tab {
@@ -450,7 +430,10 @@
   .tab {
     border-left: 0;
   }
-  .code::-webkit-scrollbar-track {
+  .command-palette-wrapper {
+    border: 0;
+  }
+  ::-webkit-scrollbar-track {
     border-left: 0 !important;
   }
 }

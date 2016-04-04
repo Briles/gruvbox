@@ -1,0 +1,53 @@
+.command-palette-wrapper {
+  line-height: initial;
+
+  position: absolute;
+  z-index: 100001;
+  top: 100%;
+  left: 50%;
+
+  min-width: 320px;
+
+  transform: translateX(-50%);
+
+  border: 1px solid $transparent;
+}
+
+.command-palette-header {
+  padding: 18px;
+
+  border-bottom: 1px solid $transparent;
+  input {
+    @include widget-input;
+
+    display: block;
+
+    width: 100%;
+  }
+}
+.command-palette-body {
+  overflow: auto;
+
+  max-height: (46px * 7) - 1px;
+}
+
+.commands {
+  display: block;
+
+  list-style-type: none;
+  li {
+    font-size: 13px;
+
+    padding: 14px;
+
+    cursor: default;
+
+    border-bottom: 1px solid $transparent;
+    .match {
+      font-weight: bold;
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
