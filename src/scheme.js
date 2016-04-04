@@ -28,9 +28,9 @@ module.exports = function (values) {
           activeGuide: c.ruler,
           stackGuide: c.guideAlt,
           bracketContentsOptions: 'underline',
-          bracketContentsForeground: c.bnp.fg4,
+          bracketContentsForeground: c.bnp.fg3,
           bracketsOptions: 'underline',
-          bracketsForeground: c.bnp.fg4,
+          bracketsForeground: c.bnp.fg3,
           gutterForeground: c.bnp.gray,
           highlight: c.foreground,
           highlightForeground: c.foreground,
@@ -990,7 +990,7 @@ module.exports = function (values) {
           'brackethighlighter.tag',
         ],
         settings: {
-          foreground: c.bnp.fg4,
+          foreground: c.bnp.fg3,
         },
       },
 
@@ -1000,7 +1000,7 @@ module.exports = function (values) {
           'brackethighlighter.curly',
         ],
         settings: {
-          foreground: c.bnp.fg4,
+          foreground: c.bnp.fg3,
         },
       },
 
@@ -1010,7 +1010,7 @@ module.exports = function (values) {
           'brackethighlighter.round',
         ],
         settings: {
-          foreground: c.bnp.fg4,
+          foreground: c.bnp.fg3,
         },
       },
 
@@ -1020,7 +1020,7 @@ module.exports = function (values) {
           'brackethighlighter.square',
         ],
         settings: {
-          foreground: c.bnp.fg4,
+          foreground: c.bnp.fg3,
         },
       },
 
@@ -1030,7 +1030,7 @@ module.exports = function (values) {
           'brackethighlighter.angle',
         ],
         settings: {
-          foreground: c.bnp.fg4,
+          foreground: c.bnp.fg3,
         },
       },
 
@@ -1040,7 +1040,7 @@ module.exports = function (values) {
           'brackethighlighter.quote',
         ],
         settings: {
-          foreground: c.bnp.fg4,
+          foreground: c.bnp.fg3,
         },
       },
 

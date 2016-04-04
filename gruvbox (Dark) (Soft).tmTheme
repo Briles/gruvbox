@@ -40,11 +40,11 @@
           <key>bracketContentsOptions</key>
           <string>underline</string>
           <key>bracketContentsForeground</key>
-          <string>#a89984</string>
+          <string>#bdae93</string>
           <key>bracketsOptions</key>
           <string>underline</string>
           <key>bracketsForeground</key>
-          <string>#a89984</string>
+          <string>#bdae93</string>
           <key>gutterForeground</key>
           <string>#928374</string>
           <key>highlight</key>
@@ -962,7 +962,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#a89984</string>
+          <string>#bdae93</string>
         </dict>
       </dict>
       <dict>
@@ -973,7 +973,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#a89984</string>
+          <string>#bdae93</string>
         </dict>
       </dict>
       <dict>
@@ -984,7 +984,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#a89984</string>
+          <string>#bdae93</string>
         </dict>
       </dict>
       <dict>
@@ -995,7 +995,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#a89984</string>
+          <string>#bdae93</string>
         </dict>
       </dict>
       <dict>
@@ -1006,7 +1006,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#a89984</string>
+          <string>#bdae93</string>
         </dict>
       </dict>
       <dict>
@@ -1017,7 +1017,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#a89984</string>
+          <string>#bdae93</string>
         </dict>
       </dict>
       <dict>
@@ -1302,6 +1302,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>2ebe6c7e-1c19-46aa-88e1-4551e0555bfa</string>
+    <string>3f22a1df-add1-4d41-9f22-a3ed3b8cf237</string>
   </dict>
 </plist>
