@@ -154,6 +154,22 @@
                 "default": "Off",
                 "defaultValue": "",
                 "info": "Underline modified tabs with the current accent color"
+            },
+            "Buttons Font Size": {
+                "group": "buttonsFontSize",
+                "prefix": "buttons-font-size-",
+                "values": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16
+                ],
+                "default": 11,
+                "defaultLabel": "11 (Default)",
+                "info": "Change the font size of the button labels"
             }
         },
         "single": {

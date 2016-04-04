@@ -260,6 +260,14 @@
   }
 }
 
+@each $v in $opt-buttons-font-size {
+  .buttons-font-size-#{$v} {
+    button {
+      font-size: $v + 1px;
+    }
+  }
+}
+
 .icon-bar {
   display: inline-block;
 
