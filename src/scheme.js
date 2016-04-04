@@ -184,6 +184,7 @@ module.exports = function (values) {
           'keyword.operator',
           'keyword.other.arrow',
           'keyword.other.double-colon',
+          'keyword.control.operator',
         ],
         settings: {
           foreground: c.bnp.aqua,

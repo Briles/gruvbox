@@ -166,7 +166,7 @@
         <key>name</key>
         <string>Operators</string>
         <key>scope</key>
-        <string>keyword.control.new, keyword.operator, keyword.other.arrow, keyword.other.double-colon</string>
+        <string>keyword.control.new, keyword.control.operator, keyword.operator, keyword.other.arrow, keyword.other.double-colon</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1302,6 +1302,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>784b88d9-0715-4e55-b684-8c80ea1a969f</string>
+    <string>7217c454-9d26-41dd-b1ca-1c04e72f5aaf</string>
   </dict>
 </plist>
