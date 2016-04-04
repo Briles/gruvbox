@@ -52,6 +52,20 @@
   }
 }
 
+/**
+ * Disable Command Palette Row Border
+ */
+
+.no-command-palette-borders {
+  .commands li, .command-palette-header {
+    border-bottom: 0;
+  }
+}
+
+/**
+ * Command Palette Spacing
+ */
+
 @each $k, $v in $opt-command-palette-spacing {
   .command-palette-#{$k} {
     .commands li {

@@ -262,6 +262,11 @@
                 "group": "disablePanelsButton",
                 "trueValue": "disable-panels-button",
                 "info": "Hide the panel-switching button"
+            },
+            "Disable Command Palette Row Border": {
+                "group": "disableCommandPaletteRowBorders",
+                "trueValue": "no-command-palette-borders",
+                "info": "Disable Command Palette row borders"
             }
         }
     }
