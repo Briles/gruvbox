@@ -30,20 +30,31 @@
     }
   }
 
-  /**
-   * Underline Modified Tabs
-   */
+  .commands li .match {
+    color: $color;
+  }
+
+  // Underline Modified Tabs
 
   &.underline-modified-tabs .tab.modified {
     border-bottom-color: $color;
   }
 
-  /**
-   * Colored Tooltips
-   */
+  // Colored Tooltips
   &.colored-tooltips {
     .tooltipped::after {
       background-color: $color;
     }
   }
+}
+
+@mixin widget-input {
+  font-family: $--font-stack-monospaced;
+  font-size: 15px;
+
+  min-height: 36px;
+  padding: 4px;
+
+  border: 0;
+  outline: none;
 }

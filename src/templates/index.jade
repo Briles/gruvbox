@@ -35,33 +35,37 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
           div
             h1 FOLDERS
             ul.tree-view
+              li(
+                ng-click="toggleCommandPalette()"
+                ng-class="{selected: commandPaletteVisible}"
+              ) {{commandPaletteVisible ? 'Hide' : 'Show'}} Command Palette
               li.directory.expanded
-                +icon-folder
+                +icon-folder-literal-open
                 |gruvbox
                 ul.tree-view
                   li.directory
-                    +icon-folder
+                    +icon-folder-literal
                     |.github
                   li.directory
-                    +icon-folder
+                    +icon-folder-literal
                     |assets
                   li.directory
-                    +icon-folder
+                    +icon-folder-literal
                     |extras
                   li.directory
-                    +icon-folder
+                    +icon-folder-literal
                     |icons
                   li.directory
-                    +icon-folder
+                    +icon-folder-literal
                     |messages
                   li.directory
-                    +icon-folder
+                    +icon-folder-literal
                     |prefs
                   li.directory
-                    +icon-folder
+                    +icon-folder-literal
                     |src
                   li.directory
-                    +icon-folder
+                    +icon-folder-literal
                     |widgets
                   li .gitignore
                   li .jscsrc
@@ -119,6 +123,7 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
             ) gruvbox on Package Control
               +icon-tab-dirty
             +icon-more
+            include ./includes/command-palette.jade
           .pane.code(ng-view)
       .pane.panel
         .pane.findreplace

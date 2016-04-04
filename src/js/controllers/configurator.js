@@ -1,6 +1,8 @@
 module.exports = function ($scope, $routeParams, $location) {
   'use strict';
 
+  $scope.commandPaletteVisible = false;
+
   $scope.conf = {
     brightness: 'dark',
     contrast: 'medium',
@@ -13,6 +15,10 @@ module.exports = function ($scope, $routeParams, $location) {
     tabFontSize: '',
     panelSize: '',
     underlineTabs: '',
+    buttonsFontSize: '',
+    statusbarFontSize: '',
+    statusbarButtonWidth: '',
+    commandPaletteSpacing: '',
   };
 
   var getConfiguration = function () {
@@ -35,5 +41,9 @@ module.exports = function ($scope, $routeParams, $location) {
 
   $scope.getLocation = function () {
     return $location.$$path;
+  };
+
+  $scope.toggleCommandPalette = function () {
+    $scope.commandPaletteVisible = $scope.commandPaletteVisible === false ? true : false;
   };
 };

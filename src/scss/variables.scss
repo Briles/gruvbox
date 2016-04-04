@@ -5,9 +5,7 @@ $--CONTRAST-MODES: ('soft', 'medium', 'hard');
 $--transition: all 200ms linear;
 $--border-radius: 3px;
 
-/**
- * Sublime Options
- */
+// Sublime Options
 
 $opt-sidebar-spacing: (
   'cramped': 1,
@@ -66,4 +64,38 @@ $opt-panel-size: (
   'l': 13,
   'xl': 15,
   'xxl': 17,
+);
+
+$opt-buttons-font-size: (
+  10,
+  12,
+  13,
+  14,
+  15,
+  16,
+);
+
+$opt-statusbar-font-size: (
+  10,
+  12,
+  13,
+  14,
+  15,
+  16,
+);
+
+$opt-statusbar-button-width: (
+  'xxs': 45,
+  'xs': 55,
+  's': 65,
+  'l': 85,
+  'xl': 95,
+  'xxl': 105,
+);
+
+$opt-command-palette-spacing: (
+  'cramped': 4,
+  'compact': 8,
+  'comfortable': 14,
+  'cozy': 16,
 );

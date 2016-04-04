@@ -154,6 +154,67 @@
                 "default": "Off",
                 "defaultValue": "",
                 "info": "Underline modified tabs with the current accent color"
+            },
+            "Buttons Font Size": {
+                "group": "buttonsFontSize",
+                "prefix": "buttons-font-size-",
+                "values": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16
+                ],
+                "default": 11,
+                "defaultLabel": "11 (Default)",
+                "info": "Change the font size of the button labels"
+            },
+            "Status Bar Font Size": {
+                "group": "statusbarFontSize",
+                "prefix": "statusbar-font-size-",
+                "values": [
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16
+                ],
+                "default": 11,
+                "defaultLabel": "11 (Default)",
+                "info": "Change the font size of the status bar labels"
+            },
+            "Status Bar Button Width": {
+                "group": "statusbarButtonWidth",
+                "prefix": "statusbar-button-width-",
+                "values": [
+                    "xxs",
+                    "xs",
+                    "s",
+                    "Default",
+                    "l",
+                    "xl",
+                    "xxl"
+                ],
+                "default": "Default",
+                "defaultLabel": "Default",
+                "info": "Change the minimum width of the status bar buttons"
+            },
+            "Command Palette Spacing": {
+                "group": "commandPaletteSpacing",
+                "prefix": "command-palette-",
+                "values": [
+                    "Cozy",
+                    "Comfortable",
+                    "Default",
+                    "Compact",
+                    "Cramped"
+                ],
+                "default": "Default",
+                "info": "Change the space between command palette rows"
             }
         },
         "single": {
@@ -201,6 +262,11 @@
                 "group": "disablePanelsButton",
                 "trueValue": "disable-panels-button",
                 "info": "Hide the panel-switching button"
+            },
+            "Disable Command Palette Row Border": {
+                "group": "disableCommandPaletteRowBorders",
+                "trueValue": "no-command-palette-borders",
+                "info": "Disable Command Palette row borders"
             }
         }
     }
