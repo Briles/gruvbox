@@ -34,17 +34,13 @@
     color: $color;
   }
 
-  /**
-   * Underline Modified Tabs
-   */
+  // Underline Modified Tabs
 
   &.underline-modified-tabs .tab.modified {
     border-bottom-color: $color;
   }
 
-  /**
-   * Colored Tooltips
-   */
+  // Colored Tooltips
   &.colored-tooltips {
     .tooltipped::after {
       background-color: $color;

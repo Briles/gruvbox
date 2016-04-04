@@ -34,7 +34,6 @@
         }
 
         .tabs {
-          color: grayscale(map-get($bnp, 'fg3'));
           border-bottom-color: $border;
           background-color: $container;
         }
@@ -88,12 +87,10 @@
             background-color: $background;
           }
         }
-        /**
-         * Configurator
-         */
+
+        // Configurator
         .config-sections {
           li {
-            border-color: map-get($bnp, 'bg2');
             &:nth-child(even) {
               background-color: lighten($background, 1);
             }
@@ -109,39 +106,7 @@
           }
         }
 
-        .checkbox {
-          input:checked + label .icon {
-            color: map-get($bnp, 'aqua');
-          }
-        }
-
-        .buffer li *::selection {
-          background: fade-out(map-get($bnp, 'bg1'), .01);
-        }
-
-        /**
-         * Syntax Highlighting
-         */
-
-        .punctuation {
-          color: $foreground;
-        }
-
-        .whitespace {
-          color: fade-out(map-get($bnp, 'fg1'), .5);
-        }
-
-        .string {
-          color: map-get($bnp, 'green');
-        }
-
-        .constant {
-          color: map-get($bnp, 'purple');
-        }
-
-        /**
-         * Less Contrast Option
-         */
+        // Less Contrast Option
 
         &.contrast-less {
           .sidebar {
@@ -150,7 +115,6 @@
           }
 
           .tabs {
-            color: grayscale(map-get($bnp, 'fg3'));
             border-bottom-color: $border-softer;
             background-color: $container-softer;
           }
@@ -182,18 +146,14 @@
           }
         }
 
-        /**
-         * Highlight Active Buttons
-         */
+        // Highlight Active Buttons
         &.highlight-active-buttons {
           .icon-button.selected {
             background-color: $background;
           }
         }
 
-        /**
-         * Scrollbars (WebKit Only)
-         */
+        // Scrollbars (WebKit Only)
         .code {
           &::-webkit-scrollbar-track {
             border-left: 1px solid $border;
@@ -204,51 +164,16 @@
       // END CONTRAST MODES
     }
 
+    .tabs {
+      color: grayscale(map-get($bnp, 'fg3'));
+    }
+
     .command-palette-wrapper {
       color: grayscale(map-get($bnp, 'fg4'));
     }
 
     .commands li .match {
       color: grayscale(map-get($bnp, 'fg1'));
-    }
-
-    a {
-      color: map-get($bnp, 'blue');
-    }
-
-    .banner-image {
-      color: grayscale(map-get($bnp, 'fg1'));
-    }
-
-    .info {
-      border-top-color: (map-get($bnp, 'bg1'));
-      border-bottom-color: (map-get($bnp, 'bg2'));
-      a {
-        color: grayscale(map-get($bnp, 'fg1'));
-        &:hover {
-          color: grayscale($foreground);
-        }
-      }
-      cite a:first-child {
-        animation-name: spin-colors-#{$brightness-identifier};
-
-        color: map-get($bnp, 'red');
-      }
-    }
-
-    .call-to-action {
-      &:first-child {
-        color: map-get($bnp, 'green');
-        border-color: map-get($bnp, 'green');
-      }
-      &:nth-child(2) {
-        color: map-get($bnp, 'blue');
-        border-color: map-get($bnp, 'blue');
-      }
-      &:last-child {
-        color: map-get($bnp, 'purple');
-        border-color: map-get($bnp, 'purple');
-      }
     }
 
     .icon {
@@ -321,15 +246,40 @@
       }
     }
 
+    // Buffer
+    .buffer li *::selection {
+      background: fade-out(map-get($bnp, 'bg1'), .01);
+    }
+
+
     .line-numbers {
       color: map-get($bnp, 'gray');
     }
 
-    /**
-     * Main Content
-     */
+    // Syntax Highlighting
+    .punctuation {
+      color: $foreground;
+    }
+
+    .whitespace {
+      color: fade-out(map-get($bnp, 'fg1'), .5);
+    }
+
+    .string {
+      color: map-get($bnp, 'green');
+    }
+
+    .constant {
+      color: map-get($bnp, 'purple');
+    }
+
+    // Main Content
     .content-body {
       color: grayscale(map-get($bnp, 'fg3'));
+    }
+
+    .config-sections li {
+      border-color: map-get($bnp, 'bg2');
     }
 
     .pill-switch {
@@ -344,9 +294,52 @@
       }
     }
 
-    /**
-     * Accent Colors
-     */
+    .checkbox {
+      input:checked + label .icon {
+        color: map-get($bnp, 'aqua');
+      }
+    }
+
+    a {
+      color: map-get($bnp, 'blue');
+    }
+
+    .banner-image {
+      color: grayscale(map-get($bnp, 'fg1'));
+    }
+
+    .info {
+      border-top-color: (map-get($bnp, 'bg1'));
+      border-bottom-color: (map-get($bnp, 'bg2'));
+      a {
+        color: grayscale(map-get($bnp, 'fg1'));
+        &:hover {
+          color: grayscale($foreground);
+        }
+      }
+      cite a:first-child {
+        animation-name: spin-colors-#{$brightness-identifier};
+
+        color: map-get($bnp, 'red');
+      }
+    }
+
+    .call-to-action {
+      &:first-child {
+        color: map-get($bnp, 'green');
+        border-color: map-get($bnp, 'green');
+      }
+      &:nth-child(2) {
+        color: map-get($bnp, 'blue');
+        border-color: map-get($bnp, 'blue');
+      }
+      &:last-child {
+        color: map-get($bnp, 'purple');
+        border-color: map-get($bnp, 'purple');
+      }
+    }
+
+    // Accent Colors
     @each $k, $v in map-get($palette, 'accents') {
       $opposite-color: map-get($v, '#{$opposite-brightness-identifier}');
       $color: map-get($v, '#{$brightness-identifier}');
@@ -361,9 +354,7 @@
   // END ACCENT COLORS
 }
 
-/**
- * Neutral Accent Colors
- */
+// Neutral Accent Colors
 &.neutral {
   @each $k, $v in map-get($palette, 'accents') {
     &.#{$k} {
