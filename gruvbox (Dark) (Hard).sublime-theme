@@ -4009,6 +4009,20 @@
     ]
   },
   {
+    "class": "mini_quick_panel_row",
+    "settings": [
+      "gruvbox_disable_command_palette_row_border"
+    ],
+    "layer1.opacity": 0
+  },
+  {
+    "class": "quick_panel_row",
+    "settings": [
+      "gruvbox_disable_command_palette_row_border"
+    ],
+    "layer1.opacity": 0
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       251,

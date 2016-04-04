@@ -30,6 +30,7 @@ module.exports = {
   commandPaletteSpacingXs: 'gruvbox_command_palette_cramped',
   coloredTooltips: 'gruvbox_colored_tooltips',
   disableBorders: 'gruvbox_disable_borders',
+  disableCommandPaletteRowBorder: 'gruvbox_disable_command_palette_row_border',
   disableFadedFileIcons: 'gruvbox_disable_faded_file_icons',
   disableFileIcons: 'gruvbox_disable_file_icons',
   disableFolderIcons: 'gruvbox_disable_folder_icons',

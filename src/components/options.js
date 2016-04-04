@@ -1749,7 +1749,7 @@ module.exports = function (values) {
     },
 
     /**
-     * Autocomplete Border
+     * AutoComplete Border
      */
 
     {
@@ -1769,6 +1769,26 @@ module.exports = function (values) {
       // Border
       'layer1.opacity': 1,
       'layer1.inner_margin': [2, 2],
+    },
+
+    /**
+     * Disable Command Palette Row Border
+     */
+
+    {
+      class: 'mini_quick_panel_row',
+      settings: [stOpts.disableCommandPaletteRowBorder],
+
+      // Border - Top
+      'layer1.opacity': 0,
+    },
+
+    {
+      class: 'quick_panel_row',
+      settings: [stOpts.disableCommandPaletteRowBorder],
+
+      // Border - Top
+      'layer1.opacity': 0,
     },
 
   ];
