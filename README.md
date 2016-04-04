@@ -165,11 +165,11 @@ Change the space between autocomplete rows
 
 ```json
   // sizes are top/bottom in px
-  "gruvbox_autocomplete_cozy": true,         //  v  2
-  "gruvbox_autocomplete_comfortable": true,  //  |  4
+  "gruvbox_autocomplete_cramped": true,      //  v  2
+  "gruvbox_autocomplete_compact": true,      //  |  4
                                              //  |  6 (Default)
-  "gruvbox_autocomplete_compact": true,      //  |  8
-  "gruvbox_autocomplete_cramped": true,      //  v  10
+  "gruvbox_autocomplete_comfortable": true,  //  |  8
+  "gruvbox_autocomplete_cozy": true,         //  v  10
 ```
 
 #### AutoComplete Border
