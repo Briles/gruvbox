@@ -255,6 +255,20 @@ Change the minimum width of the buttons in the statusbar
   "gruvbox_statusbar_button_xxl": true,  //  v  105
 ```
 
+#### Statusbar Font Sizes
+
+Change the font size of the status bar labels
+
+```json
+  "gruvbox_statusbar_font_size_10": true,  //  v  10
+                                           //  |  11 (Default)
+  "gruvbox_statusbar_font_size_12": true,  //  |  12
+  "gruvbox_statusbar_font_size_13": true,  //  |  13
+  "gruvbox_statusbar_font_size_14": true,  //  |  14
+  "gruvbox_statusbar_font_size_15": true,  //  |  15
+  "gruvbox_statusbar_font_size_16": true,  //  v  16
+```
+
 #### Tab Sizes
 
 Change the height of the tabs
