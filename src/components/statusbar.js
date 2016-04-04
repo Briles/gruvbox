@@ -53,7 +53,7 @@ module.exports = function (values) {
     // Status Bar Button
     {
       class: 'status_button',
-      content_margin: [12, 0, 12, 0],
+      content_margin: [15, 0],
       min_size: [75, 0],
 
       // Border - Left

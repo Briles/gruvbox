@@ -1393,9 +1393,7 @@
   {
     "class": "status_button",
     "content_margin": [
-      12,
-      0,
-      12,
+      15,
       0
     ],
     "min_size": [
@@ -4021,6 +4019,66 @@
       "gruvbox_disable_command_palette_row_border"
     ],
     "layer1.opacity": 0
+  },
+  {
+    "class": "status_button",
+    "settings": [
+      "gruvbox_statusbar_button_xxs"
+    ],
+    "min_size": [
+      45,
+      0
+    ]
+  },
+  {
+    "class": "status_button",
+    "settings": [
+      "gruvbox_statusbar_button_xs"
+    ],
+    "min_size": [
+      55,
+      0
+    ]
+  },
+  {
+    "class": "status_button",
+    "settings": [
+      "gruvbox_statusbar_button_s"
+    ],
+    "min_size": [
+      65,
+      0
+    ]
+  },
+  {
+    "class": "status_button",
+    "settings": [
+      "gruvbox_statusbar_button_l"
+    ],
+    "min_size": [
+      85,
+      0
+    ]
+  },
+  {
+    "class": "status_button",
+    "settings": [
+      "gruvbox_statusbar_button_xl"
+    ],
+    "min_size": [
+      95,
+      0
+    ]
+  },
+  {
+    "class": "status_button",
+    "settings": [
+      "gruvbox_statusbar_button_xxl"
+    ],
+    "min_size": [
+      105,
+      0
+    ]
   },
   {
     "class": "auto_complete_label",

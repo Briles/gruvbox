@@ -240,6 +240,21 @@ Change the height of the statusbar
   "gruvbox_statusbar_xxl": true,  //  v  50
 ```
 
+#### Statusbar Button Widths
+
+Change the minimum width of the buttons in the statusbar
+
+```json
+  // sizes are in px
+  "gruvbox_statusbar_button_xxs": true,  //  v  44
+  "gruvbox_statusbar_button_xs": true,   //  |  55
+  "gruvbox_statusbar_button_s": true,    //  |  65
+                                         //  |  75 (Default)
+  "gruvbox_statusbar_button_l": true,    //  |  85
+  "gruvbox_statusbar_button_xl": true,   //  |  95
+  "gruvbox_statusbar_button_xxl": true,  //  v  105
+```
+
 #### Tab Sizes
 
 Change the height of the tabs

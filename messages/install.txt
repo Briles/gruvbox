@@ -147,6 +147,19 @@ Theme options:
     "gruvbox_statusbar_xxl": true,  //  v  50
 
 
+  Status Bar Button Widths
+
+        Change the minimum width of the buttons in the status bar
+
+    "gruvbox_statusbar_button_xxs": true,  //  v  44
+    "gruvbox_statusbar_button_xs": true,   //  |  55
+    "gruvbox_statusbar_button_s": true,    //  |  65
+                                           //  |  75 (Default)
+    "gruvbox_statusbar_button_l": true,    //  |  85
+    "gruvbox_statusbar_button_xl": true,   //  |  95
+    "gruvbox_statusbar_button_xxl": true,  //  v  105
+
+
   Tab Sizes
 
         Change the height of the tabs
