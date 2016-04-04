@@ -1748,5 +1748,28 @@ module.exports = function (values) {
       'font.bold': true,
     },
 
+    /**
+     * Autocomplete Border
+     */
+
+    {
+      class: 'popup_control',
+      settings: [stOpts.autocompleteBorders],
+      content_margin: [1, 1],
+
+      // Border
+      'layer1.opacity': 1,
+    },
+
+    {
+      class: 'popup_control',
+      settings: [stOpts.autocompleteBordersL],
+      content_margin: [2, 2],
+
+      // Border
+      'layer1.opacity': 1,
+      'layer1.inner_margin': [2, 2],
+    },
+
   ];
 };

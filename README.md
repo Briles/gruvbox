@@ -172,6 +172,15 @@ Change the space between autocomplete rows
   "gruvbox_autocomplete_cramped": true,      //  v  10
 ```
 
+#### AutoComplete Border
+
+Add a border around the autocomplete popup
+
+```json
+  "gruvbox_autocomplete_border": true,
+  "gruvbox_autocomplete_border_thick": true,
+```
+
 #### Sidebar Spacing
 
 ![Sidebar Spacing](http://i.imgur.com/YcbDJK4.png)

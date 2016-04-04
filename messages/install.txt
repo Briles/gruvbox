@@ -90,6 +90,14 @@ Theme options:
     "gruvbox_autocomplete_cramped": true,      //  v  10
 
 
+  AutoComplete Border
+
+        Add a border around the autocomplete pop-up
+
+    "gruvbox_autocomplete_border": true,        //  v 1
+    "gruvbox_autocomplete_border_thick": true,  //  v 2
+
+
   Sidebar Spacing
 
         Change the space between sidebar tree rows

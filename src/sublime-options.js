@@ -17,6 +17,8 @@ module.exports = {
   autocollapseTabsTriggerS: 'gruvbox_autocollapse_tabs_trigger_3',
   autocollapseTabsTriggerL: 'gruvbox_autocollapse_tabs_trigger_5',
   autocollapseTabsTriggerXl: 'gruvbox_autocollapse_tabs_trigger_6',
+  autocompleteBorders: 'gruvbox_autocomplete_border',
+  autocompleteBordersL: 'gruvbox_autocomplete_border_thick',
   autocompleteSpacingL: 'gruvbox_autocomplete_comfortable',
   autocompleteSpacingS: 'gruvbox_autocomplete_compact',
   autocompleteSpacingXl: 'gruvbox_autocomplete_cozy',
