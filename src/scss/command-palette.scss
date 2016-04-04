@@ -51,3 +51,12 @@
     }
   }
 }
+
+@each $k, $v in $opt-command-palette-spacing {
+  .command-palette-#{$k} {
+    .commands li {
+      padding-top: $v + 2px;
+      padding-bottom: $v + 2px;
+    }
+  }
+}
