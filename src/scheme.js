@@ -990,7 +990,7 @@ module.exports = function (values) {
           'brackethighlighter.tag',
         ],
         settings: {
-          foreground: c.bnp.gray,
+          foreground: c.bnp.fg4,
         },
       },
 
@@ -1000,7 +1000,7 @@ module.exports = function (values) {
           'brackethighlighter.curly',
         ],
         settings: {
-          foreground: c.bnp.gray,
+          foreground: c.bnp.fg4,
         },
       },
 
@@ -1010,7 +1010,7 @@ module.exports = function (values) {
           'brackethighlighter.round',
         ],
         settings: {
-          foreground: c.bnp.gray,
+          foreground: c.bnp.fg4,
         },
       },
 
@@ -1020,7 +1020,7 @@ module.exports = function (values) {
           'brackethighlighter.square',
         ],
         settings: {
-          foreground: c.bnp.gray,
+          foreground: c.bnp.fg4,
         },
       },
 
@@ -1030,7 +1030,7 @@ module.exports = function (values) {
           'brackethighlighter.angle',
         ],
         settings: {
-          foreground: c.bnp.gray,
+          foreground: c.bnp.fg4,
         },
       },
 
@@ -1040,7 +1040,7 @@ module.exports = function (values) {
           'brackethighlighter.quote',
         ],
         settings: {
-          foreground: c.bnp.gray,
+          foreground: c.bnp.fg4,
         },
       },
 
