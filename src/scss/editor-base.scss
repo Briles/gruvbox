@@ -195,6 +195,14 @@
   font-weight: bold;
 }
 
+@each $v in $opt-statusbar-font-size {
+  .statusbar-font-size-#{$v} {
+    .statusbar {
+      font-size: $v + 1px;
+    }
+  }
+}
+
 .findreplace {
   padding: 15px 14px;
 

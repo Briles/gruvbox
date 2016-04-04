@@ -14,6 +14,7 @@ module.exports = function ($scope, $routeParams, $location) {
     panelSize: '',
     underlineTabs: '',
     buttonsFontSize: '',
+    statusbarFontSize: '',
   };
 
   var getConfiguration = function () {
