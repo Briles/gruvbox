@@ -8,6 +8,7 @@ var paths = function (packageName) {
   const rootDirectory = path.resolve(__dirname, '../');
   const widgetsDirectory = path.join(rootDirectory, '/widgets');
   const componentsDirectory = path.join(rootDirectory, 'src/components/');
+  const optionsDirectory = `${componentsDirectory}options/`;
 
   // Internal Paths:
   // Paths used inside themes, schemes, widgets, etc.
@@ -23,6 +24,7 @@ var paths = function (packageName) {
       root: rootDirectory,
       widgets: widgetsDirectory,
       components: componentsDirectory,
+      options: optionsDirectory,
     },
     internal: {
       packagesRoot: packagesRoot,

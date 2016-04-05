@@ -103,7 +103,7 @@
 
         components.forEach(function (c) {
           const modulePath = path.join(paths.external.components, c);
-          const m = require(modulePath)(themeValues);
+          const m = require(modulePath)(themeValues, paths.external);
           themeContents.push(m);
         });
 

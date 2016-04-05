@@ -2064,20 +2064,6 @@
     ]
   },
   {
-    "class": "tabset_control",
-    "settings": [
-      "gruvbox_tabs_autowidth"
-    ],
-    "tab_width": 0
-  },
-  {
-    "class": "tab_label",
-    "settings": [
-      "gruvbox_tabs_bold"
-    ],
-    "font.bold": true
-  },
-  {
     "class": "tab_label",
     "settings": [
       "gruvbox_tabs_font_size_7"
@@ -2132,17 +2118,6 @@
       "gruvbox_tabs_font_size_15"
     ],
     "font.size": 15
-  },
-  {
-    "class": "icon_file_type",
-    "settings": [
-      "gruvbox_disable_file_icons"
-    ],
-    "content_margin": [
-      0,
-      0
-    ],
-    "layer0.opacity": 0
   },
   {
     "class": "status_container",
@@ -2217,6 +2192,138 @@
     ]
   },
   {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_statusbar_font_size_10"
+    ],
+    "parents": [
+      {
+        "class": "status_bar"
+      }
+    ],
+    "font.size": 10
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_statusbar_font_size_12"
+    ],
+    "parents": [
+      {
+        "class": "status_bar"
+      }
+    ],
+    "font.size": 12
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_statusbar_font_size_13"
+    ],
+    "parents": [
+      {
+        "class": "status_bar"
+      }
+    ],
+    "font.size": 13
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_statusbar_font_size_14"
+    ],
+    "parents": [
+      {
+        "class": "status_bar"
+      }
+    ],
+    "font.size": 14
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_statusbar_font_size_15"
+    ],
+    "parents": [
+      {
+        "class": "status_bar"
+      }
+    ],
+    "font.size": 15
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_statusbar_font_size_16"
+    ],
+    "parents": [
+      {
+        "class": "status_bar"
+      }
+    ],
+    "font.size": 16
+  },
+  {
+    "class": "status_button",
+    "settings": [
+      "gruvbox_statusbar_button_xxs"
+    ],
+    "min_size": [
+      45,
+      0
+    ]
+  },
+  {
+    "class": "status_button",
+    "settings": [
+      "gruvbox_statusbar_button_xs"
+    ],
+    "min_size": [
+      55,
+      0
+    ]
+  },
+  {
+    "class": "status_button",
+    "settings": [
+      "gruvbox_statusbar_button_s"
+    ],
+    "min_size": [
+      65,
+      0
+    ]
+  },
+  {
+    "class": "status_button",
+    "settings": [
+      "gruvbox_statusbar_button_l"
+    ],
+    "min_size": [
+      85,
+      0
+    ]
+  },
+  {
+    "class": "status_button",
+    "settings": [
+      "gruvbox_statusbar_button_xl"
+    ],
+    "min_size": [
+      95,
+      0
+    ]
+  },
+  {
+    "class": "status_button",
+    "settings": [
+      "gruvbox_statusbar_button_xxl"
+    ],
+    "min_size": [
+      105,
+      0
+    ]
+  },
+  {
     "class": "sidebar_tree",
     "settings": [
       "gruvbox_sidebar_cramped"
@@ -2254,36 +2361,6 @@
     "row_padding": [
       24,
       9
-    ]
-  },
-  {
-    "class": "icon_folder",
-    "settings": [
-      "gruvbox_disable_folder_icons"
-    ],
-    "content_margin": [
-      0,
-      0
-    ]
-  },
-  {
-    "class": "icon_folder_loading",
-    "settings": [
-      "gruvbox_disable_folder_icons"
-    ],
-    "content_margin": [
-      0,
-      0
-    ]
-  },
-  {
-    "class": "icon_folder_dup",
-    "settings": [
-      "gruvbox_disable_folder_icons"
-    ],
-    "content_margin": [
-      0,
-      0
     ]
   },
   {
@@ -2384,16 +2461,6 @@
     "row_padding": [
       14,
       16
-    ]
-  },
-  {
-    "class": "panel_close_button",
-    "settings": [
-      "gruvbox_enable_panel_close_button"
-    ],
-    "content_margin": [
-      8,
-      8
     ]
   },
   {
@@ -2938,33 +3005,6 @@
       12,
       12
     ]
-  },
-  {
-    "class": "panel_button_control",
-    "settings": [
-      "gruvbox_disable_panels_button"
-    ],
-    "content_margin": [
-      0,
-      0
-    ]
-  },
-  {
-    "class": "status_bar",
-    "settings": [
-      "gruvbox_disable_panels_button"
-    ],
-    "content_margin": [
-      0,
-      0
-    ]
-  },
-  {
-    "class": "icon_file_type",
-    "settings": [
-      "gruvbox_disable_faded_file_icons"
-    ],
-    "layer0.opacity": 1
   },
   {
     "class": "label_control",
@@ -3541,16 +3581,6 @@
     "font.size": 16
   },
   {
-    "class": "tree_row",
-    "settings": [
-      "gruvbox_highlight_active_tree_row"
-    ],
-    "attributes": [
-      "selected"
-    ],
-    "layer0.opacity": 1
-  },
-  {
     "class": "puck_control",
     "settings": [
       "gruvbox_scrollbar_width_xs"
@@ -3947,6 +3977,180 @@
     ]
   },
   {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_buttons_font_size_10"
+    ],
+    "parents": [
+      {
+        "class": "button_control"
+      }
+    ],
+    "font.size": 10
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_buttons_font_size_12"
+    ],
+    "parents": [
+      {
+        "class": "button_control"
+      }
+    ],
+    "font.size": 12
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_buttons_font_size_13"
+    ],
+    "parents": [
+      {
+        "class": "button_control"
+      }
+    ],
+    "font.size": 13
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_buttons_font_size_14"
+    ],
+    "parents": [
+      {
+        "class": "button_control"
+      }
+    ],
+    "font.size": 14
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_buttons_font_size_15"
+    ],
+    "parents": [
+      {
+        "class": "button_control"
+      }
+    ],
+    "font.size": 15
+  },
+  {
+    "class": "label_control",
+    "settings": [
+      "gruvbox_buttons_font_size_16"
+    ],
+    "parents": [
+      {
+        "class": "button_control"
+      }
+    ],
+    "font.size": 16
+  },
+  {
+    "class": "tabset_control",
+    "settings": [
+      "gruvbox_tabs_autowidth"
+    ],
+    "tab_width": 0
+  },
+  {
+    "class": "tab_label",
+    "settings": [
+      "gruvbox_tabs_bold"
+    ],
+    "font.bold": true
+  },
+  {
+    "class": "icon_file_type",
+    "settings": [
+      "gruvbox_disable_file_icons"
+    ],
+    "content_margin": [
+      0,
+      0
+    ],
+    "layer0.opacity": 0
+  },
+  {
+    "class": "icon_folder",
+    "settings": [
+      "gruvbox_disable_folder_icons"
+    ],
+    "content_margin": [
+      0,
+      0
+    ]
+  },
+  {
+    "class": "icon_folder_loading",
+    "settings": [
+      "gruvbox_disable_folder_icons"
+    ],
+    "content_margin": [
+      0,
+      0
+    ]
+  },
+  {
+    "class": "icon_folder_dup",
+    "settings": [
+      "gruvbox_disable_folder_icons"
+    ],
+    "content_margin": [
+      0,
+      0
+    ]
+  },
+  {
+    "class": "panel_close_button",
+    "settings": [
+      "gruvbox_enable_panel_close_button"
+    ],
+    "content_margin": [
+      8,
+      8
+    ]
+  },
+  {
+    "class": "panel_button_control",
+    "settings": [
+      "gruvbox_disable_panels_button"
+    ],
+    "content_margin": [
+      0,
+      0
+    ]
+  },
+  {
+    "class": "status_bar",
+    "settings": [
+      "gruvbox_disable_panels_button"
+    ],
+    "content_margin": [
+      0,
+      0
+    ]
+  },
+  {
+    "class": "icon_file_type",
+    "settings": [
+      "gruvbox_disable_faded_file_icons"
+    ],
+    "layer0.opacity": 1
+  },
+  {
+    "class": "tree_row",
+    "settings": [
+      "gruvbox_highlight_active_tree_row"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer0.opacity": 1
+  },
+  {
     "class": "icon_button_control",
     "settings": [
       "gruvbox_highlight_active_buttons"
@@ -4019,210 +4223,6 @@
       "gruvbox_disable_command_palette_row_border"
     ],
     "layer1.opacity": 0
-  },
-  {
-    "class": "status_button",
-    "settings": [
-      "gruvbox_statusbar_button_xxs"
-    ],
-    "min_size": [
-      45,
-      0
-    ]
-  },
-  {
-    "class": "status_button",
-    "settings": [
-      "gruvbox_statusbar_button_xs"
-    ],
-    "min_size": [
-      55,
-      0
-    ]
-  },
-  {
-    "class": "status_button",
-    "settings": [
-      "gruvbox_statusbar_button_s"
-    ],
-    "min_size": [
-      65,
-      0
-    ]
-  },
-  {
-    "class": "status_button",
-    "settings": [
-      "gruvbox_statusbar_button_l"
-    ],
-    "min_size": [
-      85,
-      0
-    ]
-  },
-  {
-    "class": "status_button",
-    "settings": [
-      "gruvbox_statusbar_button_xl"
-    ],
-    "min_size": [
-      95,
-      0
-    ]
-  },
-  {
-    "class": "status_button",
-    "settings": [
-      "gruvbox_statusbar_button_xxl"
-    ],
-    "min_size": [
-      105,
-      0
-    ]
-  },
-  {
-    "class": "label_control",
-    "settings": [
-      "gruvbox_statusbar_font_size_10"
-    ],
-    "parents": [
-      {
-        "class": "status_bar"
-      }
-    ],
-    "font.size": 10
-  },
-  {
-    "class": "label_control",
-    "settings": [
-      "gruvbox_statusbar_font_size_12"
-    ],
-    "parents": [
-      {
-        "class": "status_bar"
-      }
-    ],
-    "font.size": 12
-  },
-  {
-    "class": "label_control",
-    "settings": [
-      "gruvbox_statusbar_font_size_13"
-    ],
-    "parents": [
-      {
-        "class": "status_bar"
-      }
-    ],
-    "font.size": 13
-  },
-  {
-    "class": "label_control",
-    "settings": [
-      "gruvbox_statusbar_font_size_14"
-    ],
-    "parents": [
-      {
-        "class": "status_bar"
-      }
-    ],
-    "font.size": 14
-  },
-  {
-    "class": "label_control",
-    "settings": [
-      "gruvbox_statusbar_font_size_15"
-    ],
-    "parents": [
-      {
-        "class": "status_bar"
-      }
-    ],
-    "font.size": 15
-  },
-  {
-    "class": "label_control",
-    "settings": [
-      "gruvbox_statusbar_font_size_16"
-    ],
-    "parents": [
-      {
-        "class": "status_bar"
-      }
-    ],
-    "font.size": 16
-  },
-  {
-    "class": "label_control",
-    "settings": [
-      "gruvbox_buttons_font_size_10"
-    ],
-    "parents": [
-      {
-        "class": "button_control"
-      }
-    ],
-    "font.size": 10
-  },
-  {
-    "class": "label_control",
-    "settings": [
-      "gruvbox_buttons_font_size_12"
-    ],
-    "parents": [
-      {
-        "class": "button_control"
-      }
-    ],
-    "font.size": 12
-  },
-  {
-    "class": "label_control",
-    "settings": [
-      "gruvbox_buttons_font_size_13"
-    ],
-    "parents": [
-      {
-        "class": "button_control"
-      }
-    ],
-    "font.size": 13
-  },
-  {
-    "class": "label_control",
-    "settings": [
-      "gruvbox_buttons_font_size_14"
-    ],
-    "parents": [
-      {
-        "class": "button_control"
-      }
-    ],
-    "font.size": 14
-  },
-  {
-    "class": "label_control",
-    "settings": [
-      "gruvbox_buttons_font_size_15"
-    ],
-    "parents": [
-      {
-        "class": "button_control"
-      }
-    ],
-    "font.size": 15
-  },
-  {
-    "class": "label_control",
-    "settings": [
-      "gruvbox_buttons_font_size_16"
-    ],
-    "parents": [
-      {
-        "class": "button_control"
-      }
-    ],
-    "font.size": 16
   },
   {
     "class": "auto_complete_label",
