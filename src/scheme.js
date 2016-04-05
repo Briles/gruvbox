@@ -168,9 +168,10 @@ module.exports = function (values) {
       },
 
       {
-        name: 'CSS At-Rule Punctuation (@)',
+        name: 'CSS At-Rule Punctuation (@) & At-Rule Vendor Prefixes',
         scope: [
           'punctuation.definition.keyword',
+          'keyword.control.at-rule support.type.property-vendor',
         ],
         settings: {
           foreground: c.neutralRed,

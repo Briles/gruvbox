@@ -153,9 +153,9 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>CSS At-Rule Punctuation (@)</string>
+        <string>CSS At-Rule Punctuation (@) &amp; At-Rule Vendor Prefixes</string>
         <key>scope</key>
-        <string>punctuation.definition.keyword</string>
+        <string>keyword.control.at-rule support.type.property-vendor, punctuation.definition.keyword</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1302,6 +1302,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>7217c454-9d26-41dd-b1ca-1c04e72f5aaf</string>
+    <string>f80cb05b-d2b1-4438-8c72-51ddfff74cae</string>
   </dict>
 </plist>
