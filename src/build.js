@@ -104,10 +104,8 @@
         components.forEach(function (c) {
           const modulePath = path.join(paths.external.components, c);
           const m = require(modulePath)(themeValues, paths.external);
-          themeContents.push(m);
+          themeContents.push(...m);
         });
-
-        themeContents = _.flatten(themeContents);
 
         var themeStringified = JSON.stringify(themeContents, null, JSON_WHITESPACE);
 
