@@ -236,6 +236,7 @@ module.exports = function (values) {
         scope: [
           'storage.type.function',
           'meta.function storage.type.matlab',
+          'entity.other.animation-name',
         ],
         settings: {
           foreground: c.bnp.aqua,

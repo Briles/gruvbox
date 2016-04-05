@@ -208,7 +208,7 @@
         <key>name</key>
         <string>Function Keyword</string>
         <key>scope</key>
-        <string>meta.function storage.type.matlab, storage.type.function</string>
+        <string>entity.other.animation-name, meta.function storage.type.matlab, storage.type.function</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1302,6 +1302,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>9f6976d4-ec93-4ed0-88bc-37ff37e5e5c2</string>
+    <string>ffe8a1d4-b860-4cd0-a609-ee391a431794</string>
   </dict>
 </plist>
