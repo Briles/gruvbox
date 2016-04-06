@@ -66,6 +66,7 @@ module.exports = function (values) {
           'punctuation',
           'keyword.operator operator.neon',
           'keyword.operator keyword.operator.neon',
+          'meta.attribute-selector keyword.operator.stylus',
         ],
         settings: {
           foreground: c.foreground,
@@ -698,6 +699,17 @@ module.exports = function (values) {
         ],
         settings: {
           foreground: c.neutralYellow,
+        },
+      },
+
+      {
+        name: 'CSS Attribute Selector',
+        scope: [
+          'meta.attribute-selector entity.other.attribute-name.attribute',
+          'meta.attribute-selector entity.other.attribute-name.stylus'
+        ],
+        settings: {
+          foreground: c.bnp.aqua,
         },
       },
 
