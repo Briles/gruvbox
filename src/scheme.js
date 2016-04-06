@@ -12,7 +12,7 @@ module.exports = function (values) {
   var scheme = {
     comment: 'Based on gruvbox for Vim (https://github.com/morhetz/gruvbox)',
     originalAuthor: 'Pavel Pertsev (https://github.com/morhetz)',
-    author: 'Brian Reilly (https://github.com/briles/gruvbox)',
+    author: 'Brian Reilly (https://github.com/Briles/gruvbox)',
     name: info.name,
     colorSpaceName: 'sRGB',
     settings: [{
@@ -28,9 +28,9 @@ module.exports = function (values) {
           activeGuide: c.ruler,
           stackGuide: c.guideAlt,
           bracketContentsOptions: 'underline',
-          bracketContentsForeground: c.bnp.fg4,
+          bracketContentsForeground: c.bnp.fg3,
           bracketsOptions: 'underline',
-          bracketsForeground: c.bnp.fg4,
+          bracketsForeground: c.bnp.fg3,
           gutterForeground: c.bnp.gray,
           highlight: c.foreground,
           highlightForeground: c.foreground,
@@ -45,6 +45,7 @@ module.exports = function (values) {
         name: 'Text and Source Base Colors',
         scope: [
           'meta.method.body.source.cs', // Fix poor syntax highlighting
+          'meta.method.body.java', // Fix poor syntax highlighting
           'none',
           'source',
           'text',
@@ -63,6 +64,9 @@ module.exports = function (values) {
           'meta.punctuation.separator',
           'meta.separator',
           'punctuation',
+          'keyword.operator operator.neon',
+          'keyword.operator keyword.operator.neon',
+          'meta.attribute-selector keyword.operator.stylus',
         ],
         settings: {
           foreground: c.foreground,
@@ -74,10 +78,10 @@ module.exports = function (values) {
         scope: [
           'comment text',
           'comment',
+          'string.comment',
           'markup.strikethrough',
-          'punctuation.definition.comment',
-          'punctuation.whitespace.comment',
           'text.cancelled',
+          'comment punctuation',
         ],
         settings: {
           fontStyle: 'italic',
@@ -104,6 +108,11 @@ module.exports = function (values) {
           'comment.string',
           'comment.type',
           'storage.type.class.jsdoc',
+          'storage.type.annotation.coffeescript',
+          'keyword.other.phpdoc.php',
+          'source.java keyword.other.documentation',
+          'punctuation.definition.keyword.javadoc',
+          'source.groovy keyword.other.documentation',
         ],
         settings: {
           foreground: c.bnp.fg3,
@@ -131,6 +140,7 @@ module.exports = function (values) {
           'punctuation.section.embedded',
           'string.interpolated',
           'variable.other.interpolation.scss',
+          'entity.tag.tagbraces',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -159,9 +169,10 @@ module.exports = function (values) {
       },
 
       {
-        name: 'CSS At-Rule Punctuation (@)',
+        name: 'CSS At-Rule Punctuation (@) & At-Rule Vendor Prefixes',
         scope: [
           'punctuation.definition.keyword',
+          'keyword.control.at-rule support.type.property-vendor',
         ],
         settings: {
           foreground: c.neutralRed,
@@ -175,6 +186,7 @@ module.exports = function (values) {
           'keyword.operator',
           'keyword.other.arrow',
           'keyword.other.double-colon',
+          'keyword.control.operator',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -188,6 +200,7 @@ module.exports = function (values) {
           'constant.other.color.rgb-value.scss',
           'constant.other.unit',
           'keyword.other.unit',
+          'punctuation.section.flowtype',
         ],
         settings: {
           foreground: c.neutralPurple,
@@ -211,6 +224,8 @@ module.exports = function (values) {
           'storage.modifier.package',
           'storage.modifier.import',
           'storage.type.import',
+          'variable.package',
+          'variable.import',
         ],
         settings: {
           foreground: c.foreground,
@@ -221,6 +236,7 @@ module.exports = function (values) {
         name: 'Function Keyword',
         scope: [
           'storage.type.function',
+          'meta.function storage.type.matlab',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -236,6 +252,9 @@ module.exports = function (values) {
           'variable.interpolation variable',
           'variable.other.interpolation variable',
           'variable.parameter.sass',
+          'entity.name.val.declaration',
+          'variable.parameter.output.function.matlab',
+          'storage.type.variable',
         ],
         settings: {
           foreground: c.bnp.blue,
@@ -358,22 +377,80 @@ module.exports = function (values) {
       },
 
       {
-        name: 'Regular Expressions',
+        name: 'Regular Expressions Text',
         scope: [
           'string.regexp',
+          'source.regexp',
         ],
         settings: {
-          foreground: c.bnp.red,
+          foreground: c.bnp.green,
         },
       },
 
       {
-        name: 'Embedded Ruby Regular Expressions',
+        name: 'Regular Expressions Start & End Punctuation',
         scope: [
-          'string.regexp.source.ruby.embedded',
+          'string.regexp punctuation.definition.string',
+        ],
+        settings: {
+          foreground: c.bnp.fg3,
+        },
+      },
+
+      {
+        name: 'Regular Expressions Character Class Punctuation ([])',
+        scope: [
+          'keyword.control.set.regexp',
+          'punctuation.definition.character-class',
+          'string.regexp.character-class.ruby',
+        ],
+        settings: {
+          foreground: c.bnp.purple,
+        },
+      },
+
+      {
+        name: 'Regular Expressions Capturing Group',
+        scope: [
+          'string.regexp.group',
+        ],
+        settings: {
+          foreground: c.foreground,
+        },
+      },
+
+      {
+        name: 'Regular Expressions Assertions',
+        scope: [
+          'constant.other.assertion.regexp',
+          'punctuation.definition.group.assertion.regexp',
+          'punctuation.definition.group.capture.regexp',
+        ],
+        settings: {
+          foreground: c.bnp.blue,
+        },
+      },
+
+      {
+        name: 'Regular Expressions Character Class',
+        scope: [
+          'keyword.control.character-class.regexp',
+          'constant.other.character-class.escape.backslash.regexp',
+          'string.regexp.character-class constant.character.escape',
         ],
         settings: {
           foreground: c.bnp.yellow,
+        },
+      },
+
+      {
+        name: 'Regular Expressions Quantifiers & Operators',
+        scope: [
+          'string.regexp.arbitrary-repetition',
+          'string.regexp.arbitrary-repetition punctuation',
+        ],
+        settings: {
+          foreground: c.bnp.aqua,
         },
       },
 
@@ -484,14 +561,42 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Markdown Quoted Punctuation',
+        scope: [
+          'markup.quote punctuation',
+        ],
+        settings: {
+          foreground: c.neutralPurple,
+        },
+      },
+
+      {
         name: 'Markdown List',
         scope: [
           'markup.list',
-          'punctuation.definition.list_item.number',
-          'punctuation.definition.list_item.markdown',
         ],
         settings: {
           foreground: c.bnp.blue,
+        },
+      },
+
+      {
+        name: 'Markdown List Punctuation',
+        scope: [
+          'markup.list punctuation',
+        ],
+        settings: {
+          foreground: c.neutralBlue,
+        },
+      },
+
+      {
+        name: 'Markdown Separators',
+        scope: [
+          'meta.separator.markdown',
+        ],
+        settings: {
+          foreground: c.bnp.gray,
         },
       },
 
@@ -597,6 +702,17 @@ module.exports = function (values) {
       },
 
       {
+        name: 'CSS Attribute Selector',
+        scope: [
+          'meta.attribute-selector entity.other.attribute-name.attribute',
+          'meta.attribute-selector entity.other.attribute-name.stylus',
+        ],
+        settings: {
+          foreground: c.bnp.aqua,
+        },
+      },
+
+      {
         name: 'HTML & XML Entity Punctuation',
         scope: [
           'constant.character.entity punctuation.definition.entity',
@@ -626,6 +742,8 @@ module.exports = function (values) {
           'keyword.control.untitled',
           'keyword.doctype.xml',
           'punctuation.definition.prolog.haml',
+          'entity.name.function.neon',
+          'keyword.operator support.other.neon',
         ],
         settings: {
           foreground: c.bnp.blue,
@@ -656,6 +774,21 @@ module.exports = function (values) {
         ],
         settings: {
           foreground: c.neutralYellow,
+        },
+      },
+
+      {
+        name: 'CSS Animations / Keyframes',
+        scope: [
+          'entity.other.animation-name',
+          'variable.other.animation-name',
+          'meta.at-rule.keyframes entity.name.function',
+          'keyword.language.function.misc.stylus',
+          'entity.function-name.stylus',
+          'entity.other.animation-keyframe.stylus',
+        ],
+        settings: {
+          foreground: c.bnp.aqua,
         },
       },
 
@@ -886,7 +1019,7 @@ module.exports = function (values) {
           'brackethighlighter.tag',
         ],
         settings: {
-          foreground: c.bnp.gray,
+          foreground: c.bnp.fg3,
         },
       },
 
@@ -896,7 +1029,7 @@ module.exports = function (values) {
           'brackethighlighter.curly',
         ],
         settings: {
-          foreground: c.bnp.gray,
+          foreground: c.bnp.fg3,
         },
       },
 
@@ -906,7 +1039,7 @@ module.exports = function (values) {
           'brackethighlighter.round',
         ],
         settings: {
-          foreground: c.bnp.gray,
+          foreground: c.bnp.fg3,
         },
       },
 
@@ -916,7 +1049,7 @@ module.exports = function (values) {
           'brackethighlighter.square',
         ],
         settings: {
-          foreground: c.bnp.gray,
+          foreground: c.bnp.fg3,
         },
       },
 
@@ -926,7 +1059,7 @@ module.exports = function (values) {
           'brackethighlighter.angle',
         ],
         settings: {
-          foreground: c.bnp.gray,
+          foreground: c.bnp.fg3,
         },
       },
 
@@ -936,7 +1069,7 @@ module.exports = function (values) {
           'brackethighlighter.quote',
         ],
         settings: {
-          foreground: c.bnp.gray,
+          foreground: c.bnp.fg3,
         },
       },
 

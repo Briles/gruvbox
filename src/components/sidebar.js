@@ -311,15 +311,15 @@ module.exports = function (values) {
       'layer0.opacity': 0,
 
       // Default
-      'layer1.texture': `${paths.commons}folder.png`,
+      'layer1.texture': `${paths.commons}folder__literal.png`,
       'layer1.opacity': 1,
 
       // Hover
-      'layer2.texture': `${paths.this}folder--expanded.png`,
+      'layer2.texture': `${paths.this}folder__literal--hover.png`,
       'layer2.opacity': 0,
 
       // Expanded
-      'layer3.texture': `${paths.this}folder--expanded.png`,
+      'layer3.texture': `${paths.this}folder__literal--expanded.png`,
       'layer3.opacity': 0,
     },
 
@@ -407,15 +407,15 @@ module.exports = function (values) {
       content_margin: [8, 8],
 
       // Default
-      'layer0.texture': `${paths.commons}folder_dup.png`,
+      'layer0.texture': `${paths.commons}folder__literal_dup.png`,
       'layer0.opacity': 1.0,
 
       // Hover
-      'layer1.texture': `${paths.this}folder_dup--expanded.png`,
+      'layer1.texture': `${paths.this}folder__literal_dup--hover.png`,
       'layer1.opacity': 0,
 
       // Expanded
-      'layer2.texture': `${paths.this}folder_dup--expanded.png`,
+      'layer2.texture': `${paths.this}folder__literal_dup--expanded.png`,
       'layer2.opacity': 0,
     },
 

@@ -1,5 +1,5 @@
 gruvbox for Sublime Text 3
-https://github.com/briles/gruvbox
+https://github.com/Briles/gruvbox
 
 Version 1.11.0
 --------------------------------------------------------------------------------
@@ -50,7 +50,7 @@ Version 1.11.0
 
   COLOR SCHEMES
 
-    • Added support for PlainTasks plugin (see https://github.com/briles/gruvbox#plaintasks-support)
+    • Added support for PlainTasks plugin (see https://github.com/Briles/gruvbox#plaintasks-support)
     • Improved coloring of template strings across languages
     • Improved coloring of variables across languages
     • Improved coloring for:
@@ -68,8 +68,8 @@ Version 1.11.0
 
   EXTRAS
 
-    • Added Bracket Highlighter icons: https://github.com/briles/gruvbox#bracket-highlighter-icons
+    • Added Bracket Highlighter icons: https://github.com/Briles/gruvbox#bracket-highlighter-icons
 
 
 If you are having any issues or want a new feature added,
-get in touch at https://github.com/briles/gruvbox/issues
+get in touch at https://github.com/Briles/gruvbox/issues

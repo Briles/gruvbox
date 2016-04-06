@@ -1,0 +1,85 @@
+gruvbox for Sublime Text 3
+https://github.com/Briles/gruvbox
+
+Version 2.0.0
+────────────────────────────────────────────────────────────────────────────────
+  ┌───────────────────┐
+  │  THEMES           │
+  └───────────────────┘
+  ┌──────────────────────────────────────────────────────────┐
+  │                                                          │
+  │                  !! BREAKING CHANGES !!                  │
+  │                                                          │
+  │  Literal folder icons are now the default folder icons,  │
+  │  but don't worry, the circle icons are still available.  │
+  │                                                          │
+  └──────────────────────────────────────────────────────────┘
+
+    • Removed the "gruvbox_enable_literal_folder_icons" option
+    • Added option to enable circle folder icons ("gruvbox_folder_icons_circle": true,)
+    • Added option to enable spacegray folder icons ("gruvbox_folder_icons_spacegray": true,)
+    • Added option to disable Command Palette row border ("gruvbox_disable_command_palette_row_border": true,)
+    • Changed the folder icons option names:
+
+      "gruvbox_enable_plus_minus_folder_icons" --> "gruvbox_folder_icons_plus_minus"
+      "gruvbox_enable_square_folder_icons"     --> "gruvbox_folder_icons_square"
+
+    • Added option to enable AutoComplete border:
+
+      "gruvbox_autocomplete_border": true,        |  1px border
+      "gruvbox_autocomplete_border_thick": true,  |  2px border
+
+    • Added option to change Status Bar button widths:
+
+      "gruvbox_statusbar_button_xxs": true,  //  v  44
+      "gruvbox_statusbar_button_xs": true,   //  |  55
+      "gruvbox_statusbar_button_s": true,    //  |  65
+                                             //  |  75 (Default)
+      "gruvbox_statusbar_button_l": true,    //  |  85
+      "gruvbox_statusbar_button_xl": true,   //  |  95
+      "gruvbox_statusbar_button_xxl": true,  //  v  105
+
+    • Added option to change Status Bar labels font size:
+
+      "gruvbox_statusbar_font_size_10": true,  //  v  10
+                                               //  |  11 (Default)
+      "gruvbox_statusbar_font_size_12": true,  //  |  12
+      "gruvbox_statusbar_font_size_13": true,  //  |  13
+      "gruvbox_statusbar_font_size_14": true,  //  |  14
+      "gruvbox_statusbar_font_size_15": true,  //  |  15
+      "gruvbox_statusbar_font_size_16": true,  //  v  16
+
+    • Added option to change Button font size:
+
+      "gruvbox_buttons_font_size_10": true,  //  v  10
+                                             //  |  11 (Default)
+      "gruvbox_buttons_font_size_12": true,  //  |  12
+      "gruvbox_buttons_font_size_13": true,  //  |  13
+      "gruvbox_buttons_font_size_14": true,  //  |  14
+      "gruvbox_buttons_font_size_15": true,  //  |  15
+      "gruvbox_buttons_font_size_16": true,  //  v  16
+
+────────────────────────────────────────────────────────────────────────────────
+
+┌───────────────────┐
+│  COLOR SCHEMES    │
+└───────────────────┘
+
+    • Slim comment punctuation is now colored correctly
+    • Improved Regular Expression coloring in JavaScript, Ruby, & others
+    • Improved DocBlockr support for CoffeeScript, TypeScript, PHP, Java, & Groovy
+    • Improved Markdown punctuation coloring
+    • Improved Scala variable coloring
+    • Matlab functions are now colored the same as other languages
+    • Minor improvements to React templates and JSX
+    • Bracket Highlighter bracket match colors had their brightness increased
+    • SASS equality operators are now correctly colored
+    • CSS at-rule vendor prefixes are now correctly colored
+    • Improvements to CSS, SASS, LESS, & Stylus keyframes at-rule
+    • CSS, SASS & LESS attribute selectors are now `aqua` to differentiate
+      between id, class, and tag selectors
+
+────────────────────────────────────────────────────────────────────────────────
+
+If you are having any issues or want a new feature added,
+get in touch at https://github.com/Briles/gruvbox/issues

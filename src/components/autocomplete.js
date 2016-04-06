@@ -13,6 +13,12 @@ module.exports = function (values) {
       // Background
       'layer0.tint': c.container,
       'layer0.opacity': 1,
+
+      // Border
+      'layer1.tint': c.border,
+      'layer1.opacity': 0,
+      'layer1.draw_center': false,
+      'layer1.inner_margin': [1, 1],
     },
 
     // AutoComplete Popup

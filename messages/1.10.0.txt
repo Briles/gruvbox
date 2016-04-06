@@ -1,5 +1,5 @@
 gruvbox for Sublime Text 3
-https://github.com/briles/gruvbox
+https://github.com/Briles/gruvbox
 
 Version 1.10.0
 --------------------------------------------------------------------------------
@@ -15,8 +15,8 @@ Version 1.10.0
     • Added new file-type icons & recolored remaining with gruvbox colors
     • Better looking file-type icons in the sidebar
     • Better detection of file-types for file-type icons
-    • Additional code fold icons (see https://github.com/briles/gruvbox#code-fold-icon)
-    • Additional bookmark icons (see https://github.com/briles/gruvbox#bookmark-icon)
+    • Additional code fold icons (see https://github.com/Briles/gruvbox#code-fold-icon)
+    • Additional bookmark icons (see https://github.com/Briles/gruvbox#bookmark-icon)
 
   COLOR SCHEMES
 
@@ -24,4 +24,4 @@ Version 1.10.0
 
 
 If you are having any issues or want a new feature added,
-get in touch at https://github.com/briles/gruvbox/issues
+get in touch at https://github.com/Briles/gruvbox/issues

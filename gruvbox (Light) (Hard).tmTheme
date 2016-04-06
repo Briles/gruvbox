@@ -3,11 +3,11 @@
 <plist version="1.0">
   <dict>
     <key>comment</key>
-    <string>Based on gruvbox for vim (https://github.com/morhetz/gruvbox)</string>
+    <string>Based on gruvbox for Vim (https://github.com/morhetz/gruvbox)</string>
     <key>originalAuthor</key>
     <string>Pavel Pertsev (https://github.com/morhetz)</string>
     <key>author</key>
-    <string>Brian Reilly (https://github.com/briles/gruvbox)</string>
+    <string>Brian Reilly (https://github.com/Briles/gruvbox)</string>
     <key>name</key>
     <string>gruvbox (Light) (Hard)</string>
     <key>colorSpaceName</key>
@@ -40,11 +40,11 @@
           <key>bracketContentsOptions</key>
           <string>underline</string>
           <key>bracketContentsForeground</key>
-          <string>#7c6f64</string>
+          <string>#665c54</string>
           <key>bracketsOptions</key>
           <string>underline</string>
           <key>bracketsForeground</key>
-          <string>#7c6f64</string>
+          <string>#665c54</string>
           <key>gutterForeground</key>
           <string>#928374</string>
           <key>highlight</key>
@@ -65,7 +65,7 @@
         <key>name</key>
         <string>Text and Source Base Colors</string>
         <key>scope</key>
-        <string>meta.method.body.source.cs, none, source, text</string>
+        <string>meta.method.body.java, meta.method.body.source.cs, none, source, text</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -76,7 +76,7 @@
         <key>name</key>
         <string>Punctuation</string>
         <key>scope</key>
-        <string>meta.brace, meta.delimiter, meta.group.braces, meta.punctuation.separator, meta.separator, punctuation</string>
+        <string>keyword.operator keyword.operator.neon, keyword.operator operator.neon, meta.attribute-selector keyword.operator.stylus, meta.brace, meta.delimiter, meta.group.braces, meta.punctuation.separator, meta.separator, punctuation</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -87,7 +87,7 @@
         <key>name</key>
         <string>Comments</string>
         <key>scope</key>
-        <string>comment, comment text, markup.strikethrough, punctuation.definition.comment, punctuation.whitespace.comment, text.cancelled</string>
+        <string>comment, comment punctuation, comment text, markup.strikethrough, string.comment, text.cancelled</string>
         <key>settings</key>
         <dict>
           <key>fontStyle</key>
@@ -111,7 +111,7 @@
         <key>name</key>
         <string>DocBlockr &amp; Other Keywords Inside Comments</string>
         <key>scope</key>
-        <string>comment.parameter, comment.punctuation, comment.string, comment.type, storage.type.class.jsdoc</string>
+        <string>comment.parameter, comment.punctuation, comment.string, comment.type, keyword.other.phpdoc.php, punctuation.definition.keyword.javadoc, source.groovy keyword.other.documentation, source.java keyword.other.documentation, storage.type.annotation.coffeescript, storage.type.class.jsdoc</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -133,7 +133,7 @@
         <key>name</key>
         <string>Template String Punctuation</string>
         <key>scope</key>
-        <string>entity.name.tag.mustache, punctuation.definition.template-expression, punctuation.quasi, punctuation.section.embedded, string.interpolated, variable.other.interpolation.scss</string>
+        <string>entity.name.tag.mustache, entity.tag.tagbraces, punctuation.definition.template-expression, punctuation.quasi, punctuation.section.embedded, string.interpolated, variable.other.interpolation.scss</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -153,9 +153,9 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>CSS At-Rule Punctuation (@)</string>
+        <string>CSS At-Rule Punctuation (@) &amp; At-Rule Vendor Prefixes</string>
         <key>scope</key>
-        <string>punctuation.definition.keyword</string>
+        <string>keyword.control.at-rule support.type.property-vendor, punctuation.definition.keyword</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -166,7 +166,7 @@
         <key>name</key>
         <string>Operators</string>
         <key>scope</key>
-        <string>keyword.control.new, keyword.operator, keyword.other.arrow, keyword.other.double-colon</string>
+        <string>keyword.control.new, keyword.control.operator, keyword.operator, keyword.other.arrow, keyword.other.double-colon</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -177,7 +177,7 @@
         <key>name</key>
         <string>Constants Punctuation</string>
         <key>scope</key>
-        <string>constant.other.color punctuation.definition.constant, constant.other.color.rgb-value.scss, constant.other.unit, keyword.other.unit</string>
+        <string>constant.other.color punctuation.definition.constant, constant.other.color.rgb-value.scss, constant.other.unit, keyword.other.unit, punctuation.section.flowtype</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -197,7 +197,7 @@
       </dict>
       <dict>
         <key>scope</key>
-        <string>storage.modifier.import, storage.modifier.package, storage.type.import</string>
+        <string>storage.modifier.import, storage.modifier.package, storage.type.import, variable.import, variable.package</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -208,7 +208,7 @@
         <key>name</key>
         <string>Function Keyword</string>
         <key>scope</key>
-        <string>storage.type.function</string>
+        <string>meta.function storage.type.matlab, storage.type.function</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -219,7 +219,7 @@
         <key>name</key>
         <string>Variables</string>
         <key>scope</key>
-        <string>entity.name.variable, meta.definition.variable, variable, variable.interpolation variable, variable.other.interpolation variable, variable.parameter.sass</string>
+        <string>entity.name.val.declaration, entity.name.variable, meta.definition.variable, storage.type.variable, variable, variable.interpolation variable, variable.other.interpolation variable, variable.parameter.output.function.matlab, variable.parameter.sass</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -340,24 +340,79 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>Regular Expressions</string>
+        <string>Regular Expressions Text</string>
         <key>scope</key>
-        <string>string.regexp</string>
+        <string>source.regexp, string.regexp</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#9d0006</string>
+          <string>#79740e</string>
         </dict>
       </dict>
       <dict>
         <key>name</key>
-        <string>Embedded Ruby Regular Expressions</string>
+        <string>Regular Expressions Start &amp; End Punctuation</string>
         <key>scope</key>
-        <string>string.regexp.source.ruby.embedded</string>
+        <string>string.regexp punctuation.definition.string</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#665c54</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Regular Expressions Character Class Punctuation ([])</string>
+        <key>scope</key>
+        <string>keyword.control.set.regexp, punctuation.definition.character-class, string.regexp.character-class.ruby</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#8f3f71</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Regular Expressions Capturing Group</string>
+        <key>scope</key>
+        <string>string.regexp.group</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#1d2021</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Regular Expressions Assertions</string>
+        <key>scope</key>
+        <string>constant.other.assertion.regexp, punctuation.definition.group.assertion.regexp, punctuation.definition.group.capture.regexp</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#076678</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Regular Expressions Character Class</string>
+        <key>scope</key>
+        <string>constant.other.character-class.escape.backslash.regexp, keyword.control.character-class.regexp, string.regexp.character-class constant.character.escape</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
           <string>#b57614</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Regular Expressions Quantifiers &amp; Operators</string>
+        <key>scope</key>
+        <string>string.regexp.arbitrary-repetition, string.regexp.arbitrary-repetition punctuation</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#427b58</string>
         </dict>
       </dict>
       <dict>
@@ -480,13 +535,46 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>Markdown Quoted Punctuation</string>
+        <key>scope</key>
+        <string>markup.quote punctuation</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#b16286</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>Markdown List</string>
         <key>scope</key>
-        <string>markup.list, punctuation.definition.list_item.markdown, punctuation.definition.list_item.number</string>
+        <string>markup.list</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
           <string>#076678</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Markdown List Punctuation</string>
+        <key>scope</key>
+        <string>markup.list punctuation</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#458588</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Markdown Separators</string>
+        <key>scope</key>
+        <string>meta.separator.markdown</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#928374</string>
         </dict>
       </dict>
       <dict>
@@ -588,6 +676,17 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>CSS Attribute Selector</string>
+        <key>scope</key>
+        <string>meta.attribute-selector entity.other.attribute-name.attribute, meta.attribute-selector entity.other.attribute-name.stylus</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#427b58</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>HTML &amp; XML Entity Punctuation</string>
         <key>scope</key>
         <string>constant.character.entity punctuation.definition.constant, constant.character.entity punctuation.definition.entity</string>
@@ -610,7 +709,7 @@
         <key>name</key>
         <string>Markup Tag</string>
         <key>scope</key>
-        <string>entity.name.tag, entity.tag, keyword.control.untitled, keyword.doctype.xml, punctuation.definition.prolog.haml, source.less keyword.control.html.elements</string>
+        <string>entity.name.function.neon, entity.name.tag, entity.tag, keyword.control.untitled, keyword.doctype.xml, keyword.operator support.other.neon, punctuation.definition.prolog.haml, source.less keyword.control.html.elements</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -637,6 +736,17 @@
         <dict>
           <key>foreground</key>
           <string>#d79921</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>CSS Animations / Keyframes</string>
+        <key>scope</key>
+        <string>entity.function-name.stylus, entity.other.animation-keyframe.stylus, entity.other.animation-name, keyword.language.function.misc.stylus, meta.at-rule.keyframes entity.name.function, variable.other.animation-name</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#427b58</string>
         </dict>
       </dict>
       <dict>
@@ -874,7 +984,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#928374</string>
+          <string>#665c54</string>
         </dict>
       </dict>
       <dict>
@@ -885,7 +995,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#928374</string>
+          <string>#665c54</string>
         </dict>
       </dict>
       <dict>
@@ -896,7 +1006,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#928374</string>
+          <string>#665c54</string>
         </dict>
       </dict>
       <dict>
@@ -907,7 +1017,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#928374</string>
+          <string>#665c54</string>
         </dict>
       </dict>
       <dict>
@@ -918,7 +1028,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#928374</string>
+          <string>#665c54</string>
         </dict>
       </dict>
       <dict>
@@ -929,7 +1039,7 @@
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#928374</string>
+          <string>#665c54</string>
         </dict>
       </dict>
       <dict>
@@ -1214,6 +1324,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>2a475b0c-a2a0-480d-b21f-af260b6254eb</string>
+    <string>0fa38660-8d0a-4d42-b500-8cb5bcbc9e4b</string>
   </dict>
 </plist>

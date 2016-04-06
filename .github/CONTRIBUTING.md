@@ -1,7 +1,7 @@
 # Contributing to gruvbox for Sublime Text
 
 Contributions are always welcome. Before contributing please
-[search the issue tracker](https://github.com/briles/gruvbox/issues); your issue
+[search the issue tracker](https://github.com/Briles/gruvbox/issues); your issue
 may have already been discussed or fixed in `develop`. To contribute,
 [fork](https://help.github.com/articles/fork-a-repo/) gruvbox, commit your changes,
 & [send a pull request](https://help.github.com/articles/using-pull-requests/)
@@ -10,11 +10,11 @@ may have already been discussed or fixed in `develop`. To contribute,
 ## Feature Requests
 
 Feature requests should be submitted in the
-[issue tracker](https://github.com/briles/gruvbox/issues), with a description of
+[issue tracker](https://github.com/Briles/gruvbox/issues), with a description of
 the expected behavior, where they’ll remain closed until sufficient
 interest, e.g. :+1:’s, has been shown by the community. Before submitting a request,
 please search for similar ones in the
-[closed issues](https://github.com/briles/gruvbox/issues?q=is%3Aissue+is%3Aclosed+label%3Aenhancement).
+[closed issues](https://github.com/Briles/gruvbox/issues?q=is%3Aissue+is%3Aclosed+label%3Aenhancement).
 
 ## Pull Requests
 

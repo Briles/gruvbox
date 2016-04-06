@@ -1,7 +1,7 @@
 <p>
-  <a href="https://github.com/Briles/gruvbox/tags"><img src="https://img.shields.io/github/tag/briles/gruvbox.svg?style=flat-square" alt="GitHub tag"></a>
+  <a href="https://github.com/Briles/gruvbox/tags"><img src="https://img.shields.io/github/tag/Briles/gruvbox.svg?style=flat-square" alt="GitHub tag"></a>
   <a href="https://packagecontrol.io/packages/gruvbox"><img src="https://img.shields.io/packagecontrol/dt/gruvbox.svg?style=flat-square" alt="Package Control"></a>
-  <a href="https://github.com/Briles/gruvbox/blob/master/LICENSE"><img src="https://img.shields.io/github/license/briles/gruvbox.svg?style=flat-square" alt="GitHub license"></a>
+  <a href="https://github.com/Briles/gruvbox/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Briles/gruvbox.svg?style=flat-square" alt="GitHub license"></a>
 </p>
 
 <p align="center"><img src="https://cdn.rawgit.com/Briles/gruvbox/master/assets/banner-image.svg" alt="gruvbox for Sublime Text" width="327px" height="122px"></p>
@@ -18,8 +18,8 @@ Based on [gruvbox for Vim](https://github.com/morhetz/gruvbox)
 
 > &mdash; <cite>[Pavel Pertsev](https://github.com/morhetz), creator of gruvbox for Vim</cite>
 
-![Screenshot Dark](http://i.imgur.com/VyXrbOv.png)
-![Screenshot Light](http://i.imgur.com/1UHJx8B.png)
+![Screenshot Dark](http://i.imgur.com/8WUkqa5.png)
+![Screenshot Light](http://i.imgur.com/hdxzwzP.png)
 
 Contrast options
 ----------------
@@ -77,7 +77,7 @@ The easiest way to install is using [Package Control](https://packagecontrol.io/
 
 You can also install the theme manually:
 
-1. [Download the .zip](https://github.com/briles/gruvbox/archive/master.zip)
+1. [Download the .zip](https://github.com/Briles/gruvbox/archive/master.zip)
 2. Unzip and rename the folder to `gruvbox`
 3. Copy the folder into `Packages` directory, which you can find using the menu item `Sublime Text -> Preferences -> Browse Packages...`
 4. [Activate the theme](#how-to-activate) by adding the code below to *Preferences > Setting - User*:
@@ -142,6 +142,7 @@ Settings
 ![Accent Colors](http://i.imgur.com/QhdrE58.png)
 
 Enable accent color by setting the appropriate key to `true`
+
 Accent colors affect icons and certain text.
 
 ```json
@@ -164,11 +165,20 @@ Change the space between autocomplete rows
 
 ```json
   // sizes are top/bottom in px
-  "gruvbox_autocomplete_cozy": true,         //  v  2
-  "gruvbox_autocomplete_comfortable": true,  //  |  4
+  "gruvbox_autocomplete_cramped": true,      //  v  2
+  "gruvbox_autocomplete_compact": true,      //  |  4
                                              //  |  6 (Default)
-  "gruvbox_autocomplete_compact": true,      //  |  8
-  "gruvbox_autocomplete_cramped": true,      //  v  10
+  "gruvbox_autocomplete_comfortable": true,  //  |  8
+  "gruvbox_autocomplete_cozy": true,         //  v  10
+```
+
+#### AutoComplete Border
+
+Add a border around the autocomplete popup
+
+```json
+  "gruvbox_autocomplete_border": true,
+  "gruvbox_autocomplete_border_thick": true,
 ```
 
 #### Sidebar Spacing
@@ -228,6 +238,35 @@ Change the height of the statusbar
   "gruvbox_statusbar_l": true,    //  |  40
   "gruvbox_statusbar_xl": true,   //  |  45
   "gruvbox_statusbar_xxl": true,  //  v  50
+```
+
+#### Statusbar Button Widths
+
+Change the minimum width of the buttons in the statusbar
+
+```json
+  // sizes are in px
+  "gruvbox_statusbar_button_xxs": true,  //  v  44
+  "gruvbox_statusbar_button_xs": true,   //  |  55
+  "gruvbox_statusbar_button_s": true,    //  |  65
+                                         //  |  75 (Default)
+  "gruvbox_statusbar_button_l": true,    //  |  85
+  "gruvbox_statusbar_button_xl": true,   //  |  95
+  "gruvbox_statusbar_button_xxl": true,  //  v  105
+```
+
+#### Statusbar Font Sizes
+
+Change the font size of the status bar labels
+
+```json
+  "gruvbox_statusbar_font_size_10": true,  //  v  10
+                                           //  |  11 (Default)
+  "gruvbox_statusbar_font_size_12": true,  //  |  12
+  "gruvbox_statusbar_font_size_13": true,  //  |  13
+  "gruvbox_statusbar_font_size_14": true,  //  |  14
+  "gruvbox_statusbar_font_size_15": true,  //  |  15
+  "gruvbox_statusbar_font_size_16": true,  //  v  16
 ```
 
 #### Tab Sizes
@@ -319,6 +358,20 @@ Adjust the width of the scrollbars
   "gruvbox_scrollbar_width_xl": true,  //  v  20
 ```
 
+#### Button Font Sizes
+
+Adjust the font size of the buttons
+
+```json
+  "gruvbox_buttons_font_size_10": true,  //  v  10
+                                         //  |  11 (Default)
+  "gruvbox_buttons_font_size_12": true,  //  |  12
+  "gruvbox_buttons_font_size_13": true,  //  |  13
+  "gruvbox_buttons_font_size_14": true,  //  |  14
+  "gruvbox_buttons_font_size_15": true,  //  |  15
+  "gruvbox_buttons_font_size_16": true,  //  v  16
+```
+
 #### Alternate Folder Icons
 
 ##### Square Folder Icons
@@ -328,17 +381,17 @@ Adjust the width of the scrollbars
 Use square folder icons in the sidebar
 
 ```json
-"gruvbox_enable_square_folder_icons": true,
+"gruvbox_folder_icons_square": true,
 ```
 
-##### Literal Folder Icons
+##### Circle Folder Icons
 
-![Literal Folder Icons](http://i.imgur.com/gw7mNjI.png)
+![Circle Folder Icons](http://i.imgur.com/KgAedvC.png)
 
-Use 'literal' folder icons in the sidebar
+Use 'circle' folder icons in the sidebar
 
 ```json
-"gruvbox_enable_literal_folder_icons": true,
+"gruvbox_folder_icons_circle": true,
 ```
 
 ##### Plus/Minus Folder Icons
@@ -348,7 +401,15 @@ Use 'literal' folder icons in the sidebar
 Use 'plus/minus' folder icons in the sidebar
 
 ```json
-"gruvbox_enable_plus_minus_folder_icons": true,
+"gruvbox_folder_icons_plus_minus": true,
+```
+
+##### Spacegray Folder Icons
+
+Use spacegray-like folder icons in the sidebar
+
+```json
+"gruvbox_folder_icons_spacegray": true,
 ```
 
 #### Alternate Icon Sets
@@ -384,24 +445,25 @@ add the color scheme path to the `"color_scheme"` key in
 #### Even More Settings...
 
 ```json
-  "gruvbox_buttons_bold": true,               // Enable bold button labels
-  "gruvbox_colored_tooltips": true,           // Color the tooltip backgrounds with the current accent color
-  "gruvbox_disable_borders": true,            // Disable all borders
-  "gruvbox_disable_faded_file_icons": true,   // Make file-type icons opaque
-  "gruvbox_disable_fileicons": true,          // Disable the sidebar file icons
-  "gruvbox_disable_folder_icons": true,       // Disable the sidebar folder icons
-  "gruvbox_disable_greyscale": true,          // Use gruvbox colors instead of greyscale colors for certain text
-  "gruvbox_disable_panels_button": true,      // Hide the panel-switching button
-  "gruvbox_enable_panel_close_button": true,  // Enable the panel close button
-  "gruvbox_enable_sidebar_border": true,      // Enable the sidebar border
-  "gruvbox_enable_statusbar_border": true,    // Enable borders for the status bar
-  "gruvbox_enable_tab_borders": true,         // Enable borders for the tabs
-  "gruvbox_highlight_active_buttons": true,   // Highlight selected buttons in the Find & Replace panel
-  "gruvbox_highlight_active_tree_row": true,  // Highlight the active file in the sidebar tree
-  "gruvbox_less_contrast": true,              // Use less contrasting colors in sidebar, tabs, etc.
-  "gruvbox_statusbar_bold": true,             // Enable bold status bar labels
-  "gruvbox_tabs_autowidth": true,             // Auto-size the tabs
-  "gruvbox_tabs_bold": true,                  // Enable bold tabs
+  "gruvbox_buttons_bold": true,                        // Enable bold button labels
+  "gruvbox_colored_tooltips": true,                    // Color the tooltip backgrounds with the current accent color
+  "gruvbox_disable_borders": true,                     // Disable all borders
+  "gruvbox_disable_command_palette_row_border": true,  // Disable Command Palette row borders
+  "gruvbox_disable_faded_file_icons": true,            // Make file-type icons opaque
+  "gruvbox_disable_fileicons": true,                   // Disable the sidebar file icons
+  "gruvbox_disable_folder_icons": true,                // Disable the sidebar folder icons
+  "gruvbox_disable_greyscale": true,                   // Use gruvbox colors instead of greyscale colors for certain text
+  "gruvbox_disable_panels_button": true,               // Hide the panel-switching button
+  "gruvbox_enable_panel_close_button": true,           // Enable the panel close button
+  "gruvbox_enable_sidebar_border": true,               // Enable the sidebar border
+  "gruvbox_enable_statusbar_border": true,             // Enable borders for the status bar
+  "gruvbox_enable_tab_borders": true,                  // Enable borders for the tabs
+  "gruvbox_highlight_active_buttons": true,            // Highlight selected buttons in the Find & Replace panel
+  "gruvbox_highlight_active_tree_row": true,           // Highlight the active file in the sidebar tree
+  "gruvbox_less_contrast": true,                       // Use less contrasting colors in sidebar, tabs, etc.
+  "gruvbox_statusbar_bold": true,                      // Enable bold status bar labels
+  "gruvbox_tabs_autowidth": true,                      // Auto-size the tabs
+  "gruvbox_tabs_bold": true,                           // Enable bold tabs
 ```
 
 Extras
@@ -455,7 +517,7 @@ Contributing
 -------
 
 Contributions are always welcome. Before contributing please
-read [Contributing](https://github.com/briles/gruvbox/blob/master/.github/CONTRIBUTING.md)
+read [Contributing](https://github.com/Briles/gruvbox/blob/master/.github/CONTRIBUTING.md)
 
 Thanks
 ------
