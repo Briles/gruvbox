@@ -208,7 +208,7 @@
         <key>name</key>
         <string>Function Keyword</string>
         <key>scope</key>
-        <string>entity.other.animation-name, meta.function storage.type.matlab, storage.type.function</string>
+        <string>meta.function storage.type.matlab, storage.type.function</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -736,6 +736,17 @@
         <dict>
           <key>foreground</key>
           <string>#d79921</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>CSS Animations / Keyframes</string>
+        <key>scope</key>
+        <string>entity.function-name.stylus, entity.other.animation-keyframe.stylus, entity.other.animation-name, keyword.language.function.misc.stylus, meta.at-rule.keyframes entity.name.function, variable.other.animation-name</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#8ec07c</string>
         </dict>
       </dict>
       <dict>
@@ -1313,6 +1324,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>6bf2a3b6-52e8-45ca-80bb-d4d5d1ac28dc</string>
+    <string>3059d6e4-4169-41d6-ba74-91a01f5e29fc</string>
   </dict>
 </plist>

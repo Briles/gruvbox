@@ -237,7 +237,6 @@ module.exports = function (values) {
         scope: [
           'storage.type.function',
           'meta.function storage.type.matlab',
-          'entity.other.animation-name',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -706,7 +705,7 @@ module.exports = function (values) {
         name: 'CSS Attribute Selector',
         scope: [
           'meta.attribute-selector entity.other.attribute-name.attribute',
-          'meta.attribute-selector entity.other.attribute-name.stylus'
+          'meta.attribute-selector entity.other.attribute-name.stylus',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -775,6 +774,21 @@ module.exports = function (values) {
         ],
         settings: {
           foreground: c.neutralYellow,
+        },
+      },
+
+      {
+        name: 'CSS Animations / Keyframes',
+        scope: [
+          'entity.other.animation-name',
+          'variable.other.animation-name',
+          'meta.at-rule.keyframes entity.name.function',
+          'keyword.language.function.misc.stylus',
+          'entity.function-name.stylus',
+          'entity.other.animation-keyframe.stylus',
+        ],
+        settings: {
+          foreground: c.bnp.aqua,
         },
       },
 
