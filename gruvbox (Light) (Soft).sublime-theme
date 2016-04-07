@@ -163,7 +163,20 @@
       219,
       178
     ],
-    "layer0.opacity": 0
+    "layer0.opacity": 0,
+    "layer1.tint": [
+      102,
+      92,
+      84
+    ],
+    "layer1.opacity": 0,
+    "layer1.draw_center": false,
+    "layer1.inner_margin": [
+      1,
+      0,
+      0,
+      0
+    ]
   },
   {
     "class": "table_row",
@@ -2404,6 +2417,40 @@
     ]
   },
   {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer1.opacity": 1
+  },
+  {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row_thick"
+    ],
+    "layer1.inner_margin": [
+      2,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row_thickest"
+    ],
+    "layer1.inner_margin": [
+      3,
+      0,
+      0,
+      0
+    ]
+  },
+  {
     "class": "quick_panel",
     "parents": [
       {
@@ -4233,6 +4280,16 @@
     "layer1.opacity": 0
   },
   {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_disable_autocomplete_row_highlight"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer0.opacity": 0
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       157,
@@ -5774,6 +5831,44 @@
       "dirty"
     ],
     "layer2.tint": [
+      204,
+      36,
+      29
+    ]
+  },
+  {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_red"
+    ],
+    "layer1.tint": [
+      157,
+      0,
+      6
+    ]
+  },
+  {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_red"
+    ],
+    "layer1.tint": [
+      251,
+      73,
+      52
+    ]
+  },
+  {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_red"
+    ],
+    "layer1.tint": [
       204,
       36,
       29
@@ -7327,6 +7422,44 @@
     ]
   },
   {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_green"
+    ],
+    "layer1.tint": [
+      121,
+      116,
+      14
+    ]
+  },
+  {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_green"
+    ],
+    "layer1.tint": [
+      184,
+      187,
+      38
+    ]
+  },
+  {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_green"
+    ],
+    "layer1.tint": [
+      152,
+      151,
+      26
+    ]
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       181,
@@ -8868,6 +9001,44 @@
       "dirty"
     ],
     "layer2.tint": [
+      215,
+      153,
+      33
+    ]
+  },
+  {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_yellow"
+    ],
+    "layer1.tint": [
+      181,
+      118,
+      20
+    ]
+  },
+  {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_yellow"
+    ],
+    "layer1.tint": [
+      250,
+      189,
+      47
+    ]
+  },
+  {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_yellow"
+    ],
+    "layer1.tint": [
       215,
       153,
       33
@@ -10421,6 +10592,44 @@
     ]
   },
   {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_blue"
+    ],
+    "layer1.tint": [
+      7,
+      102,
+      120
+    ]
+  },
+  {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_blue"
+    ],
+    "layer1.tint": [
+      131,
+      165,
+      152
+    ]
+  },
+  {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_blue"
+    ],
+    "layer1.tint": [
+      69,
+      133,
+      136
+    ]
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       143,
@@ -11962,6 +12171,44 @@
       "dirty"
     ],
     "layer2.tint": [
+      177,
+      98,
+      134
+    ]
+  },
+  {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_purple"
+    ],
+    "layer1.tint": [
+      143,
+      63,
+      113
+    ]
+  },
+  {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_purple"
+    ],
+    "layer1.tint": [
+      211,
+      134,
+      155
+    ]
+  },
+  {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_purple"
+    ],
+    "layer1.tint": [
       177,
       98,
       134
@@ -13515,6 +13762,44 @@
     ]
   },
   {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_aqua"
+    ],
+    "layer1.tint": [
+      66,
+      123,
+      88
+    ]
+  },
+  {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_aqua"
+    ],
+    "layer1.tint": [
+      142,
+      192,
+      124
+    ]
+  },
+  {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_aqua"
+    ],
+    "layer1.tint": [
+      104,
+      157,
+      106
+    ]
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       175,
@@ -15056,6 +15341,44 @@
       "dirty"
     ],
     "layer2.tint": [
+      214,
+      93,
+      14
+    ]
+  },
+  {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_orange"
+    ],
+    "layer1.tint": [
+      175,
+      58,
+      3
+    ]
+  },
+  {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_orange"
+    ],
+    "layer1.tint": [
+      254,
+      128,
+      25
+    ]
+  },
+  {
+    "class": "table_row",
+    "settings": [
+      "gruvbox_sideline_autocomplete_row",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_orange"
+    ],
+    "layer1.tint": [
       214,
       93,
       14

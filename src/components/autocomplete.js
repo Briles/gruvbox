@@ -47,6 +47,11 @@ module.exports = function (values) {
       // Background
       'layer0.tint': c.bnp.bg1,
       'layer0.opacity': 0,
+
+      'layer1.tint': c.bnp.fg3,
+      'layer1.opacity': 0,
+      'layer1.draw_center': false,
+      'layer1.inner_margin': [1, 0, 0, 0],
     },
 
     // AutoComplete Row

@@ -12,6 +12,7 @@ module.exports = function (values, externalPaths) {
     'status_bar_button_size',
     'sidebar_padding',
     'autocomplete_padding',
+    'sideline_selected_autocomplete_row',
     'command_palette_padding',
     'disable_borders',
     'enable_borders',

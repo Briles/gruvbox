@@ -1430,6 +1430,31 @@ module.exports = function (values) {
         'layer2.tint': color.neutral,
       },
 
+      /**
+       * Sideline Selected Autocomplete Row
+       */
+
+      {
+        class: 'table_row',
+        settings: [stOpts.sidelineAutocompleteRow],
+
+        'layer1.tint': color.this,
+      },
+
+      {
+        class: 'table_row',
+        settings: [stOpts.sidelineAutocompleteRow, stOpts.accentOpposite],
+
+        'layer1.tint': color.opposite,
+      },
+
+      {
+        class: 'table_row',
+        settings: [stOpts.sidelineAutocompleteRow, stOpts.accentNeutral],
+
+        'layer1.tint': color.neutral,
+      },
+
     ];
 
     return data.map(populateSettings);
