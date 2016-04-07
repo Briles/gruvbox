@@ -153,6 +153,7 @@ Accent colors affect icons and certain text.
   "gruvbox_accent_purple": true,
   "gruvbox_accent_red": true,
   "gruvbox_accent_yellow": true,
+
   "gruvbox_accent_opposite": true, // Use the other mode's accent color; IE: Use Light theme's red with Dark theme
   "gruvbox_accent_neutral": true, // Use brightness-mode-neutral accent color
 ```
@@ -494,20 +495,20 @@ add the color scheme path to the `"color_scheme"` key in
 #### Even More Settings...
 
 ```json
-  "gruvbox_buttons_bold": true,                        // Enable bold button labels
-  "gruvbox_colored_tooltips": true,                    // Color the tooltip backgrounds with the current accent color
-  "gruvbox_disable_faded_file_icons": true,            // Make file-type icons opaque
-  "gruvbox_disable_fileicons": true,                   // Disable the sidebar file icons
-  "gruvbox_disable_folder_icons": true,                // Disable the sidebar folder icons
-  "gruvbox_disable_greyscale": true,                   // Use gruvbox colors instead of greyscale colors for certain text
-  "gruvbox_disable_panels_button": true,               // Hide the panel-switching button
-  "gruvbox_enable_panel_close_button": true,           // Enable the panel close button
-  "gruvbox_highlight_active_buttons": true,            // Highlight selected buttons in the Find & Replace panel
-  "gruvbox_highlight_active_tree_row": true,           // Highlight the active file in the sidebar tree
-  "gruvbox_less_contrast": true,                       // Use less contrasting colors in sidebar, tabs, etc.
-  "gruvbox_statusbar_bold": true,                      // Enable bold status bar labels
-  "gruvbox_tabs_autowidth": true,                      // Auto-size the tabs
-  "gruvbox_tabs_bold": true,                           // Enable bold tabs
+  "gruvbox_buttons_bold": true,               // Enable bold button labels
+  "gruvbox_colored_tooltips": true,           // Color the tooltip backgrounds with the current accent color
+  "gruvbox_disable_faded_file_icons": true,   // Make file-type icons opaque
+  "gruvbox_disable_fileicons": true,          // Disable the sidebar file icons
+  "gruvbox_disable_folder_icons": true,       // Disable the sidebar folder icons
+  "gruvbox_disable_greyscale": true,          // Use gruvbox colors instead of greyscale colors for certain text
+  "gruvbox_disable_panels_button": true,      // Hide the panel-switching button
+  "gruvbox_enable_panel_close_button": true,  // Enable the panel close button
+  "gruvbox_highlight_active_buttons": true,   // Highlight selected buttons in the Find & Replace panel
+  "gruvbox_highlight_active_tree_row": true,  // Highlight the active file in the sidebar tree
+  "gruvbox_less_contrast": true,              // Use less contrasting colors in sidebar, tabs, etc.
+  "gruvbox_statusbar_bold": true,             // Enable bold status bar labels
+  "gruvbox_tabs_autowidth": true,             // Auto-size the tabs
+  "gruvbox_tabs_bold": true,                  // Enable bold tabs
 ```
 
 Extras
