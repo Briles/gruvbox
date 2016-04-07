@@ -55,6 +55,13 @@ module.exports = function (values) {
     },
 
     {
+      class: 'tabset_control',
+      settings: [stOpts.enableTabBorders, `!${stOpts.disableBorders}`],
+
+      'layer2.opacity': 0,
+    },
+
+    {
       class: 'tab_control',
       settings: [stOpts.enableTabBorders],
 
