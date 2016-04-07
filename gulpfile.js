@@ -47,6 +47,7 @@ gulp.task('watch', function () {
     `${srcPath}components.js`,
     `${srcPath}components/*.js`,
     `${srcPath}options.js`,
+    `${srcPath}options/*.js`,
     `${srcPath}paths.js`,
     `${srcPath}sublime-options.js`,
   ];
