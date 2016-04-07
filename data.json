@@ -267,6 +267,11 @@
                 "group": "disableCommandPaletteRowBorders",
                 "trueValue": "no-command-palette-borders",
                 "info": "Disable Command Palette row borders"
+            },
+            "Disable Command Palette Row Highlight": {
+                "group": "disableCommandPaletteRowHighlight",
+                "trueValue": "no-command-palette-highlight",
+                "info": "Disable selected Command Palette row highlight"
             }
         }
     }

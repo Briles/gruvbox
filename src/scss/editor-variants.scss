@@ -81,6 +81,14 @@
           }
         }
 
+        &.no-command-palette-highlight {
+          .commands li {
+            &.selected, &:hover {
+              background-color: $transparent;
+            }
+          }
+        }
+
         .command-palette-wrapper, .findreplace {
           input {
             color: $foreground;
