@@ -1455,6 +1455,31 @@ module.exports = function (values) {
         'layer1.tint': color.neutral,
       },
 
+      /**
+       * Sideline Selected Command Palette Row
+       */
+
+      {
+        class: 'mini_quick_panel_row',
+        settings: [stOpts.sidelineCommandPaletteRow],
+
+        'layer2.tint': color.this,
+      },
+
+      {
+        class: 'mini_quick_panel_row',
+        settings: [stOpts.sidelineCommandPaletteRow, stOpts.accentOpposite],
+
+        'layer2.tint': color.opposite,
+      },
+
+      {
+        class: 'mini_quick_panel_row',
+        settings: [stOpts.sidelineCommandPaletteRow, stOpts.accentNeutral],
+
+        'layer2.tint': color.neutral,
+      },
+
     ];
 
     return data.map(populateSettings);

@@ -183,5 +183,14 @@ module.exports = function (values) {
       'layer0.opacity': 0, // Background
     },
 
+    // Disabled Command Palette Row Highlight
+    {
+      class: 'mini_quick_panel_row',
+      settings: [stOpts.disableCommandPaletteRowHighlight],
+      attributes: ['selected'],
+
+      'layer0.opacity': 0, // Background
+    },
+
   ];
 };

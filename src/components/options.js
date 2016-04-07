@@ -14,6 +14,7 @@ module.exports = function (values, externalPaths) {
     'autocomplete_padding',
     'sideline_selected_autocomplete_row',
     'command_palette_padding',
+    'sideline_selected_command_palette_row',
     'disable_borders',
     'enable_borders',
     'underline_modified_tabs',
