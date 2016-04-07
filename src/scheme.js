@@ -1358,6 +1358,13 @@ module.exports = function (values) {
     } else if (_.size(v.settings) < 1) {
       // Ensure the settings property has atleast 1 element
       throw new Error(`"${identifier}" must have atleast 1 setting`);
+    } else {
+      // Ensure there are no undefined settings
+      _.forEach(v.settings, function (value, setting) {
+        if (value === undefined) {
+          throw new Error(`"${setting}" for "${identifier}" is undefined`);
+        }
+      });
     }
 
     // Ensure there are no duplicate scopes
