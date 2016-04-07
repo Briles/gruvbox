@@ -215,6 +215,19 @@
                 ],
                 "default": "Default",
                 "info": "Change the space between command palette rows"
+            },
+            "Sideline Selected Command Palette Row": {
+                "group": "sidelineCommandPalette",
+                "prefix": "sideline-command-palette sideline-command-palette-",
+                "values": [
+                    "Off",
+                    "Default",
+                    "Thick",
+                    "Thickest"
+                ],
+                "default": "Off",
+                "defaultValue": "",
+                "info": "Add a border to the left side of the selected command palette row"
             }
         },
         "single": {

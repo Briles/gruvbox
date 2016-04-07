@@ -19,6 +19,7 @@ module.exports = function ($scope, $routeParams, $location) {
     statusbarFontSize: '',
     statusbarButtonWidth: '',
     commandPaletteSpacing: '',
+    sidelineCommandPalette: '',
   };
 
   var getConfiguration = function () {
