@@ -177,7 +177,7 @@
         <key>name</key>
         <string>Constants Punctuation</string>
         <key>scope</key>
-        <string>constant.other.color punctuation.definition.constant, constant.other.color.rgb-value.scss, constant.other.unit, keyword.other.unit, punctuation.section.flowtype</string>
+        <string>constant.other.color punctuation.definition.constant, constant.other.unit, keyword.other.unit, punctuation.section.flowtype</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -285,7 +285,7 @@
         <key>name</key>
         <string>Language Constants</string>
         <key>scope</key>
-        <string>constant, constant.numeric, constant.other, constant.other.color, constant.other.symbol, punctuation.definition.constant.scss, support.constant.color, variable.language</string>
+        <string>constant, constant.numeric, constant.other, constant.other.color, constant.other.symbol, support.constant.color, variable.language</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1324,6 +1324,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>84342ac9-3629-479a-b72e-0587631ffaa8</string>
+    <string>0f4461ac-e2e8-4ade-89af-e776f7aae53b</string>
   </dict>
 </plist>

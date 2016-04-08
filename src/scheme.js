@@ -199,7 +199,6 @@ module.exports = function (values) {
         name: 'Constants Punctuation',
         scope: [
           'constant.other.color punctuation.definition.constant',
-          'constant.other.color.rgb-value.scss',
           'constant.other.unit',
           'keyword.other.unit',
           'punctuation.section.flowtype',
@@ -326,7 +325,7 @@ module.exports = function (values) {
           'constant.other',
           'constant.other.color',
           'support.constant.color',
-          'punctuation.definition.constant.scss',
+          // 'punctuation.definition.constant.scss',
           'variable.language',
         ],
         settings: {
