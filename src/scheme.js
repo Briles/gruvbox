@@ -141,6 +141,7 @@ module.exports = function (values) {
           'string.interpolated',
           'variable.other.interpolation.scss',
           'entity.tag.tagbraces',
+          'punctuation.definition.string.template',
         ],
         settings: {
           foreground: c.bnp.aqua,
