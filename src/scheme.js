@@ -81,7 +81,8 @@ module.exports = function (values) {
           'string.comment',
           'markup.strikethrough',
           'text.cancelled',
-          'comment punctuation',
+          'punctuation.definition.comment',
+          'punctuation.whitespace.comment',
         ],
         settings: {
           fontStyle: 'italic',
