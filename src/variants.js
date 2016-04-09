@@ -1,25 +1,39 @@
-(function () {
+var variant = (function () {
   'use strict';
 
   const _ = require('lodash');
-  const gruvboxPalette = require('./palette.js');
+
+  /**
+   * @class Variant
+   * @constructor
+   * @param {object} the base scheme to inherit from
+   */
+  var Variant = function (base) {
+    if (!(this instanceof Variant)) {
+      return new Variant(base);
+    }
+
+    this._base = _.cloneDeep(base);
+
+    return this;
+  };
 
   /**
    * Color scheme variant without any neutral colors
-   * @param  {object} base the inherited scheme values
    * @return {object}      a new, modified scheme
    */
-  var noDimmedVariant = function (base) {
-    base.info.name += ' NDC';
+  Variant.prototype.noDimmedVariant = function () {
+    var _base = this._base;
+    _base.info.name += ' NDC';
 
-    _.forEach(gruvboxPalette.accents, function (v, k) {
-      base.colors['neutral' + _.upperFirst(k)] = base.colors.bnp[k];
+    _.forEach(_base.colors.accents, function (v, k) {
+      _base.colors['neutral' + _.upperFirst(k)] = _base.colors.bnp[k];
     });
 
-    return base;
+    return _base;
   };
 
-  module.exports = {
-    noDimmedVariant: noDimmedVariant,
-  };
+  return Variant;
 }());
+
+module.exports = variant;

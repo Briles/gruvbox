@@ -28,7 +28,7 @@
   const tinycolor = require('./tinycolor.js');
   const paths = require('./paths.js')(PACKAGE_NAME);
   const components = require('./components.js');
-  const variants = require('./variants.js');
+  const variant = require('./variants.js');
   const utils = require('./utils.js');
 
   // theme-specific options exposed to the user
@@ -125,7 +125,7 @@
 
       const schemeVariants = [
         defaultVariant,
-        variants.noDimmedVariant(defaultVariant),
+        (variant(defaultVariant).noDimmedVariant()),
       ];
 
       schemeVariants.forEach(function (variant) {
