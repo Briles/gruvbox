@@ -139,7 +139,7 @@ Settings
 
 #### Accent Colors
 
-![Accent Colors](http://i.imgur.com/QhdrE58.png)
+![Accent Colors](http://i.imgur.com/d0o9auc.png)
 
 Enable accent color by setting the appropriate key to `true`
 
