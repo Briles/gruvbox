@@ -76,7 +76,7 @@
         <key>name</key>
         <string>Punctuation</string>
         <key>scope</key>
-        <string>keyword.operator keyword.operator.neon, keyword.operator operator.neon, meta.attribute-selector keyword.operator.stylus, meta.brace, meta.delimiter, meta.group.braces, meta.punctuation.separator, meta.separator, punctuation</string>
+        <string>keyword.operator keyword.operator.neon, keyword.operator operator.neon, keyword.other.accessor, meta.attribute-selector keyword.operator.stylus, meta.brace, meta.delimiter, meta.group.braces, meta.punctuation.separator, meta.separator, punctuation</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1324,6 +1324,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>8f35d42c-5e15-4579-ae40-dc24d6739613</string>
+    <string>f105b095-544c-41d6-9daa-ed4c12b4f24c</string>
   </dict>
 </plist>
