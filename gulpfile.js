@@ -54,12 +54,14 @@ gulp.task('watch', function () {
 
   var schemeFiles = [
     `${srcPath}scheme.js`,
+    `${srcPath}variants.js`,
   ];
 
   var widgetFiles = [
     `${srcPath}options.js`,
     `${srcPath}paths.js`,
     `${srcPath}scheme.js`,
+    `${srcPath}variants.js`,
     `${srcPath}widget.js`,
   ];
 

@@ -28,6 +28,7 @@
   const tinycolor = require('./tinycolor.js');
   const paths = require('./paths.js')(PACKAGE_NAME);
   const components = require('./components.js');
+  const variants = require('./variants.js');
   const utils = require('./utils.js');
 
   // theme-specific options exposed to the user
@@ -116,32 +117,42 @@
        * Color Schemes
        */
 
-      const schemeValues = {
+      const defaultVariant = {
         colors: _.deepMapValues(entirePalette, c => tinycolor(c).toSublimeHex()),
         info: info,
         paths: paths.internal,
       };
 
-      if (BUILD_MODE_SCHEME || BUILD_MODE_ALL) {
+      const schemeVariants = [
+        defaultVariant,
+        variants.noDimmedVariant(defaultVariant),
+      ];
 
-        const schemeContents = require('./scheme.js')(schemeValues);
-        const schemeDestination = path.join(paths.external.root, `${info.name}.tmTheme`);
+      schemeVariants.forEach(function (variant) {
 
-        utils.writeOutput(schemeDestination, schemeContents);
-      }
+        if (BUILD_MODE_SCHEME || BUILD_MODE_ALL) {
 
-      /**
-       * Widgets
-       */
-      if (BUILD_MODE_WIDGET || BUILD_MODE_ALL) {
-        const widgetTemplate = require('./widget.js')(schemeValues);
+          const schemeContents = require('./scheme.js')(variant);
+          const schemeDestination = path.join(paths.external.root, `${variant.info.name}.tmTheme`);
 
-        const widgetFilename = `Widget - ${info.name}.sublime-settings`;
-        const widgetDestination = path.join(paths.external.widgets, widgetFilename);
-        const widgetContents = JSON.stringify(widgetTemplate.settings, null, JSON_WHITESPACE);
+          utils.writeOutput(schemeDestination, schemeContents);
+        }
 
-        utils.writeOutput(widgetDestination, widgetContents);
-      }
+        /**
+         * Widgets
+         */
+        if (BUILD_MODE_WIDGET || BUILD_MODE_ALL) {
+          const widgetTemplate = require('./widget.js')(variant);
+
+          const widgetFilename = `Widget - ${variant.info.name}.sublime-settings`;
+          const widgetDestination = path.join(paths.external.widgets, widgetFilename);
+          const widgetContents = JSON.stringify(widgetTemplate.settings, null, JSON_WHITESPACE);
+
+          utils.writeOutput(widgetDestination, widgetContents);
+        }
+
+      });
+
     });
   });
 

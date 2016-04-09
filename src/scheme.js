@@ -325,6 +325,7 @@ module.exports = function (values) {
           'constant.other',
           'constant.other.color',
           'support.constant.color',
+
           // 'punctuation.definition.constant.scss',
           'variable.language',
         ],
