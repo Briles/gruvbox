@@ -442,6 +442,16 @@ Use spacegray-like folder icons in the sidebar
 
 #### Alternate Icon Sets
 
+##### Thick
+
+![Thick Icon Set](http://i.imgur.com/Z9uIRPH.png)
+
+Use icons with a thicker stroke
+
+```json
+"gruvbox_iconset_thick": true,
+```
+
 ##### Spacegray
 
 ![Spacegray Icon Set](http://i.imgur.com/SiL6f32.png)

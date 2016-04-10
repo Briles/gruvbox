@@ -33,6 +33,12 @@ module.exports = function (values) {
       neutral: `${assets.neutral}spacegray__`,
     };
 
+    var thick = {
+      this: `${assets.this}thick__`,
+      opposite: `${assets.opposite}thick__`,
+      neutral: `${assets.neutral}thick__`,
+    };
+
     /**
      * appends the appropriate accent setting to each object
      * @param  {object} obj the object the settings will be applied to
@@ -390,6 +396,100 @@ module.exports = function (values) {
       },
 
       /**
+       * Thick Iconset
+       */
+
+      // Regex Icon
+      {
+        class: 'icon_regex',
+        settings: [stOpts.iconsetThick],
+
+        'layer2.texture': `${thick.this}regex.png`,
+      },
+
+      // Case Sensitive
+      {
+        class: 'icon_case',
+        settings: [stOpts.iconsetThick],
+
+        'layer2.texture': `${thick.this}casesensitive.png`,
+      },
+
+      // Wholeword
+      {
+        class: 'icon_whole_word',
+        settings: [stOpts.iconsetThick],
+
+        'layer2.texture': `${thick.this}wholeword.png`,
+      },
+
+      // Wrap
+      {
+        class: 'icon_wrap',
+        settings: [stOpts.iconsetThick],
+
+        'layer2.texture': `${thick.this}wrap.png`,
+      },
+
+      // In Selection
+      {
+        class: 'icon_in_selection',
+        settings: [stOpts.iconsetThick],
+
+        'layer2.texture': `${thick.this}inselection.png`,
+      },
+
+      // Highlight Result
+      {
+        class: 'icon_highlight',
+        settings: [stOpts.iconsetThick],
+
+        'layer2.texture': `${thick.this}highlight.png`,
+      },
+
+      // Preserve Case
+      {
+        class: 'icon_preserve_case',
+        settings: [stOpts.iconsetThick],
+
+        'layer2.texture': `${thick.this}preservecase.png`,
+      },
+
+      // Show Context
+      {
+        class: 'icon_context',
+        settings: [stOpts.iconsetThick],
+
+        'layer2.texture': `${thick.this}context.png`,
+      },
+
+      // Use Buffer
+      {
+        class: 'icon_use_buffer',
+        settings: [stOpts.iconsetThick],
+
+        'layer2.texture': `${thick.this}buffer.png`,
+      },
+
+      // Input History Button
+      {
+        class: 'dropdown_button_control',
+        settings: [stOpts.iconsetThick],
+
+        'layer1.texture': `${thick.this}more.png`,
+      },
+
+      // Panel Switcher
+      {
+        class: 'panel_button_control',
+        settings: [stOpts.iconsetThick],
+
+        attributes: ['hover'],
+
+        'layer0.texture': `${thick.this}panels.png`,
+      },
+
+      /**
        * Use Opposite Colors
        */
 
@@ -736,6 +836,99 @@ module.exports = function (values) {
         attributes: ['hover'],
 
         'layer0.texture': `${spacegray.opposite}panels.png`,
+      },
+
+      /**
+       * Thick Iconset
+       */
+
+      // Regex Icon
+      {
+        class: 'icon_regex',
+        settings: [stOpts.iconsetThick, stOpts.accentOpposite],
+
+        'layer2.texture': `${thick.opposite}regex.png`,
+      },
+
+      // Case Sensitive
+      {
+        class: 'icon_case',
+        settings: [stOpts.iconsetThick, stOpts.accentOpposite],
+
+        'layer2.texture': `${thick.opposite}casesensitive.png`,
+      },
+
+      // Wholeword
+      {
+        class: 'icon_whole_word',
+        settings: [stOpts.iconsetThick, stOpts.accentOpposite],
+
+        'layer2.texture': `${thick.opposite}wholeword.png`,
+      },
+
+      // Wrap
+      {
+        class: 'icon_wrap',
+        settings: [stOpts.iconsetThick, stOpts.accentOpposite],
+
+        'layer2.texture': `${thick.opposite}wrap.png`,
+      },
+
+      // In Selection
+      {
+        class: 'icon_in_selection',
+        settings: [stOpts.iconsetThick, stOpts.accentOpposite],
+
+        'layer2.texture': `${thick.opposite}inselection.png`,
+      },
+
+      // Highlight Result
+      {
+        class: 'icon_highlight',
+        settings: [stOpts.iconsetThick, stOpts.accentOpposite],
+
+        'layer2.texture': `${thick.opposite}highlight.png`,
+      },
+
+      // Preserve Case
+      {
+        class: 'icon_preserve_case',
+        settings: [stOpts.iconsetThick, stOpts.accentOpposite],
+
+        'layer2.texture': `${thick.opposite}preservecase.png`,
+      },
+
+      // Show Context
+      {
+        class: 'icon_context',
+        settings: [stOpts.iconsetThick, stOpts.accentOpposite],
+
+        'layer2.texture': `${thick.opposite}context.png`,
+      },
+
+      // Use Buffer
+      {
+        class: 'icon_use_buffer',
+        settings: [stOpts.iconsetThick, stOpts.accentOpposite],
+
+        'layer2.texture': `${thick.opposite}buffer.png`,
+      },
+
+      // Input History Button
+      {
+        class: 'dropdown_button_control',
+        settings: [stOpts.iconsetThick, stOpts.accentOpposite],
+
+        'layer1.texture': `${thick.opposite}more.png`,
+      },
+
+      // Panel Switcher
+      {
+        class: 'panel_button_control',
+        settings: [stOpts.iconsetThick, stOpts.accentOpposite],
+        attributes: ['hover'],
+
+        'layer0.texture': `${thick.opposite}panels.png`,
       },
 
       // Status Bar Buttons
@@ -1113,6 +1306,99 @@ module.exports = function (values) {
         attributes: ['hover'],
 
         'layer0.texture': `${spacegray.neutral}panels.png`,
+      },
+
+      /**
+       * Thick Iconset
+       */
+
+      // Regex Icon
+      {
+        class: 'icon_regex',
+        settings: [stOpts.iconsetThick, stOpts.accentNeutral],
+
+        'layer2.texture': `${thick.neutral}regex.png`,
+      },
+
+      // Case Sensitive
+      {
+        class: 'icon_case',
+        settings: [stOpts.iconsetThick, stOpts.accentNeutral],
+
+        'layer2.texture': `${thick.neutral}casesensitive.png`,
+      },
+
+      // Wholeword
+      {
+        class: 'icon_whole_word',
+        settings: [stOpts.iconsetThick, stOpts.accentNeutral],
+
+        'layer2.texture': `${thick.neutral}wholeword.png`,
+      },
+
+      // Wrap
+      {
+        class: 'icon_wrap',
+        settings: [stOpts.iconsetThick, stOpts.accentNeutral],
+
+        'layer2.texture': `${thick.neutral}wrap.png`,
+      },
+
+      // In Selection
+      {
+        class: 'icon_in_selection',
+        settings: [stOpts.iconsetThick, stOpts.accentNeutral],
+
+        'layer2.texture': `${thick.neutral}inselection.png`,
+      },
+
+      // Highlight Result
+      {
+        class: 'icon_highlight',
+        settings: [stOpts.iconsetThick, stOpts.accentNeutral],
+
+        'layer2.texture': `${thick.neutral}highlight.png`,
+      },
+
+      // Preserve Case
+      {
+        class: 'icon_preserve_case',
+        settings: [stOpts.iconsetThick, stOpts.accentNeutral],
+
+        'layer2.texture': `${thick.neutral}preservecase.png`,
+      },
+
+      // Show Context
+      {
+        class: 'icon_context',
+        settings: [stOpts.iconsetThick, stOpts.accentNeutral],
+
+        'layer2.texture': `${thick.neutral}context.png`,
+      },
+
+      // Use Buffer
+      {
+        class: 'icon_use_buffer',
+        settings: [stOpts.iconsetThick, stOpts.accentNeutral],
+
+        'layer2.texture': `${thick.neutral}buffer.png`,
+      },
+
+      // Input History Button
+      {
+        class: 'dropdown_button_control',
+        settings: [stOpts.iconsetThick, stOpts.accentNeutral],
+
+        'layer1.texture': `${thick.neutral}more.png`,
+      },
+
+      // Panel Switcher
+      {
+        class: 'panel_button_control',
+        settings: [stOpts.iconsetThick, stOpts.accentNeutral],
+        attributes: ['hover'],
+
+        'layer0.texture': `${thick.neutral}panels.png`,
       },
 
       // Status Bar Buttons

@@ -19,6 +19,7 @@ module.exports = function (values, externalPaths) {
     'enable_borders',
     'underline_modified_tabs',
     'iconset_spacegray',
+    'iconset_thick',
     'autocollapse_tabs',
     'disable_greyscale',
     'folder_icons',

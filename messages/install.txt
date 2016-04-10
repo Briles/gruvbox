@@ -383,6 +383,7 @@ gruvbox Light - Soft Contrast:
 
   Alternate Icon Sets
 
+  "gruvbox_iconset_thick": true,      // Use icons with a thicker stroke
   "gruvbox_iconset_spacegray": true,  // Use spacegray-like icons
 
 

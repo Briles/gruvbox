@@ -44,6 +44,7 @@
     const oppositeBrightnessPalette = gruvboxPalette[oppositeBrightnessIdentifier];
     paths.internal.this = `${paths.internal.assets}${brightnessIdentifier}/`;
     paths.internal.spacegray = `${paths.internal.this}spacegray__`;
+    paths.internal.thick = `${paths.internal.this}thick__`;
 
     CONTRAST_MODES.forEach(function (contrast) {
       const contrastIdentifier = _.toLower(contrast);

@@ -57,6 +57,7 @@ module.exports = {
   underlineDirtyTabs: 'gruvbox_underline_modified_tabs',
   underlineDirtyTabsThick: 'gruvbox_underline_modified_tabs_thick',
   iconsetSpacegray: 'gruvbox_iconset_spacegray',
+  iconsetThick: 'gruvbox_iconset_thick',
   lessContrast: 'gruvbox_less_contrast',
   panelL: 'gruvbox_panel_l',
   panelS: 'gruvbox_panel_s',
