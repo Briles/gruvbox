@@ -428,6 +428,17 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>Hyperlink Punctuation</string>
+        <key>scope</key>
+        <string>meta.image.inline punctuation.definition.string, meta.link.inline punctuation.definition.string, meta.link.reference punctuation.definition.constant, meta.link.reference.literal punctuation.definition.constant, meta.link.reference.literal punctuation.definition.string</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#8ec07c</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>Markup Tag Punctuation</string>
         <key>scope</key>
         <string>punctuation.definition.tag</string>
@@ -516,6 +527,17 @@
         <string>Markdown Inline Code</string>
         <key>scope</key>
         <string>markup.raw.inline</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#fabd2f</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Markdown Inline Code Punctuation</string>
+        <key>scope</key>
+        <string>markup.raw.inline punctuation.definition.raw</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -774,6 +796,17 @@
         <string>Markdown Image &amp; Hyperlink</string>
         <key>scope</key>
         <string>meta.image, meta.link</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#d3869b</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Markdown Image &amp; Hyperlink Punctuation</string>
+        <key>scope</key>
+        <string>meta.image punctuation.definition.metadata, meta.link punctuation.definition.metadata</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1324,6 +1357,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>02992d82-87f4-476d-b633-7d92c629e7b0</string>
+    <string>bdb19e7d-a72f-4858-97d6-84dfa30be1e1</string>
   </dict>
 </plist>

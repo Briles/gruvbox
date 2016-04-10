@@ -428,6 +428,17 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>Hyperlink Punctuation</string>
+        <key>scope</key>
+        <string>meta.image.inline punctuation.definition.string, meta.link.inline punctuation.definition.string, meta.link.reference punctuation.definition.constant, meta.link.reference.literal punctuation.definition.constant, meta.link.reference.literal punctuation.definition.string</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#8ec07c</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>Markup Tag Punctuation</string>
         <key>scope</key>
         <string>punctuation.definition.tag</string>
@@ -516,6 +527,17 @@
         <string>Markdown Inline Code</string>
         <key>scope</key>
         <string>markup.raw.inline</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#fabd2f</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Markdown Inline Code Punctuation</string>
+        <key>scope</key>
+        <string>markup.raw.inline punctuation.definition.raw</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -774,6 +796,17 @@
         <string>Markdown Image &amp; Hyperlink</string>
         <key>scope</key>
         <string>meta.image, meta.link</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#d3869b</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Markdown Image &amp; Hyperlink Punctuation</string>
+        <key>scope</key>
+        <string>meta.image punctuation.definition.metadata, meta.link punctuation.definition.metadata</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1324,6 +1357,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>74e76f16-7b94-4e04-8655-e9abfa116132</string>
+    <string>ef7d5f03-8d04-46db-a98b-b00152b06ee0</string>
   </dict>
 </plist>

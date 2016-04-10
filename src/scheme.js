@@ -469,6 +469,20 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Hyperlink Punctuation',
+        scope: [
+          'meta.link.inline punctuation.definition.string',
+          'meta.image.inline punctuation.definition.string',
+          'meta.link.reference punctuation.definition.constant',
+          'meta.link.reference.literal punctuation.definition.string',
+          'meta.link.reference.literal punctuation.definition.constant',
+        ],
+        settings: {
+          foreground: c.neutralAqua,
+        },
+      },
+
+      {
         name: 'Markup Tag Punctuation',
         scope: [
           'punctuation.definition.tag',
@@ -550,6 +564,16 @@ module.exports = function (values) {
         ],
         settings: {
           foreground: c.bnp.yellow,
+        },
+      },
+
+      {
+        name: 'Markdown Inline Code Punctuation',
+        scope: [
+          'markup.raw.inline punctuation.definition.raw',
+        ],
+        settings: {
+          foreground: c.neutralYellow,
         },
       },
 
@@ -823,6 +847,17 @@ module.exports = function (values) {
         ],
         settings: {
           foreground: c.bnp.purple,
+        },
+      },
+
+      {
+        name: 'Markdown Image & Hyperlink Punctuation',
+        scope: [
+          'meta.image punctuation.definition.metadata',
+          'meta.link punctuation.definition.metadata',
+        ],
+        settings: {
+          foreground: c.neutralPurple,
         },
       },
 

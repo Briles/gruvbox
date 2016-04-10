@@ -428,6 +428,17 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>Hyperlink Punctuation</string>
+        <key>scope</key>
+        <string>meta.image.inline punctuation.definition.string, meta.link.inline punctuation.definition.string, meta.link.reference punctuation.definition.constant, meta.link.reference.literal punctuation.definition.constant, meta.link.reference.literal punctuation.definition.string</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#689d6a</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>Markup Tag Punctuation</string>
         <key>scope</key>
         <string>punctuation.definition.tag</string>
@@ -520,6 +531,17 @@
         <dict>
           <key>foreground</key>
           <string>#fabd2f</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Markdown Inline Code Punctuation</string>
+        <key>scope</key>
+        <string>markup.raw.inline punctuation.definition.raw</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#d79921</string>
         </dict>
       </dict>
       <dict>
@@ -778,6 +800,17 @@
         <dict>
           <key>foreground</key>
           <string>#d3869b</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Markdown Image &amp; Hyperlink Punctuation</string>
+        <key>scope</key>
+        <string>meta.image punctuation.definition.metadata, meta.link punctuation.definition.metadata</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#b16286</string>
         </dict>
       </dict>
       <dict>
@@ -1324,6 +1357,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>5ffea1ae-9211-4534-8ebd-9eca410db647</string>
+    <string>7a3e6ed7-cb10-4c1e-afd3-f9ccae171286</string>
   </dict>
 </plist>
