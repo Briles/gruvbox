@@ -1,22 +1,11 @@
 <p>
   <a href="https://github.com/Briles/gruvbox/tags"><img src="https://img.shields.io/github/tag/Briles/gruvbox.svg?style=flat-square" alt="GitHub tag"></a>
   <a href="https://packagecontrol.io/packages/gruvbox"><img src="https://img.shields.io/packagecontrol/dt/gruvbox.svg?style=flat-square" alt="Package Control"></a>
-  <a href="https://github.com/Briles/gruvbox/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Briles/gruvbox.svg?style=flat-square" alt="GitHub license"></a>
 </p>
 
 <p align="center"><img src="https://cdn.rawgit.com/Briles/gruvbox/master/assets/banner-image.svg" alt="gruvbox for Sublime Text" width="327px" height="122px"></p>
 
 Based on [gruvbox for Vim](https://github.com/morhetz/gruvbox)
-
-> gruvbox is heavily inspired by [badwolf][], [jellybeans][] and [solarized][].
-
-> Designed as a bright theme with pastel 'retro groove' colors and light/dark mode switching in the way of [solarized][]. The main focus when developing gruvbox is to keep colors easily distinguishable, contrast enough and still pleasant for the eyes.
-
-   [badwolf]: https://github.com/sjl/badwolf
-   [jellybeans]: https://github.com/nanotech/jellybeans.vim
-   [solarized]: http://ethanschoonover.com/solarized
-
-> &mdash; <cite>[Pavel Pertsev](https://github.com/morhetz), creator of gruvbox for Vim</cite>
 
 ![Screenshot Dark](http://i.imgur.com/8WUkqa5.png)
 ![Screenshot Light](http://i.imgur.com/hdxzwzP.png)
@@ -25,39 +14,6 @@ Contrast options
 ----------------
 
 ![Screenshot Contrast Options](http://i.imgur.com/euGncPs.png)
-
-Monospaced font used in screenshots is [Fira Mono Medium](https://github.com/mozilla/Fira)
-
-Palette
--------
-
-### Dark mode
-
-![Palette Dark](http://i.imgur.com/wa666xg.png)
-
-### Light mode
-
-![Palette Light](http://i.imgur.com/49qKyYW.png)
-
---------------------------------------------------------------------------------
-
-Features
---------
-
-* Lots of customization options
-* Support for High-DPI displays
-* Support for:
-    * [Bracket Highlighter](https://packagecontrol.io/packages/BracketHighlighter)
-    * [Bracket​Guard](https://packagecontrol.io/packages/BracketGuard)
-    * [Doc​Blockr](https://packagecontrol.io/packages/DocBlockr)
-    * [GitGutter](https://packagecontrol.io/packages/GitGutter)
-    * [HexViewer](https://packagecontrol.io/packages/HexViewer)
-    * [Markdown Extended](https://packagecontrol.io/packages/Markdown%20Extended)
-    * [Plain​Tasks](https://packagecontrol.io/packages/PlainTasks)
-    * [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter)
-* Support for the latest Sublime Text features
-
-![High DPI](http://i.imgur.com/xiEzVPe.png)
 
 Installation
 ------------
@@ -141,8 +97,6 @@ Settings
 
 ![Accent Colors](http://i.imgur.com/d0o9auc.png)
 
-Enable accent color by setting the appropriate key to `true`
-
 Accent colors affect icons and certain text.
 
 ```json
@@ -158,8 +112,6 @@ Accent colors affect icons and certain text.
 ```
 
 #### AutoComplete Spacing
-
-![AutoComplete Spacing](http://i.imgur.com/8H6F051.gif)
 
 Change the space between autocomplete rows
 
@@ -182,8 +134,6 @@ Add a border around the autocomplete popup
 ```
 
 #### Sidebar Spacing
-
-![Sidebar Spacing](http://i.imgur.com/YcbDJK4.png)
 
 Change the space between sidebar tree rows
 
@@ -507,6 +457,21 @@ Activation:
 1. Rename any `*_bookmark_*.png` in `extras` to `bookmark.png`
 2. Add the newly renamed `bookmark.png` icon to `Sublime Text/Data/Packages/Theme - Default/`
 3. Restart Sublime Text
+
+--------------------------------------------------------------------------------
+
+Palette
+-------
+
+### Dark mode
+
+![Palette Dark](http://i.imgur.com/wa666xg.png)
+
+### Light mode
+
+![Palette Light](http://i.imgur.com/49qKyYW.png)
+
+--------------------------------------------------------------------------------
 
 License
 -------
