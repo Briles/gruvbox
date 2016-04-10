@@ -537,7 +537,7 @@
         <key>name</key>
         <string>Markdown Quoted Punctuation</string>
         <key>scope</key>
-        <string>markup.quote punctuation</string>
+        <string>markup.quote punctuation.definition.blockquote</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -559,7 +559,7 @@
         <key>name</key>
         <string>Markdown List Punctuation</string>
         <key>scope</key>
-        <string>markup.list punctuation</string>
+        <string>markup.list punctuation.definition.list_item</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1324,6 +1324,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>446e0f67-4568-46cc-9655-ff2a92631365</string>
+    <string>92f970a6-71e2-457a-9e48-da66345a23fc</string>
   </dict>
 </plist>

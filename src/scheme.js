@@ -566,7 +566,7 @@ module.exports = function (values) {
       {
         name: 'Markdown Quoted Punctuation',
         scope: [
-          'markup.quote punctuation',
+          'markup.quote punctuation.definition.blockquote',
         ],
         settings: {
           foreground: c.neutralPurple,
@@ -586,7 +586,7 @@ module.exports = function (values) {
       {
         name: 'Markdown List Punctuation',
         scope: [
-          'markup.list punctuation',
+          'markup.list punctuation.definition.list_item',
         ],
         settings: {
           foreground: c.neutralBlue,
