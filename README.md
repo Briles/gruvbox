@@ -112,7 +112,7 @@ Configuration
 - [Alternate Folder Icons](#alternate-folder-icons)
     - [Square Folder Icons](#square-folder-icons)
     - [Circle Folder Icons](#circle-folder-icons)
-    - [Plus/Minus Folder Icons](#plus/minus-folder-icons)
+    - [Plus/Minus Folder Icons](#plusminus-folder-icons)
     - [Spacegray Folder Icons](#spacegray-folder-icons)
 - [Alternate Icon Sets](#alternate-icon-sets)
     - [Spacegray Icon Set](#spacegray-icon-set)
