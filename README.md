@@ -90,8 +90,36 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 }
 ```
 
-Settings
+Configuration
 --------
+
+- [Accent Colors](#accent-colors)
+- [AutoComplete Spacing](#autocomplete-spacing)
+- [AutoComplete Border](#autocomplete-border)
+- [Sidebar Spacing](#sidebar-spacing)
+- [Command Palette Spacing](#command-palette-spacing)
+- [Sidebar Font Sizes](#sidebar-font-sizes)
+- [Statusbar Sizes](#statusbar-sizes)
+- [Statusbar Button Widths](#statusbar-button-widths)
+- [Statusbar Font Sizes](#statusbar-font-sizes)
+- [Tab Sizes](#tab-sizes)
+- [Tab Font Sizes](#tab-font-sizes)
+- [Autocollapsing Tab Bar](#autocollapsing-tab-bar)
+- [Underline Modified Tabs](#underline-modified-tabs)
+- [Find, Replace, and Console Sizes](#find-replace-and-console-sizes)
+- [Scrollbar Widths](#scrollbar-widths)
+- [Button Font Sizes](#button-font-sizes)
+- [Alternate Folder Icons](#alternate-folder-icons)
+    - [Square Folder Icons](#square-folder-icons)
+    - [Circle Folder Icons](#circle-folder-icons)
+    - [Plus/Minus Folder Icons](#plus/minus-folder-icons)
+    - [Spacegray Folder Icons](#spacegray-folder-icons)
+- [Alternate Icon Sets](#alternate-icon-sets)
+    - [Spacegray Icon Set](#spacegray-icon-set)
+- [PlainTasks Support](#plaintasks-support)
+- [Even More Settings...](#even-more-settings)
+
+--------------------------------------------------------------------------------
 
 #### Accent Colors
 
