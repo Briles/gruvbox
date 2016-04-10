@@ -1,7 +1,6 @@
 module.exports = function (values) {
   'use strict';
 
-  const _ = require('lodash');
   const plist = require('plist');
   const uuid = require('uuid');
   const utils = require('./utils.js');
@@ -1373,50 +1372,11 @@ module.exports = function (values) {
     uuid: uuid.v4(),
   };
 
-  var allScopes = {};
+  scheme = utils.validateScheme(scheme);
 
-  _.forEach(scheme.settings.slice(1), function (v) {
-    var identifier = v.name || v.scope;
-
-    // Validation
-    if (!v.scope) {
-      // Ensure there is a scope property
-      throw new Error(`Missing Scope: "${identifier}"`);
-    } else if (!(v.scope instanceof(Array))) {
-      // Ensure the scope property is an Array
-      throw new TypeError(`Scope: "${identifier}" is not of type "Array"`);
-    } else if (_.size(v.scope) < 1) {
-      // Ensure the scope property has atleast 1 element
-      throw new Error(`"${identifier}" must have atleast 1 scope`);
-    }
-
-    if (!v.settings) {
-      // Ensure there is a settings property
-      throw new Error(`Missing Settings: "${identifier}"`);
-    } else if (_.size(v.settings) < 1) {
-      // Ensure the settings property has atleast 1 element
-      throw new Error(`"${identifier}" must have atleast 1 setting`);
-    } else {
-      // Ensure there are no undefined settings
-      _.forEach(v.settings, function (value, setting) {
-        if (value === undefined) {
-          throw new Error(`"${setting}" for "${identifier}" is undefined`);
-        }
-      });
-    }
-
-    // Ensure there are no duplicate scopes
-    _.forEach(v.scope, function (scope) {
-      if (!allScopes[scope]) {
-        allScopes[scope] = true;
-      } else {
-        throw new Error(`Duplicate Scope Found: "${scope}"`);
-      }
-    });
-
-    // Join the scope arrays for compatibility with Sublime Text
-    v.scope = utils.joinScopes(v.scope);
-  });
+  if (values.options.minify) {
+    scheme = utils.minifyScheme(scheme);
+  }
 
   return plist.build(scheme);
 };

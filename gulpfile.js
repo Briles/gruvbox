@@ -26,6 +26,14 @@ gulp.task('build_schemes', function () {
   execNode(`${srcPath}build.js -s`);
 });
 
+gulp.task('build_themes_min', function () {
+  execNode(`${srcPath}build.js -t -m`);
+});
+
+gulp.task('build_schemes_min', function () {
+  execNode(`${srcPath}build.js -s -m`);
+});
+
 gulp.task('build_widgets', function () {
   execNode(`${srcPath}build.js -w`);
 });
@@ -85,6 +93,10 @@ gulp.task('watch', function () {
   gulp.watch(widgetFiles, ['build_widgets']);
 });
 
-gulp.task('default', function (callback) {
-  runSequence('watch', callback);
+gulp.task('default', function () {
+  runSequence('watch');
+});
+
+gulp.task('build_min', function () {
+  runSequence('build_themes_min', 'build_schemes_min');
 });

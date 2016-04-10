@@ -7,14 +7,13 @@
     .option('-t, --theme', 'Build Themes')
     .option('-s, --scheme', 'Build Color Schemes')
     .option('-w, --widget', 'Build Widgets')
+    .option('-m, --minify', 'Minify Color Schemes & Themes')
     .parse(process.argv);
-
-  const opts = require('./options.js');
 
   // Options
   const PACKAGE_NAME = 'gruvbox';
-  const JSON_WHITESPACE = opts.jsonWhiteSpace || 2;
-  const TEST_COLOR = opts.testColor || 'cyan';
+  const JSON_WHITESPACE = commander.minify ? -1 : 2;
+  const TEST_COLOR = 'cyan';
   const BRIGHTNESS_MODES = ['Dark', 'Light'];
   const CONTRAST_MODES = ['Soft', 'Medium', 'Hard'];
   const BUILD_MODE_THEME = !!commander.theme;
@@ -121,6 +120,7 @@
         colors: _.deepMapValues(entirePalette, c => tinycolor(c).toSublimeHex()),
         info: info,
         paths: paths.internal,
+        options: commander,
       };
 
       const schemeVariants = [
