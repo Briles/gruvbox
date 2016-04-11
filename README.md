@@ -22,7 +22,6 @@ Installation
 
 The easiest way to install is using [Package Control](https://packagecontrol.io/)
 
-
 1. Open Command Palette using menu item `Tools -> Command Palette...` (<kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd> on Mac) (<kbd>ctrl</kbd><kbd>shift</kbd><kbd>P</kbd> on Windows)
 2. Choose `Package Control: Install Package`
 3. Find `gruvbox` and hit <kbd>Enter</kbd>
@@ -45,7 +44,6 @@ How to Activate
 Activate the UI theme and color scheme by modifying your user preferences file, which you can find using the menu item `Sublime Text -> Preferences -> Settings - User` (<kbd>⌘</kbd><kbd>,</kbd> on Mac).
 
 *Note: Don't forget to restart Sublime Text after activating the theme.*
-
 
 ```json
 // gruvbox Dark Hard Contrast
@@ -88,6 +86,25 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
   "theme": "gruvbox (Light) (Soft).sublime-theme",
   "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft).tmTheme",
 }
+```
+
+### Color Scheme Variations
+
+gruvbox comes with color scheme variations which have different brightness,
+saturation, or colors than their parent color schemes while still maintaining
+that excellent gruvbox tone.
+
+#### No Dimmed Colors
+
+A variant without out any neutral / dimmed colors
+
+```json
+"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard) NDC.tmTheme",
+"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium) NDC.tmTheme",
+"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft) NDC.tmTheme",
+"color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard) NDC.tmTheme",
+"color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium) NDC.tmTheme",
+"color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft) NDC.tmTheme",
 ```
 
 Configuration
