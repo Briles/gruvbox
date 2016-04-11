@@ -11,7 +11,7 @@ Thank you for downloading gruvbox! Let's get started...
 
 ----------------------------------------------------------------------------------------------
 
-Add the following to your Settings - User file and restart Sublime Text after:
+Add the following to your Settings - User file and then restart Sublime Text:
 
 gruvbox Dark - Hard Contrast:
 
@@ -60,6 +60,28 @@ gruvbox Light - Soft Contrast:
     "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft).tmTheme",
   }
 
+
+--------------------------------------------------------------------------------
+
+
+  Color Scheme Variations
+
+        gruvbox comes with color scheme variations which have different
+        brightness, saturation, or colors than their parent color schemes.
+
+
+  No Dimmed Colors
+
+        A variant without out any neutral / dimmed colors
+
+    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard) NDC.tmTheme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium) NDC.tmTheme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft) NDC.tmTheme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard) NDC.tmTheme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium) NDC.tmTheme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft) NDC.tmTheme",
+
+
 --------------------------------------------------------------------------------
   ┌───────────────────────────┐
   │  Theme options:           │
@@ -77,6 +99,7 @@ gruvbox Light - Soft Contrast:
     "gruvbox_accent_purple": true,
     "gruvbox_accent_red": true,
     "gruvbox_accent_yellow": true,
+
     "gruvbox_accent_opposite": true, // Use the other mode's accent color; IE: Use Light theme's red with Dark theme
     "gruvbox_accent_neutral": true, // Use brightness-mode-neutral accent color
 
@@ -146,6 +169,23 @@ gruvbox Light - Soft Contrast:
 --------------------------------------------------------------------------------
 
 
+  Sidebar Font Sizes
+
+        Change the font size of the sidebar labels
+        ! Increasing the font size will distort the icons in the sidebar.
+
+    "gruvbox_sidebar_font_size_10": true,  //  v  10
+                                           //  |  11 (Default)
+    "gruvbox_sidebar_font_size_12": true,  //  |  12
+    "gruvbox_sidebar_font_size_13": true,  //  |  13
+    "gruvbox_sidebar_font_size_14": true,  //  |  14
+    "gruvbox_sidebar_font_size_15": true,  //  |  15
+    "gruvbox_sidebar_font_size_16": true,  //  v  16
+
+
+--------------------------------------------------------------------------------
+
+
   Command Palette Spacing
 
         Change the space between command palette rows
@@ -178,23 +218,6 @@ gruvbox Light - Soft Contrast:
         Remove the highlight from the selected Command Palette row.
 
     "gruvbox_disable_command_palette_row_highlight": true,
-
-
---------------------------------------------------------------------------------
-
-
-  Sidebar Font Sizes
-
-        Change the font size of the sidebar labels
-        ! Increasing the font size will distort the icons in the sidebar.
-
-    "gruvbox_sidebar_font_size_10": true,  //  v  10
-                                           //  |  11 (Default)
-    "gruvbox_sidebar_font_size_12": true,  //  |  12
-    "gruvbox_sidebar_font_size_13": true,  //  |  13
-    "gruvbox_sidebar_font_size_14": true,  //  |  14
-    "gruvbox_sidebar_font_size_15": true,  //  |  15
-    "gruvbox_sidebar_font_size_16": true,  //  v  16
 
 
 --------------------------------------------------------------------------------
@@ -358,7 +381,7 @@ gruvbox Light - Soft Contrast:
 --------------------------------------------------------------------------------
 
 
-  Disable/Enable Borders
+  Disable / Enable Borders
 
   "gruvbox_disable_borders": true,                     // Disable all borders
   "gruvbox_enable_sidebar_border": true,               // Enable the sidebar border
