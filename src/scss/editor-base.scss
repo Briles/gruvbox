@@ -140,9 +140,6 @@
 
     vertical-align: middle;
   }
-  &:first-of-type {
-    border-left: 0;
-  }
 }
 
 @each $v in $opt-tabs-font-size {

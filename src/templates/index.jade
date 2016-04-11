@@ -94,6 +94,9 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
                   li README.md
         .pane.view
           .pane.tabs
+            .tab-nav-button
+              +icon-tab-previous
+              +icon-tab-next
             a.tab.tooltipped.tooltipped-s(
               aria-label="http://brianreilly.me/gruvbox/"
               ng-class="{selected: getLocation() === '/' || getLocation() === ''}"
