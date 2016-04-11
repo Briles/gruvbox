@@ -96,9 +96,13 @@ Configuration
 - [Accent Colors](#accent-colors)
 - [AutoComplete Spacing](#autocomplete-spacing)
 - [AutoComplete Border](#autocomplete-border)
+- [Sideline Selected AutoComplete Row](#sideline-selected-autocomplete-row)
+- [Disable Selected AutoComplete Row Highlight](#disable-selected-autocomplete-row-highlight)
 - [Sidebar Spacing](#sidebar-spacing)
-- [Command Palette Spacing](#command-palette-spacing)
 - [Sidebar Font Sizes](#sidebar-font-sizes)
+- [Command Palette Spacing](#command-palette-spacing)
+- [Sideline Selected Command Palette Row](#sideline-selected-command-palette-row)
+- [Disable Selected Command Palette Row Highlight](#disable-selected-command-palette-row-highlight)
 - [Statusbar Sizes](#statusbar-sizes)
 - [Statusbar Button Widths](#statusbar-button-widths)
 - [Statusbar Font Sizes](#statusbar-font-sizes)
@@ -109,6 +113,7 @@ Configuration
 - [Find, Replace, and Console Sizes](#find-replace-and-console-sizes)
 - [Scrollbar Widths](#scrollbar-widths)
 - [Button Font Sizes](#button-font-sizes)
+- [Disable/Enable Borders](#disableenable-borders)
 - [Alternate Folder Icons](#alternate-folder-icons)
     - [Square Folder Icons](#square-folder-icons)
     - [Circle Folder Icons](#circle-folder-icons)
@@ -196,6 +201,22 @@ Change the space between sidebar tree rows
   "gruvbox_sidebar_cramped": true,      //  v  9
 ```
 
+#### Sidebar Font Sizes
+
+Change the font size of the sidebar labels
+
+*Increasing the font size will distort the icons in the sidebar.*
+
+```json
+  "gruvbox_sidebar_font_size_10": true,  //  v  10
+                                         //  |  11 (Default)
+  "gruvbox_sidebar_font_size_12": true,  //  |  12
+  "gruvbox_sidebar_font_size_13": true,  //  |  13
+  "gruvbox_sidebar_font_size_14": true,  //  |  14
+  "gruvbox_sidebar_font_size_15": true,  //  |  15
+  "gruvbox_sidebar_font_size_16": true,  //  v  16
+```
+
 #### Command Palette Spacing
 
 Change the space between command palette rows
@@ -227,22 +248,6 @@ Remove the highlight from the selected Command Palette row.
 
 ```json
   "gruvbox_disable_command_palette_row_highlight": true,
-```
-
-#### Sidebar Font Sizes
-
-Change the font size of the sidebar labels
-
-*Increasing the font size will distort the icons in the sidebar.*
-
-```json
-  "gruvbox_sidebar_font_size_10": true,  //  v  10
-                                         //  |  11 (Default)
-  "gruvbox_sidebar_font_size_12": true,  //  |  12
-  "gruvbox_sidebar_font_size_13": true,  //  |  13
-  "gruvbox_sidebar_font_size_14": true,  //  |  14
-  "gruvbox_sidebar_font_size_15": true,  //  |  15
-  "gruvbox_sidebar_font_size_16": true,  //  v  16
 ```
 
 #### Statusbar Sizes
