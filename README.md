@@ -137,6 +137,7 @@ Configuration
     - [Plus/Minus Folder Icons](#plusminus-folder-icons)
     - [Spacegray Folder Icons](#spacegray-folder-icons)
 - [Alternate Icon Sets](#alternate-icon-sets)
+    - [Midstroke Icon Set](#midstroke)
     - [Thick Icon Set](#thick)
     - [Spacegray Icon Set](#spacegray)
 - [PlainTasks Support](#plaintasks-support)
