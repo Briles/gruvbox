@@ -22,7 +22,6 @@ Installation
 
 The easiest way to install is using [Package Control](https://packagecontrol.io/)
 
-
 1. Open Command Palette using menu item `Tools -> Command Palette...` (<kbd>⇧</kbd><kbd>⌘</kbd><kbd>P</kbd> on Mac) (<kbd>ctrl</kbd><kbd>shift</kbd><kbd>P</kbd> on Windows)
 2. Choose `Package Control: Install Package`
 3. Find `gruvbox` and hit <kbd>Enter</kbd>
@@ -45,7 +44,6 @@ How to Activate
 Activate the UI theme and color scheme by modifying your user preferences file, which you can find using the menu item `Sublime Text -> Preferences -> Settings - User` (<kbd>⌘</kbd><kbd>,</kbd> on Mac).
 
 *Note: Don't forget to restart Sublime Text after activating the theme.*
-
 
 ```json
 // gruvbox Dark Hard Contrast
@@ -90,15 +88,38 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 }
 ```
 
+### Color Scheme Variations
+
+gruvbox comes with color scheme variations which have different brightness,
+saturation, or colors than their parent color schemes while still maintaining
+that excellent gruvbox tone.
+
+#### No Dimmed Colors
+
+A variant without out any neutral / dimmed colors
+
+```json
+"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard) NDC.tmTheme",
+"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium) NDC.tmTheme",
+"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft) NDC.tmTheme",
+"color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard) NDC.tmTheme",
+"color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium) NDC.tmTheme",
+"color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft) NDC.tmTheme",
+```
+
 Configuration
 --------
 
 - [Accent Colors](#accent-colors)
 - [AutoComplete Spacing](#autocomplete-spacing)
 - [AutoComplete Border](#autocomplete-border)
+- [Sideline Selected AutoComplete Row](#sideline-selected-autocomplete-row)
+- [Disable Selected AutoComplete Row Highlight](#disable-selected-autocomplete-row-highlight)
 - [Sidebar Spacing](#sidebar-spacing)
-- [Command Palette Spacing](#command-palette-spacing)
 - [Sidebar Font Sizes](#sidebar-font-sizes)
+- [Command Palette Spacing](#command-palette-spacing)
+- [Sideline Selected Command Palette Row](#sideline-selected-command-palette-row)
+- [Disable Selected Command Palette Row Highlight](#disable-selected-command-palette-row-highlight)
 - [Statusbar Sizes](#statusbar-sizes)
 - [Statusbar Button Widths](#statusbar-button-widths)
 - [Statusbar Font Sizes](#statusbar-font-sizes)
@@ -109,13 +130,15 @@ Configuration
 - [Find, Replace, and Console Sizes](#find-replace-and-console-sizes)
 - [Scrollbar Widths](#scrollbar-widths)
 - [Button Font Sizes](#button-font-sizes)
+- [Disable/Enable Borders](#disableenable-borders)
 - [Alternate Folder Icons](#alternate-folder-icons)
     - [Square Folder Icons](#square-folder-icons)
     - [Circle Folder Icons](#circle-folder-icons)
     - [Plus/Minus Folder Icons](#plusminus-folder-icons)
     - [Spacegray Folder Icons](#spacegray-folder-icons)
 - [Alternate Icon Sets](#alternate-icon-sets)
-    - [Spacegray Icon Set](#spacegray-icon-set)
+    - [Thick Icon Set](#thick)
+    - [Spacegray Icon Set](#spacegray)
 - [PlainTasks Support](#plaintasks-support)
 - [Even More Settings...](#even-more-settings)
 
@@ -135,6 +158,7 @@ Accent colors affect icons and certain text.
   "gruvbox_accent_purple": true,
   "gruvbox_accent_red": true,
   "gruvbox_accent_yellow": true,
+
   "gruvbox_accent_opposite": true, // Use the other mode's accent color; IE: Use Light theme's red with Dark theme
   "gruvbox_accent_neutral": true, // Use brightness-mode-neutral accent color
 ```
@@ -161,6 +185,26 @@ Add a border around the autocomplete popup
   "gruvbox_autocomplete_border_thick": true,
 ```
 
+#### Sideline Selected AutoComplete Row
+
+Add a border to the left of the selected autocomplete row
+
+All thicknesses require `gruvbox_sideline_autocomplete_row` to be `true`.
+
+```json
+  "gruvbox_sideline_autocomplete_row": true,           //  v  1 (Default)
+  "gruvbox_sideline_autocomplete_row_thick": true,     //  |  2
+  "gruvbox_sideline_autocomplete_row_thickest": true,  //  v  3
+```
+
+#### Disable Selected AutoComplete Row Highlight
+
+Remove the highlight from the selected autocomplete row.
+
+```json
+  "gruvbox_disable_autocomplete_row_highlight": true,
+```
+
 #### Sidebar Spacing
 
 Change the space between sidebar tree rows
@@ -172,19 +216,6 @@ Change the space between sidebar tree rows
                                         //  |  5 (Default)
   "gruvbox_sidebar_compact": true,      //  |  7
   "gruvbox_sidebar_cramped": true,      //  v  9
-```
-
-#### Command Palette Spacing
-
-Change the space between command palette rows
-
-```json
-  // sizes are top/bottom in px
-  "gruvbox_command_palette_comfortable": true,  //  v  4
-  "gruvbox_command_palette_compact": true,      //  |  8
-                                                //  |  12 (Default)
-  "gruvbox_command_palette_cozy": true,         //  |  14
-  "gruvbox_command_palette_cramped": true,      //  v  16
 ```
 
 #### Sidebar Font Sizes
@@ -201,6 +232,39 @@ Change the font size of the sidebar labels
   "gruvbox_sidebar_font_size_14": true,  //  |  14
   "gruvbox_sidebar_font_size_15": true,  //  |  15
   "gruvbox_sidebar_font_size_16": true,  //  v  16
+```
+
+#### Command Palette Spacing
+
+Change the space between command palette rows
+
+```json
+  // sizes are top/bottom in px
+  "gruvbox_command_palette_comfortable": true,  //  v  4
+  "gruvbox_command_palette_compact": true,      //  |  8
+                                                //  |  12 (Default)
+  "gruvbox_command_palette_cozy": true,         //  |  14
+  "gruvbox_command_palette_cramped": true,      //  v  16
+```
+
+#### Sideline Selected Command Palette Row
+
+Add a border to the left of the selected Command Palette row
+
+All thicknesses require `gruvbox_sideline_command_palette_row` to be `true`.
+
+```json
+  "gruvbox_sideline_command_palette_row": true,           //  v  1 (Default)
+  "gruvbox_sideline_command_palette_row_thick": true,     //  |  2
+  "gruvbox_sideline_command_palette_row_thickest": true,  //  v  3
+```
+
+#### Disable Selected Command Palette Row Highlight
+
+Remove the highlight from the selected Command Palette row.
+
+```json
+  "gruvbox_disable_command_palette_row_highlight": true,
 ```
 
 #### Statusbar Sizes
@@ -301,12 +365,11 @@ Autocollapse the tabs when not in use
 
 Underline modified tabs with the current accent color
 
-```json
-  "gruvbox_underline_modified_tabs": true,        // enable the underlined tabs
+All thicknesses require `gruvbox_underline_modified_tabs` to be `true`.
 
-  // Set the thickness of the underline stroke
+```json
+  "gruvbox_underline_modified_tabs": true,        //  |  1 (Default)
   "gruvbox_underline_modified_tabs_thick": true,  //  v  2
-                                                  //  |  1 (Default)
 ```
 
 #### Find, Replace, and Console Sizes
@@ -348,6 +411,16 @@ Adjust the font size of the buttons
   "gruvbox_buttons_font_size_14": true,  //  |  14
   "gruvbox_buttons_font_size_15": true,  //  |  15
   "gruvbox_buttons_font_size_16": true,  //  v  16
+```
+
+#### Disable/Enable Borders
+
+```json
+  "gruvbox_disable_borders": true,                     // Disable all borders
+  "gruvbox_enable_sidebar_border": true,               // Enable the sidebar border
+  "gruvbox_enable_statusbar_border": true,             // Enable borders for the status bar
+  "gruvbox_enable_tab_borders": true,                  // Enable borders for the tabs
+  "gruvbox_disable_command_palette_row_border": true,  // Disable Command Palette row borders
 ```
 
 #### Alternate Folder Icons
@@ -392,6 +465,26 @@ Use spacegray-like folder icons in the sidebar
 
 #### Alternate Icon Sets
 
+##### Midstroke
+
+![Midstroke Icon Set](http://i.imgur.com/dhktw4M.png)
+
+Use icons with a 1.5x thicker stroke
+
+```json
+"gruvbox_iconset_midstroke": true,
+```
+
+##### Thick
+
+![Thick Icon Set](http://i.imgur.com/Z9uIRPH.png)
+
+Use icons with a 2x thicker stroke
+
+```json
+"gruvbox_iconset_thick": true,
+```
+
 ##### Spacegray
 
 ![Spacegray Icon Set](http://i.imgur.com/SiL6f32.png)
@@ -423,25 +516,20 @@ add the color scheme path to the `"color_scheme"` key in
 #### Even More Settings...
 
 ```json
-  "gruvbox_buttons_bold": true,                        // Enable bold button labels
-  "gruvbox_colored_tooltips": true,                    // Color the tooltip backgrounds with the current accent color
-  "gruvbox_disable_borders": true,                     // Disable all borders
-  "gruvbox_disable_command_palette_row_border": true,  // Disable Command Palette row borders
-  "gruvbox_disable_faded_file_icons": true,            // Make file-type icons opaque
-  "gruvbox_disable_fileicons": true,                   // Disable the sidebar file icons
-  "gruvbox_disable_folder_icons": true,                // Disable the sidebar folder icons
-  "gruvbox_disable_greyscale": true,                   // Use gruvbox colors instead of greyscale colors for certain text
-  "gruvbox_disable_panels_button": true,               // Hide the panel-switching button
-  "gruvbox_enable_panel_close_button": true,           // Enable the panel close button
-  "gruvbox_enable_sidebar_border": true,               // Enable the sidebar border
-  "gruvbox_enable_statusbar_border": true,             // Enable borders for the status bar
-  "gruvbox_enable_tab_borders": true,                  // Enable borders for the tabs
-  "gruvbox_highlight_active_buttons": true,            // Highlight selected buttons in the Find & Replace panel
-  "gruvbox_highlight_active_tree_row": true,           // Highlight the active file in the sidebar tree
-  "gruvbox_less_contrast": true,                       // Use less contrasting colors in sidebar, tabs, etc.
-  "gruvbox_statusbar_bold": true,                      // Enable bold status bar labels
-  "gruvbox_tabs_autowidth": true,                      // Auto-size the tabs
-  "gruvbox_tabs_bold": true,                           // Enable bold tabs
+  "gruvbox_buttons_bold": true,               // Enable bold button labels
+  "gruvbox_colored_tooltips": true,           // Color the tooltip backgrounds with the current accent color
+  "gruvbox_disable_faded_file_icons": true,   // Make file-type icons opaque
+  "gruvbox_disable_fileicons": true,          // Disable the sidebar file icons
+  "gruvbox_disable_folder_icons": true,       // Disable the sidebar folder icons
+  "gruvbox_disable_greyscale": true,          // Use gruvbox colors instead of greyscale colors for certain text
+  "gruvbox_disable_panels_button": true,      // Hide the panel-switching button
+  "gruvbox_enable_panel_close_button": true,  // Enable the panel close button
+  "gruvbox_highlight_active_buttons": true,   // Highlight selected buttons in the Find & Replace panel
+  "gruvbox_highlight_active_tree_row": true,  // Highlight the active file in the sidebar tree
+  "gruvbox_less_contrast": true,              // Use less contrasting colors in sidebar, tabs, etc.
+  "gruvbox_statusbar_bold": true,             // Enable bold status bar labels
+  "gruvbox_tabs_autowidth": true,             // Auto-size the tabs
+  "gruvbox_tabs_bold": true,                  // Enable bold tabs
 ```
 
 Extras

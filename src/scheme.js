@@ -1,7 +1,6 @@
 module.exports = function (values) {
   'use strict';
 
-  const _ = require('lodash');
   const plist = require('plist');
   const uuid = require('uuid');
   const utils = require('./utils.js');
@@ -67,6 +66,7 @@ module.exports = function (values) {
           'keyword.operator operator.neon',
           'keyword.operator keyword.operator.neon',
           'meta.attribute-selector keyword.operator.stylus',
+          'keyword.other.accessor',
         ],
         settings: {
           foreground: c.foreground,
@@ -81,7 +81,8 @@ module.exports = function (values) {
           'string.comment',
           'markup.strikethrough',
           'text.cancelled',
-          'comment punctuation',
+          'punctuation.definition.comment',
+          'punctuation.whitespace.comment',
         ],
         settings: {
           fontStyle: 'italic',
@@ -141,6 +142,7 @@ module.exports = function (values) {
           'string.interpolated',
           'variable.other.interpolation.scss',
           'entity.tag.tagbraces',
+          'punctuation.definition.string.template',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -197,7 +199,6 @@ module.exports = function (values) {
         name: 'Constants Punctuation',
         scope: [
           'constant.other.color punctuation.definition.constant',
-          'constant.other.color.rgb-value.scss',
           'constant.other.unit',
           'keyword.other.unit',
           'punctuation.section.flowtype',
@@ -324,7 +325,8 @@ module.exports = function (values) {
           'constant.other',
           'constant.other.color',
           'support.constant.color',
-          'punctuation.definition.constant.scss',
+
+          // 'punctuation.definition.constant.scss',
           'variable.language',
         ],
         settings: {
@@ -466,6 +468,20 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Hyperlink Punctuation',
+        scope: [
+          'meta.link.inline punctuation.definition.string',
+          'meta.image.inline punctuation.definition.string',
+          'meta.link.reference punctuation.definition.constant',
+          'meta.link.reference.literal punctuation.definition.string',
+          'meta.link.reference.literal punctuation.definition.constant',
+        ],
+        settings: {
+          foreground: c.neutralAqua,
+        },
+      },
+
+      {
         name: 'Markup Tag Punctuation',
         scope: [
           'punctuation.definition.tag',
@@ -551,6 +567,16 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Markdown Inline Code Punctuation',
+        scope: [
+          'markup.raw.inline punctuation.definition.raw',
+        ],
+        settings: {
+          foreground: c.neutralYellow,
+        },
+      },
+
+      {
         name: 'Markdown Quoted',
         scope: [
           'markup.quote',
@@ -563,7 +589,7 @@ module.exports = function (values) {
       {
         name: 'Markdown Quoted Punctuation',
         scope: [
-          'markup.quote punctuation',
+          'markup.quote punctuation.definition.blockquote',
         ],
         settings: {
           foreground: c.neutralPurple,
@@ -583,7 +609,7 @@ module.exports = function (values) {
       {
         name: 'Markdown List Punctuation',
         scope: [
-          'markup.list punctuation',
+          'markup.list punctuation.definition.list_item',
         ],
         settings: {
           foreground: c.neutralBlue,
@@ -820,6 +846,17 @@ module.exports = function (values) {
         ],
         settings: {
           foreground: c.bnp.purple,
+        },
+      },
+
+      {
+        name: 'Markdown Image & Hyperlink Punctuation',
+        scope: [
+          'meta.image punctuation.definition.metadata',
+          'meta.link punctuation.definition.metadata',
+        ],
+        settings: {
+          foreground: c.neutralPurple,
         },
       },
 
@@ -1335,43 +1372,11 @@ module.exports = function (values) {
     uuid: uuid.v4(),
   };
 
-  var allScopes = {};
+  scheme = utils.validateScheme(scheme);
 
-  _.forEach(scheme.settings.slice(1), function (v) {
-    var identifier = v.name || v.scope;
-
-    // Validation
-    if (!v.scope) {
-      // Ensure there is a scope property
-      throw new Error(`Missing Scope: "${identifier}"`);
-    } else if (!(v.scope instanceof(Array))) {
-      // Ensure the scope property is an Array
-      throw new TypeError(`Scope: "${identifier}" is not of type "Array"`);
-    } else if (_.size(v.scope) < 1) {
-      // Ensure the scope property has atleast 1 element
-      throw new Error(`"${identifier}" must have atleast 1 scope`);
-    }
-
-    if (!v.settings) {
-      // Ensure there is a settings property
-      throw new Error(`Missing Settings: "${identifier}"`);
-    } else if (_.size(v.settings) < 1) {
-      // Ensure the settings property has atleast 1 element
-      throw new Error(`"${identifier}" must have atleast 1 setting`);
-    }
-
-    // Ensure there are no duplicate scopes
-    _.forEach(v.scope, function (scope) {
-      if (!allScopes[scope]) {
-        allScopes[scope] = true;
-      } else {
-        throw new Error(`Duplicate Scope Found: "${scope}"`);
-      }
-    });
-
-    // Join the scope arrays for compatibility with Sublime Text
-    v.scope = utils.joinScopes(v.scope);
-  });
+  if (values.options.minify) {
+    scheme = utils.minifyScheme(scheme);
+  }
 
   return plist.build(scheme);
 };

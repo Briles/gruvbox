@@ -35,6 +35,12 @@ module.exports = function (values) {
       'layer1.opacity': 1,
       'layer1.inner_margin': [0, 1, 0, 0],
       'layer1.draw_center': false,
+
+      // Border - Left
+      'layer2.tint': c.bnp.fg3,
+      'layer2.opacity': 0,
+      'layer2.draw_center': false,
+      'layer2.inner_margin': [1, 0, 0, 0],
     },
 
     // Command Palette List Item Selected

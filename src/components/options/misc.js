@@ -174,5 +174,23 @@ module.exports = function (values) {
       'layer1.opacity': 0,
     },
 
+    // Disabled AutoComplete Row Highlight
+    {
+      class: 'table_row',
+      settings: [stOpts.disableAutocompleteRowHighlight],
+      attributes: ['selected'],
+
+      'layer0.opacity': 0, // Background
+    },
+
+    // Disabled Command Palette Row Highlight
+    {
+      class: 'mini_quick_panel_row',
+      settings: [stOpts.disableCommandPaletteRowHighlight],
+      attributes: ['selected'],
+
+      'layer0.opacity': 0, // Background
+    },
+
   ];
 };

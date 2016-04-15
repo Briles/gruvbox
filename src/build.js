@@ -7,14 +7,13 @@
     .option('-t, --theme', 'Build Themes')
     .option('-s, --scheme', 'Build Color Schemes')
     .option('-w, --widget', 'Build Widgets')
+    .option('-m, --minify', 'Minify Color Schemes & Themes')
     .parse(process.argv);
-
-  const opts = require('./options.js');
 
   // Options
   const PACKAGE_NAME = 'gruvbox';
-  const JSON_WHITESPACE = opts.jsonWhiteSpace || 2;
-  const TEST_COLOR = opts.testColor || 'cyan';
+  const JSON_WHITESPACE = commander.minify ? -1 : 2;
+  const TEST_COLOR = 'cyan';
   const BRIGHTNESS_MODES = ['Dark', 'Light'];
   const CONTRAST_MODES = ['Soft', 'Medium', 'Hard'];
   const BUILD_MODE_THEME = !!commander.theme;
@@ -28,6 +27,7 @@
   const tinycolor = require('./tinycolor.js');
   const paths = require('./paths.js')(PACKAGE_NAME);
   const components = require('./components.js');
+  const variant = require('./variants.js');
   const utils = require('./utils.js');
 
   // theme-specific options exposed to the user
@@ -43,7 +43,9 @@
     const oppositeBrightnessIdentifier = _.toLower(_.without(BRIGHTNESS_MODES, brightness));
     const oppositeBrightnessPalette = gruvboxPalette[oppositeBrightnessIdentifier];
     paths.internal.this = `${paths.internal.assets}${brightnessIdentifier}/`;
+    paths.internal.midstroke = `${paths.internal.this}midstroke__`;
     paths.internal.spacegray = `${paths.internal.this}spacegray__`;
+    paths.internal.thick = `${paths.internal.this}thick__`;
 
     CONTRAST_MODES.forEach(function (contrast) {
       const contrastIdentifier = _.toLower(contrast);
@@ -116,32 +118,43 @@
        * Color Schemes
        */
 
-      const schemeValues = {
+      const defaultVariant = {
         colors: _.deepMapValues(entirePalette, c => tinycolor(c).toSublimeHex()),
         info: info,
         paths: paths.internal,
+        options: commander,
       };
 
-      if (BUILD_MODE_SCHEME || BUILD_MODE_ALL) {
+      const schemeVariants = [
+        defaultVariant,
+        (variant(defaultVariant).noDimmedVariant()),
+      ];
 
-        const schemeContents = require('./scheme.js')(schemeValues);
-        const schemeDestination = path.join(paths.external.root, `${info.name}.tmTheme`);
+      schemeVariants.forEach(function (variant) {
 
-        utils.writeOutput(schemeDestination, schemeContents);
-      }
+        if (BUILD_MODE_SCHEME || BUILD_MODE_ALL) {
 
-      /**
-       * Widgets
-       */
-      if (BUILD_MODE_WIDGET || BUILD_MODE_ALL) {
-        const widgetTemplate = require('./widget.js')(schemeValues);
+          const schemeContents = require('./scheme.js')(variant);
+          const schemeDestination = path.join(paths.external.root, `${variant.info.name}.tmTheme`);
 
-        const widgetFilename = `Widget - ${info.name}.sublime-settings`;
-        const widgetDestination = path.join(paths.external.widgets, widgetFilename);
-        const widgetContents = JSON.stringify(widgetTemplate.settings, null, JSON_WHITESPACE);
+          utils.writeOutput(schemeDestination, schemeContents);
+        }
 
-        utils.writeOutput(widgetDestination, widgetContents);
-      }
+        /**
+         * Widgets
+         */
+        if (BUILD_MODE_WIDGET || BUILD_MODE_ALL) {
+          const widgetTemplate = require('./widget.js')(variant);
+
+          const widgetFilename = `Widget - ${variant.info.name}.sublime-settings`;
+          const widgetDestination = path.join(paths.external.widgets, widgetFilename);
+          const widgetContents = JSON.stringify(widgetTemplate.settings, null, JSON_WHITESPACE);
+
+          utils.writeOutput(widgetDestination, widgetContents);
+        }
+
+      });
+
     });
   });
 
