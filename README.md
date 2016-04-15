@@ -467,7 +467,7 @@ Use spacegray-like folder icons in the sidebar
 
 ##### Midstroke
 
-![Midstroke Icon Set]()
+![Midstroke Icon Set](http://i.imgur.com/dhktw4M.png)
 
 Use icons with a 1.5x thicker stroke
 
