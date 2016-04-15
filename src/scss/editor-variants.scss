@@ -81,6 +81,16 @@
           }
         }
 
+        // Disable Command Palette Selected Row Highlight
+
+        &.no-command-palette-highlight {
+          .commands li {
+            &.selected, &:hover {
+              background-color: $transparent;
+            }
+          }
+        }
+
         .command-palette-wrapper, .findreplace {
           input {
             color: $foreground;
@@ -243,6 +253,13 @@
         &:hover {
           color: grayscale(map-get($bnp, 'fg1'));
         }
+      }
+    }
+
+    // Sideline Command Palette
+    &.sideline-command-palette {
+      .commands li.selected, .commands li:hover {
+        border-left-color: map-get($bnp, 'fg3');
       }
     }
 

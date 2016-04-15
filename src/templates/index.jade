@@ -71,22 +71,28 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
                   li .jscsrc
                   li(ng-class="{selected: getTheme() === 'darkhard'}")
                     |gruvbox (Dark) (Hard).sublime-theme
-                  li gruvbox (Dark) (Hard).tmTheme
+                  li(ng-class="{selected: getTheme() === 'darkhard'}")
+                    |gruvbox (Dark) (Hard).tmTheme
                   li(ng-class="{selected: getTheme() === 'darkmedium'}")
                     |gruvbox (Dark) (Medium).sublime-theme
-                  li gruvbox (Dark) (Medium).tmTheme
+                  li(ng-class="{selected: getTheme() === 'darkmedium'}")
+                    |gruvbox (Dark) (Medium).tmTheme
                   li(ng-class="{selected: getTheme() === 'darksoft'}")
                     |gruvbox (Dark) (Soft).sublime-theme
-                  li gruvbox (Dark) (Soft).tmTheme
+                  li(ng-class="{selected: getTheme() === 'darksoft'}")
+                    |gruvbox (Dark) (Soft).tmTheme
                   li(ng-class="{selected: getTheme() === 'lighthard'}")
                     |gruvbox (Light) (Hard).sublime-theme
-                  li gruvbox (Light) (Hard).tmTheme
+                  li(ng-class="{selected: getTheme() === 'lighthard'}")
+                    |gruvbox (Light) (Hard).tmTheme
                   li(ng-class="{selected: getTheme() === 'lightmedium'}")
                     |gruvbox (Light) (Medium).sublime-theme
-                  li gruvbox (Light) (Medium).tmTheme
+                  li(ng-class="{selected: getTheme() === 'lightmedium'}")
+                    |gruvbox (Light) (Medium).tmTheme
                   li(ng-class="{selected: getTheme() === 'lightsoft'}")
                     |gruvbox (Light) (Soft).sublime-theme
-                  li gruvbox (Light) (Soft).tmTheme
+                  li(ng-class="{selected: getTheme() === 'lightsoft'}")
+                    |gruvbox (Light) (Soft).tmTheme
                   li gulpfile.js
                   li LICENSE
                   li messages.json
@@ -94,6 +100,9 @@ html(ng-app="gruvboxConfigurator", ng-controller="configuratorCtrl")
                   li README.md
         .pane.view
           .pane.tabs
+            .tab-nav-button
+              +icon-tab-previous
+              +icon-tab-next
             a.tab.tooltipped.tooltipped-s(
               aria-label="http://brianreilly.me/gruvbox/"
               ng-class="{selected: getLocation() === '/' || getLocation() === ''}"

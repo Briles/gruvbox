@@ -140,9 +140,6 @@
 
     vertical-align: middle;
   }
-  &:first-of-type {
-    border-left: 0;
-  }
 }
 
 @each $v in $opt-tabs-font-size {
@@ -352,7 +349,7 @@
 .opt-info {
   display: inline-block;
 
-  width: 293px;
+  width: 320px;
   margin-right: 16px;
   padding: 16px;
 

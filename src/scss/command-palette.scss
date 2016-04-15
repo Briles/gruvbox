@@ -70,3 +70,15 @@
     }
   }
 }
+
+// Command Palette Sideline
+
+.sideline-command-palette {
+  @each $k, $v in $opt-sideline-command-palette-thickness {
+    &.sideline-command-palette-#{$k} {
+      .commands li.selected, .commands li:hover {
+        border-left: ($v * 1px) solid $transparent;
+      }
+    }
+  }
+}

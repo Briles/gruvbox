@@ -5,14 +5,13 @@
       li=index+2
     li=(sublimeOptions.length + 2)
     li=(sublimeOptions.length + 3)
-  ul.buffer
-    li
-      pre
+  pre
+    ul.buffer
+      li
         code
           span.punctuation {
-      each option in sublimeOptions
-        li
-          pre
+        each option in sublimeOptions
+          li
             code
               span.whitespace &nbsp;&nbsp;
               span.punctuation "
@@ -21,7 +20,6 @@
               span.whitespace &nbsp;
               span.constant false
               span.punctuation ,
-    li
-      pre
+      li
         code
           span.punctuation }

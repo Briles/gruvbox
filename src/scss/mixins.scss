@@ -46,6 +46,14 @@
       background-color: $color;
     }
   }
+
+  // Command Palette Sideline
+
+  &.sideline-command-palette {
+    .commands li.selected, .commands li:hover {
+      border-left-color: $color;
+    }
+  }
 }
 
 @mixin widget-input {
