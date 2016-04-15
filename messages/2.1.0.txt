@@ -1,0 +1,52 @@
+gruvbox for Sublime Text 3
+https://github.com/Briles/gruvbox
+
+Version 2.1.0
+--------------------------------------------------------------------------------
+  ┌───────────────────┐
+  │  THEMES           │
+  └───────────────────┘
+
+    • Added new icon set with 1.5x thicker stroke ("gruvbox_iconset_midstroke": true,)
+    • Added new icon set with 2x thicker stroke ("gruvbox_iconset_thick": true,)
+    • You can now add a border to the left of the selected command palette row:
+
+      "gruvbox_sideline_autocomplete_row": true,           v  1px (Must be enabled for all settings)
+      "gruvbox_sideline_autocomplete_row_thick": true,     |  2px
+      "gruvbox_sideline_autocomplete_row_thickest": true,  v  3px
+
+    • You can now add a border to the left of the selected autocomplete row:
+
+      "gruvbox_sideline_command_palette_row": true,           v  1px (Must be enabled for all settings)
+      "gruvbox_sideline_command_palette_row_thick": true,     |  2px
+      "gruvbox_sideline_command_palette_row_thickest": true,  v  3px
+
+    • Added option to disable the selected command palette row highlight
+
+      "gruvbox_disable_command_palette_row_highlight": true,
+
+    • Added option to disable the selected autocomplete row highlight
+
+      "gruvbox_disable_autocomplete_row_highlight": true,
+
+    • Began consideration for adding animated icons; however, feedback is needed
+      before we can implement this feature, for more information please visit:
+      https://github.com/Briles/gruvbox/issues/6
+
+────────────────────────────────────────────────────────────────────────────────
+
+┌───────────────────┐
+│  COLOR SCHEMES    │
+└───────────────────┘
+
+    • Added a new color scheme variation: No Dimmed Colors (NDC). This
+      color scheme does not have any neutral-colored punctuation, methods, etc.
+
+    • SCSS RGB values are now colored correctly
+    • Improved Markdown punctuation coloring
+    • Fixed an issue with mis-colored comment punctuation
+
+--------------------------------------------------------------------------------
+
+If you are having any issues or want a new feature added,
+get in touch at https://github.com/Briles/gruvbox/issues
