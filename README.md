@@ -465,11 +465,21 @@ Use spacegray-like folder icons in the sidebar
 
 #### Alternate Icon Sets
 
+##### Midstroke
+
+![Midstroke Icon Set]()
+
+Use icons with a 1.5x thicker stroke
+
+```json
+"gruvbox_iconset_midstroke": true,
+```
+
 ##### Thick
 
 ![Thick Icon Set](http://i.imgur.com/Z9uIRPH.png)
 
-Use icons with a thicker stroke
+Use icons with a 2x thicker stroke
 
 ```json
 "gruvbox_iconset_thick": true,

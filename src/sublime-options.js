@@ -56,6 +56,7 @@ module.exports = {
   enableTreeRowHighlight: 'gruvbox_highlight_active_tree_row',
   underlineDirtyTabs: 'gruvbox_underline_modified_tabs',
   underlineDirtyTabsThick: 'gruvbox_underline_modified_tabs_thick',
+  iconsetMidstroke: 'gruvbox_iconset_midstroke',
   iconsetSpacegray: 'gruvbox_iconset_spacegray',
   iconsetThick: 'gruvbox_iconset_thick',
   lessContrast: 'gruvbox_less_contrast',

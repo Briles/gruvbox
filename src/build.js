@@ -43,6 +43,7 @@
     const oppositeBrightnessIdentifier = _.toLower(_.without(BRIGHTNESS_MODES, brightness));
     const oppositeBrightnessPalette = gruvboxPalette[oppositeBrightnessIdentifier];
     paths.internal.this = `${paths.internal.assets}${brightnessIdentifier}/`;
+    paths.internal.midstroke = `${paths.internal.this}midstroke__`;
     paths.internal.spacegray = `${paths.internal.this}spacegray__`;
     paths.internal.thick = `${paths.internal.this}thick__`;
 
