@@ -2644,6 +2644,13 @@
     "layer1.opacity": 0
   },
   {
+    "class": "grid_layout_control",
+    "settings": [
+      "gruvbox_disable_borders"
+    ],
+    "border_size": 0
+  },
+  {
     "class": "status_bar",
     "settings": [
       "gruvbox_enable_statusbar_border"

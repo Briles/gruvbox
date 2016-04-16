@@ -84,5 +84,13 @@ module.exports = function (values) {
       'layer1.opacity': 0,
     },
 
+    // Pane
+    {
+      class: 'grid_layout_control',
+      settings: [stOpts.disableBorders],
+
+      border_size: 0,
+    },
+
   ];
 };
