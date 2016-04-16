@@ -678,6 +678,7 @@ module.exports = function (values) {
         scope: [
           'entity.name.function',
           'entity.name.section',
+          'entity.name.accessor',
         ],
         settings: {
           foreground: c.bnp.green,

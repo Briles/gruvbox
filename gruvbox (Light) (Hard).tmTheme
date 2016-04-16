@@ -645,7 +645,7 @@
         <key>name</key>
         <string>Entities</string>
         <key>scope</key>
-        <string>entity.name.function, entity.name.section</string>
+        <string>entity.name.accessor, entity.name.function, entity.name.section</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1357,6 +1357,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>7444faad-4018-442c-9288-154b49f08cc2</string>
+    <string>92c3cdaa-7c8d-4d29-acaa-61e709a23023</string>
   </dict>
 </plist>
