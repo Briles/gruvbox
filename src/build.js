@@ -127,7 +127,7 @@
 
       const schemeVariants = [
         defaultVariant,
-        (variant(defaultVariant).noDimmedVariant()),
+        (variant(defaultVariant).noDimmed),
       ];
 
       schemeVariants.forEach(function (variant) {
