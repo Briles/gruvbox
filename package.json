@@ -24,6 +24,6 @@
   },
   "scripts": {
     "style": "npm run style:main",
-    "style:main": "jscs src/"
+    "style:main": "./node_modules/.bin/jscs src/"
   }
 }
