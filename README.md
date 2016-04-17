@@ -1,7 +1,6 @@
-<p>
-  <a href="https://github.com/Briles/gruvbox/tags"><img src="https://img.shields.io/github/tag/Briles/gruvbox.svg?style=flat-square" alt="GitHub tag"></a>
-  <a href="https://packagecontrol.io/packages/gruvbox"><img src="https://img.shields.io/packagecontrol/dt/gruvbox.svg?style=flat-square" alt="Package Control"></a>
-</p>
+[![GitHub Tag](https://img.shields.io/github/tag/Briles/gruvbox.svg?style=flat-square)](https://github.com/Briles/gruvbox/tags)
+[![Package Control](https://img.shields.io/packagecontrol/dt/gruvbox.svg?style=flat-square)](https://packagecontrol.io/packages/gruvbox)
+[![Build Status](https://img.shields.io/travis/Briles/gruvbox/develop.svg?style=flat-square)](https://travis-ci.org/Briles/gruvbox)
 
 <p align="center"><img src="https://cdn.rawgit.com/Briles/gruvbox/master/assets/banner-image.svg" alt="gruvbox for Sublime Text" width="327px" height="122px"></p>
 
