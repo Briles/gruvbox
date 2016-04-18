@@ -238,6 +238,7 @@ module.exports = function (values) {
         scope: [
           'storage.type.function',
           'meta.function storage.type.matlab',
+          'entity.quasi.tag.name',
         ],
         settings: {
           foreground: c.bnp.aqua,

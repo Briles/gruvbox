@@ -208,7 +208,7 @@
         <key>name</key>
         <string>Function Keyword</string>
         <key>scope</key>
-        <string>meta.function storage.type.matlab, storage.type.function</string>
+        <string>entity.quasi.tag.name, meta.function storage.type.matlab, storage.type.function</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1357,6 +1357,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>46c8e066-2b81-4e80-8bcc-e2bd914127a0</string>
+    <string>62b4021c-7ff0-4b48-b186-57715a9232c0</string>
   </dict>
 </plist>
