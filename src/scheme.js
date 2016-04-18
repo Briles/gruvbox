@@ -67,6 +67,7 @@ module.exports = function (values) {
           'keyword.operator keyword.operator.neon',
           'meta.attribute-selector keyword.operator.stylus',
           'keyword.other.accessor',
+          'entity.quasi.element meta.group.braces',
         ],
         settings: {
           foreground: c.foreground,
