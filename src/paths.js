@@ -1,7 +1,8 @@
-var paths = function (packageName) {
+var paths = (function () {
   'use strict';
 
   const path = require('path');
+  const conf = require('./config.js');
 
   // External Paths:
   // Paths used for writing files and navigating the package source
@@ -15,8 +16,8 @@ var paths = function (packageName) {
   // Relative to the Sublime Text Packages directory
   //
   // Sublime Text expects forward-slashed paths
-  const packagesRoot = `Packages/${packageName}/`;
-  const assetsDirectory = `${packageName}/assets/`;
+  const packagesRoot = `Packages/${conf.packageName}/`;
+  const assetsDirectory = `${conf.packageName}/assets/`;
   const commonsDirectory = `${assetsDirectory}commons/`;
 
   const paths = {
@@ -35,6 +36,6 @@ var paths = function (packageName) {
   };
 
   return paths;
-};
+}());
 
 module.exports = paths;

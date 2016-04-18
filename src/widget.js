@@ -1,21 +1,41 @@
-module.exports = function (values) {
+var widget = (function () {
   'use strict';
 
-  const info = values.info;
-  const paths = values.paths;
+  const paths = require('./paths.js');
 
-  const settings = {
-    draw_shadows: false,
-    font_options: [
-      'DirectWrite',
-      'subpixel_antialias',
-    ],
-    line_padding_top: 4,
-    line_padding_bottom: 4,
-    color_scheme: `${paths.packagesRoot}${info.name}.tmTheme`,
+  /**
+   * @class Widget
+   * @constructor
+   * @param {string} basename the name of the widget
+   */
+  var Widget = function (basename) {
+    if (!(this instanceof Widget)) {
+      return new Widget(basename);
+    }
+
+    if (!basename) {
+      throw new Error('"basename must be a string"');
+    }
+
+    this.config = {
+      draw_shadows: false,
+      font_options: [
+        'DirectWrite',
+        'subpixel_antialias',
+      ],
+      line_padding_top: 4,
+      line_padding_bottom: 4,
+      color_scheme: `${paths.internal.packagesRoot}${basename}.tmTheme`,
+    };
+
+    this.filename = `Widget - ${basename}.sublime-settings`;
+    this.destination = `${paths.external.widgets}/${this.filename}`;
+    this.contents = JSON.stringify(this.config, null, 2);
+
+    return this;
   };
 
-  return {
-    settings: settings,
-  };
-};
+  return Widget;
+}());
+
+module.exports = widget;
