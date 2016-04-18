@@ -49,7 +49,7 @@ module.exports = function (values) {
       class: 'mini_quick_panel_row',
       attributes: ['selected'],
 
-      'layer0.tint': c.background, // Background
+      'layer0.tint': c.panelRow, // Background
     },
 
     // Quick Switch Project Panel
@@ -82,7 +82,7 @@ module.exports = function (values) {
       class: 'quick_panel_row',
       attributes: ['selected'],
 
-      'layer0.tint': c.background,
+      'layer0.tint': c.panelRow,
     },
 
     // Panel Label
