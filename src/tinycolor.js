@@ -6,6 +6,10 @@
   // Sublime Text expects the alpha channel at the end for hex values
   // Tinycolor.toHex8String places it at the beginning
   tinycolor.prototype.toSublimeHex8String = function () {
+    if (!this.isValid()) {
+      throw new Error(`"${this}" is not a valid color'`);
+    }
+
     var hex = this.toHex8();
     return '#' + hex.slice(2) + hex.slice(0, 2);
   };
