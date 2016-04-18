@@ -119,7 +119,7 @@
        */
 
       const defaultVariant = {
-        colors: _.deepMapValues(entirePalette, c => tinycolor(c).toSublimeHex()),
+        colors: _.deepMapValues(entirePalette, c => tinycolor(c).toSublimeHexString()),
         info: info,
         paths: paths.internal,
         options: commander,

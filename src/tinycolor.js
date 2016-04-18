@@ -5,7 +5,7 @@
 
   // Sublime Text expects the alpha channel at the end for hex values
   // Tinycolor.toHex8String places it at the beginning
-  tinycolor.prototype.toSublimeHex8 = function () {
+  tinycolor.prototype.toSublimeHex8String = function () {
     var hex = this.toHex8();
     return '#' + hex.slice(2) + hex.slice(0, 2);
   };
@@ -30,7 +30,7 @@
     return rgb;
   };
 
-  tinycolor.prototype.toSublimeHex = function () {
+  tinycolor.prototype.toSublimeHexString = function () {
     var _this = this;
 
     if (!_this.isValid()) {
@@ -41,7 +41,7 @@
 
     // Only return an alpha channel when necessary
     if (_this._a !== 1) {
-      c = _this.toSublimeHex8();
+      c = _this.toSublimeHex8String();
     }
 
     return c;
