@@ -3,6 +3,8 @@
  */
 
 module.exports = {
+
+  // Accent Colors
   accentAqua: 'gruvbox_accent_aqua',
   accentBlue: 'gruvbox_accent_blue',
   accentGreen: 'gruvbox_accent_green',
@@ -12,101 +14,151 @@ module.exports = {
   accentYellow: 'gruvbox_accent_yellow',
   accentNeutral: 'gruvbox_accent_neutral',
   accentOpposite: 'gruvbox_accent_opposite',
+
+  // AutoCollapsing Tabs
   autocollapseTabs: 'gruvbox_autocollapse_tabs',
   autocollapseTabsTriggerXs: 'gruvbox_autocollapse_tabs_trigger_2',
   autocollapseTabsTriggerS: 'gruvbox_autocollapse_tabs_trigger_3',
   autocollapseTabsTriggerL: 'gruvbox_autocollapse_tabs_trigger_5',
   autocollapseTabsTriggerXl: 'gruvbox_autocollapse_tabs_trigger_6',
+
+  // AutoComplete Border
   autocompleteBorders: 'gruvbox_autocomplete_border',
   autocompleteBordersL: 'gruvbox_autocomplete_border_thick',
-  autocompleteSpacingL: 'gruvbox_autocomplete_comfortable',
-  autocompleteSpacingS: 'gruvbox_autocomplete_compact',
-  autocompleteSpacingXl: 'gruvbox_autocomplete_cozy',
+
+  // AutoComplete Row Padding
   autocompleteSpacingXs: 'gruvbox_autocomplete_cramped',
+  autocompleteSpacingS: 'gruvbox_autocomplete_compact',
+  autocompleteSpacingL: 'gruvbox_autocomplete_comfortable',
+  autocompleteSpacingXl: 'gruvbox_autocomplete_cozy',
+
+  // Bold Button Labels
   buttonsBold: 'gruvbox_buttons_bold',
-  buttonsFontSizeXxs: 'gruvbox_buttons_font_size_10',
-  buttonsFontSizeXs: 'gruvbox_buttons_font_size_12',
-  buttonsFontSizeS: 'gruvbox_buttons_font_size_13',
+
+  // Button Font Sizes
   buttonsFontSizeL: 'gruvbox_buttons_font_size_14',
+  buttonsFontSizeS: 'gruvbox_buttons_font_size_13',
   buttonsFontSizeXl: 'gruvbox_buttons_font_size_15',
+  buttonsFontSizeXs: 'gruvbox_buttons_font_size_12',
   buttonsFontSizeXxl: 'gruvbox_buttons_font_size_16',
-  commandPaletteSpacingL: 'gruvbox_command_palette_comfortable',
-  commandPaletteSpacingS: 'gruvbox_command_palette_compact',
-  commandPaletteSpacingXl: 'gruvbox_command_palette_cozy',
-  commandPaletteSpacingXs: 'gruvbox_command_palette_cramped',
+  buttonsFontSizeXxs: 'gruvbox_buttons_font_size_10',
+
+  // Colored Tooltips
   coloredTooltips: 'gruvbox_colored_tooltips',
-  disableBorders: 'gruvbox_disable_borders',
-  disableCommandPaletteRowBorder: 'gruvbox_disable_command_palette_row_border',
+
+  // Command Palette Row Padding
+  commandPaletteSpacingXs: 'gruvbox_command_palette_cramped',
+  commandPaletteSpacingS: 'gruvbox_command_palette_compact',
+  commandPaletteSpacingL: 'gruvbox_command_palette_comfortable',
+  commandPaletteSpacingXl: 'gruvbox_command_palette_cozy',
+
+  // Misc
+  disableAutocompleteRowHighlight: 'gruvbox_disable_autocomplete_row_highlight',
   disableCommandPaletteRowHighlight: 'gruvbox_disable_command_palette_row_highlight',
   disableFadedFileIcons: 'gruvbox_disable_faded_file_icons',
   disableFileIcons: 'gruvbox_disable_file_icons',
   disableFolderIcons: 'gruvbox_disable_folder_icons',
-  disablePanelsButton: 'gruvbox_disable_panels_button',
   disableGreyscaleColors: 'gruvbox_disable_greyscale',
-  disableAutocompleteRowHighlight: 'gruvbox_disable_autocomplete_row_highlight',
+  disablePanelsButton: 'gruvbox_disable_panels_button',
   enableActiveButtonHighlight: 'gruvbox_highlight_active_buttons',
-  enableCircleFolderIcons: 'gruvbox_folder_icons_circle',
   enablePanelCloseButton: 'gruvbox_enable_panel_close_button',
+
+  // Folder Icon Sets
+  enableCircleFolderIcons: 'gruvbox_folder_icons_circle',
   enablePlusMinusFolderIcons: 'gruvbox_folder_icons_plus_minus',
   enableSpacegrayFolderIcons: 'gruvbox_folder_icons_spacegray',
   enableSquareFolderIcons: 'gruvbox_folder_icons_square',
+
+  // Enable/Disable Borders
+  disableBorders: 'gruvbox_disable_borders',
+  disableCommandPaletteRowBorder: 'gruvbox_disable_command_palette_row_border',
   enableSidebarBorder: 'gruvbox_enable_sidebar_border',
   enableStatusbarBorder: 'gruvbox_enable_statusbar_border',
   enableTabBorders: 'gruvbox_enable_tab_borders',
+
+  // Enable Sidebar Open File Highlight
   enableTreeRowHighlight: 'gruvbox_highlight_active_tree_row',
-  underlineDirtyTabs: 'gruvbox_underline_modified_tabs',
-  underlineDirtyTabsThick: 'gruvbox_underline_modified_tabs_thick',
+
+  // Icon Sets
   iconsetMidstroke: 'gruvbox_iconset_midstroke',
   iconsetSpacegray: 'gruvbox_iconset_spacegray',
   iconsetThick: 'gruvbox_iconset_thick',
+
+  // Less Contrast
   lessContrast: 'gruvbox_less_contrast',
-  panelL: 'gruvbox_panel_l',
-  panelS: 'gruvbox_panel_s',
-  panelXl: 'gruvbox_panel_xl',
-  panelXs: 'gruvbox_panel_xs',
-  panelXxl: 'gruvbox_panel_xxl',
+
+  // Find, Replace, & Console Panel Margin
   panelXxs: 'gruvbox_panel_xxs',
+  panelXs: 'gruvbox_panel_xs',
+  panelS: 'gruvbox_panel_s',
+  panelL: 'gruvbox_panel_l',
+  panelXl: 'gruvbox_panel_xl',
+  panelXxl: 'gruvbox_panel_xxl',
+
+  // Scrollbar Width
   scrollbarWidthXs: 'gruvbox_scrollbar_width_xs',
   scrollbarWidthS: 'gruvbox_scrollbar_width_s',
   scrollbarWidthL: 'gruvbox_scrollbar_width_l',
   scrollbarWidthXl: 'gruvbox_scrollbar_width_xl',
-  sidebarSpacingL: 'gruvbox_sidebar_comfortable',
-  sidebarSpacingS: 'gruvbox_sidebar_compact',
-  sidebarSpacingXl: 'gruvbox_sidebar_cozy',
-  sidebarSpacingXs: 'gruvbox_sidebar_cramped',
-  sidebarFontSizeL: 'gruvbox_sidebar_font_size_14',
-  sidebarFontSizeS: 'gruvbox_sidebar_font_size_13',
-  sidebarFontSizeXl: 'gruvbox_sidebar_font_size_15',
-  sidebarFontSizeXs: 'gruvbox_sidebar_font_size_12',
+
+  // Sidebar Label Font Size
   sidebarFontSizeXxs: 'gruvbox_sidebar_font_size_10',
+  sidebarFontSizeXs: 'gruvbox_sidebar_font_size_12',
+  sidebarFontSizeS: 'gruvbox_sidebar_font_size_13',
+  sidebarFontSizeL: 'gruvbox_sidebar_font_size_14',
+  sidebarFontSizeXl: 'gruvbox_sidebar_font_size_15',
   sidebarFontSizeXxl: 'gruvbox_sidebar_font_size_16',
+
+  // Sidebar Row Padding
+  sidebarSpacingXs: 'gruvbox_sidebar_cramped',
+  sidebarSpacingS: 'gruvbox_sidebar_compact',
+  sidebarSpacingL: 'gruvbox_sidebar_comfortable',
+  sidebarSpacingXl: 'gruvbox_sidebar_cozy',
+
+  // Sideline AutoComplete Row
   sidelineAutocompleteRow: 'gruvbox_sideline_autocomplete_row',
   sidelineAutocompleteRowThick: 'gruvbox_sideline_autocomplete_row_thick',
   sidelineAutocompleteRowThickest: 'gruvbox_sideline_autocomplete_row_thickest',
+
+  // Sideline Command Palette Row
   sidelineCommandPaletteRow: 'gruvbox_sideline_command_palette_row',
   sidelineCommandPaletteRowThick: 'gruvbox_sideline_command_palette_row_thick',
   sidelineCommandPaletteRowThickest: 'gruvbox_sideline_command_palette_row_thickest',
+
+  // Bold Statusbar labels
   statusbarBold: 'gruvbox_statusbar_bold',
-  statusbarButtonL: 'gruvbox_statusbar_button_l',
-  statusbarButtonS: 'gruvbox_statusbar_button_s',
-  statusbarButtonXl: 'gruvbox_statusbar_button_xl',
-  statusbarButtonXs: 'gruvbox_statusbar_button_xs',
-  statusbarButtonXxl: 'gruvbox_statusbar_button_xxl',
+
+  // Statusbar Button Width
   statusbarButtonXxs: 'gruvbox_statusbar_button_xxs',
-  statusbarFontSizeL: 'gruvbox_statusbar_font_size_14',
-  statusbarFontSizeS: 'gruvbox_statusbar_font_size_13',
-  statusbarFontSizeXl: 'gruvbox_statusbar_font_size_15',
-  statusbarFontSizeXs: 'gruvbox_statusbar_font_size_12',
-  statusbarFontSizeXxl: 'gruvbox_statusbar_font_size_16',
+  statusbarButtonXs: 'gruvbox_statusbar_button_xs',
+  statusbarButtonS: 'gruvbox_statusbar_button_s',
+  statusbarButtonL: 'gruvbox_statusbar_button_l',
+  statusbarButtonXl: 'gruvbox_statusbar_button_xl',
+  statusbarButtonXxl: 'gruvbox_statusbar_button_xxl',
+
+  // Statusbar Label Font Size
   statusbarFontSizeXxs: 'gruvbox_statusbar_font_size_10',
-  statusbarL: 'gruvbox_statusbar_l',
-  statusbarS: 'gruvbox_statusbar_s',
-  statusbarXl: 'gruvbox_statusbar_xl',
-  statusbarXs: 'gruvbox_statusbar_xs',
-  statusbarXxl: 'gruvbox_statusbar_xxl',
+  statusbarFontSizeXs: 'gruvbox_statusbar_font_size_12',
+  statusbarFontSizeS: 'gruvbox_statusbar_font_size_13',
+  statusbarFontSizeL: 'gruvbox_statusbar_font_size_14',
+  statusbarFontSizeXl: 'gruvbox_statusbar_font_size_15',
+  statusbarFontSizeXxl: 'gruvbox_statusbar_font_size_16',
+
+  // Statusbar Height
   statusbarXxs: 'gruvbox_statusbar_xxs',
+  statusbarXs: 'gruvbox_statusbar_xs',
+  statusbarS: 'gruvbox_statusbar_s',
+  statusbarL: 'gruvbox_statusbar_l',
+  statusbarXl: 'gruvbox_statusbar_xl',
+  statusbarXxl: 'gruvbox_statusbar_xxl',
+
+  // Autowidth Tabs
   tabsAutowidth: 'gruvbox_tabs_autowidth',
+
+  // Bold Tab Labels
   tabsBold: 'gruvbox_tabs_bold',
+
+  // Tab Label Font Size
   tabsFontSizeXxxs: 'gruvbox_tabs_font_size_7',
   tabsFontSizeXxs: 'gruvbox_tabs_font_size_8',
   tabsFontSizeXs: 'gruvbox_tabs_font_size_9',
@@ -115,10 +167,16 @@ module.exports = {
   tabsFontSizeXl: 'gruvbox_tabs_font_size_13',
   tabsFontSizeXxl: 'gruvbox_tabs_font_size_14',
   tabsFontSizeXxxl: 'gruvbox_tabs_font_size_15',
-  tabsL: 'gruvbox_tabs_l',
-  tabsS: 'gruvbox_tabs_s',
-  tabsXl: 'gruvbox_tabs_xl',
-  tabsXs: 'gruvbox_tabs_xs',
-  tabsXxl: 'gruvbox_tabs_xxl',
+
+  // Tab Height
   tabsXxs: 'gruvbox_tabs_xxs',
+  tabsXs: 'gruvbox_tabs_xs',
+  tabsS: 'gruvbox_tabs_s',
+  tabsL: 'gruvbox_tabs_l',
+  tabsXl: 'gruvbox_tabs_xl',
+  tabsXxl: 'gruvbox_tabs_xxl',
+
+  // Underline Modified Tabs
+  underlineDirtyTabs: 'gruvbox_underline_modified_tabs',
+  underlineDirtyTabsThick: 'gruvbox_underline_modified_tabs_thick',
 };
