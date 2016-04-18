@@ -14,7 +14,7 @@
   "devDependencies": {
     "commander": "^2.9.0",
     "gulp": "^3.9.1",
-    "jscs": "^2.11.0",
+    "jscs": "^3.0.3",
     "lodash": "^4.11.0",
     "lodash-deep": "^2.0.0",
     "plist": "^1.2.0",
