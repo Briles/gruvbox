@@ -65,9 +65,8 @@
         gs: _.deepMapValues(brightnessPalette, c => tinycolor(c).greyscale().toRgbString()),
 
         // Theme Colors
-        border: tinycolor(backgroundColor).darken(12.3).toRgbString(),
-        container: tinycolor(backgroundColor).darken(6.2).toRgbString(),
-        panelRow: tinycolor(backgroundColor).lighten(2.35).toRgbString(),
+        border: tinycolor(backgroundColor).darken(10).toRgbString(),
+        container: tinycolor(backgroundColor).darken(5).toRgbString(),
 
         borderSofter: tinycolor(backgroundColor).darken(6.5).toRgbString(),
         containerSofter: tinycolor(backgroundColor).darken(2.8).toRgbString(),
