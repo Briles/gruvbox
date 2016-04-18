@@ -1,14 +1,12 @@
 module.exports = function (values) {
   'use strict';
 
-  const plist = require('plist');
   const uuid = require('uuid');
-  const utils = require('./utils.js');
 
   const c = values.colors;
   const info = values.info;
 
-  var scheme = {
+  return {
     comment: 'Based on gruvbox for Vim (https://github.com/morhetz/gruvbox)',
     originalAuthor: 'Pavel Pertsev (https://github.com/morhetz)',
     author: 'Brian Reilly (https://github.com/Briles/gruvbox)',
@@ -1374,12 +1372,4 @@ module.exports = function (values) {
     ],
     uuid: uuid.v4(),
   };
-
-  scheme = utils.validateScheme(scheme);
-
-  if (values.options.minify) {
-    scheme = utils.minifyScheme(scheme);
-  }
-
-  return plist.build(scheme);
 };

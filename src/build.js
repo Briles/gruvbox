@@ -24,6 +24,7 @@
   const _ = require('lodash');
   _.mixin(require('lodash-deep'));
   const path = require('path');
+  const plist = require('plist');
   const tinycolor = require('./tinycolor.js');
   const paths = require('./paths.js')(PACKAGE_NAME);
   const components = require('./components.js');
@@ -121,22 +122,24 @@
         colors: _.deepMapValues(entirePalette, c => tinycolor(c).toSublimeHexString()),
         info: info,
         paths: paths.internal,
-        options: commander,
       };
 
       const schemeVariants = [
-        defaultVariant,
-        (variant(defaultVariant).noDimmed),
+        defaultVariant, (variant(defaultVariant).noDimmed),
       ];
 
       schemeVariants.forEach(function (variant) {
 
         if (BUILD_MODE_SCHEME || BUILD_MODE_ALL) {
+          var schemeContents = utils.validateScheme(require('./scheme.js')(variant));
 
-          const schemeContents = require('./scheme.js')(variant);
+          if (commander.minify) {
+            schemeContents = utils.minifyScheme(schemeContents);
+          }
+
           const schemeDestination = path.join(paths.external.root, `${variant.info.name}.tmTheme`);
 
-          utils.writeOutput(schemeDestination, schemeContents);
+          utils.writeOutput(schemeDestination, plist.build(schemeContents));
         }
 
         /**
