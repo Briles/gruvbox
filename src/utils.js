@@ -67,10 +67,7 @@
       var identifier = v.name || v.scope;
 
       // Validation
-      if (!v.scope) {
-        // Ensure there is a scope property
-        throw new Error(`Missing Scope: "${identifier}"`);
-      } else if (!(v.scope instanceof(Array))) {
+      if (!_.isArray(v.scope)) {
         // Ensure the scope property is an Array
         throw new TypeError(`Scope: "${identifier}" is not of type "Array"`);
       } else if (_.size(v.scope) < 1) {

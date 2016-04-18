@@ -41,13 +41,6 @@
         };
       };
 
-      it('should throw error when there is no scope property', function () {
-        assert.throws(
-          errored(schemes.invalidMissingScope),
-          'Missing Scope: "Invalid: Missing Scope"'
-        );
-      });
-
       it('should throw error when scope is not array', function () {
         assert.throws(
           errored(schemes.invalidNonArrayScope),

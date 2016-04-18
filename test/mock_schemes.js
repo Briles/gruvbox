@@ -1,11 +1,4 @@
 module.exports = {
-  invalidMissingScope: {
-    settings: [{},
-      {
-        name: 'Invalid: Missing Scope',
-      },
-    ],
-  },
   invalidNonArrayScope: {
     settings: [{},
       {
