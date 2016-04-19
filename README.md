@@ -1,3 +1,5 @@
+**! Now also available for [Atom](https://atom.io/themes/gruvbox-plus-syntax)**
+
 [![GitHub Tag](https://img.shields.io/github/tag/Briles/gruvbox.svg?style=flat-square)](https://github.com/Briles/gruvbox/tags)
 [![Package Control](https://img.shields.io/packagecontrol/dt/gruvbox.svg?style=flat-square)](https://packagecontrol.io/packages/gruvbox)
 [![Build Status](https://img.shields.io/travis/Briles/gruvbox/develop.svg?style=flat-square)](https://travis-ci.org/Briles/gruvbox)
