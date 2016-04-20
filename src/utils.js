@@ -24,7 +24,7 @@
    * @param {string} filecontents the contents of the file to be written
    */
   var writeOutput = function (filepath, filecontents) {
-    fs.writeFileSync(filepath, filecontents, (err) => {
+    fs.writeFile(filepath, filecontents, function (err) {
       if (err) throw err;
       console.log('Wrote "%s"', filepath.split(path.sep).slice(-1)[0]);
     });
