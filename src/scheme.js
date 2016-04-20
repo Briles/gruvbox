@@ -640,10 +640,12 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Function Calls',
         scope: [
           'keyword.other.special-method',
           'meta.function-call variable.function',
           'support.function',
+          'variable.function.constructor',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -651,7 +653,7 @@ module.exports = function (values) {
       },
 
       {
-        name: 'Methods',
+        name: 'Method Calls',
         scope: [
           'meta.function-call.method variable.function',
           'meta.function-call.static variable.function',
