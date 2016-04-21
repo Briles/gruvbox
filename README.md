@@ -539,6 +539,10 @@ Extras
 
 all extras can be found in the `extras` directory of the package.
 
+### App Icons
+
+App icons in PNG, ICO, & ICNS format are located in `extras\app-icons\`
+
 ### SublimeLinter Gutter Theme
 
 Activation:
