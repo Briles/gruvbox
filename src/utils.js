@@ -24,14 +24,10 @@
    * @param {string} filecontents the contents of the file to be written
    */
   var writeOutput = function (filepath, filecontents) {
-    if (path.normalize(filepath)) {
-      var pathparts = filepath.split(path.sep);
-
-      fs.writeFileSync(filepath, filecontents);
-      console.log('Wrote "%s"', pathparts.slice(-1)[0]);
-    } else {
-      throw new Error(`"${filepath}" is not a valid path`);
-    }
+    fs.writeFile(filepath, filecontents, function (err) {
+      if (err) throw err;
+      console.log('Wrote "%s"', filepath.split(path.sep).slice(-1)[0]);
+    });
   };
 
   /**
@@ -71,10 +67,7 @@
       var identifier = v.name || v.scope;
 
       // Validation
-      if (!v.scope) {
-        // Ensure there is a scope property
-        throw new Error(`Missing Scope: "${identifier}"`);
-      } else if (!(v.scope instanceof(Array))) {
+      if (!_.isArray(v.scope)) {
         // Ensure the scope property is an Array
         throw new TypeError(`Scope: "${identifier}" is not of type "Array"`);
       } else if (_.size(v.scope) < 1) {
@@ -124,14 +117,15 @@
 
     scheme.settings.slice(1).forEach(function (v) {
       var settings = v.settings;
-      var bucket = '';
+      var bucket = [];
 
       styleProps.forEach(function (style) {
         if (settings[style]) {
-          bucket += ' ' + settings[style];
+          bucket.push(settings[style]);
         }
       });
 
+      bucket = bucket.join(' ');
       buckets[bucket] = (!buckets[bucket] ? [] : buckets[bucket]).concat(v.scope);
     });
 

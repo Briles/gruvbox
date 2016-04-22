@@ -1,14 +1,12 @@
 module.exports = function (values) {
   'use strict';
 
-  const plist = require('plist');
   const uuid = require('uuid');
-  const utils = require('./utils.js');
 
   const c = values.colors;
   const info = values.info;
 
-  var scheme = {
+  return {
     comment: 'Based on gruvbox for Vim (https://github.com/morhetz/gruvbox)',
     originalAuthor: 'Pavel Pertsev (https://github.com/morhetz)',
     author: 'Brian Reilly (https://github.com/Briles/gruvbox)',
@@ -67,6 +65,8 @@ module.exports = function (values) {
           'keyword.operator keyword.operator.neon',
           'meta.attribute-selector keyword.operator.stylus',
           'keyword.other.accessor',
+          'entity.quasi.element meta.group.braces',
+          'keyword.operator.accessor',
         ],
         settings: {
           foreground: c.foreground,
@@ -238,6 +238,7 @@ module.exports = function (values) {
         scope: [
           'storage.type.function',
           'meta.function storage.type.matlab',
+          'entity.quasi.tag.name',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -639,10 +640,12 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Function Calls',
         scope: [
           'keyword.other.special-method',
           'meta.function-call variable.function',
           'support.function',
+          'variable.function.constructor',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -650,7 +653,7 @@ module.exports = function (values) {
       },
 
       {
-        name: 'Methods',
+        name: 'Method Calls',
         scope: [
           'meta.function-call.method variable.function',
           'meta.function-call.static variable.function',
@@ -678,6 +681,7 @@ module.exports = function (values) {
         scope: [
           'entity.name.function',
           'entity.name.section',
+          'entity.name.accessor',
         ],
         settings: {
           foreground: c.bnp.green,
@@ -1371,12 +1375,4 @@ module.exports = function (values) {
     ],
     uuid: uuid.v4(),
   };
-
-  scheme = utils.validateScheme(scheme);
-
-  if (values.options.minify) {
-    scheme = utils.minifyScheme(scheme);
-  }
-
-  return plist.build(scheme);
 };

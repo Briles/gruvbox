@@ -18,19 +18,22 @@ var variant = (function () {
     return this;
   };
 
-  /**
-   * Color scheme variant without any neutral colors
-   * @return {object}      a new, modified scheme
-   */
-  Variant.prototype.noDimmedVariant = function () {
-    var _base = this._base;
-    _base.info.name += ' NDC';
+  Variant.prototype = {
+    /**
+     * Color scheme variant without any neutral colors
+     * @return {object}      a new, modified scheme
+     */
+    get noDimmed() {
+      var _base = this._base;
+      _base.info.name += ' NDC';
 
-    _.forEach(_base.colors.accents, function (v, k) {
-      _base.colors['neutral' + _.upperFirst(k)] = _base.colors.bnp[k];
-    });
+      _.forEach(_base.colors.accents, function (v, k) {
+        _base.colors['neutral' + _.upperFirst(k)] = _base.colors.bnp[k];
+      });
 
-    return _base;
+      return _base;
+    },
+
   };
 
   return Variant;

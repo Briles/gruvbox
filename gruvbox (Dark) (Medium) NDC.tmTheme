@@ -76,7 +76,7 @@
         <key>name</key>
         <string>Punctuation</string>
         <key>scope</key>
-        <string>keyword.operator keyword.operator.neon, keyword.operator operator.neon, keyword.other.accessor, meta.attribute-selector keyword.operator.stylus, meta.brace, meta.delimiter, meta.group.braces, meta.punctuation.separator, meta.separator, punctuation</string>
+        <string>entity.quasi.element meta.group.braces, keyword.operator keyword.operator.neon, keyword.operator operator.neon, keyword.operator.accessor, keyword.other.accessor, meta.attribute-selector keyword.operator.stylus, meta.brace, meta.delimiter, meta.group.braces, meta.punctuation.separator, meta.separator, punctuation</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -208,7 +208,7 @@
         <key>name</key>
         <string>Function Keyword</string>
         <key>scope</key>
-        <string>meta.function storage.type.matlab, storage.type.function</string>
+        <string>entity.quasi.tag.name, meta.function storage.type.matlab, storage.type.function</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -611,8 +611,10 @@
         </dict>
       </dict>
       <dict>
+        <key>name</key>
+        <string>Function Calls</string>
         <key>scope</key>
-        <string>keyword.other.special-method, meta.function-call variable.function, support.function</string>
+        <string>keyword.other.special-method, meta.function-call variable.function, support.function, variable.function.constructor</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -621,7 +623,7 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>Methods</string>
+        <string>Method Calls</string>
         <key>scope</key>
         <string>meta.function-call.method variable.function, meta.function-call.static variable.function, meta.method, meta.method-call, support.function.mutator</string>
         <key>settings</key>
@@ -645,7 +647,7 @@
         <key>name</key>
         <string>Entities</string>
         <key>scope</key>
-        <string>entity.name.function, entity.name.section</string>
+        <string>entity.name.accessor, entity.name.function, entity.name.section</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1357,6 +1359,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>283c256a-af89-4605-9a9f-806abc085653</string>
+    <string>f9d576ba-9575-40a9-80c7-95eeccba3236</string>
   </dict>
 </plist>

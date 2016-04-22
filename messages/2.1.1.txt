@@ -1,0 +1,47 @@
+gruvbox for Sublime Text 3
+https://github.com/Briles/gruvbox
+
+Version 2.1.1
+--------------------------------------------------------------------------------
+  ┌───────────────────┐
+  │  THEMES           │
+  └───────────────────┘
+
+    • Fixed an issue with view borders not being disabled when using a multiple view layout
+      and the `gruvbox_disable_borders` option.
+    • Slightly lightened the border & container colors
+
+    • Began consideration for adding animated icons; however, feedback is needed
+      before we can implement this feature, for more information please visit:
+      https://github.com/Briles/gruvbox/issues/6
+
+────────────────────────────────────────────────────────────────────────────────
+
+  ┌───────────────────┐
+  │  COLOR SCHEMES    │
+  └───────────────────┘
+
+    • Colored constructor calls the same as function calls
+    • Applied neutral color to accessor operators
+    • Improved punctuation coloring within JavaScript template literal expressions
+    • Colored JavaScript tagged template literal
+    • Colored JavaScript getter & setter accessor names
+
+────────────────────────────────────────────────────────────────────────────────
+
+  ┌───────────────────┐
+  │  Extras           │
+  └───────────────────┘
+
+    You can now find app icons in PNG, ICO, & ICNS format located at
+    https://github.com/Briles/gruvbox/tree/master/extras/app-icons
+
+    You can now also enjoy all the gruvbox color schemes on Atom:
+    https://atom.io/themes/gruvbox-plus-syntax
+
+    Enjoy!
+
+--------------------------------------------------------------------------------
+
+If you are having any issues or want a new feature added,
+get in touch at https://github.com/Briles/gruvbox/issues

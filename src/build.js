@@ -2,6 +2,7 @@
   'use strict';
 
   const commander = require('commander');
+  const conf = require('./config.js');
 
   commander
     .option('-t, --theme', 'Build Themes')
@@ -11,24 +12,22 @@
     .parse(process.argv);
 
   // Options
-  const PACKAGE_NAME = 'gruvbox';
-  const JSON_WHITESPACE = commander.minify ? -1 : 2;
-  const TEST_COLOR = 'cyan';
-  const BRIGHTNESS_MODES = ['Dark', 'Light'];
-  const CONTRAST_MODES = ['Soft', 'Medium', 'Hard'];
-  const BUILD_MODE_THEME = !!commander.theme;
-  const BUILD_MODE_SCHEME = !!commander.scheme;
-  const BUILD_MODE_WIDGET = !!commander.widget;
-  const BUILD_MODE_ALL = !BUILD_MODE_THEME && !BUILD_MODE_SCHEME && !BUILD_MODE_WIDGET;
+  conf.jsonWhitespace = !!commander.minify ? -1 : 2;
+  conf.buildTheme = !!commander.theme;
+  conf.buildScheme = !!commander.scheme;
+  conf.buildWidget = !!commander.widget;
+  conf.buildAll = !conf.buildTheme && !conf.buildScheme && !conf.buildWidget;
 
   const _ = require('lodash');
   _.mixin(require('lodash-deep'));
-  const path = require('path');
-  const tinycolor = require('./tinycolor.js');
-  const paths = require('./paths.js')(PACKAGE_NAME);
   const components = require('./components.js');
-  const variant = require('./variants.js');
+  const path = require('path');
+  const paths = require('./paths.js');
+  const plist = require('plist');
+  const tinycolor = require('./tinycolor.js');
   const utils = require('./utils.js');
+  const variant = require('./variants.js');
+  const Widget = require('./widget.js');
 
   // theme-specific options exposed to the user
   const sublimeOpts = require('./sublime-options.js');
@@ -36,24 +35,24 @@
   // Gruvbox colors
   const gruvboxPalette = require('./palette.js');
 
-  BRIGHTNESS_MODES.forEach(function (brightness) {
+  conf.brightnessModes.forEach(function (brightness) {
 
     const brightnessIdentifier = _.toLower(brightness);
     const brightnessPalette = gruvboxPalette[brightnessIdentifier];
-    const oppositeBrightnessIdentifier = _.toLower(_.without(BRIGHTNESS_MODES, brightness));
+    const oppositeBrightnessIdentifier = _.toLower(_.without(conf.brightnessModes, brightness));
     const oppositeBrightnessPalette = gruvboxPalette[oppositeBrightnessIdentifier];
     paths.internal.this = `${paths.internal.assets}${brightnessIdentifier}/`;
     paths.internal.midstroke = `${paths.internal.this}midstroke__`;
     paths.internal.spacegray = `${paths.internal.this}spacegray__`;
     paths.internal.thick = `${paths.internal.this}thick__`;
 
-    CONTRAST_MODES.forEach(function (contrast) {
+    conf.contrastModes.forEach(function (contrast) {
       const contrastIdentifier = _.toLower(contrast);
       const backgroundColor = brightnessPalette.bg[contrastIdentifier];
       const foregroundColor = brightnessPalette.fg[contrastIdentifier];
 
       const colors = {
-        test: TEST_COLOR,
+        test: conf.testColor,
         transparent: 'rgba(0, 0, 0, 0)',
         black: 'rgb(0, 0, 0)',
         white: 'rgb(255, 255, 255)',
@@ -65,8 +64,8 @@
         gs: _.deepMapValues(brightnessPalette, c => tinycolor(c).greyscale().toRgbString()),
 
         // Theme Colors
-        border: tinycolor(backgroundColor).darken(12.3).toRgbString(),
-        container: tinycolor(backgroundColor).darken(6.2).toRgbString(),
+        border: tinycolor(backgroundColor).darken(10).toRgbString(),
+        container: tinycolor(backgroundColor).darken(5).toRgbString(),
         panelRow: tinycolor(backgroundColor).lighten(2.35).toRgbString(),
 
         borderSofter: tinycolor(backgroundColor).darken(6.5).toRgbString(),
@@ -83,7 +82,7 @@
         brightness: brightnessIdentifier,
         oppositeBrightness: oppositeBrightnessIdentifier,
         contrast: contrastIdentifier,
-        name: `${PACKAGE_NAME} (${brightness}) (${contrast})`,
+        name: `${conf.packageName} (${brightness}) (${contrast})`,
       };
 
       const entirePalette = Object.assign(gruvboxPalette, colors);
@@ -92,7 +91,7 @@
        * Themes
        */
 
-      if (BUILD_MODE_THEME || BUILD_MODE_ALL) {
+      if (conf.buildTheme || conf.buildAll) {
         const themeValues = {
           colors: _.deepMapValues(entirePalette, c => tinycolor(c).toSublimeRgb()),
           info: info,
@@ -109,7 +108,7 @@
           themeContents.push(...m);
         });
 
-        var themeStringified = JSON.stringify(themeContents, null, JSON_WHITESPACE);
+        var themeStringified = JSON.stringify(themeContents, null, conf.jsonWhitespace);
 
         utils.writeOutput(themePath, themeStringified);
       }
@@ -119,38 +118,36 @@
        */
 
       const defaultVariant = {
-        colors: _.deepMapValues(entirePalette, c => tinycolor(c).toSublimeHex()),
+        colors: _.deepMapValues(entirePalette, c => tinycolor(c).toSublimeHexString()),
         info: info,
         paths: paths.internal,
-        options: commander,
       };
 
       const schemeVariants = [
-        defaultVariant,
-        (variant(defaultVariant).noDimmedVariant()),
+        defaultVariant, (variant(defaultVariant).noDimmed),
       ];
 
       schemeVariants.forEach(function (variant) {
+        var baseName = variant.info.name;
 
-        if (BUILD_MODE_SCHEME || BUILD_MODE_ALL) {
+        if (conf.buildScheme || conf.buildAll) {
+          var schemeContents = utils.validateScheme(require('./scheme.js')(variant));
 
-          const schemeContents = require('./scheme.js')(variant);
-          const schemeDestination = path.join(paths.external.root, `${variant.info.name}.tmTheme`);
+          if (commander.minify) {
+            schemeContents = utils.minifyScheme(schemeContents);
+          }
 
-          utils.writeOutput(schemeDestination, schemeContents);
+          const schemeDestination = path.join(paths.external.root, `${baseName}.tmTheme`);
+
+          utils.writeOutput(schemeDestination, plist.build(schemeContents));
         }
 
         /**
          * Widgets
          */
-        if (BUILD_MODE_WIDGET || BUILD_MODE_ALL) {
-          const widgetTemplate = require('./widget.js')(variant);
-
-          const widgetFilename = `Widget - ${variant.info.name}.sublime-settings`;
-          const widgetDestination = path.join(paths.external.widgets, widgetFilename);
-          const widgetContents = JSON.stringify(widgetTemplate.settings, null, JSON_WHITESPACE);
-
-          utils.writeOutput(widgetDestination, widgetContents);
+        if (conf.buildWidget || conf.buildAll) {
+          var widget = new Widget(baseName);
+          utils.writeOutput(widget.destination, widget.contents);
         }
 
       });
