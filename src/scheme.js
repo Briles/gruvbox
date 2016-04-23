@@ -164,6 +164,7 @@ module.exports = function (values) {
           'storage.type.function.jade',
           'js.embedded.control.flow keyword.operator.js',
           'storage.type.import.include.jade',
+          'support.constant.custom-property-name.prefix',
         ],
         settings: {
           foreground: c.bnp.red,
