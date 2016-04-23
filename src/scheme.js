@@ -189,6 +189,7 @@ module.exports = function (values) {
           'keyword.other.arrow',
           'keyword.other.double-colon',
           'keyword.control.operator',
+          'punctuation.operator',
         ],
         settings: {
           foreground: c.bnp.aqua,
