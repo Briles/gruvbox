@@ -204,6 +204,7 @@ module.exports = function (values) {
           'constant.other.unit',
           'keyword.other.unit',
           'punctuation.section.flowtype',
+          'support.constant.unicode-range.prefix',
         ],
         settings: {
           foreground: c.neutralPurple,
