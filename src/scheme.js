@@ -331,6 +331,8 @@ module.exports = function (values) {
 
           // 'punctuation.definition.constant.scss',
           'variable.language',
+          'support.constant.media',
+          'support.constant.font-name',
         ],
         settings: {
           foreground: c.bnp.purple,
