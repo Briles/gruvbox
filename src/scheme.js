@@ -143,6 +143,7 @@ module.exports = function (values) {
           'variable.other.interpolation.scss',
           'entity.tag.tagbraces',
           'punctuation.definition.string.template',
+          'constant.other.placeholder',
         ],
         settings: {
           foreground: c.bnp.aqua,
