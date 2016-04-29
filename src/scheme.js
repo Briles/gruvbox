@@ -886,6 +886,7 @@ module.exports = function (values) {
           'meta.brace.round',
           'punctuation.definition.parameters',
           'constant.name.attribute.tag.jade',
+          'punctuation.section.function.css',
         ],
         settings: {
           foreground: c.bnp.fg3,
