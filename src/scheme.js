@@ -166,6 +166,7 @@ module.exports = function (values) {
           'js.embedded.control.flow keyword.operator.js',
           'storage.type.import.include.jade',
           'support.constant.custom-property-name.prefix',
+          'support.keyword.timing-direction',
         ],
         settings: {
           foreground: c.bnp.red,
