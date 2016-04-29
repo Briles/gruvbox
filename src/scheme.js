@@ -897,6 +897,7 @@ module.exports = function (values) {
         scope: [
           'meta.property-name',
           'support.type.property-name',
+          'support.type.shape.definition support.constant.property-value',
         ],
         settings: {
           foreground: c.bnp.green,
