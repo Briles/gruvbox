@@ -652,7 +652,6 @@ module.exports = function (values) {
           'keyword.other.special-method',
           'meta.function-call variable.function',
           'support.function',
-          'variable.function.constructor',
         ],
         settings: {
           foreground: c.bnp.aqua,
