@@ -165,7 +165,6 @@ module.exports = function (values) {
           'storage.type.function.jade',
           'js.embedded.control.flow keyword.operator.js',
           'storage.type.import.include.jade',
-          'support.constant.custom-property-name.prefix',
           'support.keyword.timing-direction',
         ],
         settings: {
@@ -262,6 +261,8 @@ module.exports = function (values) {
           'entity.name.val.declaration',
           'variable.parameter.output.function.matlab',
           'storage.type.variable',
+          'support.type.custom-property',
+          'support.type.variable-name',
         ],
         settings: {
           foreground: c.bnp.blue,
@@ -274,6 +275,8 @@ module.exports = function (values) {
           'punctuation.definition.variable',
           'variable.interpolation',
           'variable.other.dollar punctuation.dollar',
+          'keyword.other.custom-property.prefix',
+          'support.constant.custom-property-name.prefix',
         ],
         settings: {
           foreground: c.neutralBlue,
