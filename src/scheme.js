@@ -809,6 +809,8 @@ module.exports = function (values) {
           'entity.other.attribute-name.pseudo-element',
           'entity.other.attribute-name.tag.pseudo-class',
           'entity.other.attribute-name.tag.pseudo-element',
+          'entity.other.pseudo-class',
+          'entity.other.pseudo-element',
           'support.type.vendor-prefix',
         ],
         settings: {
