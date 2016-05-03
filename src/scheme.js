@@ -834,6 +834,16 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Author-Defined Names',
+        scope: [
+          'entity.other.namespace-prefix',
+        ],
+        settings: {
+          foreground: c.bnp.aqua,
+        },
+      },
+
+      {
         name: 'Meta',
         scope: [
           'meta.class',
