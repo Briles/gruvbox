@@ -783,6 +783,7 @@ module.exports = function (values) {
           'punctuation.definition.prolog.haml',
           'entity.name.function.neon',
           'keyword.operator support.other.neon',
+          'entity.name.namespace.wildcard',
         ],
         settings: {
           foreground: c.bnp.blue,
