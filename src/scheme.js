@@ -741,13 +741,12 @@ module.exports = function (values) {
       },
 
       {
-        name: 'CSS Attribute Selector',
+        name: 'CSS Attribute Selector Attribute Name',
         scope: [
-          'meta.attribute-selector entity.other.attribute-name.attribute',
-          'meta.attribute-selector entity.other.attribute-name.stylus',
+          'meta.attribute-selector entity.other.attribute-name',
         ],
         settings: {
-          foreground: c.bnp.aqua,
+          foreground: c.neutralYellow,
         },
       },
 
@@ -885,12 +884,12 @@ module.exports = function (values) {
       },
 
       {
-        name: 'Function with Parameters Punctuation',
+        name: 'Function Call Braces',
         scope: [
           'meta.brace.round',
           'punctuation.definition.parameters',
           'constant.name.attribute.tag.jade',
-          'punctuation.section.function.css',
+          'meta.function-call.css punctuation.definition.group',
         ],
         settings: {
           foreground: c.bnp.fg3,
