@@ -928,6 +928,7 @@ module.exports = function (values) {
         name: 'CSS Property Name Vendor Prefixes',
         scope: [
           'meta.property-name support.type.vendor-prefix',
+          'support.type.property-name.media support.type.vendor-prefix',
         ],
         settings: {
           foreground: c.neutralGreen,
