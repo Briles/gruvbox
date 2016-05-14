@@ -65,7 +65,7 @@
         <key>name</key>
         <string>Text and Source Base Colors</string>
         <key>scope</key>
-        <string>meta.method.body.java, meta.method.body.source.cs, none, source, text</string>
+        <string>meta.group, meta.method-call.source.cs, meta.method.attribute.source.cs, meta.method.body.java, meta.method.body.source.cs, meta.method.source.cs, none, source, text</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -133,7 +133,7 @@
         <key>name</key>
         <string>Template String Punctuation</string>
         <key>scope</key>
-        <string>entity.name.tag.mustache, entity.tag.tagbraces, punctuation.definition.string.template, punctuation.definition.template-expression, punctuation.quasi, punctuation.section.embedded, string.interpolated, variable.other.interpolation.scss</string>
+        <string>constant.other.placeholder, entity.name.tag.mustache, entity.tag.tagbraces, punctuation.definition.string.template, punctuation.definition.template-expression, punctuation.quasi, punctuation.section.embedded, string.interpolated, variable.other.interpolation.scss</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -144,7 +144,7 @@
         <key>name</key>
         <string>Keywords</string>
         <key>scope</key>
-        <string>js.embedded.control.flow keyword.operator.js, keyword, keyword.control, keyword.operator.logical.python, meta.at-rule.media support.function.misc, meta.prolog.haml, meta.tag.sgml.doctype.html, source.cs keyword.operator, storage.type.function.jade, storage.type.import.haxe, storage.type.import.include.jade, variable.documentroot</string>
+        <string>js.embedded.control.flow keyword.operator.js, keyword, keyword.control, keyword.operator.logical.python, meta.at-rule.media support.function.misc, meta.prolog.haml, meta.tag.sgml.doctype.html, storage.type.function.jade, storage.type.import.haxe, storage.type.import.include.jade, support.keyword.timing-direction, variable.documentroot</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -166,7 +166,7 @@
         <key>name</key>
         <string>Operators</string>
         <key>scope</key>
-        <string>keyword.control.new, keyword.control.operator, keyword.operator, keyword.other.arrow, keyword.other.double-colon</string>
+        <string>keyword.control.new, keyword.control.operator, keyword.operator, keyword.other.arrow, keyword.other.double-colon, punctuation.operator</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -177,7 +177,7 @@
         <key>name</key>
         <string>Constants Punctuation</string>
         <key>scope</key>
-        <string>constant.other.color punctuation.definition.constant, constant.other.unit, keyword.other.unit, punctuation.section.flowtype</string>
+        <string>constant.other.color punctuation.definition.constant, constant.other.unit, keyword.other.unit, punctuation.section.flowtype, support.constant.unicode-range.prefix</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -219,7 +219,7 @@
         <key>name</key>
         <string>Variables</string>
         <key>scope</key>
-        <string>entity.name.val.declaration, entity.name.variable, meta.definition.variable, storage.type.variable, variable, variable.interpolation variable, variable.other.interpolation variable, variable.parameter.output.function.matlab, variable.parameter.sass</string>
+        <string>entity.name.val.declaration, entity.name.variable, meta.definition.variable, storage.type.variable, support.type.custom-property, support.type.variable-name, variable, variable.interpolation variable, variable.other.interpolation variable, variable.parameter.output.function.matlab, variable.parameter.sass</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -230,7 +230,7 @@
         <key>name</key>
         <string>Variable - Punctuation</string>
         <key>scope</key>
-        <string>punctuation.definition.variable, variable.interpolation, variable.other.dollar punctuation.dollar</string>
+        <string>keyword.other.custom-property.prefix, punctuation.definition.custom-property, punctuation.definition.variable, support.constant.custom-property-name.prefix, variable.interpolation, variable.other.dollar punctuation.dollar</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -285,7 +285,7 @@
         <key>name</key>
         <string>Language Constants</string>
         <key>scope</key>
-        <string>constant, constant.numeric, constant.other, constant.other.color, constant.other.symbol, support.constant.color, variable.language</string>
+        <string>constant, constant.numeric, constant.other, constant.other.color, constant.other.symbol, support.constant.color, support.constant.font-name, support.constant.media, variable.language</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -614,7 +614,7 @@
         <key>name</key>
         <string>Function Calls</string>
         <key>scope</key>
-        <string>keyword.other.special-method, meta.function-call variable.function, support.function, variable.function.constructor</string>
+        <string>keyword.other.special-method, meta.function-call variable.function, support.function</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -700,13 +700,13 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>CSS Attribute Selector</string>
+        <string>CSS Attribute Selector Attribute Name</string>
         <key>scope</key>
-        <string>meta.attribute-selector entity.other.attribute-name.attribute, meta.attribute-selector entity.other.attribute-name.stylus</string>
+        <string>meta.attribute-selector entity.other.attribute-name</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
-          <string>#8ec07c</string>
+          <string>#fabd2f</string>
         </dict>
       </dict>
       <dict>
@@ -733,7 +733,7 @@
         <key>name</key>
         <string>Markup Tag</string>
         <key>scope</key>
-        <string>entity.name.function.neon, entity.name.tag, entity.tag, keyword.control.untitled, keyword.doctype.xml, keyword.operator support.other.neon, punctuation.definition.prolog.haml, source.less keyword.control.html.elements</string>
+        <string>entity.name.function.neon, entity.name.namespace.wildcard, entity.name.tag, entity.tag, keyword.control.untitled, keyword.doctype.xml, keyword.operator support.other.neon, punctuation.definition.prolog.haml, source.less keyword.control.html.elements</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -755,7 +755,7 @@
         <key>name</key>
         <string>CSS Pseudo Elements/Classes &amp; Vendor Prefixes</string>
         <key>scope</key>
-        <string>entity.other.attribute-name.placeholder punctuation.definition.entity, entity.other.attribute-name.pseudo-class, entity.other.attribute-name.pseudo-element, entity.other.attribute-name.tag.pseudo-class, entity.other.attribute-name.tag.pseudo-element, support.type.vendor-prefix</string>
+        <string>entity.other.attribute-name.placeholder punctuation.definition.entity, entity.other.attribute-name.pseudo-class, entity.other.attribute-name.pseudo-element, entity.other.attribute-name.tag.pseudo-class, entity.other.attribute-name.tag.pseudo-element, entity.other.pseudo-class, entity.other.pseudo-element, support.type.vendor-prefix</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -767,6 +767,17 @@
         <string>CSS Animations / Keyframes</string>
         <key>scope</key>
         <string>entity.function-name.stylus, entity.other.animation-keyframe.stylus, entity.other.animation-name, keyword.language.function.misc.stylus, meta.at-rule.keyframes entity.name.function, variable.other.animation-name</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#8ec07c</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Author-Defined Names</string>
+        <key>scope</key>
+        <string>entity.other.namespace-prefix</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -826,9 +837,9 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>Function with Parameters Punctuation</string>
+        <string>Function Call Braces</string>
         <key>scope</key>
-        <string>constant.name.attribute.tag.jade, meta.brace.round, punctuation.definition.parameters</string>
+        <string>constant.name.attribute.tag.jade, meta.brace.round, meta.function-call.css punctuation.definition.group, punctuation.definition.method-parameters, punctuation.definition.parameters</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -839,7 +850,7 @@
         <key>name</key>
         <string>CSS Property Names</string>
         <key>scope</key>
-        <string>meta.property-name, support.type.property-name</string>
+        <string>meta.property-name, support.type.property-name, support.type.shape.definition support.constant.property-value</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -850,7 +861,7 @@
         <key>name</key>
         <string>CSS Property Name Vendor Prefixes</string>
         <key>scope</key>
-        <string>meta.property-name support.type.vendor-prefix</string>
+        <string>meta.property-name support.type.vendor-prefix, support.type.property-name.media support.type.vendor-prefix</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1359,6 +1370,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>4f8f05ee-8ecf-4d2d-abbe-d39e493d976c</string>
+    <string>87d8ce04-a6cb-4e30-81b9-527d8c854610</string>
   </dict>
 </plist>

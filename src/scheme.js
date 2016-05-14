@@ -41,11 +41,15 @@ module.exports = function (values) {
       {
         name: 'Text and Source Base Colors',
         scope: [
+          'meta.method.source.cs',
+          'meta.method.attribute.source.cs',
+          'meta.method-call.source.cs', // Fix poor syntax highlighting
           'meta.method.body.source.cs', // Fix poor syntax highlighting
           'meta.method.body.java', // Fix poor syntax highlighting
           'none',
           'source',
           'text',
+          'meta.group', // Reset meta.group
         ],
         settings: {
           foreground: c.foreground,
@@ -143,6 +147,7 @@ module.exports = function (values) {
           'variable.other.interpolation.scss',
           'entity.tag.tagbraces',
           'punctuation.definition.string.template',
+          'constant.other.placeholder',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -159,11 +164,11 @@ module.exports = function (values) {
           'storage.type.import.haxe',
           'variable.documentroot',
           'meta.at-rule.media support.function.misc',
-          'source.cs keyword.operator',
           'keyword.operator.logical.python',
           'storage.type.function.jade',
           'js.embedded.control.flow keyword.operator.js',
           'storage.type.import.include.jade',
+          'support.keyword.timing-direction',
         ],
         settings: {
           foreground: c.bnp.red,
@@ -189,6 +194,7 @@ module.exports = function (values) {
           'keyword.other.arrow',
           'keyword.other.double-colon',
           'keyword.control.operator',
+          'punctuation.operator',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -202,6 +208,7 @@ module.exports = function (values) {
           'constant.other.unit',
           'keyword.other.unit',
           'punctuation.section.flowtype',
+          'support.constant.unicode-range.prefix',
         ],
         settings: {
           foreground: c.neutralPurple,
@@ -257,6 +264,8 @@ module.exports = function (values) {
           'entity.name.val.declaration',
           'variable.parameter.output.function.matlab',
           'storage.type.variable',
+          'support.type.custom-property',
+          'support.type.variable-name',
         ],
         settings: {
           foreground: c.bnp.blue,
@@ -269,6 +278,9 @@ module.exports = function (values) {
           'punctuation.definition.variable',
           'variable.interpolation',
           'variable.other.dollar punctuation.dollar',
+          'keyword.other.custom-property.prefix',
+          'support.constant.custom-property-name.prefix',
+          'punctuation.definition.custom-property',
         ],
         settings: {
           foreground: c.neutralBlue,
@@ -329,6 +341,8 @@ module.exports = function (values) {
 
           // 'punctuation.definition.constant.scss',
           'variable.language',
+          'support.constant.media',
+          'support.constant.font-name',
         ],
         settings: {
           foreground: c.bnp.purple,
@@ -645,7 +659,6 @@ module.exports = function (values) {
           'keyword.other.special-method',
           'meta.function-call variable.function',
           'support.function',
-          'variable.function.constructor',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -732,13 +745,12 @@ module.exports = function (values) {
       },
 
       {
-        name: 'CSS Attribute Selector',
+        name: 'CSS Attribute Selector Attribute Name',
         scope: [
-          'meta.attribute-selector entity.other.attribute-name.attribute',
-          'meta.attribute-selector entity.other.attribute-name.stylus',
+          'meta.attribute-selector entity.other.attribute-name',
         ],
         settings: {
-          foreground: c.bnp.aqua,
+          foreground: c.neutralYellow,
         },
       },
 
@@ -774,6 +786,7 @@ module.exports = function (values) {
           'punctuation.definition.prolog.haml',
           'entity.name.function.neon',
           'keyword.operator support.other.neon',
+          'entity.name.namespace.wildcard',
         ],
         settings: {
           foreground: c.bnp.blue,
@@ -800,6 +813,8 @@ module.exports = function (values) {
           'entity.other.attribute-name.pseudo-element',
           'entity.other.attribute-name.tag.pseudo-class',
           'entity.other.attribute-name.tag.pseudo-element',
+          'entity.other.pseudo-class',
+          'entity.other.pseudo-element',
           'support.type.vendor-prefix',
         ],
         settings: {
@@ -816,6 +831,16 @@ module.exports = function (values) {
           'keyword.language.function.misc.stylus',
           'entity.function-name.stylus',
           'entity.other.animation-keyframe.stylus',
+        ],
+        settings: {
+          foreground: c.bnp.aqua,
+        },
+      },
+
+      {
+        name: 'Author-Defined Names',
+        scope: [
+          'entity.other.namespace-prefix',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -874,11 +899,13 @@ module.exports = function (values) {
       },
 
       {
-        name: 'Function with Parameters Punctuation',
+        name: 'Function Call Braces',
         scope: [
           'meta.brace.round',
           'punctuation.definition.parameters',
           'constant.name.attribute.tag.jade',
+          'meta.function-call.css punctuation.definition.group',
+          'punctuation.definition.method-parameters',
         ],
         settings: {
           foreground: c.bnp.fg3,
@@ -890,6 +917,7 @@ module.exports = function (values) {
         scope: [
           'meta.property-name',
           'support.type.property-name',
+          'support.type.shape.definition support.constant.property-value',
         ],
         settings: {
           foreground: c.bnp.green,
@@ -900,6 +928,7 @@ module.exports = function (values) {
         name: 'CSS Property Name Vendor Prefixes',
         scope: [
           'meta.property-name support.type.vendor-prefix',
+          'support.type.property-name.media support.type.vendor-prefix',
         ],
         settings: {
           foreground: c.neutralGreen,
