@@ -41,6 +41,9 @@ module.exports = function (values) {
       {
         name: 'Text and Source Base Colors',
         scope: [
+          'meta.method.source.cs',
+          'meta.method.attribute.source.cs',
+          'meta.method-call.source.cs', // Fix poor syntax highlighting
           'meta.method.body.source.cs', // Fix poor syntax highlighting
           'meta.method.body.java', // Fix poor syntax highlighting
           'none',
@@ -902,6 +905,7 @@ module.exports = function (values) {
           'punctuation.definition.parameters',
           'constant.name.attribute.tag.jade',
           'meta.function-call.css punctuation.definition.group',
+          'punctuation.definition.method-parameters',
         ],
         settings: {
           foreground: c.bnp.fg3,
