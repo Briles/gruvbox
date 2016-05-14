@@ -161,7 +161,6 @@ module.exports = function (values) {
           'storage.type.import.haxe',
           'variable.documentroot',
           'meta.at-rule.media support.function.misc',
-          'source.cs keyword.operator',
           'keyword.operator.logical.python',
           'storage.type.function.jade',
           'js.embedded.control.flow keyword.operator.js',
