@@ -46,6 +46,7 @@ module.exports = function (values) {
           'none',
           'source',
           'text',
+          'meta.group', // Reset meta.group
         ],
         settings: {
           foreground: c.foreground,
