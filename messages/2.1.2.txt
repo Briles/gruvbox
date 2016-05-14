@@ -1,0 +1,18 @@
+gruvbox for Sublime Text 3
+https://github.com/Briles/gruvbox
+
+Version 2.1.2
+--------------------------------------------------------------------------------
+  ┌───────────────────┐
+  │  COLOR SCHEMES    │
+  └───────────────────┘
+
+    • Reverted a previous change to constructor call colors
+    • Many CSS coloring improvements
+    • C# operator improvements
+    • Colored Python string placeholder
+
+--------------------------------------------------------------------------------
+
+If you are having any issues or want a new feature added,
+get in touch at https://github.com/Briles/gruvbox/issues
