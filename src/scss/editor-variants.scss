@@ -352,9 +352,13 @@
         color: map-get($bnp, 'blue');
         border-color: map-get($bnp, 'blue');
       }
-      &:last-child {
+      &:nth-child(3) {
         color: map-get($bnp, 'purple');
         border-color: map-get($bnp, 'purple');
+      }
+      &:last-child {
+        color: map-get($bnp, 'aqua');
+        border-color: map-get($bnp, 'aqua');
       }
     }
 
