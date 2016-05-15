@@ -666,6 +666,16 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Supporting Type - Dollar Punctuation',
+        scope: [
+          'support.class punctuation.dollar',
+        ],
+        settings: {
+          foreground: c.neutralYellow,
+        },
+      },
+
+      {
         name: 'Function Calls',
         scope: [
           'keyword.other.special-method',
