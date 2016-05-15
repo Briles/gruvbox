@@ -658,6 +658,7 @@ module.exports = function (values) {
           'support.class',
           'support.type',
           'variable.other.class',
+          'meta.function-call.constructor variable.type',
         ],
         settings: {
           foreground: c.bnp.yellow,
