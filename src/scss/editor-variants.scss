@@ -170,6 +170,15 @@
             background: $container;
           }
         }
+
+        // Syntax Highlighting
+        .punctuation {
+          color: $foreground;
+        }
+
+        .info a:hover {
+          color: grayscale($foreground);
+        }
       }
       // END CONTRAST MODES
     }
@@ -274,10 +283,6 @@
     }
 
     // Syntax Highlighting
-    .punctuation {
-      color: $foreground;
-    }
-
     .whitespace {
       color: fade-out(map-get($bnp, 'fg1'), .5);
     }
@@ -330,9 +335,6 @@
       border-bottom-color: (map-get($bnp, 'bg2'));
       a {
         color: grayscale(map-get($bnp, 'fg1'));
-        &:hover {
-          color: grayscale($foreground);
-        }
       }
       cite a:first-child {
         animation-name: spin-colors-#{$brightness-identifier};
