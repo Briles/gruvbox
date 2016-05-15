@@ -353,6 +353,7 @@ module.exports = function (values) {
           'variable.language',
           'support.constant.media',
           'support.constant.font-name',
+          'support.constant.prototype',
         ],
         settings: {
           foreground: c.bnp.purple,
