@@ -288,6 +288,16 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Function Declaration - Punctuation',
+        scope: [
+          'entity.name.function punctuation.dollar',
+        ],
+        settings: {
+          foreground: c.neutralGreen,
+        },
+      },
+
+      {
         name: 'Object Properties',
         scope: [
           'meta.property.object',
