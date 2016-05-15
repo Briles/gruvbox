@@ -281,6 +281,7 @@ module.exports = function (values) {
           'keyword.other.custom-property.prefix',
           'support.constant.custom-property-name.prefix',
           'punctuation.definition.custom-property',
+          'variable.other.object.dollar punctuation.dollar',
         ],
         settings: {
           foreground: c.neutralBlue,
