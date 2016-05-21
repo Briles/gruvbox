@@ -399,6 +399,7 @@ module.exports = function (values) {
         name: 'Strings',
         scope: [
           'string',
+          'meta.object-literal.key string',
         ],
         settings: {
           foreground: c.bnp.green,
