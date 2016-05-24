@@ -281,9 +281,20 @@ module.exports = function (values) {
           'keyword.other.custom-property.prefix',
           'support.constant.custom-property-name.prefix',
           'punctuation.definition.custom-property',
+          'variable.other.object.dollar punctuation.dollar',
         ],
         settings: {
           foreground: c.neutralBlue,
+        },
+      },
+
+      {
+        name: 'Function Declaration - Punctuation',
+        scope: [
+          'entity.name.function punctuation.dollar',
+        ],
+        settings: {
+          foreground: c.neutralGreen,
         },
       },
 
@@ -343,6 +354,7 @@ module.exports = function (values) {
           'variable.language',
           'support.constant.media',
           'support.constant.font-name',
+          'support.constant.prototype',
         ],
         settings: {
           foreground: c.bnp.purple,
@@ -387,6 +399,7 @@ module.exports = function (values) {
         name: 'Strings',
         scope: [
           'string',
+          'meta.object-literal.key string',
         ],
         settings: {
           foreground: c.bnp.green,
@@ -647,9 +660,20 @@ module.exports = function (values) {
           'support.class',
           'support.type',
           'variable.other.class',
+          'meta.function-call.constructor variable.type',
         ],
         settings: {
           foreground: c.bnp.yellow,
+        },
+      },
+
+      {
+        name: 'Supporting Type - Dollar Punctuation',
+        scope: [
+          'support.class punctuation.dollar',
+        ],
+        settings: {
+          foreground: c.neutralYellow,
         },
       },
 

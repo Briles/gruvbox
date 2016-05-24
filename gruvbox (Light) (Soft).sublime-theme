@@ -1519,6 +1519,7 @@
     "attributes": [
       "hover"
     ],
+    "layer0.opacity": 0,
     "layer1.opacity": 1
   },
   {
@@ -4548,6 +4549,92 @@
     "layer0.opacity": 0
   },
   {
+    "class": "tab_close_button",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/light/close--hover.png",
+        "gruvbox/assets/light/close--hover_1.png",
+        "gruvbox/assets/light/close--hover_2.png",
+        "gruvbox/assets/light/close--hover_3.png",
+        "gruvbox/assets/light/close--hover_4.png",
+        "gruvbox/assets/light/close--hover_5.png",
+        "gruvbox/assets/light/close--hover_6.png",
+        "gruvbox/assets/light/close--hover_7.png",
+        "gruvbox/assets/light/close--hover_8.png",
+        "gruvbox/assets/light/close--hover_9.png",
+        "gruvbox/assets/light/close--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.0197
+    },
+    "settings": [
+      "gruvbox_animate_icons"
+    ]
+  },
+  {
+    "class": "close_button",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/light/close--hover.png",
+        "gruvbox/assets/light/close--hover_1.png",
+        "gruvbox/assets/light/close--hover_2.png",
+        "gruvbox/assets/light/close--hover_3.png",
+        "gruvbox/assets/light/close--hover_4.png",
+        "gruvbox/assets/light/close--hover_5.png",
+        "gruvbox/assets/light/close--hover_6.png",
+        "gruvbox/assets/light/close--hover_7.png",
+        "gruvbox/assets/light/close--hover_8.png",
+        "gruvbox/assets/light/close--hover_9.png",
+        "gruvbox/assets/light/close--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.0197
+    },
+    "settings": [
+      "gruvbox_animate_icons"
+    ]
+  },
+  {
+    "class": "panel_close_button",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/light/close--hover.png",
+        "gruvbox/assets/light/close--hover_1.png",
+        "gruvbox/assets/light/close--hover_2.png",
+        "gruvbox/assets/light/close--hover_3.png",
+        "gruvbox/assets/light/close--hover_4.png",
+        "gruvbox/assets/light/close--hover_5.png",
+        "gruvbox/assets/light/close--hover_6.png",
+        "gruvbox/assets/light/close--hover_7.png",
+        "gruvbox/assets/light/close--hover_8.png",
+        "gruvbox/assets/light/close--hover_9.png",
+        "gruvbox/assets/light/close--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.0197
+    },
+    "settings": [
+      "gruvbox_animate_icons"
+    ]
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/light/folder__literal--hover.png",
+        "gruvbox/assets/light/folder__literal--hover_0.png",
+        "gruvbox/assets/light/folder__literal--hover_1.png",
+        "gruvbox/assets/light/folder__literal--hover_2.png",
+        "gruvbox/assets/light/folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_animate_icons"
+    ]
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       157,
@@ -4633,6 +4720,24 @@
     "layer1.texture": "gruvbox/assets/accent-red/light__folder__literal_dup--hover.png",
     "layer2.texture": "gruvbox/assets/accent-red/light__folder__literal_dup--expanded.png",
     "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-red/light__folder__literal--hover.png",
+        "gruvbox/assets/accent-red/light__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-red/light__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-red/light__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-red/light__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_animate_icons",
       "gruvbox_accent_red"
     ]
   },
@@ -5213,6 +5318,25 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-red/dark__folder__literal_dup--hover.png",
     "layer2.texture": "gruvbox/assets/accent-red/dark__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-red/dark__folder__literal--hover.png",
+        "gruvbox/assets/accent-red/dark__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-red/dark__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-red/dark__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-red/dark__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_accent_opposite",
+      "gruvbox_animate_icons",
+      "gruvbox_accent_red"
+    ]
   },
   {
     "class": "scroll_tabs_left_button",
@@ -5856,6 +5980,25 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-red/neutral__folder__literal_dup--hover.png",
     "layer2.texture": "gruvbox/assets/accent-red/neutral__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-red/dark__folder__literal--hover.png",
+        "gruvbox/assets/accent-red/dark__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-red/dark__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-red/dark__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-red/dark__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_accent_neutral",
+      "gruvbox_animate_icons",
+      "gruvbox_accent_red"
+    ]
   },
   {
     "class": "scroll_tabs_left_button",
@@ -6850,6 +6993,24 @@
     ]
   },
   {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-green/light__folder__literal--hover.png",
+        "gruvbox/assets/accent-green/light__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-green/light__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-green/light__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-green/light__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_green"
+    ]
+  },
+  {
     "class": "scroll_tabs_left_button",
     "layer1.texture": "gruvbox/assets/accent-green/light__prevtab--hover.png",
     "settings": [
@@ -7426,6 +7587,25 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-green/dark__folder__literal_dup--hover.png",
     "layer2.texture": "gruvbox/assets/accent-green/dark__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-green/dark__folder__literal--hover.png",
+        "gruvbox/assets/accent-green/dark__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-green/dark__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-green/dark__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-green/dark__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_accent_opposite",
+      "gruvbox_animate_icons",
+      "gruvbox_accent_green"
+    ]
   },
   {
     "class": "scroll_tabs_left_button",
@@ -8069,6 +8249,25 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-green/neutral__folder__literal_dup--hover.png",
     "layer2.texture": "gruvbox/assets/accent-green/neutral__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-green/dark__folder__literal--hover.png",
+        "gruvbox/assets/accent-green/dark__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-green/dark__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-green/dark__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-green/dark__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_accent_neutral",
+      "gruvbox_animate_icons",
+      "gruvbox_accent_green"
+    ]
   },
   {
     "class": "scroll_tabs_left_button",
@@ -9063,6 +9262,24 @@
     ]
   },
   {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-yellow/light__folder__literal--hover.png",
+        "gruvbox/assets/accent-yellow/light__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-yellow/light__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-yellow/light__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-yellow/light__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
     "class": "scroll_tabs_left_button",
     "layer1.texture": "gruvbox/assets/accent-yellow/light__prevtab--hover.png",
     "settings": [
@@ -9639,6 +9856,25 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-yellow/dark__folder__literal_dup--hover.png",
     "layer2.texture": "gruvbox/assets/accent-yellow/dark__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-yellow/dark__folder__literal--hover.png",
+        "gruvbox/assets/accent-yellow/dark__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-yellow/dark__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-yellow/dark__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-yellow/dark__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_accent_opposite",
+      "gruvbox_animate_icons",
+      "gruvbox_accent_yellow"
+    ]
   },
   {
     "class": "scroll_tabs_left_button",
@@ -10282,6 +10518,25 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-yellow/neutral__folder__literal_dup--hover.png",
     "layer2.texture": "gruvbox/assets/accent-yellow/neutral__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-yellow/dark__folder__literal--hover.png",
+        "gruvbox/assets/accent-yellow/dark__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-yellow/dark__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-yellow/dark__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-yellow/dark__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_accent_neutral",
+      "gruvbox_animate_icons",
+      "gruvbox_accent_yellow"
+    ]
   },
   {
     "class": "scroll_tabs_left_button",
@@ -11276,6 +11531,24 @@
     ]
   },
   {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-blue/light__folder__literal--hover.png",
+        "gruvbox/assets/accent-blue/light__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-blue/light__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-blue/light__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-blue/light__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
     "class": "scroll_tabs_left_button",
     "layer1.texture": "gruvbox/assets/accent-blue/light__prevtab--hover.png",
     "settings": [
@@ -11852,6 +12125,25 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-blue/dark__folder__literal_dup--hover.png",
     "layer2.texture": "gruvbox/assets/accent-blue/dark__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-blue/dark__folder__literal--hover.png",
+        "gruvbox/assets/accent-blue/dark__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-blue/dark__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-blue/dark__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-blue/dark__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_accent_opposite",
+      "gruvbox_animate_icons",
+      "gruvbox_accent_blue"
+    ]
   },
   {
     "class": "scroll_tabs_left_button",
@@ -12495,6 +12787,25 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-blue/neutral__folder__literal_dup--hover.png",
     "layer2.texture": "gruvbox/assets/accent-blue/neutral__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-blue/dark__folder__literal--hover.png",
+        "gruvbox/assets/accent-blue/dark__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-blue/dark__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-blue/dark__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-blue/dark__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_accent_neutral",
+      "gruvbox_animate_icons",
+      "gruvbox_accent_blue"
+    ]
   },
   {
     "class": "scroll_tabs_left_button",
@@ -13489,6 +13800,24 @@
     ]
   },
   {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-purple/light__folder__literal--hover.png",
+        "gruvbox/assets/accent-purple/light__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-purple/light__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-purple/light__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-purple/light__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
     "class": "scroll_tabs_left_button",
     "layer1.texture": "gruvbox/assets/accent-purple/light__prevtab--hover.png",
     "settings": [
@@ -14065,6 +14394,25 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-purple/dark__folder__literal_dup--hover.png",
     "layer2.texture": "gruvbox/assets/accent-purple/dark__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-purple/dark__folder__literal--hover.png",
+        "gruvbox/assets/accent-purple/dark__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-purple/dark__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-purple/dark__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-purple/dark__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_accent_opposite",
+      "gruvbox_animate_icons",
+      "gruvbox_accent_purple"
+    ]
   },
   {
     "class": "scroll_tabs_left_button",
@@ -14708,6 +15056,25 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-purple/neutral__folder__literal_dup--hover.png",
     "layer2.texture": "gruvbox/assets/accent-purple/neutral__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-purple/dark__folder__literal--hover.png",
+        "gruvbox/assets/accent-purple/dark__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-purple/dark__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-purple/dark__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-purple/dark__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_accent_neutral",
+      "gruvbox_animate_icons",
+      "gruvbox_accent_purple"
+    ]
   },
   {
     "class": "scroll_tabs_left_button",
@@ -15702,6 +16069,24 @@
     ]
   },
   {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-aqua/light__folder__literal--hover.png",
+        "gruvbox/assets/accent-aqua/light__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-aqua/light__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-aqua/light__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-aqua/light__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
     "class": "scroll_tabs_left_button",
     "layer1.texture": "gruvbox/assets/accent-aqua/light__prevtab--hover.png",
     "settings": [
@@ -16278,6 +16663,25 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-aqua/dark__folder__literal_dup--hover.png",
     "layer2.texture": "gruvbox/assets/accent-aqua/dark__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-aqua/dark__folder__literal--hover.png",
+        "gruvbox/assets/accent-aqua/dark__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-aqua/dark__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-aqua/dark__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-aqua/dark__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_accent_opposite",
+      "gruvbox_animate_icons",
+      "gruvbox_accent_aqua"
+    ]
   },
   {
     "class": "scroll_tabs_left_button",
@@ -16921,6 +17325,25 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-aqua/neutral__folder__literal_dup--hover.png",
     "layer2.texture": "gruvbox/assets/accent-aqua/neutral__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-aqua/dark__folder__literal--hover.png",
+        "gruvbox/assets/accent-aqua/dark__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-aqua/dark__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-aqua/dark__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-aqua/dark__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_accent_neutral",
+      "gruvbox_animate_icons",
+      "gruvbox_accent_aqua"
+    ]
   },
   {
     "class": "scroll_tabs_left_button",
@@ -17915,6 +18338,24 @@
     ]
   },
   {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-orange/light__folder__literal--hover.png",
+        "gruvbox/assets/accent-orange/light__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-orange/light__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-orange/light__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-orange/light__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
     "class": "scroll_tabs_left_button",
     "layer1.texture": "gruvbox/assets/accent-orange/light__prevtab--hover.png",
     "settings": [
@@ -18491,6 +18932,25 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-orange/dark__folder__literal_dup--hover.png",
     "layer2.texture": "gruvbox/assets/accent-orange/dark__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-orange/dark__folder__literal--hover.png",
+        "gruvbox/assets/accent-orange/dark__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-orange/dark__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-orange/dark__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-orange/dark__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_accent_opposite",
+      "gruvbox_animate_icons",
+      "gruvbox_accent_orange"
+    ]
   },
   {
     "class": "scroll_tabs_left_button",
@@ -19134,6 +19594,25 @@
     ],
     "layer1.texture": "gruvbox/assets/accent-orange/neutral__folder__literal_dup--hover.png",
     "layer2.texture": "gruvbox/assets/accent-orange/neutral__folder__literal_dup--expanded.png"
+  },
+  {
+    "class": "icon_folder",
+    "layer2.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-orange/dark__folder__literal--hover.png",
+        "gruvbox/assets/accent-orange/dark__folder__literal--hover_0.png",
+        "gruvbox/assets/accent-orange/dark__folder__literal--hover_1.png",
+        "gruvbox/assets/accent-orange/dark__folder__literal--hover_2.png",
+        "gruvbox/assets/accent-orange/dark__folder__literal--hover_3.png"
+      ],
+      "loop": false,
+      "frame_time": 0.037
+    },
+    "settings": [
+      "gruvbox_accent_neutral",
+      "gruvbox_animate_icons",
+      "gruvbox_accent_orange"
+    ]
   },
   {
     "class": "scroll_tabs_left_button",

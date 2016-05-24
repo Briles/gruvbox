@@ -1,0 +1,27 @@
+gruvbox for Sublime Text 3
+https://github.com/Briles/gruvbox
+
+Version 2.1.3
+--------------------------------------------------------------------------------
+  ┌────────────┐
+  │  THEMES    │
+  └────────────┘
+
+    • Added animated tab close & folder icons for the default iconset
+        ("gruvbox_animated_icons": true)
+        See https://github.com/Briles/gruvbox/issues/6
+
+--------------------------------------------------------------------------------
+
+  ┌───────────────────┐
+  │  COLOR SCHEMES    │
+  └───────────────────┘
+
+    • Reverted a previous change to constructor call colors
+    • Various JavaScript dollar sign ($) improvements
+    • Fixed JavaScript object literal string key color
+
+--------------------------------------------------------------------------------
+
+If you are having any issues or want a new feature added,
+get in touch at https://github.com/Briles/gruvbox/issues
