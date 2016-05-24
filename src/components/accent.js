@@ -10,6 +10,20 @@ module.exports = function (values) {
   const paths = values.paths;
   const stOpts = values.options;
 
+  function animatedFolderIcons(base) {
+    return {
+      keyframes: [
+        `${base}folder__literal--hover.png`,
+        `${base}folder__literal--hover_0.png`,
+        `${base}folder__literal--hover_1.png`,
+        `${base}folder__literal--hover_2.png`,
+        `${base}folder__literal--hover_3.png`,
+      ],
+      loop: false,
+      frame_time: 0.037,
+    };
+  }
+
   function populateData(colordata) {
     const name = colordata.name;
     const color = colordata.color;
@@ -127,6 +141,13 @@ module.exports = function (values) {
 
         'layer1.texture': `${assets.this}folder__literal_dup--hover.png`,
         'layer2.texture': `${assets.this}folder__literal_dup--expanded.png`,
+      },
+
+      // Animated Folder Icon
+      {
+        class: 'icon_folder',
+        'layer2.texture': animatedFolderIcons(assets.this),
+        settings: [stOpts.animatedIcons],
       },
 
       // Tab Scroll Left
@@ -662,6 +683,13 @@ module.exports = function (values) {
 
         'layer1.texture': `${assets.opposite}folder__literal_dup--hover.png`,
         'layer2.texture': `${assets.opposite}folder__literal_dup--expanded.png`,
+      },
+
+      // Animated Folder Icon
+      {
+        class: 'icon_folder',
+        'layer2.texture': animatedFolderIcons(assets.opposite),
+        settings: [stOpts.accentOpposite, stOpts.animatedIcons],
       },
 
       // Tab Scroll Left
@@ -1225,6 +1253,13 @@ module.exports = function (values) {
 
         'layer1.texture': `${assets.neutral}folder__literal_dup--hover.png`,
         'layer2.texture': `${assets.neutral}folder__literal_dup--expanded.png`,
+      },
+
+      // Animated Folder Icon
+      {
+        class: 'icon_folder',
+        'layer2.texture': animatedFolderIcons(assets.opposite),
+        settings: [stOpts.accentNeutral, stOpts.animatedIcons],
       },
 
       // Tab Scroll Left

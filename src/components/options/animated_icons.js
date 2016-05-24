@@ -45,5 +45,22 @@ module.exports = function (values) {
       settings: [stOpts.animatedIcons],
     },
 
+    // Folder Icon Hover
+    {
+      class: 'icon_folder',
+      'layer2.texture': {
+        keyframes: [
+          `${paths.this}folder__literal--hover.png`,
+          `${paths.this}folder__literal--hover_0.png`,
+          `${paths.this}folder__literal--hover_1.png`,
+          `${paths.this}folder__literal--hover_2.png`,
+          `${paths.this}folder__literal--hover_3.png`,
+        ],
+        loop: false,
+        frame_time: 0.037,
+      },
+      settings: [stOpts.animatedIcons],
+    },
+
   ];
 };
