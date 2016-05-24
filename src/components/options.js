@@ -30,6 +30,7 @@ module.exports = function (values, externalPaths) {
     'less_contrast',
     'button_font_size',
     'misc',
+    'animated_icons',
   ];
 
   optionFiles = optionFiles.map(function (file) {

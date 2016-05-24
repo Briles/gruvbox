@@ -15,6 +15,9 @@ module.exports = {
   accentNeutral: 'gruvbox_accent_neutral',
   accentOpposite: 'gruvbox_accent_opposite',
 
+  // Animated Icons
+  animatedIcons: 'gruvbox_animate_icons',
+
   // AutoCollapsing Tabs
   autocollapseTabs: 'gruvbox_autocollapse_tabs',
   autocollapseTabsTriggerXs: 'gruvbox_autocollapse_tabs_trigger_2',

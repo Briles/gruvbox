@@ -41,6 +41,7 @@ module.exports = function (values) {
       class: 'panel_close_button',
       attributes: ['hover'],
 
+      'layer0.opacity': 0, // Default
       'layer1.opacity': 1, // Hover
     },
 
