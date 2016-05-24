@@ -230,11 +230,22 @@
         <key>name</key>
         <string>Variable - Punctuation</string>
         <key>scope</key>
-        <string>keyword.other.custom-property.prefix, punctuation.definition.custom-property, punctuation.definition.variable, support.constant.custom-property-name.prefix, variable.interpolation, variable.other.dollar punctuation.dollar</string>
+        <string>keyword.other.custom-property.prefix, punctuation.definition.custom-property, punctuation.definition.variable, support.constant.custom-property-name.prefix, variable.interpolation, variable.other.dollar punctuation.dollar, variable.other.object.dollar punctuation.dollar</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
           <string>#458588</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Function Declaration - Punctuation</string>
+        <key>scope</key>
+        <string>entity.name.function punctuation.dollar</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#98971a</string>
         </dict>
       </dict>
       <dict>
@@ -285,7 +296,7 @@
         <key>name</key>
         <string>Language Constants</string>
         <key>scope</key>
-        <string>constant, constant.numeric, constant.other, constant.other.color, constant.other.symbol, support.constant.color, support.constant.font-name, support.constant.media, variable.language</string>
+        <string>constant, constant.numeric, constant.other, constant.other.color, constant.other.symbol, support.constant.color, support.constant.font-name, support.constant.media, support.constant.prototype, variable.language</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -331,7 +342,7 @@
         <key>name</key>
         <string>Strings</string>
         <key>scope</key>
-        <string>string</string>
+        <string>meta.object-literal.key string, string</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -603,11 +614,22 @@
         <key>name</key>
         <string>Support</string>
         <key>scope</key>
-        <string>support.class, support.type, variable.other.class</string>
+        <string>meta.function-call.constructor variable.type, support.class, support.type, variable.other.class</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
           <string>#fabd2f</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Supporting Type - Dollar Punctuation</string>
+        <key>scope</key>
+        <string>support.class punctuation.dollar</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#d79921</string>
         </dict>
       </dict>
       <dict>
@@ -1370,6 +1392,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>9c8691fd-c1c2-4f98-be7b-d79b0f6959fe</string>
+    <string>a62dd21f-6b3f-4eec-b993-98eb2a206ae3</string>
   </dict>
 </plist>
