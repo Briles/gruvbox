@@ -8,7 +8,7 @@ Version 2.1.3
   └────────────┘
 
     • Added animated tab close & folder icons for the default iconset
-        ("gruvbox_animated_icons": true)
+        ("gruvbox_animate_icons": true)
         See https://github.com/Briles/gruvbox/issues/6
 
 --------------------------------------------------------------------------------
