@@ -718,6 +718,7 @@ module.exports = function (values) {
         name: 'Entities',
         scope: [
           'entity.name.function',
+          'entity.name.label',
           'entity.name.section',
           'entity.name.accessor',
         ],
