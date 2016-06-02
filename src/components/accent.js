@@ -1,6 +1,7 @@
 const _ = require('lodash');
 const path = require('path');
 const slash = require('../utils.js').slash;
+const mixins = require('../mixins.js');
 
 module.exports = function (values) {
   'use strict';
@@ -9,20 +10,6 @@ module.exports = function (values) {
   const info = values.info;
   const paths = values.paths;
   const stOpts = values.options;
-
-  function animatedFolderIcons(base) {
-    return {
-      keyframes: [
-        `${base}folder__literal--hover.png`,
-        `${base}folder__literal--hover_0.png`,
-        `${base}folder__literal--hover_1.png`,
-        `${base}folder__literal--hover_2.png`,
-        `${base}folder__literal--hover_3.png`,
-      ],
-      loop: false,
-      frame_time: 0.037,
-    };
-  }
 
   function populateData(colordata) {
     const name = colordata.name;
@@ -146,7 +133,7 @@ module.exports = function (values) {
       // Animated Folder Icon
       {
         class: 'icon_folder',
-        'layer2.texture': animatedFolderIcons(assets.this),
+        'layer2.texture': mixins.animatedIconFolder(assets.this),
         settings: [stOpts.animatedIcons],
       },
 
@@ -214,6 +201,13 @@ module.exports = function (values) {
         class: 'panel_button_control',
 
         'layer1.texture': `${assets.this}panels.png`,
+      },
+
+      // Animated Panel Switcher
+      {
+        class: 'panel_button_control',
+        'layer1.texture': mixins.animatedPanelButtonControl(assets.this),
+        settings: [stOpts.animatedIcons],
       },
 
       // Regex Icon
@@ -688,7 +682,7 @@ module.exports = function (values) {
       // Animated Folder Icon
       {
         class: 'icon_folder',
-        'layer2.texture': animatedFolderIcons(assets.opposite),
+        'layer2.texture': mixins.animatedIconFolder(assets.opposite),
         settings: [stOpts.accentOpposite, stOpts.animatedIcons],
       },
 
@@ -781,6 +775,13 @@ module.exports = function (values) {
         settings: [stOpts.accentOpposite],
 
         'layer1.texture': `${assets.opposite}panels.png`,
+      },
+
+      // Animated Panel Switcher
+      {
+        class: 'panel_button_control',
+        'layer1.texture': mixins.animatedPanelButtonControl(assets.opposite),
+        settings: [stOpts.animatedIcons, stOpts.accentOpposite],
       },
 
       // Regex Icon
@@ -1258,7 +1259,7 @@ module.exports = function (values) {
       // Animated Folder Icon
       {
         class: 'icon_folder',
-        'layer2.texture': animatedFolderIcons(assets.opposite),
+        'layer2.texture': mixins.animatedIconFolder(assets.opposite),
         settings: [stOpts.accentNeutral, stOpts.animatedIcons],
       },
 
@@ -1352,6 +1353,13 @@ module.exports = function (values) {
         settings: [stOpts.accentNeutral],
 
         'layer1.texture': `${assets.neutral}panels.png`,
+      },
+
+      // Animated Panel Switcher
+      {
+        class: 'panel_button_control',
+        'layer1.texture': mixins.animatedPanelButtonControl(assets.neutral),
+        settings: [stOpts.animatedIcons, stOpts.accentNeutral],
       },
 
       // Regex Icon

@@ -1,6 +1,8 @@
 module.exports = function (values) {
   'use strict';
 
+  const mixins = require('../../mixins.js');
+
   const stOpts = values.options;
   const paths = values.paths;
 
@@ -48,17 +50,14 @@ module.exports = function (values) {
     // Folder Icon Hover
     {
       class: 'icon_folder',
-      'layer2.texture': {
-        keyframes: [
-          `${paths.this}folder__literal--hover.png`,
-          `${paths.this}folder__literal--hover_0.png`,
-          `${paths.this}folder__literal--hover_1.png`,
-          `${paths.this}folder__literal--hover_2.png`,
-          `${paths.this}folder__literal--hover_3.png`,
-        ],
-        loop: false,
-        frame_time: 0.037,
-      },
+      'layer2.texture': mixins.animatedIconFolder(paths.this),
+      settings: [stOpts.animatedIcons],
+    },
+
+    // Panel Switcher Hover
+    {
+      class: 'panel_button_control',
+      'layer1.texture': mixins.animatedPanelButtonControl(paths.this),
       settings: [stOpts.animatedIcons],
     },
 
