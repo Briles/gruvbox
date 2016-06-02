@@ -58,6 +58,7 @@ gulp.task('watch', function () {
     `${srcPath}components/options/*.js`,
     `${srcPath}paths.js`,
     `${srcPath}sublime-options.js`,
+    `${srcPath}mixins.js`,
   ];
 
   var schemeFiles = [
