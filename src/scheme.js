@@ -266,6 +266,7 @@ module.exports = function (values) {
           'storage.type.variable',
           'support.type.custom-property',
           'support.type.variable-name',
+          'variable.parameter.dosbatch',
         ],
         settings: {
           foreground: c.bnp.blue,
