@@ -694,9 +694,9 @@ module.exports = function (values) {
         scope: [
           'meta.function-call.method variable.function',
           'meta.function-call.static variable.function',
-          'support.function.mutator',
+          'meta.method-call variable.function',
           'meta.method-call',
-          'meta.method',
+          'support.function.mutator',
         ],
         settings: {
           foreground: c.neutralAqua,
