@@ -1043,6 +1043,37 @@ module.exports = function (values) {
         },
       },
 
+      // Find in Files
+      {
+        name: 'FiF Line Number',
+        scope: [
+          'constant.numeric.line-number',
+        ],
+        settings: {
+          foreground: c.bnp.gray,
+        },
+      },
+
+      {
+        name: 'FiF Line Number Matched',
+        scope: [
+          'constant.numeric.line-number.match',
+        ],
+        settings: {
+          foreground: c.bnp.aqua,
+        },
+      },
+
+     {
+        name: 'FiF Filename',
+        scope: [
+          'entity.name.filename',
+        ],
+        settings: {
+          foreground: c.bnp.green,
+        },
+      },
+
       // GitGutter
       {
         name: 'GitGutter & Diff Deleted',
