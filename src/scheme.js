@@ -346,16 +346,15 @@ module.exports = function (values) {
         scope: [
           'constant',
           'constant.numeric',
-          'constant.other.symbol',
           'constant.other',
           'constant.other.color',
+          'constant.other.symbol',
+          'support.constant',
           'support.constant.color',
-
-          // 'punctuation.definition.constant.scss',
-          'variable.language',
-          'support.constant.media',
           'support.constant.font-name',
+          'support.constant.media',
           'support.constant.prototype',
+          'variable.language',
         ],
         settings: {
           foreground: c.bnp.purple,
