@@ -396,6 +396,16 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Errors',
+        scope: [
+          'message.error',
+        ],
+        settings: {
+          foreground: c.bnp.red,
+        },
+      },
+
+      {
         name: 'Strings',
         scope: [
           'string',
