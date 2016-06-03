@@ -873,16 +873,6 @@ module.exports = function (values) {
       },
 
       {
-        name: 'Meta',
-        scope: [
-          'meta.class',
-        ],
-        settings: {
-          foreground: c.bnp.yellow,
-        },
-      },
-
-      {
         scope: [
           'meta.class.body',
           'meta.tag',
@@ -926,11 +916,11 @@ module.exports = function (values) {
       {
         name: 'Function Call Braces',
         scope: [
-          'meta.brace.round',
-          'punctuation.definition.parameters',
           'constant.name.attribute.tag.jade',
-          'meta.function-call.css punctuation.definition.group',
+          'meta.brace.round',
+          'meta.function-call meta.group punctuation.definition.group',
           'punctuation.definition.method-parameters',
+          'punctuation.definition.parameters',
         ],
         settings: {
           foreground: c.bnp.fg3,
