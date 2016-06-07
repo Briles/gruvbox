@@ -739,6 +739,16 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Modules',
+        scope: [
+          'entity.name.module',
+        ],
+        settings: {
+          foreground: c.bnp.orange,
+        },
+      },
+
+      {
         name: 'HTML & CSS ID',
         scope: [
           'entity.other.attribute-name.id',
@@ -1076,7 +1086,7 @@ module.exports = function (values) {
         },
       },
 
-     {
+      {
         name: 'FiF Filename',
         scope: [
           'entity.name.filename',
