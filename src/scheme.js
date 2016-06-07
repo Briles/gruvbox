@@ -204,6 +204,7 @@ module.exports = function (values) {
       {
         name: 'Constants Punctuation',
         scope: [
+          'constant.other.symbol punctuation.definition.constant',
           'constant.other.color punctuation.definition.constant',
           'constant.other.unit',
           'keyword.other.unit',
