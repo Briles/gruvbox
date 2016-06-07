@@ -365,6 +365,7 @@ module.exports = function (values) {
         name: 'User-Defined Constants',
         scope: [
           'variable.other.constant',
+          'entity.name.constant',
         ],
         settings: {
           foreground: c.bnp.yellow,
