@@ -1561,6 +1561,7 @@
     "attributes": [
       "hover"
     ],
+    "layer0.opacity": 0,
     "layer1.opacity": 1
   },
   {
@@ -4635,6 +4636,47 @@
     ]
   },
   {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/light/panels--hover.png",
+        "gruvbox/assets/light/panels--hover_0.png",
+        "gruvbox/assets/light/panels--hover_1.png",
+        "gruvbox/assets/light/panels--hover_2.png",
+        "gruvbox/assets/light/panels--hover_3.png",
+        "gruvbox/assets/light/panels--hover_4.png",
+        "gruvbox/assets/light/panels--hover_5.png",
+        "gruvbox/assets/light/panels--hover_6.png",
+        "gruvbox/assets/light/panels--hover_7.png",
+        "gruvbox/assets/light/panels--hover_8.png",
+        "gruvbox/assets/light/panels--hover_9.png",
+        "gruvbox/assets/light/panels--hover_10.png",
+        "gruvbox/assets/light/panels--hover_11.png",
+        "gruvbox/assets/light/panels--hover_11.png",
+        "gruvbox/assets/light/panels--hover_11.png",
+        "gruvbox/assets/light/panels--hover_11.png",
+        "gruvbox/assets/light/panels--hover_11.png",
+        "gruvbox/assets/light/panels--hover_10.png",
+        "gruvbox/assets/light/panels--hover_9.png",
+        "gruvbox/assets/light/panels--hover_8.png",
+        "gruvbox/assets/light/panels--hover_7.png",
+        "gruvbox/assets/light/panels--hover_6.png",
+        "gruvbox/assets/light/panels--hover_5.png",
+        "gruvbox/assets/light/panels--hover_4.png",
+        "gruvbox/assets/light/panels--hover_3.png",
+        "gruvbox/assets/light/panels--hover_2.png",
+        "gruvbox/assets/light/panels--hover_1.png",
+        "gruvbox/assets/light/panels--hover_0.png",
+        "gruvbox/assets/light/panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons"
+    ]
+  },
+  {
     "class": "auto_complete_label",
     "match_fg": [
       157,
@@ -4824,6 +4866,48 @@
     "class": "panel_button_control",
     "layer1.texture": "gruvbox/assets/accent-red/light__panels.png",
     "settings": [
+      "gruvbox_accent_red"
+    ]
+  },
+  {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-red/light__panels--hover.png",
+        "gruvbox/assets/accent-red/light__panels--hover_0.png",
+        "gruvbox/assets/accent-red/light__panels--hover_1.png",
+        "gruvbox/assets/accent-red/light__panels--hover_2.png",
+        "gruvbox/assets/accent-red/light__panels--hover_3.png",
+        "gruvbox/assets/accent-red/light__panels--hover_4.png",
+        "gruvbox/assets/accent-red/light__panels--hover_5.png",
+        "gruvbox/assets/accent-red/light__panels--hover_6.png",
+        "gruvbox/assets/accent-red/light__panels--hover_7.png",
+        "gruvbox/assets/accent-red/light__panels--hover_8.png",
+        "gruvbox/assets/accent-red/light__panels--hover_9.png",
+        "gruvbox/assets/accent-red/light__panels--hover_10.png",
+        "gruvbox/assets/accent-red/light__panels--hover_11.png",
+        "gruvbox/assets/accent-red/light__panels--hover_11.png",
+        "gruvbox/assets/accent-red/light__panels--hover_11.png",
+        "gruvbox/assets/accent-red/light__panels--hover_11.png",
+        "gruvbox/assets/accent-red/light__panels--hover_11.png",
+        "gruvbox/assets/accent-red/light__panels--hover_10.png",
+        "gruvbox/assets/accent-red/light__panels--hover_9.png",
+        "gruvbox/assets/accent-red/light__panels--hover_8.png",
+        "gruvbox/assets/accent-red/light__panels--hover_7.png",
+        "gruvbox/assets/accent-red/light__panels--hover_6.png",
+        "gruvbox/assets/accent-red/light__panels--hover_5.png",
+        "gruvbox/assets/accent-red/light__panels--hover_4.png",
+        "gruvbox/assets/accent-red/light__panels--hover_3.png",
+        "gruvbox/assets/accent-red/light__panels--hover_2.png",
+        "gruvbox/assets/accent-red/light__panels--hover_1.png",
+        "gruvbox/assets/accent-red/light__panels--hover_0.png",
+        "gruvbox/assets/accent-red/light__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
       "gruvbox_accent_red"
     ]
   },
@@ -5454,6 +5538,49 @@
       "gruvbox_accent_red"
     ],
     "layer1.texture": "gruvbox/assets/accent-red/dark__panels.png"
+  },
+  {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-red/dark__panels--hover.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_0.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_1.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_2.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_3.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_4.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_5.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_6.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_7.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_8.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_9.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_10.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_10.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_9.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_8.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_7.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_6.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_5.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_4.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_3.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_2.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_1.png",
+        "gruvbox/assets/accent-red/dark__panels--hover_0.png",
+        "gruvbox/assets/accent-red/dark__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_red"
+    ]
   },
   {
     "class": "icon_regex",
@@ -6116,6 +6243,49 @@
       "gruvbox_accent_red"
     ],
     "layer1.texture": "gruvbox/assets/accent-red/neutral__panels.png"
+  },
+  {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-red/neutral__panels--hover.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_0.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_1.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_2.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_3.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_4.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_5.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_6.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_7.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_8.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_9.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_10.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_10.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_9.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_8.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_7.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_6.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_5.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_4.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_3.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_2.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_1.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover_0.png",
+        "gruvbox/assets/accent-red/neutral__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_red"
+    ]
   },
   {
     "class": "icon_regex",
@@ -7097,6 +7267,48 @@
     ]
   },
   {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-green/light__panels--hover.png",
+        "gruvbox/assets/accent-green/light__panels--hover_0.png",
+        "gruvbox/assets/accent-green/light__panels--hover_1.png",
+        "gruvbox/assets/accent-green/light__panels--hover_2.png",
+        "gruvbox/assets/accent-green/light__panels--hover_3.png",
+        "gruvbox/assets/accent-green/light__panels--hover_4.png",
+        "gruvbox/assets/accent-green/light__panels--hover_5.png",
+        "gruvbox/assets/accent-green/light__panels--hover_6.png",
+        "gruvbox/assets/accent-green/light__panels--hover_7.png",
+        "gruvbox/assets/accent-green/light__panels--hover_8.png",
+        "gruvbox/assets/accent-green/light__panels--hover_9.png",
+        "gruvbox/assets/accent-green/light__panels--hover_10.png",
+        "gruvbox/assets/accent-green/light__panels--hover_11.png",
+        "gruvbox/assets/accent-green/light__panels--hover_11.png",
+        "gruvbox/assets/accent-green/light__panels--hover_11.png",
+        "gruvbox/assets/accent-green/light__panels--hover_11.png",
+        "gruvbox/assets/accent-green/light__panels--hover_11.png",
+        "gruvbox/assets/accent-green/light__panels--hover_10.png",
+        "gruvbox/assets/accent-green/light__panels--hover_9.png",
+        "gruvbox/assets/accent-green/light__panels--hover_8.png",
+        "gruvbox/assets/accent-green/light__panels--hover_7.png",
+        "gruvbox/assets/accent-green/light__panels--hover_6.png",
+        "gruvbox/assets/accent-green/light__panels--hover_5.png",
+        "gruvbox/assets/accent-green/light__panels--hover_4.png",
+        "gruvbox/assets/accent-green/light__panels--hover_3.png",
+        "gruvbox/assets/accent-green/light__panels--hover_2.png",
+        "gruvbox/assets/accent-green/light__panels--hover_1.png",
+        "gruvbox/assets/accent-green/light__panels--hover_0.png",
+        "gruvbox/assets/accent-green/light__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_green"
+    ]
+  },
+  {
     "class": "icon_regex",
     "layer2.texture": "gruvbox/assets/accent-green/light__regex.png",
     "settings": [
@@ -7723,6 +7935,49 @@
       "gruvbox_accent_green"
     ],
     "layer1.texture": "gruvbox/assets/accent-green/dark__panels.png"
+  },
+  {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-green/dark__panels--hover.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_0.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_1.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_2.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_3.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_4.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_5.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_6.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_7.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_8.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_9.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_10.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_10.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_9.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_8.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_7.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_6.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_5.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_4.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_3.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_2.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_1.png",
+        "gruvbox/assets/accent-green/dark__panels--hover_0.png",
+        "gruvbox/assets/accent-green/dark__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_green"
+    ]
   },
   {
     "class": "icon_regex",
@@ -8385,6 +8640,49 @@
       "gruvbox_accent_green"
     ],
     "layer1.texture": "gruvbox/assets/accent-green/neutral__panels.png"
+  },
+  {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-green/neutral__panels--hover.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_0.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_1.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_2.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_3.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_4.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_5.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_6.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_7.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_8.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_9.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_10.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_10.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_9.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_8.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_7.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_6.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_5.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_4.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_3.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_2.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_1.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover_0.png",
+        "gruvbox/assets/accent-green/neutral__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_green"
+    ]
   },
   {
     "class": "icon_regex",
@@ -9366,6 +9664,48 @@
     ]
   },
   {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-yellow/light__panels--hover.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_0.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_1.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_2.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_3.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_4.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_5.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_6.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_7.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_8.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_9.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_10.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_11.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_11.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_11.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_11.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_11.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_10.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_9.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_8.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_7.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_6.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_5.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_4.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_3.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_2.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_1.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover_0.png",
+        "gruvbox/assets/accent-yellow/light__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_yellow"
+    ]
+  },
+  {
     "class": "icon_regex",
     "layer2.texture": "gruvbox/assets/accent-yellow/light__regex.png",
     "settings": [
@@ -9992,6 +10332,49 @@
       "gruvbox_accent_yellow"
     ],
     "layer1.texture": "gruvbox/assets/accent-yellow/dark__panels.png"
+  },
+  {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-yellow/dark__panels--hover.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_0.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_1.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_2.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_3.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_4.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_5.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_6.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_7.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_8.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_9.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_10.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_10.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_9.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_8.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_7.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_6.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_5.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_4.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_3.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_2.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_1.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover_0.png",
+        "gruvbox/assets/accent-yellow/dark__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_yellow"
+    ]
   },
   {
     "class": "icon_regex",
@@ -10654,6 +11037,49 @@
       "gruvbox_accent_yellow"
     ],
     "layer1.texture": "gruvbox/assets/accent-yellow/neutral__panels.png"
+  },
+  {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-yellow/neutral__panels--hover.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_0.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_1.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_2.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_3.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_4.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_5.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_6.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_7.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_8.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_9.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_10.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_10.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_9.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_8.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_7.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_6.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_5.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_4.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_3.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_2.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_1.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover_0.png",
+        "gruvbox/assets/accent-yellow/neutral__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_yellow"
+    ]
   },
   {
     "class": "icon_regex",
@@ -11635,6 +12061,48 @@
     ]
   },
   {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-blue/light__panels--hover.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_0.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_1.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_2.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_3.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_4.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_5.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_6.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_7.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_8.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_9.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_10.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_11.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_11.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_11.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_11.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_11.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_10.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_9.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_8.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_7.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_6.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_5.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_4.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_3.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_2.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_1.png",
+        "gruvbox/assets/accent-blue/light__panels--hover_0.png",
+        "gruvbox/assets/accent-blue/light__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_blue"
+    ]
+  },
+  {
     "class": "icon_regex",
     "layer2.texture": "gruvbox/assets/accent-blue/light__regex.png",
     "settings": [
@@ -12261,6 +12729,49 @@
       "gruvbox_accent_blue"
     ],
     "layer1.texture": "gruvbox/assets/accent-blue/dark__panels.png"
+  },
+  {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-blue/dark__panels--hover.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_0.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_1.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_2.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_3.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_4.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_5.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_6.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_7.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_8.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_9.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_10.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_10.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_9.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_8.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_7.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_6.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_5.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_4.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_3.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_2.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_1.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover_0.png",
+        "gruvbox/assets/accent-blue/dark__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_blue"
+    ]
   },
   {
     "class": "icon_regex",
@@ -12923,6 +13434,49 @@
       "gruvbox_accent_blue"
     ],
     "layer1.texture": "gruvbox/assets/accent-blue/neutral__panels.png"
+  },
+  {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-blue/neutral__panels--hover.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_0.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_1.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_2.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_3.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_4.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_5.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_6.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_7.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_8.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_9.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_10.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_10.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_9.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_8.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_7.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_6.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_5.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_4.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_3.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_2.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_1.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover_0.png",
+        "gruvbox/assets/accent-blue/neutral__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_blue"
+    ]
   },
   {
     "class": "icon_regex",
@@ -13904,6 +14458,48 @@
     ]
   },
   {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-purple/light__panels--hover.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_0.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_1.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_2.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_3.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_4.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_5.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_6.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_7.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_8.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_9.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_10.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_11.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_11.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_11.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_11.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_11.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_10.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_9.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_8.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_7.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_6.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_5.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_4.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_3.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_2.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_1.png",
+        "gruvbox/assets/accent-purple/light__panels--hover_0.png",
+        "gruvbox/assets/accent-purple/light__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_purple"
+    ]
+  },
+  {
     "class": "icon_regex",
     "layer2.texture": "gruvbox/assets/accent-purple/light__regex.png",
     "settings": [
@@ -14530,6 +15126,49 @@
       "gruvbox_accent_purple"
     ],
     "layer1.texture": "gruvbox/assets/accent-purple/dark__panels.png"
+  },
+  {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-purple/dark__panels--hover.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_0.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_1.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_2.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_3.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_4.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_5.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_6.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_7.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_8.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_9.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_10.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_10.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_9.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_8.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_7.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_6.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_5.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_4.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_3.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_2.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_1.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover_0.png",
+        "gruvbox/assets/accent-purple/dark__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_purple"
+    ]
   },
   {
     "class": "icon_regex",
@@ -15192,6 +15831,49 @@
       "gruvbox_accent_purple"
     ],
     "layer1.texture": "gruvbox/assets/accent-purple/neutral__panels.png"
+  },
+  {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-purple/neutral__panels--hover.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_0.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_1.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_2.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_3.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_4.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_5.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_6.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_7.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_8.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_9.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_10.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_10.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_9.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_8.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_7.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_6.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_5.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_4.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_3.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_2.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_1.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover_0.png",
+        "gruvbox/assets/accent-purple/neutral__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_purple"
+    ]
   },
   {
     "class": "icon_regex",
@@ -16173,6 +16855,48 @@
     ]
   },
   {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-aqua/light__panels--hover.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_0.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_1.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_2.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_3.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_4.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_5.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_6.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_7.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_8.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_9.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_10.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_11.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_11.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_11.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_11.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_11.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_10.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_9.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_8.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_7.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_6.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_5.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_4.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_3.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_2.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_1.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover_0.png",
+        "gruvbox/assets/accent-aqua/light__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_aqua"
+    ]
+  },
+  {
     "class": "icon_regex",
     "layer2.texture": "gruvbox/assets/accent-aqua/light__regex.png",
     "settings": [
@@ -16799,6 +17523,49 @@
       "gruvbox_accent_aqua"
     ],
     "layer1.texture": "gruvbox/assets/accent-aqua/dark__panels.png"
+  },
+  {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-aqua/dark__panels--hover.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_0.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_1.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_2.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_3.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_4.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_5.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_6.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_7.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_8.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_9.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_10.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_10.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_9.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_8.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_7.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_6.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_5.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_4.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_3.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_2.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_1.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover_0.png",
+        "gruvbox/assets/accent-aqua/dark__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_aqua"
+    ]
   },
   {
     "class": "icon_regex",
@@ -17461,6 +18228,49 @@
       "gruvbox_accent_aqua"
     ],
     "layer1.texture": "gruvbox/assets/accent-aqua/neutral__panels.png"
+  },
+  {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-aqua/neutral__panels--hover.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_0.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_1.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_2.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_3.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_4.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_5.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_6.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_7.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_8.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_9.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_10.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_10.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_9.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_8.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_7.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_6.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_5.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_4.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_3.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_2.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_1.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover_0.png",
+        "gruvbox/assets/accent-aqua/neutral__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_aqua"
+    ]
   },
   {
     "class": "icon_regex",
@@ -18442,6 +19252,48 @@
     ]
   },
   {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-orange/light__panels--hover.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_0.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_1.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_2.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_3.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_4.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_5.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_6.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_7.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_8.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_9.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_10.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_11.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_11.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_11.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_11.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_11.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_10.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_9.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_8.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_7.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_6.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_5.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_4.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_3.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_2.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_1.png",
+        "gruvbox/assets/accent-orange/light__panels--hover_0.png",
+        "gruvbox/assets/accent-orange/light__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_orange"
+    ]
+  },
+  {
     "class": "icon_regex",
     "layer2.texture": "gruvbox/assets/accent-orange/light__regex.png",
     "settings": [
@@ -19068,6 +19920,49 @@
       "gruvbox_accent_orange"
     ],
     "layer1.texture": "gruvbox/assets/accent-orange/dark__panels.png"
+  },
+  {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-orange/dark__panels--hover.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_0.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_1.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_2.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_3.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_4.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_5.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_6.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_7.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_8.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_9.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_10.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_11.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_10.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_9.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_8.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_7.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_6.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_5.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_4.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_3.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_2.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_1.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover_0.png",
+        "gruvbox/assets/accent-orange/dark__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_orange"
+    ]
   },
   {
     "class": "icon_regex",
@@ -19730,6 +20625,49 @@
       "gruvbox_accent_orange"
     ],
     "layer1.texture": "gruvbox/assets/accent-orange/neutral__panels.png"
+  },
+  {
+    "class": "panel_button_control",
+    "layer1.texture": {
+      "keyframes": [
+        "gruvbox/assets/accent-orange/neutral__panels--hover.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_0.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_1.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_2.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_3.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_4.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_5.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_6.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_7.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_8.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_9.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_10.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_11.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_10.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_9.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_8.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_7.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_6.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_5.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_4.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_3.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_2.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_1.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover_0.png",
+        "gruvbox/assets/accent-orange/neutral__panels--hover.png"
+      ],
+      "loop": false,
+      "frame_time": 0.067
+    },
+    "settings": [
+      "gruvbox_animate_icons",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_orange"
+    ]
   },
   {
     "class": "icon_regex",

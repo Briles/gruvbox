@@ -84,6 +84,7 @@ module.exports = function (values) {
       class: 'dropdown_button_control',
       attributes: ['hover'],
 
+      'layer0.opacity': 0, // Default
       'layer1.opacity': 1, // Hover
     },
 

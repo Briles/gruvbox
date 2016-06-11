@@ -177,7 +177,7 @@
         <key>name</key>
         <string>Constants Punctuation</string>
         <key>scope</key>
-        <string>constant.other.color punctuation.definition.constant, constant.other.unit, keyword.other.unit, punctuation.section.flowtype, support.constant.unicode-range.prefix</string>
+        <string>constant.other.color punctuation.definition.constant, constant.other.symbol punctuation.definition.constant, constant.other.unit, keyword.other.unit, punctuation.section.flowtype, support.constant.unicode-range.prefix</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -219,7 +219,7 @@
         <key>name</key>
         <string>Variables</string>
         <key>scope</key>
-        <string>entity.name.val.declaration, entity.name.variable, meta.definition.variable, storage.type.variable, support.type.custom-property, support.type.variable-name, variable, variable.interpolation variable, variable.other.interpolation variable, variable.parameter.output.function.matlab, variable.parameter.sass</string>
+        <string>entity.name.val.declaration, entity.name.variable, meta.definition.variable, storage.type.variable, support.type.custom-property, support.type.variable-name, variable, variable.interpolation variable, variable.other.interpolation variable, variable.parameter.dosbatch, variable.parameter.output.function.matlab, variable.parameter.sass</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -296,7 +296,7 @@
         <key>name</key>
         <string>Language Constants</string>
         <key>scope</key>
-        <string>constant, constant.numeric, constant.other, constant.other.color, constant.other.symbol, support.constant.color, support.constant.font-name, support.constant.media, support.constant.prototype, variable.language</string>
+        <string>constant, constant.numeric, constant.other, constant.other.color, constant.other.symbol, support.constant, support.constant.color, support.constant.font-name, support.constant.media, support.constant.prototype, variable.language</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -307,7 +307,7 @@
         <key>name</key>
         <string>User-Defined Constants</string>
         <key>scope</key>
-        <string>variable.other.constant</string>
+        <string>entity.name.constant, variable.other.constant</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -335,6 +335,17 @@
           <key>foreground</key>
           <string>#282828</string>
           <key>background</key>
+          <string>#9d0006</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Errors</string>
+        <key>scope</key>
+        <string>message.error</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
           <string>#9d0006</string>
         </dict>
       </dict>
@@ -647,7 +658,7 @@
         <key>name</key>
         <string>Method Calls</string>
         <key>scope</key>
-        <string>meta.function-call.method variable.function, meta.function-call.static variable.function, meta.method, meta.method-call, support.function.mutator</string>
+        <string>meta.function-call.method variable.function, meta.function-call.static variable.function, meta.method-call, meta.method-call variable.function, support.function.mutator</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -669,11 +680,22 @@
         <key>name</key>
         <string>Entities</string>
         <key>scope</key>
-        <string>entity.name.accessor, entity.name.function, entity.name.section</string>
+        <string>entity.name.accessor, entity.name.function, entity.name.label, entity.name.section</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
           <string>#79740e</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Modules</string>
+        <key>scope</key>
+        <string>entity.name.module</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#af3a03</string>
         </dict>
       </dict>
       <dict>
@@ -807,17 +829,6 @@
         </dict>
       </dict>
       <dict>
-        <key>name</key>
-        <string>Meta</string>
-        <key>scope</key>
-        <string>meta.class</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#b57614</string>
-        </dict>
-      </dict>
-      <dict>
         <key>scope</key>
         <string>meta.class.body, meta.tag</string>
         <key>settings</key>
@@ -861,7 +872,7 @@
         <key>name</key>
         <string>Function Call Braces</string>
         <key>scope</key>
-        <string>constant.name.attribute.tag.jade, meta.brace.round, meta.function-call.css punctuation.definition.group, punctuation.definition.method-parameters, punctuation.definition.parameters</string>
+        <string>constant.name.attribute.tag.jade, meta.brace.round, meta.function-call meta.group punctuation.definition.group, punctuation.definition.method-parameters, punctuation.definition.parameters</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -987,6 +998,39 @@
         <dict>
           <key>foreground</key>
           <string>#b57614</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>FiF Line Number</string>
+        <key>scope</key>
+        <string>constant.numeric.line-number</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#928374</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>FiF Line Number Matched</string>
+        <key>scope</key>
+        <string>constant.numeric.line-number.match</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#427b58</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>FiF Filename</string>
+        <key>scope</key>
+        <string>entity.name.filename</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#79740e</string>
         </dict>
       </dict>
       <dict>
@@ -1392,6 +1436,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>d03618f8-4b72-4fc7-89a5-11edab2aba73</string>
+    <string>84f60ed6-0d49-4eda-9b16-1e170155e04b</string>
   </dict>
 </plist>
