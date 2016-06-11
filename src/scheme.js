@@ -204,6 +204,7 @@ module.exports = function (values) {
       {
         name: 'Constants Punctuation',
         scope: [
+          'constant.other.symbol punctuation.definition.constant',
           'constant.other.color punctuation.definition.constant',
           'constant.other.unit',
           'keyword.other.unit',
@@ -266,6 +267,7 @@ module.exports = function (values) {
           'storage.type.variable',
           'support.type.custom-property',
           'support.type.variable-name',
+          'variable.parameter.dosbatch',
         ],
         settings: {
           foreground: c.bnp.blue,
@@ -345,16 +347,15 @@ module.exports = function (values) {
         scope: [
           'constant',
           'constant.numeric',
-          'constant.other.symbol',
           'constant.other',
           'constant.other.color',
+          'constant.other.symbol',
+          'support.constant',
           'support.constant.color',
-
-          // 'punctuation.definition.constant.scss',
-          'variable.language',
-          'support.constant.media',
           'support.constant.font-name',
+          'support.constant.media',
           'support.constant.prototype',
+          'variable.language',
         ],
         settings: {
           foreground: c.bnp.purple,
@@ -365,6 +366,7 @@ module.exports = function (values) {
         name: 'User-Defined Constants',
         scope: [
           'variable.other.constant',
+          'entity.name.constant',
         ],
         settings: {
           foreground: c.bnp.yellow,
@@ -392,6 +394,16 @@ module.exports = function (values) {
         settings: {
           foreground: c.foreground,
           background: c.bnp.red,
+        },
+      },
+
+      {
+        name: 'Errors',
+        scope: [
+          'message.error',
+        ],
+        settings: {
+          foreground: c.bnp.red,
         },
       },
 
@@ -694,9 +706,9 @@ module.exports = function (values) {
         scope: [
           'meta.function-call.method variable.function',
           'meta.function-call.static variable.function',
-          'support.function.mutator',
+          'meta.method-call variable.function',
           'meta.method-call',
-          'meta.method',
+          'support.function.mutator',
         ],
         settings: {
           foreground: c.neutralAqua,
@@ -717,11 +729,22 @@ module.exports = function (values) {
         name: 'Entities',
         scope: [
           'entity.name.function',
+          'entity.name.label',
           'entity.name.section',
           'entity.name.accessor',
         ],
         settings: {
           foreground: c.bnp.green,
+        },
+      },
+
+      {
+        name: 'Modules',
+        scope: [
+          'entity.name.module',
+        ],
+        settings: {
+          foreground: c.bnp.orange,
         },
       },
 
@@ -872,16 +895,6 @@ module.exports = function (values) {
       },
 
       {
-        name: 'Meta',
-        scope: [
-          'meta.class',
-        ],
-        settings: {
-          foreground: c.bnp.yellow,
-        },
-      },
-
-      {
         scope: [
           'meta.class.body',
           'meta.tag',
@@ -925,11 +938,11 @@ module.exports = function (values) {
       {
         name: 'Function Call Braces',
         scope: [
-          'meta.brace.round',
-          'punctuation.definition.parameters',
           'constant.name.attribute.tag.jade',
-          'meta.function-call.css punctuation.definition.group',
+          'meta.brace.round',
+          'meta.function-call meta.group punctuation.definition.group',
           'punctuation.definition.method-parameters',
+          'punctuation.definition.parameters',
         ],
         settings: {
           foreground: c.bnp.fg3,
@@ -1049,6 +1062,37 @@ module.exports = function (values) {
         ],
         settings: {
           foreground: c.neutralYellow,
+        },
+      },
+
+      // Find in Files
+      {
+        name: 'FiF Line Number',
+        scope: [
+          'constant.numeric.line-number',
+        ],
+        settings: {
+          foreground: c.bnp.gray,
+        },
+      },
+
+      {
+        name: 'FiF Line Number Matched',
+        scope: [
+          'constant.numeric.line-number.match',
+        ],
+        settings: {
+          foreground: c.bnp.aqua,
+        },
+      },
+
+      {
+        name: 'FiF Filename',
+        scope: [
+          'entity.name.filename',
+        ],
+        settings: {
+          foreground: c.bnp.green,
         },
       },
 

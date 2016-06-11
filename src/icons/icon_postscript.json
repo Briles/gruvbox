@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.ps"
+  ],
+  "settings": {
+    "icon": "file_type_postscript"
+  }
+}
