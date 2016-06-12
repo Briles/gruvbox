@@ -695,6 +695,7 @@ module.exports = function (values) {
           'keyword.other.special-method',
           'meta.function-call variable.function',
           'support.function',
+          'meta.function-call variable.other.dollar.only punctuation.dollar',
         ],
         settings: {
           foreground: c.bnp.aqua,
