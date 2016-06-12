@@ -398,6 +398,17 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Inner Scopes of Invalids and Illegals',
+        scope: [
+          'invalid keyword.other.custom-property.prefix',
+          'invalid support.type.custom-property.name',
+        ],
+        settings: {
+          foreground: c.foreground,
+        },
+      },
+
+      {
         name: 'Errors',
         scope: [
           'message.error',
