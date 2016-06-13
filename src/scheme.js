@@ -166,8 +166,10 @@ module.exports = function (values) {
           'meta.at-rule.media support.function.misc',
           'keyword.operator.logical.python',
           'storage.type.function.jade',
+          'storage.type.function.pug',
           'js.embedded.control.flow keyword.operator.js',
           'storage.type.import.include.jade',
+          'storage.type.import.include.pug',
           'support.keyword.timing-direction',
         ],
         settings: {
@@ -707,6 +709,8 @@ module.exports = function (values) {
           'meta.function-call variable.function',
           'support.function',
           'meta.function-call variable.other.dollar.only punctuation.dollar',
+          'entity.name.function.jade',
+          'entity.name.function.pug',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -951,6 +955,7 @@ module.exports = function (values) {
         name: 'Function Call Braces',
         scope: [
           'constant.name.attribute.tag.jade',
+          'constant.name.attribute.tag.pug',
           'meta.brace.round',
           'meta.function-call meta.group punctuation.definition.group',
           'punctuation.definition.method-parameters',
