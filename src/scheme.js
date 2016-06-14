@@ -365,6 +365,16 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Language Constants Punctuation',
+        scope: [
+          'variable.language punctuation.definition.variable',
+        ],
+        settings: {
+          foreground: c.neutralPurple,
+        },
+      },
+
+      {
         name: 'User-Defined Constants',
         scope: [
           'variable.other.constant',
