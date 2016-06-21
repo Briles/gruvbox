@@ -15,7 +15,7 @@
     "chai": "~3.5.0",
     "commander": "^2.9.0",
     "gulp": "^3.9.1",
-    "istanbul": "~0.4.3",
+    "istanbul": "^0.4.4",
     "jscs": "^3.0.4",
     "lodash": "^4.13.1",
     "lodash-deep": "^2.0.0",
