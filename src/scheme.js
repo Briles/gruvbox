@@ -733,6 +733,8 @@ module.exports = function (values) {
           'meta.function-call.method variable.function',
           'meta.function-call.static variable.function',
           'meta.method-call variable.function',
+          'meta.function-call.method support.function',
+          'meta.method-call support.function',
           'meta.method-call',
           'support.function.mutator',
         ],
