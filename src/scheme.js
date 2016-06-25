@@ -35,6 +35,12 @@ module.exports = function (values) {
           findHighlightForeground: c.background,
           tagsOptions: 'underline',
           selectionBorder: c.bnp.bg1,
+          popupCss: `
+            html{
+              background-color: ${c.container};
+              color: ${c.foreground};
+            }
+          `,
         },
       },
 
