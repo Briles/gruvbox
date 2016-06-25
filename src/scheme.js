@@ -35,6 +35,12 @@ module.exports = function (values) {
           findHighlightForeground: c.background,
           tagsOptions: 'underline',
           selectionBorder: c.bnp.bg1,
+          popupCss: `
+            html{
+              background-color: ${c.container};
+              color: ${c.foreground};
+            }
+          `,
         },
       },
 
@@ -166,8 +172,10 @@ module.exports = function (values) {
           'meta.at-rule.media support.function.misc',
           'keyword.operator.logical.python',
           'storage.type.function.jade',
+          'storage.type.function.pug',
           'js.embedded.control.flow keyword.operator.js',
           'storage.type.import.include.jade',
+          'storage.type.import.include.pug',
           'support.keyword.timing-direction',
         ],
         settings: {
@@ -363,6 +371,16 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Language Constants Punctuation',
+        scope: [
+          'variable.language punctuation.definition.variable',
+        ],
+        settings: {
+          foreground: c.neutralPurple,
+        },
+      },
+
+      {
         name: 'User-Defined Constants',
         scope: [
           'variable.other.constant',
@@ -394,6 +412,17 @@ module.exports = function (values) {
         settings: {
           foreground: c.foreground,
           background: c.bnp.red,
+        },
+      },
+
+      {
+        name: 'Inner Scopes of Invalids and Illegals',
+        scope: [
+          'invalid keyword.other.custom-property.prefix',
+          'invalid support.type.custom-property.name',
+        ],
+        settings: {
+          foreground: c.foreground,
         },
       },
 
@@ -695,6 +724,9 @@ module.exports = function (values) {
           'keyword.other.special-method',
           'meta.function-call variable.function',
           'support.function',
+          'meta.function-call variable.other.dollar.only punctuation.dollar',
+          'entity.name.function.jade',
+          'entity.name.function.pug',
         ],
         settings: {
           foreground: c.bnp.aqua,
@@ -707,6 +739,8 @@ module.exports = function (values) {
           'meta.function-call.method variable.function',
           'meta.function-call.static variable.function',
           'meta.method-call variable.function',
+          'meta.function-call.method support.function',
+          'meta.method-call support.function',
           'meta.method-call',
           'support.function.mutator',
         ],
@@ -939,6 +973,7 @@ module.exports = function (values) {
         name: 'Function Call Braces',
         scope: [
           'constant.name.attribute.tag.jade',
+          'constant.name.attribute.tag.pug',
           'meta.brace.round',
           'meta.function-call meta.group punctuation.definition.group',
           'punctuation.definition.method-parameters',
