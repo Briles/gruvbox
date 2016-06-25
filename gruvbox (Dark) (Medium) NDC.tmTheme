@@ -59,6 +59,13 @@
           <string>underline</string>
           <key>selectionBorder</key>
           <string>#3c3836</string>
+          <key>popupCss</key>
+          <string>
+            html{
+              background-color: #1b1b1b;
+              color: #fbf1c7;
+            }
+          </string>
         </dict>
       </dict>
       <dict>
@@ -144,7 +151,7 @@
         <key>name</key>
         <string>Keywords</string>
         <key>scope</key>
-        <string>js.embedded.control.flow keyword.operator.js, keyword, keyword.control, keyword.operator.logical.python, meta.at-rule.media support.function.misc, meta.prolog.haml, meta.tag.sgml.doctype.html, storage.type.function.jade, storage.type.import.haxe, storage.type.import.include.jade, support.keyword.timing-direction, variable.documentroot</string>
+        <string>js.embedded.control.flow keyword.operator.js, keyword, keyword.control, keyword.operator.logical.python, meta.at-rule.media support.function.misc, meta.prolog.haml, meta.tag.sgml.doctype.html, storage.type.function.jade, storage.type.function.pug, storage.type.import.haxe, storage.type.import.include.jade, storage.type.import.include.pug, support.keyword.timing-direction, variable.documentroot</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -305,6 +312,17 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>Language Constants Punctuation</string>
+        <key>scope</key>
+        <string>variable.language punctuation.definition.variable</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#d3869b</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>User-Defined Constants</string>
         <key>scope</key>
         <string>entity.name.constant, variable.other.constant</string>
@@ -336,6 +354,17 @@
           <string>#fbf1c7</string>
           <key>background</key>
           <string>#fb4934</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Inner Scopes of Invalids and Illegals</string>
+        <key>scope</key>
+        <string>invalid keyword.other.custom-property.prefix, invalid support.type.custom-property.name</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#fbf1c7</string>
         </dict>
       </dict>
       <dict>
@@ -647,7 +676,7 @@
         <key>name</key>
         <string>Function Calls</string>
         <key>scope</key>
-        <string>keyword.other.special-method, meta.function-call variable.function, support.function</string>
+        <string>entity.name.function.jade, entity.name.function.pug, keyword.other.special-method, meta.function-call variable.function, meta.function-call variable.other.dollar.only punctuation.dollar, support.function</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -658,7 +687,7 @@
         <key>name</key>
         <string>Method Calls</string>
         <key>scope</key>
-        <string>meta.function-call.method variable.function, meta.function-call.static variable.function, meta.method-call, meta.method-call variable.function, support.function.mutator</string>
+        <string>meta.function-call.method support.function, meta.function-call.method variable.function, meta.function-call.static variable.function, meta.method-call, meta.method-call support.function, meta.method-call variable.function, support.function.mutator</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -872,7 +901,7 @@
         <key>name</key>
         <string>Function Call Braces</string>
         <key>scope</key>
-        <string>constant.name.attribute.tag.jade, meta.brace.round, meta.function-call meta.group punctuation.definition.group, punctuation.definition.method-parameters, punctuation.definition.parameters</string>
+        <string>constant.name.attribute.tag.jade, constant.name.attribute.tag.pug, meta.brace.round, meta.function-call meta.group punctuation.definition.group, punctuation.definition.method-parameters, punctuation.definition.parameters</string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -1436,6 +1465,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>fbc7ccfb-d68a-43a5-b6a9-894486f10db5</string>
+    <string>8cc2662a-856e-4ec1-a92f-a63d6996c0ed</string>
   </dict>
 </plist>
