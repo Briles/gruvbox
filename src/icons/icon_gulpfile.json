@@ -2,23 +2,10 @@
   "scope": [
     "source.js.gulpfile",
     "source.coffee.gulpfile",
-    "source.gulpfile.js"
+    "source.gulpfile.js",
+    "source.gulp_results"
   ],
   "settings": {
-    "icon": "file_type_gulpfile",
-    "shellVariables": [
-      {
-        "name": "TM_COMMENT_START",
-        "value": "// "
-      },
-      {
-        "name": "TM_COMMENT_START_2",
-        "value": "/*"
-      },
-      {
-        "name": "TM_COMMENT_END_2",
-        "value": "*/"
-      }
-    ]
+    "icon": "file_type_gulpfile"
   }
 }
