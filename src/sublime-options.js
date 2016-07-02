@@ -67,6 +67,7 @@ module.exports = {
   enablePanelCloseButton: 'gruvbox_enable_panel_close_button',
 
   // Folder Icon Sets
+  enableLargeFolderIcons: 'gruvbox_folder_icons_large',
   enableCircleFolderIcons: 'gruvbox_folder_icons_circle',
   enablePlusMinusFolderIcons: 'gruvbox_folder_icons_plus_minus',
   enableSpacegrayFolderIcons: 'gruvbox_folder_icons_spacegray',

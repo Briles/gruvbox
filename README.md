@@ -425,6 +425,14 @@ Adjust the font size of the buttons
 
 #### Alternate Folder Icons
 
+##### Larger Default Folder Icons
+
+Use larger default folder icons in the sidebar
+
+```json
+"gruvbox_folder_icons_large": true,
+```
+
 ##### Square Folder Icons
 
 ![Square Folder Icons](http://i.imgur.com/ojqgVIv.png)
