@@ -36,9 +36,29 @@ module.exports = function (values) {
           tagsOptions: 'underline',
           selectionBorder: c.bnp.bg1,
           popupCss: `
-            html{
+            html {
               background-color: ${c.container};
               color: ${c.foreground};
+            }
+
+            body {
+              font-size: 1.4em;
+            }
+
+            a {
+              color: ${c.bnp.aqua};
+            }
+
+            .error, .deleted {
+              color: ${c.bnp.red};
+            }
+
+            .success, .inserted {
+              color: ${c.bnp.green};
+            }
+
+            .warning, .modified {
+              color: ${c.bnp.yellow};
             }
           `,
         },
