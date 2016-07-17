@@ -394,6 +394,7 @@ gruvbox Light - Soft Contrast:
 
   Alternate Folder Icons
 
+  "gruvbox_folder_icons_large": true,       // Use larger default folder icons in the sidebar
   "gruvbox_folder_icons_square": true,      // Use square folder icons in the sidebar
   "gruvbox_folder_icons_circle": true,      // Use 'circle' folder icons in the sidebar
   "gruvbox_folder_icons_plus_minus": true,  // Use 'plus, minus (+-)' folder icons in the sidebar

@@ -3,17 +3,6 @@
 
   const tinycolor = require('tinycolor2');
 
-  // Sublime Text expects the alpha channel at the end for hex values
-  // Tinycolor.toHex8String places it at the beginning
-  tinycolor.prototype.toSublimeHex8String = function () {
-    if (!this.isValid()) {
-      throw new Error(`"${this}" is not a valid color'`);
-    }
-
-    var hex = this.toHex8();
-    return '#' + hex.slice(2) + hex.slice(0, 2);
-  };
-
   // Sublime Text expects rgb as [r, g, b, a]
   // Tinycolor.toRgb returns an object {r:, g:, b:, a:}
   tinycolor.prototype.toSublimeRgb = function () {
@@ -45,7 +34,7 @@
 
     // Only return an alpha channel when necessary
     if (_this._a !== 1) {
-      c = _this.toSublimeHex8String();
+      c = _this.toHex8String();
     }
 
     return c;

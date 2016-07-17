@@ -61,9 +61,29 @@
           <string>#3c3836</string>
           <key>popupCss</key>
           <string>
-            html{
+            html {
               background-color: #111313;
               color: #f9f5d7;
+            }
+
+            body {
+              font-size: 1.4em;
+            }
+
+            a {
+              color: #8ec07c;
+            }
+
+            .error, .deleted {
+              color: #fb4934;
+            }
+
+            .success, .inserted {
+              color: #b8bb26;
+            }
+
+            .warning, .modified {
+              color: #fabd2f;
             }
           </string>
         </dict>
@@ -1465,6 +1485,6 @@
       </dict>
     </array>
     <key>uuid</key>
-    <string>41776155-16dd-4330-ae99-278fc73d2035</string>
+    <string>7403b880-2a2f-47e7-a2d2-070ff9c6b4e6</string>
   </dict>
 </plist>

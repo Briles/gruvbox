@@ -101,5 +101,29 @@ module.exports = function (values) {
       'layer2.texture': `${paths.this}spacegray__folder_dup--expanded.png`, // Expanded
     },
 
+    /**
+     * Large Literal Folder Icons
+     */
+
+    // Folder Icon
+    {
+      class: 'icon_folder',
+      settings: [stOpts.enableLargeFolderIcons],
+
+      'layer1.texture': `${paths.commons}folder__literal__large.png`, // Default
+      'layer2.texture': `${paths.this}folder__literal__large--hover.png`, // Hover
+      'layer3.texture': `${paths.this}folder__literal__large--expanded.png`, // Expanded
+    },
+
+    // Symlinked Folder Icon
+    {
+      class: 'icon_folder_dup',
+      settings: [stOpts.enableLargeFolderIcons],
+
+      'layer0.texture': `${paths.commons}folder__literal__large_dup.png`, // Default
+      'layer1.texture': `${paths.this}folder__literal__large_dup--hover.png`, // Hover
+      'layer2.texture': `${paths.this}folder__literal__large_dup--expanded.png`, // Expanded
+    },
+
   ];
 };
