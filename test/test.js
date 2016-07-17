@@ -123,24 +123,8 @@
         assert.strictEqual(tinycolor('#ffffff').toSublimeHexString(), '#ffffff');
       });
 
-      it('should return Hex color string with flipped alpha', function () {
-        assert.strictEqual(tinycolor('#50ffffff').toSublimeHexString(), '#ffffff50');
-      });
-
-      it('should throw error when color is not valid', function () {
-        assert.throws(errored('toSublimeHexString'), '"#000000" is not a valid color');
-      });
-
-    });
-
-    describe('toSublimeHex8String()', function () {
-
-      it('should return Hex color string with flipped alpha', function () {
-        assert.strictEqual(tinycolor('#50ffffff').toSublimeHex8String(), '#ffffff50');
-      });
-
-      it('should throw error when color is not valid', function () {
-        assert.throws(errored('toSublimeHex8String'), '"#000000" is not a valid color');
+      it('should return Hex color string with alpha', function () {
+        assert.strictEqual(tinycolor('#ffffff50').toSublimeHexString(), '#ffffff50');
       });
 
     });
