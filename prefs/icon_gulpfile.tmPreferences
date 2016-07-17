@@ -3,32 +3,11 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>source.coffee.gulpfile, source.gulpfile.js, source.js.gulpfile</string>
+    <string>source.coffee.gulpfile, source.gulp_results, source.gulpfile.js, source.js.gulpfile</string>
     <key>settings</key>
     <dict>
       <key>icon</key>
       <string>file_type_gulpfile</string>
-      <key>shellVariables</key>
-      <array>
-        <dict>
-          <key>name</key>
-          <string>TM_COMMENT_START</string>
-          <key>value</key>
-          <string>// </string>
-        </dict>
-        <dict>
-          <key>name</key>
-          <string>TM_COMMENT_START_2</string>
-          <key>value</key>
-          <string>/*</string>
-        </dict>
-        <dict>
-          <key>name</key>
-          <string>TM_COMMENT_END_2</string>
-          <key>value</key>
-          <string>*/</string>
-        </dict>
-      </array>
     </dict>
   </dict>
 </plist>
