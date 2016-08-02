@@ -183,4 +183,8 @@ module.exports = {
   // Underline Modified Tabs
   underlineDirtyTabs: 'gruvbox_underline_modified_tabs',
   underlineDirtyTabsThick: 'gruvbox_underline_modified_tabs_thick',
+
+  // Underline Active Tabs
+  underlineActiveTab: 'gruvbox_underline_active_tab',
+  underlineActiveTabThick: 'gruvbox_underline_active_tab_thick',
 };

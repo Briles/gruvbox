@@ -2048,6 +2048,37 @@ module.exports = function (values) {
       },
 
       /**
+       * Underline Active Tab
+       */
+
+      // Default Color
+      {
+        class: 'tab_control',
+        settings: [stOpts.underlineActiveTab],
+        attributes: ['selected'],
+
+        'layer2.tint': color.this,
+      },
+
+      // Opposite Color
+      {
+        class: 'tab_control',
+        settings: [stOpts.underlineActiveTab, stOpts.accentOpposite],
+        attributes: ['selected'],
+
+        'layer2.tint': color.opposite,
+      },
+
+      // Neutral Color
+      {
+        class: 'tab_control',
+        settings: [stOpts.underlineActiveTab, stOpts.accentNeutral],
+        attributes: ['selected'],
+
+        'layer2.tint': color.neutral,
+      },
+
+      /**
        * Sideline Selected Autocomplete Row
        */
 

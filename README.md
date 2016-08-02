@@ -126,6 +126,7 @@ Configuration
 - [Tab Font Sizes](#tab-font-sizes)
 - [Autocollapsing Tab Bar](#autocollapsing-tab-bar)
 - [Underline Modified Tabs](#underline-modified-tabs)
+- [Underline Active Tab](#underline-active-tab)
 - [Find, Replace, and Console Sizes](#find-replace-and-console-sizes)
 - [Scrollbar Widths](#scrollbar-widths)
 - [Button Font Sizes](#button-font-sizes)
@@ -370,6 +371,18 @@ All thicknesses require `gruvbox_underline_modified_tabs` to be `true`.
 ```json
   "gruvbox_underline_modified_tabs": true,        //  |  1 (Default)
   "gruvbox_underline_modified_tabs_thick": true,  //  v  2
+```
+
+#### Underline Active Tab
+
+Underline the active tab with the current accent color
+
+All thicknesses require `gruvbox_underline_active_tab` to be `true`.
+
+```json
+  "gruvbox_underline_active_tab": true,          //  |  1 (Default)
+  "gruvbox_underline_active_tab_thick": true,    //  |  2
+  "gruvbox_underline_active_tab_thicker": true,  //  v  3
 ```
 
 #### Find, Replace, and Console Sizes
