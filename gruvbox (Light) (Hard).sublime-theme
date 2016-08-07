@@ -2763,6 +2763,53 @@
     ]
   },
   {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.tint": [
+      146,
+      131,
+      116
+    ],
+    "layer2.opacity": 1
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_underline_active_tab_thick"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.inner_margin": [
+      0,
+      0,
+      0,
+      2
+    ]
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_underline_active_tab_thicker"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.inner_margin": [
+      0,
+      0,
+      0,
+      3
+    ]
+  },
+  {
     "class": "icon_regex",
     "settings": [
       "gruvbox_iconset_midstroke"
@@ -7016,6 +7063,53 @@
     ]
   },
   {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_red"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.tint": [
+      157,
+      0,
+      6
+    ]
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_red"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.tint": [
+      251,
+      73,
+      52
+    ]
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_red"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.tint": [
+      204,
+      36,
+      29
+    ]
+  },
+  {
     "class": "table_row",
     "settings": [
       "gruvbox_sideline_autocomplete_row",
@@ -9405,6 +9499,53 @@
     ],
     "attributes": [
       "dirty"
+    ],
+    "layer2.tint": [
+      152,
+      151,
+      26
+    ]
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_green"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.tint": [
+      121,
+      116,
+      14
+    ]
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_green"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.tint": [
+      184,
+      187,
+      38
+    ]
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_green"
+    ],
+    "attributes": [
+      "selected"
     ],
     "layer2.tint": [
       152,
@@ -11810,6 +11951,53 @@
     ]
   },
   {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_yellow"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.tint": [
+      181,
+      118,
+      20
+    ]
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_yellow"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.tint": [
+      250,
+      189,
+      47
+    ]
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_yellow"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.tint": [
+      215,
+      153,
+      33
+    ]
+  },
+  {
     "class": "table_row",
     "settings": [
       "gruvbox_sideline_autocomplete_row",
@@ -14199,6 +14387,53 @@
     ],
     "attributes": [
       "dirty"
+    ],
+    "layer2.tint": [
+      69,
+      133,
+      136
+    ]
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_blue"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.tint": [
+      7,
+      102,
+      120
+    ]
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_blue"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.tint": [
+      131,
+      165,
+      152
+    ]
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_blue"
+    ],
+    "attributes": [
+      "selected"
     ],
     "layer2.tint": [
       69,
@@ -16604,6 +16839,53 @@
     ]
   },
   {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_purple"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.tint": [
+      143,
+      63,
+      113
+    ]
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_purple"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.tint": [
+      211,
+      134,
+      155
+    ]
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_purple"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.tint": [
+      177,
+      98,
+      134
+    ]
+  },
+  {
     "class": "table_row",
     "settings": [
       "gruvbox_sideline_autocomplete_row",
@@ -19001,6 +19283,53 @@
     ]
   },
   {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_aqua"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.tint": [
+      66,
+      123,
+      88
+    ]
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_aqua"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.tint": [
+      142,
+      192,
+      124
+    ]
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_aqua"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.tint": [
+      104,
+      157,
+      106
+    ]
+  },
+  {
     "class": "table_row",
     "settings": [
       "gruvbox_sideline_autocomplete_row",
@@ -21390,6 +21719,53 @@
     ],
     "attributes": [
       "dirty"
+    ],
+    "layer2.tint": [
+      214,
+      93,
+      14
+    ]
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_orange"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.tint": [
+      175,
+      58,
+      3
+    ]
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_opposite",
+      "gruvbox_accent_orange"
+    ],
+    "attributes": [
+      "selected"
+    ],
+    "layer2.tint": [
+      254,
+      128,
+      25
+    ]
+  },
+  {
+    "class": "tab_control",
+    "settings": [
+      "gruvbox_underline_active_tab",
+      "gruvbox_accent_neutral",
+      "gruvbox_accent_orange"
+    ],
+    "attributes": [
+      "selected"
     ],
     "layer2.tint": [
       214,

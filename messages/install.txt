@@ -334,6 +334,19 @@ gruvbox Light - Soft Contrast:
 --------------------------------------------------------------------------------
 
 
+  Underline Active Tab
+
+        Underline the active tab with the current accent color
+        All thicknesses require `gruvbox_underline_active_tab` to be `true`.
+
+  "gruvbox_underline_active_tab": true,          //  |  1 (Default)
+  "gruvbox_underline_active_tab_thick": true,    //  |  2
+  "gruvbox_underline_active_tab_thicker": true,  //  v  3
+
+
+--------------------------------------------------------------------------------
+
+
   Find, Replace, and Console Sizes
 
         Adjust the top & bottom margins of the Find, Replace, and Console panels
