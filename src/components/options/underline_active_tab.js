@@ -28,7 +28,7 @@ module.exports = function (values) {
     // Thicker Thickness
     {
       class: 'tab_control',
-      settings: [stOpts.underlineActiveTab, stOpts.underlineActiveTabThick],
+      settings: [stOpts.underlineActiveTab, stOpts.underlineActiveTabThicker],
       attributes: ['selected'],
 
       'layer2.inner_margin': [0, 0, 0, 3],
