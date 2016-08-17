@@ -20,7 +20,7 @@
     "lodash": "^4.15.0",
     "lodash-deep": "^2.0.0",
     "mocha": "^3.0.2",
-    "plist": "^1.2.0",
+    "plist": "^2.0.1",
     "run-sequence": "^1.2.2",
     "tinycolor2": "^1.4.1"
   },
