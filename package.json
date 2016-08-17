@@ -22,8 +22,7 @@
     "mocha": "^3.0.2",
     "plist": "^1.2.0",
     "run-sequence": "^1.2.2",
-    "tinycolor2": "^1.4.1",
-    "uuid": "^2.0.2"
+    "tinycolor2": "^1.4.1"
   },
   "scripts": {
     "style": "npm run style:main",

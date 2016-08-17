@@ -1,8 +1,6 @@
 module.exports = function (values) {
   'use strict';
 
-  const uuid = require('uuid');
-
   const c = values.colors;
   const info = values.info;
 
@@ -1525,6 +1523,5 @@ module.exports = function (values) {
       },
 
     ],
-    uuid: uuid.v4(),
   };
 };
