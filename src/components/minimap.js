@@ -10,8 +10,8 @@ module.exports = function (values) {
       class: 'minimap_control',
       settings: ['always_show_minimap_viewport'],
 
-      viewport_color: c.background,
-      viewport_opacity: 0.5,
+      viewport_color: c.foreground,
+      viewport_opacity: 0.25,
     },
 
     {
@@ -27,7 +27,8 @@ module.exports = function (values) {
       settings: ['!always_show_minimap_viewport'],
       attributes: ['hover'],
 
-      viewport_opacity: 0.5,
+      viewport_color: c.foreground,
+      viewport_opacity: 0.25,
     },
 
   ];
