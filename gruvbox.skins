@@ -1,242 +1,242 @@
 {
-    "gruvbox (Dark) (Hard) NDC":
-    {
-        "PlainTasks": {
-            "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).tmTheme"
-        },
-        "Preferences":
-        {
-            "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard) NDC.tmTheme",
-            "theme": "gruvbox (Dark) (Hard).sublime-theme",
-        },
-        "SublimeLinter":
-        {
-            "user":
-            {
-                "error_color": "#fb4934",
-                "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
-                "warning_color": "#fe8019"
-            }
-        }
+  "gruvbox (Dark) (Hard) NDC":
+  {
+    "PlainTasks": {
+      "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).tmTheme"
     },
-    "gruvbox (Dark) (Hard)":
+    "Preferences":
     {
-        "PlainTasks": {
-            "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).tmTheme"
-        },
-        "Preferences":
-        {
-            "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).tmTheme",
-            "theme": "gruvbox (Dark) (Hard).sublime-theme",
-        },
-        "SublimeLinter":
-        {
-            "user":
-            {
-                "error_color": "#fb4934",
-                "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
-                "warning_color": "#fe8019"
-            }
-        }
+      "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard) NDC.tmTheme",
+      "theme": "gruvbox (Dark) (Hard).sublime-theme",
     },
-    "gruvbox (Dark) (Medium) NDC":
+    "SublimeLinter":
     {
-        "PlainTasks": {
-            "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme"
-        },
-        "Preferences":
-        {
-            "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium) NDC.tmTheme",
-            "theme": "gruvbox (Dark) (Medium).sublime-theme",
-        },
-        "SublimeLinter":
-        {
-            "user":
-            {
-                "error_color": "#fb4934",
-                "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
-                "warning_color": "#fe8019"
-            }
-        }
-    },
-    "gruvbox (Dark) (Medium)":
-    {
-        "PlainTasks": {
-            "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme"
-        },
-        "Preferences":
-        {
-            "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme",
-            "theme": "gruvbox (Dark) (Medium).sublime-theme",
-        },
-        "SublimeLinter":
-        {
-            "user":
-            {
-                "error_color": "#fb4934",
-                "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
-                "warning_color": "#fe8019"
-            }
-        }
-    },
-    "gruvbox (Dark) (Soft) NDC":
-    {
-        "PlainTasks": {
-            "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft).tmTheme"
-        },
-        "Preferences":
-        {
-            "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft) NDC.tmTheme",
-            "theme": "gruvbox (Dark) (Soft).sublime-theme",
-        },
-        "SublimeLinter":
-        {
-            "user":
-            {
-                "error_color": "#fb4934",
-                "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
-                "warning_color": "#fe8019"
-            }
-        }
-    },
-    "gruvbox (Dark) (Soft)":
-    {
-        "PlainTasks": {
-            "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft).tmTheme"
-        },
-        "Preferences":
-        {
-            "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft).tmTheme",
-            "theme": "gruvbox (Dark) (Soft).sublime-theme",
-        },
-        "SublimeLinter":
-        {
-            "user":
-            {
-                "error_color": "#fb4934",
-                "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
-                "warning_color": "#fe8019"
-            }
-        }
-    },
-    "gruvbox (Light) (Hard) NDC":
-    {
-        "PlainTasks": {
-            "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard).tmTheme"
-        },
-        "Preferences":
-        {
-            "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard) NDC.tmTheme",
-            "theme": "gruvbox (Light) (Hard).sublime-theme",
-        },
-        "SublimeLinter":
-        {
-            "user":
-            {
-                "error_color": "#9d0006",
-                "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
-                "warning_color": "#af3a03"
-            }
-        }
-    },
-    "gruvbox (Light) (Hard)":
-    {
-        "PlainTasks": {
-            "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard).tmTheme"
-        },
-        "Preferences":
-        {
-            "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard).tmTheme",
-            "theme": "gruvbox (Light) (Hard).sublime-theme",
-        },
-        "SublimeLinter":
-        {
-            "user":
-            {
-                "error_color": "#9d0006",
-                "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
-                "warning_color": "#af3a03"
-            }
-        }
-    },
-    "gruvbox (Light) (Medium) NDC":
-    {
-        "PlainTasks": {
-            "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium).tmTheme"
-        },
-        "Preferences":
-        {
-            "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium) NDC.tmTheme",
-            "theme": "gruvbox (Light) (Medium).sublime-theme",
-        },
-        "SublimeLinter":
-        {
-            "user":
-            {
-                "error_color": "#9d0006",
-                "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
-                "warning_color": "#af3a03"
-            }
-        }
-    },
-    "gruvbox (Light) (Medium)":
-    {
-        "PlainTasks": {
-            "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium).tmTheme"
-        },
-        "Preferences":
-        {
-            "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium).tmTheme",
-            "theme": "gruvbox (Light) (Medium).sublime-theme",
-        },
-        "SublimeLinter":
-        {
-            "user":
-            {
-                "error_color": "#9d0006",
-                "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
-                "warning_color": "#af3a03"
-            }
-        }
-    },
-    "gruvbox (Light) (Soft) NDC":
-    {
-        "PlainTasks": {
-            "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft).tmTheme"
-        },
-        "Preferences":
-        {
-            "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft) NDC.tmTheme",
-            "theme": "gruvbox (Light) (Soft).sublime-theme",
-        },
-        "SublimeLinter":
-        {
-            "user":
-            {
-                "error_color": "#9d0006",
-                "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
-                "warning_color": "#af3a03"
-            }
-        }
-    },
-    "gruvbox (Light) (Soft)":
-    {
-        "PlainTasks": {
-            "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft).tmTheme"
-        },
-        "Preferences":
-        {
-            "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft).tmTheme",
-            "theme": "gruvbox (Light) (Soft).sublime-theme",
-        },
-        "SublimeLinter":
-        {
-            "user":
-            {
-                "error_color": "#9d0006",
-                "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
-                "warning_color": "#af3a03"
-            }
-        }
+      "user":
+      {
+        "error_color": "#fb4934",
+        "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
+        "warning_color": "#fe8019"
+      }
     }
+  },
+  "gruvbox (Dark) (Hard)":
+  {
+    "PlainTasks": {
+      "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).tmTheme"
+    },
+    "Preferences":
+    {
+      "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).tmTheme",
+      "theme": "gruvbox (Dark) (Hard).sublime-theme",
+    },
+    "SublimeLinter":
+    {
+      "user":
+      {
+        "error_color": "#fb4934",
+        "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
+        "warning_color": "#fe8019"
+      }
+    }
+  },
+  "gruvbox (Dark) (Medium) NDC":
+  {
+    "PlainTasks": {
+      "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme"
+    },
+    "Preferences":
+    {
+      "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium) NDC.tmTheme",
+      "theme": "gruvbox (Dark) (Medium).sublime-theme",
+    },
+    "SublimeLinter":
+    {
+      "user":
+      {
+        "error_color": "#fb4934",
+        "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
+        "warning_color": "#fe8019"
+      }
+    }
+  },
+  "gruvbox (Dark) (Medium)":
+  {
+    "PlainTasks": {
+      "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme"
+    },
+    "Preferences":
+    {
+      "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme",
+      "theme": "gruvbox (Dark) (Medium).sublime-theme",
+    },
+    "SublimeLinter":
+    {
+      "user":
+      {
+        "error_color": "#fb4934",
+        "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
+        "warning_color": "#fe8019"
+      }
+    }
+  },
+  "gruvbox (Dark) (Soft) NDC":
+  {
+    "PlainTasks": {
+      "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft).tmTheme"
+    },
+    "Preferences":
+    {
+      "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft) NDC.tmTheme",
+      "theme": "gruvbox (Dark) (Soft).sublime-theme",
+    },
+    "SublimeLinter":
+    {
+      "user":
+      {
+        "error_color": "#fb4934",
+        "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
+        "warning_color": "#fe8019"
+      }
+    }
+  },
+  "gruvbox (Dark) (Soft)":
+  {
+    "PlainTasks": {
+      "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft).tmTheme"
+    },
+    "Preferences":
+    {
+      "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft).tmTheme",
+      "theme": "gruvbox (Dark) (Soft).sublime-theme",
+    },
+    "SublimeLinter":
+    {
+      "user":
+      {
+        "error_color": "#fb4934",
+        "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
+        "warning_color": "#fe8019"
+      }
+    }
+  },
+  "gruvbox (Light) (Hard) NDC":
+  {
+    "PlainTasks": {
+      "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard).tmTheme"
+    },
+    "Preferences":
+    {
+      "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard) NDC.tmTheme",
+      "theme": "gruvbox (Light) (Hard).sublime-theme",
+    },
+    "SublimeLinter":
+    {
+      "user":
+      {
+        "error_color": "#9d0006",
+        "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
+        "warning_color": "#af3a03"
+      }
+    }
+  },
+  "gruvbox (Light) (Hard)":
+  {
+    "PlainTasks": {
+      "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard).tmTheme"
+    },
+    "Preferences":
+    {
+      "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard).tmTheme",
+      "theme": "gruvbox (Light) (Hard).sublime-theme",
+    },
+    "SublimeLinter":
+    {
+      "user":
+      {
+        "error_color": "#9d0006",
+        "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
+        "warning_color": "#af3a03"
+      }
+    }
+  },
+  "gruvbox (Light) (Medium) NDC":
+  {
+    "PlainTasks": {
+      "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium).tmTheme"
+    },
+    "Preferences":
+    {
+      "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium) NDC.tmTheme",
+      "theme": "gruvbox (Light) (Medium).sublime-theme",
+    },
+    "SublimeLinter":
+    {
+      "user":
+      {
+        "error_color": "#9d0006",
+        "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
+        "warning_color": "#af3a03"
+      }
+    }
+  },
+  "gruvbox (Light) (Medium)":
+  {
+    "PlainTasks": {
+      "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium).tmTheme"
+    },
+    "Preferences":
+    {
+      "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium).tmTheme",
+      "theme": "gruvbox (Light) (Medium).sublime-theme",
+    },
+    "SublimeLinter":
+    {
+      "user":
+      {
+        "error_color": "#9d0006",
+        "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
+        "warning_color": "#af3a03"
+      }
+    }
+  },
+  "gruvbox (Light) (Soft) NDC":
+  {
+    "PlainTasks": {
+      "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft).tmTheme"
+    },
+    "Preferences":
+    {
+      "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft) NDC.tmTheme",
+      "theme": "gruvbox (Light) (Soft).sublime-theme",
+    },
+    "SublimeLinter":
+    {
+      "user":
+      {
+        "error_color": "#9d0006",
+        "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
+        "warning_color": "#af3a03"
+      }
+    }
+  },
+  "gruvbox (Light) (Soft)":
+  {
+    "PlainTasks": {
+      "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft).tmTheme"
+    },
+    "Preferences":
+    {
+      "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft).tmTheme",
+      "theme": "gruvbox (Light) (Soft).sublime-theme",
+    },
+    "SublimeLinter":
+    {
+      "user":
+      {
+        "error_color": "#9d0006",
+        "gutter_theme": "Packages/gruvbox/extras/sublimelinter_gutter-themes/gruvbox/gruvbox.gutter-theme",
+        "warning_color": "#af3a03"
+      }
+    }
+  }
 }
