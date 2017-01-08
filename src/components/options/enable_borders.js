@@ -2,8 +2,21 @@ module.exports = function (values) {
   'use strict';
 
   const stOpts = values.options;
+  const c = values.colors;
 
   return [
+
+    /**
+     * Enable Statusbar Border
+     */
+
+    {
+      class: 'grid_layout_control',
+      settings: [stOpts.enabledPaneBorders],
+
+      border_size: 1,
+      border_color: c.border,
+    },
 
     /**
      * Enable Statusbar Border

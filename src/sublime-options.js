@@ -76,6 +76,7 @@ module.exports = {
   // Enable/Disable Borders
   disableBorders: 'gruvbox_disable_borders',
   disableCommandPaletteRowBorder: 'gruvbox_disable_command_palette_row_border',
+  enabledPaneBorders: 'gruvbox_enable_pane_borders',
   enableSidebarBorder: 'gruvbox_enable_sidebar_border',
   enableStatusbarBorder: 'gruvbox_enable_statusbar_border',
   enableTabBorders: 'gruvbox_enable_tab_borders',

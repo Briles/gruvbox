@@ -430,6 +430,7 @@ Adjust the font size of the buttons
 
 ```json
   "gruvbox_disable_borders": true,                     // Disable all borders
+  "gruvbox_enable_pane_borders": true,                 // Enable borders between panes
   "gruvbox_enable_sidebar_border": true,               // Enable the sidebar border
   "gruvbox_enable_statusbar_border": true,             // Enable borders for the status bar
   "gruvbox_enable_tab_borders": true,                  // Enable borders for the tabs
