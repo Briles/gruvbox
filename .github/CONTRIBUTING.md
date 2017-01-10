@@ -19,7 +19,7 @@ please search for similar ones in the
 ## Pull Requests
 
 For additions or bug fixes you should only need to modify the `*.js` files
-under the `./src/` directory.
+under the `./.gulp/` directory.
 
 **Note**: Do not edit the `*.sublime-theme`, `.tmTheme`, or `.sublime-settings` files
 directly as your changes will not be retained on the next build
@@ -29,7 +29,7 @@ directly as your changes will not be retained on the next build
 To build the themes, schemes, and widgets you will need [Node.js](https://nodejs.org/)
 
 1. Install the dependencies with `npm install`
-2. Run `./src/build.js` with Node to build everything
+2. Run `./.gulp/build.js` with Node to build everything
 
 ```bash
  Usage: build [options]
@@ -48,7 +48,7 @@ Optionally, you can use gulp to ease the build process. You will need to have
 The following gulp tasks are available:
 
 - `gulp` runs the default `watch` task.
-- `gulp watch` watches `./src/*.js` and builds everything on change.
+- `gulp watch` watches `./.gulp/*.js` and builds everything on change.
 - `gulp build_themes` builds theme `.sublime-themes`
 - `gulp build_schemes` builds color scheme `.tmThemes`
 - `gulp build_widgets` builds widget `.sublime-settings`
@@ -58,11 +58,11 @@ The following gulp tasks are available:
 
 ## Navigating the Files
 
-- `./src/build.js` the main script which builds themes, schemes, and widgets
-- `./src/icons.js` script which creates `.tmPreferences` for all icons in `./src/icons/`
-- `./src/components/*.js` contains all the `.sublime-theme` components
-- `./src/scheme.js` contains all the `.tmTheme` components
-- `./src/widget.js` contains all the `.sublime-settings` widget components
+- `./.gulp/build.js` the main script which builds themes, schemes, and widgets
+- `./.gulp/icons.js` script which creates `.tmPreferences` for all icons in `./.gulp/icons/`
+- `./.gulp/components/*.js` contains all the `.sublime-theme` components
+- `./.gulp/scheme.js` contains all the `.tmTheme` components
+- `./.gulp/widget.js` contains all the `.sublime-settings` widget components
 
 ## Coding Guidelines
 

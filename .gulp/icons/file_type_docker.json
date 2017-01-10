@@ -1,0 +1,9 @@
+{
+  "scope": [
+    "source.dockerfile",
+    "source.yaml.docker"
+  ],
+  "settings": {
+    "icon": "file_type_docker"
+  }
+}

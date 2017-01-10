@@ -1,8 +1,0 @@
-{
-  "scope": [
-    "source.dockerfile"
-  ],
-  "settings": {
-    "icon": "file_type_docker"
-  }
-}

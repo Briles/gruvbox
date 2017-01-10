@@ -1,0 +1,9 @@
+{
+  "scope": [
+    "source.gruntfile",
+    "source.js.gruntfile"
+  ],
+  "settings": {
+    "icon": "file_type_gruntfile"
+  }
+}

@@ -3,8 +3,8 @@
 
   const _ = require('lodash');
   const assert = require('chai').assert;
-  const tinycolor = require('../src/tinycolor.js');
-  const utils = require('../src/utils.js');
+  const tinycolor = require('../.gulp/tinycolor.js');
+  const utils = require('../.gulp/utils.js');
   const schemes = require('./mock_schemes.js');
 
   const validRGBA = 'rgba(255, 255, 255, 0.5)';

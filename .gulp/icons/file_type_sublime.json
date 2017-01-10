@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.json.sublime"
+  ],
+  "settings": {
+    "icon": "file_type_sublime"
+  }
+}

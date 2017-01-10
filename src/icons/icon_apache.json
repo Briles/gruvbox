@@ -1,9 +1,0 @@
-{
-  "scope": [
-    "source.apacheconf",
-    "source.hive"
-  ],
-  "settings": {
-    "icon": "file_type_apache"
-  }
-}

@@ -1,0 +1,10 @@
+{
+  "scope": [
+    "source.ruby",
+    "source.shell.ruby",
+    "text.plain.ruby"
+  ],
+  "settings": {
+    "icon": "file_type_ruby"
+  }
+}

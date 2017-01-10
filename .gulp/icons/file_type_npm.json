@@ -1,0 +1,9 @@
+{
+  "scope": [
+    "source.shell.npm",
+    "source.json.npm"
+  ],
+  "settings": {
+    "icon": "file_type_npm"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.nsis"
+  ],
+  "settings": {
+    "icon": "file_type_nsis"
+  }
+}

@@ -1331,11 +1331,11 @@
       "always_show_minimap_viewport"
     ],
     "viewport_color": [
-      29,
-      32,
-      33
+      249,
+      245,
+      215
     ],
-    "viewport_opacity": 0.5
+    "viewport_opacity": 0.25
   },
   {
     "class": "minimap_control",
@@ -1352,7 +1352,12 @@
     "attributes": [
       "hover"
     ],
-    "viewport_opacity": 0.5
+    "viewport_color": [
+      249,
+      245,
+      215
+    ],
+    "viewport_opacity": 0.25
   },
   {
     "class": "label_control",
@@ -2651,6 +2656,18 @@
       "gruvbox_disable_borders"
     ],
     "border_size": 0
+  },
+  {
+    "class": "grid_layout_control",
+    "settings": [
+      "gruvbox_enable_pane_borders"
+    ],
+    "border_size": 1,
+    "border_color": [
+      5,
+      6,
+      6
+    ]
   },
   {
     "class": "status_bar",

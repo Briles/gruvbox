@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "text.plain.pdf"
+  ],
+  "settings": {
+    "icon": "file_type_pdf"
+  }
+}

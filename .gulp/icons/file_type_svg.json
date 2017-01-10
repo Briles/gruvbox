@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "text.xml.svg"
+  ],
+  "settings": {
+    "icon": "file_type_svg"
+  }
+}

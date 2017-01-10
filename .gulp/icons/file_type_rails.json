@@ -1,0 +1,9 @@
+{
+  "scope": [
+    "source.ruby.rails",
+    "text.html.ruby"
+  ],
+  "settings": {
+    "icon": "file_type_rails"
+  }
+}

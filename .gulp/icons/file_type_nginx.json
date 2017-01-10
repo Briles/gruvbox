@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.nginx"
+  ],
+  "settings": {
+    "icon": "file_type_nginx"
+  }
+}

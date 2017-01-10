@@ -1,0 +1,11 @@
+{
+  "scope": [
+    "source.cfscript.cfc",
+    "text.html.cfm",
+    "embedding.cfml",
+    "source.cfml.script"
+  ],
+  "settings": {
+    "icon": "file_type_cf"
+  }
+}

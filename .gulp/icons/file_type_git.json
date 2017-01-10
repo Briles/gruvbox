@@ -1,0 +1,20 @@
+{
+  "scope": [
+    "source.git",
+    "source.gitconfig",
+    "source.gitignore",
+    "source.shell.git",
+    "text.git",
+    "text.git-blame",
+    "text.git-commit",
+    "text.git-commit-message",
+    "text.git-commit-view",
+    "text.git-graph",
+    "text.git.commit-message",
+    "text.git.config",
+    "text.git.rebase"
+  ],
+  "settings": {
+    "icon": "file_type_git"
+  }
+}
