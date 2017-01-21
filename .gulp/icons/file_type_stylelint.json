@@ -1,0 +1,10 @@
+{
+  "scope": [
+    "source.json.stylelint",
+    "source.js.stylelint",
+    "source.yaml.stylelint"
+  ],
+  "settings": {
+    "icon": "file_type_stylelint"
+  }
+}

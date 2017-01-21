@@ -1,0 +1,11 @@
+{
+  "scope": [
+    "source.ocaml",
+    "source.ocamllex",
+    "source.ocamlyacc",
+    "source.camlp4.ocaml"
+  ],
+  "settings": {
+    "icon": "file_type_ocaml"
+  }
+}

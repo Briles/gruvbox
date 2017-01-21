@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "text.html.basic"
+  ],
+  "settings": {
+    "icon": "file_type_html"
+  }
+}

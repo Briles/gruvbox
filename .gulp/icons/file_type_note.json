@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "text.html.markdown.note"
+  ],
+  "settings": {
+    "icon": "file_type_note"
+  }
+}

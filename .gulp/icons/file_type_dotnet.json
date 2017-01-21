@@ -1,0 +1,9 @@
+{
+  "scope": [
+    "source.asp",
+    "text.html.asp"
+  ],
+  "settings": {
+    "icon": "file_type_dotnet"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.js.webpack"
+  ],
+  "settings": {
+    "icon": "file_type_webpack"
+  }
+}

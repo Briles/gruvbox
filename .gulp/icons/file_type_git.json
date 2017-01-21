@@ -1,0 +1,10 @@
+{
+  "scope": [
+    "source.git",
+    "source.shell.git",
+    "text.git"
+  ],
+  "settings": {
+    "icon": "file_type_git"
+  }
+}

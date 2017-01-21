@@ -1,9 +1,0 @@
-{
-  "scope": [
-    "source.cfml",
-    "text.html.cfm"
-  ],
-  "settings": {
-    "icon": "file_type_cfm"
-  }
-}

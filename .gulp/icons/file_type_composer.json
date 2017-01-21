@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.json.composer"
+  ],
+  "settings": {
+    "icon": "file_type_composer"
+  }
+}

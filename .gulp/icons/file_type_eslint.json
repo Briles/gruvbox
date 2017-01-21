@@ -1,0 +1,11 @@
+{
+  "scope": [
+    "source.json.eslint",
+    "source.js.eslint",
+    "source.yaml.eslint",
+    "source.shell.eslint"
+  ],
+  "settings": {
+    "icon": "file_type_eslint"
+  }
+}

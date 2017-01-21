@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.dot"
+  ],
+  "settings": {
+    "icon": "file_type_graphviz"
+  }
+}

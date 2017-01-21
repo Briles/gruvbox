@@ -1,0 +1,8 @@
+{
+  "scope": [
+    "source.yaml.yarn"
+  ],
+  "settings": {
+    "icon": "file_type_yarn"
+  }
+}

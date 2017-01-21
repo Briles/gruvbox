@@ -1,9 +1,0 @@
-{
-  "scope": [
-    "source.tcl",
-    "text.html.tcl"
-  ],
-  "settings": {
-    "icon": "file_type_tcl"
-  }
-}

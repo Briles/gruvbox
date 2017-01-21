@@ -1,0 +1,11 @@
+{
+  "scope": [
+    "source.ini",
+    "source.env",
+    "source.json.settings",
+    "text.xml.config"
+  ],
+  "settings": {
+    "icon": "file_type_settings"
+  }
+}
