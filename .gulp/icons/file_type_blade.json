@@ -1,6 +1,5 @@
 {
   "scope": [
-    "text.html.laravel-blade",
     "text.blade"
   ],
   "settings": {

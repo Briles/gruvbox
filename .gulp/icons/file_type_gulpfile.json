@@ -1,9 +1,7 @@
 {
   "scope": [
     "source.js.gulpfile",
-    "source.coffee.gulpfile",
-    "source.gulpfile.js",
-    "source.gulp_results"
+    "source.coffee.gulpfile"
   ],
   "settings": {
     "icon": "file_type_gulpfile"

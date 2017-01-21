@@ -1,9 +1,6 @@
 {
   "scope": [
-    "text.html.basic",
-    "text.html.eco",
-    "text.html.jstl",
-    "text.html.rt"
+    "text.html.basic"
   ],
   "settings": {
     "icon": "file_type_html"

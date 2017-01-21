@@ -3,7 +3,7 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>source.gruntfile, source.js.gruntfile</string>
+    <string>source.js.gruntfile</string>
     <key>settings</key>
     <dict>
       <key>icon</key>

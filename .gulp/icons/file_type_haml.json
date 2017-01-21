@@ -1,10 +1,6 @@
 {
   "scope": [
-    "source.haml",
-    "text.haml",
-    "source.php.haml",
-    "source.hamlbars",
-    "text.hamlpy"
+    "text.haml"
   ],
   "settings": {
     "icon": "file_type_haml"

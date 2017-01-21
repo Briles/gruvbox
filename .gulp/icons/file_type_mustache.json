@@ -3,10 +3,7 @@
     "text.html.mustache",
     "text.html.hgn",
     "text.html.handlebars",
-    "source.mustache",
-    "source.hamlbars",
-    "source.handlebars",
-    "txt.html.mustache"
+    "source.hamlbars"
   ],
   "settings": {
     "icon": "file_type_mustache"

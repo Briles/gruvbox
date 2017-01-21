@@ -1,0 +1,10 @@
+{
+  "scope": [
+    "source.jade.riot",
+    "source.pug.riot",
+    "text.html.riot"
+  ],
+  "settings": {
+    "icon": "file_type_riot"
+  }
+}

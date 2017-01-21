@@ -1,5 +1,7 @@
 {
   "scope": [
+    "source.sublime-keymap",
+    "source.sublime-settings",
     "source.json.sublime"
   ],
   "settings": {

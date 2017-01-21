@@ -3,7 +3,7 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>source.haml, source.hamlbars, source.php.haml, text.haml, text.hamlpy</string>
+    <string>text.haml</string>
     <key>settings</key>
     <dict>
       <key>icon</key>

@@ -3,11 +3,11 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>source.stata</string>
+    <string>source.jade.riot, source.pug.riot, text.html.riot</string>
     <key>settings</key>
     <dict>
       <key>icon</key>
-      <string>file_type_stata</string>
+      <string>file_type_riot</string>
     </dict>
   </dict>
 </plist>

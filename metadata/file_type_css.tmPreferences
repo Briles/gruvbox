@@ -3,7 +3,7 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>source.css, source.postcss</string>
+    <string>source.css</string>
     <key>settings</key>
     <dict>
       <key>icon</key>

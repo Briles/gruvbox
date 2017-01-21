@@ -3,7 +3,7 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>source.pgsql, source.simple-db-migrate, source.sql</string>
+    <string>source.sql</string>
     <key>settings</key>
     <dict>
       <key>icon</key>

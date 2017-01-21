@@ -1,8 +1,6 @@
 {
   "scope": [
-    "source.coffee",
-    "source.litcoffee",
-    "source.pegcs"
+    "source.coffee"
   ],
   "settings": {
     "icon": "file_type_coffeescript"

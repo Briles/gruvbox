@@ -3,11 +3,11 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>source.stata</string>
+    <string>source.elm</string>
     <key>settings</key>
     <dict>
       <key>icon</key>
-      <string>file_type_stata</string>
+      <string>file_type_elm</string>
     </dict>
   </dict>
 </plist>
