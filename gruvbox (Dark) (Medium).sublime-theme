@@ -1331,11 +1331,11 @@
       "always_show_minimap_viewport"
     ],
     "viewport_color": [
-      40,
-      40,
-      40
+      251,
+      241,
+      199
     ],
-    "viewport_opacity": 0.5
+    "viewport_opacity": 0.25
   },
   {
     "class": "minimap_control",
@@ -1352,7 +1352,12 @@
     "attributes": [
       "hover"
     ],
-    "viewport_opacity": 0.5
+    "viewport_color": [
+      251,
+      241,
+      199
+    ],
+    "viewport_opacity": 0.25
   },
   {
     "class": "label_control",
