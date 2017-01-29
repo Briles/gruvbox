@@ -2653,6 +2653,18 @@
     "border_size": 0
   },
   {
+    "class": "grid_layout_control",
+    "settings": [
+      "gruvbox_enable_pane_borders"
+    ],
+    "border_size": 1,
+    "border_color": [
+      5,
+      6,
+      6
+    ]
+  },
+  {
     "class": "status_bar",
     "settings": [
       "gruvbox_enable_statusbar_border"

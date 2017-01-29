@@ -1,4 +1,4 @@
-// All the components to require() from ./src/components
+// All the components to require() from ./.gulp/components
 // The order is important as some settings need to override others.
 
 module.exports = [

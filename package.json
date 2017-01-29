@@ -26,7 +26,7 @@
   },
   "scripts": {
     "style": "npm run style:main",
-    "style:main": "./node_modules/.bin/jscs src/",
+    "style:main": "./node_modules/.bin/jscs .gulp/",
     "test": "npm run test:main",
     "test:main": "./node_modules/.bin/mocha ./test/test.js",
     "validate": "npm run style & npm run test",
