@@ -8,7 +8,7 @@
   const utils = require('./utils.js');
 
   var sourceDirectory = path.resolve(__dirname, './icons/');
-  var destinationDirectory = path.resolve(__dirname, '../prefs/');
+  var destinationDirectory = path.resolve(__dirname, '../metadata/');
 
   var sourceFiles = fs.readdirSync(sourceDirectory);
 
