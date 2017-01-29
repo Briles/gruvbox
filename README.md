@@ -9,13 +9,11 @@ Based on [gruvbox for Vim](https://github.com/morhetz/gruvbox)
 ![Screenshot Dark](http://i.imgur.com/8WUkqa5.png)
 ![Screenshot Light](http://i.imgur.com/hdxzwzP.png)
 
-Contrast options
-----------------
+## Contrast options
 
 ![Screenshot Contrast Options](http://i.imgur.com/euGncPs.png)
 
-Installation
-------------
+## Installation
 
 #### Package Control
 
@@ -37,8 +35,7 @@ You can also install the theme manually:
 4. [Activate the theme](#how-to-activate) by adding the code below to *Preferences > Setting - User*:
 5. Restart Sublime Text
 
-How to Activate
----------------
+## How to Activate
 
 Activate the UI theme and color scheme by modifying your user preferences file, which you can find using the menu item `Sublime Text -> Preferences -> Settings - User` (<kbd>⌘</kbd><kbd>,</kbd> on Mac).
 
@@ -106,8 +103,7 @@ A variant without out any neutral / dimmed colors
 "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft) NDC.tmTheme",
 ```
 
-Configuration
---------
+## Configuration
 
 - [Accent Colors](#accent-colors)
 - [AutoComplete Spacing](#autocomplete-spacing)
@@ -143,7 +139,7 @@ Configuration
 - [PlainTasks Support](#plaintasks-support)
 - [Even More Settings...](#even-more-settings)
 
---------------------------------------------------------------------------------
+---
 
 #### Accent Colors
 
@@ -555,8 +551,7 @@ add the color scheme path to the `"color_scheme"` key in
   "gruvbox_tabs_bold": true,                  // Enable bold tabs
 ```
 
-Extras
-------
+## Extras
 
 all extras can be found in the `extras` directory of the package.
 
@@ -601,10 +596,9 @@ Activation:
 2. Add the newly renamed `bookmark.png` icon to `Sublime Text/Data/Packages/Theme - Default/`
 3. Restart Sublime Text
 
---------------------------------------------------------------------------------
+---
 
-Palette
--------
+## Palette
 
 ### Dark mode
 
@@ -614,26 +608,21 @@ Palette
 
 ![Palette Light](http://i.imgur.com/49qKyYW.png)
 
---------------------------------------------------------------------------------
+---
 
-License
--------
+## License
 
 [MIT](https://en.wikipedia.org/wiki/MIT_License)
 
-Contributing
--------
+## Contributing
 
-Contributions are always welcome. Before contributing please
-read [Contributing](https://github.com/Briles/gruvbox/blob/master/.github/CONTRIBUTING.md)
+Contributions are always welcome. Before contributing please read [Contributing](https://github.com/Briles/gruvbox/blob/master/CONTRIBUTING.md)
 
-For Other Editors
------------------
+## For Other Editors
 
- * [Atom](https://atom.io/themes/gruvbox-plus-syntax)
+* [Atom](https://atom.io/themes/gruvbox-plus-syntax)
 
-Thanks
-------
+## Thanks
 
 Thanks to:
 

@@ -1,0 +1,29 @@
+gruvbox for Sublime Text 3
+https://github.com/Briles/gruvbox
+
+### Version 2.4.0
+
+THEMES
+
+  * fixed Briles/gruvbox#24
+  * added support for the Skins package
+
+COLOR SCHEMES
+
+  * added support for the Skins package
+
+Support
+
+  * open README, CHANGELOG or CONTRIBUTING as md2html phantom
+  * report issues via menu or control palette
+
+Development
+
+  * removed unused 'uuid' npm dependency
+  * moved 'scr' to '.gulp' and updated references
+  * moved icon preferences output from 'prefs' to 'metadata' as those
+    are TextMate metadata files
+
+---
+
+Get in touch at <https://github.com/Briles/gruvbox/issues>
