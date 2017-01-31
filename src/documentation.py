@@ -34,12 +34,11 @@ class GruvboxChangelog(sublime_plugin.TextCommand):
 
     def run(self, edit):
         import mdpopups
-        text = sublime.load_resource('Packages/' + PACKAGE_NAME + '/CHANGELOG.md')
+        md = sublime.load_resource('Packages/' + PACKAGE_NAME + '/CHANGELOG.md')
         v = sublime.active_window().new_file()
         v.set_name(PACKAGE_NAME + ': CHANGELOG')
         v.settings().set('gutter', False)
-        html = '<div class="' + PACKAGE_NAME + '">%s</div>' % mdpopups.md2html(v, text)
-        mdpopups.add_phantom(v, 'changelog', sublime.Region(0), html, sublime.LAYOUT_INLINE, on_navigate=self.on_navigate)
+        mdpopups.add_phantom(v, 'changelog', sublime.Region(0), md, sublime.LAYOUT_INLINE, wrapper_class='gruvbox-docs', on_navigate=self.on_navigate)
         v.set_read_only(True)
         v.set_scratch(True)
 
@@ -58,12 +57,11 @@ class GruvboxReadme(sublime_plugin.TextCommand):
 
     def run(self, edit):
         import mdpopups
-        text = sublime.load_resource('Packages/' + PACKAGE_NAME + '/README.md')
+        md = sublime.load_resource('Packages/' + PACKAGE_NAME + '/README.md')
         v = sublime.active_window().new_file()
         v.set_name(PACKAGE_NAME + ': README')
         v.settings().set('gutter', False)
-        html = '<div class="' + PACKAGE_NAME + '">%s</div>' % mdpopups.md2html(v, text)
-        mdpopups.add_phantom(v, 'readme', sublime.Region(0), html, sublime.LAYOUT_INLINE, on_navigate=self.on_navigate)
+        mdpopups.add_phantom(v, 'readme', sublime.Region(0), md, sublime.LAYOUT_INLINE, wrapper_class='gruvbox-docs', on_navigate=self.on_navigate)
         v.set_read_only(True)
         v.set_scratch(True)
 
