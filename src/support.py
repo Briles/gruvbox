@@ -75,12 +75,11 @@ class GruvboxContributing(sublime_plugin.TextCommand):
 
     def run(self, edit):
         import mdpopups
-        text = sublime.load_resource('Packages/' + PACKAGE_NAME + '/CONTRIBUTING.md')
+        md = sublime.load_resource('Packages/' + PACKAGE_NAME + '/CONTRIBUTING.md')
         v = sublime.active_window().new_file()
         v.set_name(PACKAGE_NAME + ': CONTRIBUTING')
         v.settings().set('gutter', False)
-        html = '<div class="' + PACKAGE_NAME + '">%s</div>' % mdpopups.md2html(v, text)
-        mdpopups.add_phantom(v, 'contributing', sublime.Region(0), html, sublime.LAYOUT_INLINE, on_navigate=self.on_navigate)
+        mdpopups.add_phantom(v, 'contributing', sublime.Region(0), md, sublime.LAYOUT_INLINE, wrapper_class='gruvbox-docs', on_navigate=self.on_navigate)
         v.set_read_only(True)
         v.set_scratch(True)
 
