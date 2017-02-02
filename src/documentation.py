@@ -56,21 +56,4 @@ class GruvboxChangelog(sublime_plugin.TextCommand):
 class GruvboxReadme(sublime_plugin.TextCommand):
 
     def run(self, edit):
-        import mdpopups
-        md = sublime.load_resource('Packages/' + PACKAGE_NAME + '/README.md')
-        v = sublime.active_window().new_file()
-        v.set_name(PACKAGE_NAME + ': README')
-        v.settings().set('gutter', False)
-        mdpopups.add_phantom(v, 'readme', sublime.Region(0), md, sublime.LAYOUT_INLINE, wrapper_class='gruvbox-docs', on_navigate=self.on_navigate)
-        v.set_read_only(True)
-        v.set_scratch(True)
-
-    def is_visible(self):
-        try:
-            import mdpopups
-        except Exception as e:
-            return False
-        return (mdpopups.version() >= (1, 7, 3)) and (int(sublime.version()) >= 3118)
-
-    def on_navigate(self, href):
-        webbrowser.open_new_tab(href)
+        webbrowser.open_new_tab('https://github.com/Briles/gruvbox#readme')
