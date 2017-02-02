@@ -49,77 +49,53 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 
 *Note: Don't forget to restart Sublime Text after activating the theme.*
 
-<details>
-<summary>gruvbox Dark Hard Contrast</summary>
-
 ```json
+// gruvbox Dark Hard Contrast
 {
   "theme": "gruvbox (Dark) (Hard).sublime-theme",
   "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).tmTheme",
 }
 ```
 
-</details>
-
-<details>
-<summary>gruvbox Dark Medium Contrast</summary>
-
 ```json
+// gruvbox Dark Medium Contrast
 {
   "theme": "gruvbox (Dark) (Medium).sublime-theme",
   "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme",
 }
 ```
 
-</details>
-
-<details>
-<summary>gruvbox Dark Soft Contrast</summary>
-
 ```json
+// gruvbox Dark Soft Contrast
 {
   "theme": "gruvbox (Dark) (Soft).sublime-theme",
   "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft).tmTheme",
 }
 ```
 
-</details>
-
-<details>
-<summary>gruvbox Light Hard Contrast</summary>
-
 ```json
+// gruvbox Light Hard Contrast
 {
   "theme": "gruvbox (Light) (Hard).sublime-theme",
   "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard).tmTheme",
 }
 ```
 
-</details>
-
-<details>
-<summary>gruvbox Light Medium Contrast</summary>
-
 ```json
+// gruvbox Light Medium Contrast
 {
   "theme": "gruvbox (Light) (Medium).sublime-theme",
   "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium).tmTheme",
 }
 ```
 
-</details>
-
-<details>
-<summary>gruvbox Light Soft Contrast</summary>
-
 ```json
+// gruvbox Light Soft Contrast
 {
   "theme": "gruvbox (Light) (Soft).sublime-theme",
   "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft).tmTheme",
 }
 ```
-
-</details>
 
 ### Color Scheme Variations
 
