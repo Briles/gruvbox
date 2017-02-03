@@ -623,11 +623,11 @@ To use the color scheme with the [Plain​Tasks](https://packagecontrol.io/packa
 
 ## Extras
 
-all extras can be found in the `extras` directory of the package.
+All extras can be found in the [`extras`](extras) sub-directory of the package.
 
 ### App Icons
 
-App icons in PNG, ICO, & ICNS format are located in `extras\app-icons\`
+App icons in PNG, ICO, & ICNS format are located in [`extras/app-icons/`](extras/app-icons).
 
 ### SublimeLinter Gutter Theme
 
@@ -642,10 +642,10 @@ App icons in PNG, ICO, & ICNS format are located in `extras\app-icons\`
 
 ### Bracket Highlighter Icons
 
-![Bracket Highlighter Icons](http://i.imgur.com/8z0feh7.png)
-
 <details>
 <summary>Activation</summary>
+
+![Bracket Highlighter Icons](http://i.imgur.com/8z0feh7.png)
 
 1. Move all images in `extras/BracketHighlighter/icons/` to `Sublime Text/Data/Packages/BracketHighlighter/icons/`
 2. Restart Sublime Text
@@ -654,10 +654,10 @@ App icons in PNG, ICO, & ICNS format are located in `extras\app-icons\`
 
 ### Code Fold Icon
 
-![Code Fold Icons](http://i.imgur.com/DxZmm7a.png)
-
 <details>
 <summary>Activation</summary>
+
+![Code Fold Icons](http://i.imgur.com/DxZmm7a.png)
 
 1. Rename any `*_fold.png` in `extras` to `fold.png`
 2. Add the newly renamed `fold.png` icon to `Sublime Text/Data/Packages/Theme - Default/`
@@ -667,10 +667,10 @@ App icons in PNG, ICO, & ICNS format are located in `extras\app-icons\`
 
 ### Bookmark Icon
 
-![Bookmark Icons](http://i.imgur.com/Pf9yCR8.png)
-
 <details>
 <summary>Activation</summary>
+
+![Bookmark Icons](http://i.imgur.com/Pf9yCR8.png)
 
 1. Rename any `*_bookmark_*.png` in `extras` to `bookmark.png`
 2. Add the newly renamed `bookmark.png` icon to `Sublime Text/Data/Packages/Theme - Default/`
@@ -682,13 +682,19 @@ App icons in PNG, ICO, & ICNS format are located in `extras\app-icons\`
 
 ## Palette
 
-### Dark mode
+<details>
+<summary>Dark mode</summary>
 
 ![Palette Dark](http://i.imgur.com/wa666xg.png)
 
-### Light mode
+</details>
+
+<details>
+<summary>Light mode</summary>
 
 ![Palette Light](http://i.imgur.com/49qKyYW.png)
+
+</details>
 
 ---
 
@@ -698,7 +704,7 @@ App icons in PNG, ICO, & ICNS format are located in `extras\app-icons\`
 
 ## Contributing
 
-Contributions are always welcome. Before contributing please read [Contributing](https://github.com/Briles/gruvbox/blob/master/CONTRIBUTING.md)
+Contributions are always welcome. Before contributing please read [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## For Other Editors
 
