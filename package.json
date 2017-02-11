@@ -1,6 +1,6 @@
 {
   "name": "gruvbox-sublime",
-  "version": "2.3.1",
+  "version": "2.4.0",
   "description": "gruvbox for Vim theme ported to Sublime Text",
   "repository": {
     "type": "git",
@@ -26,13 +26,10 @@
   },
   "scripts": {
     "style": "npm run style:main",
-    "style:main": "./node_modules/.bin/jscs src/",
+    "style:main": "./node_modules/.bin/jscs .gulp/",
     "test": "npm run test:main",
     "test:main": "./node_modules/.bin/mocha ./test/test.js",
     "validate": "npm run style & npm run test",
     "cover": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha"
-  },
-  "dependencies": {
-    "uuid": "^3.0.1"
   }
 }

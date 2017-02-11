@@ -1,0 +1,37 @@
+[
+    {
+        "id": "preferences",
+        "children":
+        [
+            {
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "gruvbox",
+                        "children":
+                        [
+                            {
+                                "caption": "Readme",
+                                "command": "gruvbox_readme"
+                            },
+                            {
+                                "caption": "Changelog",
+                                "command": "gruvbox_changelog"
+                            },
+                            { "caption": "-" },
+                            {
+                                "caption": "Issues",
+                                "command": "gruvbox_issues"
+                            },
+                            {
+                                "caption": "Contributing",
+                                "command": "gruvbox_contributing"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

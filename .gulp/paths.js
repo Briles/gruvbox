@@ -8,7 +8,7 @@ var paths = (function () {
   // Paths used for writing files and navigating the package source
   const rootDirectory = path.resolve(__dirname, '../');
   const widgetsDirectory = path.join(rootDirectory, '/widgets');
-  const componentsDirectory = path.join(rootDirectory, 'src/components/');
+  const componentsDirectory = path.join(rootDirectory, '.gulp/components/');
   const optionsDirectory = `${componentsDirectory}options/`;
 
   // Internal Paths:

@@ -1,6 +1,6 @@
 'use strict';
 
-const srcPath = './src/';
+const srcPath = './.gulp/';
 
 const gulp = require('gulp');
 const exec = require('child_process').exec;

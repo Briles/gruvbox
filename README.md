@@ -2,22 +2,23 @@
 [![Package Control](https://img.shields.io/packagecontrol/dt/gruvbox.svg?style=flat-square)](https://packagecontrol.io/packages/gruvbox)
 [![Build Status](https://img.shields.io/travis/Briles/gruvbox/develop.svg?style=flat-square)](https://travis-ci.org/Briles/gruvbox)
 
-<p align="center"><img src="https://cdn.rawgit.com/Briles/gruvbox/master/assets/banner-image.svg" alt="gruvbox for Sublime Text" width="327px" height="122px"></p>
+<p align="center">
+<img src="https://cdn.rawgit.com/Briles/gruvbox/master/assets/banner-image.svg" alt="gruvbox for Sublime Text" width="327px" height="122px">
+</p>
 
 Based on [gruvbox for Vim](https://github.com/morhetz/gruvbox)
 
 ![Screenshot Dark](http://i.imgur.com/8WUkqa5.png)
 ![Screenshot Light](http://i.imgur.com/hdxzwzP.png)
 
-Contrast options
-----------------
+## Contrast options
 
 ![Screenshot Contrast Options](http://i.imgur.com/euGncPs.png)
 
-Installation
-------------
+## Installation
 
-#### Package Control
+<details>
+<summary>Package Control</summary>
 
 The easiest way to install is using [Package Control](https://packagecontrol.io/)
 
@@ -27,7 +28,10 @@ The easiest way to install is using [Package Control](https://packagecontrol.io/
 4. [Activate the theme](#how-to-activate) by adding the code below to *Preferences > Setting - User*:
 5. Restart Sublime Text
 
-#### Manual
+</details>
+
+<details>
+<summary>Manual</summary>
 
 You can also install the theme manually:
 
@@ -37,8 +41,9 @@ You can also install the theme manually:
 4. [Activate the theme](#how-to-activate) by adding the code below to *Preferences > Setting - User*:
 5. Restart Sublime Text
 
-How to Activate
----------------
+</details>
+
+## How to Activate
 
 Activate the UI theme and color scheme by modifying your user preferences file, which you can find using the menu item `Sublime Text -> Preferences -> Settings - User` (<kbd>⌘</kbd><kbd>,</kbd> on Mac).
 
@@ -50,36 +55,41 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
   "theme": "gruvbox (Dark) (Hard).sublime-theme",
   "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).tmTheme",
 }
+```
 
-
+```json
 // gruvbox Dark Medium Contrast
 {
   "theme": "gruvbox (Dark) (Medium).sublime-theme",
   "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme",
 }
+```
 
-
+```json
 // gruvbox Dark Soft Contrast
 {
   "theme": "gruvbox (Dark) (Soft).sublime-theme",
   "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft).tmTheme",
 }
+```
 
-
+```json
 // gruvbox Light Hard Contrast
 {
   "theme": "gruvbox (Light) (Hard).sublime-theme",
   "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard).tmTheme",
 }
+```
 
-
+```json
 // gruvbox Light Medium Contrast
 {
   "theme": "gruvbox (Light) (Medium).sublime-theme",
   "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium).tmTheme",
 }
+```
 
-
+```json
 // gruvbox Light Soft Contrast
 {
   "theme": "gruvbox (Light) (Soft).sublime-theme",
@@ -106,46 +116,10 @@ A variant without out any neutral / dimmed colors
 "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft) NDC.tmTheme",
 ```
 
-Configuration
---------
+## Configuration
 
-- [Accent Colors](#accent-colors)
-- [AutoComplete Spacing](#autocomplete-spacing)
-- [AutoComplete Border](#autocomplete-border)
-- [Sideline Selected AutoComplete Row](#sideline-selected-autocomplete-row)
-- [Disable Selected AutoComplete Row Highlight](#disable-selected-autocomplete-row-highlight)
-- [Sidebar Spacing](#sidebar-spacing)
-- [Sidebar Font Sizes](#sidebar-font-sizes)
-- [Command Palette Spacing](#command-palette-spacing)
-- [Sideline Selected Command Palette Row](#sideline-selected-command-palette-row)
-- [Disable Selected Command Palette Row Highlight](#disable-selected-command-palette-row-highlight)
-- [Statusbar Sizes](#statusbar-sizes)
-- [Statusbar Button Widths](#statusbar-button-widths)
-- [Statusbar Font Sizes](#statusbar-font-sizes)
-- [Tab Sizes](#tab-sizes)
-- [Tab Font Sizes](#tab-font-sizes)
-- [Autocollapsing Tab Bar](#autocollapsing-tab-bar)
-- [Underline Modified Tabs](#underline-modified-tabs)
-- [Underline Active Tab](#underline-active-tab)
-- [Find, Replace, and Console Sizes](#find-replace-and-console-sizes)
-- [Scrollbar Widths](#scrollbar-widths)
-- [Button Font Sizes](#button-font-sizes)
-- [Disable/Enable Borders](#disableenable-borders)
-- [Alternate Folder Icons](#alternate-folder-icons)
-    - [Square Folder Icons](#square-folder-icons)
-    - [Circle Folder Icons](#circle-folder-icons)
-    - [Plus/Minus Folder Icons](#plusminus-folder-icons)
-    - [Spacegray Folder Icons](#spacegray-folder-icons)
-- [Alternate Icon Sets](#alternate-icon-sets)
-    - [Midstroke Icon Set](#midstroke)
-    - [Thick Icon Set](#thick)
-    - [Spacegray Icon Set](#spacegray)
-- [PlainTasks Support](#plaintasks-support)
-- [Even More Settings...](#even-more-settings)
-
---------------------------------------------------------------------------------
-
-#### Accent Colors
+<details>
+<summary>Accent Colors</summary>
 
 ![Accent Colors](http://i.imgur.com/d0o9auc.png)
 
@@ -164,7 +138,10 @@ Accent colors affect icons and certain text.
   "gruvbox_accent_neutral": true, // Use brightness-mode-neutral accent color
 ```
 
-#### AutoComplete Spacing
+</details>
+
+<details>
+<summary>AutoComplete Spacing</summary>
 
 Change the space between autocomplete rows
 
@@ -177,7 +154,10 @@ Change the space between autocomplete rows
   "gruvbox_autocomplete_cozy": true,         //  v  10
 ```
 
-#### AutoComplete Border
+</details>
+
+<details>
+<summary>AutoComplete Border</summary>
 
 Add a border around the autocomplete popup
 
@@ -186,7 +166,10 @@ Add a border around the autocomplete popup
   "gruvbox_autocomplete_border_thick": true,
 ```
 
-#### Sideline Selected AutoComplete Row
+</details>
+
+<details>
+<summary>Sideline Selected AutoComplete Row</summary>
 
 Add a border to the left of the selected autocomplete row
 
@@ -198,7 +181,10 @@ All thicknesses require `gruvbox_sideline_autocomplete_row` to be `true`.
   "gruvbox_sideline_autocomplete_row_thickest": true,  //  v  3
 ```
 
-#### Disable Selected AutoComplete Row Highlight
+</details>
+
+<details>
+<summary>Disable Selected AutoComplete Row Highlight</summary>
 
 Remove the highlight from the selected autocomplete row.
 
@@ -206,7 +192,10 @@ Remove the highlight from the selected autocomplete row.
   "gruvbox_disable_autocomplete_row_highlight": true,
 ```
 
-#### Sidebar Spacing
+</details>
+
+<details>
+<summary>Sidebar Spacing</summary>
 
 Change the space between sidebar tree rows
 
@@ -219,7 +208,10 @@ Change the space between sidebar tree rows
   "gruvbox_sidebar_cramped": true,      //  v  9
 ```
 
-#### Sidebar Font Sizes
+</details>
+
+<details>
+<summary>Sidebar Font Sizes</summary>
 
 Change the font size of the sidebar labels
 
@@ -235,7 +227,10 @@ Change the font size of the sidebar labels
   "gruvbox_sidebar_font_size_16": true,  //  v  16
 ```
 
-#### Command Palette Spacing
+</details>
+
+<details>
+<summary>Command Palette Spacing</summary>
 
 Change the space between command palette rows
 
@@ -248,7 +243,10 @@ Change the space between command palette rows
   "gruvbox_command_palette_cramped": true,      //  v  16
 ```
 
-#### Sideline Selected Command Palette Row
+</details>
+
+<details>
+<summary>Sideline Selected Command Palette Row</summary>
 
 Add a border to the left of the selected Command Palette row
 
@@ -260,7 +258,10 @@ All thicknesses require `gruvbox_sideline_command_palette_row` to be `true`.
   "gruvbox_sideline_command_palette_row_thickest": true,  //  v  3
 ```
 
-#### Disable Selected Command Palette Row Highlight
+</details>
+
+<details>
+<summary>Disable Selected Command Palette Row Highlight</summary>
 
 Remove the highlight from the selected Command Palette row.
 
@@ -268,7 +269,10 @@ Remove the highlight from the selected Command Palette row.
   "gruvbox_disable_command_palette_row_highlight": true,
 ```
 
-#### Statusbar Sizes
+</details>
+
+<details>
+<summary>Statusbar Sizes</summary>
 
 Change the height of the statusbar
 
@@ -283,7 +287,10 @@ Change the height of the statusbar
   "gruvbox_statusbar_xxl": true,  //  v  50
 ```
 
-#### Statusbar Button Widths
+</details>
+
+<details>
+<summary>Statusbar Button Widths</summary>
 
 Change the minimum width of the buttons in the statusbar
 
@@ -298,7 +305,10 @@ Change the minimum width of the buttons in the statusbar
   "gruvbox_statusbar_button_xxl": true,  //  v  105
 ```
 
-#### Statusbar Font Sizes
+</details>
+
+<details>
+<summary>Statusbar Font Sizes</summary>
 
 Change the font size of the status bar labels
 
@@ -312,7 +322,10 @@ Change the font size of the status bar labels
   "gruvbox_statusbar_font_size_16": true,  //  v  16
 ```
 
-#### Tab Sizes
+</details>
+
+<details>
+<summary>Tab Sizes</summary>
 
 Change the height of the tabs
 
@@ -327,13 +340,14 @@ Change the height of the tabs
   "gruvbox_tabs_xxl": true,  //  v  69
 ```
 
-#### Tab Font Sizes
+</details>
+
+<details>
+<summary>Tab Font Sizes</summary>
 
 Change the font size of the tabs
 
-*Font sizes above 11 may get cut off. This is a [known issue][] with Sublime Text.*
-
-   [known issue]: https://forum.sublimetext.com/t/increaseing-font-size-of-file-tabs-cuts-off-the-font/7009
+*Font sizes above 11 may get cut off. This is a [known issue](https://forum.sublimetext.com/t/increaseing-font-size-of-file-tabs-cuts-off-the-font/7009) with Sublime Text.*
 
 ```json
   "gruvbox_tabs_font_size_7": true,   //  v  7
@@ -347,7 +361,10 @@ Change the font size of the tabs
   "gruvbox_tabs_font_size_15": true,  //  v  15
 ```
 
-#### Autocollapsing Tab Bar
+</details>
+
+<details>
+<summary>Autocollapsing Tab Bar</summary>
 
 Autocollapse the tabs when not in use
 
@@ -362,7 +379,10 @@ Autocollapse the tabs when not in use
   "gruvbox_autocollapse_tabs_trigger_6": true,  //  v  6
 ```
 
-#### Underline Modified Tabs
+</details>
+
+<details>
+<summary>Underline Modified Tabs</summary>
 
 Underline modified tabs with the current accent color
 
@@ -373,7 +393,10 @@ All thicknesses require `gruvbox_underline_modified_tabs` to be `true`.
   "gruvbox_underline_modified_tabs_thick": true,  //  v  2
 ```
 
-#### Underline Active Tab
+</details>
+
+<details>
+<summary>Underline Active Tab</summary>
 
 Underline the active tab with the current accent color
 
@@ -385,7 +408,10 @@ All thicknesses require `gruvbox_underline_active_tab` to be `true`.
   "gruvbox_underline_active_tab_thicker": true,  //  v  3
 ```
 
-#### Find, Replace, and Console Sizes
+</details>
+
+<details>
+<summary>Find, Replace, and Console Sizes</summary>
 
 Adjust the top & bottom margins of the Find, Replace, and Console panels
 
@@ -399,7 +425,10 @@ Adjust the top & bottom margins of the Find, Replace, and Console panels
   "gruvbox_panel_xxl": true,  //  v  17
 ```
 
-#### Scrollbar Widths
+</details>
+
+<details>
+<summary>Scrollbar Widths</summary>
 
 Adjust the width of the scrollbars
 
@@ -412,7 +441,10 @@ Adjust the width of the scrollbars
   "gruvbox_scrollbar_width_xl": true,  //  v  20
 ```
 
-#### Button Font Sizes
+</details>
+
+<details>
+<summary>Button Font Sizes</summary>
 
 Adjust the font size of the buttons
 
@@ -426,7 +458,10 @@ Adjust the font size of the buttons
   "gruvbox_buttons_font_size_16": true,  //  v  16
 ```
 
-#### Disable/Enable Borders
+</details>
+
+<details>
+<summary>Disable/Enable Borders</summary>
 
 ```json
   "gruvbox_disable_borders": true,                     // Disable all borders
@@ -437,9 +472,12 @@ Adjust the font size of the buttons
   "gruvbox_disable_command_palette_row_border": true,  // Disable Command Palette row borders
 ```
 
-#### Alternate Folder Icons
+</details>
 
-##### Larger Default Folder Icons
+### Alternate Folder Icons
+
+<details>
+<summary>Larger Default Folder Icons</summary>
 
 Use larger default folder icons in the sidebar
 
@@ -447,7 +485,10 @@ Use larger default folder icons in the sidebar
 "gruvbox_folder_icons_large": true,
 ```
 
-##### Square Folder Icons
+</details>
+
+<details>
+<summary>Square Folder Icons</summary>
 
 ![Square Folder Icons](http://i.imgur.com/ojqgVIv.png)
 
@@ -457,7 +498,10 @@ Use square folder icons in the sidebar
 "gruvbox_folder_icons_square": true,
 ```
 
-##### Circle Folder Icons
+</details>
+
+<details>
+<summary>Circle Folder Icons</summary>
 
 ![Circle Folder Icons](http://i.imgur.com/KgAedvC.png)
 
@@ -467,7 +511,10 @@ Use 'circle' folder icons in the sidebar
 "gruvbox_folder_icons_circle": true,
 ```
 
-##### Plus/Minus Folder Icons
+</details>
+
+<details>
+<summary>Plus/Minus Folder Icons</summary>
 
 ![Plus Minus Folder Icons](http://i.imgur.com/bOzgz16.png)
 
@@ -477,7 +524,10 @@ Use 'plus/minus' folder icons in the sidebar
 "gruvbox_folder_icons_plus_minus": true,
 ```
 
-##### Spacegray Folder Icons
+</details>
+
+<details>
+<summary>Spacegray Folder Icons</summary>
 
 Use spacegray-like folder icons in the sidebar
 
@@ -485,9 +535,12 @@ Use spacegray-like folder icons in the sidebar
 "gruvbox_folder_icons_spacegray": true,
 ```
 
-#### Alternate Icon Sets
+</details>
 
-##### Midstroke
+### Alternate Icon Sets
+
+<details>
+<summary>Midstroke</summary>
 
 ![Midstroke Icon Set](http://i.imgur.com/dhktw4M.png)
 
@@ -497,7 +550,10 @@ Use icons with a 1.5x thicker stroke
 "gruvbox_iconset_midstroke": true,
 ```
 
-##### Thick
+</details>
+
+<details>
+<summary>Thick</summary>
 
 ![Thick Icon Set](http://i.imgur.com/Z9uIRPH.png)
 
@@ -507,7 +563,10 @@ Use icons with a 2x thicker stroke
 "gruvbox_iconset_thick": true,
 ```
 
-##### Spacegray
+</details>
+
+<details>
+<summary>Spacegray</summary>
 
 ![Spacegray Icon Set](http://i.imgur.com/SiL6f32.png)
 
@@ -517,16 +576,16 @@ Use spacegray-like icons
 "gruvbox_iconset_spacegray": true,
 ```
 
-#### PlainTasks Support
+</details>
 
-To use the color scheme with the
-[Plain​Tasks](https://packagecontrol.io/packages/PlainTasks) plugin,
-add the color scheme path to the `"color_scheme"` key in
- `Preferences > Package Settings > PlainTasks > Settings - User`
- like so:
+### PlainTasks Support
+
+<details>
+<summary>PlainTasks Support</summary>
+
+To use the color scheme with the [Plain​Tasks](https://packagecontrol.io/packages/PlainTasks) plugin, add the color scheme path to the `"color_scheme"` key in `Preferences > Package Settings > PlainTasks > Settings - User` like so:
 
 ```json
-
 // PlainTasks.sublime-settings
 
 {
@@ -535,7 +594,12 @@ add the color scheme path to the `"color_scheme"` key in
 
 ```
 
-#### Even More Settings...
+</details>
+
+### Even More Settings...
+
+<details>
+<summary>Even More Settings...</summary>
 
 ```json
   "gruvbox_animate_icons": true,              // Enable icon animations
@@ -555,85 +619,98 @@ add the color scheme path to the `"color_scheme"` key in
   "gruvbox_tabs_bold": true,                  // Enable bold tabs
 ```
 
-Extras
-------
+</details>
 
-all extras can be found in the `extras` directory of the package.
+## Extras
+
+All extras can be found in the [`extras`](extras) sub-directory of the package.
 
 ### App Icons
 
-App icons in PNG, ICO, & ICNS format are located in `extras\app-icons\`
+App icons in PNG, ICO, & ICNS format are located in [`extras/app-icons/`](extras/app-icons).
 
 ### SublimeLinter Gutter Theme
 
-Activation:
+<details>
+<summary>Activation</summary>
 
 1. Add the `gruvbox` directory from `extras/sublimelinter gutter-themes/` to `Sublime Text/Data/Packages/SublimeLinter/gutter-themes/`
 2. Set `gruvbox` as the gutter theme by choosing `SublimeLinter: Choose Gutter Theme` from the command palette and selecting `gruvbox` *or* by changing `"gutter_theme"` to `"Packages/SublimeLinter/gutter-themes/gruvbox/gruvbox.gutter-theme"` in `SublimeLinter.sublime-settings`
 3. Restart Sublime Text
 
+</details>
+
 ### Bracket Highlighter Icons
 
-![Bracket Highlighter Icons](http://i.imgur.com/8z0feh7.png)
+<details>
+<summary>Activation</summary>
 
-Activation:
+![Bracket Highlighter Icons](http://i.imgur.com/8z0feh7.png)
 
 1. Move all images in `extras/BracketHighlighter/icons/` to `Sublime Text/Data/Packages/BracketHighlighter/icons/`
 2. Restart Sublime Text
 
+</details>
+
 ### Code Fold Icon
 
-![Code Fold Icons](http://i.imgur.com/DxZmm7a.png)
+<details>
+<summary>Activation</summary>
 
-Activation:
+![Code Fold Icons](http://i.imgur.com/DxZmm7a.png)
 
 1. Rename any `*_fold.png` in `extras` to `fold.png`
 2. Add the newly renamed `fold.png` icon to `Sublime Text/Data/Packages/Theme - Default/`
 2. Restart Sublime Text
 
+</details>
+
 ### Bookmark Icon
 
-![Bookmark Icons](http://i.imgur.com/Pf9yCR8.png)
+<details>
+<summary>Activation</summary>
 
-Activation:
+![Bookmark Icons](http://i.imgur.com/Pf9yCR8.png)
 
 1. Rename any `*_bookmark_*.png` in `extras` to `bookmark.png`
 2. Add the newly renamed `bookmark.png` icon to `Sublime Text/Data/Packages/Theme - Default/`
 3. Restart Sublime Text
 
---------------------------------------------------------------------------------
+</details>
 
-Palette
--------
+---
 
-### Dark mode
+## Palette
+
+<details>
+<summary>Dark mode</summary>
 
 ![Palette Dark](http://i.imgur.com/wa666xg.png)
 
-### Light mode
+</details>
+
+<details>
+<summary>Light mode</summary>
 
 ![Palette Light](http://i.imgur.com/49qKyYW.png)
 
---------------------------------------------------------------------------------
+</details>
 
-License
--------
+---
+
+## License
 
 [MIT](https://en.wikipedia.org/wiki/MIT_License)
 
-Contributing
--------
+## Contributing
 
-Contributions are always welcome. Before contributing please
-read [Contributing](https://github.com/Briles/gruvbox/blob/master/.github/CONTRIBUTING.md)
+Contributions are always welcome. Before contributing please read [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-For Other Editors
------------------
+## For Other Editors
 
- * [Atom](https://atom.io/themes/gruvbox-plus-syntax)
+* [Atom](https://atom.io/themes/gruvbox-plus-syntax)
 
-Thanks
-------
+## Thanks
 
 Thanks to:
 

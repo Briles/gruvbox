@@ -1,9 +1,0 @@
-gruvbox for Sublime Text 3
-https://github.com/Briles/gruvbox
-
-Version 1.4.0
---------------------------------------------------------------------------------
-
-  THEMES
-
-    • Added option to use opposite mode's accent color ("gruvbox_accent_opposite": true,)

@@ -1,0 +1,18 @@
+[
+    {
+        "caption": "gruvbox: Readme",
+        "command": "gruvbox_readme"
+    },
+    {
+        "caption": "gruvbox: Changelog",
+        "command": "gruvbox_changelog"
+    },
+    {
+        "caption": "gruvbox: Issues",
+        "command": "gruvbox_issues"
+    },
+    {
+        "caption": "gruvbox: Contributing",
+        "command": "gruvbox_contributing"
+    }
+]
