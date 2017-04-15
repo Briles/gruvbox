@@ -114,6 +114,14 @@ module.exports = {
   sidebarFontSizeXl: 'gruvbox_sidebar_font_size_15',
   sidebarFontSizeXxl: 'gruvbox_sidebar_font_size_16',
 
+  // Sidebar Indentation
+  sidebarIndentXxs: 'gruvbox_sidebar_indent_xxs',
+  sidebarIndentXs: 'gruvbox_sidebar_indent_xs',
+  sidebarIndentS: 'gruvbox_sidebar_indent_s',
+  sidebarIndentL: 'gruvbox_sidebar_indent_l',
+  sidebarIndentXl: 'gruvbox_sidebar_indent_xl',
+  sidebarIndentXxl: 'gruvbox_sidebar_indent_xxl',
+
   // Sidebar Row Padding
   sidebarSpacingXs: 'gruvbox_sidebar_cramped',
   sidebarSpacingS: 'gruvbox_sidebar_compact',
