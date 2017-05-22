@@ -211,6 +211,23 @@ Change the space between sidebar tree rows
 </details>
 
 <details>
+<summary>Sidebar Indent</summary>
+
+Change the indent of sidebar tree rows
+
+```json
+  "gruvbox_sidebar_indent_xxs": true,  //  v  4
+  "gruvbox_sidebar_indent_xs": true,   //  |  8
+  "gruvbox_sidebar_indent_s": true,    //  |  12
+                                       //  |  16 (Default)
+  "gruvbox_sidebar_indent_l": true,    //  |  20
+  "gruvbox_sidebar_indent_xl": true,   //  |  24
+  "gruvbox_sidebar_indent_xxl": true,  //  v  28
+```
+
+</details>
+
+<details>
 <summary>Sidebar Font Sizes</summary>
 
 Change the font size of the sidebar labels

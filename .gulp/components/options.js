@@ -11,6 +11,7 @@ module.exports = function (values, externalPaths) {
     'status_bar_font_size',
     'status_bar_button_size',
     'sidebar_padding',
+    'sidebar_indent',
     'autocomplete_padding',
     'sideline_selected_autocomplete_row',
     'command_palette_padding',

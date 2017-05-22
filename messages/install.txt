@@ -168,6 +168,22 @@ gruvbox Light - Soft Contrast:
 --------------------------------------------------------------------------------
 
 
+  Sidebar Indent
+
+        Change the indent of sidebar tree rows
+
+    "gruvbox_sidebar_indent_xxs": true,  //  v  4
+    "gruvbox_sidebar_indent_xs": true,   //  |  8
+    "gruvbox_sidebar_indent_s": true,    //  |  12
+                                         //  |  16 (Default)
+    "gruvbox_sidebar_indent_l": true,    //  |  20
+    "gruvbox_sidebar_indent_xl": true,   //  |  24
+    "gruvbox_sidebar_indent_xxl": true,  //  v  28
+
+
+--------------------------------------------------------------------------------
+
+
   Sidebar Font Sizes
 
         Change the font size of the sidebar labels
