@@ -1,28 +1,19 @@
 gruvbox for Sublime Text 3
 https://github.com/Briles/gruvbox
 
-### Version 2.4.0
+### Version 2.4.1
 
 THEMES
 
-  * fixed Briles/gruvbox#24
-  * added support for the Skins package
+  * Added setting for changing the amount of indentation for sidebar tree rows
 
-COLOR SCHEMES
-
-  * added support for the Skins package
-
-Support
-
-  * open README, CHANGELOG or CONTRIBUTING as md2html phantom
-  * report issues via menu or control palette
-
-Development
-
-  * removed unused 'uuid' npm dependency
-  * moved 'scr' to '.gulp' and updated references
-  * moved icon preferences output from 'prefs' to 'metadata' as those
-    are TextMate metadata files
+      "gruvbox_sidebar_indent_xxs": true,  //  v  4
+      "gruvbox_sidebar_indent_xs": true,   //  |  8
+      "gruvbox_sidebar_indent_s": true,    //  |  12
+                                           //  |  16 (Default)
+      "gruvbox_sidebar_indent_l": true,    //  |  20
+      "gruvbox_sidebar_indent_xl": true,   //  |  24
+      "gruvbox_sidebar_indent_xxl": true,  //  v  28
 
 ---
 

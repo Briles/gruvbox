@@ -2397,6 +2397,48 @@
     ]
   },
   {
+    "class": "sidebar_tree",
+    "settings": [
+      "gruvbox_sidebar_indent_xxs"
+    ],
+    "indent": 4
+  },
+  {
+    "class": "sidebar_tree",
+    "settings": [
+      "gruvbox_sidebar_indent_xs"
+    ],
+    "indent": 8
+  },
+  {
+    "class": "sidebar_tree",
+    "settings": [
+      "gruvbox_sidebar_indent_s"
+    ],
+    "indent": 12
+  },
+  {
+    "class": "sidebar_tree",
+    "settings": [
+      "gruvbox_sidebar_indent_l"
+    ],
+    "indent": 20
+  },
+  {
+    "class": "sidebar_tree",
+    "settings": [
+      "gruvbox_sidebar_indent_xl"
+    ],
+    "indent": 24
+  },
+  {
+    "class": "sidebar_tree",
+    "settings": [
+      "gruvbox_sidebar_indent_xxl"
+    ],
+    "indent": 28
+  },
+  {
     "class": "auto_complete",
     "settings": [
       "gruvbox_autocomplete_cramped"
