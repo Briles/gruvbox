@@ -1,4 +1,9 @@
 [
+    
+    {
+        "caption": "gruvbox: Select Theme",
+        "command": "gruvbox_select"
+    },
     {
         "caption": "gruvbox: Readme",
         "command": "gruvbox_readme"
