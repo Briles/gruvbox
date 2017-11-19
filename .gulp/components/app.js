@@ -4,14 +4,17 @@ module.exports = function (values) {
   const c = values.colors;
 
   return [
-
+    {
+      class: "title_bar",
+      fg: c.gs.fg1,
+      bg: c.container,
+    },
     {
       class: 'sheet_container_control',
 
       'layer0.tint': c.background,
       'layer0.opacity': 1,
     },
-
     // Pane
     {
       class: 'grid_layout_control',

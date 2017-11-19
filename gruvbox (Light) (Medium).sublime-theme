@@ -1,5 +1,18 @@
 [
   {
+    "class": "title_bar",
+    "fg": [
+      57,
+      57,
+      57
+    ],
+    "bg": [
+      249,
+      235,
+      175
+    ]
+  },
+  {
     "class": "sheet_container_control",
     "layer0.tint": [
       251,
