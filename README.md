@@ -247,6 +247,18 @@ Change the font size of the sidebar labels
 </details>
 
 <details>
+<summary>Bold Sidebar Labels</summary>
+
+Toggle bold fonts for sidebar labels
+
+```json
+  "gruvbox_sidebar_heading_bold": true,
+  "gruvbox_sidebar_label_bold": true,
+```
+
+</details>
+
+<details>
 <summary>Command Palette Spacing</summary>
 
 Change the space between command palette rows

@@ -10,6 +10,7 @@ module.exports = function (values, externalPaths) {
     'status_bar_size',
     'status_bar_font_size',
     'status_bar_button_size',
+    'sidebar_bold',
     'sidebar_padding',
     'sidebar_indent',
     'autocomplete_padding',

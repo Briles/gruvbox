@@ -197,6 +197,15 @@ gruvbox Light - Soft Contrast:
     "gruvbox_sidebar_font_size_15": true,  //  |  15
     "gruvbox_sidebar_font_size_16": true,  //  v  16
 
+--------------------------------------------------------------------------------
+
+
+  Bold Sidebar Labels
+
+        Toggle bold fonts for sidebar labels
+
+    "gruvbox_sidebar_heading_bold": true,
+    "gruvbox_sidebar_label_bold": true,
 
 --------------------------------------------------------------------------------
 

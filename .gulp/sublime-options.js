@@ -106,6 +106,10 @@ module.exports = {
   scrollbarWidthL: 'gruvbox_scrollbar_width_l',
   scrollbarWidthXl: 'gruvbox_scrollbar_width_xl',
 
+  // Bold Sidebar labels
+  sidebarHeadingBold: 'gruvbox_sidebar_heading_bold',
+  sidebarLabelBold: 'gruvbox_sidebar_label_bold',
+
   // Sidebar Label Font Size
   sidebarFontSizeXxs: 'gruvbox_sidebar_font_size_10',
   sidebarFontSizeXs: 'gruvbox_sidebar_font_size_12',
