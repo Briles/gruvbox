@@ -1,19 +1,17 @@
 gruvbox for Sublime Text 3
 https://github.com/Briles/gruvbox
 
-### Version 2.4.1
+### Version 2.4.2
 
 THEMES
 
-  * Added setting for changing the amount of indentation for sidebar tree rows
+  * Added setting for making the sidebar headers and labels bold
 
-      "gruvbox_sidebar_indent_xxs": true,  //  v  4
-      "gruvbox_sidebar_indent_xs": true,   //  |  8
-      "gruvbox_sidebar_indent_s": true,    //  |  12
-                                           //  |  16 (Default)
-      "gruvbox_sidebar_indent_l": true,    //  |  20
-      "gruvbox_sidebar_indent_xl": true,   //  |  24
-      "gruvbox_sidebar_indent_xxl": true,  //  v  28
+      "gruvbox_sidebar_heading_bold": true,
+      "gruvbox_sidebar_label_bold": true,
+
+  * Added color to the title bar
+  * gruvbox can now be activated from the command palette
 
 ---
 

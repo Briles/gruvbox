@@ -2370,6 +2370,20 @@
     ]
   },
   {
+    "class": "sidebar_heading",
+    "settings": [
+      "gruvbox_sidebar_heading_bold"
+    ],
+    "font.bold": true
+  },
+  {
+    "class": "sidebar_label",
+    "settings": [
+      "gruvbox_sidebar_label_bold"
+    ],
+    "font.bold": true
+  },
+  {
     "class": "sidebar_tree",
     "settings": [
       "gruvbox_sidebar_cramped"
