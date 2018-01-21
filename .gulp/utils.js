@@ -53,7 +53,7 @@
    * @return {string} forward-slashed path
    */
   var slashJoin = function () {
-    return slash(path.join.apply(null, Array.prototype.slice.call(arguments)));
+    return slash(path.normalize(path.join.apply(null, Array.prototype.slice.call(arguments))));
   };
 
   /**
