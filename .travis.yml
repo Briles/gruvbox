@@ -1,13 +1,13 @@
 language: node_js
 sudo: false
 node_js:
-  - "5"
+  - "8"
 git:
   depth: 10
 branches:
   only:
     - develop
 install:
-  - npm install jscs
+  - npm install
 script:
-  - npm run style
+  - npm run validate
