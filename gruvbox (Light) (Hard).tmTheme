@@ -64,10 +64,7 @@
             html {
               background-color: #f6efc1;
               color: #1d2021;
-            }
-
-            body {
-              font-size: 1.4em;
+              padding: 12px;
             }
 
             a {
@@ -78,12 +75,25 @@
               color: #9d0006;
             }
 
-            .success, .inserted {
+            .success, .inserted, .name {
               color: #79740e;
             }
 
             .warning, .modified {
               color: #b57614;
+            }
+
+            .type {
+              color: #b57614;
+              font-style: italic;
+            }
+
+            .param {
+              color: #1d2021;
+            }
+
+            .current {
+              text-decoration: underline;
             }
           </string>
         </dict>

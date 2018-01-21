@@ -37,10 +37,7 @@ module.exports = function (values) {
             html {
               background-color: ${c.container};
               color: ${c.foreground};
-            }
-
-            body {
-              font-size: 1.4em;
+              padding: 12px;
             }
 
             a {
@@ -51,12 +48,25 @@ module.exports = function (values) {
               color: ${c.bnp.red};
             }
 
-            .success, .inserted {
+            .success, .inserted, .name {
               color: ${c.bnp.green};
             }
 
             .warning, .modified {
               color: ${c.bnp.yellow};
+            }
+
+            .type {
+              color: ${c.bnp.yellow};
+              font-style: italic;
+            }
+
+            .param {
+              color: ${c.foreground};
+            }
+
+            .current {
+              text-decoration: underline;
             }
           `,
         },
