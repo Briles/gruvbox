@@ -5,7 +5,7 @@ module.exports = function (values) {
 
   return [
     {
-      class: "title_bar",
+      class: 'title_bar',
       fg: c.gs.fg1,
       bg: c.container,
     },
@@ -15,6 +15,7 @@ module.exports = function (values) {
       'layer0.tint': c.background,
       'layer0.opacity': 1,
     },
+
     // Pane
     {
       class: 'grid_layout_control',
