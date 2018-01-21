@@ -466,6 +466,16 @@ module.exports = function (values) {
       },
 
       {
+        name: 'JSON Keys',
+        scope: [
+          'meta.structure.dictionary.key.json string',
+        ],
+        settings: {
+          foreground: c.bnp.blue,
+        },
+      },
+
+      {
         name: 'Regular Expressions Text',
         scope: [
           'string.regexp',

@@ -411,6 +411,17 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>JSON Keys</string>
+        <key>scope</key>
+        <string>meta.structure.dictionary.key.json string</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#076678</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>Regular Expressions Text</string>
         <key>scope</key>
         <string>source.regexp, string.regexp</string>
