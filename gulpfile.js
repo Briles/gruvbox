@@ -1,13 +1,10 @@
-'use strict';
+const gulp = require('gulp');
+const exec = require('child_process').exec;
 
 const srcPath = './.gulp/';
 
-const gulp = require('gulp');
-const exec = require('child_process').exec;
-const runSequence = require('run-sequence');
-
 function execNode(command) {
-  exec(`node ${command}`, function (err, stdout, stderr) {
+  return exec(`node ${command}`, function (err, stdout, stderr) {
     if (stdout) {
       console.log(stdout);
     }
@@ -19,39 +16,37 @@ function execNode(command) {
 }
 
 gulp.task('build_themes', function () {
-  execNode(`${srcPath}build.js -t`);
+  return execNode(`${srcPath}build.js -t`);
 });
 
 gulp.task('build_schemes', function () {
-  execNode(`${srcPath}build.js -s`);
+  return execNode(`${srcPath}build.js -s`);
 });
 
 gulp.task('build_themes_min', function () {
-  execNode(`${srcPath}build.js -t -m`);
+  return execNode(`${srcPath}build.js -t -m`);
 });
 
 gulp.task('build_schemes_min', function () {
-  execNode(`${srcPath}build.js -s -m`);
+  return execNode(`${srcPath}build.js -s -m`);
 });
 
 gulp.task('build_widgets', function () {
-  execNode(`${srcPath}build.js -w`);
+  return execNode(`${srcPath}build.js -w`);
 });
 
 gulp.task('build_all', function () {
-  execNode(`${srcPath}build.js`);
+  return execNode(`${srcPath}build.js`);
 });
 
 gulp.task('build_icons', function () {
-  execNode(`${srcPath}icons.js`);
+  return execNode(`${srcPath}icons.js`);
 });
 
-gulp.task('build', function (callback) {
-  runSequence('build_all', 'build_icons', callback);
-});
+gulp.task('build', gulp.series('build_all', 'build_icons'));
 
 gulp.task('watch', function () {
-  var themeFiles = [
+  const themeFiles = [
     `${srcPath}components.js`,
     `${srcPath}components/*.js`,
     `${srcPath}options.js`,
@@ -61,12 +56,12 @@ gulp.task('watch', function () {
     `${srcPath}mixins.js`,
   ];
 
-  var schemeFiles = [
+  const schemeFiles = [
     `${srcPath}scheme.js`,
     `${srcPath}variants.js`,
   ];
 
-  var widgetFiles = [
+  const widgetFiles = [
     `${srcPath}options.js`,
     `${srcPath}paths.js`,
     `${srcPath}scheme.js`,
@@ -74,30 +69,25 @@ gulp.task('watch', function () {
     `${srcPath}widget.js`,
   ];
 
-  var iconFiles = [
+  const iconFiles = [
     `${srcPath}icons.js`,
     `${srcPath}icons/*.json`,
     `${srcPath}utils.js`,
   ];
 
-  var commonFiles = [
+  const commonFiles = [
     `${srcPath}build.js`,
     `${srcPath}palette.js`,
     `${srcPath}tinycolor.js`,
     `${srcPath}utils.js`,
   ];
 
-  gulp.watch(commonFiles, ['build_all']);
-  gulp.watch(iconFiles, ['build_icons']);
-  gulp.watch(schemeFiles, ['build_schemes']);
-  gulp.watch(themeFiles, ['build_themes']);
-  gulp.watch(widgetFiles, ['build_widgets']);
+  gulp.watch(commonFiles, gulp.series('build_all'));
+  gulp.watch(iconFiles, gulp.series('build_icons'));
+  gulp.watch(schemeFiles, gulp.series('build_schemes'));
+  gulp.watch(themeFiles, gulp.series('build_themes'));
+  gulp.watch(widgetFiles, gulp.series('build_widgets'));
 });
 
-gulp.task('default', function () {
-  runSequence('watch');
-});
-
-gulp.task('build_min', function () {
-  runSequence('build_themes_min', 'build_schemes_min');
-});
+gulp.task('default', gulp.series('watch'));
+gulp.task('build_min', gulp.series('build_themes_min', 'build_schemes_min'));
