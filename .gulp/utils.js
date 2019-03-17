@@ -15,7 +15,7 @@
    * @return {string}        the joined array
    */
   var joinScopes = function (scopes) {
-    return _(scopes).sort().sortedUniq().join(', ');
+    return _(scopes).sort().sortedUniq().join(',');
   };
 
   /**
@@ -119,37 +119,34 @@
   var minifyScheme = function (scheme) {
     var buckets = {};
     var styleProps = [
-      'foreground',
       'background',
+      'font_style',
+      'foreground',
       'foreground_adjust',
       'selection_foreground',
-      'font_style',
     ];
 
     scheme.rules.forEach(function (rule) {
-      var bucket = [];
-
-      styleProps.forEach(function (style) {
-        if (rule[style]) {
-          bucket.push(rule[style]);
+      var bucketIdObj = styleProps.reduce(function (styleObj, prop) {
+        if (rule[prop]) {
+          styleObj[prop] = rule[prop];
         }
-      });
 
-      bucket = bucket.join(' ');
-      buckets[bucket] = (!buckets[bucket] ? [] : buckets[bucket]).concat(rule.scope);
+        return styleObj;
+      }, {});
+
+      var bucketId = JSON.stringify(bucketIdObj, null, -1);
+      buckets[bucketId] = (!buckets[bucketId] ? [] : buckets[bucketId]).concat(rule.scope);
     });
 
     scheme.rules = [];
 
     _.forEach(buckets, function (v, k) {
-      var styles = k.split(' ');
-      var rule = {};
+      var styles = JSON.parse(k);
+      var rule = Object.assign({
+        scope: v.join(','),
+      }, styles);
 
-      styles.forEach(function (style, i) {
-        rule[styleProps[i]] = style;
-      });
-
-      rule.scope = v.join(',');
       scheme.rules.push(rule);
     });
 

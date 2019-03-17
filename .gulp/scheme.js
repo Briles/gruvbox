@@ -115,7 +115,7 @@ module.exports = function (values) {
         .current {
           text-decoration: underline;
         }
-      `,
+      `.replace(/\s*/g, ''),
 
       // CSS passed to phantoms. If not specified, uses popup_css.
       // phantom_css: '',
