@@ -15,7 +15,7 @@
    * @return {string}        the joined array
    */
   var joinScopes = function (scopes) {
-    return _(scopes).sort().sortedUniq().join(', ');
+    return _(scopes).sort().sortedUniq().join(',');
   };
 
   /**
@@ -61,29 +61,34 @@
    * @return {object} the validated scheme
    */
   var validateScheme = function (scheme) {
+    var styleProps = [
+      'foreground',
+      'background',
+      'foreground_adjust',
+      'selection_foreground',
+      'font_style',
+    ];
     var allScopes = {};
 
-    _.forEach(scheme.settings.slice(1), function (v) {
+    _.forEach(scheme.rules, function (v) {
       var identifier = v.name || v.scope;
+      var presentStyleRules = Object.keys(v).filter(k => styleProps.includes(k));
 
       // Validation
       if (!_.isArray(v.scope)) {
         // Ensure the scope property is an Array
-        throw new TypeError(`Scope: "${identifier}" is not of type "Array"`);
+        throw new TypeError(`"${identifier}" scope is not of type "Array"`);
       } else if (_.size(v.scope) < 1) {
         // Ensure the scope property has atleast 1 element
         throw new Error(`"${identifier}" must have atleast 1 scope`);
       }
 
-      if (!v.settings) {
-        // Ensure there is a settings property
-        throw new Error(`Missing Settings: "${identifier}"`);
-      } else if (_.size(v.settings) < 1) {
+      if (_.size(presentStyleRules) < 1) {
         // Ensure the settings property has atleast 1 element
-        throw new Error(`"${identifier}" must have atleast 1 setting`);
+        throw new Error(`"${identifier}" must have atleast 1 style`);
       } else {
         // Ensure there are no undefined settings
-        _.forEach(v.settings, function (value, setting) {
+        _.forEach(v, function (value, setting) {
           if (value === undefined) {
             throw new Error(`"${setting}" for "${identifier}" is undefined`);
           }
@@ -113,36 +118,36 @@
    */
   var minifyScheme = function (scheme) {
     var buckets = {};
-    var styleProps = ['foreground', 'background', 'fontStyle'];
+    var styleProps = [
+      'background',
+      'font_style',
+      'foreground',
+      'foreground_adjust',
+      'selection_foreground',
+    ];
 
-    scheme.settings.slice(1).forEach(function (v) {
-      var settings = v.settings;
-      var bucket = [];
-
-      styleProps.forEach(function (style) {
-        if (settings[style]) {
-          bucket.push(settings[style]);
+    scheme.rules.forEach(function (rule) {
+      var bucketIdObj = styleProps.reduce(function (styleObj, prop) {
+        if (rule[prop]) {
+          styleObj[prop] = rule[prop];
         }
-      });
 
-      bucket = bucket.join(' ');
-      buckets[bucket] = (!buckets[bucket] ? [] : buckets[bucket]).concat(v.scope);
+        return styleObj;
+      }, {});
+
+      var bucketId = JSON.stringify(bucketIdObj, null, -1);
+      buckets[bucketId] = (!buckets[bucketId] ? [] : buckets[bucketId]).concat(rule.scope);
     });
 
-    scheme.settings = scheme.settings.slice(0, 1);
+    scheme.rules = [];
 
     _.forEach(buckets, function (v, k) {
-      var styles = k.split(' ');
-      var obj = {
-        settings: {},
-      };
+      var styles = JSON.parse(k);
+      var rule = Object.assign({
+        scope: v.join(','),
+      }, styles);
 
-      styles.forEach(function (style, i) {
-        obj.settings[styleProps[i]] = style;
-      });
-
-      obj.scope = v.join(',');
-      scheme.settings.push(obj);
+      scheme.rules.push(rule);
     });
 
     return scheme;

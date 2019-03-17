@@ -23,7 +23,6 @@
   const components = require('./components.js');
   const path = require('path');
   const paths = require('./paths.js');
-  const plist = require('plist');
   const tinycolor = require('./tinycolor.js');
   const utils = require('./utils.js');
   const variant = require('./variants.js');
@@ -70,12 +69,6 @@
 
         borderSofter: tinycolor(backgroundColor).darken(6.5).toRgbString(),
         containerSofter: tinycolor(backgroundColor).darken(2.8).toRgbString(),
-
-        // Scheme Colors
-        guide: tinycolor(brightnessPalette.fg1).setAlpha(0.15).toRgbString(),
-        guideAlt: tinycolor(brightnessPalette.fg1).setAlpha(0.25).toRgbString(),
-        ruler: tinycolor(brightnessPalette.fg1).setAlpha(0.50).toRgbString(),
-        headingBackground: tinycolor(backgroundColor).lighten(7).toRgbString(),
       };
 
       const info = {
@@ -118,13 +111,13 @@
        */
 
       const defaultVariant = {
-        colors: _.deepMapValues(entirePalette, c => tinycolor(c).toSublimeHexString()),
+        colors: entirePalette,
         info: info,
-        paths: paths.internal,
       };
 
       const schemeVariants = [
-        defaultVariant, (variant(defaultVariant).noDimmed),
+        defaultVariant,
+        (variant(defaultVariant).noDimmed),
       ];
 
       schemeVariants.forEach(function (variant) {
@@ -137,9 +130,11 @@
             schemeContents = utils.minifyScheme(schemeContents);
           }
 
-          const schemeDestination = path.join(paths.external.root, `${baseName}.tmTheme`);
+          const schemeName = `${baseName}.sublime-color-scheme`;
+          const schemeDestination = path.join(paths.external.root, schemeName);
+          const schemeStringified = JSON.stringify(schemeContents, null, conf.jsonWhitespace);
 
-          utils.writeOutput(schemeDestination, plist.build(schemeContents));
+          utils.writeOutput(schemeDestination, schemeStringified);
         }
 
         /**

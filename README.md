@@ -53,7 +53,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 // gruvbox Dark Hard Contrast
 {
   "theme": "gruvbox (Dark) (Hard).sublime-theme",
-  "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).tmTheme",
+  "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).sublime-color-scheme",
 }
 ```
 
@@ -61,7 +61,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 // gruvbox Dark Medium Contrast
 {
   "theme": "gruvbox (Dark) (Medium).sublime-theme",
-  "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme",
+  "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme",
 }
 ```
 
@@ -69,7 +69,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 // gruvbox Dark Soft Contrast
 {
   "theme": "gruvbox (Dark) (Soft).sublime-theme",
-  "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft).tmTheme",
+  "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft).sublime-color-scheme",
 }
 ```
 
@@ -77,7 +77,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 // gruvbox Light Hard Contrast
 {
   "theme": "gruvbox (Light) (Hard).sublime-theme",
-  "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard).tmTheme",
+  "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard).sublime-color-scheme",
 }
 ```
 
@@ -85,7 +85,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 // gruvbox Light Medium Contrast
 {
   "theme": "gruvbox (Light) (Medium).sublime-theme",
-  "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium).tmTheme",
+  "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium).sublime-color-scheme",
 }
 ```
 
@@ -93,7 +93,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 // gruvbox Light Soft Contrast
 {
   "theme": "gruvbox (Light) (Soft).sublime-theme",
-  "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft).tmTheme",
+  "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft).sublime-color-scheme",
 }
 ```
 
@@ -108,12 +108,12 @@ that excellent gruvbox tone.
 A variant without out any neutral / dimmed colors
 
 ```json
-"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard) NDC.tmTheme",
-"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium) NDC.tmTheme",
-"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft) NDC.tmTheme",
-"color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard) NDC.tmTheme",
-"color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium) NDC.tmTheme",
-"color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft) NDC.tmTheme",
+"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard) NDC.sublime-color-scheme",
+"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium) NDC.sublime-color-scheme",
+"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft) NDC.sublime-color-scheme",
+"color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard) NDC.sublime-color-scheme",
+"color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium) NDC.sublime-color-scheme",
+"color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft) NDC.sublime-color-scheme",
 ```
 
 ## Configuration
@@ -618,7 +618,7 @@ To use the color scheme with the [Plain​Tasks](https://packagecontrol.io/packa
 // PlainTasks.sublime-settings
 
 {
-  "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme",
+  "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme",
 }
 
 ```

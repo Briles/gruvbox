@@ -4,7 +4,7 @@ import sublime_plugin
 
 class GruvboxSelect(sublime_plugin.TextCommand):
     def run(self, action):
-        color_schemes = sublime.find_resources("gruvbox*.tmTheme")
+        color_schemes = sublime.find_resources("gruvbox*.sublime-color-scheme")
         color_themes = sublime.find_resources("gruvbox*.sublime-theme")
 
         temp_schemes = []
@@ -31,12 +31,12 @@ class GruvboxSelect(sublime_plugin.TextCommand):
         self.view.window().show_quick_panel(self.schemes, self.on_done, on_highlight=self.on_highlighted)
 
     def on_done(self, index):
-        self.set_scheme('Packages/gruvbox/' + self.schemes[index] + '.tmTheme')
+        self.set_scheme('Packages/gruvbox/' + self.schemes[index] + '.sublime-color-scheme')
         self.set_theme(self.themes[self.find_index(index)])
         self.save_settings(self.schemes[index])
 
     def on_highlighted(self, index):
-        self.set_scheme('Packages/gruvbox/' + self.schemes[index] + '.tmTheme')
+        self.set_scheme('Packages/gruvbox/' + self.schemes[index] + '.sublime-color-scheme')
         self.set_theme(self.themes[self.find_index(index)])
 
     def find_index(self, index):

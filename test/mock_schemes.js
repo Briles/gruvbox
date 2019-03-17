@@ -1,122 +1,97 @@
 module.exports = {
   invalidNonArrayScope: {
-    settings: [{},
+    rules: [
       {
-        name: 'Invalid: Non-array Scope',
+        name: 'name',
         scope: 'not an array',
       },
     ],
   },
   invalidEmptyScope: {
-    settings: [{},
+    rules: [
       {
-        name: 'Invalid: Empty Scope',
+        name: 'name',
         scope: [],
       },
     ],
   },
   invalidMissingName: {
-    settings: [{},
+    rules: [
       {
-        scope: 'Invalid: Missing Name',
+        scope: 'scope',
       },
     ],
   },
 
-  invalidMissingSettings: {
-    settings: [{},
+  invalidMissingStyles: {
+    rules: [
       {
-        name: 'Invalid: Missing Settings',
+        name: 'name',
         scope: ['1'],
-      },
-    ],
-  },
-  invalidEmptySettings: {
-    settings: [{},
-      {
-        name: 'Invalid: Empty Settings',
-        scope: ['1'],
-        settings: {},
       },
     ],
   },
 
-  invalidUndefinedSetting: {
-    settings: [{},
+  invalidUndefinedStyle: {
+    rules: [
       {
-        name: 'Invalid: Undefined Setting',
+        name: 'name',
         scope: ['1'],
-        settings: {
-          foreground: undefined,
-        },
+        foreground: undefined,
       },
     ],
   },
 
   invalidDuplicateScope: {
-    settings: [{},
+    rules: [
       {
-        name: 'Invalid: Duplicate Scope 1',
+        name: 'name',
         scope: ['1'],
-        settings: {
-          foreground: 'a',
-        },
+        foreground: 'a',
       },
       {
-        name: 'Invalid: Duplicate Scope 2',
+        name: 'name',
         scope: ['1'],
-        settings: {
-          foreground: 'b',
-        },
+        foreground: 'b',
       },
     ],
   },
 
   validUnJoinedScopes: {
-    settings: [{},
+    rules: [
       {
         scope: ['3', '2', '1'],
-        settings: {
-          foreground: 'a',
-        },
+        foreground: 'a',
       },
     ],
   },
   validJoinedScopes: {
-    settings: [{},
+    rules: [
       {
         scope: '1, 2, 3',
-        settings: {
-          foreground: 'a',
-        },
+        foreground: 'a',
       },
     ],
   },
 
   validUnMinified: {
-    settings: [{},
+    rules: [
       {
         scope: ['3', '2', '1'],
-        settings: {
-          foreground: 'a',
-        },
+        foreground: 'a',
       },
       {
         scope: ['6', '5', '4'],
-        settings: {
-          foreground: 'a',
-        },
+        foreground: 'a',
       },
     ],
   },
 
   validMinified: {
-    settings: [{},
+    rules: [
       {
         scope: '3,2,1,6,5,4',
-        settings: {
-          foreground: 'a',
-        },
+        foreground: 'a',
       },
     ],
   },
