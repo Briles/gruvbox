@@ -1,17 +1,16 @@
 const gulp = require('gulp');
-const exec = require('child_process').exec;
+const util = require('util');
+const exec = util.promisify(require('child_process').exec);
 
 const srcPath = './.gulp/';
 
 function execNode(command) {
-  return exec(`node ${command}`, function (err, stdout, stderr) {
-    if (stdout) {
-      console.log(stdout);
+  return exec(`node ${command}`).then(function (res) {
+    if (res.stdout) {
+      console.log(res.stdout);
     }
 
-    if (stderr) {
-      console.log(stderr);
-    }
+    return res.stdout;
   });
 }
 

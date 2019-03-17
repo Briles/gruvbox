@@ -1,78 +1,186 @@
 module.exports = function (values) {
-  'use strict';
-
   const c = values.colors;
-  const info = values.info;
+  const palette = Object.assign({}, c.bnp, {
+    bg: c.background,
+    fg: c.foreground,
+  });
 
   return {
-    comment: 'Based on gruvbox for Vim (https://github.com/morhetz/gruvbox)',
+    name: values.info.name,
+    homepage: 'https://github.com/Briles/gruvbox',
+    description: 'Based on gruvbox for Vim (https://github.com/morhetz/gruvbox)',
     originalAuthor: 'Pavel Pertsev (https://github.com/morhetz)',
-    author: 'Brian Reilly (https://github.com/Briles/gruvbox)',
-    name: info.name,
-    colorSpaceName: 'sRGB',
-    settings: [{
-        settings: {
-          background: c.background,
-          caret: c.bnp.fg4,
-          foreground: c.ruler,
-          invisibles: c.guide,
-          lineHighlight: c.bnp.bg1,
-          selection: c.bnp.bg1,
-          inactiveSelection: c.bnp.bg1,
-          guide: c.guide,
-          activeGuide: c.ruler,
-          stackGuide: c.guideAlt,
-          bracketContentsOptions: 'underline',
-          bracketContentsForeground: c.bnp.fg3,
-          bracketsOptions: 'underline',
-          bracketsForeground: c.bnp.fg3,
-          gutterForeground: c.bnp.gray,
-          highlight: c.foreground,
-          highlightForeground: c.foreground,
-          findHighlight: c.neutralYellow,
-          findHighlightForeground: c.background,
-          tagsOptions: 'underline',
-          selectionBorder: c.bnp.bg1,
-          popupCss: `
-            html {
-              background-color: ${c.container};
-              color: ${c.foreground};
-              padding: 12px;
-            }
+    author: 'Brian Reilly (https://github.com/Briles)',
+    variables: {
 
-            a {
-              color: ${c.bnp.aqua};
-            }
+      bg: palette.bg,
+      bg0: palette.bg0,
+      bg1: palette.bg1,
+      bg2: palette.bg2,
+      bg3: palette.bg3,
+      bg4: palette.bg4,
 
-            .error, .deleted {
-              color: ${c.bnp.red};
-            }
+      gray: palette.gray,
 
-            .success, .inserted, .name {
-              color: ${c.bnp.green};
-            }
+      fg: palette.fg,
+      fg0: palette.fg0,
+      fg1: palette.fg1,
+      fg2: palette.fg2,
+      fg3: palette.fg3,
+      fg4: palette.fg4,
 
-            .warning, .modified {
-              color: ${c.bnp.yellow};
-            }
+      red: palette.red,
+      red1: palette.red1,
 
-            .type {
-              color: ${c.bnp.yellow};
-              font-style: italic;
-            }
+      green: palette.green,
+      green1: palette.green1,
 
-            .param {
-              color: ${c.foreground};
-            }
+      yellow: palette.yellow,
+      yellow1: palette.yellow1,
 
-            .current {
-              text-decoration: underline;
-            }
-          `,
-        },
-      },
+      blue: palette.blue,
+      blue1: palette.blue1,
 
-      {
+      purple: palette.purple,
+      purple1: palette.purple1,
+
+      aqua: palette.aqua,
+      aqua1: palette.aqua1,
+
+      orange: palette.orange,
+      orange1: palette.orange1,
+
+      border: 'color(var(bg) lightness(- 10%))',
+      container: 'color(var(bg) lightness(- 5%))',
+      panelRow: 'color(var(bg) lightness(2.35%))',
+      borderSofter: 'color(var(bg) lightness(- 6.5%))',
+      containerSofter: 'color(var(bg) lightness(- 2.8%))',
+      guide: 'color(var(fg1) alpha(0.15))',
+      guideAlt: 'color(var(fg1) alpha(0.15))',
+      ruler: 'color(var(fg1) alpha(0.25))',
+      headingBackground: 'color(var(bg) lightness(7%))',
+    },
+    globals: {
+      /* GLOBAL SETTINGS */
+
+      background: 'var(bg)',
+      foreground: 'var(fg)',
+      invisibles: 'var(guide)',
+      caret: 'var(fg4)',
+      block_caret: 'var(fg4)',
+      line_highlight: 'var(bg1)',
+
+      /* ACCENTS */
+
+      misspelling: 'var(red)',
+
+      // fold_marker: '', // TODO: use a single fold marker image styled by this
+      minimap_border: 'var(border)',
+      accent: 'var(yellow)',
+
+      /* CSS */
+
+      // CSS passed to popups.
+      popup_css: `
+        html {
+          background-color: color(var(--background) lightness(- 5%));
+          color: var(--foreground);
+        }
+
+        a {
+          color: var(--bluish);
+        }
+
+        .error, .deleted {
+          color: var(--redish);
+        }
+
+        .success, .inserted, .name {
+          color: var(--greenish);
+        }
+
+        .warning, .modified {
+          color: var(--yellowish);
+        }
+
+        .type {
+          color: var(--yellowish);
+          font-style: italic;
+        }
+
+        .param {
+          color: var(--foreground);
+        }
+
+        .current {
+          text-decoration: underline;
+        }
+      `,
+
+      // CSS passed to phantoms. If not specified, uses popup_css.
+      // phantom_css: '',
+
+      /* GUTTER */
+
+      // The background color of the gutter
+      gutter: 'var(bg)',
+
+      // The color of line numbers in the gutter
+      gutter_foreground: 'var(gray)',
+
+      /* DIFF */
+
+      // The width of the diff lines, between 1 and 8
+      line_diff_width: '3',
+
+      // The color of diff markers for added lines
+      line_diff_added: 'var(green)',
+
+      // The color of diff markers for modified lines
+      line_diff_modified: 'var(yellow)',
+
+      // The color of diff markers for deleted lines
+      line_diff_deleted: 'var(red)',
+
+      /* SELECTION */
+
+      selection: 'var(bg1)',
+      selection_border_width: '0',
+      inactive_selection: 'var(bg1)',
+      selection_corner_style: 'round',
+      selection_corner_radius: '0',
+
+      /* FIND */
+
+      highlight: 'var(fg)',
+      find_highlight: 'var(yellow)',
+      find_highlight_foreground: 'var(bg)',
+
+      /* GUIDES */
+
+      guide: 'var(guide)',
+      active_guide: 'var(ruler)',
+      stack_guide: 'var(guideAlt)',
+
+      /* BRACKETS */
+
+      brackets_options: 'underline',
+      brackets_foreground: 'var(fg3)',
+      bracket_contents_options: 'underline',
+      bracket_contents_foreground: 'var(fg3)',
+
+      /* TAGS */
+
+      tags_options: 'underline',
+      tags_foreground: 'var(fg4)',
+
+      /* SHADOWS */
+
+      shadow: 'var(container)',
+      shadow_width: '6',
+    },
+
+    rules: [{
         name: 'Text and Source Base Colors',
         scope: [
           'meta.method.source.cs',
@@ -85,9 +193,7 @@ module.exports = function (values) {
           'text',
           'meta.group', // Reset meta.group
         ],
-        settings: {
-          foreground: c.foreground,
-        },
+        foreground: 'var(fg)',
       },
 
       {
@@ -106,9 +212,7 @@ module.exports = function (values) {
           'entity.quasi.element meta.group.braces',
           'keyword.operator.accessor',
         ],
-        settings: {
-          foreground: c.foreground,
-        },
+        foreground: 'var(fg)',
       },
 
       {
@@ -122,10 +226,8 @@ module.exports = function (values) {
           'punctuation.definition.comment',
           'punctuation.whitespace.comment',
         ],
-        settings: {
-          fontStyle: 'italic',
-          foreground: c.bnp.gray,
-        },
+        font_style: 'italic',
+        foreground: 'var(gray)',
       },
 
       {
@@ -134,9 +236,7 @@ module.exports = function (values) {
           'comment.keyword',
           'comment.keyword.punctuation',
         ],
-        settings: {
-          foreground: c.bnp.fg2,
-        },
+        foreground: 'var(fg2)',
       },
 
       {
@@ -153,9 +253,7 @@ module.exports = function (values) {
           'punctuation.definition.keyword.javadoc',
           'source.groovy keyword.other.documentation',
         ],
-        settings: {
-          foreground: c.bnp.fg3,
-        },
+        foreground: 'var(fg3)',
       },
 
       {
@@ -165,9 +263,7 @@ module.exports = function (values) {
           'entity.other.inherited-class',
           'constant.language.name',
         ],
-        settings: {
-          foreground: c.bnp.yellow,
-        },
+        foreground: 'var(yellow)',
       },
 
       {
@@ -183,9 +279,7 @@ module.exports = function (values) {
           'punctuation.definition.string.template',
           'constant.other.placeholder',
         ],
-        settings: {
-          foreground: c.bnp.aqua,
-        },
+        foreground: 'var(aqua)',
       },
 
       {
@@ -206,9 +300,7 @@ module.exports = function (values) {
           'storage.type.import.include.pug',
           'support.keyword.timing-direction',
         ],
-        settings: {
-          foreground: c.bnp.red,
-        },
+        foreground: 'var(red)',
       },
 
       {
@@ -217,9 +309,7 @@ module.exports = function (values) {
           'punctuation.definition.keyword',
           'keyword.control.at-rule support.type.property-vendor',
         ],
-        settings: {
-          foreground: c.neutralRed,
-        },
+        foreground: 'var(red1)',
       },
 
       {
@@ -232,9 +322,7 @@ module.exports = function (values) {
           'keyword.control.operator',
           'punctuation.operator',
         ],
-        settings: {
-          foreground: c.bnp.aqua,
-        },
+        foreground: 'var(aqua)',
       },
 
       {
@@ -247,9 +335,7 @@ module.exports = function (values) {
           'punctuation.section.flowtype',
           'support.constant.unicode-range.prefix',
         ],
-        settings: {
-          foreground: c.neutralPurple,
-        },
+        foreground: 'var(purple1)',
       },
 
       {
@@ -259,9 +345,7 @@ module.exports = function (values) {
           'storage.type.annotation',
           'storage.type.primitive',
         ],
-        settings: {
-          foreground: c.bnp.red,
-        },
+        foreground: 'var(red)',
       },
 
       {
@@ -272,9 +356,7 @@ module.exports = function (values) {
           'variable.package',
           'variable.import',
         ],
-        settings: {
-          foreground: c.foreground,
-        },
+        foreground: 'var(fg)',
       },
 
       {
@@ -284,9 +366,7 @@ module.exports = function (values) {
           'meta.function storage.type.matlab',
           'entity.quasi.tag.name',
         ],
-        settings: {
-          foreground: c.bnp.aqua,
-        },
+        foreground: 'var(aqua)',
       },
 
       {
@@ -305,9 +385,7 @@ module.exports = function (values) {
           'support.type.variable-name',
           'variable.parameter.dosbatch',
         ],
-        settings: {
-          foreground: c.bnp.blue,
-        },
+        foreground: 'var(blue)',
       },
 
       {
@@ -321,9 +399,7 @@ module.exports = function (values) {
           'punctuation.definition.custom-property',
           'variable.other.object.dollar punctuation.dollar',
         ],
-        settings: {
-          foreground: c.neutralBlue,
-        },
+        foreground: 'var(blue1)',
       },
 
       {
@@ -331,9 +407,7 @@ module.exports = function (values) {
         scope: [
           'entity.name.function punctuation.dollar',
         ],
-        settings: {
-          foreground: c.neutralGreen,
-        },
+        foreground: 'var(green1)',
       },
 
       {
@@ -341,9 +415,7 @@ module.exports = function (values) {
         scope: [
           'meta.property.object',
         ],
-        settings: {
-          foreground: c.foreground,
-        },
+        foreground: 'var(fg)',
       },
 
       {
@@ -352,9 +424,7 @@ module.exports = function (values) {
           'constant.other.object.key string',
           'meta.object-literal.key',
         ],
-        settings: {
-          foreground: c.foreground,
-        },
+        foreground: 'var(fg)',
       },
 
       {
@@ -363,9 +433,7 @@ module.exports = function (values) {
           'variable.parameter',
           'meta.parameters',
         ],
-        settings: {
-          foreground: c.foreground,
-        },
+        foreground: 'var(fg)',
       },
 
       {
@@ -373,9 +441,7 @@ module.exports = function (values) {
         scope: [
           'variable.parameter.url',
         ],
-        settings: {
-          foreground: c.bnp.green,
-        },
+        foreground: 'var(green)',
       },
 
       {
@@ -393,9 +459,7 @@ module.exports = function (values) {
           'support.constant.prototype',
           'variable.language',
         ],
-        settings: {
-          foreground: c.bnp.purple,
-        },
+        foreground: 'var(purple)',
       },
 
       {
@@ -403,9 +467,7 @@ module.exports = function (values) {
         scope: [
           'variable.language punctuation.definition.variable',
         ],
-        settings: {
-          foreground: c.neutralPurple,
-        },
+        foreground: 'var(purple1)',
       },
 
       {
@@ -414,9 +476,7 @@ module.exports = function (values) {
           'variable.other.constant',
           'entity.name.constant',
         ],
-        settings: {
-          foreground: c.bnp.yellow,
-        },
+        foreground: 'var(yellow)',
       },
 
       {
@@ -427,9 +487,7 @@ module.exports = function (values) {
           'constant.other.character-class.escape',
           'constant.character.quoted',
         ],
-        settings: {
-          foreground: c.bnp.red,
-        },
+        foreground: 'var(red)',
       },
 
       {
@@ -437,10 +495,8 @@ module.exports = function (values) {
         scope: [
           'invalid',
         ],
-        settings: {
-          foreground: c.foreground,
-          background: c.bnp.red,
-        },
+        foreground: 'var(fg)',
+        background: 'var(red)',
       },
 
       {
@@ -449,9 +505,7 @@ module.exports = function (values) {
           'invalid keyword.other.custom-property.prefix',
           'invalid support.type.custom-property.name',
         ],
-        settings: {
-          foreground: c.foreground,
-        },
+        foreground: 'var(fg)',
       },
 
       {
@@ -459,9 +513,7 @@ module.exports = function (values) {
         scope: [
           'message.error',
         ],
-        settings: {
-          foreground: c.bnp.red,
-        },
+        foreground: 'var(red)',
       },
 
       {
@@ -470,9 +522,7 @@ module.exports = function (values) {
           'string',
           'meta.object-literal.key string',
         ],
-        settings: {
-          foreground: c.bnp.green,
-        },
+        foreground: 'var(green)',
       },
 
       {
@@ -480,9 +530,7 @@ module.exports = function (values) {
         scope: [
           'meta.structure.dictionary.key.json string',
         ],
-        settings: {
-          foreground: c.bnp.blue,
-        },
+        foreground: 'var(blue)',
       },
 
       {
@@ -491,9 +539,7 @@ module.exports = function (values) {
           'string.regexp',
           'source.regexp',
         ],
-        settings: {
-          foreground: c.bnp.green,
-        },
+        foreground: 'var(green)',
       },
 
       {
@@ -501,9 +547,7 @@ module.exports = function (values) {
         scope: [
           'string.regexp punctuation.definition.string',
         ],
-        settings: {
-          foreground: c.bnp.fg3,
-        },
+        foreground: 'var(fg3)',
       },
 
       {
@@ -513,9 +557,7 @@ module.exports = function (values) {
           'punctuation.definition.character-class',
           'string.regexp.character-class.ruby',
         ],
-        settings: {
-          foreground: c.bnp.purple,
-        },
+        foreground: 'var(purple)',
       },
 
       {
@@ -523,9 +565,7 @@ module.exports = function (values) {
         scope: [
           'string.regexp.group',
         ],
-        settings: {
-          foreground: c.foreground,
-        },
+        foreground: 'var(fg)',
       },
 
       {
@@ -535,9 +575,7 @@ module.exports = function (values) {
           'punctuation.definition.group.assertion.regexp',
           'punctuation.definition.group.capture.regexp',
         ],
-        settings: {
-          foreground: c.bnp.blue,
-        },
+        foreground: 'var(blue)',
       },
 
       {
@@ -547,9 +585,7 @@ module.exports = function (values) {
           'constant.other.character-class.escape.backslash.regexp',
           'string.regexp.character-class constant.character.escape',
         ],
-        settings: {
-          foreground: c.bnp.yellow,
-        },
+        foreground: 'var(yellow)',
       },
 
       {
@@ -558,9 +594,7 @@ module.exports = function (values) {
           'string.regexp.arbitrary-repetition',
           'string.regexp.arbitrary-repetition punctuation',
         ],
-        settings: {
-          foreground: c.bnp.aqua,
-        },
+        foreground: 'var(aqua)',
       },
 
       {
@@ -569,9 +603,7 @@ module.exports = function (values) {
           'string.other.link',
           'constant.other.reference.link',
         ],
-        settings: {
-          foreground: c.bnp.aqua,
-        },
+        foreground: 'var(aqua)',
       },
 
       {
@@ -583,9 +615,7 @@ module.exports = function (values) {
           'meta.link.reference.literal punctuation.definition.string',
           'meta.link.reference.literal punctuation.definition.constant',
         ],
-        settings: {
-          foreground: c.neutralAqua,
-        },
+        foreground: 'var(aqua1)',
       },
 
       {
@@ -593,9 +623,7 @@ module.exports = function (values) {
         scope: [
           'punctuation.definition.tag',
         ],
-        settings: {
-          foreground: c.bnp.blue,
-        },
+        foreground: 'var(blue)',
       },
 
       {
@@ -603,9 +631,7 @@ module.exports = function (values) {
         scope: [
           'markup.heading',
         ],
-        settings: {
-          foreground: c.bnp.green,
-        },
+        foreground: 'var(green)',
       },
 
       {
@@ -614,9 +640,7 @@ module.exports = function (values) {
           'punctuation.definition.heading',
           'punctuation.definition.identity',
         ],
-        settings: {
-          foreground: c.neutralGreen,
-        },
+        foreground: 'var(green1)',
       },
 
       {
@@ -624,10 +648,8 @@ module.exports = function (values) {
         scope: [
           'markup.bold',
         ],
-        settings: {
-          foreground: c.bnp.orange,
-          fontStyle: 'bold',
-        },
+        foreground: 'var(orange)',
+        font_style: 'bold',
       },
 
       {
@@ -635,10 +657,8 @@ module.exports = function (values) {
         scope: [
           'punctuation.definition.bold',
         ],
-        settings: {
-          foreground: c.neutralOrange,
-          fontStyle: 'bold',
-        },
+        foreground: 'var(orange1)',
+        font_style: 'bold',
       },
 
       {
@@ -646,10 +666,8 @@ module.exports = function (values) {
         scope: [
           'markup.italic',
         ],
-        settings: {
-          foreground: c.bnp.red,
-          fontStyle: 'italic',
-        },
+        foreground: 'var(red)',
+        font_style: 'italic',
       },
 
       {
@@ -657,10 +675,8 @@ module.exports = function (values) {
         scope: [
           'punctuation.definition.italic',
         ],
-        settings: {
-          foreground: c.neutralRed,
-          fontStyle: 'italic',
-        },
+        foreground: 'var(red1)',
+        font_style: 'italic',
       },
 
       {
@@ -668,9 +684,7 @@ module.exports = function (values) {
         scope: [
           'markup.raw.inline',
         ],
-        settings: {
-          foreground: c.bnp.yellow,
-        },
+        foreground: 'var(yellow)',
       },
 
       {
@@ -678,9 +692,7 @@ module.exports = function (values) {
         scope: [
           'markup.raw.inline punctuation.definition.raw',
         ],
-        settings: {
-          foreground: c.neutralYellow,
-        },
+        foreground: 'var(yellow1)',
       },
 
       {
@@ -688,9 +700,7 @@ module.exports = function (values) {
         scope: [
           'markup.quote',
         ],
-        settings: {
-          foreground: c.bnp.purple,
-        },
+        foreground: 'var(purple)',
       },
 
       {
@@ -698,9 +708,7 @@ module.exports = function (values) {
         scope: [
           'markup.quote punctuation.definition.blockquote',
         ],
-        settings: {
-          foreground: c.neutralPurple,
-        },
+        foreground: 'var(purple1)',
       },
 
       {
@@ -708,9 +716,7 @@ module.exports = function (values) {
         scope: [
           'markup.list',
         ],
-        settings: {
-          foreground: c.bnp.blue,
-        },
+        foreground: 'var(blue)',
       },
 
       {
@@ -718,9 +724,7 @@ module.exports = function (values) {
         scope: [
           'markup.list punctuation.definition.list_item',
         ],
-        settings: {
-          foreground: c.neutralBlue,
-        },
+        foreground: 'var(blue1)',
       },
 
       {
@@ -728,9 +732,7 @@ module.exports = function (values) {
         scope: [
           'meta.separator.markdown',
         ],
-        settings: {
-          foreground: c.bnp.gray,
-        },
+        foreground: 'var(gray)',
       },
 
       {
@@ -741,9 +743,7 @@ module.exports = function (values) {
           'variable.other.class',
           'meta.function-call.constructor variable.type',
         ],
-        settings: {
-          foreground: c.bnp.yellow,
-        },
+        foreground: 'var(yellow)',
       },
 
       {
@@ -751,9 +751,7 @@ module.exports = function (values) {
         scope: [
           'support.class punctuation.dollar',
         ],
-        settings: {
-          foreground: c.neutralYellow,
-        },
+        foreground: 'var(yellow1)',
       },
 
       {
@@ -766,9 +764,7 @@ module.exports = function (values) {
           'entity.name.function.jade',
           'entity.name.function.pug',
         ],
-        settings: {
-          foreground: c.bnp.aqua,
-        },
+        foreground: 'var(aqua)',
       },
 
       {
@@ -782,9 +778,7 @@ module.exports = function (values) {
           'meta.method-call',
           'support.function.mutator',
         ],
-        settings: {
-          foreground: c.neutralAqua,
-        },
+        foreground: 'var(aqua1)',
       },
 
       {
@@ -792,9 +786,7 @@ module.exports = function (values) {
         scope: [
           'support.module',
         ],
-        settings: {
-          foreground: c.bnp.purple,
-        },
+        foreground: 'var(purple)',
       },
 
       {
@@ -805,9 +797,7 @@ module.exports = function (values) {
           'entity.name.section',
           'entity.name.accessor',
         ],
-        settings: {
-          foreground: c.bnp.green,
-        },
+        foreground: 'var(green)',
       },
 
       {
@@ -815,9 +805,7 @@ module.exports = function (values) {
         scope: [
           'entity.name.module',
         ],
-        settings: {
-          foreground: c.bnp.orange,
-        },
+        foreground: 'var(orange)',
       },
 
       {
@@ -827,9 +815,7 @@ module.exports = function (values) {
           'constant.id.tag',
           'entity.name.tag.id',
         ],
-        settings: {
-          foreground: c.bnp.orange,
-        },
+        foreground: 'var(orange)',
       },
 
       {
@@ -837,9 +823,7 @@ module.exports = function (values) {
         scope: [
           'entity.other.attribute-name.id punctuation.definition.entity',
         ],
-        settings: {
-          foreground: c.neutralOrange,
-        },
+        foreground: 'var(orange1)',
       },
 
       {
@@ -848,9 +832,7 @@ module.exports = function (values) {
           'entity.name.tag.class',
           'entity.other.attribute-name.class',
         ],
-        settings: {
-          foreground: c.bnp.yellow,
-        },
+        foreground: 'var(yellow)',
       },
 
       {
@@ -858,9 +840,7 @@ module.exports = function (values) {
         scope: [
           'entity.other.attribute-name.class punctuation.definition.entity',
         ],
-        settings: {
-          foreground: c.neutralYellow,
-        },
+        foreground: 'var(yellow1)',
       },
 
       {
@@ -868,9 +848,7 @@ module.exports = function (values) {
         scope: [
           'meta.attribute-selector entity.other.attribute-name',
         ],
-        settings: {
-          foreground: c.neutralYellow,
-        },
+        foreground: 'var(yellow1)',
       },
 
       {
@@ -879,9 +857,7 @@ module.exports = function (values) {
           'constant.character.entity punctuation.definition.entity',
           'constant.character.entity punctuation.definition.constant',
         ],
-        settings: {
-          foreground: c.neutralPurple,
-        },
+        foreground: 'var(purple1)',
       },
 
       {
@@ -889,9 +865,7 @@ module.exports = function (values) {
           'entity.name.class',
           'entity.name.type.class',
         ],
-        settings: {
-          foreground: c.bnp.yellow,
-        },
+        foreground: 'var(yellow)',
       },
 
       {
@@ -907,9 +881,7 @@ module.exports = function (values) {
           'keyword.operator support.other.neon',
           'entity.name.namespace.wildcard',
         ],
-        settings: {
-          foreground: c.bnp.blue,
-        },
+        foreground: 'var(blue)',
       },
 
       {
@@ -919,9 +891,7 @@ module.exports = function (values) {
           'entity.other.attribute-name',
           'meta.section.attributes.haml constant.other.symbol.ruby',
         ],
-        settings: {
-          foreground: c.bnp.yellow,
-        },
+        foreground: 'var(yellow)',
       },
 
       {
@@ -936,9 +906,7 @@ module.exports = function (values) {
           'entity.other.pseudo-element',
           'support.type.vendor-prefix',
         ],
-        settings: {
-          foreground: c.neutralYellow,
-        },
+        foreground: 'var(yellow1)',
       },
 
       {
@@ -951,9 +919,7 @@ module.exports = function (values) {
           'entity.function-name.stylus',
           'entity.other.animation-keyframe.stylus',
         ],
-        settings: {
-          foreground: c.bnp.aqua,
-        },
+        foreground: 'var(aqua)',
       },
 
       {
@@ -961,9 +927,7 @@ module.exports = function (values) {
         scope: [
           'entity.other.namespace-prefix',
         ],
-        settings: {
-          foreground: c.bnp.aqua,
-        },
+        foreground: 'var(aqua)',
       },
 
       {
@@ -971,9 +935,7 @@ module.exports = function (values) {
           'meta.class.body',
           'meta.tag',
         ],
-        settings: {
-          foreground: c.foreground,
-        },
+        foreground: 'var(fg)',
       },
 
       {
@@ -982,9 +944,7 @@ module.exports = function (values) {
           'meta.link',
           'meta.image',
         ],
-        settings: {
-          foreground: c.bnp.purple,
-        },
+        foreground: 'var(purple)',
       },
 
       {
@@ -993,18 +953,14 @@ module.exports = function (values) {
           'meta.image punctuation.definition.metadata',
           'meta.link punctuation.definition.metadata',
         ],
-        settings: {
-          foreground: c.neutralPurple,
-        },
+        foreground: 'var(purple1)',
       },
 
       {
         scope: [
           'meta.require',
         ],
-        settings: {
-          foreground: c.bnp.green,
-        },
+        foreground: 'var(green)',
       },
 
       {
@@ -1017,9 +973,7 @@ module.exports = function (values) {
           'punctuation.definition.method-parameters',
           'punctuation.definition.parameters',
         ],
-        settings: {
-          foreground: c.bnp.fg3,
-        },
+        foreground: 'var(fg3)',
       },
 
       {
@@ -1029,9 +983,7 @@ module.exports = function (values) {
           'support.type.property-name',
           'support.type.shape.definition support.constant.property-value',
         ],
-        settings: {
-          foreground: c.bnp.green,
-        },
+        foreground: 'var(green)',
       },
 
       {
@@ -1040,9 +992,7 @@ module.exports = function (values) {
           'meta.property-name support.type.vendor-prefix',
           'support.type.property-name.media support.type.vendor-prefix',
         ],
-        settings: {
-          foreground: c.neutralGreen,
-        },
+        foreground: 'var(green1)',
       },
 
       {
@@ -1052,9 +1002,7 @@ module.exports = function (values) {
           'meta.property-value',
           'support.constant.property-value',
         ],
-        settings: {
-          foreground: c.foreground,
-        },
+        foreground: 'var(fg)',
       },
 
       {
@@ -1062,9 +1010,7 @@ module.exports = function (values) {
         scope: [
           'meta.property-value support.type.vendor-prefix',
         ],
-        settings: {
-          foreground: c.bnp.fg3,
-        },
+        foreground: 'var(fg3)',
       },
 
       {
@@ -1072,9 +1018,7 @@ module.exports = function (values) {
         scope: [
           'source.diff',
         ],
-        settings: {
-          foreground: c.bnp.fg4,
-        },
+        foreground: 'var(fg4)',
       },
 
       {
@@ -1082,9 +1026,7 @@ module.exports = function (values) {
         scope: [
           'meta.diff.header.from-file',
         ],
-        settings: {
-          foreground: c.bnp.blue,
-        },
+        foreground: 'var(blue)',
       },
 
       {
@@ -1092,9 +1034,7 @@ module.exports = function (values) {
         scope: [
           'punctuation.definition.from-file',
         ],
-        settings: {
-          foreground: c.neutralBlue,
-        },
+        foreground: 'var(blue1)',
       },
 
       {
@@ -1102,9 +1042,7 @@ module.exports = function (values) {
         scope: [
           'meta.diff.header.to-file',
         ],
-        settings: {
-          foreground: c.bnp.purple,
-        },
+        foreground: 'var(purple)',
       },
 
       {
@@ -1112,9 +1050,7 @@ module.exports = function (values) {
         scope: [
           'punctuation.definition.to-file',
         ],
-        settings: {
-          foreground: c.neutralPurple,
-        },
+        foreground: 'var(purple1)',
       },
 
       {
@@ -1123,9 +1059,7 @@ module.exports = function (values) {
           'meta.diff.range',
           'meta.toc-list.line-number',
         ],
-        settings: {
-          foreground: c.bnp.yellow,
-        },
+        foreground: 'var(yellow)',
       },
 
       {
@@ -1133,9 +1067,7 @@ module.exports = function (values) {
         scope: [
           'punctuation.definition.range.diff',
         ],
-        settings: {
-          foreground: c.neutralYellow,
-        },
+        foreground: 'var(yellow1)',
       },
 
       // Find in Files
@@ -1144,9 +1076,7 @@ module.exports = function (values) {
         scope: [
           'constant.numeric.line-number',
         ],
-        settings: {
-          foreground: c.bnp.gray,
-        },
+        foreground: 'var(gray)',
       },
 
       {
@@ -1154,9 +1084,7 @@ module.exports = function (values) {
         scope: [
           'constant.numeric.line-number.match',
         ],
-        settings: {
-          foreground: c.bnp.aqua,
-        },
+        foreground: 'var(aqua)',
       },
 
       {
@@ -1164,9 +1092,41 @@ module.exports = function (values) {
         scope: [
           'entity.name.filename',
         ],
-        settings: {
-          foreground: c.bnp.green,
-        },
+        foreground: 'var(green)',
+      },
+
+      // Incremental Diff
+
+      {
+        name: 'Incremental Diff Deleted',
+        scope: [
+          'diff.deleted',
+        ],
+        background: 'color(var(red) alpha(0.17))',
+      },
+
+      {
+        name: 'Incremental Diff Deleted Char',
+        scope: [
+          'diff.deleted.char',
+        ],
+        background: 'color(var(red) alpha(0.3))',
+      },
+
+      {
+        name: 'Incremental Diff Deleted',
+        scope: [
+          'diff.inserted',
+        ],
+        background: 'color(var(green) alpha(0.17))',
+      },
+
+      {
+        name: 'Incremental Diff Deleted Char',
+        scope: [
+          'diff.inserted.char',
+        ],
+        background: 'color(var(green) alpha(0.3))',
       },
 
       // GitGutter
@@ -1176,9 +1136,7 @@ module.exports = function (values) {
           'markup.deleted',
           'punctuation.definition.deleted',
         ],
-        settings: {
-          foreground: c.bnp.red,
-        },
+        foreground: 'var(red)',
       },
 
       {
@@ -1187,9 +1145,7 @@ module.exports = function (values) {
           'markup.inserted',
           'punctuation.definition.inserted',
         ],
-        settings: {
-          foreground: c.bnp.green,
-        },
+        foreground: 'var(green)',
       },
 
       {
@@ -1198,9 +1154,7 @@ module.exports = function (values) {
           'markup.changed',
           'punctuation.definition.changed',
         ],
-        settings: {
-          foreground: c.bnp.yellow,
-        },
+        foreground: 'var(yellow)',
       },
 
       {
@@ -1208,9 +1162,7 @@ module.exports = function (values) {
         scope: [
           'markup.ignored',
         ],
-        settings: {
-          foreground: c.bnp.gray,
-        },
+        foreground: 'var(gray)',
       },
 
       {
@@ -1218,9 +1170,7 @@ module.exports = function (values) {
         scope: [
           'markup.untracked',
         ],
-        settings: {
-          foreground: c.bnp.gray,
-        },
+        foreground: 'var(gray)',
       },
 
       // Bracket Highlighter
@@ -1229,9 +1179,7 @@ module.exports = function (values) {
         scope: [
           'brackethighlighter.tag',
         ],
-        settings: {
-          foreground: c.bnp.fg3,
-        },
+        foreground: 'var(fg3)',
       },
 
       {
@@ -1239,9 +1187,7 @@ module.exports = function (values) {
         scope: [
           'brackethighlighter.curly',
         ],
-        settings: {
-          foreground: c.bnp.fg3,
-        },
+        foreground: 'var(fg3)',
       },
 
       {
@@ -1249,9 +1195,7 @@ module.exports = function (values) {
         scope: [
           'brackethighlighter.round',
         ],
-        settings: {
-          foreground: c.bnp.fg3,
-        },
+        foreground: 'var(fg3)',
       },
 
       {
@@ -1259,9 +1203,7 @@ module.exports = function (values) {
         scope: [
           'brackethighlighter.square',
         ],
-        settings: {
-          foreground: c.bnp.fg3,
-        },
+        foreground: 'var(fg3)',
       },
 
       {
@@ -1269,9 +1211,7 @@ module.exports = function (values) {
         scope: [
           'brackethighlighter.angle',
         ],
-        settings: {
-          foreground: c.bnp.fg3,
-        },
+        foreground: 'var(fg3)',
       },
 
       {
@@ -1279,9 +1219,7 @@ module.exports = function (values) {
         scope: [
           'brackethighlighter.quote',
         ],
-        settings: {
-          foreground: c.bnp.fg3,
-        },
+        foreground: 'var(fg3)',
       },
 
       {
@@ -1289,9 +1227,7 @@ module.exports = function (values) {
         scope: [
           'brackethighlighter.unmatched',
         ],
-        settings: {
-          foreground: c.bnp.red,
-        },
+        foreground: 'var(red)',
       },
 
       // SublimeLinter
@@ -1300,9 +1236,7 @@ module.exports = function (values) {
         scope: [
           'sublimelinter.mark.error',
         ],
-        settings: {
-          foreground: c.bnp.red,
-        },
+        foreground: 'var(red)',
       },
 
       {
@@ -1310,9 +1244,7 @@ module.exports = function (values) {
         scope: [
           'sublimelinter.gutter-mark',
         ],
-        settings: {
-          foreground: c.bnp.gray,
-        },
+        foreground: 'var(gray)',
       },
 
       {
@@ -1320,9 +1252,7 @@ module.exports = function (values) {
         scope: [
           'sublimelinter.mark.warning',
         ],
-        settings: {
-          foreground: c.bnp.yellow,
-        },
+        foreground: 'var(yellow)',
       },
 
       // HexViewer
@@ -1331,9 +1261,7 @@ module.exports = function (values) {
         scope: [
           'raw.nibble.upper',
         ],
-        settings: {
-          foreground: c.foreground,
-        },
+        foreground: 'var(fg)',
       },
 
       {
@@ -1341,9 +1269,7 @@ module.exports = function (values) {
         scope: [
           'raw.nibble.lower',
         ],
-        settings: {
-          foreground: c.foreground,
-        },
+        foreground: 'var(fg)',
       },
 
       {
@@ -1351,10 +1277,8 @@ module.exports = function (values) {
         scope: [
           'hexviewer.highlight',
         ],
-        settings: {
-          foreground: c.background,
-          background: c.bnp.yellow,
-        },
+        foreground: 'var(bg)',
+        background: 'var(yellow)',
       },
 
       {
@@ -1362,10 +1286,8 @@ module.exports = function (values) {
         scope: [
           'hexviewer.highlight.edited',
         ],
-        settings: {
-          foreground: c.background,
-          background: c.bnp.orange,
-        },
+        foreground: 'var(bg)',
+        background: 'var(orange)',
       },
 
       // Raw Glyphs
@@ -1374,9 +1296,7 @@ module.exports = function (values) {
         scope: [
           'glyph.carriage-return',
         ],
-        settings: {
-          foreground: c.guide,
-        },
+        foreground: 'var(guide)',
       },
 
       {
@@ -1384,9 +1304,7 @@ module.exports = function (values) {
         scope: [
           'glyph.new-line',
         ],
-        settings: {
-          foreground: c.guide,
-        },
+        foreground: 'var(guide)',
       },
 
       /**
@@ -1398,10 +1316,8 @@ module.exports = function (values) {
         scope: [
           'keyword.control.header.todo',
         ],
-        settings: {
-          foreground: c.bnp.green,
-          background: c.headingBackground,
-        },
+        foreground: 'var(green)',
+        background: 'var(headingBackground)',
       },
 
       {
@@ -1409,9 +1325,7 @@ module.exports = function (values) {
         scope: [
           'notes.todo',
         ],
-        settings: {
-          foreground: c.bnp.fg3,
-        },
+        foreground: 'var(fg3)',
       },
 
       {
@@ -1420,9 +1334,7 @@ module.exports = function (values) {
           'text.todo punctuation.definition.italic',
           'text.todo punctuation.definition.bold',
         ],
-        settings: {
-          foreground: c.bnp.bg4,
-        },
+        foreground: 'var(bg4)',
       },
 
       {
@@ -1430,9 +1342,7 @@ module.exports = function (values) {
         scope: [
           'meta.item.todo.pending',
         ],
-        settings: {
-          foreground: c.foreground,
-        },
+        foreground: 'var(fg)',
       },
 
       {
@@ -1440,9 +1350,7 @@ module.exports = function (values) {
         scope: [
           'punctuation.definition.bullet.pending.todo',
         ],
-        settings: {
-          foreground: c.bnp.gray,
-        },
+        foreground: 'var(gray)',
       },
 
       {
@@ -1450,9 +1358,7 @@ module.exports = function (values) {
         scope: [
           'punctuation.definition.bullet.completed.todo',
         ],
-        settings: {
-          foreground: c.bnp.aqua,
-        },
+        foreground: 'var(aqua)',
       },
 
       {
@@ -1460,9 +1366,7 @@ module.exports = function (values) {
         scope: [
           'punctuation.definition.bullet.cancelled.todo',
         ],
-        settings: {
-          foreground: c.bnp.red,
-        },
+        foreground: 'var(red)',
       },
 
       {
@@ -1470,10 +1374,8 @@ module.exports = function (values) {
         scope: [
           'string.other.tag.todo.critical',
         ],
-        settings: {
-          foreground: c.bnp.red,
-          fontStyle: 'bold',
-        },
+        foreground: 'var(red)',
+        font_style: 'bold',
       },
 
       {
@@ -1481,10 +1383,8 @@ module.exports = function (values) {
         scope: [
           'string.other.tag.todo.high',
         ],
-        settings: {
-          foreground: c.bnp.orange,
-          fontStyle: 'bold',
-        },
+        foreground: 'var(orange)',
+        font_style: 'bold',
       },
 
       {
@@ -1492,10 +1392,8 @@ module.exports = function (values) {
         scope: [
           'string.other.tag.todo.low',
         ],
-        settings: {
-          foreground: c.bnp.blue,
-          fontStyle: 'bold',
-        },
+        foreground: 'var(blue)',
+        font_style: 'bold',
       },
 
       {
@@ -1503,10 +1401,8 @@ module.exports = function (values) {
         scope: [
           'string.other.tag.todo.today',
         ],
-        settings: {
-          foreground: c.bnp.yellow,
-          fontStyle: 'bold',
-        },
+        foreground: 'var(yellow)',
+        font_style: 'bold',
       },
 
       {
@@ -1514,9 +1410,7 @@ module.exports = function (values) {
         scope: [
           'meta.tag.todo',
         ],
-        settings: {
-          foreground: c.bnp.purple,
-        },
+        foreground: 'var(purple)',
       },
 
       {
@@ -1525,9 +1419,7 @@ module.exports = function (values) {
           'punctuation.definition.url',
           'todo.url',
         ],
-        settings: {
-          foreground: c.bnp.blue,
-        },
+        foreground: 'var(blue)',
       },
 
       {
@@ -1536,12 +1428,9 @@ module.exports = function (values) {
           'meta.punctuation.separator.todo',
           'meta.punctuation.archive.todo',
         ],
-        settings: {
-          fontStyle: 'italic',
-          foreground: c.bnp.gray,
-        },
+        font_style: 'italic',
+        foreground: 'var(gray)',
       },
-
     ],
   };
 };

@@ -44,42 +44,35 @@
       it('should throw error when scope is not array', function () {
         assert.throws(
           errored(schemes.invalidNonArrayScope),
-          'Scope: "Invalid: Non-array Scope" is not of type "Array"'
+          '"name" scope is not of type "Array"'
         );
       });
 
       it('should throw error when scope array is empty', function () {
         assert.throws(
           errored(schemes.invalidEmptyScope),
-          '"Invalid: Empty Scope" must have atleast 1 scope'
+          '"name" must have atleast 1 scope'
         );
       });
 
       it('should set scope identifier when there is no name', function () {
         assert.throws(
           errored(schemes.invalidMissingName),
-          'Scope: "Invalid: Missing Name" is not of type "Array"'
+          '"scope" scope is not of type "Array"'
         );
       });
 
-      it('should throw error when there is no settings property', function () {
+      it('should throw error when there are no style properties', function () {
         assert.throws(
-          errored(schemes.invalidMissingSettings),
-          'Missing Settings: "Invalid: Missing Settings"'
+          errored(schemes.invalidMissingStyles),
+          '"name" must have atleast 1 style'
         );
       });
 
-      it('should throw error when settings object is empty', function () {
+      it('should throw error when a rules property is undefined', function () {
         assert.throws(
-          errored(schemes.invalidEmptySettings),
-          '"Invalid: Empty Settings" must have atleast 1 setting'
-        );
-      });
-
-      it('should throw error when a settings property is undefined', function () {
-        assert.throws(
-          errored(schemes.invalidUndefinedSetting),
-          '"foreground" for "Invalid: Undefined Setting" is undefined'
+          errored(schemes.invalidUndefinedStyle),
+          '"foreground" for "name" is undefined'
         );
       });
 
@@ -116,18 +109,6 @@
         tinycolor('x')[func]();
       };
     };
-
-    describe('toSublimeHexString()', function () {
-
-      it('should return Hex color string', function () {
-        assert.strictEqual(tinycolor('#ffffff').toSublimeHexString(), '#ffffff');
-      });
-
-      it('should return Hex color string with alpha', function () {
-        assert.strictEqual(tinycolor('#ffffff50').toSublimeHexString(), '#ffffff50');
-      });
-
-    });
 
     describe('toSublimeRgb()', function () {
 

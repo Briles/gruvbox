@@ -23,22 +23,5 @@
     return rgb;
   };
 
-  tinycolor.prototype.toSublimeHexString = function () {
-    var _this = this;
-
-    if (!_this.isValid()) {
-      throw new Error(`"${_this}" is not a valid color'`);
-    }
-
-    var c = _this.toHexString();
-
-    // Only return an alpha channel when necessary
-    if (_this._a !== 1) {
-      c = _this.toHex8String();
-    }
-
-    return c;
-  };
-
   module.exports = tinycolor;
 }());

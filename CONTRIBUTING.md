@@ -11,7 +11,7 @@ the expected behavior, where they’ll remain closed until sufficient interest, 
 
 For additions or bug fixes you should only need to modify the `*.js` files under the `./.gulp/` directory.
 
-> Do not edit the `*.sublime-theme`, `.tmTheme`, or `.sublime-settings` files directly as your changes will not be retained on the next build
+> Do not edit the `*.sublime-theme`, `.sublime-color-scheme`, or `.sublime-settings` files directly as your changes will not be retained on the next build
 
 ## Building
 
@@ -38,7 +38,7 @@ The following gulp tasks are available:
 - `gulp` runs the default `watch` task.
 - `gulp watch` watches `./.gulp/*.js` and builds everything on change.
 - `gulp build_themes` builds theme `.sublime-themes`
-- `gulp build_schemes` builds color scheme `.tmThemes`
+- `gulp build_schemes` builds color scheme `.sublime-color-schemes`
 - `gulp build_widgets` builds widget `.sublime-settings`
 - `gulp build_all` builds themes, schemes, and widgets
 - `gulp build_icons` builds file-type icon `.tmPreferences`
