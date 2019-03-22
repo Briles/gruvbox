@@ -1,0 +1,83 @@
+// COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).tmTheme" "Diff"
+
+--- Expected
+^^^ fg=#458588 fs=
+    ^^^^^^^^ fg=#83a598 fs=
+
++++ Actual
+^^^ fg=#b16286 fs=
+    ^^^^^^ fg=#d3869b fs=
+
+@@ @@
+^^ fg=#d79921 fs=
+   ^^ fg=#d79921 fs=
+
+ Array (
+-    0 => 'expected'
+^ fg=#fb4934 fs=
+     ^ fg=#fb4934 fs=
+       ^^ fg=#fb4934 fs=
+          ^^^^^^^^^^ fg=#fb4934 fs=
+
++    0 => 'actual'
+^ fg=#b8bb26 fs=
+     ^ fg=#b8bb26 fs=
+       ^^ fg=#b8bb26 fs=
+          ^^^^^^^^ fg=#b8bb26 fs=
+
+@@ -2,8 +2,11 @@
+^^ fg=#d79921 fs=
+   ^^^^ fg=#fabd2f fs=
+        ^^^^^ fg=#fabd2f fs=
+              ^^ fg=#d79921 fs=
+
+--- Range ----
+^^^ fg=#d79921 fs=
+    ^^^^^ fg=#fabd2f fs=
+          ^^^^ fg=#d79921 fs=
+
+*** Range ****
+^^^ fg=#d79921 fs=
+    ^^^^^ fg=#fabd2f fs=
+          ^^^^ fg=#d79921 fs=
+
+***************
+^^^^^^^^^^^^^^^ fg=#fbf1c7 fs=
+
+===================================================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ fg=#fbf1c7 fs=
+
+---
+^^^ fg=#fbf1c7 fs=
+
+----
+^^^^ fg=#fb4934 fs=
+
+Plain Text
+^^^^^ fg=#a89984 fs=
+      ^^^^ fg=#a89984 fs=
+
++ Addition
+^ fg=#b8bb26 fs=
+  ^^^^^^^^ fg=#b8bb26 fs=
+
+> Addition
+^ fg=#b8bb26 fs=
+  ^^^^^^^^ fg=#b8bb26 fs=
+
+- Deletion
+^ fg=#fb4934 fs=
+  ^^^^^^^^ fg=#fb4934 fs=
+
+< Deletion
+^ fg=#fb4934 fs=
+  ^^^^^^^^ fg=#fb4934 fs=
+
+! Modified
+^ fg=#fabd2f fs=
+  ^^^^^^^^ fg=#fabd2f fs=
+
+Index: value
+^^^^^ fg=#a89984 fs=
+     ^ fg=#fbf1c7 fs=
+       ^^^^^ fg=#a89984 fs=

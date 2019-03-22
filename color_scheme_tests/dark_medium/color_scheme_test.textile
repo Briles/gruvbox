@@ -1,0 +1,37 @@
+// COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).tmTheme" "Textile"
+
+h1. Heading
+<!-- ^^^^^^ fg=#b8bb26 fs= -->
+
+bq. This is a block quotation
+<!-- ^^^ fg=#d3869b fs= -->
+<!--     ^^ fg=#d3869b fs= -->
+<!--        ^ fg=#d3869b fs= -->
+<!--          ^^^^^ fg=#d3869b fs= -->
+<!--                ^^^^^^^^^ fg=#d3869b fs= -->
+
+This paragraph contains a reference[1].
+<!-- ^^^^^^^^^ fg=#fbf1c7 fs= -->
+<!--           ^^^^^^^^ fg=#fbf1c7 fs= -->
+<!--                    ^ fg=#fbf1c7 fs= -->
+<!--                      ^^^^^^^^^ fg=#fbf1c7 fs= -->
+<!--                               ^^^ fg=#83a598 fs= -->
+<!--                                  ^ fg=#fbf1c7 fs= -->
+
+This is a -deleted- word.
+<!-- ^^ fg=#fbf1c7 fs= -->
+<!--    ^ fg=#fbf1c7 fs= -->
+<!--      ^^^^^^^^^ fg=#fb4934 fs= -->
+<!--                ^^^^^ fg=#fbf1c7 fs= -->
+
+This is an +added+ word.
+<!-- ^^ fg=#fbf1c7 fs= -->
+<!--    ^^ fg=#fbf1c7 fs= -->
+<!--       ^^^^^^^ fg=#b8bb26 fs= -->
+<!--               ^^^^^ fg=#fbf1c7 fs= -->
+
+fn1. This is the footnote
+<!-- ^^^^ fg=#fbf1c7 fs= -->
+<!--      ^^ fg=#fbf1c7 fs= -->
+<!--         ^^^ fg=#fbf1c7 fs= -->
+<!--             ^^^^^^^^ fg=#fbf1c7 fs= -->

@@ -1,0 +1,26 @@
+// COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).tmTheme" "JSON"
+
+   {
+// ^ fg=#FBF1C7 bg=#282828 fs=
+   "bool": false,
+// ^ fg=#FBF1C7 bg=#282828 fs=
+//  ^^^^ fg=#B8BB26 bg=#282828 fs=
+//      ^^ fg=#FBF1C7 bg=#282828 fs=
+//         ^^^^^ fg=#D3869B bg=#282828 fs=
+//              ^ fg=#FBF1C7 bg=#282828 fs=
+
+   ,
+// ^ fg=#FBF1C7 bg=#FB4934 fs=
+
+  "array": [ /**/ ],
+//           ^^^^ fg=#928374 bg=#282828 fs=italic
+
+  "num": 20.09,
+//       ^^^^^ fg=#D3869B bg=#282828 fs=
+
+  "escape": "\n",
+//           ^^ fg=#FB4934 bg=#282828 fs=
+
+  "unterminated string
+//                    ^ bg=#FB4934
+}
