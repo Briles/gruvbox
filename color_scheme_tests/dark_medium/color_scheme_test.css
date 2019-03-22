@@ -1,0 +1,76 @@
+/* COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).tmTheme" "CSS" */
+
+   /* What am I, a comment? */
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^ fg=#928374 fs=italic */
+
+.test-strings {
+/* ^^^^^^^^^^ fg=#fabd2f fs= */
+/*            ^ fg=#fbf1c7 fs= */
+    content: 'invalid;
+/*  ^^^^^^^ fg=#b8bb26 fs= */
+/*         ^ fg=#fbf1c7 fs= */
+/*           ^ fg=#fbf1c7 fs= */
+/*            ^^^^^^^^ fg=#b8bb26 fs= */
+}
+
+.test-punctuation {
+/*                ^ fg=#FBF1C7 */
+    top: 1px;
+/*     ^ fg=#FBF1C7 */
+/*       ^ fg=#D3869B */
+/*        ^^ fg=#B16286 */
+/*          ^ fg=#FBF1C7 */
+
+    top: cubic-bezier(0.2, 0, 0.13, 2);
+/*       ^^^^^^^^^^^^ fg=#8EC07C */
+/*                    ^^^ fg=#D3869B */
+/*                       ^ fg=#FBF1C7 */
+
+    top: url("image");
+/*          ^ fg=#BDAE93 */
+/*                  ^ fg=#BDAE93 */
+   }
+/* ^ fg=#FBF1C7 */
+
+    .classname {}
+/*  ^ fg=#D79921 */
+
+    #id {}
+/*  ^ fg=#D65D0E */
+/*   ^^ fg=#FE8019 */
+
+    html {}
+/*  ^^^^ fg=#83A598 */
+
+    @charset "UTF-8";
+/*  ^ fg=#CC241D */
+/*   ^^^^^^^ fg=#FB4934 */
+
+    @import "x" print;
+/*              ^^^^^ fg=#D3869B */
+
+    @namespace svg "http://www.w3.org/1999/xhtml";
+/*             ^^^ fg=#8EC07C */
+
+    @page :left {}
+/*        ^ fg=#FBF1C7 */
+/*         ^^^^ fg=#D79921 */
+
+    @media (min-width: 700px) {}
+/*         ^ fg=#FBF1C7 */
+/*                          ^ fg=#FBF1C7 */
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 13/10),
+/*                          ^^^^^^^^ fg=#98971A */
+/*                                                            ^ fg=#8EC07C */
+
+    only screen and (min-resolution: 120dpi)
+/*                                   ^^^ fg=#D3869B */
+/*                                      ^^^ fg=#B16286 */
+
+{}
+
+@supports (--foo: green) {
+/*         ^^ fg=#458588 */
+/*           ^^^ fg=#83A598 */
+}

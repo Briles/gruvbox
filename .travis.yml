@@ -1,17 +1,50 @@
-language: node_js
-node_js: stable
+env:
+  global:
+    - PACKAGE="gruvbox"
+    - SUBLIME_TEXT_VERSION="3"
+    - UNITTESTING_TAG="master"
+
+matrix:
+  include:
+    - language: node_js
+      node_js: stable
+      before_script:
+        - npm install
+
+      cache:
+        directories: node_modules
+
+      script:
+        - npm run validate
+
+    - language: python
+      python: 3.3
+
+      before_install:
+        - curl -OL https://raw.githubusercontent.com/SublimeText/UnitTesting/master/sbin/travis.sh
+        # enable gui, see https://docs.travis-ci.com/user/gui-and-headless-browsers
+        - if [ "$TRAVIS_OS_NAME" == "linux"  ]; then
+            export DISPLAY=:99.0;
+            sh -e /etc/init.d/xvfb start;
+          fi
+
+      install:
+        - sh travis.sh bootstrap
+        # - sh travis.sh install_package_control
+        - sh travis.sh install_color_scheme_unit
+        # install LESS package
+        - sh scripts/install_subl_package.sh "LESS" "https://github.com/danro/LESS-sublime"
+        # install SCSS package
+        - sh scripts/install_subl_package.sh "Sass" "https://github.com/braver/SublimeSass"
+
+      script:
+        - sh travis.sh run_color_scheme_tests --coverage
+
+os:
+  - linux
 
 sudo: false
 
 branches:
   only:
     - develop
-
-before_script:
-  - npm install
-
-cache:
-  directories: node_modules
-
-script:
-  - npm run validate

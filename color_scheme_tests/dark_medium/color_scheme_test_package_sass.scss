@@ -1,0 +1,537 @@
+/* COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).tmTheme" SKIP IF NOT "Sass/SCSS"
+
+    Tests for Sass package:
+    https://packagecontrol.io/packages/Sass
+
+*/
+
+        /* This indented comment is to the preceding whitespace. */
+//      ^^ fg=#928374 fs=italic
+//         ^^^^ fg=#928374 fs=italic
+//              ^^^^^^^^ fg=#928374 fs=italic
+//                       ^^^^^^^ fg=#928374 fs=italic
+//                               ^^ fg=#928374 fs=italic
+//                                  ^^ fg=#928374 fs=italic
+//                                     ^^^ fg=#928374 fs=italic
+//                                         ^^^^^^^^^ fg=#928374 fs=italic
+//                                                   ^^^^^^^^^^^ fg=#928374 fs=italic
+//                                                               ^^ fg=#928374 fs=italic
+
+    /* x */
+//  ^^ fg=#928374 fs=italic
+//     ^ fg=#928374 fs=italic
+//       ^^ fg=#928374 fs=italic
+
+    body {}
+//  ^^^^ fg=#83a598 fs=
+//       ^^ fg=#fbf1c7 fs=
+
+    #id {}
+//  ^ fg=#d65d0e fs=
+//   ^^ fg=#fe8019 fs=
+//      ^^ fg=#fbf1c7 fs=
+
+    .class {}
+//  ^ fg=#d79921 fs=
+//   ^^^^^ fg=#fabd2f fs=
+//         ^^ fg=#fbf1c7 fs=
+
+    @font-face {}
+//  ^ fg=#cc241d fs=
+//   ^^^^^^^^^ fg=#fb4934 fs=
+//             ^^ fg=#fbf1c7 fs=
+
+    @media print {}
+//  ^ fg=#cc241d fs=
+//   ^^^^^ fg=#fb4934 fs=
+//         ^^^^^ fg=#d3869b fs=
+//               ^^ fg=#fbf1c7 fs=
+
+    div p {}
+//  ^^^ fg=#83a598 fs=
+//      ^ fg=#83a598 fs=
+//        ^^ fg=#fbf1c7 fs=
+
+    p#x {}
+//  ^ fg=#83a598 fs=
+//   ^ fg=#d65d0e fs=
+//    ^ fg=#fe8019 fs=
+//      ^^ fg=#fbf1c7 fs=
+
+    .x#y {}
+//  ^ fg=#d79921 fs=
+//   ^ fg=#fabd2f fs=
+//    ^ fg=#d65d0e fs=
+//     ^ fg=#fe8019 fs=
+//       ^^ fg=#fbf1c7 fs=
+
+    p, #q, .r {}
+//  ^ fg=#83a598 fs=
+//   ^ fg=#fbf1c7 fs=
+//     ^ fg=#d65d0e fs=
+//      ^ fg=#fe8019 fs=
+//       ^ fg=#fbf1c7 fs=
+//         ^ fg=#d79921 fs=
+//          ^ fg=#fabd2f fs=
+//            ^^ fg=#fbf1c7 fs=
+
+    #x > .y:first-child {}
+//  ^ fg=#d65d0e fs=
+//   ^ fg=#fe8019 fs=
+//     ^ fg=#fbf1c7 fs=
+//       ^ fg=#d79921 fs=
+//        ^ fg=#fabd2f fs=
+//         ^ fg=#fbf1c7 fs=
+//          ^^^^^^^^^^^ fg=#d79921 fs=
+//                      ^^ fg=#fbf1c7 fs=
+
+    div.x li:hover > ul {}
+//  ^^^ fg=#83a598 fs=
+//     ^ fg=#d79921 fs=
+//      ^ fg=#fabd2f fs=
+//        ^^ fg=#83a598 fs=
+//          ^ fg=#fbf1c7 fs=
+//           ^^^^^ fg=#d79921 fs=
+//                 ^ fg=#fbf1c7 fs=
+//                   ^^ fg=#83a598 fs=
+//                      ^^ fg=#fbf1c7 fs=
+
+    p::before {}
+//  ^ fg=#83a598 fs=
+//   ^^ fg=#fbf1c7 fs=
+//     ^^^^^^ fg=#d79921 fs=
+//            ^^ fg=#fbf1c7 fs=
+
+    p::after {}
+//  ^ fg=#83a598 fs=
+//   ^^ fg=#fbf1c7 fs=
+//     ^^^^^ fg=#d79921 fs=
+//           ^^ fg=#fbf1c7 fs=
+
+    .x::before {}
+//  ^ fg=#d79921 fs=
+//   ^ fg=#fabd2f fs=
+//    ^^ fg=#fbf1c7 fs=
+//      ^^^^^^ fg=#d79921 fs=
+//             ^^ fg=#fbf1c7 fs=
+
+    #x::after {}
+//  ^ fg=#d65d0e fs=
+//   ^ fg=#fe8019 fs=
+//    ^^ fg=#fbf1c7 fs=
+//      ^^^^^ fg=#d79921 fs=
+//            ^^ fg=#fbf1c7 fs=
+
+    p:not(.x) {}
+//  ^ fg=#83a598 fs=
+//   ^ fg=#fbf1c7 fs=
+//    ^^^ fg=#d79921 fs=
+//       ^ fg=#bdae93 fs=
+//        ^ fg=#d79921 fs=
+//         ^ fg=#fabd2f fs=
+//          ^ fg=#bdae93 fs=
+//            ^^ fg=#fbf1c7 fs=
+
+    p :nth-child(4n) {}
+//  ^ fg=#83a598 fs=
+//    ^ fg=#fbf1c7 fs=
+//     ^^^^^^^^^ fg=#d79921 fs=
+//              ^ fg=#bdae93 fs=
+//               ^ fg=#d3869b fs=
+//                ^ fg=#b16286 fs=
+//                 ^ fg=#bdae93 fs=
+//                   ^^ fg=#fbf1c7 fs=
+
+    p:first-of-type + p {}
+//  ^ fg=#83a598 fs=
+//   ^ fg=#fbf1c7 fs=
+//    ^^^^^^^^^^^^^ fg=#d79921 fs=
+//                  ^ fg=#fbf1c7 fs=
+//                    ^ fg=#83a598 fs=
+//                      ^^ fg=#fbf1c7 fs=
+
+    a[lang] {}
+//  ^ fg=#83a598 fs=
+//   ^ fg=#fbf1c7 fs=
+//    ^^^^ fg=#d79921 fs=
+//        ^ fg=#fbf1c7 fs=
+//          ^^ fg=#fbf1c7 fs=
+
+    a[lang="pt"] {}
+//  ^ fg=#83a598 fs=
+//   ^ fg=#fbf1c7 fs=
+//    ^^^^ fg=#d79921 fs=
+//        ^ fg=#8ec07c fs=
+//         ^ fg=#fbf1c7 fs=
+//          ^^ fg=#b8bb26 fs=
+//            ^^ fg=#fbf1c7 fs=
+//               ^^ fg=#fbf1c7 fs=
+
+    a[lang~="en-us"] {}
+//  ^ fg=#83a598 fs=
+//   ^ fg=#fbf1c7 fs=
+//    ^^^^ fg=#d79921 fs=
+//        ^^ fg=#8ec07c fs=
+//          ^ fg=#fbf1c7 fs=
+//           ^^^^^ fg=#b8bb26 fs=
+//                ^^ fg=#fbf1c7 fs=
+//                   ^^ fg=#fbf1c7 fs=
+
+    a[lang|="zh"] {}
+//  ^ fg=#83a598 fs=
+//   ^ fg=#fbf1c7 fs=
+//    ^^^^ fg=#d79921 fs=
+//        ^^ fg=#8ec07c fs=
+//          ^ fg=#fbf1c7 fs=
+//           ^^ fg=#b8bb26 fs=
+//             ^^ fg=#fbf1c7 fs=
+//                ^^ fg=#fbf1c7 fs=
+
+    a[href^="#"] {}
+//  ^ fg=#83a598 fs=
+//   ^ fg=#fbf1c7 fs=
+//    ^^^^ fg=#d79921 fs=
+//        ^^ fg=#8ec07c fs=
+//          ^ fg=#fbf1c7 fs=
+//           ^ fg=#b8bb26 fs=
+//            ^^ fg=#fbf1c7 fs=
+//               ^^ fg=#fbf1c7 fs=
+
+    a[class^="main"] {}
+//  ^ fg=#83a598 fs=
+//   ^ fg=#fbf1c7 fs=
+//    ^^^^^ fg=#d79921 fs=
+//         ^^ fg=#8ec07c fs=
+//           ^ fg=#fbf1c7 fs=
+//            ^^^^ fg=#b8bb26 fs=
+//                ^^ fg=#fbf1c7 fs=
+//                   ^^ fg=#fbf1c7 fs=
+
+    a[href$=".cn"] {}
+//  ^ fg=#83a598 fs=
+//   ^ fg=#fbf1c7 fs=
+//    ^^^^ fg=#d79921 fs=
+//        ^^ fg=#8ec07c fs=
+//          ^ fg=#fbf1c7 fs=
+//           ^^^ fg=#b8bb26 fs=
+//              ^^ fg=#fbf1c7 fs=
+//                 ^^ fg=#fbf1c7 fs=
+    a[href*="example"] {}
+//  ^ fg=#83a598 fs=
+//   ^ fg=#fbf1c7 fs=
+//    ^^^^ fg=#d79921 fs=
+//        ^^ fg=#8ec07c fs=
+//          ^ fg=#fbf1c7 fs=
+//           ^^^^^^^ fg=#b8bb26 fs=
+//                  ^^ fg=#fbf1c7 fs=
+//                     ^^ fg=#fbf1c7 fs=
+    a[href^=http]::after {}
+//  ^ fg=#83a598 fs=
+//   ^ fg=#fbf1c7 fs=
+//    ^^^^ fg=#d79921 fs=
+//        ^^ fg=#8ec07c fs=
+//          ^^^^ fg=#b8bb26 fs=
+//              ^^^ fg=#fbf1c7 fs=
+//                 ^^^^^ fg=#d79921 fs=
+//                       ^^ fg=#fbf1c7 fs=
+
+    * [lang^=en] {}
+//  ^ fg=#83a598 fs=
+//    ^ fg=#fbf1c7 fs=
+//     ^^^^ fg=#d79921 fs=
+//         ^^ fg=#8ec07c fs=
+//           ^^ fg=#b8bb26 fs=
+//             ^ fg=#fbf1c7 fs=
+//               ^^ fg=#fbf1c7 fs=
+
+    *.x {}
+//  ^ fg=#83a598 fs=
+//   ^ fg=#d79921 fs=
+//    ^ fg=#fabd2f fs=
+//      ^^ fg=#fbf1c7 fs=
+
+    *#x {}
+//  ^ fg=#83a598 fs=
+//   ^ fg=#d65d0e fs=
+//    ^ fg=#fe8019 fs=
+//      ^^ fg=#fbf1c7 fs=
+
+    .x + * {}
+//  ^ fg=#d79921 fs=
+//   ^ fg=#fabd2f fs=
+//     ^ fg=#fbf1c7 fs=
+//       ^ fg=#83a598 fs=
+//         ^^ fg=#fbf1c7 fs=
+
+@font-face {
+    font-family: x;
+//  ^^^^^^^^^^^ fg=#b8bb26 fs=
+//             ^ fg=#fbf1c7 fs=
+//               ^ fg=#b8bb26 fs=
+//                ^ fg=#fbf1c7 fs=
+    src: url('x.ttf');
+//  ^^^ fg=#b8bb26 fs=
+//     ^ fg=#fbf1c7 fs=
+//       ^^^ fg=#8ec07c fs=
+//          ^ fg=#bdae93 fs=
+//           ^ fg=#fbf1c7 fs=
+//            ^^^^^ fg=#b8bb26 fs=
+//                 ^ fg=#fbf1c7 fs=
+//                  ^ fg=#bdae93 fs=
+//                   ^ fg=#fbf1c7 fs=
+}
+
+.x {
+
+    background-color: #ffffcc;
+//  ^^^^^^^^^^^^^^^^ fg=#b8bb26 fs=
+//                  ^ fg=#fbf1c7 fs=
+//                    ^ fg=#b16286 fs=
+//                     ^^^^^^ fg=#d3869b fs=
+//                           ^ fg=#fbf1c7 fs=
+
+    background: green;
+//  ^^^^^^^^^^ fg=#b8bb26 fs=
+//            ^ fg=#fbf1c7 fs=
+//              ^^^^^ fg=#d3869b fs=
+//                   ^ fg=#fbf1c7 fs=
+
+    background: no-repeat center/80% url("x");
+//  ^^^^^^^^^^ fg=#b8bb26 fs=
+//            ^ fg=#fbf1c7 fs=
+//              ^^^^^^^^^ fg=#fbf1c7 fs=
+//                        ^^^^^^ fg=#fbf1c7 fs=
+//                              ^ fg=#8ec07c fs=
+//                               ^^ fg=#d3869b fs=
+//                                 ^ fg=#b16286 fs=
+//                                   ^^^ fg=#8ec07c fs=
+//                                      ^ fg=#bdae93 fs=
+//                                       ^ fg=#fbf1c7 fs=
+//                                        ^ fg=#b8bb26 fs=
+//                                         ^ fg=#fbf1c7 fs=
+//                                          ^ fg=#bdae93 fs=
+//                                           ^ fg=#fbf1c7 fs=
+
+    background: url("x") repeat-y;
+//  ^^^^^^^^^^ fg=#b8bb26 fs=
+//            ^ fg=#fbf1c7 fs=
+//              ^^^ fg=#8ec07c fs=
+//                 ^ fg=#bdae93 fs=
+//                  ^ fg=#fbf1c7 fs=
+//                   ^ fg=#b8bb26 fs=
+//                    ^ fg=#fbf1c7 fs=
+//                     ^ fg=#bdae93 fs=
+//                       ^^^^^^^^^ fg=#fbf1c7 fs=
+
+    border-radius: 10px 5% / 20px 25em 30px 35em;
+//  ^^^^^^^^^^^^^ fg=#b8bb26 fs=
+//               ^ fg=#fbf1c7 fs=
+//                 ^^ fg=#d3869b fs=
+//                   ^^ fg=#b16286 fs=
+//                      ^ fg=#d3869b fs=
+//                       ^ fg=#b16286 fs=
+//                         ^ fg=#8ec07c fs=
+//                           ^^ fg=#d3869b fs=
+//                             ^^ fg=#b16286 fs=
+//                                ^^ fg=#d3869b fs=
+//                                  ^^ fg=#b16286 fs=
+//                                     ^^ fg=#d3869b fs=
+//                                       ^^ fg=#b16286 fs=
+//                                          ^^ fg=#d3869b fs=
+//                                            ^^ fg=#b16286 fs=
+//                                              ^ fg=#fbf1c7 fs=
+
+    border: 1px #aaaaaa solid;
+//  ^^^^^^ fg=#b8bb26 fs=
+//        ^ fg=#fbf1c7 fs=
+//          ^ fg=#d3869b fs=
+//           ^^ fg=#b16286 fs=
+//              ^ fg=#b16286 fs=
+//               ^^^^^^ fg=#d3869b fs=
+//                      ^^^^^^ fg=#fbf1c7 fs=
+
+    border: medium dashed green;
+//  ^^^^^^ fg=#b8bb26 fs=
+//        ^ fg=#fbf1c7 fs=
+//          ^^^^^^ fg=#fbf1c7 fs=
+//                 ^^^^^^ fg=#fbf1c7 fs=
+//                        ^^^^^ fg=#d3869b fs=
+//                             ^ fg=#fbf1c7 fs=
+
+    color: currentcolor;
+//  ^^^^^ fg=#b8bb26 fs=
+//       ^ fg=#fbf1c7 fs=
+//         ^^^^^^^^^^^^ fg=#d3869b fs=
+//                     ^ fg=#fbf1c7 fs=
+
+    color: red;
+//  ^^^^^ fg=#b8bb26 fs=
+//       ^ fg=#fbf1c7 fs=
+//         ^^^ fg=#d3869b fs=
+//            ^ fg=#fbf1c7 fs=
+
+    color: #0f0;
+//  ^^^^^ fg=#b8bb26 fs=
+//       ^ fg=#fbf1c7 fs=
+//         ^ fg=#b16286 fs=
+//          ^^^ fg=#d3869b fs=
+//             ^ fg=#fbf1c7 fs=
+
+    color: #00ff00;
+//  ^^^^^ fg=#b8bb26 fs=
+//       ^ fg=#fbf1c7 fs=
+//         ^ fg=#b16286 fs=
+//          ^^^^^^ fg=#d3869b fs=
+//                ^ fg=#fbf1c7 fs=
+
+    color: #00ff0080;
+//  ^^^^^ fg=#b8bb26 fs=
+//       ^ fg=#fbf1c7 fs=
+//         ^ fg=#b16286 fs=
+//          ^^^^^^^^ fg=#d3869b fs=
+//                  ^ fg=#fbf1c7 fs=
+
+    color: rgb(34, 12, 64, 0.3);
+//  ^^^^^ fg=#b8bb26 fs=
+//       ^ fg=#fbf1c7 fs=
+//         ^^^ fg=#8ec07c fs=
+//            ^ fg=#bdae93 fs=
+//             ^^ fg=#d3869b fs=
+//               ^ fg=#fbf1c7 fs=
+//                 ^^ fg=#d3869b fs=
+//                   ^ fg=#fbf1c7 fs=
+//                     ^^ fg=#d3869b fs=
+//                       ^ fg=#fbf1c7 fs=
+//                         ^^^ fg=#d3869b fs=
+//                            ^ fg=#bdae93 fs=
+//                             ^ fg=#fbf1c7 fs=
+
+    color: hsl(30, 100%, 50%, 0.3);
+//  ^^^^^ fg=#b8bb26 fs=
+//       ^ fg=#fbf1c7 fs=
+//         ^^^ fg=#8ec07c fs=
+//            ^ fg=#bdae93 fs=
+//             ^^ fg=#d3869b fs=
+//               ^ fg=#fbf1c7 fs=
+//                 ^^^ fg=#d3869b fs=
+//                    ^ fg=#b16286 fs=
+//                     ^ fg=#fbf1c7 fs=
+//                       ^^ fg=#d3869b fs=
+//                         ^ fg=#b16286 fs=
+//                          ^ fg=#fbf1c7 fs=
+//                            ^^^ fg=#d3869b fs=
+//                               ^ fg=#bdae93 fs=
+//                                ^ fg=#fbf1c7 fs=
+
+    content: "_\00A0_";
+//  ^^^^^^^ fg=#b8bb26 fs=
+//         ^ fg=#fbf1c7 fs=
+//           ^ fg=#fbf1c7 fs=
+//            ^ fg=#b8bb26 fs=
+//             ^^^^^ fg=#fb4934 fs=
+//                  ^ fg=#b8bb26 fs=
+//                   ^^ fg=#fbf1c7 fs=
+
+    content: close-quote;
+//  ^^^^^^^ fg=#b8bb26 fs=
+//         ^ fg=#fbf1c7 fs=
+//           ^^^^^^^^^^^^ fg=#fbf1c7 fs=
+
+    content: normal;
+//  ^^^^^^^ fg=#b8bb26 fs=
+//         ^ fg=#fbf1c7 fs=
+//           ^^^^^^^ fg=#fbf1c7 fs=
+    display: block;
+//  ^^^^^^^ fg=#b8bb26 fs=
+//         ^ fg=#fbf1c7 fs=
+//           ^^^^^^ fg=#fbf1c7 fs=
+    display: inline;
+//  ^^^^^^^ fg=#b8bb26 fs=
+//         ^ fg=#fbf1c7 fs=
+//           ^^^^^^^ fg=#fbf1c7 fs=
+    display: none;
+//  ^^^^^^^ fg=#b8bb26 fs=
+//         ^ fg=#fbf1c7 fs=
+//           ^^^^^ fg=#fbf1c7 fs=
+    float: left;
+//  ^^^^^ fg=#b8bb26 fs=
+//       ^ fg=#fbf1c7 fs=
+//         ^^^^^ fg=#fbf1c7 fs=
+
+    font-family: X, sans-serif;
+//  ^^^^^^^^^^^ fg=#b8bb26 fs=
+//             ^ fg=#fbf1c7 fs=
+//               ^ fg=#b8bb26 fs=
+//                ^ fg=#fbf1c7 fs=
+//                  ^^^^^^^^^^ fg=#d3869b fs=
+//                            ^ fg=#fbf1c7 fs=
+
+    font-family: "x", sans-serif;
+//  ^^^^^^^^^^^ fg=#b8bb26 fs=
+//             ^ fg=#fbf1c7 fs=
+//               ^ fg=#fbf1c7 fs=
+//                ^ fg=#b8bb26 fs=
+//                 ^^ fg=#fbf1c7 fs=
+//                    ^^^^^^^^^^ fg=#d3869b fs=
+//                              ^ fg=#fbf1c7 fs=
+
+    font-family: cursive;
+//  ^^^^^^^^^^^ fg=#b8bb26 fs=
+//             ^ fg=#fbf1c7 fs=
+//               ^^^^^^^ fg=#d3869b fs=
+//                      ^ fg=#fbf1c7 fs=
+
+    font-family: fantasy;
+//  ^^^^^^^^^^^ fg=#b8bb26 fs=
+//             ^ fg=#fbf1c7 fs=
+//               ^^^^^^^ fg=#d3869b fs=
+//                      ^ fg=#fbf1c7 fs=
+    font-family: monospace;
+//  ^^^^^^^^^^^ fg=#b8bb26 fs=
+//             ^ fg=#fbf1c7 fs=
+//               ^^^^^^^^^ fg=#d3869b fs=
+//                        ^ fg=#fbf1c7 fs=
+    font-family: sans-serif;
+//  ^^^^^^^^^^^ fg=#b8bb26 fs=
+//             ^ fg=#fbf1c7 fs=
+//               ^^^^^^^^^^ fg=#d3869b fs=
+//                         ^ fg=#fbf1c7 fs=
+    font-family: serif;
+//  ^^^^^^^^^^^ fg=#b8bb26 fs=
+//             ^ fg=#fbf1c7 fs=
+//               ^^^^^ fg=#d3869b fs=
+//                    ^ fg=#fbf1c7 fs=
+
+    font-size: 14px;
+//  ^^^^^^^^^ fg=#b8bb26 fs=
+//           ^ fg=#fbf1c7 fs=
+//             ^^ fg=#d3869b fs=
+//               ^^ fg=#b16286 fs=
+//                 ^ fg=#fbf1c7 fs=
+
+    margin: 2px 1em 0 auto;
+//  ^^^^^^ fg=#b8bb26 fs=
+//        ^ fg=#fbf1c7 fs=
+//          ^ fg=#d3869b fs=
+//           ^^ fg=#b16286 fs=
+//              ^ fg=#d3869b fs=
+//               ^^ fg=#b16286 fs=
+//                  ^ fg=#d3869b fs=
+//                    ^^^^^ fg=#fbf1c7 fs=
+
+    overflow: hidden;
+//  ^^^^^^^^ fg=#b8bb26 fs=
+//          ^ fg=#fbf1c7 fs=
+//            ^^^^^^^ fg=#fbf1c7 fs=
+
+    padding: 10px 3% 20px;
+//  ^^^^^^^ fg=#b8bb26 fs=
+//         ^ fg=#fbf1c7 fs=
+//           ^^ fg=#d3869b fs=
+//             ^^ fg=#b16286 fs=
+//                ^ fg=#d3869b fs=
+//                 ^ fg=#b16286 fs=
+//                   ^^ fg=#d3869b fs=
+//                     ^^ fg=#b16286 fs=
+//                       ^ fg=#fbf1c7 fs=
+}
