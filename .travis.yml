@@ -30,7 +30,12 @@ matrix:
 
       install:
         - sh travis.sh bootstrap
+        # - sh travis.sh install_package_control
         - sh travis.sh install_color_scheme_unit
+        # install LESS package
+        - sh scripts/install_subl_package.sh "LESS" "https://github.com/danro/LESS-sublime"
+        # install SCSS package
+        - sh scripts/install_subl_package.sh "Sass" "https://github.com/braver/SublimeSass"
 
       script:
         - sh travis.sh run_color_scheme_tests --coverage
