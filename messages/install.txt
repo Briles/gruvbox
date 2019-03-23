@@ -16,7 +16,7 @@ gruvbox Dark - Hard Contrast:
 
   {
     "theme": "gruvbox (Dark) (Hard).sublime-theme",
-    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).tmTheme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).sublime-color-scheme",
   }
 
 
@@ -24,7 +24,7 @@ gruvbox Dark - Medium Contrast:
 
   {
     "theme": "gruvbox (Dark) (Medium).sublime-theme",
-    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme",
   }
 
 
@@ -32,7 +32,7 @@ gruvbox Dark - Soft Contrast:
 
   {
     "theme": "gruvbox (Dark) (Soft).sublime-theme",
-    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft).tmTheme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft).sublime-color-scheme",
   }
 
 
@@ -40,7 +40,7 @@ gruvbox Light - Hard Contrast:
 
   {
     "theme": "gruvbox (Light) (Hard).sublime-theme",
-    "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard).tmTheme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard).sublime-color-scheme",
   }
 
 
@@ -48,7 +48,7 @@ gruvbox Light - Medium Contrast:
 
   {
     "theme": "gruvbox (Light) (Medium).sublime-theme",
-    "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium).tmTheme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium).sublime-color-scheme",
   }
 
 
@@ -56,7 +56,7 @@ gruvbox Light - Soft Contrast:
 
   {
     "theme": "gruvbox (Light) (Soft).sublime-theme",
-    "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft).tmTheme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft).sublime-color-scheme",
   }
 
 
@@ -73,12 +73,12 @@ gruvbox Light - Soft Contrast:
 
         A variant without out any neutral / dimmed colors
 
-    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard) NDC.tmTheme",
-    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium) NDC.tmTheme",
-    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft) NDC.tmTheme",
-    "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard) NDC.tmTheme",
-    "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium) NDC.tmTheme",
-    "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft) NDC.tmTheme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard) NDC.sublime-color-scheme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium) NDC.sublime-color-scheme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft) NDC.sublime-color-scheme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard) NDC.sublime-color-scheme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium) NDC.sublime-color-scheme",
+    "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft) NDC.sublime-color-scheme",
 
 
 --------------------------------------------------------------------------------
@@ -461,7 +461,7 @@ gruvbox Light - Soft Contrast:
 
         // PlainTasks.sublime-settings
         {
-            "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme",
+            "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme",
         }
 
 

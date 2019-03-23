@@ -1,4 +1,4 @@
-# COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).tmTheme" "Python" # flake8: noqa
+# COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme" "Python" # flake8: noqa
 
     # This indented comment is to the preceding whitespace.
 #   ^ fg=#928374 fs=italic

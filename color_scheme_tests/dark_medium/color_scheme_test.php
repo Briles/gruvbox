@@ -1,4 +1,4 @@
-<?php // COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).tmTheme" "PHP"
+<?php // COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme" "PHP"
 
         // This indented comment is to the preceding whitespace.
 //      ^^ fg=#928374 fs=italic

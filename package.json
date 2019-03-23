@@ -12,24 +12,23 @@
   },
   "homepage": "https://github.com/Briles/gruvbox#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "commander": "^2.13.0",
-    "gulp": "^3.9.1",
-    "istanbul": "^0.4.5",
+    "chai": "^4.2.0",
+    "commander": "^2.19.0",
+    "gulp": "^4.0.0",
     "jscs": "^3.0.7",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.11",
     "lodash-deep": "^2.0.0",
-    "mocha": "^3.5.3",
-    "plist": "^2.1.0",
-    "run-sequence": "^1.2.2",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
+    "plist": "^3.0.1",
     "tinycolor2": "^1.4.1"
   },
   "scripts": {
     "style": "npm run style:main",
-    "style:main": "./node_modules/.bin/jscs .gulp/",
+    "style:main": "jscs .gulp/",
     "test": "npm run test:main",
-    "test:main": "./node_modules/.bin/mocha ./test/test.js",
+    "test:main": "nyc --reporter=none mocha ./test/test.js",
     "validate": "npm run style & npm run test",
-    "cover": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha"
+    "cover": "npm run test & nyc report --reporter=html"
   }
 }

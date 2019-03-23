@@ -1,4 +1,4 @@
-<!-- COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).tmTheme" "Markdown" -->
+<!-- COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme" "Markdown" -->
 
 # Heading
 <!-- ^^^^ fg=#b8bb26 fs= -->

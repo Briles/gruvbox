@@ -10,6 +10,7 @@
 .lock-wscript
 build/Release
 coverage
+.nyc_output
 lib-cov
 logs
 node_modules

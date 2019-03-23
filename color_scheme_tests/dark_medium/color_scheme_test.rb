@@ -1,4 +1,4 @@
-# COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).tmTheme" "Ruby"
+# COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme" "Ruby"
 
     # This indented comment is to the preceding whitespace.
 #   ^ fg=#928374 fs=italic

@@ -1,4 +1,4 @@
-# COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).tmTheme" SKIP IF NOT "Bash"
+# COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme" SKIP IF NOT "Bash"
 
 set -e
 # ^ fg=#8ec07c fs=
