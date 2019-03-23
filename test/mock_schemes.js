@@ -68,7 +68,7 @@ module.exports = {
   validJoinedScopes: {
     rules: [
       {
-        scope: '1, 2, 3',
+        scope: '1,2,3',
         foreground: 'a',
       },
     ],

@@ -14,7 +14,7 @@
   describe('Utility', function () {
     describe('joinScopes()', function () {
       it('should return sorted comma separated string', function () {
-        assert.strictEqual(utils.joinScopes(['a', 'b', 'c']), 'a, b, c');
+        assert.strictEqual(utils.joinScopes(['a', 'b', 'c']), 'a,b,c');
       });
     });
 
