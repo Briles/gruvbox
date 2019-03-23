@@ -1,4 +1,4 @@
-// COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).tmTheme" "C"
+// COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme" "C"
 
         // This indented comment is to the preceding whitespace.
 //      ^^ fg=#928374 fs=italic

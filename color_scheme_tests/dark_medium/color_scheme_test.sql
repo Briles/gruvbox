@@ -1,4 +1,4 @@
--- COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).tmTheme" "SQL"
+-- COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme" "SQL"
 
 SELECT * FROM x;
 -- ^^^ fg=#fb4934 fs=

@@ -1,4 +1,4 @@
-// COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).tmTheme" "Rust"
+// COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme" "Rust"
 
 #[derive(Debug)]
 // ^^^^^ fg=#83a598 fs=

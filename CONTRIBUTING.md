@@ -49,7 +49,7 @@ The following gulp tasks are available:
 - `./.gulp/build.js` the main script which builds themes, schemes, and widgets
 - `./.gulp/icons.js` script which creates `.tmPreferences` for all icons in `./.gulp/icons/`
 - `./.gulp/components/*.js` contains all the `.sublime-theme` components
-- `./.gulp/scheme.js` contains all the `.tmTheme` components
+- `./.gulp/scheme.js` contains all the `.sublime-color-scheme` components
 - `./.gulp/widget.js` contains all the `.sublime-settings` widget components
 
 ## Coding Guidelines

@@ -1,4 +1,4 @@
-// COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).tmTheme" "Go"
+// COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme" "Go"
 
 package examples
 // ^^^^ fg=#fb4934 fs=

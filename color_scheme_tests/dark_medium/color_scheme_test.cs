@@ -1,4 +1,4 @@
-// COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).tmTheme" "C#"
+// COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme" "C#"
 
 using System;
 // ^^ fg=#fb4934 fs=

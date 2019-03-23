@@ -1,4 +1,4 @@
-// COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).tmTheme" "Java"
+// COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme" "Java"
 
 package hi;
 // ^^^^ fg=#fb4934 fs=
