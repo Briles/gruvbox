@@ -281,14 +281,14 @@ someFunction({
 
     var bar = function() {}
 //  ^^^ fg=#fb4934 fs=
-//      ^^^ fg=#83a598 fs=
+//      ^^^ fg=#b8bb26 fs=
 //          ^ fg=#8ec07c fs=
 //            ^^^^^^^^ fg=#8ec07c fs=
 //                    ^^ fg=#fbf1c7 fs=
 //                       ^^ fg=#fbf1c7 fs=
 
     baz = function*()
-//  ^^^ fg=#83a598 fs=
+//  ^^^ fg=#b8bb26 fs=
 //      ^ fg=#8ec07c fs=
 //        ^^^^^^^^ fg=#8ec07c fs=
 //                ^ fg=#fb4934 fs=
@@ -300,7 +300,7 @@ someFunction({
    function
 // ^^^^^^^^ fg=#8ec07c fs=
    function() {}
-// ^^^^^^^^ fg=#8ec07c fs=
+// ^^^^^^^^ fg=#b8bb26 fs=
 //         ^^ fg=#fbf1c7 fs=
 //            ^^ fg=#fbf1c7 fs=
 
@@ -343,7 +343,7 @@ someFunction({
 //               ^ fg=#fbf1c7 fs=
 
 tag`Hello ${ a + b } world\nanother ${expression}.`;
-// ^ fg=#fbf1c7 fs=
+// ^ fg=#8ec07c fs=
 //  ^^^^^ fg=#b8bb26 fs=
 //        ^^ fg=#8ec07c fs=
 //           ^ fg=#83a598 fs=
@@ -357,7 +357,8 @@ tag`Hello ${ a + b } world\nanother ${expression}.`;
 //                                    ^^^^^^^^^^ fg=#83a598 fs=
 //                                              ^ fg=#8ec07c fs=
 //                                               ^ fg=#b8bb26 fs=
-//                                                ^^ fg=#fbf1c7 fs=
+//                                                ^ fg=#8ec07c fs=
+//                                                 ^ fg=#fbf1c7 fs=
 
 true ? str : str2
 // ^ fg=#d3869b fs=

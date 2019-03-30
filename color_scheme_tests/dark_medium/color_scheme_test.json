@@ -3,11 +3,11 @@
    {
 // ^ fg=#FBF1C7 fs=
    "bool": false,
-// ^ fg=#FBF1C7 fs=
-//  ^^^^ fg=#B8BB26 fs=
-//      ^^ fg=#FBF1C7 fs=
-//         ^^^^^ fg=#D3869B fs=
-//              ^ fg=#FBF1C7 fs=
+// ^ fg=#fbf1c7 fs=
+//  ^^^^ fg=#83a598 fs=
+//      ^^ fg=#fbf1c7 fs=
+//         ^^^^^ fg=#d3869b fs=
+//              ^ fg=#fbf1c7 fs=
 
    ,
 // ^ fg=#FBF1C7 bg=#FB4934 fs=

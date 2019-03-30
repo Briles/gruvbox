@@ -2,7 +2,7 @@
 
 package examples
 // ^^^^ fg=#fb4934 fs=
-//      ^^^^^^^^ fg=#83a598 fs=
+//      ^^^^^^^^ fg=#fbf1c7 fs=
 
 import (
 // ^^^ fg=#fb4934 fs=
@@ -23,7 +23,7 @@ import "ab"
 
 var valid int = 0
 //  ^^^^^ fg=#83a598 fs=
-//        ^^^ fg=#fabd2f fs=
+//        ^^^ fg=#fb4934 fs=
 //            ^ fg=#8ec07c fs=
 //              ^ fg=#d3869b fs=
 
@@ -44,13 +44,12 @@ var1, var2 := imported.Vals
 //  ^ fg=#fbf1c7 fs=
 //    ^^^^ fg=#83a598 fs=
 //         ^^ fg=#8ec07c fs=
-//            ^^^^^^^^ fg=#83a598 fs=
-//                    ^ fg=#fbf1c7 fs=
+//            ^^^^^^^^^ fg=#fbf1c7 fs=
 //                     ^^^^ fg=#83a598 fs=
 
 type myStruct struct {
 // ^ fg=#fb4934 fs=
-//   ^^^^^^^^ fg=#fabd2f fs=
+//   ^^^^^^^^ fg=#fbf1c7 fs=
 //            ^^^^^^ fg=#fb4934 fs=
 //                   ^ fg=#fbf1c7 fs=
 
@@ -58,7 +57,7 @@ type myStruct struct {
 //  ^^^^^^^^^ fg=#83a598 fs=
 //              ^^^^ fg=#fb4934 fs=
 //                  ^^^^ fg=#fbf1c7 fs=
-//                       ^^^^^^ fg=#fabd2f fs=
+//                       ^^^^^^ fg=#fb4934 fs=
 //                             ^ fg=#fbf1c7 fs=
 
     SecondFunc  func(arg interface{})
@@ -99,8 +98,8 @@ const (
 //                     ^ fg=#8ec07c fs=
 //                       ^ fg=#fbf1c7 fs=
 //                        ^^^ fg=#b8bb26 fs=
-//                            ^^^^^^^^^^^ fg=#b8bb26 fs=
-//                                        ^^^^^ fg=#b8bb26 fs=
+//                            ^^^^^^^^^^^ fg=#8ec07c fs=
+//                                        ^^^^^ fg=#8ec07c fs=
 //                                             ^ fg=#fbf1c7 fs=
 
 )
@@ -111,7 +110,7 @@ func () {
 //      ^ fg=#fbf1c7 fs=
 
     Label:
-//  ^^^^^ fg=#83a598 fs=
+//  ^^^^^ fg=#b8bb26 fs=
 //       ^ fg=#fbf1c7 fs=
 
 }
