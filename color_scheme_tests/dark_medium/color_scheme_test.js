@@ -281,14 +281,14 @@ someFunction({
 
     var bar = function() {}
 //  ^^^ fg=#fb4934 fs=
-//      ^^^ fg=#b8bb26 fs=
+//      ^^^ fg=#83a598 fs=
 //          ^ fg=#8ec07c fs=
 //            ^^^^^^^^ fg=#8ec07c fs=
 //                    ^^ fg=#fbf1c7 fs=
 //                       ^^ fg=#fbf1c7 fs=
 
     baz = function*()
-//  ^^^ fg=#b8bb26 fs=
+//  ^^^ fg=#83a598 fs=
 //      ^ fg=#8ec07c fs=
 //        ^^^^^^^^ fg=#8ec07c fs=
 //                ^ fg=#fb4934 fs=
@@ -300,7 +300,7 @@ someFunction({
    function
 // ^^^^^^^^ fg=#8ec07c fs=
    function() {}
-// ^^^^^^^^ fg=#b8bb26 fs=
+// ^^^^^^^^ fg=#8ec07c fs=
 //         ^^ fg=#fbf1c7 fs=
 //            ^^ fg=#fbf1c7 fs=
 
@@ -342,23 +342,23 @@ someFunction({
 //            ^^^ fg=#d3869b fs=
 //               ^ fg=#fbf1c7 fs=
 
-tag`Hello ${ a + b } world\nanother ${expression}.`;
-// ^ fg=#8ec07c fs=
-//  ^^^^^ fg=#b8bb26 fs=
-//        ^^ fg=#8ec07c fs=
-//           ^ fg=#83a598 fs=
-//             ^ fg=#8ec07c fs=
-//               ^ fg=#83a598 fs=
-//                 ^ fg=#8ec07c fs=
-//                   ^^^^^ fg=#b8bb26 fs=
-//                        ^^ fg=#fb4934 fs=
-//                          ^^^^^^^ fg=#b8bb26 fs=
-//                                  ^^ fg=#8ec07c fs=
-//                                    ^^^^^^^^^^ fg=#83a598 fs=
-//                                              ^ fg=#8ec07c fs=
-//                                               ^ fg=#b8bb26 fs=
-//                                                ^ fg=#8ec07c fs=
-//                                                 ^ fg=#fbf1c7 fs=
+   tag`Hello ${ a + b } world\nanother ${expression}.`;
+// ^^^ fg=#83a598 fs=
+//    ^ fg=#fbf1c7 fs=
+//     ^^^^^ fg=#b8bb26 fs=
+//           ^^ fg=#8ec07c fs=
+//              ^ fg=#83a598 fs=
+//                ^ fg=#8ec07c fs=
+//                  ^ fg=#83a598 fs=
+//                    ^ fg=#8ec07c fs=
+//                      ^^^^^ fg=#b8bb26 fs=
+//                           ^^ fg=#fb4934 fs=
+//                             ^^^^^^^ fg=#b8bb26 fs=
+//                                     ^^ fg=#8ec07c fs=
+//                                       ^^^^^^^^^^ fg=#83a598 fs=
+//                                                 ^ fg=#8ec07c fs=
+//                                                  ^ fg=#b8bb26 fs=
+//                                                   ^^ fg=#fbf1c7 fs=
 
 true ? str : str2
 // ^ fg=#d3869b fs=

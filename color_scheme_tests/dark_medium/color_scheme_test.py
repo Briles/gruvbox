@@ -103,7 +103,11 @@ x = '|'.join(sorted(x))
 x = f"{x}"
 # ^ fg=#8ec07c fs=
 #   ^ fg=#fb4934 fs=
-#    ^^^^^ fg=#fbf1c7 fs=
+#    ^ fg=#fbf1c7 fs=
+#     ^ fg=#8ec07c fs=
+#      ^ fg=#83a598 fs=
+#       ^ fg=#8ec07c fs=
+#        ^ fg=#fbf1c7 fs=
 
 def x():
 # ^ fg=#8ec07c fs=

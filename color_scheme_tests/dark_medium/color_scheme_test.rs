@@ -20,7 +20,8 @@ pub enum State {
 
 impl From<&'a str> for State {
 // ^ fg=#fb4934 fs=
-//   ^^^^^ fg=#fbf1c7 fs=
+//   ^^^^ fg=#fabd2f fs=
+//       ^ fg=#fbf1c7 fs=
 //        ^ fg=#8ec07c fs=
 //         ^^ fg=#fb4934 fs=
 //            ^^^ fg=#fb4934 fs=

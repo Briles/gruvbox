@@ -79,7 +79,7 @@ x = "a#{x}b"
 #   ^ fg=#fbf1c7 fs=
 #    ^ fg=#b8bb26 fs=
 #     ^^ fg=#8ec07c fs=
-#       ^ fg=#b8bb26 fs=
+#       ^ fg=#83a598 fs=
 #        ^ fg=#8ec07c fs=
 #         ^ fg=#b8bb26 fs=
 #          ^ fg=#fbf1c7 fs=
@@ -89,9 +89,9 @@ x = "a#{x.y}b"
 #   ^ fg=#fbf1c7 fs=
 #    ^ fg=#b8bb26 fs=
 #     ^^ fg=#8ec07c fs=
-#       ^ fg=#b8bb26 fs=
+#       ^ fg=#83a598 fs=
 #        ^ fg=#fbf1c7 fs=
-#         ^ fg=#b8bb26 fs=
+#         ^ fg=#83a598 fs=
 #          ^ fg=#8ec07c fs=
 #           ^ fg=#b8bb26 fs=
 #            ^ fg=#fbf1c7 fs=
@@ -114,7 +114,7 @@ x = "a#{X.y}b"
 #     ^^ fg=#8ec07c fs=
 #       ^ fg=#fabd2f fs=
 #        ^ fg=#fbf1c7 fs=
-#         ^ fg=#b8bb26 fs=
+#         ^ fg=#83a598 fs=
 #          ^ fg=#8ec07c fs=
 #           ^ fg=#b8bb26 fs=
 #            ^ fg=#fbf1c7 fs=
@@ -696,14 +696,15 @@ class X
 #                            ^^ fg=#fbf1c7 fs=
 #                              ^ fg=#b8bb26 fs=
 #                               ^^^ fg=#fbf1c7 fs=
-#                                  ^ fg=#b8bb26 fs=
+#                                  ^ fg=#83a598 fs=
 #                                   ^ fg=#fbf1c7 fs=
-#                                    ^ fg=#b8bb26 fs=
+#                                    ^ fg=#83a598 fs=
 #                                     ^ fg=#8ec07c fs=
 #                                      ^ fg=#b8bb26 fs=
 #                                       ^^^^^^^ fg=#8ec07c fs=
 #                                              ^^^^ fg=#b8bb26 fs=
 #                                                  ^^ fg=#fbf1c7 fs=
+
       end
     rescue X::SyntaxError => e
 #   ^^^^^^ fg=#fb4934 fs=
@@ -717,7 +718,7 @@ class X
 #           ^ fg=#fbf1c7 fs=
 #            ^ fg=#b8bb26 fs=
 #              ^^ fg=#8ec07c fs=
-#                ^ fg=#b8bb26 fs=
+#                ^ fg=#83a598 fs=
 #                 ^ fg=#8ec07c fs=
 #                  ^ fg=#fbf1c7 fs=
 #                    ^ fg=#fbf1c7 fs=
@@ -732,9 +733,9 @@ class X
 #       ^ fg=#fbf1c7 fs=
 #        ^^ fg=#b8bb26 fs=
 #           ^^ fg=#8ec07c fs=
-#             ^ fg=#b8bb26 fs=
+#             ^ fg=#83a598 fs=
 #              ^ fg=#fbf1c7 fs=
-#               ^^^^^^^ fg=#b8bb26 fs=
+#               ^^^^^^^ fg=#83a598 fs=
 #                      ^ fg=#8ec07c fs=
 #                       ^ fg=#fbf1c7 fs=
 
