@@ -21,15 +21,18 @@
     },
     "Preferences (Linux)":
     {
-      "font_options": null
+      "font_options": null,
+      "theme_font_options": null
     },
     "Preferences (OSX)":
     {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ]
+      "font_options": [ "gray_antialias", "subpixel_antialias" ],
+      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
     },
     "Preferences (Windows)":
     {
-      "font_options": [ "directwrite" ]
+      "font_options": [ "directwrite" ],
+      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -63,15 +66,18 @@
     },
     "Preferences (Linux)":
     {
-      "font_options": null
+      "font_options": null,
+      "theme_font_options": null
     },
     "Preferences (OSX)":
     {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ]
+      "font_options": [ "gray_antialias", "subpixel_antialias" ],
+      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
     },
     "Preferences (Windows)":
     {
-      "font_options": [ "directwrite" ]
+      "font_options": [ "directwrite" ],
+      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -105,15 +111,18 @@
     },
     "Preferences (Linux)":
     {
-      "font_options": null
+      "font_options": null,
+      "theme_font_options": null
     },
     "Preferences (OSX)":
     {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ]
+      "font_options": [ "gray_antialias", "subpixel_antialias" ],
+      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
     },
     "Preferences (Windows)":
     {
-      "font_options": [ "directwrite" ]
+      "font_options": [ "directwrite" ],
+      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -147,15 +156,18 @@
     },
     "Preferences (Linux)":
     {
-      "font_options": null
+      "font_options": null,
+      "theme_font_options": null
     },
     "Preferences (OSX)":
     {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ]
+      "font_options": [ "gray_antialias", "subpixel_antialias" ],
+      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
     },
     "Preferences (Windows)":
     {
-      "font_options": [ "directwrite" ]
+      "font_options": [ "directwrite" ],
+      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -189,15 +201,18 @@
     },
     "Preferences (Linux)":
     {
-      "font_options": null
+      "font_options": null,
+      "theme_font_options": null
     },
     "Preferences (OSX)":
     {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ]
+      "font_options": [ "gray_antialias", "subpixel_antialias" ],
+      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
     },
     "Preferences (Windows)":
     {
-      "font_options": [ "directwrite" ]
+      "font_options": [ "directwrite" ],
+      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -231,15 +246,18 @@
     },
     "Preferences (Linux)":
     {
-      "font_options": null
+      "font_options": null,
+      "theme_font_options": null
     },
     "Preferences (OSX)":
     {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ]
+      "font_options": [ "gray_antialias", "subpixel_antialias" ],
+      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
     },
     "Preferences (Windows)":
     {
-      "font_options": [ "directwrite" ]
+      "font_options": [ "directwrite" ],
+      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -273,15 +291,18 @@
     },
     "Preferences (Linux)":
     {
-      "font_options": null
+      "font_options": null,
+      "theme_font_options": null
     },
     "Preferences (OSX)":
     {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ]
+      "font_options": [ "gray_antialias", "subpixel_antialias" ],
+      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
     },
     "Preferences (Windows)":
     {
-      "font_options": [ "directwrite" ]
+      "font_options": [ "directwrite" ],
+      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -315,15 +336,18 @@
     },
     "Preferences (Linux)":
     {
-      "font_options": null
+      "font_options": null,
+      "theme_font_options": null
     },
     "Preferences (OSX)":
     {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ]
+      "font_options": [ "gray_antialias", "subpixel_antialias" ],
+      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
     },
     "Preferences (Windows)":
     {
-      "font_options": [ "directwrite" ]
+      "font_options": [ "directwrite" ],
+      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -357,15 +381,18 @@
     },
     "Preferences (Linux)":
     {
-      "font_options": null
+      "font_options": null,
+      "theme_font_options": null
     },
     "Preferences (OSX)":
     {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ]
+      "font_options": [ "gray_antialias", "subpixel_antialias" ],
+      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
     },
     "Preferences (Windows)":
     {
-      "font_options": [ "directwrite" ]
+      "font_options": [ "directwrite" ],
+      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -399,15 +426,18 @@
     },
     "Preferences (Linux)":
     {
-      "font_options": null
+      "font_options": null,
+      "theme_font_options": null
     },
     "Preferences (OSX)":
     {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ]
+      "font_options": [ "gray_antialias", "subpixel_antialias" ],
+      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
     },
     "Preferences (Windows)":
     {
-      "font_options": [ "directwrite" ]
+      "font_options": [ "directwrite" ],
+      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -441,15 +471,18 @@
     },
     "Preferences (Linux)":
     {
-      "font_options": null
+      "font_options": null,
+      "theme_font_options": null
     },
     "Preferences (OSX)":
     {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ]
+      "font_options": [ "gray_antialias", "subpixel_antialias" ],
+      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
     },
     "Preferences (Windows)":
     {
-      "font_options": [ "directwrite" ]
+      "font_options": [ "directwrite" ],
+      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -483,15 +516,18 @@
     },
     "Preferences (Linux)":
     {
-      "font_options": null
+      "font_options": null,
+      "theme_font_options": null
     },
     "Preferences (OSX)":
     {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ]
+      "font_options": [ "gray_antialias", "subpixel_antialias" ],
+      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
     },
     "Preferences (Windows)":
     {
-      "font_options": [ "directwrite" ]
+      "font_options": [ "directwrite" ],
+      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
