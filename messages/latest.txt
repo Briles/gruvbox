@@ -1,7 +1,7 @@
 gruvbox for Sublime Text 3
 https://github.com/Briles/gruvbox
 
-### Version 3.0.0
+### Version 3.0.1
 
 COLOR SCHEMES
 
