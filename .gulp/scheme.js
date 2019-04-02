@@ -52,9 +52,6 @@ module.exports = function (values) {
 
       border: 'color(var(bg) lightness(- 10%))',
       container: 'color(var(bg) lightness(- 5%))',
-      panelRow: 'color(var(bg) lightness(2.35%))',
-      borderSofter: 'color(var(bg) lightness(- 6.5%))',
-      containerSofter: 'color(var(bg) lightness(- 2.8%))',
       guide: 'color(var(fg1) alpha(0.15))',
       guideAlt: 'color(var(fg1) alpha(0.15))',
       ruler: 'color(var(fg1) alpha(0.25))',
