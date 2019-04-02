@@ -645,6 +645,14 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Markdown Horizontal Rule',
+        scope: [
+          'punctuation.definition.thematic-break',
+        ],
+        foreground: 'var(fg4)',
+      },
+
+      {
         name: 'Markdown Bold Text',
         scope: [
           'markup.bold',
