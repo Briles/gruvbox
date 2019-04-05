@@ -1047,6 +1047,32 @@ module.exports = function (values) {
         foreground: 'var(yellow1)',
       },
 
+      // Git File Formats
+      {
+        name: 'Issue Ref Punctuation',
+        scope: [
+          'punctuation.definition.reference.issue',
+        ],
+        foreground: 'var(purple1)',
+      },
+
+      {
+        name: 'Git Log Email',
+        scope: [
+          'entity.name.reference.email.git',
+          'entity.name.reference.email.git punctuation',
+        ],
+        foreground: 'var(blue)',
+      },
+
+      {
+        name: 'Git Config Section',
+        scope: [
+          'entity.name.section.git.config',
+        ],
+        foreground: 'var(yellow)',
+      },
+
       // Find in Files
       {
         name: 'FiF Line Number',
