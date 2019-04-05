@@ -5,32 +5,32 @@
 
 .test-strings {
 /* ^^^^^^^^^^ fg=#fabd2f fs= */
-/*            ^ fg=#fbf1c7 fs= */
+/*            ^ fg=#ebdbb2 fs= */
     content: 'invalid;
 /*  ^^^^^^^ fg=#b8bb26 fs= */
-/*         ^ fg=#fbf1c7 fs= */
-/*           ^ fg=#fbf1c7 fs= */
+/*         ^ fg=#ebdbb2 fs= */
+/*           ^ fg=#ebdbb2 fs= */
 /*            ^^^^^^^^ fg=#b8bb26 fs= */
 }
 
 .test-punctuation {
-/*                ^ fg=#FBF1C7 */
+/*                ^ fg=#ebdbb2 */
     top: 1px;
-/*     ^ fg=#FBF1C7 */
+/*     ^ fg=#ebdbb2 */
 /*       ^ fg=#D3869B */
 /*        ^^ fg=#B16286 */
-/*          ^ fg=#FBF1C7 */
+/*          ^ fg=#ebdbb2 */
 
     top: cubic-bezier(0.2, 0, 0.13, 2);
 /*       ^^^^^^^^^^^^ fg=#8EC07C */
 /*                    ^^^ fg=#D3869B */
-/*                       ^ fg=#FBF1C7 */
+/*                       ^ fg=#ebdbb2 */
 
     top: url("image");
 /*          ^ fg=#BDAE93 */
 /*                  ^ fg=#BDAE93 */
    }
-/* ^ fg=#FBF1C7 */
+/* ^ fg=#ebdbb2 */
 
     .classname {}
 /*  ^ fg=#D79921 */
@@ -53,12 +53,12 @@
 /*             ^^^ fg=#8EC07C */
 
     @page :left {}
-/*        ^ fg=#FBF1C7 */
+/*        ^ fg=#ebdbb2 */
 /*         ^^^^ fg=#D79921 */
 
     @media (min-width: 700px) {}
-/*         ^ fg=#FBF1C7 */
-/*                          ^ fg=#FBF1C7 */
+/*         ^ fg=#ebdbb2 */
+/*                          ^ fg=#ebdbb2 */
 
     @media only screen and (-webkit-min-device-pixel-ratio: 13/10),
 /*                          ^^^^^^^^ fg=#98971A */

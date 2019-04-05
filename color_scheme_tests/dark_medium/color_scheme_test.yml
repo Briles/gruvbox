@@ -6,55 +6,55 @@
 
 receipt: Oz-Ware Invoice
 # ^^^^^ fg=#83a598 fs=
-#      ^ fg=#fbf1c7 fs=
+#      ^ fg=#ebdbb2 fs=
 #        ^^^^^^^ fg=#b8bb26 fs=
 #                ^^^^^^^ fg=#b8bb26 fs=
 
 date: 2012-08-06
 # ^^ fg=#83a598 fs=
-#   ^ fg=#fbf1c7 fs=
+#   ^ fg=#ebdbb2 fs=
 #     ^^^^^^^^^^ fg=#d3869b fs=
 
 customer:
 # ^^^^^^ fg=#83a598 fs=
-#       ^ fg=#fbf1c7 fs=
+#       ^ fg=#ebdbb2 fs=
 
     name: Dorothy
 #   ^^^^ fg=#83a598 fs=
-#       ^ fg=#fbf1c7 fs=
+#       ^ fg=#ebdbb2 fs=
 #         ^^^^^^^ fg=#b8bb26 fs=
 
 items:
     - a: a1
-#   ^ fg=#fbf1c7 fs=
+#   ^ fg=#ebdbb2 fs=
 #     ^ fg=#83a598 fs=
-#      ^ fg=#fbf1c7 fs=
+#      ^ fg=#ebdbb2 fs=
 #        ^^ fg=#b8bb26 fs=
 
       b: b1
 #     ^ fg=#83a598 fs=
-#      ^ fg=#fbf1c7 fs=
+#      ^ fg=#ebdbb2 fs=
 #        ^^ fg=#b8bb26 fs=
 
     - a: a2
-#   ^ fg=#fbf1c7 fs=
+#   ^ fg=#ebdbb2 fs=
 #     ^ fg=#83a598 fs=
-#      ^ fg=#fbf1c7 fs=
+#      ^ fg=#ebdbb2 fs=
 #        ^^ fg=#b8bb26 fs=
 
       b: b2
 #     ^ fg=#83a598 fs=
-#      ^ fg=#fbf1c7 fs=
+#      ^ fg=#ebdbb2 fs=
 #        ^^ fg=#b8bb26 fs=
 
 bill-to:  &id001
 # ^^^^^ fg=#83a598 fs=
-#      ^ fg=#fbf1c7 fs=
-#         ^^^^^^ fg=#fbf1c7 fs=
+#      ^ fg=#ebdbb2 fs=
+#         ^^^^^^ fg=#ebdbb2 fs=
 
     street: |
 #   ^^^^^^ fg=#83a598 fs=
-#         ^ fg=#fbf1c7 fs=
+#         ^ fg=#ebdbb2 fs=
 #           ^ fg=#fb4934 fs=
 
             123 Tornado Alley
@@ -68,7 +68,7 @@ bill-to:  &id001
 
 specialDelivery:  >
 # ^^^^^^^^^^^^^ fg=#83a598 fs=
-#              ^ fg=#fbf1c7 fs=
+#              ^ fg=#ebdbb2 fs=
 #                 ^ fg=#fb4934 fs=
 
     Follow the Yellow Brick
@@ -104,9 +104,9 @@ a: 123                     # an integer
 #                               ^^^^^^^ fg=#928374 fs=italic
 
 b: "123"                   # a string, disambiguated by quotes
-#  ^ fg=#fbf1c7 fs=
+#  ^ fg=#ebdbb2 fs=
 #   ^^^ fg=#b8bb26 fs=
-#      ^ fg=#fbf1c7 fs=
+#      ^ fg=#ebdbb2 fs=
 #                          ^ fg=#928374 fs=italic
 #                            ^ fg=#928374 fs=italic
 #                              ^^^^^^^ fg=#928374 fs=italic

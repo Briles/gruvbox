@@ -11,27 +11,27 @@ bq. This is a block quotation
 <!--                ^^^^^^^^^ fg=#d3869b fs= -->
 
 This paragraph contains a reference[1].
-<!-- ^^^^^^^^^ fg=#fbf1c7 fs= -->
-<!--           ^^^^^^^^ fg=#fbf1c7 fs= -->
-<!--                    ^ fg=#fbf1c7 fs= -->
-<!--                      ^^^^^^^^^ fg=#fbf1c7 fs= -->
+<!-- ^^^^^^^^^ fg=#ebdbb2 fs= -->
+<!--           ^^^^^^^^ fg=#ebdbb2 fs= -->
+<!--                    ^ fg=#ebdbb2 fs= -->
+<!--                      ^^^^^^^^^ fg=#ebdbb2 fs= -->
 <!--                               ^^^ fg=#83a598 fs= -->
-<!--                                  ^ fg=#fbf1c7 fs= -->
+<!--                                  ^ fg=#ebdbb2 fs= -->
 
 This is a -deleted- word.
-<!-- ^^ fg=#fbf1c7 fs= -->
-<!--    ^ fg=#fbf1c7 fs= -->
+<!-- ^^ fg=#ebdbb2 fs= -->
+<!--    ^ fg=#ebdbb2 fs= -->
 <!--      ^^^^^^^^^ fg=#fb4934 fs= -->
-<!--                ^^^^^ fg=#fbf1c7 fs= -->
+<!--                ^^^^^ fg=#ebdbb2 fs= -->
 
 This is an +added+ word.
-<!-- ^^ fg=#fbf1c7 fs= -->
-<!--    ^^ fg=#fbf1c7 fs= -->
+<!-- ^^ fg=#ebdbb2 fs= -->
+<!--    ^^ fg=#ebdbb2 fs= -->
 <!--       ^^^^^^^ fg=#b8bb26 fs= -->
-<!--               ^^^^^ fg=#fbf1c7 fs= -->
+<!--               ^^^^^ fg=#ebdbb2 fs= -->
 
 fn1. This is the footnote
-<!-- ^^^^ fg=#fbf1c7 fs= -->
-<!--      ^^ fg=#fbf1c7 fs= -->
-<!--         ^^^ fg=#fbf1c7 fs= -->
-<!--             ^^^^^^^^ fg=#fbf1c7 fs= -->
+<!-- ^^^^ fg=#ebdbb2 fs= -->
+<!--      ^^ fg=#ebdbb2 fs= -->
+<!--         ^^^ fg=#ebdbb2 fs= -->
+<!--             ^^^^^^^^ fg=#ebdbb2 fs= -->

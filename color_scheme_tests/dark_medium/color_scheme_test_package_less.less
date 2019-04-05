@@ -7,64 +7,64 @@
 
 @base: #fff;
 // ^^ fg=#83a598 fs=
-//   ^ fg=#fbf1c7 fs=
+//   ^ fg=#ebdbb2 fs=
 //     ^ fg=#b16286 fs=
 //      ^^^ fg=#d3869b fs=
-//         ^ fg=#fbf1c7 fs=
+//         ^ fg=#ebdbb2 fs=
 
 @ab: @y + #111;
-// ^ fg=#fbf1c7 fs=
+// ^ fg=#ebdbb2 fs=
 //   ^ fg=#458588 fs=
 //    ^ fg=#83a598 fs=
 //      ^ fg=#8ec07c fs=
 //        ^ fg=#b16286 fs=
 //         ^^^ fg=#d3869b fs=
-//            ^ fg=#fbf1c7 fs=
+//            ^ fg=#ebdbb2 fs=
 
 .box-shadow(@style, @c) when (iscolor(@c)) {
 // ^^^^^^^^ fg=#fabd2f fs=
-//         ^ fg=#fbf1c7 fs=
+//         ^ fg=#ebdbb2 fs=
 //          ^ fg=#458588 fs=
 //           ^^^^^ fg=#83a598 fs=
-//                ^ fg=#fbf1c7 fs=
+//                ^ fg=#ebdbb2 fs=
 //                  ^ fg=#458588 fs=
 //                   ^ fg=#83a598 fs=
-//                    ^ fg=#fbf1c7 fs=
+//                    ^ fg=#ebdbb2 fs=
 //                      ^^^^ fg=#8ec07c fs=
-//                           ^ fg=#fbf1c7 fs=
+//                           ^ fg=#ebdbb2 fs=
 //                            ^^^^^^^ fg=#b8bb26 fs=
-//                                   ^ fg=#fbf1c7 fs=
+//                                   ^ fg=#ebdbb2 fs=
 //                                    ^ fg=#458588 fs=
 //                                     ^ fg=#83a598 fs=
-//                                      ^^ fg=#fbf1c7 fs=
-//                                         ^ fg=#fbf1c7 fs=
+//                                      ^^ fg=#ebdbb2 fs=
+//                                         ^ fg=#ebdbb2 fs=
     box-shadow: @style @c;
 //  ^^^^^^^^^^ fg=#b8bb26 fs=
-//            ^ fg=#fbf1c7 fs=
+//            ^ fg=#ebdbb2 fs=
 //              ^ fg=#458588 fs=
 //               ^^^^^ fg=#83a598 fs=
 //                     ^ fg=#458588 fs=
 //                      ^ fg=#83a598 fs=
-//                       ^ fg=#fbf1c7 fs=
+//                       ^ fg=#ebdbb2 fs=
 }
 .abc(@a, @alpha: 50%) when (isnumber(@alpha)) {}
 // ^ fg=#fabd2f fs=
-//  ^ fg=#fbf1c7 fs=
+//  ^ fg=#ebdbb2 fs=
 //   ^ fg=#458588 fs=
 //    ^ fg=#83a598 fs=
-//     ^ fg=#fbf1c7 fs=
+//     ^ fg=#ebdbb2 fs=
 //       ^ fg=#458588 fs=
 //        ^^^^^ fg=#83a598 fs=
-//             ^ fg=#fbf1c7 fs=
+//             ^ fg=#ebdbb2 fs=
 //               ^^ fg=#d3869b fs=
 //                 ^ fg=#b16286 fs=
-//                  ^ fg=#fbf1c7 fs=
+//                  ^ fg=#ebdbb2 fs=
 //                    ^^^^ fg=#8ec07c fs=
-//                         ^ fg=#fbf1c7 fs=
+//                         ^ fg=#ebdbb2 fs=
 //                          ^^^^^^^^ fg=#8ec07c fs=
 //                                  ^ fg=#bdae93 fs=
 //                                   ^ fg=#458588 fs=
 //                                    ^^^^^ fg=#83a598 fs=
 //                                         ^ fg=#bdae93 fs=
-//                                          ^ fg=#fbf1c7 fs=
-//                                            ^^ fg=#fbf1c7 fs=
+//                                          ^ fg=#ebdbb2 fs=
+//                                            ^^ fg=#ebdbb2 fs=

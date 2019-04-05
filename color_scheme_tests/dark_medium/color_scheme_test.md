@@ -30,85 +30,85 @@ heading underlined with dashes
 <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^ fg=#98971a fs= -->
 
 Paragraph of text that should be scoped as meta.paragraph.
-<!-- ^^^^ fg=#fbf1c7 fs= -->
-<!--      ^^ fg=#fbf1c7 fs= -->
-<!--         ^^^^ fg=#fbf1c7 fs= -->
-<!--              ^^^^ fg=#fbf1c7 fs= -->
-<!--                   ^^^^^^ fg=#fbf1c7 fs= -->
-<!--                          ^^ fg=#fbf1c7 fs= -->
-<!--                             ^^^^^^ fg=#fbf1c7 fs= -->
-<!--                                    ^^ fg=#fbf1c7 fs= -->
-<!--                                       ^^^^^^^^^^^^^^^ fg=#fbf1c7 fs= -->
+<!-- ^^^^ fg=#ebdbb2 fs= -->
+<!--      ^^ fg=#ebdbb2 fs= -->
+<!--         ^^^^ fg=#ebdbb2 fs= -->
+<!--              ^^^^ fg=#ebdbb2 fs= -->
+<!--                   ^^^^^^ fg=#ebdbb2 fs= -->
+<!--                          ^^ fg=#ebdbb2 fs= -->
+<!--                             ^^^^^^ fg=#ebdbb2 fs= -->
+<!--                                    ^^ fg=#ebdbb2 fs= -->
+<!--                                       ^^^^^^^^^^^^^^^ fg=#ebdbb2 fs= -->
 
 A [link](https://example.com), *italic text* and **bold**.
 <!-- ^^ fg=#d3869b fs= -->
-<!--   ^ fg=#fbf1c7 fs= -->
+<!--   ^ fg=#ebdbb2 fs= -->
 <!--    ^ fg=#b16286 fs= -->
 <!--     ^^^^^^^^^^^^^^^^^^^ fg=#d3869b fs= -->
 <!--                        ^ fg=#b16286 fs= -->
-<!--                         ^ fg=#fbf1c7 fs= -->
+<!--                         ^ fg=#ebdbb2 fs= -->
 <!--                           ^ fg=#cc241d fs=italic -->
 <!--                            ^^^^^^ fg=#fb4934 fs=italic -->
 <!--                                   ^^^^ fg=#fb4934 fs=italic -->
 <!--                                       ^ fg=#cc241d fs=italic -->
-<!--                                         ^^^ fg=#fbf1c7 fs= -->
+<!--                                         ^^^ fg=#ebdbb2 fs= -->
 <!--                                             ^^ fg=#d65d0e fs=bold -->
 <!--                                               ^^^^ fg=#fe8019 fs=bold -->
 <!--                                                   ^^ fg=#d65d0e fs=bold -->
-<!--                                                     ^ fg=#fbf1c7 fs= -->
+<!--                                                     ^ fg=#ebdbb2 fs= -->
 
 Inline `code sample`.
-<!-- ^ fg=#fbf1c7 fs= -->
+<!-- ^ fg=#ebdbb2 fs= -->
 <!--   ^ fg=#d79921 fs= -->
 <!--    ^^^^ fg=#fabd2f fs= -->
 <!--         ^^^^^^ fg=#fabd2f fs= -->
 <!--               ^ fg=#d79921 fs= -->
-<!--                ^ fg=#fbf1c7 fs= -->
+<!--                ^ fg=#ebdbb2 fs= -->
 
 Here is a [](https://example.com).
-<!-- ^^ fg=#fbf1c7 fs= -->
-<!--    ^ fg=#fbf1c7 fs= -->
-<!--      ^^ fg=#fbf1c7 fs= -->
+<!-- ^^ fg=#ebdbb2 fs= -->
+<!--    ^ fg=#ebdbb2 fs= -->
+<!--      ^^ fg=#ebdbb2 fs= -->
 <!--        ^ fg=#b16286 fs= -->
 <!--         ^^^^^^^^^^^^^^^^^^^ fg=#d3869b fs= -->
 <!--                            ^ fg=#b16286 fs= -->
-<!--                             ^ fg=#fbf1c7 fs= -->
+<!--                             ^ fg=#ebdbb2 fs= -->
 
 Here is a [reference link][name].
-<!-- ^^ fg=#fbf1c7 fs= -->
-<!--    ^ fg=#fbf1c7 fs= -->
-<!--      ^ fg=#fbf1c7 fs= -->
+<!-- ^^ fg=#ebdbb2 fs= -->
+<!--    ^ fg=#ebdbb2 fs= -->
+<!--      ^ fg=#ebdbb2 fs= -->
 <!--       ^^^^^^^^^ fg=#d3869b fs= -->
 <!--                 ^^^^ fg=#d3869b fs= -->
-<!--                     ^ fg=#fbf1c7 fs= -->
+<!--                     ^ fg=#ebdbb2 fs= -->
 <!--                      ^ fg=#689d6a fs= -->
 <!--                       ^^^^ fg=#8ec07c fs= -->
 <!--                           ^ fg=#689d6a fs= -->
-<!--                            ^ fg=#fbf1c7 fs= -->
+<!--                            ^ fg=#ebdbb2 fs= -->
 
 Here is a [blank reference link][].
-<!-- ^^ fg=#fbf1c7 fs= -->
-<!--    ^ fg=#fbf1c7 fs= -->
-<!--      ^ fg=#fbf1c7 fs= -->
+<!-- ^^ fg=#ebdbb2 fs= -->
+<!--    ^ fg=#ebdbb2 fs= -->
+<!--      ^ fg=#ebdbb2 fs= -->
 <!--       ^^^^^ fg=#d3869b fs= -->
 <!--             ^^^^^^^^^ fg=#d3869b fs= -->
 <!--                       ^^^^ fg=#d3869b fs= -->
-<!--                           ^ fg=#fbf1c7 fs= -->
+<!--                           ^ fg=#ebdbb2 fs= -->
 <!--                            ^^ fg=#689d6a fs= -->
-<!--                              ^ fg=#fbf1c7 fs= -->
+<!--                              ^ fg=#ebdbb2 fs= -->
 
 Here is a ![Image Alt Text](https://example.com/cat.gif).
-<!-- ^^ fg=#fbf1c7 fs= -->
-<!--    ^ fg=#fbf1c7 fs= -->
-<!--      ^^ fg=#fbf1c7 fs= -->
+<!-- ^^ fg=#ebdbb2 fs= -->
+<!--    ^ fg=#ebdbb2 fs= -->
+<!--      ^^ fg=#ebdbb2 fs= -->
 <!--        ^^^^^ fg=#d3869b fs= -->
 <!--              ^^^ fg=#d3869b fs= -->
 <!--                  ^^^^ fg=#d3869b fs= -->
-<!--                      ^ fg=#fbf1c7 fs= -->
+<!--                      ^ fg=#ebdbb2 fs= -->
 <!--                       ^ fg=#b16286 fs= -->
 <!--                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^ fg=#d3869b fs= -->
 <!--                                                   ^ fg=#b16286 fs= -->
-<!--                                                    ^ fg=#fbf1c7 fs= -->
+<!--                                                    ^ fg=#ebdbb2 fs= -->
 
   1. Ordered list item
 <!-- ^^^^^^^ fg=#83a598 fs= -->
