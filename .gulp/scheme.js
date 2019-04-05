@@ -78,41 +78,7 @@ module.exports = function (values) {
       /* CSS */
 
       // CSS passed to popups.
-      popup_css: `
-        html {
-          background-color: color(var(--background) lightness(- 5%));
-          color: var(--foreground);
-        }
-
-        a {
-          color: var(--bluish);
-        }
-
-        .error, .deleted {
-          color: var(--redish);
-        }
-
-        .success, .inserted, .name {
-          color: var(--greenish);
-        }
-
-        .warning, .modified {
-          color: var(--yellowish);
-        }
-
-        .type {
-          color: var(--yellowish);
-          font-style: italic;
-        }
-
-        .param {
-          color: var(--foreground);
-        }
-
-        .current {
-          text-decoration: underline;
-        }
-      `.replace(/\s*/g, ''),
+      // popup_css: '',
 
       // CSS passed to phantoms. If not specified, uses popup_css.
       // phantom_css: '',
