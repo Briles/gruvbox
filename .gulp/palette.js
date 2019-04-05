@@ -1,147 +1,184 @@
-(function () {
-  'use strict';
+const dark0_hard     = '#1D2021';
+const dark0          = '#282828';
+const dark0_soft     = '#32302F';
+const dark1          = '#3C3836';
+const dark2          = '#504945';
+const dark3          = '#665C54';
+const dark4          = '#7C6F64';
 
-  var palette = {
+const gray           = '#928374';
 
-    dark: {
-      bg: {
-        hard: '#1D2021',
-        medium: '#282828',
-        soft: '#32302F',
-      },
-      bg0: '#282828',
-      bg1: '#3C3836',
-      bg2: '#504945',
-      bg3: '#665C54',
-      bg4: '#7C6F64',
-      gray: '#928374',
-      fg: {
-        hard: '#F9F5D7',
-        medium: '#FBF1C7',
-        soft: '#F2E5BC',
-      },
-      fg0: '#FBF1C7',
-      fg1: '#EBDBB2',
-      fg2: '#D5C4A1',
-      fg3: '#BDAE93',
-      fg4: '#A89984',
-      red: '#FB4934',
-      green: '#B8BB26',
-      yellow: '#FABD2F',
-      blue: '#83A598',
-      purple: '#D3869B',
-      aqua: '#8EC07C',
-      orange: '#FE8019',
-      red1: '#CC241D',
-      green1: '#98971A',
-      yellow1: '#D79921',
-      blue1: '#458588',
-      purple1: '#B16286',
-      aqua1: '#689D6A',
-      orange1: '#D65D0E',
+const light0_hard    = '#F9F5D7';
+const light0         = '#FBF1C7';
+const light0_soft    = '#F2E5BC';
+const light1         = '#EBDBB2';
+const light2         = '#D5C4A1';
+const light3         = '#BDAE93';
+const light4         = '#A89984';
+
+const bright_red     = '#FB4934';
+const bright_green   = '#B8BB26';
+const bright_yellow  = '#FABD2F';
+const bright_blue    = '#83A598';
+const bright_purple  = '#D3869B';
+const bright_aqua    = '#8EC07C';
+const bright_orange  = '#FE8019';
+
+const neutral_red    = '#CC241D';
+const neutral_green  = '#98971A';
+const neutral_yellow = '#D79921';
+const neutral_blue   = '#458588';
+const neutral_purple = '#B16286';
+const neutral_aqua   = '#689D6A';
+const neutral_orange = '#D65D0E';
+
+const faded_red      = '#9D0006';
+const faded_green    = '#79740E';
+const faded_yellow   = '#B57614';
+const faded_blue     = '#076678';
+const faded_purple   = '#8F3F71';
+const faded_aqua     = '#427B58';
+const faded_orange   = '#AF3A03';
+
+const palette = {
+
+  dark: {
+    bg: {
+      hard: dark0_hard,
+      medium: dark0,
+      soft: dark0_soft,
     },
-
-    light: {
-      bg: {
-        hard: '#F9F5D7',
-        medium: '#FBF1C7',
-        soft: '#F2E5BC',
-      },
-      bg0: '#FBF1C7',
-      bg1: '#EBDBB2',
-      bg2: '#D5C4A1',
-      bg3: '#BDAE93',
-      bg4: '#A89984',
-      gray: '#928374',
-      fg: {
-        hard: '#1D2021',
-        medium: '#282828',
-        soft: '#32302F',
-      },
-      fg0: '#282828',
-      fg1: '#3C3836',
-      fg2: '#504945',
-      fg3: '#665C54',
-      fg4: '#7C6F64',
-      red: '#9D0006',
-      green: '#79740E',
-      yellow: '#B57614',
-      blue: '#076678',
-      purple: '#8F3F71',
-      aqua: '#427B58',
-      orange: '#AF3A03',
-      red1: '#CC241D',
-      green1: '#98971A',
-      yellow1: '#D79921',
-      blue1: '#458588',
-      purple1: '#B16286',
-      aqua1: '#689D6A',
-      orange1: '#D65D0E',
+    bg0: dark0,
+    bg1: dark1,
+    bg2: dark2,
+    bg3: dark3,
+    bg4: dark4,
+    gray: gray,
+    fg: {
+      hard: light0_hard,
+      medium: light0,
+      soft: light0_soft,
     },
+    fg0: light0,
+    fg1: light1,
+    fg2: light2,
+    fg3: light3,
+    fg4: light4,
+    red: bright_red,
+    green: bright_green,
+    yellow: bright_yellow,
+    blue: bright_blue,
+    purple: bright_purple,
+    aqua: bright_aqua,
+    orange: bright_orange,
+    red1: neutral_red,
+    green1: neutral_green,
+    yellow1: neutral_yellow,
+    blue1: neutral_blue,
+    purple1: neutral_purple,
+    aqua1: neutral_aqua,
+    orange1: neutral_orange,
+  },
 
-    brightRed: '#FB4934',
-    brightGreen: '#B8BB26',
-    brightYellow: '#FABD2F',
-    brightBlue: '#83A598',
-    brightPurple: '#D3869B',
-    brightAqua: '#8EC07C',
-    brightOrange: '#FE8019',
-
-    neutralRed: '#CC241D',
-    neutralGreen: '#98971A',
-    neutralYellow: '#D79921',
-    neutralBlue: '#458588',
-    neutralPurple: '#B16286',
-    neutralAqua: '#689D6A',
-    neutralOrange: '#D65D0E',
-
-    fadedRed: '#9D0006',
-    fadedGreen: '#79740E',
-    fadedYellow: '#B57614',
-    fadedBlue: '#076678',
-    fadedPurple: '#8F3F71',
-    fadedAqua: '#427B58',
-    fadedOrange: '#AF3A03',
-
-    accents: {
-      red: {
-        dark: '#FB4934',
-        neutral: '#CC241D',
-        light: '#9D0006',
-      },
-      green: {
-        dark: '#B8BB26',
-        neutral: '#98971A',
-        light: '#79740E',
-      },
-      yellow: {
-        dark: '#FABD2F',
-        neutral: '#D79921',
-        light: '#B57614',
-      },
-      blue: {
-        dark: '#83A598',
-        neutral: '#458588',
-        light: '#076678',
-      },
-      purple: {
-        dark: '#D3869B',
-        neutral: '#B16286',
-        light: '#8F3F71',
-      },
-      aqua: {
-        dark: '#8EC07C',
-        neutral: '#689D6A',
-        light: '#427B58',
-      },
-      orange: {
-        dark: '#FE8019',
-        neutral: '#D65D0E',
-        light: '#AF3A03',
-      },
+  light: {
+    bg: {
+      hard: light0_hard,
+      medium: light0,
+      soft: light0_soft,
     },
-  };
+    bg0: light0,
+    bg1: light1,
+    bg2: light2,
+    bg3: light3,
+    bg4: light4,
+    gray: gray,
+    fg: {
+      hard: dark0_hard,
+      medium: dark0,
+      soft: dark0_soft,
+    },
+    fg0: dark0,
+    fg1: dark1,
+    fg2: dark2,
+    fg3: dark3,
+    fg4: dark4,
+    red: faded_red,
+    green: faded_green,
+    yellow: faded_yellow,
+    blue: faded_blue,
+    purple: faded_purple,
+    aqua: faded_aqua,
+    orange: faded_orange,
+    red1: neutral_red,
+    green1: neutral_green,
+    yellow1: neutral_yellow,
+    blue1: neutral_blue,
+    purple1: neutral_purple,
+    aqua1: neutral_aqua,
+    orange1: neutral_orange,
+  },
 
-  module.exports = palette;
+  brightRed: bright_red,
+  brightGreen: bright_green,
+  brightYellow: bright_yellow,
+  brightBlue: bright_blue,
+  brightPurple: bright_purple,
+  brightAqua: bright_aqua,
+  brightOrange: bright_orange,
 
-}());
+  neutralRed: neutral_red,
+  neutralGreen: neutral_green,
+  neutralYellow: neutral_yellow,
+  neutralBlue: neutral_blue,
+  neutralPurple: neutral_purple,
+  neutralAqua: neutral_aqua,
+  neutralOrange: neutral_orange,
+
+  fadedRed: faded_red,
+  fadedGreen: faded_green,
+  fadedYellow: faded_yellow,
+  fadedBlue: faded_blue,
+  fadedPurple: faded_purple,
+  fadedAqua: faded_aqua,
+  fadedOrange: faded_orange,
+
+  accents: {
+    red: {
+      dark: bright_red,
+      neutral: neutral_red,
+      light: faded_red,
+    },
+    green: {
+      dark: bright_green,
+      neutral: neutral_green,
+      light: faded_green,
+    },
+    yellow: {
+      dark: bright_yellow,
+      neutral: neutral_yellow,
+      light: faded_yellow,
+    },
+    blue: {
+      dark: bright_blue,
+      neutral: neutral_blue,
+      light: faded_blue,
+    },
+    purple: {
+      dark: bright_purple,
+      neutral: neutral_purple,
+      light: faded_purple,
+    },
+    aqua: {
+      dark: bright_aqua,
+      neutral: neutral_aqua,
+      light: faded_aqua,
+    },
+    orange: {
+      dark: bright_orange,
+      neutral: neutral_orange,
+      light: faded_orange,
+    },
+  },
+};
+
+module.exports = palette;
