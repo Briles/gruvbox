@@ -20,7 +20,12 @@ matrix:
     - language: python
       python: 3.3
 
+      cache:
+        directories: node_modules
+
       before_install:
+        nvm install node
+        nvm use node
         - curl -OL https://raw.githubusercontent.com/Briles/UnitTesting/master/sbin/travis.sh
         # enable gui, see https://docs.travis-ci.com/user/gui-and-headless-browsers
         - if [ "$TRAVIS_OS_NAME" == "linux"  ]; then
@@ -36,6 +41,11 @@ matrix:
         - sh scripts/install_subl_package.sh "LESS" "https://github.com/danro/LESS-sublime"
         # install SCSS package
         - sh scripts/install_subl_package.sh "Sass" "https://github.com/braver/SublimeSass"
+      
+      before_script:
+        - npm install
+        - npx gulp build_all
+        - npx gulp build_min
 
       script:
         - sh travis.sh run_color_scheme_tests --coverage
