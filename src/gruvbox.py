@@ -13,7 +13,7 @@ class GruvboxSelect(sublime_plugin.TextCommand):
 
         for scheme in color_schemes:
             if 'Packages/gruvbox/' in scheme:
-                temp_schemes.append(scheme[17:-8])
+                temp_schemes.append(scheme[17:-21])
 
         for i in range(len(temp_schemes)):
             if (i % 2) == 0:
