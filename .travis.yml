@@ -24,8 +24,8 @@ matrix:
         directories: node_modules
 
       before_install:
-        nvm install node
-        nvm use node
+        - nvm install node
+        - nvm use node
         - curl -OL https://raw.githubusercontent.com/Briles/UnitTesting/master/sbin/travis.sh
         # enable gui, see https://docs.travis-ci.com/user/gui-and-headless-browsers
         - if [ "$TRAVIS_OS_NAME" == "linux"  ]; then
