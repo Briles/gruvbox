@@ -1,14 +1,9 @@
 gruvbox for Sublime Text 3
 https://github.com/Briles/gruvbox
 
-### Version 3.0.2
+### Version 3.0.3
 
-COLOR SCHEMES
-
-  * Changed the foreground color to match gruvbox for Vim
-  * Custom Phantom and Popup styling has been removed. gruvbox wasn't providing
-  	enough improvement over the default Sublime Text and mdpopups styling.
-  * Improved coloring for various git file formats
+* Fixed an issue preventing themes and color schemes from being set using "gruvbox: select theme"
 
 ---
 
