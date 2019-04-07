@@ -1,18 +1,27 @@
-module.exports = function (values) {
+const mixins = require('../../mixins.js');
 
+module.exports = function (values) {
   const c = values.colors;
   const stOpts = values.options;
 
   return [
 
     // Default Thickness
-    {
-      class: 'tab_control',
-      settings: [stOpts.underlineDirtyTabs],
-      attributes: ['dirty'],
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'tab_control',
+        settings: [stOpts.underlineDirtyTabs],
+        attributes: ['dirty'],
 
-      'layer2.tint': c.bnp.gray,
-    },
+        parents: [
+          {
+            attributes: [lumin],
+          },
+        ],
+
+        'layer2.tint': palette('gray'),
+      };
+    }),
 
     {
       class: 'tab_control',
@@ -30,6 +39,5 @@ module.exports = function (values) {
 
       'layer2.inner_margin': [0, 0, 0, 2],
     },
-
   ];
 };

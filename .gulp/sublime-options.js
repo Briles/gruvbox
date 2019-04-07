@@ -12,8 +12,6 @@ module.exports = {
   accentPurple: 'gruvbox_accent_purple',
   accentRed: 'gruvbox_accent_red',
   accentYellow: 'gruvbox_accent_yellow',
-  accentNeutral: 'gruvbox_accent_neutral',
-  accentOpposite: 'gruvbox_accent_opposite',
 
   // Animated Icons
   animatedIcons: 'gruvbox_animate_icons',

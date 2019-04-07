@@ -21,6 +21,7 @@ const paths = require('./paths.js');
 const tinycolor = require('./tinycolor.js');
 const utils = require('./utils.js');
 const variant = require('./variants.js');
+const themeGenerator = require('./theme.js');
 const Widget = require('./widget.js');
 
 // theme-specific options exposed to the user
@@ -29,6 +30,8 @@ const sublimeOpts = require('./sublime-options.js');
 // Gruvbox colors
 const gruvboxPalette = require('./palette.js');
 
+let themeBuilt = false;
+
 conf.brightnessModes.forEach(function (brightness) {
 
   const brightnessIdentifier = _.toLower(brightness);
@@ -36,9 +39,9 @@ conf.brightnessModes.forEach(function (brightness) {
   const oppositeBrightnessIdentifier = _.toLower(_.without(conf.brightnessModes, brightness));
   const oppositeBrightnessPalette = gruvboxPalette[oppositeBrightnessIdentifier];
   paths.internal.this = `${paths.internal.assets}${brightnessIdentifier}/`;
-  paths.internal.midstroke = `${paths.internal.this}midstroke__`;
-  paths.internal.spacegray = `${paths.internal.this}spacegray__`;
-  paths.internal.thick = `${paths.internal.this}thick__`;
+  paths.internal.midstroke = `${paths.internal.commons}midstroke__`;
+  paths.internal.spacegray = `${paths.internal.commons}spacegray__`;
+  paths.internal.thick = `${paths.internal.commons}thick__`;
 
   conf.contrastModes.forEach(function (contrast) {
     const contrastIdentifier = _.toLower(contrast);
@@ -46,24 +49,9 @@ conf.brightnessModes.forEach(function (brightness) {
     const foregroundColor = brightnessPalette.fg[contrastIdentifier];
 
     const colors = {
-      test: conf.testColor,
-      transparent: 'rgba(0, 0, 0, 0)',
-      black: 'rgb(0, 0, 0)',
-      white: 'rgb(255, 255, 255)',
-
       background: backgroundColor,
       foreground: foregroundColor,
       bnp: brightnessPalette,
-      obnp: oppositeBrightnessPalette,
-      gs: _.deepMapValues(brightnessPalette, c => tinycolor(c).greyscale().toRgbString()),
-
-      // Theme Colors
-      border: tinycolor(backgroundColor).darken(10).toRgbString(),
-      container: tinycolor(backgroundColor).darken(5).toRgbString(),
-      panelRow: tinycolor(backgroundColor).lighten(2.35).toRgbString(),
-
-      borderSofter: tinycolor(backgroundColor).darken(6.5).toRgbString(),
-      containerSofter: tinycolor(backgroundColor).darken(2.8).toRgbString(),
     };
 
     const info = {
@@ -79,26 +67,22 @@ conf.brightnessModes.forEach(function (brightness) {
      * Themes
      */
 
-    if (conf.buildTheme || conf.buildAll) {
+    if (!themeBuilt && (conf.buildTheme || conf.buildAll)) {
       const themeValues = {
-        colors: _.deepMapValues(entirePalette, c => tinycolor(c).toSublimeRgb()),
+        colors: entirePalette,
         info: info,
         paths: paths.internal,
+        externalPaths: paths.external,
         options: sublimeOpts,
       };
 
-      var themeContents = [];
-      const themePath = path.join(paths.external.root, `${info.name}.sublime-theme`);
-
-      components.forEach(function (c) {
-        const modulePath = path.join(paths.external.components, c);
-        const m = require(modulePath)(themeValues, paths.external);
-        themeContents.push(...m);
-      });
-
-      var themeStringified = JSON.stringify(themeContents, null, conf.jsonWhitespace);
+      const themePath = path.join(paths.external.root, `gruvbox.sublime-theme`);
+      const theme = themeGenerator(themeValues);
+      const themeStringified = JSON.stringify(theme, null, conf.jsonWhitespace);
 
       utils.writeOutput(themePath, themeStringified);
+
+      themeBuilt = true;
     }
 
     /**

@@ -13,6 +13,7 @@
   "homepage": "https://github.com/Briles/gruvbox#readme",
   "devDependencies": {
     "chai": "^4.2.0",
+    "chroma-js": "^2.0.3",
     "commander": "^2.19.0",
     "gulp": "^4.0.0",
     "jscs": "^3.0.7",

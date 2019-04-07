@@ -5,14 +5,8 @@ module.exports = function (values) {
   return [
     {
       class: 'title_bar',
-      fg: c.gs.fg1,
-      bg: c.container,
-    },
-    {
-      class: 'sheet_container_control',
-
-      'layer0.tint': c.background,
-      'layer0.opacity': 1,
+      fg: 'var(fg1_gs)',
+      bg: 'var(container)',
     },
 
     // Pane
@@ -20,7 +14,7 @@ module.exports = function (values) {
       class: 'grid_layout_control',
 
       border_size: 1,
-      border_color: c.border,
+      border_color: 'var(border)',
     },
 
   ];

@@ -11,8 +11,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetThick],
 
       'layer0.texture': `${paths.thick}regex.png`, // Default
-      'layer1.texture': `${paths.thick}regex--hover.png`, // Hover
-      'layer2.texture': `${paths.thick}regex--selected.png`, // Selected
     },
 
     // Case Sensitive
@@ -21,8 +19,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetThick],
 
       'layer0.texture': `${paths.thick}casesensitive.png`, // Default
-      'layer1.texture': `${paths.thick}casesensitive--hover.png`, // Hover
-      'layer2.texture': `${paths.thick}casesensitive--selected.png`, // Selected
     },
 
     // Wholeword
@@ -31,8 +27,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetThick],
 
       'layer0.texture': `${paths.thick}wholeword.png`, // Default
-      'layer1.texture': `${paths.thick}wholeword--hover.png`, // Hover
-      'layer2.texture': `${paths.thick}wholeword--selected.png`, // Selected
     },
 
     // Wrap
@@ -41,8 +35,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetThick],
 
       'layer0.texture': `${paths.thick}wrap.png`, // Default
-      'layer1.texture': `${paths.thick}wrap--hover.png`, // Hover
-      'layer2.texture': `${paths.thick}wrap--selected.png`, // Selected
     },
 
     // In selection
@@ -51,8 +43,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetThick],
 
       'layer0.texture': `${paths.thick}inselection.png`, // Default
-      'layer1.texture': `${paths.thick}inselection--hover.png`, // Hover
-      'layer2.texture': `${paths.thick}inselection--selected.png`, // Selected
     },
 
     // Highlight Result
@@ -61,8 +51,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetThick],
 
       'layer0.texture': `${paths.thick}highlight.png`, // Default
-      'layer1.texture': `${paths.thick}highlight--hover.png`, // Hover
-      'layer2.texture': `${paths.thick}highlight--selected.png`, // Selected
     },
 
     // Preserve Case
@@ -71,8 +59,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetThick],
 
       'layer0.texture': `${paths.thick}preservecase.png`, // Default
-      'layer1.texture': `${paths.thick}preservecase--hover.png`, // Hover
-      'layer2.texture': `${paths.thick}preservecase--selected.png`, // Selected
     },
 
     // Show context
@@ -81,8 +67,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetThick],
 
       'layer0.texture': `${paths.thick}context.png`, // Default
-      'layer1.texture': `${paths.thick}context--hover.png`, // Hover
-      'layer2.texture': `${paths.thick}context--selected.png`, // Selected
     },
 
     // Use buffer
@@ -91,8 +75,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetThick],
 
       'layer0.texture': `${paths.thick}buffer.png`, // Default
-      'layer1.texture': `${paths.thick}buffer--hover.png`, // Hover
-      'layer2.texture': `${paths.thick}buffer--selected.png`, // Selected
     },
 
     // Panel Switcher
@@ -101,7 +83,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetThick],
 
       'layer0.texture': `${paths.thick}panels.png`, // Default
-      'layer1.texture': `${paths.thick}panels--hover.png`, // Hover
     },
 
     // Textline Input Overflow Menu
@@ -110,7 +91,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetThick],
 
       'layer0.texture': `${paths.thick}more.png`, // Default
-      'layer1.texture': `${paths.thick}more--hover.png`, // Hover
     },
 
   ];

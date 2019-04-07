@@ -1,3 +1,5 @@
+const mixins = require('../mixins.js');
+
 module.exports = function (values) {
 
   const c = values.colors;
@@ -11,11 +13,11 @@ module.exports = function (values) {
       content_margin: [0, 12, 1, 0],
 
       // Background
-      'layer0.tint': c.container,
+      'layer0.tint': 'var(container)',
       'layer0.opacity': 1,
 
       // Border - Right
-      'layer1.tint': c.border,
+      'layer1.tint': 'var(border)',
       'layer1.opacity': 1,
       'layer1.draw_center': false,
       'layer1.inner_margin': [0, 0, 1, 0],
@@ -34,7 +36,7 @@ module.exports = function (values) {
     {
       class: 'sidebar_heading',
 
-      color: c.gs.fg1,
+      color: 'var(fg1_gs)',
       'font.bold': false,
       'font.size': 12,
     },
@@ -44,7 +46,7 @@ module.exports = function (values) {
       class: 'tree_row',
 
       // Background
-      'layer0.tint': c.background,
+      'layer0.tint': 'var(bg)',
       'layer0.opacity': 0,
     },
 
@@ -52,10 +54,23 @@ module.exports = function (values) {
     {
       class: 'sidebar_label',
 
-      color: c.gs.gray,
       'font.bold': false,
       'font.italic': false,
     },
+
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'sidebar_label',
+
+        parents: [
+          {
+            attributes: [lumin],
+          },
+        ],
+
+        fg: palette('gray_gs'),
+      };
+    }),
 
     // Sidebar Label Hover
     {
@@ -69,7 +84,7 @@ module.exports = function (values) {
 
       ],
 
-      color: c.gs.fg1,
+      fg: 'var(fg1_gs)',
     },
 
     // Sidebar Label Selected
@@ -85,23 +100,28 @@ module.exports = function (values) {
       ],
 
       'font.bold': false,
-      color: c.gs.fg1,
+      fg: 'var(fg1_gs)',
     },
 
     // Sidebar Folder Label
-    {
-      class: 'sidebar_label',
-      parents: [
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'sidebar_label',
 
-        {
-          class: 'tree_row',
-          attributes: ['expandable'],
-        },
+        parents: [
+          {
+            class: 'window',
+            attributes: [lumin],
+          },
+          {
+            class: 'tree_row',
+            attributes: ['expandable']
+          }
+        ],
 
-      ],
-
-      color: c.gs.fg4,
-    },
+        fg: palette('fg4_gs'),
+      };
+    }),
 
     // Sidebar Bold Folder Label
     {
@@ -131,7 +151,7 @@ module.exports = function (values) {
 
       ],
 
-      color: c.gs.fg1,
+      fg: 'var(fg1_gs)',
     },
 
     // Sidebar Label Hover
@@ -146,7 +166,7 @@ module.exports = function (values) {
 
       ],
 
-      color: c.gs.fg1,
+      fg: 'var(fg1_gs)',
     },
 
     // Sidebar Bold Folder Label Expanded
@@ -177,7 +197,7 @@ module.exports = function (values) {
 
       ],
 
-      color: c.gs.fg1,
+      fg: 'var(fg1_gs)',
     },
 
     // Sidebar Transient Label
@@ -186,7 +206,7 @@ module.exports = function (values) {
       attributes: ['transient'],
 
       'font.italic': false,
-      color: c.gs.fg1,
+      fg: 'var(fg1_gs)',
     },
 
     // Sidebar file close
@@ -195,17 +215,33 @@ module.exports = function (values) {
       content_margin: [8, 8],
 
       // Close Icon
-      'layer0.texture': `${paths.this}close.png`,
+      'layer0.texture': `${paths.commons}close.png`,
       'layer0.opacity': 0,
-
-      // Close Icon Hover
-      'layer1.texture': `${paths.this}close--hover.png`,
-      'layer1.opacity': 0,
+      // 'layer0.tint': 'var(close_default)',
 
       // Dirty Icon
-      'layer2.texture': `${paths.this}dirty.png`,
+      'layer2.texture': `${paths.commons}dirty.png`,
       'layer2.opacity': 0,
+      'layer2.tint': 'var(dirty_default)',
     },
+
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'close_button',
+
+        parents: [
+          {
+            class: 'window',
+            attributes: [lumin],
+          },
+          {
+            class: 'tree_row',
+          },
+        ],
+
+        'layer0.tint': palette('close_default_gs'),
+      };
+    }),
 
     {
       class: 'close_button',
@@ -219,7 +255,6 @@ module.exports = function (values) {
       ],
 
       'layer0.opacity': 1, // Close Icon
-      'layer1.opacity': 0, // Close Icon Hover
       'layer2.opacity': 0, // Dirty Icon
     },
 
@@ -236,7 +271,7 @@ module.exports = function (values) {
       ],
 
       'layer0.opacity': 1, // Close Icon
-      'layer1.opacity': 0, // Close Icon Hover
+      'layer0.tint': 'var(close_hover)',
       'layer2.opacity': 0, // Dirty Icon
     },
 
@@ -246,7 +281,6 @@ module.exports = function (values) {
       attributes: ['dirty'],
 
       'layer0.opacity': 0, // Close Icon
-      'layer1.opacity': 0, // Close Icon Hover
       'layer2.opacity': 1, // Dirty Icon
     },
 
@@ -264,7 +298,6 @@ module.exports = function (values) {
       ],
 
       'layer0.opacity': 0, // Close Icon
-      'layer1.opacity': 0, // Close Icon Hover
       'layer2.opacity': 1, // Dirty Icon
     },
 
@@ -273,8 +306,8 @@ module.exports = function (values) {
       class: 'close_button',
       attributes: ['hover'],
 
-      'layer0.opacity': 0, // Close Icon
-      'layer1.opacity': 1, // Close Icon Hover
+      'layer0.opacity': 1, // Close Icon
+      'layer0.tint': 'var(close_hover)',
       'layer2.opacity': 0, // Dirty Icon
     },
 
@@ -314,13 +347,30 @@ module.exports = function (values) {
       'layer1.opacity': 1,
 
       // Hover
-      'layer2.texture': `${paths.this}folder__literal--hover.png`,
+      'layer2.texture': `${paths.commons}folder__literal--hover.png`,
       'layer2.opacity': 0,
 
       // Expanded
-      'layer3.texture': `${paths.this}folder__literal--expanded.png`,
+      'layer3.texture': `${paths.commons}folder__literal--expanded.png`,
       'layer3.opacity': 0,
     },
+
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'icon_folder',
+
+        parents: [
+          {
+            class: 'window',
+            attributes: [lumin],
+          },
+        ],
+
+        'layer1.tint': palette('folder_default_gs'),
+        'layer2.tint': palette('folder_hover_gs'),
+        'layer3.tint': palette('folder_expanded_gs'),
+      };
+    }),
 
     // Folder Icon Hover
     {
@@ -394,11 +444,27 @@ module.exports = function (values) {
         loop: true,
         frame_time: 0.065,
       },
+      // 'layer1.tint': 'var(folder_hover)',
 
       'layer0.opacity': 0, // Default
       'layer1.opacity': 1, // Hover
       'layer2.opacity': 0, // Expanded
     },
+
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'icon_folder_loading',
+
+        parents: [
+          {
+            class: 'window',
+            attributes: [lumin],
+          },
+        ],
+
+        'layer1.tint': palette('folder_hover_gs'),
+      };
+    }),
 
     // Symlinked Folder Icon
     {
@@ -410,13 +476,30 @@ module.exports = function (values) {
       'layer0.opacity': 1.0,
 
       // Hover
-      'layer1.texture': `${paths.this}folder__literal_dup--hover.png`,
+      'layer1.texture': `${paths.commons}folder__literal_dup--hover.png`,
       'layer1.opacity': 0,
 
       // Expanded
-      'layer2.texture': `${paths.this}folder__literal_dup--expanded.png`,
+      'layer2.texture': `${paths.commons}folder__literal_dup--expanded.png`,
       'layer2.opacity': 0,
     },
+
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'icon_folder_dup',
+
+        parents: [
+          {
+            class: 'window',
+            attributes: [lumin],
+          },
+        ],
+
+        'layer0.tint': palette('folder_default_gs'),
+        'layer1.tint': palette('folder_hover_gs'),
+        'layer2.tint': palette('folder_expanded_gs'),
+      };
+    }),
 
     // Symlinked Folder Icon Hover
     {

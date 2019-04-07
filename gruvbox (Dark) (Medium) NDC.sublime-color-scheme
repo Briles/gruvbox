@@ -37,14 +37,25 @@
     "guide": "color(var(fg1) alpha(0.15))",
     "guideAlt": "color(var(fg1) alpha(0.15))",
     "ruler": "color(var(fg1) alpha(0.25))",
-    "headingBackground": "color(var(bg) lightness(7%))"
+    "headingBackground": "color(var(bg) lightness(7%))",
+    "background": "var(bg)",
+    "foreground": "var(fg)",
+    "--background": "var(bg)",
+    "--foreground": "var(fg)",
+    "--redish": "var(red)",
+    "--orangish": "var(orange)",
+    "--yellowish": "var(yellow)",
+    "--greenish": "var(green)",
+    "--cyanish": "var(aqua)",
+    "--bluish": "var(blue)",
+    "--purplish": "var(purple)"
   },
   "globals": {
     "background": "var(bg)",
     "foreground": "var(fg)",
     "invisibles": "var(guide)",
     "caret": "var(fg4)",
-    "block_caret": "var(fg4)",
+    "block_caret": "var(gray)",
     "line_highlight": "var(bg1)",
     "misspelling": "var(red)",
     "fold_marker": "var(yellow)",
@@ -100,7 +111,7 @@
     },
     {
       "name": "DocBlockr & Other Keywords Inside Comments",
-      "scope": "comment.parameter,comment.punctuation,comment.string,comment.type,keyword.other.phpdoc.php,punctuation.definition.keyword.javadoc,source.groovy keyword.other.documentation,source.java keyword.other.documentation,storage.type.annotation.coffeescript,storage.type.class.jsdoc",
+      "scope": "comment.parameter,comment.punctuation,comment.string,comment.type,keyword.other.phpdoc.php,punctuation.definition.keyword.javadoc,source.groovy keyword.other.documentation,source.java keyword.other.documentation,storage.type.annotation.coffeescript,storage.type.class.jsdoc,storage.type.class.jsdoc punctuation.definition",
       "foreground": "var(fg3)"
     },
     {
@@ -115,7 +126,7 @@
     },
     {
       "name": "Keywords",
-      "scope": "js.embedded.control.flow keyword.operator.js,keyword,keyword.control,keyword.operator.logical.python,meta.at-rule.media support.function.misc,meta.prolog.haml,meta.tag.sgml.doctype.html,storage.type.function.jade,storage.type.function.pug,storage.type.import.haxe,storage.type.import.include.jade,storage.type.import.include.pug,support.keyword.timing-direction,variable.documentroot",
+      "scope": "js.embedded.control.flow keyword.operator.js,keyword,keyword.control,keyword.declaration,keyword.operator.logical.python,meta.at-rule.media support.function.misc,meta.prolog.haml,meta.tag.sgml.doctype.html,storage.type.function.jade,storage.type.function.pug,storage.type.import.haxe,storage.type.import.include.jade,storage.type.import.include.pug,support.keyword.timing-direction,variable.documentroot",
       "foreground": "var(red)"
     },
     {
@@ -145,7 +156,7 @@
     },
     {
       "name": "Storage",
-      "scope": "storage,storage.type.annotation,storage.type.primitive",
+      "scope": "storage,storage.modifier,storage.type,storage.type.annotation,storage.type.primitive",
       "foreground": "var(red)"
     },
     {
@@ -179,7 +190,7 @@
     },
     {
       "name": "Object Properties",
-      "scope": "meta.property.object",
+      "scope": "meta.property.object,variable.other.property",
       "foreground": "var(fg)"
     },
     {
@@ -199,7 +210,7 @@
     },
     {
       "name": "Language Constants",
-      "scope": "constant,constant.numeric,constant.other,constant.other.color,constant.other.symbol,support.constant,support.constant.color,support.constant.font-name,support.constant.media,support.constant.prototype,variable.language",
+      "scope": "constant,constant.language,constant.numeric,constant.other,constant.other.color,constant.other.symbol,support.constant,support.constant.color,support.constant.font-name,support.constant.media,support.constant.prototype,variable.language",
       "foreground": "var(purple)"
     },
     {
@@ -224,7 +235,7 @@
     },
     {
       "name": "Invalids and Illegals",
-      "scope": "invalid",
+      "scope": "invalid,invalid.deprecated",
       "foreground": "var(fg)",
       "background": "var(red)"
     },
@@ -374,7 +385,7 @@
     },
     {
       "name": "Support",
-      "scope": "meta.function-call.constructor variable.type,support.class,support.type,variable.other.class",
+      "scope": "meta.function-call.constructor variable.type,support,support.class,support.type,variable.other.class",
       "foreground": "var(yellow)"
     },
     {
@@ -384,7 +395,7 @@
     },
     {
       "name": "Function Calls",
-      "scope": "entity.name.function.jade,entity.name.function.pug,keyword.other.special-method,meta.function-call variable.function,meta.function-call variable.other.dollar.only punctuation.dollar,support.function",
+      "scope": "entity.name.function.jade,entity.name.function.pug,keyword.other.special-method,meta.function-call entity.name.function.ts,meta.function-call variable.function,meta.function-call variable.other.dollar.only punctuation.dollar,support.function,variable.function",
       "foreground": "var(aqua)"
     },
     {
@@ -399,7 +410,7 @@
     },
     {
       "name": "Entities",
-      "scope": "entity.name.accessor,entity.name.function,entity.name.label,entity.name.section,variable.other.member.declaration",
+      "scope": "entity.name,entity.name.accessor,entity.name.function,entity.name.label,entity.name.section,variable.other.member.declaration",
       "foreground": "var(green)"
     },
     {
@@ -486,7 +497,7 @@
     },
     {
       "name": "Function Call Braces",
-      "scope": "constant.name.attribute.tag.jade,constant.name.attribute.tag.pug,meta.block.parameters punctuation.definition.parameters,meta.brace.round,meta.function-call meta.group punctuation.definition.group,meta.function-call meta.group punctuation.section.group,punctuation.definition.method-parameters,punctuation.definition.parameters",
+      "scope": "constant.name.attribute.tag.jade,constant.name.attribute.tag.pug,meta.block.parameters punctuation.definition.parameters,meta.function-call meta.group punctuation.definition.group,meta.function-call meta.group punctuation.section.group",
       "foreground": "var(fg3)"
     },
     {

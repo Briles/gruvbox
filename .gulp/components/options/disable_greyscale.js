@@ -1,3 +1,5 @@
+const mixins = require('../../mixins.js');
+
 module.exports = function (values) {
 
   const c = values.colors;
@@ -18,39 +20,58 @@ module.exports = function (values) {
 
       ],
 
-      color: c.foreground,
+      color: 'var(fg)',
     },
 
     // All labels
-    {
-      class: 'label_control',
-      settings: [stOpts.disableGreyscaleColors],
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'label_control',
+        settings: [stOpts.disableGreyscaleColors],
 
-      color: c.bnp.fg3,
-    },
+        parents: [
+          {
+            attributes: [lumin],
+          },
+        ],
+
+        color: palette('fg3'),
+      };
+    }),
 
     // Status bar labels
-    {
-      class: 'label_control',
-      settings: [stOpts.disableGreyscaleColors],
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'label_control',
+        settings: [stOpts.disableGreyscaleColors],
 
-      parents: [
+        parents: [
+          {
+            attributes: [lumin],
+          },
+          {
+            class: 'status_bar',
+          },
+        ],
 
-        {
-          class: 'status_bar',
-        },
+        color: palette('fg3'),
+      };
+    }),
 
-      ],
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'status_button',
+        settings: [stOpts.disableGreyscaleColors],
 
-      color: c.bnp.fg3,
-    },
+        parents: [
+          {
+            attributes: [lumin],
+          },
+        ],
 
-    {
-      class: 'status_button',
-      settings: [stOpts.disableGreyscaleColors],
-
-      'layer0.tint': c.bnp.bg1,
-    },
+        'layer0.tint': palette('bg1'),
+      };
+    }),
 
     {
       class: 'label_control',
@@ -65,7 +86,7 @@ module.exports = function (values) {
 
       ],
 
-      color: c.bnp.fg1,
+      color: 'var(fg1)',
     },
 
     // Sidebar
@@ -73,15 +94,23 @@ module.exports = function (values) {
       class: 'sidebar_heading',
       settings: [stOpts.disableGreyscaleColors],
 
-      color: c.bnp.fg1,
+      fg: 'var(fg1)',
     },
 
-    {
-      class: 'sidebar_label',
-      settings: [stOpts.disableGreyscaleColors],
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'sidebar_label',
+        settings: [stOpts.disableGreyscaleColors],
 
-      color: c.bnp.gray,
-    },
+        parents: [
+          {
+            attributes: [lumin],
+          },
+        ],
+
+        fg: palette('gray'),
+      };
+    }),
 
     {
       class: 'sidebar_label',
@@ -96,7 +125,7 @@ module.exports = function (values) {
 
       ],
 
-      color: c.bnp.fg1,
+      fg: 'var(fg1)',
     },
 
     {
@@ -112,24 +141,27 @@ module.exports = function (values) {
 
       ],
 
-      color: c.bnp.fg1,
+      fg: 'var(fg1)',
     },
 
-    {
-      class: 'sidebar_label',
-      settings: [stOpts.disableGreyscaleColors],
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'sidebar_label',
+        settings: [stOpts.disableGreyscaleColors],
 
-      parents: [
+        parents: [
+          {
+            attributes: [lumin],
+          },
+          {
+            class: 'tree_row',
+            attributes: ['expandable'],
+          },
+        ],
 
-        {
-          class: 'tree_row',
-          attributes: ['expandable'],
-        },
-
-      ],
-
-      color: c.bnp.fg4,
-    },
+        fg: palette('fg4'),
+      };
+    }),
 
     {
       class: 'sidebar_label',
@@ -144,7 +176,7 @@ module.exports = function (values) {
 
       ],
 
-      color: c.bnp.fg1,
+      fg: 'var(fg1)',
     },
 
     {
@@ -160,7 +192,7 @@ module.exports = function (values) {
 
       ],
 
-      color: c.bnp.fg1,
+      fg: 'var(fg1)',
     },
 
     {
@@ -176,7 +208,7 @@ module.exports = function (values) {
 
       ],
 
-      color: c.bnp.fg1,
+      fg: 'var(fg1)',
     },
 
     {
@@ -184,127 +216,372 @@ module.exports = function (values) {
       settings: [stOpts.disableGreyscaleColors],
       attributes: ['transient'],
 
-      color: c.bnp.fg1,
+      fg: 'var(fg1)',
     },
 
     // Tab Label
-    {
-      class: 'tab_label',
-      settings: [stOpts.disableGreyscaleColors],
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'tab_label',
+        settings: [stOpts.disableGreyscaleColors],
 
-      fg: c.bnp.gray,
-    },
+        parents: [
+          {
+            attributes: [lumin],
+          },
+        ],
+
+        fg: palette('gray'),
+      };
+    }),
 
     // Selected Tab Tab Label
-    {
-      class: 'tab_label',
-      settings: [stOpts.disableGreyscaleColors],
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'tab_label',
+        settings: [stOpts.disableGreyscaleColors],
 
-      parents: [
+        parents: [
+          {
+            attributes: [lumin],
+          },
+          {
+            class: 'tab_control',
+            attributes: ['selected'],
+          },
+        ],
 
-        {
-          class: 'tab_control',
-          attributes: ['selected'],
-        },
-
-      ],
-
-      fg: c.bnp.fg2,
-    },
+        fg: palette('fg2'),
+      };
+    }),
 
     // Hovered Tab Tab Label
-    {
-      class: 'tab_label',
-      settings: [stOpts.disableGreyscaleColors],
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'tab_label',
+        settings: [stOpts.disableGreyscaleColors],
 
-      parents: [
+        parents: [
+          {
+            attributes: [lumin],
+          },
+          {
+            class: 'tab_control',
+            attributes: ['hover'],
+          },
+        ],
 
-        {
-          class: 'tab_control',
-          attributes: ['hover'],
-        },
-
-      ],
-
-      fg: c.bnp.fg3,
-    },
+        fg: palette('fg3'),
+      };
+    }),
 
     // Selected & Hovered Tab Tab Label
-    {
-      class: 'tab_label',
-      settings: [stOpts.disableGreyscaleColors],
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'tab_label',
+        settings: [stOpts.disableGreyscaleColors],
 
-      parents: [
+        parents: [
+          {
+            attributes: [lumin],
+          },
+          {
+            class: 'tab_control',
+            attributes: ['selected', 'hover'],
+          },
+        ],
 
-        {
-          class: 'tab_control',
-          attributes: ['selected', 'hover'],
-        },
-
-      ],
-
-      fg: c.bnp.fg2,
-    },
-
-    // Panel labels
-    {
-      class: 'quick_panel_label',
-      settings: [stOpts.disableGreyscaleColors],
-
-      fg: c.bnp.fg4,
-      match_fg: c.bnp.fg1,
-      selected_fg: c.bnp.fg4,
-      selected_match_fg: c.bnp.fg1,
-    },
+        fg: palette('fg2'),
+      };
+    }),
 
     // Panel labels
-    {
-      class: 'quick_panel_label',
-      settings: [stOpts.disableGreyscaleColors],
-      parents: [
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'quick_panel_label',
+        settings: [stOpts.disableGreyscaleColors],
 
-        {
-          class: 'overlay_control',
-        },
+        parents: [
+          {
+            attributes: [lumin],
+          },
+        ],
 
-      ],
+        fg: palette('fg4'),
+        match_fg: palette('fg1'),
+        selected_fg: palette('fg4'),
+        selected_match_fg: palette('fg1'),
+      };
+    }),
 
-      fg: c.bnp.fg4,
-      match_fg: c.bnp.fg1,
-      selected_fg: c.bnp.fg4,
-      selected_match_fg: c.bnp.fg1,
-    },
+    // Panel labels
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'quick_panel_label',
+        settings: [stOpts.disableGreyscaleColors],
+
+        parents: [
+          {
+            attributes: [lumin],
+          },
+          {
+            class: 'overlay_control',
+          },
+        ],
+
+        fg: palette('fg4'),
+        match_fg: palette('fg1'),
+        selected_fg: palette('fg4'),
+        selected_match_fg: palette('fg1'),
+      };
+    }),
 
     // Panels sublabels
-    {
-      class: 'quick_panel_path_label',
-      settings: [stOpts.disableGreyscaleColors],
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'quick_panel_path_label',
+        settings: [stOpts.disableGreyscaleColors],
 
-      fg: c.bnp.fg4,
-      match_fg: c.bnp.fg1,
-      selected_fg: c.bnp.fg4,
-      selected_match_fg: c.bnp.fg1,
-    },
+        parents: [
+          {
+            attributes: [lumin],
+          },
+        ],
+
+        fg: palette('fg4'),
+        match_fg: palette('fg1'),
+        selected_fg: palette('fg4'),
+        selected_match_fg: palette('fg1'),
+      };
+    }),
 
     // Panels data / score
-    {
-      class: 'quick_panel_score_label',
-      settings: [stOpts.disableGreyscaleColors],
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'quick_panel_score_label',
+        settings: [stOpts.disableGreyscaleColors],
 
-      fg: c.bnp.fg4,
-      selected_fg: c.bnp.fg1,
-    },
+        parents: [
+          {
+            attributes: [lumin],
+          },
+        ],
+
+        fg: palette('fg4'),
+        selected_fg: palette('fg1'),
+      };
+    }),
 
     // Autocomplete
-    {
-      class: 'auto_complete_label',
-      settings: [stOpts.disableGreyscaleColors],
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'auto_complete_label',
+        settings: [stOpts.disableGreyscaleColors],
 
-      fg: c.bnp.fg4,
-      match_fg: c.bnp.fg1,
-      selected_fg: c.bnp.fg4,
-      selected_match_fg: c.bnp.fg1,
-    },
+        parents: [
+          {
+            attributes: [lumin],
+          },
+        ],
 
+        fg: palette('fg4'),
+        match_fg: palette('fg1'),
+        selected_fg: palette('fg4'),
+        selected_match_fg: palette('fg1'),
+      };
+    }),
+
+    // Folder Icons
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'icon_folder',
+        settings: [stOpts.disableGreyscaleColors],
+
+        parents: [
+          {
+            class: 'window',
+            attributes: [lumin],
+          },
+        ],
+
+        'layer1.tint': palette('folder_default'),
+        'layer2.tint': palette('folder_hover'),
+        'layer3.tint': palette('folder_expanded'),
+      };
+    }),
+
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'icon_folder_loading',
+        settings: [stOpts.disableGreyscaleColors],
+
+        parents: [
+          {
+            class: 'window',
+            attributes: [lumin],
+          },
+        ],
+
+        'layer1.tint': palette('folder_hover'),
+      };
+    }),
+
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'icon_folder_dup',
+        settings: [stOpts.disableGreyscaleColors],
+
+        parents: [
+          {
+            class: 'window',
+            attributes: [lumin],
+          },
+        ],
+
+        'layer1.tint': palette('folder_hover'),
+        'layer2.tint': palette('folder_expanded'),
+      };
+    }),
+
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'close_button',
+
+        parents: [
+          {
+            class: 'window',
+            attributes: [lumin],
+          },
+          {
+            class: 'tree_row',
+            attributes: ['!hover'],
+          },
+        ],
+
+        'layer0.tint': palette('close_default'),
+      };
+    }),
+
+    // Tab Close Icons
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'tab_close_button',
+        settings: [stOpts.disableGreyscaleColors],
+
+        parents: [
+          {
+            class: 'tab_control',
+            attributes: ['!hover', lumin]
+          }
+        ],
+
+        'layer0.tint': palette('close_default'),
+      };
+    }),
+
+    // Tab Scroll Left Button
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'scroll_tabs_left_button',
+        settings: [stOpts.disableGreyscaleColors],
+
+        parents: [
+          {
+            class: 'tabset_control',
+            attributes: [lumin]
+          }
+        ],
+
+        'layer0.tint': palette('tabbar_icon_default'),
+      };
+    }),
+
+    // Tab Scroll Left Button Hover
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'scroll_tabs_left_button',
+        settings: [stOpts.disableGreyscaleColors],
+        attributes: ['hover'],
+
+        parents: [
+          {
+            class: 'tabset_control',
+            attributes: [lumin]
+          }
+        ],
+
+        'layer0.tint': palette('tabbar_icon_hover'),
+      };
+    }),
+
+    // Tab Scroll Right Button
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'scroll_tabs_right_button',
+        settings: [stOpts.disableGreyscaleColors],
+
+        parents: [
+          {
+            class: 'tabset_control',
+            attributes: [lumin]
+          }
+        ],
+
+        'layer0.tint': palette('tabbar_icon_default'),
+      };
+    }),
+
+    // Tab Scroll Right Button Hover
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'scroll_tabs_right_button',
+        settings: [stOpts.disableGreyscaleColors],
+        attributes: ['hover'],
+
+        parents: [
+          {
+            class: 'tabset_control',
+            attributes: [lumin]
+          }
+        ],
+
+        'layer0.tint': palette('tabbar_icon_hover'),
+      };
+    }),
+
+    // Tab Scroll Overflow Menu Button
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'show_tabs_dropdown_button',
+        settings: [stOpts.disableGreyscaleColors],
+
+        parents: [
+          {
+            class: 'tabset_control',
+            attributes: [lumin]
+          }
+        ],
+
+        'layer0.tint': palette('tabbar_icon_default'),
+      };
+    }),
+
+    // Tab Scroll Overflow Menu Button Hover
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'show_tabs_dropdown_button',
+        settings: [stOpts.disableGreyscaleColors],
+        attributes: ['hover'],
+
+        parents: [
+          {
+            class: 'tabset_control',
+            attributes: [lumin]
+          }
+        ],
+
+        'layer0.tint': palette('tabbar_icon_hover'),
+      };
+    }),
   ];
 };

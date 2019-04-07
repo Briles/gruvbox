@@ -1,3 +1,5 @@
+const themeVariables = require('./theme-variables.js');
+
 function animatedIconFolder(base) {
   return {
     keyframes: [
@@ -50,9 +52,27 @@ function animatedPanelButtonControl(base) {
   };
 }
 
+// file_light
+// file_medium
+// file_medium_dark
+// file_dark
+function createComponentVariations(componentCreationFn) {
+  const luminosities = {
+    'file_light': themeVariables.light,
+    'file_medium': themeVariables.light,
+    'file_medium_dark': themeVariables.dark,
+    'file_dark': themeVariables.dark,
+  };
+
+  return Object.keys(luminosities).map((luminosity) => {
+    return componentCreationFn(luminosity, luminosities[luminosity]);
+  });
+}
+
 const mixins = {
   animatedIconFolder: animatedIconFolder,
   animatedPanelButtonControl: animatedPanelButtonControl,
+  createComponentVariations: createComponentVariations,
 };
 
 module.exports = mixins;

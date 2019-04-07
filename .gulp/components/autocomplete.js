@@ -1,3 +1,5 @@
+const mixins = require('../mixins.js');
+
 module.exports = function (values) {
 
   const c = values.colors;
@@ -10,11 +12,11 @@ module.exports = function (values) {
       content_margin: [0, 0],
 
       // Background
-      'layer0.tint': c.container,
+      'layer0.tint': 'var(container)',
       'layer0.opacity': 1,
 
       // Border
-      'layer1.tint': c.border,
+      'layer1.tint': 'var(border)',
       'layer1.opacity': 0,
       'layer1.draw_center': false,
       'layer1.inner_margin': [1, 1],
@@ -25,7 +27,7 @@ module.exports = function (values) {
       class: 'auto_complete',
       row_padding: [12, 6],
 
-      'layer0.tint': c.container,
+      'layer0.tint': 'var(container)',
       'layer0.opacity': 1,
     },
 
@@ -33,25 +35,57 @@ module.exports = function (values) {
     {
       class: 'auto_complete_label',
 
-      fg: c.gs.fg4,
-      match_fg: c.gs.fg1,
-      selected_fg: c.gs.fg4,
-      selected_match_fg: c.gs.fg1,
+      fg: 'var(fg)',
+      match_fg: 'var(fg)',
+      selected_fg: 'var(fg)',
+      selected_match_fg: 'var(fg)',
     },
+
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'auto_complete_label',
+
+        parents: [
+          {
+            attributes: [lumin],
+          },
+        ],
+
+        fg: palette('fg4_gs'),
+        match_fg: palette('fg1_gs'),
+        selected_fg: palette('fg4_gs'),
+        selected_match_fg: palette('fg1_gs'),
+      };
+    }),
 
     // AutoComplete Row
     {
       class: 'table_row',
 
       // Background
-      'layer0.tint': c.bnp.bg1,
+      // 'layer0.tint': 'var(bg1)',
       'layer0.opacity': 0,
 
-      'layer1.tint': c.bnp.fg3,
+      // 'layer1.tint': 'var(fg3)',
       'layer1.opacity': 0,
       'layer1.draw_center': false,
       'layer1.inner_margin': [1, 0, 0, 0],
     },
+
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'table_row',
+
+        parents: [
+          {
+            attributes: [lumin],
+          },
+        ],
+
+        'layer0.tint': palette('bg1'),
+        'layer1.tint': palette('fg3'),
+      };
+    }),
 
     // AutoComplete Row
     {
