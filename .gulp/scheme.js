@@ -58,6 +58,18 @@ module.exports = function (values) {
       headingBackground: 'color(var(bg) lightness(+ 7%))',
 
       invisibles: 'color(var(fg0) alpha(0.25))',
+
+      background: 'var(bg)',
+      foreground: 'var(fg)',
+      '--background': 'var(bg)',
+      '--foreground': 'var(fg)',
+      '--redish': 'var(red)',
+      '--orangish': 'var(orange)',
+      '--yellowish': 'var(yellow)',
+      '--greenish': 'var(green)',
+      '--cyanish': 'var(aqua)',
+      '--bluish': 'var(blue)',
+      '--purplish': 'var(purple)',
     },
     globals: {
       /* GLOBAL SETTINGS */

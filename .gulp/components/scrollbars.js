@@ -1,3 +1,5 @@
+const mixins = require('../mixins.js');
+
 module.exports = function (values) {
 
   const c = values.colors;
@@ -9,15 +11,14 @@ module.exports = function (values) {
     // Normal Vertical Scrollbar Track
     {
       class: 'scroll_bar_control',
-      blur: false,
 
       // Background
-      'layer0.tint': c.container,
+      'layer0.tint': 'var(container)',
       'layer0.opacity': 1,
       'layer0.inner_margin': [0, 6],
 
       // Border - Left
-      'layer1.tint': c.border,
+      'layer1.tint': 'var(border)',
       'layer1.opacity': 1,
       'layer1.draw_center': false,
       'layer1.inner_margin': [1, 0, 0, 0],
@@ -83,7 +84,6 @@ module.exports = function (values) {
     {
       class: 'scroll_bar_control',
       attributes: ['horizontal'],
-      blur: false,
 
       'layer1.inner_margin': [0, 1, 0, 0], // Border - Top
     },
@@ -93,7 +93,7 @@ module.exports = function (values) {
       class: 'scroll_corner_control',
 
       // Background
-      'layer0.tint': c.container,
+      'layer0.tint': 'var(container)',
       'layer0.opacity': 1,
     },
 
@@ -114,7 +114,6 @@ module.exports = function (values) {
     {
       class: 'scroll_bar_control',
       settings: ['overlay_scroll_bars'],
-      blur: false,
 
       'layer0.opacity': 0, // Background
       'layer1.opacity': 0, // Border - Right
@@ -124,13 +123,26 @@ module.exports = function (values) {
     {
       class: 'puck_control',
       content_margin: [8, 16],
-      blur: false,
 
       // Background
-      'layer0.texture': `${paths.this}puckvertical.png`,
+      'layer0.texture': `${paths.commons}puckvertical.png`,
       'layer0.opacity': 1,
       'layer0.inner_margin': [4, 4, 4, 4],
     },
+
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'puck_control',
+
+        parents: [
+          {
+            attributes: [lumin],
+          },
+        ],
+
+        'layer0.tint': palette('scrollbar'),
+      };
+    }),
 
     // Horizontal Scrollbar Puck
     {
@@ -138,16 +150,46 @@ module.exports = function (values) {
       attributes: ['horizontal'],
       content_margin: [16, 8],
 
-      'layer0.texture': `${paths.this}puckhorizontal.png`,
+      'layer0.texture': `${paths.commons}puckhorizontal.png`,
     },
+
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'puck_control',
+        attributes: ['horizontal'],
+
+        parents: [
+          {
+            attributes: [lumin],
+          },
+        ],
+
+        'layer0.tint': palette('scrollbar'),
+      };
+    }),
 
     // Overlay Vertical Scrollbar Puck
     {
       class: 'puck_control',
       settings: ['overlay_scroll_bars'],
 
-      'layer0.texture': `${paths.this}puckvertical--overlay.png`,
+      'layer0.texture': `${paths.commons}puckvertical--overlay.png`,
     },
+
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'puck_control',
+        settings: ['overlay_scroll_bars'],
+
+        parents: [
+          {
+            attributes: [lumin],
+          },
+        ],
+
+        'layer0.tint': palette('scrollbar'),
+      };
+    }),
 
     // Overlay Horizontal Scrollbar Puck
     {
@@ -155,8 +197,24 @@ module.exports = function (values) {
       attributes: ['horizontal'],
       settings: ['overlay_scroll_bars'],
 
-      'layer0.texture': `${paths.this}puckhorizontal--overlay.png`,
+      'layer0.texture': `${paths.commons}puckhorizontal--overlay.png`,
     },
+
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'puck_control',
+        attributes: ['horizontal'],
+        settings: ['overlay_scroll_bars'],
+
+        parents: [
+          {
+            attributes: [lumin],
+          },
+        ],
+
+        'layer0.tint': palette('scrollbar'),
+      };
+    }),
 
   ];
 };

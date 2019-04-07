@@ -1,30 +1,44 @@
+const mixins = require('../mixins.js');
+
 module.exports = function (values) {
 
   const c = values.colors;
   const paths = values.paths;
+  const stOpts = values.options;
 
   return [
 
     // All Labels
-    {
-      class: 'label_control',
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'label_control',
 
-      color: c.gs.fg3,
-    },
+        parents: [
+          {
+            class: 'window',
+            attributes: [lumin],
+          },
+        ],
+
+        color: palette('fg3_gs'),
+      };
+    }),
 
     // Status Bar Labels
-    {
-      class: 'label_control',
-      parents: [
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'label_control',
 
-        {
-          class: 'status_bar',
-        },
+        parents: [
+          {
+            class: 'status_bar',
+            attributes: [lumin]
+          }
+        ],
 
-      ],
-
-      color: c.gs.fg3,
-    },
+        color: palette('fg3_gs'),
+      };
+    }),
 
     // Status Bar
     {
@@ -32,12 +46,12 @@ module.exports = function (values) {
       content_margin: [12, 0, 0, 0],
 
       // Background
-      'layer0.tint': c.container,
+      'layer0.tint': 'var(container)',
       'layer0.opacity': 1,
       'layer0.inner_margin': [2, 2],
 
       // Border - Top
-      'layer2.tint': c.border,
+      'layer2.tint': 'var(border)',
       'layer2.opacity': 1,
       'layer2.draw_center': false,
       'layer2.inner_margin': [0, 1, 0, 0],
@@ -56,49 +70,133 @@ module.exports = function (values) {
       min_size: [75, 0],
 
       // Border - Left
-      'layer0.tint': c.gs.bg1,
+      // 'layer0.tint': 'var(bg1_gs)',
       'layer0.opacity': 1,
       'layer0.draw_center': false,
       'layer0.inner_margin': [1, 0, 0, 0],
     },
 
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'status_button',
+
+        parents: [
+          {
+            class: 'window',
+            attributes: [lumin],
+          },
+        ],
+
+        'layer0.tint': palette('bg1_gs'),
+      };
+    }),
+
     // Status Bar Button Hover
-    {
-      class: 'label_control',
-      parents: [
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'label_control',
 
-        {
-          class: 'status_button',
-          attributes: ['hover'],
-        },
+        parents: [
+          {
+            class: 'window',
+            attributes: [lumin],
+          },
+          {
+            class: 'status_button',
+            attributes: ['hover'],
+          },
+        ],
 
-      ],
-
-      color: c.gs.fg1,
-    },
+        color: palette('fg1_gs'),
+      };
+    }),
 
     // Panel Switcher
     {
       class: 'panel_button_control',
       content_margin: [12, 12],
 
-      // Default
-      'layer0.texture': `${paths.this}panels.png`,
+      'layer0.texture': `${paths.commons}panels.png`,
       'layer0.opacity': 1,
-
-      // Hover
-      'layer1.texture': `${paths.this}panels--hover.png`,
-      'layer1.opacity': 0,
+      // 'layer0.tint': 'var(icon_default)',
     },
+
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'panel_button_control',
+
+        parents: [
+          {
+            class: 'window',
+            attributes: [lumin],
+          },
+          {
+            class: 'status_bar',
+          },
+        ],
+
+        'layer0.tint': palette('icon_default_gs'),
+      };
+    }),
+
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'panel_button_control',
+        settings: [stOpts.disableGreyscaleColors],
+
+        parents: [
+          {
+            class: 'window',
+            attributes: [lumin],
+          },
+          {
+            class: 'status_bar',
+          },
+        ],
+
+        'layer0.tint': palette('icon_default'),
+      };
+    }),
 
     // Panel Switcher Hover
-    {
-      class: 'panel_button_control',
-      attributes: ['hover'],
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'panel_button_control',
+        attributes: ['hover'],
 
-      'layer0.opacity': 0, // Default
-      'layer1.opacity': 1, // Hover
-    },
+        parents: [
+          {
+            class: 'window',
+            attributes: [lumin],
+          },
+          {
+            class: 'status_bar',
+          },
+        ],
+
+        'layer0.tint': palette('icon_hover_gs'),
+      };
+    }),
+
+    ...mixins.createComponentVariations((lumin, palette) => {
+      return {
+        class: 'panel_button_control',
+        attributes: ['hover'],
+        settings: [stOpts.disableGreyscaleColors],
+
+        parents: [
+          {
+            class: 'window',
+            attributes: [lumin],
+          },
+          {
+            class: 'status_bar',
+          },
+        ],
+
+        'layer0.tint': palette('icon_hover'),
+      };
+    }),
 
   ];
 };

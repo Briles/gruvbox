@@ -3,6 +3,7 @@ const assert = require('chai').assert;
 const tinycolor = require('../.gulp/tinycolor.js');
 const utils = require('../.gulp/utils.js');
 const schemes = require('./mock_schemes.js');
+const sublimeColorFns = require('../.gulp/sublime-color-functions.js');
 
 const validRGBA = 'rgba(255, 255, 255, 0.5)';
 const validSublimeRGB = [255, 255, 255];
@@ -114,4 +115,84 @@ describe('tinycolor', function () {
 
   });
 
+});
+
+describe('Sublime Color Functions', function () {
+
+  describe('colorFn()', function () {
+    it('should return a sublime color function', function () {
+      assert.strictEqual(sublimeColorFns.color('#ffffff'), 'color(#ffffff)');
+      assert.strictEqual(sublimeColorFns.color('var(--background)'), 'color(var(--background))');
+      assert.throws(() => sublimeColorFns.color(), 'Expected a color value');
+    });
+  });
+
+  describe('saturation()', function () {
+    it('should return a sublime saturation adjuster function', function () {
+      const color = 'var(base_green)';
+
+      assert.strictEqual(sublimeColorFns.saturation(color, .9), `color(${color} s(0.9%))`);
+      assert.strictEqual(sublimeColorFns.saturation(color, '+9'), `color(${color} s(+ 9%))`);
+      assert.strictEqual(sublimeColorFns.saturation(color, '-9'), `color(${color} s(- 9%))`);
+      assert.strictEqual(sublimeColorFns.saturation(color, 0), `color(${color} s(0%))`);
+      assert.strictEqual(sublimeColorFns.saturation(color, -0), `color(${color} s(0%))`);
+      assert.strictEqual(sublimeColorFns.saturation(color, '-0'), `color(${color} s(- 0%))`);
+      assert.strictEqual(sublimeColorFns.saturation(color, '+0'), `color(${color} s(+ 0%))`);
+      assert.throws(() => sublimeColorFns.saturation(color, 102), 'Invalid saturation amount');
+    });
+  });
+
+  describe('lightness()', function () {
+    it('should return a sublime lightness adjuster function', function () {
+      const color = 'var(base_green)';
+
+      assert.strictEqual(sublimeColorFns.lightness(color, .9), `color(${color} l(0.9%))`);
+      assert.strictEqual(sublimeColorFns.lightness(color, '+9'), `color(${color} l(+ 9%))`);
+      assert.strictEqual(sublimeColorFns.lightness(color, '-9'), `color(${color} l(- 9%))`);
+      assert.strictEqual(sublimeColorFns.lightness(color, 0), `color(${color} l(0%))`);
+      assert.strictEqual(sublimeColorFns.lightness(color, -0), `color(${color} l(0%))`);
+      assert.strictEqual(sublimeColorFns.lightness(color, '-0'), `color(${color} l(- 0%))`);
+      assert.strictEqual(sublimeColorFns.lightness(color, '+0'), `color(${color} l(+ 0%))`);
+      assert.throws(() => sublimeColorFns.lightness(color, -3), 'Invalid lightness amount');
+    });
+  });
+
+  describe('alpha()', function () {
+    it('should set alpha channel', function () {
+      const color = 'var(base_green)';
+
+      assert.strictEqual(sublimeColorFns.alpha(color, 0.2345), `color(${color} a(0.2345))`);
+      assert.throws(() => sublimeColorFns.alpha(color, 5), 'Expected alpha() adjustment amount to be between 0.0 and 1.0');
+    });
+  });
+
+  describe('greyscale()', function () {
+    it('should set saturation to 0', function () {
+      const color = 'var(base_green)';
+
+      assert.strictEqual(sublimeColorFns.greyscale(color), `color(${color} s(0%))`);
+    });
+  });
+
+  describe('blend()', function () {
+    it('should blend 2 colors', function () {
+      const color = 'var(base_green)';
+      const color2 = '#888';
+
+      assert.strictEqual(sublimeColorFns.blend(color, color2, 50), `color(${color} blend(${color2} 50%))`);
+      assert.strictEqual(sublimeColorFns.blend(color, color2, 100, true), `color(${color} blend(${color2} 100% hsl))`);
+      assert.throws(() => sublimeColorFns.blend(color, color2, -50), 'Expected blend() amount to be between 0 and 100');
+    });
+  });
+
+  describe('blenda()', function () {
+    it('should blend 2 colors with alpha channel', function () {
+      const color = 'var(base_green)';
+      const color2 = '#888';
+
+      assert.strictEqual(sublimeColorFns.blenda(color, color2, 50), `color(${color} blenda(${color2} 50%))`);
+      assert.strictEqual(sublimeColorFns.blenda(color, color2, 100, true), `color(${color} blenda(${color2} 100% hsl))`);
+      assert.throws(() => sublimeColorFns.blenda(color, color2, -50), 'Expected blenda() amount to be between 0 and 100');
+    });
+  });
 });

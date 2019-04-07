@@ -38,6 +38,7 @@ gulp.task('build', gulp.series('build_all', 'build_icons'));
 
 gulp.task('watch', function () {
   const themeFiles = [
+    `${srcPath}theme.js`,
     `${srcPath}components.js`,
     `${srcPath}components/*.js`,
     `${srcPath}options.js`,
@@ -45,6 +46,7 @@ gulp.task('watch', function () {
     `${srcPath}paths.js`,
     `${srcPath}sublime-options.js`,
     `${srcPath}mixins.js`,
+    `${srcPath}theme-variables.js`,
   ];
 
   const schemeFiles = [
@@ -69,6 +71,7 @@ gulp.task('watch', function () {
   const commonFiles = [
     `${srcPath}build.js`,
     `${srcPath}palette.js`,
+    `${srcPath}sublime-color-functions.js`,
     `${srcPath}tinycolor.js`,
     `${srcPath}utils.js`,
   ];

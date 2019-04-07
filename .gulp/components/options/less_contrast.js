@@ -11,10 +11,10 @@ module.exports = function (values) {
       settings: [stOpts.lessContrast],
 
       // Background
-      'layer0.tint': c.containerSofter,
+      'layer0.tint': 'var(containerSofter)',
 
       // Border - Right
-      'layer1.tint': c.borderSofter,
+      'layer1.tint': 'var(borderSofter)',
     },
 
     // Tabs Container
@@ -23,10 +23,10 @@ module.exports = function (values) {
       settings: [stOpts.lessContrast],
 
       // Background
-      'layer0.tint': c.containerSofter,
+      'layer0.tint': 'var(containerSofter)',
 
       // Border - Bottom
-      'layer1.tint': c.borderSofter,
+      'layer1.tint': 'var(borderSofter)',
     },
 
     // Tab
@@ -35,13 +35,13 @@ module.exports = function (values) {
       settings: [stOpts.lessContrast],
 
       // Background
-      'layer0.tint': c.containerSofter,
+      'layer0.tint': 'var(containerSofter)',
 
       // Border - Left & Right
-      'layer1.tint': c.borderSofter,
+      'layer1.tint': 'var(borderSofter)',
 
       // Border - Bottom
-      'layer2.tint': c.borderSofter,
+      'layer2.tint': 'var(borderSofter)',
     },
 
     // Reset the selected tab
@@ -50,7 +50,7 @@ module.exports = function (values) {
       class: 'tab_control',
       attributes: ['selected'],
 
-      'layer0.tint': c.background,
+      'layer0.tint': 'var(bg)',
     },
 
     // Normal Vertical Scrollbar Track
@@ -59,10 +59,10 @@ module.exports = function (values) {
       settings: [stOpts.lessContrast],
 
       // Background
-      'layer0.tint': c.containerSofter,
+      'layer0.tint': 'var(containerSofter)',
 
       // Border - Left
-      'layer1.tint': c.borderSofter,
+      'layer1.tint': 'var(borderSofter)',
     },
 
     // Scrollbars Corner
@@ -71,7 +71,7 @@ module.exports = function (values) {
       settings: [stOpts.lessContrast],
 
       // Background
-      'layer0.tint': c.containerSofter,
+      'layer0.tint': 'var(containerSofter)',
     },
 
     // Status Bar
@@ -80,10 +80,10 @@ module.exports = function (values) {
       settings: [stOpts.lessContrast],
 
       // Background
-      'layer0.tint': c.containerSofter,
+      'layer0.tint': 'var(containerSofter)',
 
       // Border - Top
-      'layer2.tint': c.borderSofter,
+      'layer2.tint': 'var(borderSofter)',
     },
 
     // Find & Replace & Console Panel
@@ -92,10 +92,10 @@ module.exports = function (values) {
       settings: [stOpts.lessContrast],
 
       // Background
-      'layer0.tint': c.containerSofter,
+      'layer0.tint': 'var(containerSofter)',
 
       // Border - Top
-      'layer1.tint': c.borderSofter,
+      'layer1.tint': 'var(borderSofter)',
     },
 
     // Button
@@ -104,10 +104,10 @@ module.exports = function (values) {
       settings: [stOpts.lessContrast],
 
       // Background
-      'layer0.tint': c.containerSofter,
+      'layer0.tint': 'var(containerSofter)',
 
       // Background Pressed
-      'layer2.tint': c.borderSofter,
+      'layer2.tint': 'var(borderSofter)',
     },
 
     // Command Palette & Goto Panel
@@ -116,10 +116,10 @@ module.exports = function (values) {
       settings: [stOpts.lessContrast],
 
       // Background
-      'layer0.tint': c.containerSofter,
+      'layer0.tint': 'var(containerSofter)',
 
       // Border - Left, Right, Bottom
-      'layer1.tint': c.borderSofter,
+      'layer1.tint': 'var(borderSofter)',
     },
 
     // Command Palette List Item
@@ -128,7 +128,7 @@ module.exports = function (values) {
       settings: [stOpts.lessContrast],
 
       // Border - Top
-      'layer1.tint': c.borderSofter,
+      'layer1.tint': 'var(borderSofter)',
     },
 
     // Quick Switch Project Panel
@@ -137,7 +137,7 @@ module.exports = function (values) {
       settings: [stOpts.lessContrast],
 
       // Background
-      'layer0.tint': c.containerSofter,
+      'layer0.tint': 'var(containerSofter)',
     },
 
     // Quick Switch Project Panel List Item
@@ -146,7 +146,7 @@ module.exports = function (values) {
       settings: [stOpts.lessContrast],
 
       // Border - Top
-      'layer1.tint': c.borderSofter,
+      'layer1.tint': 'var(borderSofter)',
     },
 
     {
@@ -154,7 +154,7 @@ module.exports = function (values) {
       settings: [stOpts.lessContrast],
 
       // Background
-      'layer0.tint': c.containerSofter,
+      'layer0.tint': 'var(containerSofter)',
     },
 
     // Pane
@@ -162,7 +162,7 @@ module.exports = function (values) {
       class: 'grid_layout_control',
       settings: [stOpts.lessContrast],
 
-      border_color: c.borderSofter,
+      border_color: 'var(borderSofter)',
     },
 
     // AutoComplete Popup Container
@@ -171,7 +171,7 @@ module.exports = function (values) {
       settings: [stOpts.lessContrast],
 
       // Background
-      'layer0.tint': c.containerSofter,
+      'layer0.tint': 'var(containerSofter)',
     },
 
     // AutoComplete Popup
@@ -179,7 +179,7 @@ module.exports = function (values) {
       class: 'auto_complete',
       settings: [stOpts.lessContrast],
 
-      'layer0.tint': c.containerSofter,
+      'layer0.tint': 'var(containerSofter)',
     },
 
   ];

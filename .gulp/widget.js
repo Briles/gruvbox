@@ -22,7 +22,7 @@ var Widget = function (basename) {
     ],
     line_padding_top: 4,
     line_padding_bottom: 4,
-    color_scheme: `${paths.internal.packagesRoot}${basename}.sublime-color-scheme`,
+    // color_scheme: `${paths.internal.packagesRoot}${basename}.sublime-color-scheme`,
   };
 
   this.filename = `Widget - ${basename}.sublime-settings`;

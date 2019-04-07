@@ -11,8 +11,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetMidstroke],
 
       'layer0.texture': `${paths.midstroke}regex.png`, // Default
-      'layer1.texture': `${paths.midstroke}regex--hover.png`, // Hover
-      'layer2.texture': `${paths.midstroke}regex--selected.png`, // Selected
     },
 
     // Case Sensitive
@@ -21,8 +19,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetMidstroke],
 
       'layer0.texture': `${paths.midstroke}casesensitive.png`, // Default
-      'layer1.texture': `${paths.midstroke}casesensitive--hover.png`, // Hover
-      'layer2.texture': `${paths.midstroke}casesensitive--selected.png`, // Selected
     },
 
     // Wholeword
@@ -31,8 +27,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetMidstroke],
 
       'layer0.texture': `${paths.midstroke}wholeword.png`, // Default
-      'layer1.texture': `${paths.midstroke}wholeword--hover.png`, // Hover
-      'layer2.texture': `${paths.midstroke}wholeword--selected.png`, // Selected
     },
 
     // Wrap
@@ -41,8 +35,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetMidstroke],
 
       'layer0.texture': `${paths.midstroke}wrap.png`, // Default
-      'layer1.texture': `${paths.midstroke}wrap--hover.png`, // Hover
-      'layer2.texture': `${paths.midstroke}wrap--selected.png`, // Selected
     },
 
     // In selection
@@ -51,8 +43,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetMidstroke],
 
       'layer0.texture': `${paths.midstroke}inselection.png`, // Default
-      'layer1.texture': `${paths.midstroke}inselection--hover.png`, // Hover
-      'layer2.texture': `${paths.midstroke}inselection--selected.png`, // Selected
     },
 
     // Highlight Result
@@ -61,8 +51,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetMidstroke],
 
       'layer0.texture': `${paths.midstroke}highlight.png`, // Default
-      'layer1.texture': `${paths.midstroke}highlight--hover.png`, // Hover
-      'layer2.texture': `${paths.midstroke}highlight--selected.png`, // Selected
     },
 
     // Preserve Case
@@ -71,8 +59,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetMidstroke],
 
       'layer0.texture': `${paths.midstroke}preservecase.png`, // Default
-      'layer1.texture': `${paths.midstroke}preservecase--hover.png`, // Hover
-      'layer2.texture': `${paths.midstroke}preservecase--selected.png`, // Selected
     },
 
     // Show context
@@ -81,8 +67,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetMidstroke],
 
       'layer0.texture': `${paths.midstroke}context.png`, // Default
-      'layer1.texture': `${paths.midstroke}context--hover.png`, // Hover
-      'layer2.texture': `${paths.midstroke}context--selected.png`, // Selected
     },
 
     // Use buffer
@@ -91,8 +75,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetMidstroke],
 
       'layer0.texture': `${paths.midstroke}buffer.png`, // Default
-      'layer1.texture': `${paths.midstroke}buffer--hover.png`, // Hover
-      'layer2.texture': `${paths.midstroke}buffer--selected.png`, // Selected
     },
 
     // Panel Switcher
@@ -101,7 +83,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetMidstroke],
 
       'layer0.texture': `${paths.midstroke}panels.png`, // Default
-      'layer1.texture': `${paths.midstroke}panels--hover.png`, // Hover
     },
 
     // Textline Input Overflow Menu
@@ -110,7 +91,6 @@ module.exports = function (values) {
       settings: [stOpts.iconsetMidstroke],
 
       'layer0.texture': `${paths.midstroke}more.png`, // Default
-      'layer1.texture': `${paths.midstroke}more--hover.png`, // Hover
     },
 
   ];

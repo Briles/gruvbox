@@ -14,7 +14,7 @@ module.exports = function (values) {
       settings: [stOpts.enabledPaneBorders],
 
       border_size: 1,
-      border_color: c.border,
+      border_color: 'var(border)',
     },
 
     /**

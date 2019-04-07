@@ -1,8 +1,108 @@
+const mixins = require('../mixins.js');
+
 module.exports = function (values) {
 
   const c = values.colors;
   const info = values.info;
   const paths = values.paths;
+  const stOpts = values.options;
+
+  function createIcon(className, iconPath) {
+    return [
+      {
+        class: className,
+        content_margin: [12, 12],
+
+        'layer0.texture': `${paths.commons}${iconPath}.png`,
+        'layer0.opacity': 1,
+        // 'layer0.tint': 'var(icon_default)',
+      },
+
+      ...mixins.createComponentVariations((lumin, palette) => {
+        return {
+          class: className,
+
+          parents: [
+            {
+              class: 'window',
+              attributes: [lumin],
+            },
+          ],
+
+          'layer0.tint': palette('icon_default_gs'),
+        };
+      }),
+
+      ...mixins.createComponentVariations((lumin, palette) => {
+        return {
+          class: className,
+          settings: [stOpts.disableGreyscaleColors],
+
+          parents: [
+            {
+              class: 'window',
+              attributes: [lumin],
+            },
+          ],
+
+          'layer0.tint': palette('icon_default'),
+        };
+      }),
+
+      ...mixins.createComponentVariations((lumin, palette) => {
+        return {
+          class: className,
+
+          parents: [
+            {
+              class: 'window',
+              attributes: [lumin],
+            },
+            {
+              class: 'icon_button_control',
+              attributes: ['hover'],
+            },
+          ],
+
+          'layer0.tint': palette('icon_hover_gs'),
+        };
+      }),
+
+      ...mixins.createComponentVariations((lumin, palette) => {
+        return {
+          class: className,
+          settings: [stOpts.disableGreyscaleColors],
+
+          parents: [
+            {
+              class: 'window',
+              attributes: [lumin],
+            },
+            {
+              class: 'icon_button_control',
+              attributes: ['hover'],
+            },
+          ],
+
+          'layer0.tint': palette('icon_hover'),
+        };
+      }),
+
+      {
+        class: className,
+        parents: [
+
+          {
+            class: 'icon_button_control',
+            attributes: ['selected'],
+          },
+
+        ],
+
+        'layer0.tint': 'var(icon_selected)',
+      }
+    ];
+  }
 
   return [
 
@@ -17,7 +117,7 @@ module.exports = function (values) {
 
       ],
 
-      color: c.gs.fg[info.contrast],
+      color: 'var(fg_gs)',
       'font.bold': false,
     },
 
@@ -28,15 +128,15 @@ module.exports = function (values) {
       min_size: [70, 15],
 
       // Background
-      'layer0.tint': c.container,
+      'layer0.tint': 'var(container)',
       'layer0.opacity': 1,
 
       // Background Hover
-      'layer1.tint': c.background,
+      'layer1.tint': 'var(bg)',
       'layer1.opacity': 0,
 
       // Background Pressed
-      'layer2.tint': c.border,
+      'layer2.tint': 'var(border)',
       'layer2.opacity': 0,
     },
 
@@ -66,423 +166,35 @@ module.exports = function (values) {
       class: 'icon_button_control',
       content_margin: [10, 6],
 
-      'layer0.tint': c.background,
+      'layer0.tint': 'var(bg)',
       'layer0.opacity': 0,
     },
 
     // Regex Icon
-    {
-      class: 'icon_regex',
-      content_margin: [12, 12],
-
-      // Default
-      'layer0.texture': `${paths.this}regex.png`,
-      'layer0.opacity': 1,
-
-      // Hover
-      'layer1.texture': `${paths.this}regex--hover.png`,
-      'layer1.opacity': 0,
-
-      // Selected
-      'layer2.texture': `${paths.this}regex--selected.png`,
-      'layer2.opacity': 0,
-    },
-
-    {
-      class: 'icon_regex',
-      parents: [
-
-        {
-          class: 'icon_button_control',
-          attributes: ['hover'],
-        },
-
-      ],
-
-      'layer1.opacity': 1, // Hover
-    },
-
-    {
-      class: 'icon_regex',
-      parents: [
-
-        {
-          class: 'icon_button_control',
-          attributes: ['selected'],
-        },
-
-      ],
-
-      'layer2.opacity': 1, // Selected
-    },
+    ...createIcon('icon_regex', 'regex'),
 
     // Case Sensitive Icon
-    {
-      class: 'icon_case',
-      content_margin: [12, 12],
-
-      // Default
-      'layer0.texture': `${paths.this}casesensitive.png`,
-      'layer0.opacity': 1,
-
-      // Hover
-      'layer1.texture': `${paths.this}casesensitive--hover.png`,
-      'layer1.opacity': 0,
-
-      // Selected
-      'layer2.texture': `${paths.this}casesensitive--selected.png`,
-      'layer2.opacity': 0,
-    },
-
-    {
-      class: 'icon_case',
-      parents: [
-
-        {
-          class: 'icon_button_control',
-          attributes: ['hover'],
-        },
-
-      ],
-
-      'layer1.opacity': 1, // Hover
-    },
-
-    {
-      class: 'icon_case',
-      parents: [
-
-        {
-          class: 'icon_button_control',
-          attributes: ['selected'],
-        },
-
-      ],
-
-      'layer2.opacity': 1, // Selected
-    },
+    ...createIcon('icon_case', 'casesensitive'),
 
     // Wholeword Icon
-    {
-      class: 'icon_whole_word',
-      content_margin: [12, 12],
-
-      // Default
-      'layer0.texture': `${paths.this}wholeword.png`,
-      'layer0.opacity': 1,
-
-      // Hover
-      'layer1.texture': `${paths.this}wholeword--hover.png`,
-      'layer1.opacity': 0,
-
-      // Selected
-      'layer2.texture': `${paths.this}wholeword--selected.png`,
-      'layer2.opacity': 0,
-    },
-
-    {
-      class: 'icon_whole_word',
-      parents: [
-
-        {
-          class: 'icon_button_control',
-          attributes: ['hover'],
-        },
-
-      ],
-
-      'layer1.opacity': 1, // Hover
-    },
-
-    {
-      class: 'icon_whole_word',
-      parents: [
-
-        {
-          class: 'icon_button_control',
-          attributes: ['selected'],
-        },
-
-      ],
-
-      'layer2.opacity': 1, // Selected
-    },
+    ...createIcon('icon_whole_word', 'wholeword'),
 
     // Wrap Icon
-    {
-      class: 'icon_wrap',
-      content_margin: [12, 12],
-
-      // Default
-      'layer0.texture': `${paths.this}wrap.png`,
-      'layer0.opacity': 1,
-
-      // Hover
-      'layer1.texture': `${paths.this}wrap--hover.png`,
-      'layer1.opacity': 0,
-
-      // Selected
-      'layer2.texture': `${paths.this}wrap--selected.png`,
-      'layer2.opacity': 0,
-    },
-
-    {
-      class: 'icon_wrap',
-      parents: [
-
-        {
-          class: 'icon_button_control',
-          attributes: ['hover'],
-        },
-
-      ],
-
-      'layer1.opacity': 1, // Hover
-    },
-
-    {
-      class: 'icon_wrap',
-      parents: [
-
-        {
-          class: 'icon_button_control',
-          attributes: ['selected'],
-        },
-
-      ],
-
-      'layer2.opacity': 1, // Selected
-    },
+    ...createIcon('icon_wrap', 'wrap'),
 
     // In Selection Icon
-    {
-      class: 'icon_in_selection',
-      content_margin: [12, 12],
-
-      // Default
-      'layer0.texture': `${paths.this}inselection.png`,
-      'layer0.opacity': 1,
-
-      // Hover
-      'layer1.texture': `${paths.this}inselection--hover.png`,
-      'layer1.opacity': 0,
-
-      // Selected
-      'layer2.texture': `${paths.this}inselection--selected.png`,
-      'layer2.opacity': 0,
-    },
-
-    {
-      class: 'icon_in_selection',
-      parents: [
-
-        {
-          class: 'icon_button_control',
-          attributes: ['hover'],
-        },
-
-      ],
-
-      'layer1.opacity': 1, // Hover
-    },
-
-    {
-      class: 'icon_in_selection',
-      parents: [
-
-        {
-          class: 'icon_button_control',
-          attributes: ['selected'],
-        },
-
-      ],
-
-      'layer2.opacity': 1, // Selected
-    },
+    ...createIcon('icon_in_selection', 'inselection'),
 
     // Highlight Result Icon
-    {
-      class: 'icon_highlight',
-      content_margin: [12, 12],
-
-      // Default
-      'layer0.texture': `${paths.this}highlight.png`,
-      'layer0.opacity': 1,
-
-      // Hover
-      'layer1.texture': `${paths.this}highlight--hover.png`,
-      'layer1.opacity': 0,
-
-      // Selected
-      'layer2.texture': `${paths.this}highlight--selected.png`,
-      'layer2.opacity': 0,
-    },
-
-    {
-      class: 'icon_highlight',
-      parents: [
-
-        {
-          class: 'icon_button_control',
-          attributes: ['hover'],
-        },
-
-      ],
-
-      'layer1.opacity': 1, // Hover
-    },
-
-    {
-      class: 'icon_highlight',
-      parents: [
-
-        {
-          class: 'icon_button_control',
-          attributes: ['selected'],
-        },
-
-      ],
-
-      'layer2.opacity': 1, // Selected
-    },
+    ...createIcon('icon_highlight', 'highlight'),
 
     // Preserve Case Icon
-    {
-      class: 'icon_preserve_case',
-      content_margin: [12, 12],
-
-      // Default
-      'layer0.texture': `${paths.this}preservecase.png`,
-      'layer0.opacity': 1,
-
-      // Hover
-      'layer1.texture': `${paths.this}preservecase--hover.png`,
-      'layer1.opacity': 0,
-
-      // Selected
-      'layer2.texture': `${paths.this}preservecase--selected.png`,
-      'layer2.opacity': 0,
-    },
-
-    {
-      class: 'icon_preserve_case',
-      parents: [
-
-        {
-          class: 'icon_button_control',
-          attributes: ['hover'],
-        },
-
-      ],
-
-      'layer1.opacity': 1, // Hover
-    },
-
-    {
-      class: 'icon_preserve_case',
-      parents: [
-
-        {
-          class: 'icon_button_control',
-          attributes: ['selected'],
-        },
-
-      ],
-
-      'layer2.opacity': 1, // Selected
-    },
+    ...createIcon('icon_preserve_case', 'preservecase'),
 
     // Show Context Icon
-    {
-      class: 'icon_context',
-      content_margin: [12, 12],
-
-      // Default
-      'layer0.texture': `${paths.this}context.png`,
-      'layer0.opacity': 1,
-
-      // Hover
-      'layer1.texture': `${paths.this}context--hover.png`,
-      'layer1.opacity': 0,
-
-      // Selected
-      'layer2.texture': `${paths.this}context--selected.png`,
-      'layer2.opacity': 0,
-    },
-
-    {
-      class: 'icon_context',
-      parents: [
-
-        {
-          class: 'icon_button_control',
-          attributes: ['hover'],
-        },
-
-      ],
-
-      'layer1.opacity': 1, // Hover
-    },
-
-    {
-      class: 'icon_context',
-      parents: [
-
-        {
-          class: 'icon_button_control',
-          attributes: ['selected'],
-        },
-
-      ],
-
-      'layer2.opacity': 1, // Selected
-    },
+    ...createIcon('icon_context', 'context'),
 
     // Use Buffer Icon
-    {
-      class: 'icon_use_buffer',
-      content_margin: [12, 12],
-
-      // Default
-      'layer0.texture': `${paths.this}buffer.png`,
-      'layer0.opacity': 1,
-
-      // Hover
-      'layer1.texture': `${paths.this}buffer--hover.png`,
-      'layer1.opacity': 0,
-
-      // Selected
-      'layer2.texture': `${paths.this}buffer--selected.png`,
-      'layer2.opacity': 0,
-    },
-
-    {
-      class: 'icon_use_buffer',
-      parents: [
-
-        {
-          class: 'icon_button_control',
-          attributes: ['hover'],
-        },
-
-      ],
-
-      'layer1.opacity': 1, // Hover
-    },
-
-    {
-      class: 'icon_use_buffer',
-      parents: [
-
-        {
-          class: 'icon_button_control',
-          attributes: ['selected'],
-        },
-
-      ],
-
-      'layer2.opacity': 1, // Selected
-    },
-
+    ...createIcon('icon_use_buffer', 'buffer'),
   ];
 };
