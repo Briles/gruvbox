@@ -50,7 +50,8 @@ items:
 bill-to:  &id001
 # ^^^^^ fg=#83a598 fs=
 #      ^ fg=#ebdbb2 fs=
-#         ^^^^^^ fg=#ebdbb2 fs=
+#         ^ fg=#d65d0e fs=
+#          ^^^^^ fg=#fe8019 fs=
 
     street: |
 #   ^^^^^^ fg=#83a598 fs=
@@ -102,6 +103,12 @@ a: 123                     # an integer
 #                          ^ fg=#928374 fs=italic
 #                            ^^ fg=#928374 fs=italic
 #                               ^^^^^^^ fg=#928374 fs=italic
+
+bar: *anchor
+# ^ fg=#83a598 fs=
+#  ^ fg=#ebdbb2 fs=
+#    ^ fg=#cc241d fs=
+#     ^^^^^^ fg=#83a598 fs=
 
 b: "123"                   # a string, disambiguated by quotes
 #  ^ fg=#ebdbb2 fs=

@@ -85,14 +85,17 @@ struct foo **alloc_foo();
 
 scanf("%ms %as %*[, ]", &buf);
 // ^^ fg=#8ec07c fs=
-//   ^^ fg=#ebdbb2 fs=
+//   ^ fg=#bdae93 fs=
+//    ^ fg=#ebdbb2 fs=
 //     ^^^ fg=#8ec07c fs=
 //         ^^^ fg=#8ec07c fs=
 //             ^^^^ fg=#8ec07c fs=
 //                  ^ fg=#8ec07c fs=
 //                   ^^ fg=#ebdbb2 fs=
 //                      ^ fg=#8ec07c fs=
-//                       ^^^^^ fg=#ebdbb2 fs=
+//                       ^^^ fg=#ebdbb2 fs=
+//                          ^ fg=#bdae93 fs=
+//                           ^ fg=#ebdbb2 fs=
 
 int main(int argc, char **argv) {
 //  ^^^^ fg=#b8bb26 fs=
@@ -121,34 +124,42 @@ int main(int argc, char **argv) {
 
     printf("Set Mouse Speed by Maverick\n");
 //  ^^^^^^ fg=#8ec07c fs=
-//        ^^ fg=#ebdbb2 fs=
+//        ^ fg=#bdae93 fs=
+//         ^ fg=#ebdbb2 fs=
 //          ^^^ fg=#b8bb26 fs=
 //              ^^^^^ fg=#b8bb26 fs=
 //                    ^^^^^ fg=#b8bb26 fs=
 //                          ^^ fg=#b8bb26 fs=
 //                             ^^^^^^^^ fg=#b8bb26 fs=
 //                                     ^^ fg=#fb4934 fs=
-//                                       ^^^ fg=#ebdbb2 fs=
+//                                       ^ fg=#ebdbb2 fs=
+//                                        ^ fg=#bdae93 fs=
+//                                         ^ fg=#ebdbb2 fs=
 
     SystemParametersInfo(SPI_GETMOUSESPEED, 0, &speed, 0);
 //  ^^^^^^^^^^^^^^^^^^^^ fg=#8ec07c fs=
-//                      ^^^^^^^^^^^^^^^^^^^ fg=#ebdbb2 fs=
+//                      ^ fg=#bdae93 fs=
+//                       ^^^^^^^^^^^^^^^^^^ fg=#ebdbb2 fs=
 //                                          ^ fg=#d3869b fs=
 //                                           ^ fg=#ebdbb2 fs=
 //                                             ^ fg=#8ec07c fs=
 //                                              ^^^^^^ fg=#ebdbb2 fs=
 //                                                     ^ fg=#d3869b fs=
-//                                                      ^^ fg=#ebdbb2 fs=
+//                                                      ^ fg=#bdae93 fs=
+//                                                       ^ fg=#ebdbb2 fs=
 
     printf("Current speed: %2d\n", speed);
 //  ^^^^^^ fg=#8ec07c fs=
-//        ^^ fg=#ebdbb2 fs=
+//        ^ fg=#bdae93 fs=
+//         ^ fg=#ebdbb2 fs=
 //          ^^^^^^^ fg=#b8bb26 fs=
 //                  ^^^^^^ fg=#b8bb26 fs=
 //                         ^^^ fg=#8ec07c fs=
 //                            ^^ fg=#fb4934 fs=
 //                              ^^ fg=#ebdbb2 fs=
-//                                 ^^^^^^^ fg=#ebdbb2 fs=
+//                                 ^^^^^ fg=#ebdbb2 fs=
+//                                      ^ fg=#bdae93 fs=
+//                                       ^ fg=#ebdbb2 fs=
 
     if (argc == 1) return 0;
 //  ^^ fg=#fb4934 fs=
@@ -167,14 +178,17 @@ int main(int argc, char **argv) {
 //              ^ fg=#d3869b fs=
 //               ^ fg=#ebdbb2 fs=
 //                 ^^^^^^ fg=#8ec07c fs=
-//                       ^^^^^^ fg=#ebdbb2 fs=
+//                       ^ fg=#bdae93 fs=
+//                        ^^^^^ fg=#ebdbb2 fs=
 //                             ^ fg=#d3869b fs=
 //                              ^^ fg=#ebdbb2 fs=
 //                                 ^ fg=#ebdbb2 fs=
 //                                  ^^ fg=#8ec07c fs=
 //                                    ^^ fg=#ebdbb2 fs=
 //                                       ^ fg=#8ec07c fs=
-//                                        ^^^^^^^^ fg=#ebdbb2 fs=
+//                                        ^^^^^^ fg=#ebdbb2 fs=
+//                                              ^ fg=#bdae93 fs=
+//                                               ^ fg=#ebdbb2 fs=
 
     if (argc >= 3) sscanf(argv[2], "%d", &speed2);
 //  ^^ fg=#fb4934 fs=
@@ -183,14 +197,17 @@ int main(int argc, char **argv) {
 //              ^ fg=#d3869b fs=
 //               ^ fg=#ebdbb2 fs=
 //                 ^^^^^^ fg=#8ec07c fs=
-//                       ^^^^^^ fg=#ebdbb2 fs=
+//                       ^ fg=#bdae93 fs=
+//                        ^^^^^ fg=#ebdbb2 fs=
 //                             ^ fg=#d3869b fs=
 //                              ^^ fg=#ebdbb2 fs=
 //                                 ^ fg=#ebdbb2 fs=
 //                                  ^^ fg=#8ec07c fs=
 //                                    ^^ fg=#ebdbb2 fs=
 //                                       ^ fg=#8ec07c fs=
-//                                        ^^^^^^^^ fg=#ebdbb2 fs=
+//                                        ^^^^^^ fg=#ebdbb2 fs=
+//                                              ^ fg=#bdae93 fs=
+//                                               ^ fg=#ebdbb2 fs=
 
     if (argc == 2) // set speed to first value
 //  ^^ fg=#fb4934 fs=
@@ -247,32 +264,39 @@ int main(int argc, char **argv) {
 
     SystemParametersInfo(SPI_SETMOUSESPEED, 0,  speed, 0);
 //  ^^^^^^^^^^^^^^^^^^^^ fg=#8ec07c fs=
-//                      ^^^^^^^^^^^^^^^^^^^ fg=#ebdbb2 fs=
+//                      ^ fg=#bdae93 fs=
+//                       ^^^^^^^^^^^^^^^^^^ fg=#ebdbb2 fs=
 //                                          ^ fg=#d3869b fs=
 //                                           ^ fg=#ebdbb2 fs=
 //                                              ^^^^^^ fg=#ebdbb2 fs=
 //                                                     ^ fg=#d3869b fs=
-//                                                      ^^ fg=#ebdbb2 fs=
+//                                                      ^ fg=#bdae93 fs=
+//                                                       ^ fg=#ebdbb2 fs=
 
     SystemParametersInfo(SPI_GETMOUSESPEED, 0, &speed, 0);
 //  ^^^^^^^^^^^^^^^^^^^^ fg=#8ec07c fs=
-//                      ^^^^^^^^^^^^^^^^^^^ fg=#ebdbb2 fs=
+//                      ^ fg=#bdae93 fs=
+//                       ^^^^^^^^^^^^^^^^^^ fg=#ebdbb2 fs=
 //                                          ^ fg=#d3869b fs=
 //                                           ^ fg=#ebdbb2 fs=
 //                                             ^ fg=#8ec07c fs=
 //                                              ^^^^^^ fg=#ebdbb2 fs=
 //                                                     ^ fg=#d3869b fs=
-//                                                      ^^ fg=#ebdbb2 fs=
+//                                                      ^ fg=#bdae93 fs=
+//                                                       ^ fg=#ebdbb2 fs=
 
     printf("New speed: %2d\n", speed);
 //  ^^^^^^ fg=#8ec07c fs=
-//        ^^ fg=#ebdbb2 fs=
+//        ^ fg=#bdae93 fs=
+//         ^ fg=#ebdbb2 fs=
 //          ^^^ fg=#b8bb26 fs=
 //              ^^^^^^ fg=#b8bb26 fs=
 //                     ^^^ fg=#8ec07c fs=
 //                        ^^ fg=#fb4934 fs=
 //                          ^^ fg=#ebdbb2 fs=
-//                             ^^^^^^^ fg=#ebdbb2 fs=
+//                             ^^^^^ fg=#ebdbb2 fs=
+//                                  ^ fg=#bdae93 fs=
+//                                   ^ fg=#ebdbb2 fs=
 
     return 0;
 //  ^^^^^^ fg=#fb4934 fs=
@@ -298,7 +322,10 @@ int foo(int a, float b[])
 //  ^^^^^^^^^^ fg=#ebdbb2 fs=
 //             ^ fg=#8ec07c fs=
 //               ^^^^ fg=#8ec07c fs=
-//                   ^^^^^^ fg=#ebdbb2 fs=
+//                   ^ fg=#bdae93 fs=
+//                    ^^^ fg=#ebdbb2 fs=
+//                       ^ fg=#bdae93 fs=
+//                        ^ fg=#ebdbb2 fs=
 
     if (result == 0) {
 //  ^^ fg=#fb4934 fs=

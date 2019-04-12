@@ -264,14 +264,18 @@ let a = { otherIdentifier, foo(), baz: 1 }
 
 someFunction({
 // ^^^^^^^^^ fg=#8ec07c fs=
-//          ^^ fg=#ebdbb2 fs=
+//          ^ fg=#bdae93 fs=
+//           ^ fg=#ebdbb2 fs=
     prop1, prop2, prop3
 //  ^^^^^ fg=#83a598 fs=
 //       ^ fg=#ebdbb2 fs=
 //         ^^^^^ fg=#83a598 fs=
 //              ^ fg=#ebdbb2 fs=
 //                ^^^^^ fg=#83a598 fs=
-});
+   });
+// ^ fg=#ebdbb2 fs=
+//  ^ fg=#bdae93 fs=
+//   ^ fg=#ebdbb2 fs=
 
     function foo() {}
 //  ^^^^^^^^ fg=#8ec07c fs=
@@ -313,7 +317,7 @@ someFunction({
 {
     bar()
 //  ^^^ fg=#8ec07c fs=
-//     ^^ fg=#ebdbb2 fs=
+//     ^^ fg=#bdae93 fs=
 }
 
     let _$Foobar1Ù𝓩ʷªאξ‿ᛮↂ〩;

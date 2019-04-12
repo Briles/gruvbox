@@ -268,6 +268,14 @@ module.exports = function (values) {
       },
 
       {
+        name: 'Keywords Punctuation',
+        scope: [
+          'keyword punctuation',
+        ],
+        foreground: 'var(red1)',
+      },
+
+      {
         name: 'CSS At-Rule Punctuation (@) & At-Rule Vendor Prefixes',
         scope: [
           'punctuation.definition.keyword',
@@ -287,6 +295,14 @@ module.exports = function (values) {
           'punctuation.operator',
         ],
         foreground: 'var(aqua)',
+      },
+
+      {
+        name: 'Operators Punctuation',
+        scope: [
+          'operator punctuation',
+        ],
+        foreground: 'var(aqua1)',
       },
 
       {
@@ -310,6 +326,14 @@ module.exports = function (values) {
           'storage.type.primitive',
         ],
         foreground: 'var(red)',
+      },
+
+      {
+        name: 'Storage Punctuation',
+        scope: [
+          'storage punctuation',
+        ],
+        foreground: 'var(red1)',
       },
 
       {
@@ -357,6 +381,7 @@ module.exports = function (values) {
       {
         name: 'Variable - Punctuation',
         scope: [
+          'variable punctuation',
           'punctuation.definition.variable',
           'variable.interpolation',
           'variable.other.dollar punctuation.dollar',
@@ -398,6 +423,8 @@ module.exports = function (values) {
         scope: [
           'variable.parameter',
           'meta.parameters',
+          'variable.parameter punctuation',
+          'variable.parameter punctuation.definition.variable',
         ],
         foreground: 'var(fg)',
       },
@@ -432,6 +459,7 @@ module.exports = function (values) {
         name: 'Language Constants Punctuation',
         scope: [
           'variable.language punctuation.definition.variable',
+          'constant.numeric punctuation.definition',
         ],
         foreground: 'var(purple1)',
       },
@@ -443,6 +471,15 @@ module.exports = function (values) {
           'entity.name.constant',
         ],
         foreground: 'var(yellow)',
+      },
+
+      {
+        name: 'User-Defined Constants Punctuation',
+        scope: [
+          'variable.other.constant punctuation',
+          'entity.name.constant punctuation',
+        ],
+        foreground: 'var(yellow1)',
       },
 
       {
@@ -790,6 +827,7 @@ module.exports = function (values) {
           'entity.other.attribute-name.id',
           'constant.id.tag',
           'entity.name.tag.id',
+          'entity.name.other.anchor',
         ],
         foreground: 'var(orange)',
       },
@@ -798,6 +836,7 @@ module.exports = function (values) {
         name: 'HTML & CSS ID Punctuation (#)',
         scope: [
           'entity.other.attribute-name.id punctuation.definition.entity',
+          'punctuation.definition.anchor',
         ],
         foreground: 'var(orange1)',
       },
@@ -946,9 +985,11 @@ module.exports = function (values) {
           'constant.name.attribute.tag.jade',
           'constant.name.attribute.tag.pug',
           'meta.brace.round',
-          'meta.function-call meta.group punctuation.definition.group',
           'punctuation.definition.method-parameters',
           'punctuation.definition.parameters',
+          'meta.function-call meta.group punctuation.section.group',
+          'meta.block.parameters punctuation.definition.parameters',
+          'meta.function-call meta.group punctuation.definition.group',
         ],
         foreground: 'var(fg3)',
       },

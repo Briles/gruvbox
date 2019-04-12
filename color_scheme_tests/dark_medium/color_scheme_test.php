@@ -179,14 +179,11 @@ class x extends /* */ \a\b implements \c\d {}
 function d($a = array(), $b = "x") {}
 // ^^^^^ fg=#8ec07c fs=
 //       ^ fg=#b8bb26 fs=
-//        ^ fg=#ebdbb2 fs=
-//         ^ fg=#458588 fs=
-//          ^ fg=#ebdbb2 fs=
+//        ^^^ fg=#ebdbb2 fs=
 //            ^ fg=#8ec07c fs=
 //              ^^^^^ fg=#8ec07c fs=
 //                   ^^^ fg=#ebdbb2 fs=
-//                       ^ fg=#458588 fs=
-//                        ^ fg=#ebdbb2 fs=
+//                       ^^ fg=#ebdbb2 fs=
 //                          ^ fg=#8ec07c fs=
 //                            ^ fg=#ebdbb2 fs=
 //                             ^ fg=#b8bb26 fs=
@@ -196,9 +193,7 @@ function d($a = array(), $b = "x") {}
 function e($a = []) {}
 // ^^^^^ fg=#8ec07c fs=
 //       ^ fg=#b8bb26 fs=
-//        ^ fg=#ebdbb2 fs=
-//         ^ fg=#458588 fs=
-//          ^ fg=#ebdbb2 fs=
+//        ^^^ fg=#ebdbb2 fs=
 //            ^ fg=#8ec07c fs=
 //              ^^^ fg=#ebdbb2 fs=
 //                  ^^ fg=#ebdbb2 fs=
@@ -208,12 +203,10 @@ function f(array $a = [], $b = "x") {}
 //       ^ fg=#b8bb26 fs=
 //        ^ fg=#ebdbb2 fs=
 //         ^^^^^ fg=#fb4934 fs=
-//               ^ fg=#458588 fs=
-//                ^ fg=#ebdbb2 fs=
+//               ^^ fg=#ebdbb2 fs=
 //                  ^ fg=#8ec07c fs=
 //                    ^^^ fg=#ebdbb2 fs=
-//                        ^ fg=#458588 fs=
-//                         ^ fg=#ebdbb2 fs=
+//                        ^^ fg=#ebdbb2 fs=
 //                           ^ fg=#8ec07c fs=
 //                             ^ fg=#ebdbb2 fs=
 //                              ^ fg=#b8bb26 fs=
@@ -225,8 +218,7 @@ function g(array $a = [1, 2, 3, 4],  $b = "x") {}
 //       ^ fg=#b8bb26 fs=
 //        ^ fg=#ebdbb2 fs=
 //         ^^^^^ fg=#fb4934 fs=
-//               ^ fg=#458588 fs=
-//                ^ fg=#ebdbb2 fs=
+//               ^^ fg=#ebdbb2 fs=
 //                  ^ fg=#8ec07c fs=
 //                    ^ fg=#ebdbb2 fs=
 //                     ^ fg=#d3869b fs=
@@ -237,8 +229,7 @@ function g(array $a = [1, 2, 3, 4],  $b = "x") {}
 //                            ^ fg=#ebdbb2 fs=
 //                              ^ fg=#d3869b fs=
 //                               ^^ fg=#ebdbb2 fs=
-//                                   ^ fg=#458588 fs=
-//                                    ^ fg=#ebdbb2 fs=
+//                                   ^^ fg=#ebdbb2 fs=
 //                                      ^ fg=#8ec07c fs=
 //                                        ^ fg=#ebdbb2 fs=
 //                                         ^ fg=#b8bb26 fs=
@@ -250,13 +241,11 @@ function h(array $a = null, $b = "x") {}
 //       ^ fg=#b8bb26 fs=
 //        ^ fg=#ebdbb2 fs=
 //         ^^^^^ fg=#fb4934 fs=
-//               ^ fg=#458588 fs=
-//                ^ fg=#ebdbb2 fs=
+//               ^^ fg=#ebdbb2 fs=
 //                  ^ fg=#8ec07c fs=
 //                    ^^^^ fg=#d3869b fs=
 //                        ^ fg=#ebdbb2 fs=
-//                          ^ fg=#458588 fs=
-//                           ^ fg=#ebdbb2 fs=
+//                          ^^ fg=#ebdbb2 fs=
 //                             ^ fg=#8ec07c fs=
 //                               ^ fg=#ebdbb2 fs=
 //                                ^ fg=#b8bb26 fs=
@@ -268,8 +257,7 @@ function i(&$x) {}
 //       ^ fg=#b8bb26 fs=
 //        ^ fg=#ebdbb2 fs=
 //         ^ fg=#fb4934 fs=
-//          ^ fg=#458588 fs=
-//           ^^ fg=#ebdbb2 fs=
+//          ^^^ fg=#ebdbb2 fs=
 //              ^^ fg=#ebdbb2 fs=
 
 function j(X $c) {}
@@ -277,8 +265,7 @@ function j(X $c) {}
 //       ^ fg=#b8bb26 fs=
 //        ^ fg=#ebdbb2 fs=
 //         ^ fg=#fabd2f fs=
-//           ^ fg=#458588 fs=
-//            ^^ fg=#ebdbb2 fs=
+//           ^^^ fg=#ebdbb2 fs=
 //               ^^ fg=#ebdbb2 fs=
 
 function k(Coutable $c) {}
@@ -286,8 +273,7 @@ function k(Coutable $c) {}
 //       ^ fg=#b8bb26 fs=
 //        ^ fg=#ebdbb2 fs=
 //         ^^^^^^^^ fg=#fabd2f fs=
-//                  ^ fg=#458588 fs=
-//                   ^^ fg=#ebdbb2 fs=
+//                  ^^^ fg=#ebdbb2 fs=
 //                      ^^ fg=#ebdbb2 fs=
 
 function l(int $a, string $b, bool $c, float $d) {}
@@ -295,25 +281,19 @@ function l(int $a, string $b, bool $c, float $d) {}
 //       ^ fg=#b8bb26 fs=
 //        ^ fg=#ebdbb2 fs=
 //         ^^^ fg=#fb4934 fs=
-//             ^ fg=#458588 fs=
-//              ^^ fg=#ebdbb2 fs=
+//             ^^^ fg=#ebdbb2 fs=
 //                 ^^^^^^ fg=#fb4934 fs=
-//                        ^ fg=#458588 fs=
-//                         ^^ fg=#ebdbb2 fs=
+//                        ^^^ fg=#ebdbb2 fs=
 //                            ^^^^ fg=#fb4934 fs=
-//                                 ^ fg=#458588 fs=
-//                                  ^^ fg=#ebdbb2 fs=
+//                                 ^^^ fg=#ebdbb2 fs=
 //                                     ^^^^^ fg=#fb4934 fs=
-//                                           ^ fg=#458588 fs=
-//                                            ^^ fg=#ebdbb2 fs=
+//                                           ^^^ fg=#ebdbb2 fs=
 //                                               ^^ fg=#ebdbb2 fs=
 
 function m(...$x) {}
 // ^^^^^ fg=#8ec07c fs=
 //       ^ fg=#b8bb26 fs=
-//        ^^^^ fg=#ebdbb2 fs=
-//            ^ fg=#458588 fs=
-//             ^^ fg=#ebdbb2 fs=
+//        ^^^^^^^ fg=#ebdbb2 fs=
 //                ^^ fg=#ebdbb2 fs=
 
 function n(
@@ -322,12 +302,10 @@ function n(
 //        ^ fg=#ebdbb2 fs=
 
         $a,
-//      ^ fg=#458588 fs=
-//       ^^ fg=#ebdbb2 fs=
+//      ^^^ fg=#ebdbb2 fs=
 
         $b
-//      ^ fg=#458588 fs=
-//       ^ fg=#ebdbb2 fs=
+//      ^^ fg=#ebdbb2 fs=
 
         ){}
 //      ^^^ fg=#ebdbb2 fs=
@@ -358,31 +336,25 @@ $x = function(N $c) use ($a, $b) {};
 //   ^^^^^^^^ fg=#8ec07c fs=
 //           ^ fg=#ebdbb2 fs=
 //            ^ fg=#fabd2f fs=
-//              ^ fg=#458588 fs=
-//               ^^ fg=#ebdbb2 fs=
+//              ^^^ fg=#ebdbb2 fs=
 //                  ^^^ fg=#fb4934 fs=
-//                      ^ fg=#ebdbb2 fs=
-//                       ^ fg=#458588 fs=
-//                        ^^ fg=#ebdbb2 fs=
-//                           ^ fg=#458588 fs=
-//                            ^^ fg=#ebdbb2 fs=
+//                      ^^^^ fg=#ebdbb2 fs=
+//                           ^^^ fg=#ebdbb2 fs=
 //                               ^^^ fg=#ebdbb2 fs=
 
 $abc->y(function (A $a, B $b) {
 // ^ fg=#83a598 fs=
 //  ^^ fg=#ebdbb2 fs=
 //    ^ fg=#689d6a fs=
-//     ^ fg=#ebdbb2 fs=
+//     ^ fg=#bdae93 fs=
 //      ^^^^^^^^ fg=#8ec07c fs=
-//               ^ fg=#ebdbb2 fs=
+//               ^ fg=#bdae93 fs=
 //                ^ fg=#fabd2f fs=
-//                  ^ fg=#458588 fs=
-//                   ^^ fg=#ebdbb2 fs=
+//                  ^^^ fg=#ebdbb2 fs=
 //                      ^ fg=#fabd2f fs=
-//                        ^ fg=#458588 fs=
-//                         ^^ fg=#ebdbb2 fs=
+//                        ^^ fg=#ebdbb2 fs=
+//                          ^ fg=#bdae93 fs=
 //                            ^ fg=#ebdbb2 fs=
-
     $c = $a->b('c');
 //  ^ fg=#458588 fs=
 //   ^ fg=#83a598 fs=
@@ -391,37 +363,46 @@ $abc->y(function (A $a, B $b) {
 //        ^ fg=#83a598 fs=
 //         ^^ fg=#ebdbb2 fs=
 //           ^ fg=#689d6a fs=
-//            ^^ fg=#ebdbb2 fs=
+//            ^ fg=#bdae93 fs=
+//             ^ fg=#ebdbb2 fs=
 //              ^ fg=#b8bb26 fs=
-//               ^^^ fg=#ebdbb2 fs=
+//               ^ fg=#ebdbb2 fs=
+//                ^ fg=#bdae93 fs=
+//                 ^ fg=#ebdbb2 fs=
 
     $b->c("d $c");
 //  ^ fg=#458588 fs=
 //   ^ fg=#83a598 fs=
 //    ^^ fg=#ebdbb2 fs=
 //      ^ fg=#689d6a fs=
-//       ^^ fg=#ebdbb2 fs=
+//       ^ fg=#bdae93 fs=
+//        ^ fg=#ebdbb2 fs=
 //         ^ fg=#b8bb26 fs=
 //           ^ fg=#458588 fs=
 //            ^ fg=#83a598 fs=
-//             ^^^ fg=#ebdbb2 fs=
+//             ^ fg=#ebdbb2 fs=
+//              ^ fg=#bdae93 fs=
+//               ^ fg=#ebdbb2 fs=
 
     });
-//  ^^^ fg=#ebdbb2 fs=
+//  ^ fg=#ebdbb2 fs=
+//   ^ fg=#bdae93 fs=
+//    ^ fg=#ebdbb2 fs=
 
 if (isset($x) && is_callable($x)) {
 // ^ fg=#ebdbb2 fs=
 //  ^^^^^ fg=#8ec07c fs=
-//       ^ fg=#ebdbb2 fs=
+//       ^ fg=#bdae93 fs=
 //        ^ fg=#458588 fs=
 //         ^ fg=#83a598 fs=
-//          ^ fg=#ebdbb2 fs=
+//          ^ fg=#bdae93 fs=
 //            ^^ fg=#8ec07c fs=
 //               ^^^^^^^^^^^ fg=#8ec07c fs=
-//                          ^ fg=#ebdbb2 fs=
+//                          ^ fg=#bdae93 fs=
 //                           ^ fg=#458588 fs=
 //                            ^ fg=#83a598 fs=
-//                             ^^ fg=#ebdbb2 fs=
+//                             ^ fg=#bdae93 fs=
+//                              ^ fg=#ebdbb2 fs=
 //                                ^ fg=#ebdbb2 fs=
 
     if ((29 - 10 + 2) * 2 > 4.2) {}
@@ -457,10 +438,10 @@ if (isset($x) && is_callable($x)) {
 //     ^ fg=#8ec07c fs=
 //       ^^^^ fg=#d3869b fs=
 //            ^ fg=#8ec07c fs=
-//              ^^ fg=#ebdbb2 fs=
+//              ^^ fg=#b16286 fs=
 //                ^^ fg=#d3869b fs=
 //                   ^^ fg=#8ec07c fs=
-//                      ^^ fg=#ebdbb2 fs=
+//                      ^^ fg=#b16286 fs=
 //                        ^^^^^^^^ fg=#d3869b fs=
 //                                 ^ fg=#8ec07c fs=
 //                                   ^^^ fg=#d3869b fs=
@@ -498,22 +479,26 @@ if (isset($x) && is_callable($x)) {
 
     user_defined();
 //  ^^^^^^^^^^^^ fg=#8ec07c fs=
-//              ^^^ fg=#ebdbb2 fs=
+//              ^^ fg=#bdae93 fs=
+//                ^ fg=#ebdbb2 fs=
 
     phpversion();
 //  ^^^^^^^^^^ fg=#8ec07c fs=
-//            ^^^ fg=#ebdbb2 fs=
+//            ^^ fg=#bdae93 fs=
+//              ^ fg=#ebdbb2 fs=
 
     error_reporting(E_ALL);
 //  ^^^^^^^^^^^^^^^ fg=#8ec07c fs=
-//                 ^ fg=#ebdbb2 fs=
+//                 ^ fg=#bdae93 fs=
 //                  ^^^^^ fg=#d3869b fs=
-//                       ^^ fg=#ebdbb2 fs=
+//                       ^ fg=#bdae93 fs=
+//                        ^ fg=#ebdbb2 fs=
 
     $x();
 //  ^ fg=#458588 fs=
 //   ^ fg=#83a598 fs=
-//    ^^^ fg=#ebdbb2 fs=
+//    ^^ fg=#bdae93 fs=
+//      ^ fg=#ebdbb2 fs=
 
     $x = $y($a, $b);
 //  ^ fg=#458588 fs=
@@ -521,13 +506,14 @@ if (isset($x) && is_callable($x)) {
 //     ^ fg=#8ec07c fs=
 //       ^ fg=#458588 fs=
 //        ^ fg=#83a598 fs=
-//         ^ fg=#ebdbb2 fs=
+//         ^ fg=#bdae93 fs=
 //          ^ fg=#458588 fs=
 //           ^ fg=#83a598 fs=
 //            ^ fg=#ebdbb2 fs=
 //              ^ fg=#458588 fs=
 //               ^ fg=#83a598 fs=
-//                ^^ fg=#ebdbb2 fs=
+//                ^ fg=#bdae93 fs=
+//                 ^ fg=#ebdbb2 fs=
 
     $x = array();
 //  ^ fg=#458588 fs=
@@ -578,7 +564,8 @@ if (isset($x) && is_callable($x)) {
 //   ^ fg=#83a598 fs=
 //     ^ fg=#8ec07c fs=
 //       ^^^^^^^^^^^ fg=#8ec07c fs=
-//                  ^^ fg=#ebdbb2 fs=
+//                  ^ fg=#bdae93 fs=
+//                   ^ fg=#ebdbb2 fs=
 
         'a' => 'b',
 //      ^ fg=#ebdbb2 fs=
@@ -597,6 +584,9 @@ if (isset($x) && is_callable($x)) {
 //             ^^ fg=#d3869b fs=
 
     ]);
+//  ^ fg=#ebdbb2 fs=
+//   ^ fg=#bdae93 fs=
+//    ^ fg=#ebdbb2 fs=
 
         $argv['x']; $argc;
 //      ^ fg=#458588 fs=
@@ -803,41 +793,45 @@ if (isset($x) && is_callable($x)) {
 
     var_dump($x instanceof X);
 //  ^^^^^^^^ fg=#8ec07c fs=
-//          ^ fg=#ebdbb2 fs=
+//          ^ fg=#bdae93 fs=
 //           ^ fg=#458588 fs=
 //            ^ fg=#83a598 fs=
 //              ^^^^^^^^^^ fg=#8ec07c fs=
 //                         ^ fg=#fabd2f fs=
-//                          ^^ fg=#ebdbb2 fs=
+//                          ^ fg=#bdae93 fs=
+//                           ^ fg=#ebdbb2 fs=
 
     var_dump($x instanceof X\Y\Z);
 //  ^^^^^^^^ fg=#8ec07c fs=
-//          ^ fg=#ebdbb2 fs=
+//          ^ fg=#bdae93 fs=
 //           ^ fg=#458588 fs=
 //            ^ fg=#83a598 fs=
 //              ^^^^^^^^^^ fg=#8ec07c fs=
 //                         ^^^^ fg=#ebdbb2 fs=
 //                             ^ fg=#fabd2f fs=
-//                              ^^ fg=#ebdbb2 fs=
+//                              ^ fg=#bdae93 fs=
+//                               ^ fg=#ebdbb2 fs=
 
     var_dump($x instanceof Countable);
 //  ^^^^^^^^ fg=#8ec07c fs=
-//          ^ fg=#ebdbb2 fs=
+//          ^ fg=#bdae93 fs=
 //           ^ fg=#458588 fs=
 //            ^ fg=#83a598 fs=
 //              ^^^^^^^^^^ fg=#8ec07c fs=
 //                         ^^^^^^^^^ fg=#fabd2f fs=
-//                                  ^^ fg=#ebdbb2 fs=
+//                                  ^ fg=#bdae93 fs=
+//                                   ^ fg=#ebdbb2 fs=
 
     var_dump($x instanceof $y);
 //  ^^^^^^^^ fg=#8ec07c fs=
-//          ^ fg=#ebdbb2 fs=
+//          ^ fg=#bdae93 fs=
 //           ^ fg=#458588 fs=
 //            ^ fg=#83a598 fs=
 //              ^^^^^^^^^^ fg=#8ec07c fs=
 //                         ^ fg=#458588 fs=
 //                          ^ fg=#83a598 fs=
-//                           ^^ fg=#ebdbb2 fs=
+//                           ^ fg=#bdae93 fs=
+//                            ^ fg=#ebdbb2 fs=
 
     $x = &$obj;
 //  ^ fg=#458588 fs=
@@ -850,13 +844,15 @@ if (isset($x) && is_callable($x)) {
 
     add(...[1, 2]);
 //  ^^^ fg=#8ec07c fs=
-//     ^ fg=#ebdbb2 fs=
+//     ^ fg=#bdae93 fs=
 //      ^^^ fg=#8ec07c fs=
 //         ^ fg=#ebdbb2 fs=
 //          ^ fg=#d3869b fs=
 //           ^ fg=#ebdbb2 fs=
 //             ^ fg=#d3869b fs=
-//              ^^^ fg=#ebdbb2 fs=
+//              ^ fg=#ebdbb2 fs=
+//               ^ fg=#bdae93 fs=
+//                ^ fg=#ebdbb2 fs=
 
     echo "x $x";
 //  ^^^^ fg=#8ec07c fs=
@@ -994,9 +990,11 @@ CSS;
 //  ^^ fg=#fb4934 fs=
 //     ^ fg=#ebdbb2 fs=
 //      ^ fg=#8ec07c fs=
-//       ^^ fg=#ebdbb2 fs=
+//       ^ fg=#bdae93 fs=
+//        ^ fg=#ebdbb2 fs=
 //         ^ fg=#b8bb26 fs=
-//          ^^ fg=#ebdbb2 fs=
+//          ^ fg=#ebdbb2 fs=
+//           ^ fg=#bdae93 fs=
 //             ^^ fg=#8ec07c fs=
 //                ^ fg=#458588 fs=
 //                 ^ fg=#83a598 fs=
@@ -1278,17 +1276,20 @@ class x
     {
         user_defined();
 //      ^^^^^^^^^^^^ fg=#8ec07c fs=
-//                  ^^^ fg=#ebdbb2 fs=
+//                  ^^ fg=#bdae93 fs=
+//                    ^ fg=#ebdbb2 fs=
 
         phpversion();
 //      ^^^^^^^^^^ fg=#8ec07c fs=
-//                ^^^ fg=#ebdbb2 fs=
-
+//                ^^ fg=#bdae93 fs=
+//                  ^ fg=#ebdbb2 fs=
+//                  
         parent::a();
 //      ^^^^^^ fg=#d3869b fs=
 //            ^^ fg=#ebdbb2 fs=
 //              ^ fg=#689d6a fs=
-//               ^^^ fg=#ebdbb2 fs=
+//               ^^ fg=#bdae93 fs=
+//                 ^ fg=#ebdbb2 fs=
 
         self::class;
 //      ^^^^ fg=#d3869b fs=
@@ -1307,7 +1308,8 @@ class x
 //      ^^^^ fg=#d3869b fs=
 //          ^^ fg=#ebdbb2 fs=
 //            ^ fg=#689d6a fs=
-//             ^^^ fg=#ebdbb2 fs=
+//             ^^ fg=#bdae93 fs=
+//               ^ fg=#ebdbb2 fs=
 
         static::$x;
 //      ^^^^^^ fg=#d3869b fs=
@@ -1320,7 +1322,8 @@ class x
 //      ^^^^^^ fg=#d3869b fs=
 //            ^^ fg=#ebdbb2 fs=
 //              ^ fg=#689d6a fs=
-//               ^^^ fg=#ebdbb2 fs=
+//               ^^ fg=#bdae93 fs=
+//                 ^ fg=#ebdbb2 fs=
 
         $this->x;
 //      ^ fg=#b16286 fs=
@@ -1334,7 +1337,8 @@ class x
 //       ^^^^ fg=#d3869b fs=
 //           ^^ fg=#ebdbb2 fs=
 //             ^ fg=#689d6a fs=
-//              ^^^ fg=#ebdbb2 fs=
+//              ^^ fg=#bdae93 fs=
+//                ^ fg=#ebdbb2 fs=
 
         $this->$x();
 //      ^ fg=#b16286 fs=
@@ -1349,11 +1353,14 @@ class x
 //       ^^^^ fg=#d3869b fs=
 //           ^^ fg=#ebdbb2 fs=
 //             ^ fg=#689d6a fs=
-//              ^^^^ fg=#ebdbb2 fs=
+//              ^^ fg=#bdae93 fs=
+//                ^^ fg=#ebdbb2 fs=
 //                  ^ fg=#689d6a fs=
-//                   ^^^^ fg=#ebdbb2 fs=
+//                   ^^ fg=#bdae93 fs=
+//                     ^^ fg=#ebdbb2 fs=
 //                       ^ fg=#689d6a fs=
-//                        ^^^ fg=#ebdbb2 fs=
+//                        ^^ fg=#bdae93 fs=
+//                          ^ fg=#ebdbb2 fs=
 
         Abcd::$x;
 //      ^^^^ fg=#fabd2f fs=
@@ -1404,14 +1411,16 @@ class x
 //       ^^^ fg=#83a598 fs=
 //          ^^ fg=#ebdbb2 fs=
 //            ^ fg=#689d6a fs=
-//             ^^^ fg=#ebdbb2 fs=
+//             ^^ fg=#bdae93 fs=
+//               ^ fg=#ebdbb2 fs=
 
         $abc::a();
 //      ^ fg=#458588 fs=
 //       ^^^ fg=#83a598 fs=
 //          ^^ fg=#ebdbb2 fs=
 //            ^ fg=#689d6a fs=
-//             ^^^ fg=#ebdbb2 fs=
+//             ^^ fg=#bdae93 fs=
+//               ^ fg=#ebdbb2 fs=
 
         $abc::$x;
 //      ^ fg=#458588 fs=
@@ -1436,7 +1445,7 @@ class x
 //             ^ fg=#83a598 fs=
 //               ^ fg=#8ec07c fs=
 //                 ^^^^^^^^^^^ fg=#8ec07c fs=
-//                            ^ fg=#ebdbb2 fs=
+//                            ^ fg=#bdae93 fs=
 //                             ^ fg=#b16286 fs=
 //                              ^^^^ fg=#d3869b fs=
 //                                  ^^ fg=#ebdbb2 fs=
@@ -1444,32 +1453,34 @@ class x
 //                                     ^ fg=#ebdbb2 fs=
 //                                       ^ fg=#458588 fs=
 //                                        ^ fg=#83a598 fs=
-//                                         ^^ fg=#ebdbb2 fs=
+//                                         ^ fg=#bdae93 fs=
+//                                          ^ fg=#ebdbb2 fs=
 
         $this->x($k, $v);
 //      ^ fg=#b16286 fs=
 //       ^^^^ fg=#d3869b fs=
 //           ^^ fg=#ebdbb2 fs=
 //             ^ fg=#689d6a fs=
-//              ^ fg=#ebdbb2 fs=
+//              ^ fg=#bdae93 fs=
 //               ^ fg=#458588 fs=
 //                ^ fg=#83a598 fs=
 //                 ^ fg=#ebdbb2 fs=
 //                   ^ fg=#458588 fs=
 //                    ^ fg=#83a598 fs=
-//                     ^^ fg=#ebdbb2 fs=
+//                     ^ fg=#bdae93 fs=
+//                      ^ fg=#ebdbb2 fs=
 
         $a = isset($this->b) ? $this->b->c('d') : new X();
 //      ^ fg=#458588 fs=
 //       ^ fg=#83a598 fs=
 //         ^ fg=#8ec07c fs=
 //           ^^^^^ fg=#8ec07c fs=
-//                ^ fg=#ebdbb2 fs=
+//                ^ fg=#bdae93 fs=
 //                 ^ fg=#b16286 fs=
 //                  ^^^^ fg=#d3869b fs=
 //                      ^^ fg=#ebdbb2 fs=
 //                        ^ fg=#83a598 fs=
-//                         ^ fg=#ebdbb2 fs=
+//                         ^ fg=#bdae93 fs=
 //                           ^ fg=#ebdbb2 fs=
 //                             ^ fg=#b16286 fs=
 //                              ^^^^ fg=#d3869b fs=
@@ -1477,9 +1488,11 @@ class x
 //                                    ^ fg=#83a598 fs=
 //                                     ^^ fg=#ebdbb2 fs=
 //                                       ^ fg=#689d6a fs=
-//                                        ^^ fg=#ebdbb2 fs=
+//                                        ^ fg=#bdae93 fs=
+//                                         ^ fg=#ebdbb2 fs=
 //                                          ^ fg=#b8bb26 fs=
-//                                           ^^ fg=#ebdbb2 fs=
+//                                           ^ fg=#ebdbb2 fs=
+//                                            ^ fg=#bdae93 fs=
 //                                              ^ fg=#ebdbb2 fs=
 //                                                ^^^ fg=#fb4934 fs=
 //                                                    ^ fg=#fabd2f fs=
@@ -1489,7 +1502,7 @@ class x
 //      ^^ fg=#fb4934 fs=
 //         ^ fg=#ebdbb2 fs=
 //          ^^^^^^^^^ fg=#8ec07c fs=
-//                   ^ fg=#ebdbb2 fs=
+//                   ^ fg=#bdae93 fs=
 //                    ^ fg=#458588 fs=
 //                     ^ fg=#83a598 fs=
 //                      ^ fg=#ebdbb2 fs=
@@ -1503,7 +1516,8 @@ class x
 //                                      ^ fg=#b8bb26 fs=
 //                                       ^^^ fg=#ebdbb2 fs=
 //                                           ^^^^ fg=#d3869b fs=
-//                                               ^^ fg=#ebdbb2 fs=
+//                                               ^ fg=#bdae93 fs=
+//                                                ^ fg=#ebdbb2 fs=
 //                                                  ^ fg=#ebdbb2 fs=
 
             throw new InvalidArgumentException('x');
@@ -1520,7 +1534,7 @@ class x
 //      ^^ fg=#fb4934 fs=
 //         ^ fg=#ebdbb2 fs=
 //          ^^^^^ fg=#8ec07c fs=
-//               ^ fg=#ebdbb2 fs=
+//               ^ fg=#bdae93 fs=
 //                ^^^^^^ fg=#d3869b fs=
 //                      ^^ fg=#ebdbb2 fs=
 //                        ^ fg=#458588 fs=
@@ -1528,7 +1542,9 @@ class x
 //                          ^ fg=#ebdbb2 fs=
 //                           ^ fg=#458588 fs=
 //                            ^ fg=#83a598 fs=
-//                             ^^^ fg=#ebdbb2 fs=
+//                             ^ fg=#ebdbb2 fs=
+//                              ^ fg=#bdae93 fs=
+//                               ^ fg=#ebdbb2 fs=
 //                                 ^^ fg=#ebdbb2 fs=
 
         return new self();
@@ -1545,14 +1561,11 @@ class x
 //                  ^ fg=#b8bb26 fs=
 //                   ^ fg=#ebdbb2 fs=
 //                    ^^^^^^^^ fg=#fb4934 fs=
-//                             ^ fg=#458588 fs=
-//                              ^^ fg=#ebdbb2 fs=
+//                             ^^^ fg=#ebdbb2 fs=
 //                                 ^^^ fg=#fb4934 fs=
-//                                     ^ fg=#458588 fs=
-//                                      ^^^ fg=#ebdbb2 fs=
+//                                     ^^^^ fg=#ebdbb2 fs=
 //                                          ^^^^^^ fg=#fb4934 fs=
-//                                                 ^ fg=#458588 fs=
-//                                                  ^^^ fg=#ebdbb2 fs=
+//                                                 ^^^^ fg=#ebdbb2 fs=
 //                                                      ^^ fg=#ebdbb2 fs=
 
 }
