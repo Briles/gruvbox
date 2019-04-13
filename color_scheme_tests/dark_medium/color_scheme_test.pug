@@ -1,0 +1,48 @@
+// COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme" "Pug"
+
+include /html6/elements/main
+//- ^^^ fg=#fb4934 fs=
+//-     ^^^^^^^^^^^^^^^^^^^^ fg=#83a598 fs=
+
+- var URL = 'https://github.com';
+//- ^ fg=#fb4934 fs=
+//-   ^^^ fg=#fabd2f fs=
+//-       ^ fg=#8ec07c fs=
+//-         ^ fg=#ebdbb2 fs=
+//-          ^^^^^^^^^^^^^^^^^^ fg=#b8bb26 fs=
+//-                            ^^ fg=#ebdbb2 fs=
+
+doctype
+//- ^^^ fg=#fb4934 fs=
++html(lang="ja")
+//- ^ fg=#8ec07c fs=
+//-  ^ fg=#ebdbb2 fs=
+//-   ^^^^ fg=#fabd2f fs=
+//-       ^ fg=#ebdbb2 fs=
+//-        ^^^^ fg=#b8bb26 fs=
+//-            ^ fg=#ebdbb2 fs=
++title test
+//- ^^ fg=#8ec07c fs=
+//-    ^^^^ fg=#ebdbb2 fs=
+
+extend layout
+//- ^^ fg=#83a598 fs=
+//-    ^^^^^^ fg=#ebdbb2 fs=
+
+div
+    block content
+//- ^^^^^ fg=#fb4934 fs=
+//-       ^^^^^^^ fg=#83a598 fs=
+
+div
+    img(src="a.png" alt="h")
+//- ^^^ fg=#83a598 fs=
+//-    ^ fg=#bdae93 fs=
+//-     ^^^ fg=#fabd2f fs=
+//-        ^ fg=#ebdbb2 fs=
+//-         ^^^^^^^ fg=#b8bb26 fs=
+//-                 ^^^ fg=#fabd2f fs=
+//-                    ^ fg=#ebdbb2 fs=
+//-                     ^^^ fg=#b8bb26 fs=
+//-                        ^ fg=#bdae93 fs=
+                    

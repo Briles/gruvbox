@@ -44,6 +44,10 @@ matrix:
         - sh scripts/install_subl_package.sh "LESS" "https://github.com/danro/LESS-sublime"
         # install SCSS package
         - sh scripts/install_subl_package.sh "Sass" "https://github.com/braver/SublimeSass"
+        # install Jade package
+        - sh scripts/install_subl_package.sh "Jade" "https://github.com/davidrios/jade-tmbundle" "master"
+        # install Pug package
+        - sh scripts/install_subl_package.sh "Pug" "https://github.com/davidrios/pug-tmbundle" "master"
 
       script:
         - sh travis.sh run_color_scheme_tests --coverage
