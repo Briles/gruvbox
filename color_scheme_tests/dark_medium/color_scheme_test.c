@@ -63,7 +63,7 @@ typedef struct mystruct {
 
 struct point
 // ^^^ fg=#fb4934 fs=
-//     ^^^^^ fg=#ebdbb2 fs=
+//     ^^^^^ fg=#b8bb26 fs=
 
 {
     int x;

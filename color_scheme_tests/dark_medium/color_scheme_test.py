@@ -22,10 +22,10 @@ import path from os
 #                ^^ fg=#ebdbb2 fs=
 
 __all__
-# ^^^^^ fg=#ebdbb2 fs=
+# ^^^^^ fg=#fabd2f fs=
 
 __file__
-# ^^^^^^ fg=#ebdbb2 fs=
+# ^^^^^^ fg=#fabd2f fs=
 
 __missing__
 # ^^^^^^^^^ fg=#8ec07c fs=

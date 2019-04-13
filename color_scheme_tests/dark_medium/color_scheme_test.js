@@ -347,7 +347,7 @@ someFunction({
 //               ^ fg=#ebdbb2 fs=
 
    tag`Hello ${ a + b } world\nanother ${expression}.`;
-// ^^^ fg=#83a598 fs=
+// ^^^ fg=#8ec07c fs=
 //    ^ fg=#ebdbb2 fs=
 //     ^^^^^ fg=#b8bb26 fs=
 //           ^^ fg=#8ec07c fs=

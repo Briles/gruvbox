@@ -250,6 +250,7 @@ module.exports = function (values) {
         name: 'Keywords',
         scope: [
           'keyword',
+          'keyword.declaration',
           'keyword.control',
           'meta.prolog.haml',
           'meta.tag.sgml.doctype.html',
@@ -322,6 +323,8 @@ module.exports = function (values) {
         name: 'Storage',
         scope: [
           'storage',
+          'storage.modifier',
+          'storage.type',
           'storage.type.annotation',
           'storage.type.primitive',
         ],
@@ -441,6 +444,7 @@ module.exports = function (values) {
         name: 'Language Constants',
         scope: [
           'constant',
+          'constant.language',
           'constant.numeric',
           'constant.other',
           'constant.other.color',
@@ -497,6 +501,7 @@ module.exports = function (values) {
         name: 'Invalids and Illegals',
         scope: [
           'invalid',
+          'invalid.deprecated',
         ],
         foreground: 'var(fg)',
         background: 'var(red)',
@@ -750,6 +755,7 @@ module.exports = function (values) {
       {
         name: 'Support',
         scope: [
+          'support',
           'support.class',
           'support.type',
           'variable.other.class',
@@ -769,6 +775,7 @@ module.exports = function (values) {
       {
         name: 'Function Calls',
         scope: [
+          'variable.function',
           'keyword.other.special-method',
           'meta.function-call variable.function',
           'support.function',
@@ -804,6 +811,7 @@ module.exports = function (values) {
       {
         name: 'Entities',
         scope: [
+          'entity.name',
           'entity.name.function',
           'entity.name.label',
           'entity.name.section',

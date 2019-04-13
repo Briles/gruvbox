@@ -21,23 +21,35 @@ declare(strict_types=1);
 
 namespace A;
 // ^^^^^^ fg=#fb4934 fs=
-//        ^^ fg=#ebdbb2 fs=
+//        ^ fg=#b8bb26 fs=
+//         ^ fg=#ebdbb2 fs=
 
 namespace A\B\C;
 // ^^^^^^ fg=#fb4934 fs=
-//        ^^^^^^ fg=#ebdbb2 fs=
+//        ^ fg=#fabd2f fs=
+//         ^ fg=#ebdbb2 fs=
+//          ^ fg=#fabd2f fs=
+//           ^ fg=#ebdbb2 fs=
+//            ^ fg=#b8bb26 fs=
+//             ^ fg=#ebdbb2 fs=
 
 use A;
 //  ^ fg=#fabd2f fs=
 //   ^ fg=#ebdbb2 fs=
 
 use A\B\C;
-//  ^^^^ fg=#ebdbb2 fs=
+//  ^ fg=#fabd2f fs=
+//   ^ fg=#ebdbb2 fs=
+//    ^ fg=#fabd2f fs=
+//     ^ fg=#ebdbb2 fs=
 //      ^ fg=#fabd2f fs=
 //       ^ fg=#ebdbb2 fs=
 
 use A\B\C as B;
-//  ^^^^ fg=#ebdbb2 fs=
+//  ^ fg=#fabd2f fs=
+//   ^ fg=#ebdbb2 fs=
+//    ^ fg=#fabd2f fs=
+//     ^ fg=#ebdbb2 fs=
 //      ^ fg=#fabd2f fs=
 //        ^^ fg=#fb4934 fs=
 //           ^ fg=#fabd2f fs=
@@ -50,13 +62,19 @@ use function a;
 
 use function a\b\c;
 //  ^^^^^^^^ fg=#fb4934 fs=
-//           ^^^^ fg=#ebdbb2 fs=
+//           ^ fg=#fabd2f fs=
+//            ^ fg=#ebdbb2 fs=
+//             ^ fg=#fabd2f fs=
+//              ^ fg=#ebdbb2 fs=
 //               ^ fg=#8ec07c fs=
 //                ^ fg=#ebdbb2 fs=
 
 use function a\b\c as b;
 //  ^^^^^^^^ fg=#fb4934 fs=
-//           ^^^^ fg=#ebdbb2 fs=
+//           ^ fg=#fabd2f fs=
+//            ^ fg=#ebdbb2 fs=
+//             ^ fg=#fabd2f fs=
+//              ^ fg=#ebdbb2 fs=
 //               ^ fg=#8ec07c fs=
 //                 ^^ fg=#fb4934 fs=
 //                    ^ fg=#b8bb26 fs=
@@ -69,13 +87,19 @@ use const A;
 
 use const A\B\C;
 //  ^^^^^ fg=#fb4934 fs=
-//        ^^^^ fg=#ebdbb2 fs=
+//        ^ fg=#fabd2f fs=
+//         ^ fg=#ebdbb2 fs=
+//          ^ fg=#fabd2f fs=
+//           ^ fg=#ebdbb2 fs=
 //            ^ fg=#d3869b fs=
 //             ^ fg=#ebdbb2 fs=
 
 use const A\B\C as X;
 //  ^^^^^ fg=#fb4934 fs=
-//        ^^^^ fg=#ebdbb2 fs=
+//        ^ fg=#fabd2f fs=
+//         ^ fg=#ebdbb2 fs=
+//          ^ fg=#fabd2f fs=
+//           ^ fg=#ebdbb2 fs=
 //            ^ fg=#d3869b fs=
 //              ^^ fg=#fb4934 fs=
 //                 ^ fg=#d3869b fs=
@@ -102,12 +126,12 @@ function x() {}
 
 interface x {}
 // ^^^^^^ fg=#fb4934 fs=
-//        ^ fg=#ebdbb2 fs=
+//        ^ fg=#b8bb26 fs=
 //          ^^ fg=#ebdbb2 fs=
 
 trait x {}
 // ^^ fg=#fb4934 fs=
-//    ^ fg=#ebdbb2 fs=
+//    ^ fg=#b8bb26 fs=
 //      ^^ fg=#ebdbb2 fs=
 
 class x {}
@@ -781,7 +805,10 @@ if (isset($x) && is_callable($x)) {
 //   ^ fg=#83a598 fs=
 //     ^ fg=#8ec07c fs=
 //       ^^^ fg=#fb4934 fs=
-//           ^^^^ fg=#ebdbb2 fs=
+//           ^ fg=#fabd2f fs=
+//            ^ fg=#ebdbb2 fs=
+//             ^ fg=#fabd2f fs=
+//              ^ fg=#ebdbb2 fs=
 //               ^ fg=#fabd2f fs=
 //                ^^^ fg=#ebdbb2 fs=
 
@@ -807,7 +834,10 @@ if (isset($x) && is_callable($x)) {
 //           ^ fg=#458588 fs=
 //            ^ fg=#83a598 fs=
 //              ^^^^^^^^^^ fg=#8ec07c fs=
-//                         ^^^^ fg=#ebdbb2 fs=
+//                         ^ fg=#fabd2f fs=
+//                          ^ fg=#ebdbb2 fs=
+//                           ^ fg=#fabd2f fs=
+//                            ^ fg=#ebdbb2 fs=
 //                             ^ fg=#fabd2f fs=
 //                              ^ fg=#bdae93 fs=
 //                               ^ fg=#ebdbb2 fs=

@@ -5,7 +5,7 @@
 //      ^^^^^^^^ fg=#ebdbb2 fs=
 pub enum State {
 //  ^^^^ fg=#fb4934 fs=
-//       ^^^^^ fg=#ebdbb2 fs=
+//       ^^^^^ fg=#b8bb26 fs=
 //             ^ fg=#ebdbb2 fs=
 
     Start,
@@ -27,7 +27,7 @@ impl From<&'a str> for State {
 //            ^^^ fg=#fb4934 fs=
 //               ^ fg=#ebdbb2 fs=
 //                 ^^^ fg=#fb4934 fs=
-//                     ^^^^^ fg=#ebdbb2 fs=
+//                     ^^^^^ fg=#b8bb26 fs=
 //                           ^ fg=#ebdbb2 fs=
 
     fn from(s: &'a str) -> Self {
@@ -64,7 +64,8 @@ impl From<&'a str> for State {
             _ => unreachable!(),
 //          ^ fg=#8ec07c fs=
 //            ^^ fg=#8ec07c fs=
-//               ^^^^^^^^^^^^^^^ fg=#ebdbb2 fs=
+//               ^^^^^^^^^^^^ fg=#fabd2f fs=
+//                           ^^^ fg=#ebdbb2 fs=
         }
     }
 }
