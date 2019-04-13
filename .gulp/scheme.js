@@ -71,7 +71,7 @@ module.exports = function (values) {
 
       misspelling: 'var(red)',
 
-      // fold_marker: '', // TODO: use a single fold marker image styled by this
+      fold_marker: 'var(yellow)',
       minimap_border: 'var(border)',
       accent: 'var(yellow)',
 
