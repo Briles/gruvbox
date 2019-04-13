@@ -53,7 +53,7 @@ module.exports = function (values) {
       border: 'color(var(bg) lightness(- 10%))',
       container: 'color(var(bg) lightness(- 5%))',
       guide: 'color(var(fg1) alpha(0.15))',
-      guideAlt: 'color(var(fg1) alpha(0.15))',
+      guideAlt: 'color(var(fg1) alpha(0.25))',
       ruler: 'color(var(fg1) alpha(0.25))',
       headingBackground: 'color(var(bg) lightness(7%))',
     },
