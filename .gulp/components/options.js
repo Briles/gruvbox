@@ -1,5 +1,4 @@
 module.exports = function (values, externalPaths) {
-  'use strict';
 
   const _ = require('lodash');
 

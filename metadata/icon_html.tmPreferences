@@ -3,7 +3,7 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>text.html.basic, text.html.eco, text.html.elixir, text.html.jstl, text.html.rt</string>
+    <string>text.html.basic,text.html.eco,text.html.elixir,text.html.jstl,text.html.rt</string>
     <key>settings</key>
     <dict>
       <key>icon</key>

@@ -1,5 +1,4 @@
 module.exports = function (values) {
-  'use strict';
 
   const mixins = require('../../mixins.js');
 

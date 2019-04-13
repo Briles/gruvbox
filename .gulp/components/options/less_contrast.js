@@ -1,5 +1,4 @@
 module.exports = function (values) {
-  'use strict';
 
   const c = values.colors;
   const stOpts = values.options;

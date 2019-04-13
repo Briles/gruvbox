@@ -3,7 +3,7 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>source.jl, source.julia</string>
+    <string>source.jl,source.julia</string>
     <key>settings</key>
     <dict>
       <key>icon</key>

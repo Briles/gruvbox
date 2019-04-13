@@ -3,7 +3,7 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>source.ado, source.do, source.stata</string>
+    <string>source.ado,source.do,source.stata</string>
     <key>settings</key>
     <dict>
       <key>icon</key>

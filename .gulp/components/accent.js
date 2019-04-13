@@ -4,7 +4,6 @@ const slash = require('../utils.js').slash;
 const mixins = require('../mixins.js');
 
 module.exports = function (values) {
-  'use strict';
 
   const c = values.colors;
   const info = values.info;
