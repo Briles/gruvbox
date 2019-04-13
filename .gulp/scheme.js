@@ -627,7 +627,7 @@ module.exports = function (values) {
         scope: [
           'punctuation.definition.tag',
         ],
-        foreground: 'var(blue)',
+        foreground: 'var(blue1)',
       },
 
       {
