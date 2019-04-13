@@ -64,7 +64,7 @@ module.exports = function (values) {
       foreground: 'var(fg)',
       invisibles: 'var(guide)',
       caret: 'var(fg4)',
-      block_caret: 'var(fg4)',
+      block_caret: 'var(gray)',
       line_highlight: 'var(bg1)',
 
       /* ACCENTS */
