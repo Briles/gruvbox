@@ -47,7 +47,9 @@ matrix:
         - sh scripts/install_subl_package.sh "Jade" "https://github.com/davidrios/jade-tmbundle" "master"
         # install Pug package
         - sh scripts/install_subl_package.sh "Pug" "https://github.com/davidrios/pug-tmbundle" "master"
-
+        # install TypeScript package
+        - sh scripts/install_subl_package.sh "TypeScript" "https://github.com/Microsoft/TypeScript-Sublime-Plugin"
+        
       script:
         - sh travis.sh run_color_scheme_tests --coverage
 

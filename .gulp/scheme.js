@@ -210,6 +210,7 @@ module.exports = function (values) {
           'comment.string',
           'comment.type',
           'storage.type.class.jsdoc',
+          'storage.type.class.jsdoc punctuation.definition',
           'storage.type.annotation.coffeescript',
           'keyword.other.phpdoc.php',
           'source.java keyword.other.documentation',
@@ -408,6 +409,7 @@ module.exports = function (values) {
         name: 'Object Properties',
         scope: [
           'meta.property.object',
+          'variable.other.property',
         ],
         foreground: 'var(fg)',
       },
@@ -782,6 +784,7 @@ module.exports = function (values) {
           'meta.function-call variable.other.dollar.only punctuation.dollar',
           'entity.name.function.jade',
           'entity.name.function.pug',
+          'meta.function-call entity.name.function.ts',
         ],
         foreground: 'var(aqua)',
       },
@@ -992,9 +995,6 @@ module.exports = function (values) {
         scope: [
           'constant.name.attribute.tag.jade',
           'constant.name.attribute.tag.pug',
-          'meta.brace.round',
-          'punctuation.definition.method-parameters',
-          'punctuation.definition.parameters',
           'meta.function-call meta.group punctuation.section.group',
           'meta.block.parameters punctuation.definition.parameters',
           'meta.function-call meta.group punctuation.definition.group',
