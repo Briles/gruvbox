@@ -1,5 +1,29 @@
 // COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme" "Java"
 
+/**
+ * Validates a chess move.
+ *
+ *   <p>Use {@link #doMove} to move.
+//   ^ fg=#458588 fs=italic
+//    ^ fg=#83a598 fs=italic
+//     ^ fg=#458588 fs=italic
+//      ^^^ fg=#928374 fs=italic
+//          ^ fg=#ebdbb2 fs=italic
+//           ^^^^^ fg=#bdae93 fs=italic
+//                 ^^^^^^^ fg=#928374 fs=italic
+//                        ^ fg=#ebdbb2 fs=italic
+//                          ^^ fg=#928374 fs=italic
+//                             ^^^^^ fg=#928374 fs=italic
+ *
+ *   @param theFromFile file
+//   ^^^^^^ fg=#bdae93 fs=italic
+//          ^^^^^^^^^^^ fg=#ebdbb2 fs=italic
+//                      ^^^^ fg=#928374 fs=italic
+ *   @return            true
+//   ^^^^^^^ fg=#bdae93 fs=italic
+//                      ^^^^ fg=#928374 fs=italic
+ */
+
 package hi;
 // ^^^^ fg=#fb4934 fs=
 //      ^^ fg=#b8bb26 fs=

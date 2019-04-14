@@ -1,5 +1,15 @@
 // COLOR SCHEME TEST "gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme" "JavaScript"
 
+
+/**
+ * @param  {String}
+// ^^^^^^ fg=#928374 fs=italic
+//         ^^^^^^^^ fg=#928374 fs=italic
+ * @return {Promise}
+// ^^^^^^^ fg=#928374 fs=italic
+//         ^^^^^^^^^ fg=#928374 fs=italic
+ */
+
 import TheirClass from "./mypath";
 // ^^^ fg=#fb4934 fs=
 //     ^^^^^^^^^^ fg=#83a598 fs=

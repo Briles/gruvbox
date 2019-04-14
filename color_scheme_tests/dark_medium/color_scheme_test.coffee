@@ -8,6 +8,15 @@
 # comment
 # ^^^^^^^ fg=#928374 fs=italic
 
+### # @param int $x desc ###
+# ^ fg=#928374 fs=italic
+#   ^ fg=#928374 fs=italic
+#     ^^^^^^ fg=#bdae93 fs=italic
+#            ^^^ fg=#928374 fs=italic
+#                ^^ fg=#928374 fs=italic
+#                   ^^^^ fg=#928374 fs=italic
+#                        ^^^ fg=#928374 fs=italic
+
 class this.Student
 # ^^^ fg=#fb4934 fs=
 #     ^^^^^^^^^^^^ fg=#fabd2f fs=
