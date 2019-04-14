@@ -3,6 +3,7 @@ env:
     - PACKAGE="gruvbox"
     - SUBLIME_TEXT_VERSION="3"
     - UNITTESTING_TAG="master"
+    - COLOR_SCHEME_UNIT_TAG="master"
 
 matrix:
   include:
@@ -53,6 +54,8 @@ matrix:
         - sh scripts/install_subl_package.sh "Vue Syntax Highlight" "https://github.com/vuejs/vue-syntax-highlight" "new"
         # install Better Coffeescript package
         - sh scripts/install_subl_package.sh "Better Coffeescript" "https://github.com/aponxi/sublime-better-coffeescript" "master"
+        # install Laravel Blade package
+        - sh scripts/install_subl_package.sh "Laravel Blade" "https://github.com/Medalink/laravel-blade"
 
       script:
         - sh travis.sh run_color_scheme_tests --coverage
