@@ -7,6 +7,15 @@ module.exports = function (values) {
 
   return [
 
+    // Title Bar
+    {
+      class: 'title_bar',
+      settings: [stOpts.disableGreyscaleColors],
+
+      fg: 'var(fg)',
+      bg: 'var(container)',
+    },
+
     // Button labels
     {
       class: 'label_control',
