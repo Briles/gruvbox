@@ -865,6 +865,7 @@ module.exports = function (values) {
         name: 'HTML & CSS Class Punctuation (.)',
         scope: [
           'entity.other.attribute-name.class punctuation.definition.entity',
+          'text.html.vue meta.tag.other punctuation.definition.attribute',
         ],
         foreground: 'var(yellow1)',
       },

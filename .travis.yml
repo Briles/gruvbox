@@ -49,7 +49,9 @@ matrix:
         - sh scripts/install_subl_package.sh "Pug" "https://github.com/davidrios/pug-tmbundle" "master"
         # install TypeScript package
         - sh scripts/install_subl_package.sh "TypeScript" "https://github.com/Microsoft/TypeScript-Sublime-Plugin"
-        
+        # install Vue Syntax Highlight package
+        - sh scripts/install_subl_package.sh "Vue Syntax Highlight" "https://github.com/vuejs/vue-syntax-highlight" "new"
+
       script:
         - sh travis.sh run_color_scheme_tests --coverage
 
