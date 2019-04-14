@@ -56,6 +56,8 @@ matrix:
         - sh scripts/install_subl_package.sh "Better Coffeescript" "https://github.com/aponxi/sublime-better-coffeescript" "master"
         # install Laravel Blade package
         - sh scripts/install_subl_package.sh "Laravel Blade" "https://github.com/Medalink/laravel-blade"
+        # install Babel package
+        - sh scripts/install_subl_package.sh "Babel" "https://github.com/babel/babel-sublime" "master"
 
       script:
         - sh travis.sh run_color_scheme_tests --coverage
