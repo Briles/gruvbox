@@ -55,7 +55,7 @@ module.exports = function (values) {
       guide: 'color(var(fg0) alpha(0.15))',
       guideAlt: 'color(var(fg0) alpha(0.25))',
       ruler: 'color(var(fg0) alpha(0.25))',
-      headingBackground: 'color(var(bg) lightness(7%))',
+      headingBackground: 'color(var(bg) lightness(+ 7%))',
 
       invisibles: 'color(var(fg0) alpha(0.25))',
     },
