@@ -52,17 +52,19 @@ module.exports = function (values) {
 
       border: 'color(var(bg) lightness(- 10%))',
       container: 'color(var(bg) lightness(- 5%))',
-      guide: 'color(var(fg1) alpha(0.15))',
-      guideAlt: 'color(var(fg1) alpha(0.25))',
-      ruler: 'color(var(fg1) alpha(0.25))',
+      guide: 'color(var(fg0) alpha(0.15))',
+      guideAlt: 'color(var(fg0) alpha(0.25))',
+      ruler: 'color(var(fg0) alpha(0.25))',
       headingBackground: 'color(var(bg) lightness(7%))',
+
+      invisibles: 'color(var(fg0) alpha(0.25))',
     },
     globals: {
       /* GLOBAL SETTINGS */
 
       background: 'var(bg)',
       foreground: 'var(fg)',
-      invisibles: 'var(guide)',
+      invisibles: 'var(invisibles)',
       caret: 'var(fg4)',
       block_caret: 'var(gray)',
       line_highlight: 'var(bg1)',
