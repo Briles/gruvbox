@@ -126,13 +126,13 @@ A variant without out any neutral / dimmed colors
 Accent colors affect icons and certain text.
 
 ```json
-  "gruvbox_accent_aqua": true,
-  "gruvbox_accent_blue": true,
-  "gruvbox_accent_green": true,
-  "gruvbox_accent_orange": true,
-  "gruvbox_accent_purple": true,
-  "gruvbox_accent_red": true,
-  "gruvbox_accent_yellow": true,
+  "gruvbox_accent_aqua": true,    // uses the cyanish color from the color scheme
+  "gruvbox_accent_blue": true,    // uses the bluish color from the color scheme
+  "gruvbox_accent_green": true,   // uses the greenish color from the color scheme
+  "gruvbox_accent_orange": true,  // uses the orangish color from the color scheme
+  "gruvbox_accent_purple": true,  // uses the purplish color from the color scheme
+  "gruvbox_accent_red": true,     // uses the redish color from the color scheme
+  "gruvbox_accent_yellow": true,  // uses the yellowish color from the color scheme
 ```
 
 </details>

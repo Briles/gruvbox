@@ -34,10 +34,11 @@
     "orange1": "#D65D0E",
     "border": "color(var(bg) lightness(- 10%))",
     "container": "color(var(bg) lightness(- 5%))",
-    "guide": "color(var(fg1) alpha(0.15))",
-    "guideAlt": "color(var(fg1) alpha(0.15))",
-    "ruler": "color(var(fg1) alpha(0.25))",
-    "headingBackground": "color(var(bg) lightness(7%))",
+    "guide": "color(var(fg0) alpha(0.15))",
+    "guideAlt": "color(var(fg0) alpha(0.25))",
+    "ruler": "color(var(fg0) alpha(0.25))",
+    "headingBackground": "color(var(bg) lightness(+ 7%))",
+    "invisibles": "color(var(fg0) alpha(0.25))",
     "background": "var(bg)",
     "foreground": "var(fg)",
     "--background": "var(bg)",
@@ -53,7 +54,7 @@
   "globals": {
     "background": "var(bg)",
     "foreground": "var(fg)",
-    "invisibles": "var(guide)",
+    "invisibles": "var(invisibles)",
     "caret": "var(fg4)",
     "block_caret": "var(gray)",
     "line_highlight": "var(bg1)",
@@ -435,7 +436,7 @@
     },
     {
       "name": "HTML & CSS Class Punctuation (.)",
-      "scope": "entity.other.attribute-name.class punctuation.definition.entity",
+      "scope": "entity.other.attribute-name.class punctuation.definition.entity,text.html.vue meta.tag.other punctuation.definition.attribute",
       "foreground": "var(yellow1)"
     },
     {

@@ -1,9 +1,44 @@
 gruvbox for Sublime Text 3
 https://github.com/Briles/gruvbox
 
-### Version 3.0.3
+### Version 4.0.0
 
-* Fixed an issue preventing themes and color schemes from being set using "gruvbox: select theme"
+THEMES
+
+    Adaptive Theme
+
+    gruvbox is now an adaptive theme. Added a `gruvbox.sublime-theme`, which will automatically adapt to your current color scheme.
+    Consider this a beta release of the adaptive theme. Things should be working, but I can't make any promises!
+
+    First and foremost, the adaptive theme was created as a single theme which could be used with any gruvbox color scheme.
+    It will adapt to non-gruvbox schemes, but it might not look pretty. Try it out!
+
+    To support the adaptive theme, a few theme options had to be removed. These options no longer have any effect:
+
+    - "gruvbox_accent_opposite": true, // Use the other mode's accent color; IE: Use Light theme's red with Dark theme
+    - "gruvbox_accent_neutral": true,  // Use brightness-mode-neutral accent color
+
+    The old, non-adaptive themes had to be discontinued because of the change to existing assets to support the adaptive theme.
+
+    Please report any issues at https://github.com/Briles/gruvbox/issues
+
+
+  * The built-in `highlight_modified_tabs` setting is now supported. It is analogous to `gruvbox_underline_modified_tabs`
+  * `gruvbox_disable_greyscale` should now properly disable greyscale in the title on bar MacOS (and other places)
+  * added 3x icons
+
+COLOR SCHEMES
+
+  * slight improvements to TypeScript syntax coloring
+  * slight improvements to Vue component syntax coloring
+  * slight improvements to punctuation coloring across syntaxes
+  * changed markup tag definition punctuation coloring for improved readability
+  * changed the block_caret coloring for better contrast with the foreground
+  * colored the built-in fold marker yellow
+  * fixed a regression with function and method call parentheses not being dimmed
+  * fixed a stack_guide coloring regression
+  * fixed a PlainNotes header coloring regression
+  * fixed a drawn whitespace coloring regression
 
 ---
 
