@@ -52,7 +52,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 ```json
 // gruvbox Dark Hard Contrast
 {
-  "theme": "gruvbox (Dark) (Hard).sublime-theme",
+  "theme": "gruvbox.sublime-theme",
   "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).sublime-color-scheme",
 }
 ```
@@ -60,7 +60,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 ```json
 // gruvbox Dark Medium Contrast
 {
-  "theme": "gruvbox (Dark) (Medium).sublime-theme",
+  "theme": "gruvbox.sublime-theme",
   "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme",
 }
 ```
@@ -68,7 +68,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 ```json
 // gruvbox Dark Soft Contrast
 {
-  "theme": "gruvbox (Dark) (Soft).sublime-theme",
+  "theme": "gruvbox.sublime-theme",
   "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft).sublime-color-scheme",
 }
 ```
@@ -76,7 +76,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 ```json
 // gruvbox Light Hard Contrast
 {
-  "theme": "gruvbox (Light) (Hard).sublime-theme",
+  "theme": "gruvbox.sublime-theme",
   "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard).sublime-color-scheme",
 }
 ```
@@ -84,7 +84,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 ```json
 // gruvbox Light Medium Contrast
 {
-  "theme": "gruvbox (Light) (Medium).sublime-theme",
+  "theme": "gruvbox.sublime-theme",
   "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium).sublime-color-scheme",
 }
 ```
@@ -92,7 +92,7 @@ Activate the UI theme and color scheme by modifying your user preferences file, 
 ```json
 // gruvbox Light Soft Contrast
 {
-  "theme": "gruvbox (Light) (Soft).sublime-theme",
+  "theme": "gruvbox.sublime-theme",
   "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft).sublime-color-scheme",
 }
 ```

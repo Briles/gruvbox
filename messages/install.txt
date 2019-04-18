@@ -15,7 +15,7 @@ Add the following to your Settings - User file and then restart Sublime Text:
 gruvbox Dark - Hard Contrast:
 
   {
-    "theme": "gruvbox (Dark) (Hard).sublime-theme",
+    "theme": "gruvbox.sublime-theme",
     "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).sublime-color-scheme",
   }
 
@@ -23,7 +23,7 @@ gruvbox Dark - Hard Contrast:
 gruvbox Dark - Medium Contrast:
 
   {
-    "theme": "gruvbox (Dark) (Medium).sublime-theme",
+    "theme": "gruvbox.sublime-theme",
     "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme",
   }
 
@@ -31,7 +31,7 @@ gruvbox Dark - Medium Contrast:
 gruvbox Dark - Soft Contrast:
 
   {
-    "theme": "gruvbox (Dark) (Soft).sublime-theme",
+    "theme": "gruvbox.sublime-theme",
     "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft).sublime-color-scheme",
   }
 
@@ -39,7 +39,7 @@ gruvbox Dark - Soft Contrast:
 gruvbox Light - Hard Contrast:
 
   {
-    "theme": "gruvbox (Light) (Hard).sublime-theme",
+    "theme": "gruvbox.sublime-theme",
     "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard).sublime-color-scheme",
   }
 
@@ -47,7 +47,7 @@ gruvbox Light - Hard Contrast:
 gruvbox Light - Medium Contrast:
 
   {
-    "theme": "gruvbox (Light) (Medium).sublime-theme",
+    "theme": "gruvbox.sublime-theme",
     "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium).sublime-color-scheme",
   }
 
@@ -55,7 +55,7 @@ gruvbox Light - Medium Contrast:
 gruvbox Light - Soft Contrast:
 
   {
-    "theme": "gruvbox (Light) (Soft).sublime-theme",
+    "theme": "gruvbox.sublime-theme",
     "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft).sublime-color-scheme",
   }
 

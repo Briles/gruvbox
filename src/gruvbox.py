@@ -5,7 +5,7 @@ import sublime_plugin
 class GruvboxSelect(sublime_plugin.TextCommand):
     def run(self, action):
         color_schemes = sublime.find_resources("gruvbox*.sublime-color-scheme")
-        color_themes = sublime.find_resources("gruvbox*.sublime-theme")
+        color_themes = sublime.find_resources("gruvbox.sublime-theme")
 
         temp_schemes = []
         self.themes = []
