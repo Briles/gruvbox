@@ -1,7 +1,7 @@
 gruvbox for Sublime Text 3
 https://github.com/Briles/gruvbox
 
-### Version 4.0.0
+### Version 4.0.1
 
 THEMES
 
@@ -23,22 +23,10 @@ THEMES
     Please report any issues at https://github.com/Briles/gruvbox/issues
 
 
-  * The built-in `highlight_modified_tabs` setting is now supported. It is analogous to `gruvbox_underline_modified_tabs`
-  * `gruvbox_disable_greyscale` should now properly disable greyscale in the title on bar MacOS (and other places)
-  * added 3x icons
-
-COLOR SCHEMES
-
-  * slight improvements to TypeScript syntax coloring
-  * slight improvements to Vue component syntax coloring
-  * slight improvements to punctuation coloring across syntaxes
-  * changed markup tag definition punctuation coloring for improved readability
-  * changed the block_caret coloring for better contrast with the foreground
-  * colored the built-in fold marker yellow
-  * fixed a regression with function and method call parentheses not being dimmed
-  * fixed a stack_guide coloring regression
-  * fixed a PlainNotes header coloring regression
-  * fixed a drawn whitespace coloring regression
+  * Fixes an issue with selected themes not persisting when using "gruvbox: Select Theme"
+  * Fixed the appearance of circle folder icons
+  * Fixed the appearance of square folder icons
+  * Fixed the appearance of the folder loading indicator
 
 ---
 
