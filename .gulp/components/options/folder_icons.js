@@ -25,9 +25,9 @@ module.exports = function (values) {
       class: 'icon_folder_dup',
       settings: [stOpts.enableSquareFolderIcons],
 
-      'layer0.texture': `${paths.commons}folder__square_dup.png`,
-      'layer1.texture': `${paths.commons}folder__square_dup--expanded.png`,
-      'layer2.texture': `${paths.commons}folder__square_dup--expanded.png`,
+      'layer0.texture': `${paths.commons}folder__square.png`,
+      'layer1.texture': `${paths.commons}folder__square--expanded.png`,
+      'layer2.texture': `${paths.commons}folder__square--expanded.png`,
     },
 
     /**

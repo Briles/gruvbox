@@ -9768,9 +9768,9 @@
       "settings": [
         "gruvbox_folder_icons_square"
       ],
-      "layer0.texture": "gruvbox/assets/commons/folder__square_dup.png",
-      "layer1.texture": "gruvbox/assets/commons/folder__square_dup--expanded.png",
-      "layer2.texture": "gruvbox/assets/commons/folder__square_dup--expanded.png"
+      "layer0.texture": "gruvbox/assets/commons/folder__square.png",
+      "layer1.texture": "gruvbox/assets/commons/folder__square--expanded.png",
+      "layer2.texture": "gruvbox/assets/commons/folder__square--expanded.png"
     },
     {
       "class": "icon_folder",
