@@ -32,18 +32,12 @@ class GruvboxSelect(sublime_plugin.TextCommand):
 
     def on_done(self, index):
         self.set_scheme('Packages/gruvbox/' + self.schemes[index] + '.sublime-color-scheme')
-        self.set_theme(self.themes[self.find_index(index)])
+        self.set_theme(self.themes[0])
         self.save_settings(self.schemes[index])
 
     def on_highlighted(self, index):
         self.set_scheme('Packages/gruvbox/' + self.schemes[index] + '.sublime-color-scheme')
-        self.set_theme(self.themes[self.find_index(index)])
-
-    def find_index(self, index):
-        if index == 0 or index == 1:
-            return 0
-        else:
-            return int(math.floor((index / 2)))
+        self.set_theme(self.themes[0])
 
     def set_scheme(self, scheme):
         self.get_settings().set('color_scheme', scheme)
