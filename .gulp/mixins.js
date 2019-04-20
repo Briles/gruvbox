@@ -58,21 +58,20 @@ function animatedPanelButtonControl(base) {
 // file_dark
 function createComponentVariations(componentCreationFn) {
   const luminosities = {
-    'file_light': themeVariables.light,
-    'file_medium': themeVariables.light,
-    'file_medium_dark': themeVariables.dark,
-    'file_dark': themeVariables.dark,
+    file_light: themeVariables.light,
+    file_medium: themeVariables.light,
+    file_medium_dark: themeVariables.dark,
+    file_dark: themeVariables.dark,
   };
 
-  return Object.keys(luminosities).map((luminosity) => {
-    return componentCreationFn(luminosity, luminosities[luminosity]);
-  });
+  return Object.keys(luminosities)
+    .map(luminosity => componentCreationFn(luminosity, luminosities[luminosity]));
 }
 
 const mixins = {
-  animatedIconFolder: animatedIconFolder,
-  animatedPanelButtonControl: animatedPanelButtonControl,
-  createComponentVariations: createComponentVariations,
+  animatedIconFolder,
+  animatedPanelButtonControl,
+  createComponentVariations,
 };
 
 module.exports = mixins;

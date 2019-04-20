@@ -21,7 +21,7 @@ const joinScopes = function (scopes) {
  * @param {string} filecontents the contents of the file to be written
  */
 const writeOutput = function (filepath, filecontents) {
-  fs.writeFile(filepath, filecontents, function (err) {
+  fs.writeFile(filepath, filecontents, (err) => {
     if (err) throw err;
     console.log('Wrote "%s"', filepath.split(path.sep).slice(-1)[0]);
   });
@@ -34,23 +34,23 @@ const writeOutput = function (filepath, filecontents) {
  * @param  {string} str path to slash
  * @return {string}     forward-slashed path
  */
-const slash = function (str) {
-  var isExtendedLengthPath = /^\\\\\?\\/.test(str);
-  var hasNonAscii = /[^\x00-\x80]+/.test(str);
+const slash = function (input) {
+  const isExtendedLengthPath = /^\\\\\?\\/.test(input);
+  const hasNonAscii = /[^\u0000-\u0080]+/.test(input); // eslint-disable-line no-control-regex
 
   if (isExtendedLengthPath || hasNonAscii) {
-    return str;
+    return input;
   }
 
-  return str.replace(/\\/g, '/');
+  return input.replace(/\\/g, '/');
 };
 
 /**
  * wraps path.join with slash()
  * @return {string} forward-slashed path
  */
-const slashJoin = function () {
-  return slash(path.win32.join.apply(null, Array.prototype.slice.call(arguments)));
+const slashJoin = function (...args) {
+  return slash(path.win32.join.apply(null, Array.prototype.slice.call(args)));
 };
 
 /**
@@ -58,18 +58,18 @@ const slashJoin = function () {
  * @return {object} the validated scheme
  */
 const validateScheme = function (scheme) {
-  var styleProps = [
+  const styleProps = [
     'foreground',
     'background',
     'foreground_adjust',
     'selection_foreground',
     'font_style',
   ];
-  var allScopes = {};
+  const allScopes = {};
 
-  _.forEach(scheme.rules, function (v) {
-    var identifier = v.name || v.scope;
-    var presentStyleRules = Object.keys(v).filter(k => styleProps.includes(k));
+  _.forEach(scheme.rules, (v) => {
+    const identifier = v.name || v.scope;
+    const presentStyleRules = Object.keys(v).filter(k => styleProps.includes(k));
 
     // Validation
     if (!_.isArray(v.scope)) {
@@ -85,7 +85,7 @@ const validateScheme = function (scheme) {
       throw new Error(`"${identifier}" must have atleast 1 style`);
     } else {
       // Ensure there are no undefined settings
-      _.forEach(v, function (value, setting) {
+      _.forEach(v, (value, setting) => {
         if (value === undefined) {
           throw new Error(`"${setting}" for "${identifier}" is undefined`);
         }
@@ -93,7 +93,7 @@ const validateScheme = function (scheme) {
     }
 
     // Ensure there are no duplicate scopes
-    _.forEach(v.scope, function (scope) {
+    _.forEach(v.scope, (scope) => {
       if (!allScopes[scope]) {
         allScopes[scope] = true;
       } else {
@@ -102,18 +102,20 @@ const validateScheme = function (scheme) {
     });
 
     // Join the scope arrays for compatibility with Sublime Text
-    v.scope = joinScopes(v.scope);
+    Object.assign(v, {
+      scope: joinScopes(v.scope),
+    });
   });
 
   return scheme;
 };
 
 const utilities = {
-  joinScopes: joinScopes,
-  slash: slash,
-  slashJoin: slashJoin,
-  validateScheme: validateScheme,
-  writeOutput: writeOutput,
+  joinScopes,
+  slash,
+  slashJoin,
+  validateScheme,
+  writeOutput,
 };
 
 module.exports = utilities;

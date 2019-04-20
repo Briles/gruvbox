@@ -5,7 +5,7 @@ const paths = require('./paths.js');
  * @constructor
  * @param {string} basename the name of the widget
  */
-var Widget = function (basename) {
+function Widget(basename) {
   if (!(this instanceof Widget)) {
     return new Widget(basename);
   }
@@ -30,6 +30,6 @@ var Widget = function (basename) {
   this.contents = JSON.stringify(this.config, null, 2);
 
   return this;
-};
+}
 
 module.exports = Widget;

@@ -1,5 +1,4 @@
 module.exports = function (values) {
-
   const stOpts = values.options;
 
   return [

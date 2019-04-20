@@ -1,27 +1,24 @@
 const mixins = require('../../mixins.js');
 
 module.exports = function (values) {
-  const c = values.colors;
   const stOpts = values.options;
 
   return [
 
     // Default Thickness
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'tab_control',
-        settings: [stOpts.underlineDirtyTabs],
-        attributes: ['dirty'],
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'tab_control',
+      settings: [stOpts.underlineDirtyTabs],
+      attributes: ['dirty'],
 
-        parents: [
-          {
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          attributes: [lumin],
+        },
+      ],
 
-        'layer2.tint': palette('gray'),
-      };
-    }),
+      'layer2.tint': palette('gray'),
+    })),
 
     {
       class: 'tab_control',
@@ -43,21 +40,19 @@ module.exports = function (values) {
     /* support for highlight_modified_tabs setting */
 
     // Default Thickness
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'tab_control',
-        settings: ['highlight_modified_tabs'],
-        attributes: ['dirty'],
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'tab_control',
+      settings: ['highlight_modified_tabs'],
+      attributes: ['dirty'],
 
-        parents: [
-          {
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          attributes: [lumin],
+        },
+      ],
 
-        'layer2.tint': palette('gray'),
-      };
-    }),
+      'layer2.tint': palette('gray'),
+    })),
 
     {
       class: 'tab_control',

@@ -1,10 +1,7 @@
 const _ = require('lodash');
-const mixins = require('../mixins.js');
 
 module.exports = function (values) {
-
   const c = values.colors;
-  const info = values.info;
   const stOpts = values.options;
 
   function populateData(colorVarName) {
@@ -15,15 +12,16 @@ module.exports = function (values) {
      * @param  {object} obj the object the settings will be applied to
      * @return {object}     the object passed in with a modified settings property
      */
-    var populateSettings = function (obj) {
-      var setting = stOpts[`accent${_.upperFirst(colorVarName)}`];
-      obj.settings = obj.settings || [];
-      obj.settings.push(setting);
+    const populateSettings = function (obj) {
+      const setting = stOpts[`accent${_.upperFirst(colorVarName)}`];
+      const { settings } = obj;
 
-      return obj;
+      return Object.assign(obj, {
+        settings: [...(settings || []), setting],
+      });
     };
 
-    var data = [
+    const data = [
 
       {
         class: 'auto_complete_label',
@@ -45,7 +43,7 @@ module.exports = function (values) {
 
         ],
 
-        color: color,
+        color,
       },
 
       {
@@ -60,7 +58,7 @@ module.exports = function (values) {
 
         ],
 
-        color: color,
+        color,
       },
 
       {
@@ -75,7 +73,7 @@ module.exports = function (values) {
 
         ],
 
-        color: color,
+        color,
       },
 
       // Folder Default
@@ -332,7 +330,7 @@ module.exports = function (values) {
 
         ],
 
-        color: color,
+        color,
       },
 
       // Colored Tooltips
@@ -404,8 +402,8 @@ module.exports = function (values) {
   }
 
   // Create data for each accent color
-  var accentsData = [];
-  _.forEach(c.accents, function (value, name) {
+  const accentsData = [];
+  _.forEach(c.accents, (value, name) => {
     accentsData.push(populateData(name));
   });
 

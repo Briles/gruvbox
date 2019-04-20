@@ -1,8 +1,4 @@
-module.exports = function (values) {
-
-  const c = values.colors;
-  const info = values.info;
-
+module.exports = function () {
   return [
 
     // Tooltip Background

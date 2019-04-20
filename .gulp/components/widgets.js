@@ -1,9 +1,7 @@
 const mixins = require('../mixins.js');
 
 module.exports = function (values) {
-
-  const c = values.colors;
-  const paths = values.paths;
+  const { paths } = values;
   const stOpts = values.options;
 
   return [
@@ -35,36 +33,32 @@ module.exports = function (values) {
       // 'layer0.tint': 'var(close_default)',
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'panel_close_button',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'panel_close_button',
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer0.tint': palette('close_default_gs'),
-      };
-    }),
+      'layer0.tint': palette('close_default_gs'),
+    })),
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'panel_close_button',
-        settings: [stOpts.disableGreyscaleColors],
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'panel_close_button',
+      settings: [stOpts.disableGreyscaleColors],
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer0.tint': palette('close_default'),
-      };
-    }),
+      'layer0.tint': palette('close_default'),
+    })),
 
     // Status Bar Panel Close Icon Hover
     {
@@ -104,70 +98,62 @@ module.exports = function (values) {
       // 'layer0.tint': 'var(icon_default)',
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'dropdown_button_control',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'dropdown_button_control',
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer0.tint': palette('icon_default_gs'),
-      };
-    }),
+      'layer0.tint': palette('icon_default_gs'),
+    })),
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'dropdown_button_control',
-        settings: [stOpts.disableGreyscaleColors],
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'dropdown_button_control',
+      settings: [stOpts.disableGreyscaleColors],
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer0.tint': palette('icon_default'),
-      };
-    }),
+      'layer0.tint': palette('icon_default'),
+    })),
 
     // Textline Input Overflow Menu Hover
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'dropdown_button_control',
-        attributes: ['hover'],
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'dropdown_button_control',
+      attributes: ['hover'],
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer0.tint': palette('icon_hover_gs'),
-      };
-    }),
+      'layer0.tint': palette('icon_hover_gs'),
+    })),
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'dropdown_button_control',
-        settings: [stOpts.disableGreyscaleColors],
-        attributes: ['hover'],
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'dropdown_button_control',
+      settings: [stOpts.disableGreyscaleColors],
+      attributes: ['hover'],
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer0.tint': palette('icon_hover'),
-      };
-    }),
+      'layer0.tint': palette('icon_hover'),
+    })),
 
   ];
 };

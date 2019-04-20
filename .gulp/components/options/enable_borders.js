@@ -1,7 +1,5 @@
 module.exports = function (values) {
-
   const stOpts = values.options;
-  const c = values.colors;
 
   return [
 

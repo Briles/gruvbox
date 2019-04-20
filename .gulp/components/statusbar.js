@@ -1,44 +1,38 @@
 const mixins = require('../mixins.js');
 
 module.exports = function (values) {
-
-  const c = values.colors;
-  const paths = values.paths;
+  const { paths } = values;
   const stOpts = values.options;
 
   return [
 
     // All Labels
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'label_control',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'label_control',
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+      ],
 
-        color: palette('fg3_gs'),
-      };
-    }),
+      color: palette('fg3_gs'),
+    })),
 
     // Status Bar Labels
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'label_control',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'label_control',
 
-        parents: [
-          {
-            class: 'status_bar',
-            attributes: [lumin]
-          }
-        ],
+      parents: [
+        {
+          class: 'status_bar',
+          attributes: [lumin],
+        },
+      ],
 
-        color: palette('fg3_gs'),
-      };
-    }),
+      color: palette('fg3_gs'),
+    })),
 
     // Status Bar
     {
@@ -76,40 +70,36 @@ module.exports = function (values) {
       'layer0.inner_margin': [1, 0, 0, 0],
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'status_button',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'status_button',
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer0.tint': palette('bg1_gs'),
-      };
-    }),
+      'layer0.tint': palette('bg1_gs'),
+    })),
 
     // Status Bar Button Hover
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'label_control',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'label_control',
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-          {
-            class: 'status_button',
-            attributes: ['hover'],
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+        {
+          class: 'status_button',
+          attributes: ['hover'],
+        },
+      ],
 
-        color: palette('fg1_gs'),
-      };
-    }),
+      color: palette('fg1_gs'),
+    })),
 
     // Panel Switcher
     {
@@ -121,82 +111,74 @@ module.exports = function (values) {
       // 'layer0.tint': 'var(icon_default)',
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'panel_button_control',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'panel_button_control',
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-          {
-            class: 'status_bar',
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+        {
+          class: 'status_bar',
+        },
+      ],
 
-        'layer0.tint': palette('icon_default_gs'),
-      };
-    }),
+      'layer0.tint': palette('icon_default_gs'),
+    })),
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'panel_button_control',
-        settings: [stOpts.disableGreyscaleColors],
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'panel_button_control',
+      settings: [stOpts.disableGreyscaleColors],
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-          {
-            class: 'status_bar',
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+        {
+          class: 'status_bar',
+        },
+      ],
 
-        'layer0.tint': palette('icon_default'),
-      };
-    }),
+      'layer0.tint': palette('icon_default'),
+    })),
 
     // Panel Switcher Hover
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'panel_button_control',
-        attributes: ['hover'],
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'panel_button_control',
+      attributes: ['hover'],
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-          {
-            class: 'status_bar',
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+        {
+          class: 'status_bar',
+        },
+      ],
 
-        'layer0.tint': palette('icon_hover_gs'),
-      };
-    }),
+      'layer0.tint': palette('icon_hover_gs'),
+    })),
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'panel_button_control',
-        attributes: ['hover'],
-        settings: [stOpts.disableGreyscaleColors],
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'panel_button_control',
+      attributes: ['hover'],
+      settings: [stOpts.disableGreyscaleColors],
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-          {
-            class: 'status_bar',
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+        {
+          class: 'status_bar',
+        },
+      ],
 
-        'layer0.tint': palette('icon_hover'),
-      };
-    }),
+      'layer0.tint': palette('icon_hover'),
+    })),
 
   ];
 };

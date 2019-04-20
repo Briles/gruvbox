@@ -1,9 +1,8 @@
 module.exports = function (values, externalPaths) {
-
   const _ = require('lodash');
 
   // Specify the files manually so we can control the load order.
-  var optionFiles = [
+  let optionFiles = [
     'tab_size',
     'tab_font_size',
     'status_bar_size',
@@ -35,9 +34,7 @@ module.exports = function (values, externalPaths) {
     'animated_icons',
   ];
 
-  optionFiles = optionFiles.map(function (file) {
-    return require(`${externalPaths.options}${file}.js`)(values);
-  });
+  optionFiles = optionFiles.map(file => require(`${externalPaths.options}${file}.js`)(values));
 
   return _.flatten(optionFiles);
 };

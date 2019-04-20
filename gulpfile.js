@@ -5,7 +5,7 @@ const exec = util.promisify(require('child_process').exec);
 const srcPath = './.gulp/';
 
 function execNode(command) {
-  return exec(`node ${command}`).then(function (res) {
+  return exec(`node ${command}`).then((res) => {
     if (res.stdout) {
       console.log(res.stdout);
     }
@@ -14,29 +14,14 @@ function execNode(command) {
   });
 }
 
-gulp.task('build_themes', function () {
-  return execNode(`${srcPath}build.js -t`);
-});
-
-gulp.task('build_schemes', function () {
-  return execNode(`${srcPath}build.js -s`);
-});
-
-gulp.task('build_widgets', function () {
-  return execNode(`${srcPath}build.js -w`);
-});
-
-gulp.task('build_all', function () {
-  return execNode(`${srcPath}build.js`);
-});
-
-gulp.task('build_icons', function () {
-  return execNode(`${srcPath}icons.js`);
-});
-
+gulp.task('build_themes', () => execNode(`${srcPath}build.js -t`));
+gulp.task('build_schemes', () => execNode(`${srcPath}build.js -s`));
+gulp.task('build_widgets', () => execNode(`${srcPath}build.js -w`));
+gulp.task('build_all', () => execNode(`${srcPath}build.js`));
+gulp.task('build_icons', () => execNode(`${srcPath}icons.js`));
 gulp.task('build', gulp.series('build_all', 'build_icons'));
 
-gulp.task('watch', function () {
+gulp.task('watch', () => {
   const themeFiles = [
     `${srcPath}theme.js`,
     `${srcPath}components.js`,

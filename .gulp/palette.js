@@ -1,44 +1,44 @@
-const dark0_hard     = '#1D2021';
-const dark0          = '#282828';
-const dark0_soft     = '#32302F';
-const dark1          = '#3C3836';
-const dark2          = '#504945';
-const dark3          = '#665C54';
-const dark4          = '#7C6F64';
+const dark0_hard = '#1D2021';
+const dark0 = '#282828';
+const dark0_soft = '#32302F';
+const dark1 = '#3C3836';
+const dark2 = '#504945';
+const dark3 = '#665C54';
+const dark4 = '#7C6F64';
 
-const gray           = '#928374';
+const gray = '#928374';
 
-const light0_hard    = '#F9F5D7';
-const light0         = '#FBF1C7';
-const light0_soft    = '#F2E5BC';
-const light1         = '#EBDBB2';
-const light2         = '#D5C4A1';
-const light3         = '#BDAE93';
-const light4         = '#A89984';
+const light0_hard = '#F9F5D7';
+const light0 = '#FBF1C7';
+const light0_soft = '#F2E5BC';
+const light1 = '#EBDBB2';
+const light2 = '#D5C4A1';
+const light3 = '#BDAE93';
+const light4 = '#A89984';
 
-const bright_red     = '#FB4934';
-const bright_green   = '#B8BB26';
-const bright_yellow  = '#FABD2F';
-const bright_blue    = '#83A598';
-const bright_purple  = '#D3869B';
-const bright_aqua    = '#8EC07C';
-const bright_orange  = '#FE8019';
+const bright_red = '#FB4934';
+const bright_green = '#B8BB26';
+const bright_yellow = '#FABD2F';
+const bright_blue = '#83A598';
+const bright_purple = '#D3869B';
+const bright_aqua = '#8EC07C';
+const bright_orange = '#FE8019';
 
-const neutral_red    = '#CC241D';
-const neutral_green  = '#98971A';
+const neutral_red = '#CC241D';
+const neutral_green = '#98971A';
 const neutral_yellow = '#D79921';
-const neutral_blue   = '#458588';
+const neutral_blue = '#458588';
 const neutral_purple = '#B16286';
-const neutral_aqua   = '#689D6A';
+const neutral_aqua = '#689D6A';
 const neutral_orange = '#D65D0E';
 
-const faded_red      = '#9D0006';
-const faded_green    = '#79740E';
-const faded_yellow   = '#B57614';
-const faded_blue     = '#076678';
-const faded_purple   = '#8F3F71';
-const faded_aqua     = '#427B58';
-const faded_orange   = '#AF3A03';
+const faded_red = '#9D0006';
+const faded_green = '#79740E';
+const faded_yellow = '#B57614';
+const faded_blue = '#076678';
+const faded_purple = '#8F3F71';
+const faded_aqua = '#427B58';
+const faded_orange = '#AF3A03';
 
 const palette = {
 
@@ -53,7 +53,7 @@ const palette = {
     bg2: dark2,
     bg3: dark3,
     bg4: dark4,
-    gray: gray,
+    gray,
     fg: {
       hard: light1,
       medium: light1,
@@ -91,7 +91,7 @@ const palette = {
     bg2: light2,
     bg3: light3,
     bg4: light4,
-    gray: gray,
+    gray,
     fg: {
       hard: dark1,
       medium: dark1,

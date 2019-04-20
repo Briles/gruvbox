@@ -1,8 +1,7 @@
 const mixins = require('../mixins.js');
 
 module.exports = function (values) {
-
-  const paths = values.paths;
+  const { paths } = values;
 
   return [
 
@@ -22,21 +21,19 @@ module.exports = function (values) {
       'layer1.tint': 'var(fg)',
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'fold_button_control',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'fold_button_control',
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer0.tint': palette('icon_default_gs'),
-        'layer1.tint': palette('icon_default_gs'),
-      };
-    }),
+      'layer0.tint': palette('icon_default_gs'),
+      'layer1.tint': palette('icon_default_gs'),
+    })),
 
     // Fold Button Hover
     {
@@ -47,21 +44,19 @@ module.exports = function (values) {
       'layer1.opacity': 0, // Folded Default
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'fold_button_control',
-        attributes: ['hover'],
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'fold_button_control',
+      attributes: ['hover'],
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer0.tint': palette('icon_hover_gs'),
-      };
-    }),
+      'layer0.tint': palette('icon_hover_gs'),
+    })),
 
     // Fold Button Folded
     {
@@ -81,20 +76,18 @@ module.exports = function (values) {
       'layer1.tint': 'var(fg)',
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'fold_button_control',
-        attributes: ['expanded', 'hover'],
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'fold_button_control',
+      attributes: ['expanded', 'hover'],
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer1.tint': palette('icon_hover_gs'),
-      };
-    }),
+      'layer1.tint': palette('icon_hover_gs'),
+    })),
   ];
 };

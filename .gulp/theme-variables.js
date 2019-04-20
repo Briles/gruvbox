@@ -2,7 +2,6 @@ const _ = require('lodash');
 const chroma = require('chroma-js');
 const palette = require('./palette.js');
 const {
-  color: _c,
   saturation: _s,
   greyscale: _gs,
   lightness: _l,
@@ -10,7 +9,7 @@ const {
 } = require('./sublime-color-functions.js');
 
 function cmykChannel(x, z) {
-  return 2 * z - x
+  return 2 * z - x;
 }
 
 function cmykLinear(base, expected) {
@@ -31,9 +30,7 @@ function adjust(base, expected, baseVar) {
   const _actualHsl = _actual.hsl().slice(1, -1);
   const _expectedHsl = _expected.hsl().slice(1, -1);
 
-  const differences = _actualHsl.map((channel, idx) => {
-    return channel - _expectedHsl[idx];
-  });
+  const differences = _actualHsl.map((channel, idx) => channel - _expectedHsl[idx]);
   const saturationAdjustment = _.round(differences[0] * -100, 6).toString();
   const lightnessAdjustment = _.round(differences[1] * -100, 6).toString();
 
@@ -156,6 +153,7 @@ const darkVariables = {
 
 const light_bg_base = palette.light.bg.medium;
 const light_fg_base = palette.light.fg.medium;
+const light_bg_fg_mix = chroma.mix(light_bg_base, light_fg_base);
 
 const light_bg1 = adjust(light_bg_base, palette.light.bg1, bg);
 const light_bg2 = adjust(light_bg_base, palette.light.bg2, bg);
@@ -167,7 +165,7 @@ const light_bg2_gs = _gs(light_bg2);
 const light_bg3_gs = _gs(light_bg3);
 const light_bg4_gs = _gs(light_bg4);
 
-const light_gray = adjust(chroma.mix(light_bg_base, light_fg_base), palette.light.gray, _b(bg, fg, 50));
+const light_gray = adjust(light_bg_fg_mix, palette.light.gray, _b(bg, fg, 50));
 const light_gray_gs = _gs(light_gray);
 
 const light_fg0 = adjust(light_fg_base, palette.light.fg1, fg);
@@ -237,7 +235,7 @@ function light(key) {
 }
 
 module.exports = {
-  common: common,
-  dark: dark,
-  light: light,
+  common,
+  dark,
+  light,
 };

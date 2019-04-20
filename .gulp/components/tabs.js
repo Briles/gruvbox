@@ -1,9 +1,7 @@
 const mixins = require('../mixins.js');
 
 module.exports = function (values) {
-
-  const c = values.colors;
-  const paths = values.paths;
+  const { paths } = values;
 
   return [
 
@@ -86,35 +84,31 @@ module.exports = function (values) {
       'font.bold': false,
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'tab_label',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'tab_label',
 
-        parents: [
-          {
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          attributes: [lumin],
+        },
+      ],
 
-        fg: palette('gray_gs'),
-      };
-    }),
+      fg: palette('gray_gs'),
+    })),
 
     // Selected Tab Tab Label
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'tab_label',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'tab_label',
 
-        parents: [
-          {
-            class: 'tab_control',
-            attributes: ['selected', lumin]
-          }
-        ],
+      parents: [
+        {
+          class: 'tab_control',
+          attributes: ['selected', lumin],
+        },
+      ],
 
-        fg: palette('fg2_gs'),
-      };
-    }),
+      fg: palette('fg2_gs'),
+    })),
 
     // Transient Tab Label
     {
@@ -125,36 +119,32 @@ module.exports = function (values) {
     },
 
     // Hovered Tab Tab Label
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'tab_label',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'tab_label',
 
-        parents: [
-          {
-            class: 'tab_control',
-            attributes: ['hover', lumin]
-          }
-        ],
+      parents: [
+        {
+          class: 'tab_control',
+          attributes: ['hover', lumin],
+        },
+      ],
 
-        fg: palette('fg3_gs'),
-      };
-    }),
+      fg: palette('fg3_gs'),
+    })),
 
     // Selected & Hovered Tab Tab Label
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'tab_label',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'tab_label',
 
-        parents: [
-          {
-            class: 'tab_control',
-            attributes: ['selected', 'hover', lumin]
-          }
-        ],
+      parents: [
+        {
+          class: 'tab_control',
+          attributes: ['selected', 'hover', lumin],
+        },
+      ],
 
-        fg: palette('fg2_gs'),
-      };
-    }),
+      fg: palette('fg2_gs'),
+    })),
 
     // Tab Close Buttons
     {
@@ -172,20 +162,18 @@ module.exports = function (values) {
       'layer2.tint': 'var(dirty_default)',
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'tab_close_button',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'tab_close_button',
 
-        parents: [
-          {
-            class: 'tab_control',
-            attributes: [lumin]
-          }
-        ],
+      parents: [
+        {
+          class: 'tab_control',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer0.tint': palette('close_default_gs'),
-      };
-    }),
+      'layer0.tint': palette('close_default_gs'),
+    })),
 
     // Default Tab Close Button Not Shown
     {
@@ -277,37 +265,33 @@ module.exports = function (values) {
       // 'layer0.tint': 'var(tabbar_icon_default)',
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'scroll_tabs_left_button',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'scroll_tabs_left_button',
 
-        parents: [
-          {
-            class: 'tabset_control',
-            attributes: [lumin]
-          }
-        ],
+      parents: [
+        {
+          class: 'tabset_control',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer0.tint': palette('tabbar_icon_default_gs'),
-      };
-    }),
+      'layer0.tint': palette('tabbar_icon_default_gs'),
+    })),
 
     // Tab Scroll Left Button Hover
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'scroll_tabs_left_button',
-        attributes: ['hover'],
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'scroll_tabs_left_button',
+      attributes: ['hover'],
 
-        parents: [
-          {
-            class: 'tabset_control',
-            attributes: [lumin]
-          }
-        ],
+      parents: [
+        {
+          class: 'tabset_control',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer0.tint': palette('tabbar_icon_hover_gs'),
-      };
-    }),
+      'layer0.tint': palette('tabbar_icon_hover_gs'),
+    })),
 
     // Tab Scroll Right Button
     {
@@ -319,37 +303,33 @@ module.exports = function (values) {
       // 'layer0.tint': 'var(tabbar_icon_default)',
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'scroll_tabs_right_button',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'scroll_tabs_right_button',
 
-        parents: [
-          {
-            class: 'tabset_control',
-            attributes: [lumin]
-          }
-        ],
+      parents: [
+        {
+          class: 'tabset_control',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer0.tint': palette('tabbar_icon_default_gs'),
-      };
-    }),
+      'layer0.tint': palette('tabbar_icon_default_gs'),
+    })),
 
     // Tab Scroll Right Button Hover
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'scroll_tabs_right_button',
-        attributes: ['hover'],
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'scroll_tabs_right_button',
+      attributes: ['hover'],
 
-        parents: [
-          {
-            class: 'tabset_control',
-            attributes: [lumin]
-          }
-        ],
+      parents: [
+        {
+          class: 'tabset_control',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer0.tint': palette('tabbar_icon_hover_gs'),
-      };
-    }),
+      'layer0.tint': palette('tabbar_icon_hover_gs'),
+    })),
 
     // Tab Scroll Overflow Menu Button
     {
@@ -361,36 +341,32 @@ module.exports = function (values) {
       // 'layer0.tint': 'var(tabbar_icon_default)',
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'show_tabs_dropdown_button',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'show_tabs_dropdown_button',
 
-        parents: [
-          {
-            class: 'tabset_control',
-            attributes: [lumin]
-          }
-        ],
+      parents: [
+        {
+          class: 'tabset_control',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer0.tint': palette('tabbar_icon_default_gs'),
-      };
-    }),
+      'layer0.tint': palette('tabbar_icon_default_gs'),
+    })),
 
     // Tab Scroll Overflow Menu Button Hover
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'show_tabs_dropdown_button',
-        attributes: ['hover'],
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'show_tabs_dropdown_button',
+      attributes: ['hover'],
 
-        parents: [
-          {
-            class: 'tabset_control',
-            attributes: [lumin]
-          }
-        ],
+      parents: [
+        {
+          class: 'tabset_control',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer0.tint': palette('tabbar_icon_hover_gs'),
-      };
-    }),
+      'layer0.tint': palette('tabbar_icon_hover_gs'),
+    })),
   ];
 };

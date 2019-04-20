@@ -1,8 +1,5 @@
 module.exports = function (values) {
-
-  const c = values.colors;
-  const info = values.info;
-  const paths = values.paths;
+  const { paths } = values;
   const stOpts = values.options;
 
   return [

@@ -1,9 +1,7 @@
 const mixins = require('../mixins.js');
 
 module.exports = function (values) {
-
-  const c = values.colors;
-  const paths = values.paths;
+  const { paths } = values;
 
   return [
 
@@ -58,19 +56,17 @@ module.exports = function (values) {
       'font.italic': false,
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'sidebar_label',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'sidebar_label',
 
-        parents: [
-          {
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          attributes: [lumin],
+        },
+      ],
 
-        fg: palette('gray_gs'),
-      };
-    }),
+      fg: palette('gray_gs'),
+    })),
 
     // Sidebar Label Hover
     {
@@ -104,24 +100,22 @@ module.exports = function (values) {
     },
 
     // Sidebar Folder Label
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'sidebar_label',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'sidebar_label',
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-          {
-            class: 'tree_row',
-            attributes: ['expandable']
-          }
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+        {
+          class: 'tree_row',
+          attributes: ['expandable'],
+        },
+      ],
 
-        fg: palette('fg4_gs'),
-      };
-    }),
+      fg: palette('fg4_gs'),
+    })),
 
     // Sidebar Bold Folder Label
     {
@@ -225,23 +219,21 @@ module.exports = function (values) {
       'layer2.tint': 'var(dirty_default)',
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'close_button',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'close_button',
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-          {
-            class: 'tree_row',
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+        {
+          class: 'tree_row',
+        },
+      ],
 
-        'layer0.tint': palette('close_default_gs'),
-      };
-    }),
+      'layer0.tint': palette('close_default_gs'),
+    })),
 
     {
       class: 'close_button',
@@ -355,22 +347,20 @@ module.exports = function (values) {
       'layer3.opacity': 0,
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'icon_folder',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'icon_folder',
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer1.tint': palette('folder_default_gs'),
-        'layer2.tint': palette('folder_hover_gs'),
-        'layer3.tint': palette('folder_expanded_gs'),
-      };
-    }),
+      'layer1.tint': palette('folder_default_gs'),
+      'layer2.tint': palette('folder_hover_gs'),
+      'layer3.tint': palette('folder_expanded_gs'),
+    })),
 
     // Folder Icon Hover
     {
@@ -451,20 +441,18 @@ module.exports = function (values) {
       'layer2.opacity': 0, // Expanded
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'icon_folder_loading',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'icon_folder_loading',
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer1.tint': palette('folder_hover_gs'),
-      };
-    }),
+      'layer1.tint': palette('folder_hover_gs'),
+    })),
 
     // Symlinked Folder Icon
     {
@@ -484,22 +472,20 @@ module.exports = function (values) {
       'layer2.opacity': 0,
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'icon_folder_dup',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'icon_folder_dup',
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer0.tint': palette('folder_default_gs'),
-        'layer1.tint': palette('folder_hover_gs'),
-        'layer2.tint': palette('folder_expanded_gs'),
-      };
-    }),
+      'layer0.tint': palette('folder_default_gs'),
+      'layer1.tint': palette('folder_hover_gs'),
+      'layer2.tint': palette('folder_expanded_gs'),
+    })),
 
     // Symlinked Folder Icon Hover
     {

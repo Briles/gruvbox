@@ -1,0 +1,11 @@
+/coverage
+/.nyc_output
+/lib-cov
+/src/assets
+/src/cc scripts
+/src/samples
+/color_scheme_tests
+
+!/.gulp/
+!/.gulp/*
+!/.gulp/**/*

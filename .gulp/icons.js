@@ -4,22 +4,22 @@ const _ = require('lodash');
 const plist = require('plist');
 const utils = require('./utils.js');
 
-var sourceDirectory = path.resolve(__dirname, './icons/');
-var destinationDirectory = path.resolve(__dirname, '../metadata/');
+const sourceDirectory = path.resolve(__dirname, './icons/');
+const destinationDirectory = path.resolve(__dirname, '../metadata/');
 
-var sourceFiles = fs.readdirSync(sourceDirectory);
+const sourceFiles = fs.readdirSync(sourceDirectory);
 
-var writeIconPreferences = function (sourceFilename) {
-  var sourcePath = path.join(sourceDirectory, sourceFilename);
-  var source = require(sourcePath);
+const writeIconPreferences = function (sourceFilename) {
+  const sourcePath = path.join(sourceDirectory, sourceFilename);
+  const source = require(sourcePath);
 
   if (_.isArray(source.scope)) {
     source.scope = utils.joinScopes(source.scope);
   }
 
-  var plistFileName = path.basename(sourcePath, '.json');
-  var plistPath = path.join(destinationDirectory, `${plistFileName}.tmPreferences`);
-  var plistContents = plist.build(source);
+  const plistFileName = path.basename(sourcePath, '.json');
+  const plistPath = path.join(destinationDirectory, `${plistFileName}.tmPreferences`);
+  const plistContents = plist.build(source);
   utils.writeOutput(plistPath, plistContents);
 };
 

@@ -1,9 +1,8 @@
 module.exports = function (values) {
-
   const mixins = require('../../mixins.js');
 
   const stOpts = values.options;
-  const paths = values.paths;
+  const { paths } = values;
 
   const closeButtonKeyFrames = {
     keyframes: [

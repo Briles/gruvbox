@@ -1,7 +1,4 @@
-module.exports = function (values) {
-
-  const c = values.colors;
-
+module.exports = function () {
   return [
 
     // Title Bar

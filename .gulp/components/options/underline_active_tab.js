@@ -1,7 +1,6 @@
 const mixins = require('../../mixins.js');
 
 module.exports = function (values) {
-  const c = values.colors;
   const stOpts = values.options;
 
   return [
@@ -15,21 +14,19 @@ module.exports = function (values) {
       'layer2.opacity': 1, // Border - Bottom
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'tab_control',
-        settings: [stOpts.underlineActiveTab],
-        attributes: ['selected'],
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'tab_control',
+      settings: [stOpts.underlineActiveTab],
+      attributes: ['selected'],
 
-        parents: [
-          {
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          attributes: [lumin],
+        },
+      ],
 
-        'layer2.tint': palette('gray'),
-      };
-    }),
+      'layer2.tint': palette('gray'),
+    })),
 
     // Thick Thickness
     {

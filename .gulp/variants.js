@@ -5,7 +5,7 @@ const _ = require('lodash');
  * @constructor
  * @param {object} the base scheme to inherit from
  */
-var Variant = function (base) {
+function Variant(base) {
   if (!(this instanceof Variant)) {
     return new Variant(base);
   }
@@ -13,7 +13,7 @@ var Variant = function (base) {
   this._base = _.cloneDeep(base);
 
   return this;
-};
+}
 
 Variant.prototype = {
   /**
@@ -21,10 +21,10 @@ Variant.prototype = {
    * @return {object}      a new, modified scheme
    */
   get noDimmed() {
-    var _base = this._base;
+    const { _base } = this;
     _base.info.name += ' NDC';
 
-    _.forEach(Object.keys(_base.colors.accents), function (colorKey) {
+    _.forEach(Object.keys(_base.colors.accents), (colorKey) => {
       _base.colors.bnp[colorKey + 1] = _base.colors.bnp[colorKey];
     });
 

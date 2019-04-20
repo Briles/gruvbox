@@ -25,7 +25,7 @@ const paths = {
     options: optionsDirectory,
   },
   internal: {
-    packagesRoot: packagesRoot,
+    packagesRoot,
     assets: assetsDirectory,
     commons: commonsDirectory,
     widgets: `${packagesRoot}widgets/`,

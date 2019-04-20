@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "extends": "airbnb-base",
+  "env": {
+    "mocha": true
+  },
+  "rules": {
+    "camelcase": 0,
+    "func-names": 0,
+    "global-require": 0,
+    "import/no-dynamic-require": 0,
+    "import/no-extraneous-dependencies": 0,
+    "no-console": 0,
+    "no-underscore-dangle": 0
+  }
+}

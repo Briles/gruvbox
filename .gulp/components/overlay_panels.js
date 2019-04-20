@@ -1,9 +1,6 @@
 const mixins = require('../mixins.js');
 
-module.exports = function (values) {
-
-  const c = values.colors;
-
+module.exports = function () {
   return [
 
     // Command Palette & Goto Panel
@@ -44,20 +41,18 @@ module.exports = function (values) {
       'layer2.inner_margin': [1, 0, 0, 0],
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'mini_quick_panel_row',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'mini_quick_panel_row',
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+      ],
 
-        'layer2.tint': palette('fg3'),
-      };
-    }),
+      'layer2.tint': palette('fg3'),
+    })),
 
     // Command Palette List Item Selected
 
@@ -102,59 +97,53 @@ module.exports = function (values) {
     },
 
     // Panel Label
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'quick_panel_label',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'quick_panel_label',
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+      ],
 
-        fg: palette('fg4_gs'),
-        match_fg: palette('fg1_gs'),
-        selected_fg: palette('fg4_gs'),
-        selected_match_fg: palette('fg1_gs'),
-      };
-    }),
+      fg: palette('fg4_gs'),
+      match_fg: palette('fg1_gs'),
+      selected_fg: palette('fg4_gs'),
+      selected_match_fg: palette('fg1_gs'),
+    })),
 
     // Panels SubLabels
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'quick_panel_path_label',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'quick_panel_path_label',
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+      ],
 
-        fg: palette('fg4_gs'),
-        match_fg: palette('fg1_gs'),
-        selected_fg: palette('fg4_gs'),
-        selected_match_fg: palette('fg1_gs'),
-      };
-    }),
+      fg: palette('fg4_gs'),
+      match_fg: palette('fg1_gs'),
+      selected_fg: palette('fg4_gs'),
+      selected_match_fg: palette('fg1_gs'),
+    })),
 
     // Panel Row Match Score
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'quick_panel_score_label',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'quick_panel_score_label',
 
-        parents: [
-          {
-            class: 'window',
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+      ],
 
-        fg: palette('fg4_gs'),
-        selected_fg: palette('fg1_gs'),
-      };
-    }),
+      fg: palette('fg4_gs'),
+      selected_fg: palette('fg1_gs'),
+    })),
 
   ];
 };

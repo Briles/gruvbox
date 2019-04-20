@@ -1,9 +1,6 @@
 const mixins = require('../mixins.js');
 
-module.exports = function (values) {
-
-  const c = values.colors;
-
+module.exports = function () {
   return [
 
     // AutoComplete Popup Container
@@ -41,22 +38,20 @@ module.exports = function (values) {
       selected_match_fg: 'var(fg)',
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'auto_complete_label',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'auto_complete_label',
 
-        parents: [
-          {
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          attributes: [lumin],
+        },
+      ],
 
-        fg: palette('fg4_gs'),
-        match_fg: palette('fg1_gs'),
-        selected_fg: palette('fg4_gs'),
-        selected_match_fg: palette('fg1_gs'),
-      };
-    }),
+      fg: palette('fg4_gs'),
+      match_fg: palette('fg1_gs'),
+      selected_fg: palette('fg4_gs'),
+      selected_match_fg: palette('fg1_gs'),
+    })),
 
     // AutoComplete Row
     {
@@ -72,20 +67,18 @@ module.exports = function (values) {
       'layer1.inner_margin': [1, 0, 0, 0],
     },
 
-    ...mixins.createComponentVariations((lumin, palette) => {
-      return {
-        class: 'table_row',
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'table_row',
 
-        parents: [
-          {
-            attributes: [lumin],
-          },
-        ],
+      parents: [
+        {
+          attributes: [lumin],
+        },
+      ],
 
-        'layer0.tint': palette('bg1'),
-        'layer1.tint': palette('fg3'),
-      };
-    }),
+      'layer0.tint': palette('bg1'),
+      'layer1.tint': palette('fg3'),
+    })),
 
     // AutoComplete Row
     {
