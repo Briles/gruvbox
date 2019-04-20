@@ -23,8 +23,7 @@
     "lodash-deep": "^2.0.0",
     "mocha": "^6.0.2",
     "nyc": "^13.3.0",
-    "plist": "^3.0.1",
-    "tinycolor2": "^1.4.1"
+    "plist": "^3.0.1"
   },
   "scripts": {
     "style": "npm run style:main",

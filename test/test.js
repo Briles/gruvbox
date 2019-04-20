@@ -1,5 +1,4 @@
 const { assert } = require('chai');
-const tinycolor = require('../.gulp/tinycolor.js');
 const utils = require('../.gulp/utils.js');
 const schemes = require('./mock_schemes.js');
 const sublimeColorFns = require('../.gulp/sublime-color-functions.js');
@@ -85,28 +84,6 @@ describe('Utility', () => {
         utils.validateScheme(schemes.validUnJoinedScopes),
         schemes.validJoinedScopes,
       );
-    });
-  });
-});
-
-describe('tinycolor', () => {
-  const errored = function (func) {
-    return function () {
-      tinycolor('x')[func]();
-    };
-  };
-
-  describe('toSublimeRgb()', () => {
-    it('should return RGB color array', () => {
-      assert.deepEqual(tinycolor('#ffffff').toSublimeRgb(), validSublimeRGB);
-    });
-
-    it('should multiply alpha channel by 255', () => {
-      assert.deepEqual(tinycolor(validRGBA).toSublimeRgb(), validSublimeRGBA);
-    });
-
-    it('should throw error when color is not valid', () => {
-      assert.throws(errored('toSublimeRgb'), '"#000000" is not a valid color');
     });
   });
 });

@@ -57,7 +57,6 @@ gulp.task('watch', () => {
     `${srcPath}build.js`,
     `${srcPath}palette.js`,
     `${srcPath}sublime-color-functions.js`,
-    `${srcPath}tinycolor.js`,
     `${srcPath}utils.js`,
   ];
 
