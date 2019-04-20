@@ -188,4 +188,15 @@ describe('Sublime Color Functions', () => {
       assert.throws(() => sublimeColorFns.blenda(color, color2, -50), 'Expected blenda() amount to be between 0 and 100');
     });
   });
+
+  describe('minContrast()', () => {
+    it('return a min-contrast color function for a given contrast ratio', () => {
+      const color = 'var(base_green)';
+      const color2 = '#888';
+
+      assert.strictEqual(sublimeColorFns.minContrast(color, color2, 2.5), `color(${color} min-contrast(${color2} 2.5))`);
+      assert.strictEqual(sublimeColorFns.minContrast(color, color2, 8), `color(${color} min-contrast(${color2} 8))`);
+      assert.throws(() => sublimeColorFns.minContrast(color, color2, 0), 'Expected minContrast() ratio to be greater than 0');
+    });
+  });
 });

@@ -6,6 +6,7 @@ const {
   greyscale: _gs,
   lightness: _l,
   blend: _b,
+  minContrast: _mc,
 } = require('./sublime-color-functions.js');
 
 function cmykChannel(x, z) {
@@ -93,8 +94,8 @@ const dark_bg4_gs = _gs(dark_bg4);
 const dark_gray = adjust(chroma.mix(dark_bg_base, dark_fg_base), palette.dark.gray, _b(bg, fg, 50));
 const dark_gray_gs = _gs(dark_gray);
 
-const dark_fg0 = adjust(dark_fg_base, palette.dark.fg1, fg);
-const dark_fg2 = adjust(dark_fg_base, palette.dark.fg2, fg);
+const dark_fg0 = _mc(adjust(dark_fg_base, palette.dark.fg1, fg), bg, 5);
+const dark_fg2 = _mc(adjust(dark_fg_base, palette.dark.fg2, fg), bg, 5);
 const dark_fg3 = adjust(dark_fg_base, palette.dark.fg3, fg);
 const dark_fg4 = adjust(dark_fg_base, palette.dark.fg4, fg);
 

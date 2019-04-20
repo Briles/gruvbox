@@ -69,6 +69,14 @@ function blenda(color1, color2, amount, hsl) {
   return colorFn(`${color1} blenda(${color2} ${amount}%${hsl ? ' hsl' : ''})`);
 }
 
+function minContrast(foreground, background, ratio) {
+  if (ratio <= 0) {
+    throw new Error('Expected minContrast() ratio to be greater than 0');
+  }
+
+  return colorFn(`${foreground} min-contrast(${background} ${ratio})`);
+}
+
 module.exports = {
   color: colorFn,
   alpha,
@@ -77,4 +85,5 @@ module.exports = {
   greyscale,
   lightness,
   saturation,
+  minContrast,
 };
