@@ -16,13 +16,6 @@ function Widget(basename) {
 
   this.config = {
     draw_shadows: false,
-    font_options: [
-      'DirectWrite',
-      'subpixel_antialias',
-    ],
-    line_padding_top: 4,
-    line_padding_bottom: 4,
-    // color_scheme: `${paths.internal.packagesRoot}${basename}.sublime-color-scheme`,
   };
 
   this.filename = `Widget - ${basename}.sublime-settings`;
