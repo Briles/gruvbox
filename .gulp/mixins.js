@@ -1,4 +1,5 @@
 const themeVariables = require('./theme-variables.js');
+const sublimeColorFunctions = require('./sublime-color-functions.js');
 
 function animatedIconFolder(base) {
   return {
@@ -65,7 +66,11 @@ function createComponentVariations(componentCreationFn) {
   };
 
   return Object.keys(luminosities)
-    .map(luminosity => componentCreationFn(luminosity, luminosities[luminosity]));
+    .map(luminosity => componentCreationFn(
+      luminosity,
+      luminosities[luminosity],
+      sublimeColorFunctions,
+    ));
 }
 
 const mixins = {
