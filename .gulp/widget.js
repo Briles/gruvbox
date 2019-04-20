@@ -1,28 +1,30 @@
+const path = require('path');
 const paths = require('./paths.js');
 
-/**
- * @class Widget
- * @constructor
- * @param {string} basename the name of the widget
- */
-function Widget(basename) {
-  if (!(this instanceof Widget)) {
-    return new Widget(basename);
+class Widget {
+  constructor(basename, settings = {}) {
+    if (!basename) {
+      throw new TypeError('"basename must be a string"');
+    }
+
+    this.settings = Object.assign({}, {
+      draw_shadows: false,
+    }, settings);
+
+    this.basename = basename;
   }
 
-  if (!basename) {
-    throw new Error('"basename must be a string"');
+  getPath() {
+    return path.join(paths.external.root, '/widgets', `Widget - ${this.basename}.sublime-settings`);
   }
 
-  this.config = {
-    draw_shadows: false,
-  };
+  stringify() {
+    return JSON.stringify(this.generate(), null, 2);
+  }
 
-  this.filename = `Widget - ${basename}.sublime-settings`;
-  this.destination = `${paths.external.widgets}/${this.filename}`;
-  this.contents = JSON.stringify(this.config, null, 2);
-
-  return this;
+  generate() {
+    return this.settings;
+  }
 }
 
 module.exports = Widget;

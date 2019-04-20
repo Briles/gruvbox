@@ -1,6 +1,7 @@
 const path = require('path');
 const components = require('./components.js');
 const { common: themeVariables } = require('./theme-variables.js');
+const about = require('./gruvbox/about.js');
 
 module.exports = function (values) {
   const rules = [];
@@ -11,13 +12,9 @@ module.exports = function (values) {
     rules.push(...componentRules);
   });
 
-  return {
+  return Object.assign({}, about, {
     name: 'gruvbox',
-    homepage: 'https://github.com/Briles/gruvbox',
-    description: 'Based on gruvbox for Vim (https://github.com/morhetz/gruvbox)',
-    originalAuthor: 'Pavel Pertsev (https://github.com/morhetz)',
-    author: 'Brian Reilly (https://github.com/Briles)',
     variables: themeVariables,
     rules,
-  };
+  });
 };

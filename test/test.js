@@ -1,11 +1,6 @@
 const { assert } = require('chai');
 const utils = require('../.gulp/utils.js');
-const schemes = require('./mock_schemes.js');
 const sublimeColorFns = require('../.gulp/sublime-color-functions.js');
-
-const validRGBA = 'rgba(255, 255, 255, 0.5)';
-const validSublimeRGB = [255, 255, 255];
-const validSublimeRGBA = [255, 255, 255, 127.5];
 
 describe('Utility', () => {
   describe('joinScopes()', () => {
@@ -27,63 +22,6 @@ describe('Utility', () => {
   describe('slashJoin()', () => {
     it('should return forward-slashed string', () => {
       assert.strictEqual(utils.slashJoin('a\\b', '\\c\\d'), 'a/b/c/d');
-    });
-  });
-
-  describe('validateScheme()', () => {
-    const errored = function (scheme) {
-      return function () {
-        utils.validateScheme(scheme);
-      };
-    };
-
-    it('should throw error when scope is not array', () => {
-      assert.throws(
-        errored(schemes.invalidNonArrayScope),
-        '"name" scope is not of type "Array"',
-      );
-    });
-
-    it('should throw error when scope array is empty', () => {
-      assert.throws(
-        errored(schemes.invalidEmptyScope),
-        '"name" must have atleast 1 scope',
-      );
-    });
-
-    it('should set scope identifier when there is no name', () => {
-      assert.throws(
-        errored(schemes.invalidMissingName),
-        '"scope" scope is not of type "Array"',
-      );
-    });
-
-    it('should throw error when there are no style properties', () => {
-      assert.throws(
-        errored(schemes.invalidMissingStyles),
-        '"name" must have atleast 1 style',
-      );
-    });
-
-    it('should throw error when a rules property is undefined', () => {
-      assert.throws(
-        errored(schemes.invalidUndefinedStyle),
-        '"foreground" for "name" is undefined',
-      );
-    });
-
-    it('should throw error when duplicate scopes are encountered', () => {
-      assert.throws(
-        errored(schemes.invalidDuplicateScope),
-        'Duplicate Scope Found: "1"',
-      );
-    });
-
-    it('should return scheme with scopes as strings', () => {
-      assert.deepEqual(
-        utils.validateScheme(schemes.validUnJoinedScopes),
-        schemes.validJoinedScopes,
-      );
     });
   });
 });

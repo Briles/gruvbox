@@ -1,6 +1,6 @@
 const _ = require('lodash');
 const chroma = require('chroma-js');
-const palette = require('./palette.js');
+const palette = require('./gruvbox/palette.js');
 const {
   saturation: _s,
   greyscale: _gs,

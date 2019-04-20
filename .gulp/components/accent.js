@@ -1,7 +1,6 @@
 const _ = require('lodash');
 
 module.exports = function (values) {
-  const c = values.colors;
   const stOpts = values.options;
 
   function populateData(colorVarName) {
@@ -401,8 +400,17 @@ module.exports = function (values) {
     return data.map(populateSettings);
   }
 
-  // Create data for each accent color
-  const accentsData = [...Object.keys(c.accents), 'pink'].map(name => populateData(name));
+  // Create rules for each accent color
+  const accentsRules = [
+    'red',
+    'green',
+    'yellow',
+    'blue',
+    'purple',
+    'aqua',
+    'orange',
+    'pink',
+  ].map(name => populateData(name));
 
-  return _.flatten(accentsData);
+  return _.flatten(accentsRules);
 };
