@@ -5,6 +5,7 @@ const Widget = require('./widget.js');
 // Gruvbox colors
 const gruvboxPalette = require('./gruvbox/palette.js');
 const gruvboxTemplate = require('./gruvbox/template.js');
+const gruvboxMinimalTemplate = require('./gruvbox/template-minimal.js');
 const gruvboxAbout = require('./gruvbox/about.js');
 
 ['Dark', 'Light'].forEach((brightness) => {
@@ -50,10 +51,20 @@ const gruvboxAbout = require('./gruvbox/about.js');
     const ndcScheme = new Scheme(ndcAbout, ndcPalette, template).validate();
     const ndcWidget = new Widget(ndcName);
 
+    const minimalName = `${name} - Minimal`;
+    const minimalAbout = Object.assign({}, gruvboxAbout, {
+      name: minimalName,
+    });
+    const minimalScheme = new Scheme(minimalAbout, ndcPalette, gruvboxMinimalTemplate).validate();
+    const minimalWidget = new Widget(minimalName);
+
     utils.writeOutput(scheme.getPath(), scheme.stringify());
     utils.writeOutput(widget.getPath(), widget.stringify());
 
     utils.writeOutput(ndcScheme.getPath(), ndcScheme.stringify());
     utils.writeOutput(ndcWidget.getPath(), ndcWidget.stringify());
+
+    utils.writeOutput(minimalScheme.getPath(), minimalScheme.stringify());
+    utils.writeOutput(minimalWidget.getPath(), minimalWidget.stringify());
   });
 });

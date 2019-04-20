@@ -1,0 +1,331 @@
+{
+  "name": "gruvbox (Light) (Medium) - Minimal",
+  "homepage": "https://github.com/Briles/gruvbox",
+  "description": "Based on gruvbox for Vim (https://github.com/morhetz/gruvbox)",
+  "originalAuthor": "Pavel Pertsev (https://github.com/morhetz)",
+  "author": "Brian Reilly (https://github.com/Briles)",
+  "variables": {
+    "bg": "#FBF1C7",
+    "bg0": "#FBF1C7",
+    "bg1": "#EBDBB2",
+    "bg2": "#D5C4A1",
+    "bg3": "#BDAE93",
+    "bg4": "#A89984",
+    "gray": "#928374",
+    "fg": "#3C3836",
+    "fg0": "#282828",
+    "fg1": "#3C3836",
+    "fg2": "#504945",
+    "fg3": "#665C54",
+    "fg4": "#7C6F64",
+    "red": "#9D0006",
+    "red1": "#9D0006",
+    "green": "#79740E",
+    "green1": "#79740E",
+    "yellow": "#B57614",
+    "yellow1": "#B57614",
+    "blue": "#076678",
+    "blue1": "#076678",
+    "purple": "#8F3F71",
+    "purple1": "#8F3F71",
+    "aqua": "#427B58",
+    "aqua1": "#427B58",
+    "orange": "#AF3A03",
+    "orange1": "#AF3A03",
+    "border": "color(var(bg) lightness(- 10%))",
+    "container": "color(var(bg) lightness(- 5%))",
+    "guide": "color(var(fg0) alpha(0.15))",
+    "guideAlt": "color(var(fg0) alpha(0.25))",
+    "ruler": "color(var(fg0) alpha(0.25))",
+    "headingBackground": "color(var(bg) lightness(+ 7%))",
+    "invisibles": "color(var(fg0) alpha(0.25))",
+    "background": "var(bg)",
+    "foreground": "var(fg)",
+    "--background": "var(bg)",
+    "--foreground": "var(fg)",
+    "--redish": "var(red)",
+    "--orangish": "var(orange)",
+    "--yellowish": "var(yellow)",
+    "--greenish": "var(green)",
+    "--cyanish": "var(aqua)",
+    "--bluish": "var(blue)",
+    "--purplish": "var(purple)"
+  },
+  "globals": {
+    "background": "var(bg)",
+    "foreground": "var(fg)",
+    "invisibles": "var(invisibles)",
+    "caret": "var(fg4)",
+    "block_caret": "var(gray)",
+    "line_highlight": "var(bg1)",
+    "misspelling": "var(red)",
+    "fold_marker": "var(yellow)",
+    "minimap_border": "var(border)",
+    "accent": "var(yellow)",
+    "gutter": "var(bg)",
+    "gutter_foreground": "var(gray)",
+    "line_diff_width": "3",
+    "line_diff_added": "var(green)",
+    "line_diff_modified": "var(yellow)",
+    "line_diff_deleted": "var(red)",
+    "selection": "var(bg1)",
+    "selection_border_width": "0",
+    "inactive_selection": "var(bg1)",
+    "selection_corner_style": "round",
+    "selection_corner_radius": "0",
+    "highlight": "var(fg)",
+    "find_highlight": "var(yellow)",
+    "find_highlight_foreground": "var(bg)",
+    "guide": "var(guide)",
+    "active_guide": "var(ruler)",
+    "stack_guide": "var(guideAlt)",
+    "brackets_options": "underline",
+    "brackets_foreground": "var(fg3)",
+    "bracket_contents_options": "underline",
+    "bracket_contents_foreground": "var(fg3)",
+    "tags_options": "underline",
+    "tags_foreground": "var(fg4)",
+    "shadow": "var(container)",
+    "shadow_width": "6"
+  },
+  "rules": [
+    {
+      "name": "Comment",
+      "scope": "comment,punctuation.definition.comment",
+      "font_style": "italic",
+      "foreground": "var(gray)"
+    },
+    {
+      "name": "String",
+      "scope": "string",
+      "foreground": "var(green)"
+    },
+    {
+      "name": "Punctuation",
+      "scope": "punctuation.definition",
+      "foreground": "var(fg)"
+    },
+    {
+      "name": "Number",
+      "scope": "constant.numeric",
+      "foreground": "var(purple)"
+    },
+    {
+      "name": "Built-in constant",
+      "scope": "constant.language",
+      "foreground": "var(purple)"
+    },
+    {
+      "name": "User-defined constant",
+      "scope": "constant.character,constant.other",
+      "foreground": "var(yellow)"
+    },
+    {
+      "name": "Keyword",
+      "scope": "keyword - keyword.operator,keyword.operator.word",
+      "foreground": "var(red)"
+    },
+    {
+      "name": "Operators",
+      "scope": "keyword.operator",
+      "foreground": "var(aqua)"
+    },
+    {
+      "name": "Punctuation",
+      "scope": "punctuation.separator,punctuation.terminator",
+      "foreground": "var(fg)"
+    },
+    {
+      "name": "Accessor",
+      "scope": "punctuation.accessor",
+      "foreground": "var(fg)"
+    },
+    {
+      "name": "Storage",
+      "scope": "storage",
+      "foreground": "var(red)"
+    },
+    {
+      "name": "Storage type",
+      "scope": "storage.type",
+      "foreground": "var(red)"
+    },
+    {
+      "name": "Variables",
+      "scope": "entity.name.val.declaration,entity.name.variable,meta.definition.variable,meta.interpolation,storage.type.variable,support.type.custom-property,support.type.variable-name,variable,variable.interpolation variable,variable.other.interpolation variable,variable.parameter.dosbatch,variable.parameter.output.function.matlab,variable.parameter.sass",
+      "foreground": "var(blue)"
+    },
+    {
+      "name": "Entity name",
+      "scope": "entity.name.function",
+      "foreground": "var(green)"
+    },
+    {
+      "name": "Entity name",
+      "scope": "entity.name - (entity.name.section | entity.name.tag | entity.name.label)",
+      "foreground": "var(blue)"
+    },
+    {
+      "name": "Inherited class",
+      "scope": "entity.other.inherited-class",
+      "foreground": "var(yellow)"
+    },
+    {
+      "name": "Function argument",
+      "scope": "variable.parameter",
+      "foreground": "var(fg)"
+    },
+    {
+      "name": "Language variable",
+      "scope": "variable.language",
+      "foreground": "var(purple)"
+    },
+    {
+      "name": "Tag name",
+      "scope": "entity.name.tag",
+      "foreground": "var(blue)"
+    },
+    {
+      "name": "Tag attribute",
+      "scope": "entity.other.attribute-name",
+      "foreground": "var(yellow)"
+    },
+    {
+      "name": "Function call",
+      "scope": "variable.annotation,variable.function",
+      "foreground": "var(aqua)"
+    },
+    {
+      "name": "Library function",
+      "scope": "support.function,support.macro",
+      "foreground": "var(aqua)"
+    },
+    {
+      "name": "Library constant",
+      "scope": "support.constant",
+      "foreground": "var(purple)"
+    },
+    {
+      "name": "Library class/type",
+      "scope": "support.class,support.type",
+      "foreground": "var(yellow)"
+    },
+    {
+      "name": "Invalid",
+      "scope": "invalid",
+      "foreground": "var(fg)",
+      "background": "var(red)"
+    },
+    {
+      "name": "YAML Key",
+      "scope": "entity.name.tag.yaml",
+      "foreground": "var(blue)"
+    },
+    {
+      "name": "YAML String",
+      "scope": "source.yaml string.unquoted",
+      "foreground": "var(green)"
+    },
+    {
+      "name": "markup headings",
+      "scope": "markup.heading",
+      "foreground": "var(green)"
+    },
+    {
+      "name": "markup links",
+      "scope": "markup.underline.link,string.other.link",
+      "foreground": "var(aqua)"
+    },
+    {
+      "name": "markup bold",
+      "scope": "markup.bold",
+      "foreground": "var(orange)",
+      "font_style": "bold"
+    },
+    {
+      "name": "markup italic",
+      "scope": "markup.italic",
+      "foreground": "var(red)",
+      "font_style": "italic"
+    },
+    {
+      "name": "markup bold/italic",
+      "scope": "markup.italic markup.bold | markup.bold markup.italic",
+      "font_style": "bold italic"
+    },
+    {
+      "name": "markup hr",
+      "scope": "punctuation.definition.thematic-break",
+      "foreground": "var(fg4)"
+    },
+    {
+      "name": "markup numbered list",
+      "scope": "markup.list",
+      "foreground": "var(blue)"
+    },
+    {
+      "name": "markup blockquote",
+      "scope": "markup.list punctuation.definition.list_item,markup.quote punctuation.definition.blockquote",
+      "foreground": "var(purple)"
+    },
+    {
+      "name": "markup code",
+      "scope": "markup.raw",
+      "background": "var(yellow)"
+    },
+    {
+      "name": "markup code",
+      "scope": "markup.raw.inline",
+      "background": "var(yellow)"
+    },
+    {
+      "name": "diff.header",
+      "scope": "meta.diff,meta.diff.header",
+      "foreground": "var(blue)"
+    },
+    {
+      "name": "diff.deleted",
+      "scope": "markup.deleted",
+      "foreground": "var(red)"
+    },
+    {
+      "name": "diff.inserted",
+      "scope": "markup.inserted",
+      "foreground": "var(green)"
+    },
+    {
+      "name": "diff.changed",
+      "scope": "markup.changed",
+      "foreground": "var(yellow)"
+    },
+    {
+      "name": "CSS Properties",
+      "scope": "support.type.property-name",
+      "foreground": "var(green)"
+    },
+    {
+      "scope": "message.error",
+      "foreground": "var(red)"
+    },
+    {
+      "name": "Incremental Diff Deleted",
+      "scope": "diff.deleted",
+      "background": "color(var(red) alpha(0.17))"
+    },
+    {
+      "name": "Incremental Diff Deleted Char",
+      "scope": "diff.deleted.char",
+      "background": "color(var(red) alpha(0.3))"
+    },
+    {
+      "name": "Incremental Diff Deleted",
+      "scope": "diff.inserted",
+      "background": "color(var(green) alpha(0.17))"
+    },
+    {
+      "name": "Incremental Diff Deleted Char",
+      "scope": "diff.inserted.char",
+      "background": "color(var(green) alpha(0.3))"
+    }
+  ]
+}
