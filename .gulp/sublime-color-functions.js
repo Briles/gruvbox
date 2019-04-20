@@ -77,6 +77,22 @@ function minContrast(foreground, background, ratio) {
   return colorFn(`${foreground} min-contrast(${background} ${ratio})`);
 }
 
+function minContrastAaNormal(foreground, background) {
+  return minContrast(foreground, background, 4.5);
+}
+
+function minContrastAaLarge(foreground, background) {
+  return minContrast(foreground, background, 3.1);
+}
+
+function minContrastAaaNormal(foreground, background) {
+  return minContrast(foreground, background, 7.1);
+}
+
+function minContrastAaaLarge(foreground, background) {
+  return minContrast(foreground, background, 4.5);
+}
+
 module.exports = {
   color: colorFn,
   alpha,
@@ -86,4 +102,8 @@ module.exports = {
   lightness,
   saturation,
   minContrast,
+  minContrastAaNormal,
+  minContrastAaLarge,
+  minContrastAaaNormal,
+  minContrastAaaLarge,
 };
