@@ -7,32 +7,8 @@
     },
     "Preferences":
     {
-      "always_show_minimap_viewport": true,
-      "bold_folder_labels": true,
-      "caret_extra_bottom": 3,
-      "caret_extra_top": 3,
-      "caret_extra_width": 3,
       "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard) NDC.sublime-color-scheme",
       "theme": "gruvbox.sublime-theme",
-      "line_padding_bottom": 3,
-      "line_padding_top": 3,
-      "overlay_scroll_bars": "enabled",
-      "wide_caret": true
-    },
-    "Preferences (Linux)":
-    {
-      "font_options": null,
-      "theme_font_options": null
-    },
-    "Preferences (OSX)":
-    {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ],
-      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
-    },
-    "Preferences (Windows)":
-    {
-      "font_options": [ "directwrite" ],
-      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -52,32 +28,8 @@
     },
     "Preferences":
     {
-      "always_show_minimap_viewport": true,
-      "bold_folder_labels": true,
-      "caret_extra_bottom": 3,
-      "caret_extra_top": 3,
-      "caret_extra_width": 3,
       "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Hard).sublime-color-scheme",
       "theme": "gruvbox.sublime-theme",
-      "line_padding_bottom": 3,
-      "line_padding_top": 3,
-      "overlay_scroll_bars": "enabled",
-      "wide_caret": true
-    },
-    "Preferences (Linux)":
-    {
-      "font_options": null,
-      "theme_font_options": null
-    },
-    "Preferences (OSX)":
-    {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ],
-      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
-    },
-    "Preferences (Windows)":
-    {
-      "font_options": [ "directwrite" ],
-      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -97,32 +49,8 @@
     },
     "Preferences":
     {
-      "always_show_minimap_viewport": true,
-      "bold_folder_labels": true,
-      "caret_extra_bottom": 3,
-      "caret_extra_top": 3,
-      "caret_extra_width": 3,
       "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium) NDC.sublime-color-scheme",
       "theme": "gruvbox.sublime-theme",
-      "line_padding_bottom": 3,
-      "line_padding_top": 3,
-      "overlay_scroll_bars": "enabled",
-      "wide_caret": true
-    },
-    "Preferences (Linux)":
-    {
-      "font_options": null,
-      "theme_font_options": null
-    },
-    "Preferences (OSX)":
-    {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ],
-      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
-    },
-    "Preferences (Windows)":
-    {
-      "font_options": [ "directwrite" ],
-      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -142,32 +70,8 @@
     },
     "Preferences":
     {
-      "always_show_minimap_viewport": true,
-      "bold_folder_labels": true,
-      "caret_extra_bottom": 3,
-      "caret_extra_top": 3,
-      "caret_extra_width": 3,
       "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme",
       "theme": "gruvbox.sublime-theme",
-      "line_padding_bottom": 3,
-      "line_padding_top": 3,
-      "overlay_scroll_bars": "enabled",
-      "wide_caret": true
-    },
-    "Preferences (Linux)":
-    {
-      "font_options": null,
-      "theme_font_options": null
-    },
-    "Preferences (OSX)":
-    {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ],
-      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
-    },
-    "Preferences (Windows)":
-    {
-      "font_options": [ "directwrite" ],
-      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -187,32 +91,8 @@
     },
     "Preferences":
     {
-      "always_show_minimap_viewport": true,
-      "bold_folder_labels": true,
-      "caret_extra_bottom": 3,
-      "caret_extra_top": 3,
-      "caret_extra_width": 3,
       "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft) NDC.sublime-color-scheme",
       "theme": "gruvbox.sublime-theme",
-      "line_padding_bottom": 3,
-      "line_padding_top": 3,
-      "overlay_scroll_bars": "enabled",
-      "wide_caret": true
-    },
-    "Preferences (Linux)":
-    {
-      "font_options": null,
-      "theme_font_options": null
-    },
-    "Preferences (OSX)":
-    {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ],
-      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
-    },
-    "Preferences (Windows)":
-    {
-      "font_options": [ "directwrite" ],
-      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -232,32 +112,8 @@
     },
     "Preferences":
     {
-      "always_show_minimap_viewport": true,
-      "bold_folder_labels": true,
-      "caret_extra_bottom": 3,
-      "caret_extra_top": 3,
-      "caret_extra_width": 3,
       "color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft).sublime-color-scheme",
       "theme": "gruvbox.sublime-theme",
-      "line_padding_bottom": 3,
-      "line_padding_top": 3,
-      "overlay_scroll_bars": "enabled",
-      "wide_caret": true
-    },
-    "Preferences (Linux)":
-    {
-      "font_options": null,
-      "theme_font_options": null
-    },
-    "Preferences (OSX)":
-    {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ],
-      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
-    },
-    "Preferences (Windows)":
-    {
-      "font_options": [ "directwrite" ],
-      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -277,32 +133,8 @@
     },
     "Preferences":
     {
-      "always_show_minimap_viewport": true,
-      "bold_folder_labels": true,
-      "caret_extra_bottom": 3,
-      "caret_extra_top": 3,
-      "caret_extra_width": 3,
       "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard) NDC.sublime-color-scheme",
       "theme": "gruvbox.sublime-theme",
-      "line_padding_bottom": 3,
-      "line_padding_top": 3,
-      "overlay_scroll_bars": "enabled",
-      "wide_caret": true
-    },
-    "Preferences (Linux)":
-    {
-      "font_options": null,
-      "theme_font_options": null
-    },
-    "Preferences (OSX)":
-    {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ],
-      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
-    },
-    "Preferences (Windows)":
-    {
-      "font_options": [ "directwrite" ],
-      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -322,32 +154,8 @@
     },
     "Preferences":
     {
-      "always_show_minimap_viewport": true,
-      "bold_folder_labels": true,
-      "caret_extra_bottom": 3,
-      "caret_extra_top": 3,
-      "caret_extra_width": 3,
       "color_scheme": "Packages/gruvbox/gruvbox (Light) (Hard).sublime-color-scheme",
       "theme": "gruvbox.sublime-theme",
-      "line_padding_bottom": 3,
-      "line_padding_top": 3,
-      "overlay_scroll_bars": "enabled",
-      "wide_caret": true
-    },
-    "Preferences (Linux)":
-    {
-      "font_options": null,
-      "theme_font_options": null
-    },
-    "Preferences (OSX)":
-    {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ],
-      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
-    },
-    "Preferences (Windows)":
-    {
-      "font_options": [ "directwrite" ],
-      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -367,32 +175,8 @@
     },
     "Preferences":
     {
-      "always_show_minimap_viewport": true,
-      "bold_folder_labels": true,
-      "caret_extra_bottom": 3,
-      "caret_extra_top": 3,
-      "caret_extra_width": 3,
       "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium) NDC.sublime-color-scheme",
       "theme": "gruvbox.sublime-theme",
-      "line_padding_bottom": 3,
-      "line_padding_top": 3,
-      "overlay_scroll_bars": "enabled",
-      "wide_caret": true
-    },
-    "Preferences (Linux)":
-    {
-      "font_options": null,
-      "theme_font_options": null
-    },
-    "Preferences (OSX)":
-    {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ],
-      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
-    },
-    "Preferences (Windows)":
-    {
-      "font_options": [ "directwrite" ],
-      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -412,32 +196,8 @@
     },
     "Preferences":
     {
-      "always_show_minimap_viewport": true,
-      "bold_folder_labels": true,
-      "caret_extra_bottom": 3,
-      "caret_extra_top": 3,
-      "caret_extra_width": 3,
       "color_scheme": "Packages/gruvbox/gruvbox (Light) (Medium).sublime-color-scheme",
       "theme": "gruvbox.sublime-theme",
-      "line_padding_bottom": 3,
-      "line_padding_top": 3,
-      "overlay_scroll_bars": "enabled",
-      "wide_caret": true
-    },
-    "Preferences (Linux)":
-    {
-      "font_options": null,
-      "theme_font_options": null
-    },
-    "Preferences (OSX)":
-    {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ],
-      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
-    },
-    "Preferences (Windows)":
-    {
-      "font_options": [ "directwrite" ],
-      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -457,32 +217,8 @@
     },
     "Preferences":
     {
-      "always_show_minimap_viewport": true,
-      "bold_folder_labels": true,
-      "caret_extra_bottom": 3,
-      "caret_extra_top": 3,
-      "caret_extra_width": 3,
       "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft) NDC.sublime-color-scheme",
       "theme": "gruvbox.sublime-theme",
-      "line_padding_bottom": 3,
-      "line_padding_top": 3,
-      "overlay_scroll_bars": "enabled",
-      "wide_caret": true
-    },
-    "Preferences (Linux)":
-    {
-      "font_options": null,
-      "theme_font_options": null
-    },
-    "Preferences (OSX)":
-    {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ],
-      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
-    },
-    "Preferences (Windows)":
-    {
-      "font_options": [ "directwrite" ],
-      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
@@ -502,32 +238,8 @@
     },
     "Preferences":
     {
-      "always_show_minimap_viewport": true,
-      "bold_folder_labels": true,
-      "caret_extra_bottom": 3,
-      "caret_extra_top": 3,
-      "caret_extra_width": 3,
       "color_scheme": "Packages/gruvbox/gruvbox (Light) (Soft).sublime-color-scheme",
       "theme": "gruvbox.sublime-theme",
-      "line_padding_bottom": 3,
-      "line_padding_top": 3,
-      "overlay_scroll_bars": "enabled",
-      "wide_caret": true
-    },
-    "Preferences (Linux)":
-    {
-      "font_options": null,
-      "theme_font_options": null
-    },
-    "Preferences (OSX)":
-    {
-      "font_options": [ "gray_antialias", "subpixel_antialias" ],
-      "theme_font_options": [ "gray_antialias", "subpixel_antialias" ]
-    },
-    "Preferences (Windows)":
-    {
-      "font_options": [ "directwrite" ],
-      "theme_font_options": [ "directwrite" ]
     },
     "SublimeLinter":
     {
