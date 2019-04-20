@@ -180,5 +180,42 @@ module.exports = function (values) {
       'layer0.tint': palette('icon_hover'),
     })),
 
+    // VCS Status Button
+    {
+      class: 'vcs_status',
+      spacing: 5,
+    },
+
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'vcs_branch_icon',
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+        {
+          class: 'status_bar',
+        },
+      ],
+
+      'layer0.tint': palette('icon_default_gs'),
+    })),
+
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'vcs_changes_annotation',
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+        {
+          class: 'status_bar',
+        },
+      ],
+
+      color: palette('fg3_gs'),
+      border_color: palette('bg4_gs'),
+    })),
+
   ];
 };

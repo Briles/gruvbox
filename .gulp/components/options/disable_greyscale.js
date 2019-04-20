@@ -540,5 +540,37 @@ module.exports = function (values) {
 
       'layer0.tint': palette('tabbar_icon_hover'),
     })),
+
+    // VCS Status Button
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'vcs_branch_icon',
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+        {
+          class: 'status_bar',
+        },
+      ],
+
+      'layer0.tint': palette('icon_default'),
+    })),
+
+    ...mixins.createComponentVariations((lumin, palette) => ({
+      class: 'vcs_changes_annotation',
+      parents: [
+        {
+          class: 'window',
+          attributes: [lumin],
+        },
+        {
+          class: 'status_bar',
+        },
+      ],
+
+      color: palette('fg3'),
+      border_color: palette('bg4'),
+    })),
   ];
 };

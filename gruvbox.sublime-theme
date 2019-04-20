@@ -3305,6 +3305,134 @@
       "layer0.tint": "color(color(color(var(fg) blend(hsl(24.36,10.25%,35.92%) 50%)) s(- 5.024044%)) l(- 3.825233%))"
     },
     {
+      "class": "vcs_status",
+      "spacing": 5
+    },
+    {
+      "class": "vcs_branch_icon",
+      "parents": [
+        {
+          "class": "window",
+          "attributes": [
+            "file_light"
+          ]
+        },
+        {
+          "class": "status_bar"
+        }
+      ],
+      "layer0.tint": "color(color(color(color(var(bg) blend(hsl(22.4,12.45%,29.64%) 50%)) s(- 5.282579%)) l(- 6.995381%)) s(0%))"
+    },
+    {
+      "class": "vcs_branch_icon",
+      "parents": [
+        {
+          "class": "window",
+          "attributes": [
+            "file_medium"
+          ]
+        },
+        {
+          "class": "status_bar"
+        }
+      ],
+      "layer0.tint": "color(color(color(color(var(bg) blend(hsl(22.4,12.45%,29.64%) 50%)) s(- 5.282579%)) l(- 6.995381%)) s(0%))"
+    },
+    {
+      "class": "vcs_branch_icon",
+      "parents": [
+        {
+          "class": "window",
+          "attributes": [
+            "file_medium_dark"
+          ]
+        },
+        {
+          "class": "status_bar"
+        }
+      ],
+      "layer0.tint": "color(color(color(color(var(bg) blend(hsl(27.5,46.14%,65.78%) 50%)) s(- 11.924426%)) l(- 3.970791%)) s(0%))"
+    },
+    {
+      "class": "vcs_branch_icon",
+      "parents": [
+        {
+          "class": "window",
+          "attributes": [
+            "file_dark"
+          ]
+        },
+        {
+          "class": "status_bar"
+        }
+      ],
+      "layer0.tint": "color(color(color(color(var(bg) blend(hsl(27.5,46.14%,65.78%) 50%)) s(- 11.924426%)) l(- 3.970791%)) s(0%))"
+    },
+    {
+      "class": "vcs_changes_annotation",
+      "parents": [
+        {
+          "class": "window",
+          "attributes": [
+            "file_light"
+          ]
+        },
+        {
+          "class": "status_bar"
+        }
+      ],
+      "color": "color(color(color(color(var(fg) blend(hsl(29.3,14.48%,49.33%) 50%)) s(- 3.215125%)) l(- 1.847529%)) s(0%))",
+      "border_color": "color(color(color(color(var(bg) blend(hsl(22.4,12.45%,29.64%) 50%)) s(- 5.282579%)) l(- 6.995381%)) s(0%))"
+    },
+    {
+      "class": "vcs_changes_annotation",
+      "parents": [
+        {
+          "class": "window",
+          "attributes": [
+            "file_medium"
+          ]
+        },
+        {
+          "class": "status_bar"
+        }
+      ],
+      "color": "color(color(color(color(var(fg) blend(hsl(29.3,14.48%,49.33%) 50%)) s(- 3.215125%)) l(- 1.847529%)) s(0%))",
+      "border_color": "color(color(color(color(var(bg) blend(hsl(22.4,12.45%,29.64%) 50%)) s(- 5.282579%)) l(- 6.995381%)) s(0%))"
+    },
+    {
+      "class": "vcs_changes_annotation",
+      "parents": [
+        {
+          "class": "window",
+          "attributes": [
+            "file_medium_dark"
+          ]
+        },
+        {
+          "class": "status_bar"
+        }
+      ],
+      "color": "color(color(color(color(var(fg) blend(hsl(33.06,11.42%,50.42%) 50%)) s(- 2.977142%)) l(- 1.574998%)) s(0%))",
+      "border_color": "color(color(color(color(var(bg) blend(hsl(27.5,46.14%,65.78%) 50%)) s(- 11.924426%)) l(- 3.970791%)) s(0%))"
+    },
+    {
+      "class": "vcs_changes_annotation",
+      "parents": [
+        {
+          "class": "window",
+          "attributes": [
+            "file_dark"
+          ]
+        },
+        {
+          "class": "status_bar"
+        }
+      ],
+      "color": "color(color(color(color(var(fg) blend(hsl(33.06,11.42%,50.42%) 50%)) s(- 2.977142%)) l(- 1.574998%)) s(0%))",
+      "border_color": "color(color(color(color(var(bg) blend(hsl(27.5,46.14%,65.78%) 50%)) s(- 11.924426%)) l(- 3.970791%)) s(0%))"
+    },
+    {
       "class": "panel_control",
       "content_margin": [
         6,
@@ -9753,6 +9881,130 @@
         }
       ],
       "layer0.tint": "color(color(color(var(fg) blend(hsl(24.36,10.25%,35.92%) 50%)) s(- 5.024044%)) l(- 3.825233%))"
+    },
+    {
+      "class": "vcs_branch_icon",
+      "parents": [
+        {
+          "class": "window",
+          "attributes": [
+            "file_light"
+          ]
+        },
+        {
+          "class": "status_bar"
+        }
+      ],
+      "layer0.tint": "color(color(color(var(bg) blend(hsl(22.4,12.45%,29.64%) 50%)) s(- 5.282579%)) l(- 6.995381%))"
+    },
+    {
+      "class": "vcs_branch_icon",
+      "parents": [
+        {
+          "class": "window",
+          "attributes": [
+            "file_medium"
+          ]
+        },
+        {
+          "class": "status_bar"
+        }
+      ],
+      "layer0.tint": "color(color(color(var(bg) blend(hsl(22.4,12.45%,29.64%) 50%)) s(- 5.282579%)) l(- 6.995381%))"
+    },
+    {
+      "class": "vcs_branch_icon",
+      "parents": [
+        {
+          "class": "window",
+          "attributes": [
+            "file_medium_dark"
+          ]
+        },
+        {
+          "class": "status_bar"
+        }
+      ],
+      "layer0.tint": "color(color(color(var(bg) blend(hsl(27.5,46.14%,65.78%) 50%)) s(- 11.924426%)) l(- 3.970791%))"
+    },
+    {
+      "class": "vcs_branch_icon",
+      "parents": [
+        {
+          "class": "window",
+          "attributes": [
+            "file_dark"
+          ]
+        },
+        {
+          "class": "status_bar"
+        }
+      ],
+      "layer0.tint": "color(color(color(var(bg) blend(hsl(27.5,46.14%,65.78%) 50%)) s(- 11.924426%)) l(- 3.970791%))"
+    },
+    {
+      "class": "vcs_changes_annotation",
+      "parents": [
+        {
+          "class": "window",
+          "attributes": [
+            "file_light"
+          ]
+        },
+        {
+          "class": "status_bar"
+        }
+      ],
+      "color": "color(color(color(var(fg) blend(hsl(29.3,14.48%,49.33%) 50%)) s(- 3.215125%)) l(- 1.847529%))",
+      "border_color": "color(color(color(var(bg) blend(hsl(22.4,12.45%,29.64%) 50%)) s(- 5.282579%)) l(- 6.995381%))"
+    },
+    {
+      "class": "vcs_changes_annotation",
+      "parents": [
+        {
+          "class": "window",
+          "attributes": [
+            "file_medium"
+          ]
+        },
+        {
+          "class": "status_bar"
+        }
+      ],
+      "color": "color(color(color(var(fg) blend(hsl(29.3,14.48%,49.33%) 50%)) s(- 3.215125%)) l(- 1.847529%))",
+      "border_color": "color(color(color(var(bg) blend(hsl(22.4,12.45%,29.64%) 50%)) s(- 5.282579%)) l(- 6.995381%))"
+    },
+    {
+      "class": "vcs_changes_annotation",
+      "parents": [
+        {
+          "class": "window",
+          "attributes": [
+            "file_medium_dark"
+          ]
+        },
+        {
+          "class": "status_bar"
+        }
+      ],
+      "color": "color(color(color(var(fg) blend(hsl(33.06,11.42%,50.42%) 50%)) s(- 2.977142%)) l(- 1.574998%))",
+      "border_color": "color(color(color(var(bg) blend(hsl(27.5,46.14%,65.78%) 50%)) s(- 11.924426%)) l(- 3.970791%))"
+    },
+    {
+      "class": "vcs_changes_annotation",
+      "parents": [
+        {
+          "class": "window",
+          "attributes": [
+            "file_dark"
+          ]
+        },
+        {
+          "class": "status_bar"
+        }
+      ],
+      "color": "color(color(color(var(fg) blend(hsl(33.06,11.42%,50.42%) 50%)) s(- 2.977142%)) l(- 1.574998%))",
+      "border_color": "color(color(color(var(bg) blend(hsl(27.5,46.14%,65.78%) 50%)) s(- 11.924426%)) l(- 3.970791%))"
     },
     {
       "class": "icon_folder",
