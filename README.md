@@ -133,6 +133,7 @@ Accent colors affect icons and certain text.
   "gruvbox_accent_purple": true,  // uses the purplish color from the color scheme
   "gruvbox_accent_red": true,     // uses the redish color from the color scheme
   "gruvbox_accent_yellow": true,  // uses the yellowish color from the color scheme
+  "gruvbox_accent_pink": true,    // uses the pinkish color from the color scheme
 ```
 
 </details>

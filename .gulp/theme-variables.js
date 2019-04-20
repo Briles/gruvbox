@@ -6,7 +6,6 @@ const {
   greyscale: _gs,
   lightness: _l,
   blend: _b,
-  minContrast: _mc,
 } = require('./sublime-color-functions.js');
 
 function cmykChannel(x, z) {
@@ -76,6 +75,7 @@ const common = {
   aqua: 'var(--cyanish)',
   blue: 'var(--bluish)',
   purple: 'var(--purplish)',
+  pink: 'var(--pinkish)',
 };
 
 const dark_bg_base = palette.dark.bg.medium;

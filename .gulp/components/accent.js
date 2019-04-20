@@ -402,10 +402,7 @@ module.exports = function (values) {
   }
 
   // Create data for each accent color
-  const accentsData = [];
-  _.forEach(c.accents, (value, name) => {
-    accentsData.push(populateData(name));
-  });
+  const accentsData = [...Object.keys(c.accents), 'pink'].map(name => populateData(name));
 
   return _.flatten(accentsData);
 };

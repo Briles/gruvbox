@@ -30,7 +30,8 @@
     "green": "var(--greenish)",
     "aqua": "var(--cyanish)",
     "blue": "var(--bluish)",
-    "purple": "var(--purplish)"
+    "purple": "var(--purplish)",
+    "pink": "var(--pinkish)"
   },
   "rules": [
     {
@@ -13447,6 +13448,373 @@
         "gruvbox_accent_orange"
       ],
       "layer2.tint": "var(orange)"
+    },
+    {
+      "class": "auto_complete_label",
+      "match_fg": "var(pink)",
+      "selected_match_fg": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "sidebar_label",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "expanded"
+          ]
+        }
+      ],
+      "color": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "sidebar_label",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "hover"
+          ]
+        }
+      ],
+      "color": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "sidebar_label",
+      "parents": [
+        {
+          "class": "tree_row",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "color": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "icon_folder",
+      "layer2.tint": "var(pink)",
+      "layer3.tint": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "icon_folder_dup",
+      "layer1.tint": "var(pink)",
+      "layer2.tint": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "scroll_tabs_left_button",
+      "attributes": [
+        "hover"
+      ],
+      "layer0.tint": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "scroll_tabs_right_button",
+      "attributes": [
+        "hover"
+      ],
+      "layer0.tint": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "fold_button_control",
+      "attributes": [
+        "hover"
+      ],
+      "layer0.tint": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "fold_button_control",
+      "attributes": [
+        "expanded",
+        "hover"
+      ],
+      "layer1.tint": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "quick_panel_label",
+      "match_fg": "var(pink)",
+      "selected_match_fg": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "quick_panel_path_label",
+      "match_fg": "var(pink)",
+      "selected_match_fg": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "quick_panel_score_label",
+      "selected_fg": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "show_tabs_dropdown_button",
+      "attributes": [
+        "hover"
+      ],
+      "layer0.tint": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "dropdown_button_control",
+      "attributes": [
+        "hover"
+      ],
+      "layer0.tint": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "panel_button_control",
+      "attributes": [
+        "hover"
+      ],
+      "layer0.tint": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "icon_regex",
+      "parents": [
+        {
+          "class": "icon_button_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "icon_case",
+      "parents": [
+        {
+          "class": "icon_button_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "icon_whole_word",
+      "parents": [
+        {
+          "class": "icon_button_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "icon_wrap",
+      "parents": [
+        {
+          "class": "icon_button_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "icon_in_selection",
+      "parents": [
+        {
+          "class": "icon_button_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "icon_highlight",
+      "parents": [
+        {
+          "class": "icon_button_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "icon_preserve_case",
+      "parents": [
+        {
+          "class": "icon_button_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "icon_context",
+      "parents": [
+        {
+          "class": "icon_button_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "icon_use_buffer",
+      "parents": [
+        {
+          "class": "icon_button_control",
+          "attributes": [
+            "selected"
+          ]
+        }
+      ],
+      "layer0.tint": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "label_control",
+      "parents": [
+        {
+          "class": "status_button",
+          "attributes": [
+            "hover"
+          ]
+        }
+      ],
+      "color": "var(pink)",
+      "settings": [
+        "gruvbox_accent_pink"
+      ]
+    },
+    {
+      "class": "tool_tip_control",
+      "settings": [
+        "gruvbox_colored_tooltips",
+        "gruvbox_accent_pink"
+      ],
+      "layer0.tint": "var(pink)"
+    },
+    {
+      "class": "tool_tip_label_control",
+      "settings": [
+        "gruvbox_colored_tooltips",
+        "gruvbox_accent_pink"
+      ],
+      "color": "#ffffff"
+    },
+    {
+      "class": "tab_control",
+      "settings": [
+        "gruvbox_underline_modified_tabs",
+        "gruvbox_accent_pink"
+      ],
+      "attributes": [
+        "dirty"
+      ],
+      "layer2.tint": "var(pink)"
+    },
+    {
+      "class": "tab_control",
+      "settings": [
+        "gruvbox_underline_active_tab",
+        "gruvbox_accent_pink"
+      ],
+      "attributes": [
+        "selected"
+      ],
+      "layer2.tint": "var(pink)"
+    },
+    {
+      "class": "table_row",
+      "settings": [
+        "gruvbox_sideline_autocomplete_row",
+        "gruvbox_accent_pink"
+      ],
+      "layer1.tint": "var(pink)"
+    },
+    {
+      "class": "mini_quick_panel_row",
+      "settings": [
+        "gruvbox_sideline_command_palette_row",
+        "gruvbox_accent_pink"
+      ],
+      "layer2.tint": "var(pink)"
     }
   ]
 }
