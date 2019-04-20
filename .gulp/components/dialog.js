@@ -3,6 +3,13 @@ const mixins = require('../mixins.js');
 module.exports = function () {
   return [
 
+    // About window title
+    {
+      class: 'title_label_control',
+      fg: 'var(fg)',
+      'font.face': 'var(font_face)',
+    },
+
     // Progress Bar Foreground (Bar)
     {
       class: 'progress_gauge_control',

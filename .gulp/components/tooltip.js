@@ -15,6 +15,7 @@ module.exports = function () {
     {
       class: 'tool_tip_label_control',
 
+      'font.face': 'var(font_face)',
       color: 'var(bg)',
     },
 

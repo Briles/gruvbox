@@ -41,6 +41,8 @@ const bg = 'var(bg)';
 const fg = 'var(fg)';
 
 const common = {
+  font_face: 'system',
+
   bg: 'var(--background)',
   background: 'var(bg)',
   bg0: 'var(bg)',

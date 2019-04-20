@@ -17,6 +17,7 @@ module.exports = function (values) {
         },
       ],
 
+      'font.face': 'var(font_face)',
       color: palette('fg3_gs'),
     })),
 
@@ -213,6 +214,7 @@ module.exports = function (values) {
         },
       ],
 
+      'font.face': 'var(font_face)',
       color: palette('fg3_gs'),
       border_color: palette('bg4_gs'),
     })),

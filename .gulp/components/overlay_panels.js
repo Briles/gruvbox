@@ -107,6 +107,7 @@ module.exports = function () {
         },
       ],
 
+      'font.face': 'var(font_face)',
       fg: palette('fg4_gs'),
       match_fg: palette('fg1_gs'),
       selected_fg: palette('fg4_gs'),

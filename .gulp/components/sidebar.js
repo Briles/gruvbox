@@ -35,6 +35,7 @@ module.exports = function (values) {
       class: 'sidebar_heading',
 
       color: 'var(fg1_gs)',
+      'font.face': 'var(font_face)',
       'font.bold': false,
       'font.size': 12,
     },
@@ -52,6 +53,7 @@ module.exports = function (values) {
     {
       class: 'sidebar_label',
 
+      'font.face': 'var(font_face)',
       'font.bold': false,
       'font.italic': false,
     },

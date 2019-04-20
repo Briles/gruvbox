@@ -5,6 +5,7 @@
   "originalAuthor": "Pavel Pertsev (https://github.com/morhetz)",
   "author": "Brian Reilly (https://github.com/Briles)",
   "variables": {
+    "font_face": "system",
     "bg": "var(--background)",
     "background": "var(bg)",
     "bg0": "var(bg)",
@@ -43,6 +44,11 @@
       "class": "grid_layout_control",
       "border_size": 1,
       "border_color": "var(border)"
+    },
+    {
+      "class": "title_label_control",
+      "fg": "var(fg)",
+      "font.face": "var(font_face)"
     },
     {
       "class": "progress_gauge_control",
@@ -541,6 +547,7 @@
     },
     {
       "class": "tool_tip_label_control",
+      "font.face": "var(font_face)",
       "color": "var(bg)"
     },
     {
@@ -687,6 +694,7 @@
           ]
         }
       ],
+      "font.face": "var(font_face)",
       "fg": "color(color(color(color(var(fg) blend(hsl(30.11,28.71%,63.14%) 50%)) s(- 4.745376%)) l(- 3.473682%)) s(0%))",
       "match_fg": "color(var(fg1) s(0%))",
       "selected_fg": "color(color(color(color(var(fg) blend(hsl(30.11,28.71%,63.14%) 50%)) s(- 4.745376%)) l(- 3.473682%)) s(0%))",
@@ -702,6 +710,7 @@
           ]
         }
       ],
+      "font.face": "var(font_face)",
       "fg": "color(color(color(color(var(fg) blend(hsl(30.11,28.71%,63.14%) 50%)) s(- 4.745376%)) l(- 3.473682%)) s(0%))",
       "match_fg": "color(var(fg1) s(0%))",
       "selected_fg": "color(color(color(color(var(fg) blend(hsl(30.11,28.71%,63.14%) 50%)) s(- 4.745376%)) l(- 3.473682%)) s(0%))",
@@ -717,6 +726,7 @@
           ]
         }
       ],
+      "font.face": "var(font_face)",
       "fg": "color(color(color(color(var(fg) blend(hsl(24.36,10.25%,35.92%) 50%)) s(- 5.024044%)) l(- 3.825233%)) s(0%))",
       "match_fg": "color(var(fg1) s(0%))",
       "selected_fg": "color(color(color(color(var(fg) blend(hsl(24.36,10.25%,35.92%) 50%)) s(- 5.024044%)) l(- 3.825233%)) s(0%))",
@@ -732,6 +742,7 @@
           ]
         }
       ],
+      "font.face": "var(font_face)",
       "fg": "color(color(color(color(var(fg) blend(hsl(24.36,10.25%,35.92%) 50%)) s(- 5.024044%)) l(- 3.825233%)) s(0%))",
       "match_fg": "color(var(fg1) s(0%))",
       "selected_fg": "color(color(color(color(var(fg) blend(hsl(24.36,10.25%,35.92%) 50%)) s(- 5.024044%)) l(- 3.825233%)) s(0%))",
@@ -933,6 +944,7 @@
     },
     {
       "class": "tab_label",
+      "font.face": "var(font_face)",
       "font.size": 11,
       "font.italic": false,
       "font.bold": false
@@ -1668,6 +1680,7 @@
     {
       "class": "sidebar_heading",
       "color": "var(fg1_gs)",
+      "font.face": "var(font_face)",
       "font.bold": false,
       "font.size": 12
     },
@@ -1678,6 +1691,7 @@
     },
     {
       "class": "sidebar_label",
+      "font.face": "var(font_face)",
       "font.bold": false,
       "font.italic": false
     },
@@ -2750,6 +2764,7 @@
           ]
         }
       ],
+      "font.face": "var(font_face)",
       "color": "color(color(color(color(var(fg) blend(hsl(29.3,14.48%,49.33%) 50%)) s(- 3.215125%)) l(- 1.847529%)) s(0%))"
     },
     {
@@ -2762,6 +2777,7 @@
           ]
         }
       ],
+      "font.face": "var(font_face)",
       "color": "color(color(color(color(var(fg) blend(hsl(29.3,14.48%,49.33%) 50%)) s(- 3.215125%)) l(- 1.847529%)) s(0%))"
     },
     {
@@ -2774,6 +2790,7 @@
           ]
         }
       ],
+      "font.face": "var(font_face)",
       "color": "color(color(color(color(var(fg) blend(hsl(33.06,11.42%,50.42%) 50%)) s(- 2.977142%)) l(- 1.574998%)) s(0%))"
     },
     {
@@ -2786,6 +2803,7 @@
           ]
         }
       ],
+      "font.face": "var(font_face)",
       "color": "color(color(color(color(var(fg) blend(hsl(33.06,11.42%,50.42%) 50%)) s(- 2.977142%)) l(- 1.574998%)) s(0%))"
     },
     {
@@ -3382,6 +3400,7 @@
           "class": "status_bar"
         }
       ],
+      "font.face": "var(font_face)",
       "color": "color(color(color(color(var(fg) blend(hsl(29.3,14.48%,49.33%) 50%)) s(- 3.215125%)) l(- 1.847529%)) s(0%))",
       "border_color": "color(color(color(color(var(bg) blend(hsl(22.4,12.45%,29.64%) 50%)) s(- 5.282579%)) l(- 6.995381%)) s(0%))"
     },
@@ -3398,6 +3417,7 @@
           "class": "status_bar"
         }
       ],
+      "font.face": "var(font_face)",
       "color": "color(color(color(color(var(fg) blend(hsl(29.3,14.48%,49.33%) 50%)) s(- 3.215125%)) l(- 1.847529%)) s(0%))",
       "border_color": "color(color(color(color(var(bg) blend(hsl(22.4,12.45%,29.64%) 50%)) s(- 5.282579%)) l(- 6.995381%)) s(0%))"
     },
@@ -3414,6 +3434,7 @@
           "class": "status_bar"
         }
       ],
+      "font.face": "var(font_face)",
       "color": "color(color(color(color(var(fg) blend(hsl(33.06,11.42%,50.42%) 50%)) s(- 2.977142%)) l(- 1.574998%)) s(0%))",
       "border_color": "color(color(color(color(var(bg) blend(hsl(27.5,46.14%,65.78%) 50%)) s(- 11.924426%)) l(- 3.970791%)) s(0%))"
     },
@@ -3430,6 +3451,7 @@
           "class": "status_bar"
         }
       ],
+      "font.face": "var(font_face)",
       "color": "color(color(color(color(var(fg) blend(hsl(33.06,11.42%,50.42%) 50%)) s(- 2.977142%)) l(- 1.574998%)) s(0%))",
       "border_color": "color(color(color(color(var(bg) blend(hsl(27.5,46.14%,65.78%) 50%)) s(- 11.924426%)) l(- 3.970791%)) s(0%))"
     },

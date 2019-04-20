@@ -79,6 +79,7 @@ module.exports = function (values) {
     {
       class: 'tab_label',
 
+      'font.face': 'var(font_face)',
       'font.size': 11,
       'font.italic': false,
       'font.bold': false,
