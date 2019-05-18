@@ -1295,6 +1295,7 @@ module.exports = function (about, palette) {
     {
       name: 'SublimeLinter Error',
       scope: [
+        'markup.error',
         'sublimelinter.mark.error',
       ],
       foreground: 'var(red)',
@@ -1311,6 +1312,7 @@ module.exports = function (about, palette) {
     {
       name: 'SublimeLinter Warning',
       scope: [
+        'markup.warning',
         'sublimelinter.mark.warning',
       ],
       foreground: 'var(yellow)',
