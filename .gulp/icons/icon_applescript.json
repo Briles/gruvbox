@@ -1,9 +1,0 @@
-{
-  "scope": [
-    "source.applescript",
-    "source.applescript-scpt"
-  ],
-  "settings": {
-    "icon": "file_type_applescript"
-  }
-}

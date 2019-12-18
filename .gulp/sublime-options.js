@@ -58,7 +58,6 @@ module.exports = {
   disableAutocompleteRowHighlight: 'gruvbox_disable_autocomplete_row_highlight',
   disableCommandPaletteRowHighlight: 'gruvbox_disable_command_palette_row_highlight',
   disableFadedFileIcons: 'gruvbox_disable_faded_file_icons',
-  disableFileIcons: 'gruvbox_disable_file_icons',
   disableFolderIcons: 'gruvbox_disable_folder_icons',
   disableGreyscaleColors: 'gruvbox_disable_greyscale',
   disablePanelsButton: 'gruvbox_disable_panels_button',

@@ -1,9 +1,0 @@
-{
-  "scope": [
-    "source.dosbatch",
-    "source.shell"
-  ],
-  "settings": {
-    "icon": "file_type_shell"
-  }
-}

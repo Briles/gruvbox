@@ -10582,17 +10582,6 @@
       "font.bold": true
     },
     {
-      "class": "icon_file_type",
-      "settings": [
-        "gruvbox_disable_file_icons"
-      ],
-      "content_margin": [
-        0,
-        0
-      ],
-      "layer0.opacity": 0
-    },
-    {
       "class": "icon_folder",
       "settings": [
         "gruvbox_disable_folder_icons"

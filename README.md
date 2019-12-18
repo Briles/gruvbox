@@ -631,7 +631,6 @@ To use the color scheme with the [Plain​Tasks](https://packagecontrol.io/packa
   "gruvbox_buttons_bold": true,               // Enable bold button labels
   "gruvbox_colored_tooltips": true,           // Color the tooltip backgrounds with the current accent color
   "gruvbox_disable_faded_file_icons": true,   // Make file-type icons opaque
-  "gruvbox_disable_file_icons": true,         // Disable the sidebar file icons
   "gruvbox_disable_folder_icons": true,       // Disable the sidebar folder icons
   "gruvbox_disable_greyscale": true,          // Use gruvbox colors instead of greyscale colors for certain text
   "gruvbox_disable_panels_button": true,      // Hide the panel-switching button

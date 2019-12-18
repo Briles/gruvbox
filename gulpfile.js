@@ -16,7 +16,6 @@ function execNode(command) {
 
 gulp.task('build_theme', () => execNode(`${srcPath}build-theme.js`));
 gulp.task('build_schemes', () => execNode(`${srcPath}build-schemes.js`));
-gulp.task('build_icons', () => execNode(`${srcPath}build-icons.js`));
 gulp.task('build_all', () => execNode(`${srcPath}build-all.js`));
 
 gulp.task('watch', () => {

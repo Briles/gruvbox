@@ -17,15 +17,6 @@ module.exports = function (values) {
       'font.bold': true,
     },
 
-    // Hide Sidebar File-Type Icons
-    {
-      class: 'icon_file_type',
-      settings: [stOpts.disableFileIcons],
-      content_margin: [0, 0],
-
-      'layer0.opacity': 0,
-    },
-
     // Hide Sidebar Folder Icons
     {
       class: 'icon_folder',

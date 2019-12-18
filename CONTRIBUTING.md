@@ -41,13 +41,11 @@ The following gulp tasks are available:
 - `gulp build_schemes` builds color scheme `.sublime-color-schemes`
 - `gulp build_widgets` builds widget `.sublime-settings`
 - `gulp build_all` builds themes, schemes, and widgets
-- `gulp build_icons` builds file-type icon `.tmPreferences`
 - `gulp build` builds themes, schemes, widgets, and icons
 
 ## Navigating the Files
 
 - `./.gulp/build.js` the main script which builds themes, schemes, and widgets
-- `./.gulp/icons.js` script which creates `.tmPreferences` for all icons in `./.gulp/icons/`
 - `./.gulp/components/*.js` contains all the `.sublime-theme` components
 - `./.gulp/scheme.js` contains all the `.sublime-color-scheme` components
 - `./.gulp/widget.js` contains all the `.sublime-settings` widget components
