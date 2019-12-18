@@ -1,4 +1,4 @@
 {
-  "install": "messages/install.txt",
-  "4.0.1": "messages/latest.txt"
+  "install": ".sublime/messages/install.md",
+  "4.0.1": ".sublime/messages/4.0.1.md"
 }
