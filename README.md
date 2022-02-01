@@ -263,11 +263,11 @@ Change the space between command palette rows
 
 ```json
   // sizes are top/bottom in px
-  "gruvbox_command_palette_comfortable": true,  //  v  4
-  "gruvbox_command_palette_compact": true,      //  |  8
+  "gruvbox_command_palette_cozy": true,         //  v  16
+  "gruvbox_command_palette_comfortable": true,  //  |  14
                                                 //  |  12 (Default)
-  "gruvbox_command_palette_cozy": true,         //  |  14
-  "gruvbox_command_palette_cramped": true,      //  v  16
+  "gruvbox_command_palette_compact": true,      //  |  8
+  "gruvbox_command_palette_cramped": true,      //  v  4
 ```
 
 </details>
